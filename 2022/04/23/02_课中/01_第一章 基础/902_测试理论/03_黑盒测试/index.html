@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		黑盒测试 | 
+	 
+	TTXX课程
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<header id="header">
+    <a id="title" href="/" class="logo">TTXX课程</a>
+
+	<ul id="menu">
+		<!-- <li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li> -->
+	
+
+	
+
+		<!-- <li class="menu-item">
+			<a href="/" class="menu-item-link" target="_blank">
+				ttxx
+			</a>
+		</li> -->
+		<li class="menu-item">
+			<a href="/" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01_课前
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/22/01_%E8%AF%BE%E5%89%8D/01_%E5%88%9D%E8%AF%86%E6%B5%8B%E8%AF%95/">
+                     
+										    01_初识测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/04/22/01_%E8%AF%BE%E5%89%8D/02_%E6%B5%8B%E8%AF%95%E8%A1%8C%E4%B8%9A/">
+                     
+										    02_测试行业
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/01_%E8%AF%BE%E5%89%8D/03_%E5%A4%9A%E7%BB%B4%E5%BA%A6%E5%88%86%E6%9E%90/">
+                     
+										    03_多维度分析
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/01_%E8%AF%BE%E5%89%8D/04_%E8%96%AA%E8%B5%84%E5%88%86%E6%9E%90/">
+                     
+										    04_薪资分析
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/01_%E8%AF%BE%E5%89%8D/05_%E6%B5%8B%E8%AF%95%E7%B4%A0%E8%B4%A8/">
+                     
+										    05_测试素质
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/01_%E8%AF%BE%E5%89%8D/06_%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%99/">
+                     
+										    06_学习规则
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										02_课中
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01_第一章 基础
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">
+                     
+										    01_计算机基础
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E6%A6%82%E5%BF%B5/">
+                     
+										    02_测试理论概念
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										901_文件
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_windows%E5%BF%AB%E6%8D%B7%E9%94%AE/">
+                     
+										    01_windows快捷键
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/02_Linux%E7%B3%BB%E7%BB%9F/">
+                     
+										    02_Linux系统
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/03_windows%E4%B8%8Elinux%E7%9A%84%E5%8C%BA%E5%88%AB/">
+                     
+										    03_windows与linux的区别
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										902_测试理论
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92/">
+                     
+										    01_测试计划
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E5%88%86%E7%B1%BB/">
+                     
+										    02_软件测试的分类
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95/">
+                     
+										    03_黑盒测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										02_第二章 操作
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/02_%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%93%8D%E4%BD%9C/">
+                     
+										    02_第二章 操作
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										03_第三章 接口测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/">
+                     
+										    03_第三章 接口测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										04_第四章 性能测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">
+                     
+										    04_第四章 性能测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										05_第五章 APP测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%20APP%E6%B5%8B%E8%AF%95/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%20APP%E6%B5%8B%E8%AF%95/">
+                     
+										    05_第五章 APP测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										06_第六章 自动化测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">
+                     
+										    06_第六章 自动化测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										07_第七章 安全测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/07_%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/07_%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/">
+                     
+										    07_第七章 安全测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										08_第八章 项目
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/08_%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E9%A1%B9%E7%9B%AE/08_%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E9%A1%B9%E7%9B%AE/">
+                     
+										    08_第八章 项目
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										09_简历编写
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/">
+                     
+										    09_简历编写
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										10_模拟面试题分析
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/">
+                     
+										    10_模拟面试题分析
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										11_面试题分析
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/">
+                     
+										    11_面试题分析
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										03_课后
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/03_%E8%AF%BE%E5%90%8E/hello-world/">
+                     
+										    hello-world
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										04_工具
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/04_%E5%B7%A5%E5%85%B7/hello-world/">
+                     
+										    hello-world
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										05_其他
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/04/23/05_%E5%85%B6%E4%BB%96/hello-world/">
+                     
+										    hello-world
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/04/22/hello-world/">
+                     
+										    hello-world
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+	黑盒测试
+</h1>
+<div class="article-meta">
+	
+		<span>
+			阅读量:<span id="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95/" class="leancloud_visitors" data-flag-title="黑盒测试"></span>
+		</span>
+	
+	<span>yulong</span>
+	<span>2022-04-23 22:18:29</span>
+		<div id="article-categories">
+    
+		<span>Categories：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-folder" aria-hidden="true">
+                        <a href="/categories/课中/">课中</a>
+                        </i>
+                      
+                        >
+                      
+                    </span>
+                
+            
+                
+                    <span>
+                        <i class="fa fa-folder" aria-hidden="true">
+                        <a href="/categories/课中/基础/">基础</a>
+                        </i>
+                      
+                        >
+                      
+                    </span>
+                
+            
+                
+                    <span>
+                        <i class="fa fa-folder" aria-hidden="true">
+                        <a href="/categories/课中/基础/黑盒测试/">黑盒测试</a>
+                        </i>
+                      
+                    </span>
+                
+            
+    
+
+    
+		<span>Tags：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-tag" aria-hidden="true">
+                        <a href="/tags/课中/">课中</a>
+                        </i>
+                    </span>
+                
+            
+    
+		</div>
+
+</div>
+
+<div id="article-content">
+	<h3 id="目录："><a href="#目录：" class="headerlink" title="目录："></a>目录：</h3><ul>
+<li>定义：</li>
+<li>目的</li>
+<li>优点</li>
+<li>测试用例</li>
+</ul>
+<h3 id="内容："><a href="#内容：" class="headerlink" title="内容："></a>内容：</h3><ul>
+<li><p>定义</p>
+<ul>
+<li>黑盒测试是从一种从软件外部对软件实施的测试，也成功能测试</li>
+<li>不考虑内部结构，只考虑输入与输出的测试</li>
+<li><img src="/assets/image-20211120150914-c5nxlpa.png" alt="image.png"></li>
+</ul>
+</li>
+<li><p>目的</p>
+<ul>
+<li>黑盒测试是从用户观点出发的测试，其目的是尽可能发现软件的外部行为错误。在已知软件产品功能的基础上：<br>检测软件功能能否按照需求文档的规定正常工作，是否有功能遗漏；<br>检测是否有人机交互错误，是否有数据结构和外部数据库访问错误，是否能恰当地接收数据并保持外部信息等的完整性<br>检测行为、性能等特性是否满足要求等；<br>检测程序初始化和终止方面的错误等；</li>
+</ul>
+</li>
+<li><p>优点</p>
+<ul>
+<li>黑盒测试与软件具体实现无关，所以如果软件实现发生了变化，测试用例仍然可以使用；</li>
+<li>设计黑盒测试用例可以和软件实现同时进行，因此可以压缩项目总的开发时间</li>
+</ul>
+</li>
+<li><p>测试用例</p>
+<ul>
+<li><p>测试用例概念</p>
+<ul>
+<li>测试用例（testcase）是指对一项特定的软件进行测试任务的描述、体现测试方案、方法、技术和策略</li>
+<li>简单地认为，测试用例是为了发现软件存在的问题编写的一组包含测试输入、执行条件以及预期结果的文档，用来核实软件产品是否满需求</li>
+<li><img src="/assets/image-20211120151028-c13v85v.png" alt="image.png"></li>
+</ul>
+</li>
+<li><p>测试用例的作用</p>
+<ul>
+<li><p>指导测试的实施</p>
+</li>
+<li><p>规划测试数据的准备</p>
+</li>
+<li><p>编写测试脚本的“设计规格说明书”</p>
+</li>
+<li><p>评估测试结果的度量基准</p>
+</li>
+<li><p>分析缺陷的标准</p>
+<ul>
+<li>bug</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>使用测试用例的好处</p>
+<ul>
+<li>避免盲目测试并提高测试效率</li>
+<li>令软件测试的实施重点突出、目的明确</li>
+<li>软件版本更新后只需修正少部分的测试用例便可展开测试工作</li>
+<li>测试用例的通用化和复用化则会使软件测试易于开展</li>
+</ul>
+</li>
+<li><p>测试用例的内容</p>
+<ul>
+<li>版本号<br>项目名称<br>模块名称<br>用例编号<br>用例名称<br>用例级别<br>前置条件<br>测试步骤<br>期望结果<br>测试结果<br>测试时间<br>测试人员</li>
+</ul>
+</li>
+<li><p>((20211203110629-z3n01go “测试用例简介”))</p>
+</li>
+<li><p>输入内容的分类：字母+数字+特殊字符+汉字   &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;   字符</p>
+</li>
+<li><p>常见黑盒测试用例设计方法</p>
+<ul>
+<li><p>等价类</p>
+<ul>
+<li><p>定义：等价类是指输入域的某个互不相交的子集集合，所有等价类的并集便是整个输入域</p>
+</li>
+<li><p>分类</p>
+<ul>
+<li>有效等价类      符合需求说明，合理地输入数据集合</li>
+<li>无效等价类      不符合需求说明，无意义的输入数据的集合</li>
+<li><img src="/assets/image-20211120151741-y3xtcn5.png" alt="image.png"></li>
+</ul>
+</li>
+<li><p>等价类划分方法</p>
+<ul>
+<li><p>输入条件规定了取值范围或值的个数：确定一个有效等价类和两个无效等价类</p>
+</li>
+<li><p>输入条件规定了输入值的集合：确定一个有效等价类和一个无效等价类</p>
+<ul>
+<li><p>只允许输入汉字</p>
+<ul>
+<li>有效等价类：汉字</li>
+<li>无效等价类：字母、数字、特殊字符</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>输入条件是一个布尔值：可以确定一个有效等价类和一个无效等价类   True&#x2F;FALSE（真&#x2F;假）</p>
+</li>
+<li><p>输入条件规定必须遵循某种规则：确定一个有效等价类和若干个无效等价类</p>
+</li>
+<li><p>在规定了输入数据的一组值（假定N个），并且程序要对每个输入值分别处理：可以确立N个有效等价类和一个无效等价类——-先不理解</p>
+</li>
+</ul>
+</li>
+<li><p>等价类划分用例设计步骤</p>
+<ul>
+<li>为每一个等价类规定一个唯一的编号</li>
+<li>设计一个心得测试用例，尽可能多的覆盖尚未被覆盖的有效等价类，重复这一步，直到测试用例覆盖了所有的有效等价类</li>
+<li>设计一个新的测试用例，使其覆盖并只覆盖一个没有被覆盖的无效等价类。重复这一步，直至测试用例覆盖了所有的无效等价类</li>
+</ul>
+</li>
+<li><p>练习</p>
+<ul>
+<li>问题：两位整数加法计数器<br>第一个数和第二个数都只能输入-99到99之间的整数<br>对于输入小于-99得数据或者大于99的数据，系统应该给出明确提示<br>对于输入小数、字符等非法数据，系统应该给出明确提示</li>
+<li><img src="/assets/image-20211120151946-pg5vfr8.png" alt="image.png"></li>
+<li><img src="/assets/image-20211120151957-ot0ftmq.png" alt="image.png"></li>
+<li><img src="/assets/image-20211120152002-7y5g4a5.png" alt="image.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>边界值</p>
+<ul>
+<li><p>定义：大量的软件测试时间证明，故障往往出现在定义域或值域的边界上，而不是在其内部</p>
+</li>
+<li><p>边界：是一些特殊情况，程序在处理大量中间数值时都是正确，但是在边界处可能出现错误，边界条件就是软件计划的操作界限所在的边缘条件</p>
+</li>
+<li><p>边界值选取方法</p>
+<ul>
+<li>选取正好等于、刚刚大于或者刚刚小于等价类边界值作为测试数据，而不是选取等价类中的典型值或任意值作为测试数据</li>
+<li><img src="/assets/image-20211120152045-xkqwjfz.png" alt="image.png"></li>
+</ul>
+</li>
+<li><p>边界值分析测试</p>
+<ul>
+<li>最小值（min）</li>
+<li>稍大于最小值（min+）</li>
+<li>域内任意值（nom）</li>
+<li>稍小于最大值（max-）</li>
+<li>最大值（max）</li>
+</ul>
+</li>
+<li><p>健壮性边界值测试</p>
+<ul>
+<li>健壮性测试是边界值分析的一种扩展</li>
+<li>变量除了取min、min+、nom、max-、max五个边界值外，还要考虑采用一个略超过最大值（max+）以及一个略小于最小值（min-）的取值，看看超过极限值时系统会出现什么情况</li>
+</ul>
+</li>
+<li><p>边界值分析原则</p>
+<ul>
+<li>如果输入条件对取值范围进行了限定，则应以边界内部以及刚刚超出范围边界外的值作为测试用例</li>
+<li>对于输入条件，同样可以应用上面提到的两条原则来进行测试用例设计</li>
+<li>如果程序规格说明书中指明输入或者输出域是一个有序的集合，如顺序文件、表格等，则应注意选取有序集合中的第一个和最后一个元素作为测试用例</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>错误推断法</p>
+<ul>
+<li>定义： 指利用直觉和经验猜测出出错的可能类型，有针对性的列举出程序中所有可能的错误和容易发生错误的情况</li>
+<li>列举出可能犯的错误或错误容易发生的清单，然后根据清单编写测试用例</li>
+</ul>
+</li>
+<li><p>场景分析法</p>
+</li>
+<li><p>因果图</p>
+</li>
+<li><p>判定表</p>
+</li>
+<li><p>正交法</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E5%88%86%E7%B1%BB/">
+                软件测试的分类
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			el: '#vcomments',
+			appId: 'MYx1g2JQxjBJnkxS0qMRYkJK-gzGzoHsz',
+			appKey: 'TkKUNT3bIQCA2MV3eSE3wpVI',
+			placeholder: '请输入评论',
+			path: window.location.pathname,
+			avatar: 'retro',
+			highlight: false,
+      recordIP: true,
+      enableQQ: true,
+			requiredFields: ['nick','mail']
+		})
+	
+	
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2019-<span id="footerYear"></span> 
+	<a href="/">yulong</a> 
+	
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	<!-- Theme <a href="/" target="_blank">TTXX</a>
+	by <a href="/" target="_blank">TTXX</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a> -->
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+	// 禁止右键菜单
+	document.oncontextmenu = function(){ return false; };
+	// 禁止文字选择
+	document.onselectstart = function(){ return false; };
+	// 禁止复制
+	document.oncopy = function(){ return false; };
+	// 禁止剪切
+	document.oncut = function(){ return false; };
+</script>
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>

@@ -4,11 +4,509 @@
   
     
     <entry>
+      <title>黑盒测试</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h3 id="目录："><a href="#目录：" class="headerlink" title="目录："></a>目录：</h3><ul><li>定义：</li><li>目的</li><li>优点</li><li>测试用例</li></ul><h3 id="内容："><a href="#内容：" class="headerlink" title="内容："></a>内容：</h3><ul><li><p>定义</p><ul><li>黑盒测试是从一种从软件外部对软件实施的测试，也成功能测试</li><li>不考虑内部结构，只考虑输入与输出的测试</li><li><img src="/assets/image-20211120150914-c5nxlpa.png" alt="image.png"></li></ul></li><li><p>目的</p><ul><li>黑盒测试是从用户观点出发的测试，其目的是尽可能发现软件的外部行为错误。在已知软件产品功能的基础上：<br>检测软件功能能否按照需求文档的规定正常工作，是否有功能遗漏；<br>检测是否有人机交互错误，是否有数据结构和外部数据库访问错误，是否能恰当地接收数据并保持外部信息等的完整性<br>检测行为、性能等特性是否满足要求等；<br>检测程序初始化和终止方面的错误等；</li></ul></li><li><p>优点</p><ul><li>黑盒测试与软件具体实现无关，所以如果软件实现发生了变化，测试用例仍然可以使用；</li><li>设计黑盒测试用例可以和软件实现同时进行，因此可以压缩项目总的开发时间</li></ul></li><li><p>测试用例</p><ul><li><p>测试用例概念</p><ul><li>测试用例（testcase）是指对一项特定的软件进行测试任务的描述、体现测试方案、方法、技术和策略</li><li>简单地认为，测试用例是为了发现软件存在的问题编写的一组包含测试输入、执行条件以及预期结果的文档，用来核实软件产品是否满需求</li><li><img src="/assets/image-20211120151028-c13v85v.png" alt="image.png"></li></ul></li><li><p>测试用例的作用</p><ul><li><p>指导测试的实施</p></li><li><p>规划测试数据的准备</p></li><li><p>编写测试脚本的“设计规格说明书”</p></li><li><p>评估测试结果的度量基准</p></li><li><p>分析缺陷的标准</p><ul><li>bug</li></ul></li></ul></li><li><p>使用测试用例的好处</p><ul><li>避免盲目测试并提高测试效率</li><li>令软件测试的实施重点突出、目的明确</li><li>软件版本更新后只需修正少部分的测试用例便可展开测试工作</li><li>测试用例的通用化和复用化则会使软件测试易于开展</li></ul></li><li><p>测试用例的内容</p><ul><li>版本号<br>项目名称<br>模块名称<br>用例编号<br>用例名称<br>用例级别<br>前置条件<br>测试步骤<br>期望结果<br>测试结果<br>测试时间<br>测试人员</li></ul></li><li><p>((20211203110629-z3n01go “测试用例简介”))</p></li><li><p>输入内容的分类：字母+数字+特殊字符+汉字   &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;   字符</p></li><li><p>常见黑盒测试用例设计方法</p><ul><li><p>等价类</p><ul><li><p>定义：等价类是指输入域的某个互不相交的子集集合，所有等价类的并集便是整个输入域</p></li><li><p>分类</p><ul><li>有效等价类      符合需求说明，合理地输入数据集合</li><li>无效等价类      不符合需求说明，无意义的输入数据的集合</li><li><img src="/assets/image-20211120151741-y3xtcn5.png" alt="image.png"></li></ul></li><li><p>等价类划分方法</p><ul><li><p>输入条件规定了取值范围或值的个数：确定一个有效等价类和两个无效等价类</p></li><li><p>输入条件规定了输入值的集合：确定一个有效等价类和一个无效等价类</p><ul><li><p>只允许输入汉字</p><ul><li>有效等价类：汉字</li><li>无效等价类：字母、数字、特殊字符</li></ul></li></ul></li><li><p>输入条件是一个布尔值：可以确定一个有效等价类和一个无效等价类   True&#x2F;FALSE（真&#x2F;假）</p></li><li><p>输入条件规定必须遵循某种规则：确定一个有效等价类和若干个无效等价类</p></li><li><p>在规定了输入数据的一组值（假定N个），并且程序要对每个输入值分别处理：可以确立N个有效等价类和一个无效等价类——-先不理解</p></li></ul></li><li><p>等价类划分用例设计步骤</p><ul><li>为每一个等价类规定一个唯一的编号</li><li>设计一个心得测试用例，尽可能多的覆盖尚未被覆盖的有效等价类，重复这一步，直到测试用例覆盖了所有的有效等价类</li><li>设计一个新的测试用例，使其覆盖并只覆盖一个没有被覆盖的无效等价类。重复这一步，直至测试用例覆盖了所有的无效等价类</li></ul></li><li><p>练习</p><ul><li>问题：两位整数加法计数器<br>第一个数和第二个数都只能输入-99到99之间的整数<br>对于输入小于-99得数据或者大于99的数据，系统应该给出明确提示<br>对于输入小数、字符等非法数据，系统应该给出明确提示</li><li><img src="/assets/image-20211120151946-pg5vfr8.png" alt="image.png"></li><li><img src="/assets/image-20211120151957-ot0ftmq.png" alt="image.png"></li><li><img src="/assets/image-20211120152002-7y5g4a5.png" alt="image.png"></li></ul></li></ul></li><li><p>边界值</p><ul><li><p>定义：大量的软件测试时间证明，故障往往出现在定义域或值域的边界上，而不是在其内部</p></li><li><p>边界：是一些特殊情况，程序在处理大量中间数值时都是正确，但是在边界处可能出现错误，边界条件就是软件计划的操作界限所在的边缘条件</p></li><li><p>边界值选取方法</p><ul><li>选取正好等于、刚刚大于或者刚刚小于等价类边界值作为测试数据，而不是选取等价类中的典型值或任意值作为测试数据</li><li><img src="/assets/image-20211120152045-xkqwjfz.png" alt="image.png"></li></ul></li><li><p>边界值分析测试</p><ul><li>最小值（min）</li><li>稍大于最小值（min+）</li><li>域内任意值（nom）</li><li>稍小于最大值（max-）</li><li>最大值（max）</li></ul></li><li><p>健壮性边界值测试</p><ul><li>健壮性测试是边界值分析的一种扩展</li><li>变量除了取min、min+、nom、max-、max五个边界值外，还要考虑采用一个略超过最大值（max+）以及一个略小于最小值（min-）的取值，看看超过极限值时系统会出现什么情况</li></ul></li><li><p>边界值分析原则</p><ul><li>如果输入条件对取值范围进行了限定，则应以边界内部以及刚刚超出范围边界外的值作为测试用例</li><li>对于输入条件，同样可以应用上面提到的两条原则来进行测试用例设计</li><li>如果程序规格说明书中指明输入或者输出域是一个有序的集合，如顺序文件、表格等，则应注意选取有序集合中的第一个和最后一个元素作为测试用例</li></ul></li></ul></li><li><p>错误推断法</p><ul><li>定义： 指利用直觉和经验猜测出出错的可能类型，有针对性的列举出程序中所有可能的错误和容易发生错误的情况</li><li>列举出可能犯的错误或错误容易发生的清单，然后根据清单编写测试用例</li></ul></li><li><p>场景分析法</p></li><li><p>因果图</p></li><li><p>判定表</p></li><li><p>正交法</p></li></ul></li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课中 </category>
+          
+          <category> 基础 </category>
+          
+          <category> 黑盒测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课中 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>软件测试的分类</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E5%88%86%E7%B1%BB/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E5%88%86%E7%B1%BB/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/assets/wpsEE47.tmp-20211120145802-z73wzpx.jpg"></p><ul><li><p>按开发阶段分类</p><ul><li><p>单元测试</p><ul><li>模块测试，最小单位的测试</li></ul></li><li><p>集成测试</p><ul><li>把单元的小模块组合起来进行的测试</li><li>测试不同模块接口的测试</li></ul></li><li><p>系统测试 ———————–把系统看成一个整体进行的测试</p><ul><li>功能测试</li><li>兼容性测试</li><li>性能测试</li><li>安全测试</li></ul></li><li><p>验收测试</p><ul><li>α测试   内测的一个版本测试</li><li>β测试   公测的一个版本测试</li></ul></li></ul></li><li><p>按是否查看代码</p><ul><li>白盒测试</li><li><a href="03_%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95/">黑盒测试</a></li><li>灰盒测试</li></ul></li><li><p>按测试执行方式</p><ul><li>静态测试</li><li>动态测试</li></ul></li><li><p>按是否手工执行划分</p><ul><li>手动测试</li><li>自动化测试</li></ul></li><li><p>其他分类</p><ul><li>冒烟测试     快速验证主要功能的测试</li><li>回归测试</li><li>随机测试</li><li>探索性测试    随机测试的升级版，测试的一种思维方式，强调遇到问题之后，改变测试策略，能够发现更加深入的问题，是未来测试发展的一个领域</li></ul></li></ul><p>((20211222151926-gv3ho8c “测试种类划分”))</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课中 </category>
+          
+          <category> 基础 </category>
+          
+          <category> 软件测试的分类 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课中 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试计划</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92/</url>
+      
+        <content type="html"><![CDATA[<ol><li><h3 id="测试计划（Testing-plan）的定义"><a href="#测试计划（Testing-plan）的定义" class="headerlink" title="测试计划（Testing plan）的定义"></a>测试计划（Testing plan）的定义</h3><ol><li>描述了要进行的测试活动的范围、方法、资源和进度的文档；<br> 是对整个信息系统应用软件组装测试和确认测试。<br> 它确定测试项、被测特性、测试任务、谁执行任务、各种可能的风险。<br> 测试计划可以有效预防计划的风险，保障计划的顺利实施。</li></ol></li><li><h3 id="测试计划的目的"><a href="#测试计划的目的" class="headerlink" title="测试计划的目的"></a>测试计划的目的</h3> （1）为测试各项活动制定一个现实可行的、综合的计划，包括每项测试活动的对象、范围、方法、进度和预期结果。<br> （2）为项目实施建立一个组织模型，并定义测试项目中每个角色的责任和工作内容。<br> （3）开发有效的测试模型，能正确地验证正在开发的软件系统。<br> （4）确定测试所需要的时间和资源，以保证其可获得性、有效性。<br> （5）确立每个测试阶段测试完成以及测试成功的标准、要实现的目标。<br> （6）识别出测试活动中各种风险，并消除可能存在的风险，降低由不可能消除的风险所带来的损失。</li><li><h3 id="测试计划由谁编写"><a href="#测试计划由谁编写" class="headerlink" title="测试计划由谁编写"></a>测试计划由谁编写</h3><ol><li>测试计划属于管理型文档，是由测试经理、测试主管或测试组长进行编写。</li></ol></li><li><h3 id="测试计划编写的6个要素"><a href="#测试计划编写的6个要素" class="headerlink" title="测试计划编写的6个要素"></a>测试计划编写的6个要素</h3> 1）why——为什么要进行这些测试；<ol start="2"><li>what—测试哪些方面，不同阶段的工作内容；</li><li>when—测试不同阶段的起止时间；</li><li>where—相应文档，缺陷的存放位置，测试环境等；</li><li>who—项目有关人员组成，安排哪些测试人员进行测试</li><li>how—如何去做，使用哪些测试工具以及测试方法进行测试。</li></ol></li><li><h3 id="测试计划主要内容"><a href="#测试计划主要内容" class="headerlink" title="测试计划主要内容"></a>测试计划主要内容</h3><ol><li>((20220109204311-7dlgpja “测试范围”))</li><li>((20220109204317-no7yvl2 “测试环境”))</li><li>((20220109204318-skn2tfq “测试策略”))</li><li>((20220109204320-587rq9h “测试管理”))</li><li>((20220109204322-q58c95g “测试风险”))</li></ol></li><li><h3 id="20220109204415-rksiv5p-“测试计划范本”"><a href="#20220109204415-rksiv5p-“测试计划范本”" class="headerlink" title="((20220109204415-rksiv5p “测试计划范本”))"></a>((20220109204415-rksiv5p “测试计划范本”))</h3></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课中 </category>
+          
+          <category> 基础 </category>
+          
+          <category> 测试计划 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课中 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试理论概念</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E6%A6%82%E5%BF%B5/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E6%A6%82%E5%BF%B5/</url>
+      
+        <content type="html"><![CDATA[<ol><li><h4 id="软件测试的定义，什么是软件测试"><a href="#软件测试的定义，什么是软件测试" class="headerlink" title="软件测试的定义，什么是软件测试"></a>软件测试的定义，什么是软件测试</h4><ol><li>使用人工或自动手段，来运行或测试某个系统的过程。其目的在于检验它是否满足规定的需求或弄清预期结果与实际结果之间的差别。</li></ol></li><li><h4 id="软件测试的目的"><a href="#软件测试的目的" class="headerlink" title="软件测试的目的"></a>软件测试的目的</h4><ol><li><p>测试是程序的执行过程，目的在于发现错误。</p></li><li><p>确保产品完成了它所承诺或公布的功能</p></li><li><p>确保产品满足性能和效率的要求</p></li><li><p>确保产品是健壮的和适应用户环境的</p></li></ol></li><li><h4 id="是否了解二八定律？"><a href="#是否了解二八定律？" class="headerlink" title="是否了解二八定律？"></a>是否了解二八定律？</h4><ol><li>了解</li><li>80%的问题可以在20%的模块中发现，换句话来说，软件系统中的问题存在群集现象，大部分的问题会集中在少数的模块上。</li><li><h5 id="二八定律怎么避免"><a href="#二八定律怎么避免" class="headerlink" title="二八定律怎么避免"></a>二八定律怎么避免</h5><ul><li>在分析设计以及实现阶段的复审能够发现和避免80%的缺陷，</li><li>在系统测试中能够找到剩余的80%的错误，</li><li>最后剩余的4%只能在用户的大范围使用长时间积累爆发出来</li></ul></li></ol></li><li><h4 id="软件测试的分类"><a href="#软件测试的分类" class="headerlink" title="软件测试的分类"></a><a href="../902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E5%88%86%E7%B1%BB/">软件测试的分类</a></h4><ol><li><p><img src="/assets/image-20220109174021-s16k61v.png" alt="image.png"></p><p> 黑盒测试：不考虑程序运行本身的逻辑，只考虑输入与输出之间的关系的测试</p><p> 白盒测试：开发人员进行的测试，代码测试</p><p> 灰盒测试：介于黑盒与白盒之间的测试</p><p> α测试：使用真实的环境，用户参与，全部产品、开发、测试参与，现场操作发现问题及时解决</p><p> β测试：使用真实的环境用户不参与，部分产品、开发、测试参与，现场操作发现问题后期解决</p></li><li><p>软件测试分类关系图</p><ol><li><img src="/assets/475aa778a57237c7e6a571329668eb4-20220109175114-4ddp7g5.jpg" alt="475aa778a57237c7e6a571329668eb4.jpg"></li></ol></li><li><p>软件测试类型</p><ol><li>功能测试、性能测试、安全测试、自动化测试、渗透性测试、UI测试</li></ol></li></ol></li><li><h3 id="软件测试的原则"><a href="#软件测试的原则" class="headerlink" title="软件测试的原则"></a>软件测试的原则</h3><ol><li><p>所有的测试都应该追溯到需求</p></li><li><p>尽早参与测试</p></li><li><p>测试中80%的缺陷来源于20%的模块中</p></li><li><p>不做不准备不充分的测试</p></li><li><p>避免测试的随意性</p></li><li><p>要长期保存我们的测试用例，直到系统废弃</p></li></ol></li><li><h3 id="项目流程——-gt-gt-软件的生命周期"><a href="#项目流程——-gt-gt-软件的生命周期" class="headerlink" title="项目流程——-&gt;&gt;软件的生命周期"></a>项目流程——-&gt;&gt;软件的生命周期</h3><ol><li><p>首先有需求人员编写需求文档，提供产品模型，并对这个需求进行评审，开发根据自己得到的任务进行编写代码、详设文档，测试人员根据自己得到的任务编写测试用例，进行用例评审，开发编写完成后会提交一个测试版本，我们测试用编写的用例进行测试，测试过程中如果发现bug，找到对应的开发给予解决，等bug修改以后，我们进行返测，如果通过直接关闭，如果不通过打回重新修改，直到bug关闭为止，编写测试报告， 然后进行版本发布，编写测试总结</p></li><li><p><strong>是不是所有的bug都关闭才能发布版本？</strong></p><ol><li><strong>不一定，有不影响项目上线的bug是允许存在的，比如说提示类说明文字与需求不一致</strong></li></ol></li></ol></li><li><h3 id="测试平时工作的内容"><a href="#测试平时工作的内容" class="headerlink" title="测试平时工作的内容"></a>测试平时工作的内容</h3><ol><li>参与需求评审   编写测试用例  评审用例  搭建环境  执行测试   发现bug  协助开发定位问题  返测  版本发布    测试总结  测试报告</li></ol></li><li><h3 id="怎么把控软件的进度"><a href="#怎么把控软件的进度" class="headerlink" title="怎么把控软件的进度"></a>怎么把控软件的进度</h3><ol><li>通过测试计划，晨会，测试日报，里程碑</li></ol></li><li><h3 id="怎么把控软件质量"><a href="#怎么把控软件质量" class="headerlink" title="怎么把控软件质量"></a>怎么把控软件质量</h3><ol><li>需求文档明确</li><li>严格根据我们用例进行测试</li><li>保证用例的全面覆盖</li></ol></li><li><h3 id="一名优秀的测试人员应该具有的素质包括："><a href="#一名优秀的测试人员应该具有的素质包括：" class="headerlink" title="一名优秀的测试人员应该具有的素质包括："></a>一名优秀的测试人员应该具有的素质包括：</h3> 一  踏实细心和积极主动<br> 二  好奇心，怀疑一切<br> 三  与他人良好交流的能力<br> 四  持续不断的自我提高和总结能力<br> 五  强烈的责任感</li><li><h3 id="测试计划"><a href="#测试计划" class="headerlink" title="测试计划"></a><a href="../902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92/">测试计划</a></h3><ol><li>什么是测试计划？</li><li>测试计划的目的？</li><li>测试计划是由谁写的？</li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课中 </category>
+          
+          <category> 基础 </category>
+          
+          <category> 测试理论概念 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课中 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>windows与linux的区别</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/03_windows%E4%B8%8Elinux%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/03_windows%E4%B8%8Elinux%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+      
+        <content type="html"><![CDATA[<p>Windows和Linux是完全不同的两种操作系统。 Windows是微软公司出的商业操作系统，在全球90%以上的电脑用的都是Windows的操作系统。 Linux是一款开源免费的操作系统，不用掏钱就能用。全球好多服务器用的是这个操作系统。</p><p>做为个人电脑使用，这两种系统对比有什么优缺点呢？ 首先说说Windows。</p><h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p><img src="/assets/image-20211122224703-cy1k2rz.png" alt="image.png"></p><p>Windows 做为全球使用量第一的操作系统，要说没有优点那是不可能的。 不但有优点，而且还有很多优点，有些优点还是其他操作系统无论如何也追不上的。</p><h3 id="1-不用安装"><a href="#1-不用安装" class="headerlink" title="1. 不用安装"></a>1. 不用安装</h3><p>这个不用安装并不是说不用安装操作系统，而是除了Mac之外，99%以上的个人电脑都是在出厂的时候就安装好了Windows系统， 电脑到手直接使用就行，不用再担心还要安装系统的问题。</p><h3 id="2-容易维修"><a href="#2-容易维修" class="headerlink" title="2. 容易维修"></a>2. 容易维修</h3><p>正是因为Windows是全球使用量第一的操作系统， 所以几乎所有的电脑店里面都是以维修Windows电脑为主。 如果系统出的问题，基本随便到一个电脑店都能解决。</p><h3 id="3-软件和游戏数量极大"><a href="#3-软件和游戏数量极大" class="headerlink" title="3. 软件和游戏数量极大"></a>3. 软件和游戏数量极大</h3><p>Windows全球使用量第一，所以全球开发者数量也很高。 这就造成了Windows上面的软件数量非常非常之大，这点是Linux无论如何也追不上的。 像我们国内常用的QQ，微信等在Linux上就没有， 更不要说像英雄联盟，绝地求生这些游戏了。 在Linux中虽然也能通过Wine安装Windows软件， 但大部分软件都是不兼容的， 而且安装了Wine以后整个系统都不稳定了。</p><h3 id="4-硬件兼容性好"><a href="#4-硬件兼容性好" class="headerlink" title="4. 硬件兼容性好"></a>4. 硬件兼容性好</h3><p>很多硬件的驱动在Windows能很方便的安装，但在Linux的根本就没有。 比如我用的笔记本，在使用Windows系统，WiFi，蓝牙，各种硬件都正常， 但使用Linux系统WiFi是不能用的， 还要自己编译安装驱动程序。</p><h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><p><img src="/assets/image-20211122224710-34agwn3.png" alt="image.png"></p><p>Linux做为开源免费的操作系统，也有些优点是Windows无论如何也赶不上的。</p><h3 id="1-不用花钱"><a href="#1-不用花钱" class="headerlink" title="1. 不用花钱"></a>1. 不用花钱</h3><p>正版的Windows系统是要花钱购买的，而且价钱还不低（买笔记本带Windows系统其实系统钱是包含在里面的）。 而Linux是开源免费的，任何人不用花钱都可以下载使用，而且有多个发行版可供选择。</p><h3 id="2-稳定性-x2F-流畅度高"><a href="#2-稳定性-x2F-流畅度高" class="headerlink" title="2. 稳定性&#x2F;流畅度高"></a>2. 稳定性&#x2F;流畅度高</h3><p>使用Windows系统时不时会出现卡顿，不稳定的问题，但Linux不会。选择一个好的发行版做为个人电脑系统使用的话一般不会出现卡顿的情况。 而且Windows系统长时间使用的话要重启一下，不然可能就没有开机时流畅了。</p><p>在Windows中由于空间不够用都会安装一款清理垃圾文件的软件，Windows系统本身会占用很大的空间，随便安装几个软件系统盘也许就满了。 但在Linux中一般不需要，因为Linux系统本身不会占用多大的磁盘空间，安装软件也都是规范的位置，系统临时目录重启时会自动清理，不会占用大量的磁盘空间。</p><p>在我的使用体验中，Linux的流畅度是比Windows高的。比如我使用的编程软件IDEA，同一台电脑同一块硬盘，在Windows上打开一个项目要3到5秒， 但在Linux（Ubuntu 18.04）中打开同一个项目只要不到1秒。</p><h3 id="4-安全性高"><a href="#4-安全性高" class="headerlink" title="4. 安全性高"></a>4. 安全性高</h3><p>在Windows系统中是一定要安装杀毒软件的。就算你不安装，Windows系统自带的也会启动。但在Linux中不用，因为Linux是一个有严格权限控制的系统，平常使用的时候一般不会使用root用户，就算有恶意脚本也不至于对系统造成大破坏。而且Linux的病毒数量也极少。</p><h3 id="5-可定制性高"><a href="#5-可定制性高" class="headerlink" title="5. 可定制性高"></a>5. 可定制性高</h3><p>由于Linux系统是开源的， 所以每个人都可以下载其源代码进行定制。就算是已经存在的发行版桌面环境也都是可以换的。如果你有能力，可以把Linux系统改的它亲爹都不认识。</p><h3 id="6-性能高"><a href="#6-性能高" class="headerlink" title="6. 性能高"></a>6. 性能高</h3><p>Linux的开发都可能比使用者还要多，这就意味着Linux从内核到软件都是经过多次的优化的。性能高自然也是不奇怪。这个性能不仅表现在软件性能，现在还表现在游戏性能上，我在同一台电脑上在Windows系统中玩我的世界不限制帧率能跑800多帧，但在Linux里面使用同一个显卡，加载同一个游戏，同一个场景，能跑1000多帧。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课中 </category>
+          
+          <category> 基础 </category>
+          
+          <category> windows与linux的区别 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课中 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux系统</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/02_Linux%E7%B3%BB%E7%BB%9F/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/02_Linux%E7%B3%BB%E7%BB%9F/</url>
+      
+        <content type="html"><![CDATA[<h3 id="linux简介："><a href="#linux简介：" class="headerlink" title="linux简介："></a>linux简介：</h3><p>Linux 是一种自由和开放源码的类 UNIX 操作系统。<br>Linux 英文解释为 Linux is not Unix。<br>Linux 是在 1991 由林纳斯·托瓦兹在赫尔辛基大学上学时创立的，主要受到 Minix 和 Unix 思想的启发。<br>本教程，我们将为大家介绍如何使用 Linux。</p><p>Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。<br>Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。<br>Linux 能运行主要的 UNIX 工具软件、应用程序和网络协议。它支持 32 位和 64 位硬件。Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。</p><h3 id="Linux-的发行版"><a href="#Linux-的发行版" class="headerlink" title="Linux 的发行版"></a>Linux 的发行版</h3><p>Linux 的发行版说简单点就是将 Linux 内核与应用软件做一个打包。</p><p><img src="/assets/image-20211120104622-naz095z.png" alt="image.png"></p><h3 id="Linux-vs-Windows"><a href="#Linux-vs-Windows" class="headerlink" title="Linux vs Windows"></a>Linux vs Windows</h3><p>目前国内 Linux 更多的是应用于服务器上，而桌面操作系统更多使用的是 Windows。主要区别如下</p><table><thead><tr><th>比较</th><th>Windows</th><th>Linux</th></tr></thead><tbody><tr><td>界面</td><td>界面统一，外壳程序固定所有Windows程序菜单几乎一致，快捷键也几乎相同</td><td>图形界面风格依发布版不同而不同，可能互不兼容。GNU&#x2F;Linux的终端机是从UNIX传承下来，基本命令和操作方法也几乎一致。</td></tr><tr><td>驱动程序</td><td>驱动程序丰富，版本更新频繁。默认安装程序里面一般包含有该版本发布时流行的硬件驱动程序，之后所出的新硬件驱动依赖于硬件厂商提供。对于一些老硬件，如果没有了原配的驱动有时很难支持。另外，有时硬件厂商未提供所需版本的Windows下的驱动，也会比较头痛。</td><td>由志愿者开发，由Linux核心开发小组发布，很多硬件厂商基于版权考虑并未提供驱动程序，尽管多数无需手动安装，但是涉及安装则相对复杂，使得新用户面对驱动程序问题（是否存在和安装方法）会一筹莫展。但是在开源开发模式下，许多老硬件尽管在Windows下很难支持的也容易找到驱动。HP、Intel、AMD等硬件厂商逐步不同程度支持开源驱动，问题正在得到缓解。</td></tr><tr><td>使用</td><td>使用比较简单，容易入门。图形化界面对没有计算机背景知识的用户使用十分有利。</td><td>图形界面使用简单，容易入门。文字界面，需要学习才能掌握。</td></tr><tr><td>学习</td><td>系统构造复杂、变化频繁，且知识、技能淘汰快，深入学习困难。</td><td>系统构造简单、稳定，且知识、技能传承性好，深入学习相对容易。</td></tr><tr><td>软件</td><td>每一种特定功能可能都需要商业软件的支持，需要购买相应的授权。</td><td>大部分软件都可以自由获取，同样功能的软件选择较少。</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课中 </category>
+          
+          <category> 基础 </category>
+          
+          <category> windows快捷键 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课中 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>windows快捷键</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_windows%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_windows%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+      
+        <content type="html"><![CDATA[<h5 id="win快捷键："><a href="#win快捷键：" class="headerlink" title="win快捷键："></a>win快捷键：</h5><p>单独按Windows：显示或隐藏 “开始”功能表<br>Windows+BREAK：显示“系统属性” 对话框<br>Windows+D：显示桌面或恢复桌面<br>Windows+M：最小化所有窗口<br>Windows+Shift+M：还原最小化的窗口<br>Ctrl+Shift+N：新建文件夹<br>Windows+E：打开”我的电脑”<br>Windows+F：查找文件或文件夹<br>Windows+CTRL+ F：查找电脑<br>Windows+F1：显示 Windows “帮助”<br>Windows+R：开启“运行” 对话框<br>Windows+U：开启 “公用程序管理器”<br>Windows+L：锁定计算机（Windows XP新功能）<br>Windows按住不动+Tab：打开的应用程序切换，立体效果（win7系统支持）<br>windows +alt +F4：windows 关机窗口</p><h5 id="Ctr快捷键（文本编辑使用较多）"><a href="#Ctr快捷键（文本编辑使用较多）" class="headerlink" title="Ctr快捷键（文本编辑使用较多）"></a>Ctr快捷键（文本编辑使用较多）</h5><p>Ctrl+S 保存<br>Ctrl+W 关闭程序<br>Ctrl+N 新建<br>Ctrl+O 打开<br>Ctrl+Z 撤销<br>Ctrl+F 查找<br>Ctrl+P 打印文档<br>Ctrl+X 剪切<br>Ctrl+C 复制<br>Ctrl+V 粘贴<br>Ctrl+A全选<br>Ctrl+B 粗体<br>Ctrl+I 斜体<br>Ctrl+U 下划线<br>Ctrl+Shift输入法切换<br>Ctrl+ 空格 中英文切换<br>Ctrl+Home 光标快速移到文件头<br>Ctrl+End 光标快速移到文件尾<br>Ctrl+Esc 显示开始菜单<br>Ctrl+Shift+&lt; 快速缩小文字<br>Ctrl+Shift+&gt; 快速放大文字<br>Ctrl+F5 在IE中强行刷新<br>Ctrl+拖动文件 复制文件<br>Ctrl+Backspace 启动\关闭输入法<br>Ctrl+Alt+A 截屏(QQ的截屏）<br>shift + Alt + Print Screen(选中要截屏的地方，然后按这三个键，然后打开图画或者word，粘贴即可)<br>拖动文件时按住Ctrl+Shift 创建快捷方式<br>Ctrl+Tab+shift在打开的应用程序中以反方向切换</p><h5 id="ALT快捷键"><a href="#ALT快捷键" class="headerlink" title="ALT快捷键"></a>ALT快捷键</h5><p>Alt+F4 关闭当前程序<br>Alt+空格+C 关闭窗口<br>Alt+空格+N 最小化当前窗口<br>Alt+空格+R 恢复最大化窗口<br>Alt+空格+X 最大化当前窗口<br>Alt+空格+M 移动窗口<br>Alt+空格+S 改变窗口大小<br>Alt+u+v word全屏视图<br>Alt+F 打开文件菜单<br>Alt+V 打开视图菜单<br>Alt+E 打开编辑菜单<br>Alt+I 打开插入菜单<br>Alt+O 打开格式菜单<br>Alt+T 打开工具菜单<br>Alt+A 打开表格菜单<br>Alt+W 打开窗口菜单<br>Alt+H 打开帮助菜单<br>Alt+回车 查看文件属性<br>Alt+双击文件 查看文件属性<br>Alt+Tab在打开的应用不同窗口间进行切换</p><h5 id="shift快捷键"><a href="#shift快捷键" class="headerlink" title="shift快捷键"></a>shift快捷键</h5><p>Shift+空格 半\全角切换<br>Shift+F10 选中文件的右菜单<br>Shift+Del 永久删除</p><h5 id="FN快捷键"><a href="#FN快捷键" class="headerlink" title="FN快捷键"></a>FN快捷键</h5><p>F1 帮助<br>F2 重命名<br>F3 在windows中搜索文件<br>F5 刷新<br>F6 在窗口或桌面上循环切换屏幕元素。<br>F7 DoS下专用功能<br>F8 Windows 启动选项<br>F9 Excel 中计算公式<br>F11 切换全屏<br>F12 Word 里另存文档</p><h5 id="常规快捷键"><a href="#常规快捷键" class="headerlink" title="常规快捷键"></a>常规快捷键</h5><p>拖动某一项时按 CTRL 复制所选项。<br>拖动某一项时按 CTRL + SHIFT 创建所选项目的快捷键。<br>F2 重新命名所选项目。<br>CTRL + 向右键 将插入点移动到下一个单词的起始处。<br>CTRL + 向左键 将插入点移动到前一个单词的起始处。<br>CTRL + 向下键 将插入点移动到下一段落的起始处。<br>CTRL + 向上键 将插入点移动到前一段落的起始处。<br>CTRL + SHIFT + 任何箭头键突出显示一块文本。<br>SHIFT + 任何箭头键 在窗口或桌面上选择多项，或者选中文档中的文本。<br>Ctrl + A 选中全部内容。<br>F3 同一浏览器中打开的窗口切换。<br>Alt + Enter 查看所选项目的属性。<br>Alt + F4 打开关机，待机，重启<br>Alt +空格键为当前窗口打开快捷菜单。<br>Alt + Tab 在打开的项目之间切换。<br>Alt + Esc 以项目打开的顺序循环切换。<br>Shift + F10 显示所选项的快捷菜单。<br>ALT + 菜单名中带下划线的字母 显示相应的菜单（ALT在写字板中）。<br>右箭头键 打开右边的下一菜单或者打开子菜单。<br>Ctrl+Alt+Home或ctrl+home 回到页首</p><h5 id="FN键"><a href="#FN键" class="headerlink" title="FN键"></a>FN键</h5><p>F1 帮助<br>F2 重命名<br>F3 在windows中搜索文件<br>F5 刷新<br>F6 在窗口或桌面上循环切换屏幕元素。<br>F7 DoS下专用功能<br>F8 Windows 启动选项<br>F9 Excel 中计算公式<br>F11 切换全屏<br>F12 Word 里另存文档<br>Enter 执行活选项动或按钮所对应的命令。<br>方向键 活选项动是一组选项按钮时，请选中某个按钮。<br>BackSpace 如果在“另存为”或“打开”对话框中选中了某个文件夹，则打开上一级文件夹</p><h5 id="END-显示当前窗口的底端。"><a href="#END-显示当前窗口的底端。" class="headerlink" title="END 显示当前窗口的底端。"></a>END 显示当前窗口的底端。</h5><p>Home 显示当前窗口的顶端。<br>NUM LOCK+数字键盘星号* 显示所选文件夹的所有子文件夹。<br>NUM LOCK+数字键盘加号+ 显示所选文件夹的内容。<br>NUM LOCK+数字键盘减号- 折叠所选的文件夹。<br>左方向键 光标左移<br>右方向键 光标右移<br>TAB 制表键</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课中 </category>
+          
+          <category> windows快捷键 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课中 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学习规则</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-学习规则："><a href="#1-学习规则：" class="headerlink" title="1. 学习规则："></a>1. 学习规则：</h2><pre><code>1. 上课时间：大小周    1. 打卡        1. 要求每天打卡四次：            1. 早上9：00（后期会有调整）、中午11：30与14：00、下午18：00    2. 教学规则        1. 上课期间手机等电子产品一律放入手机篮（手机调至静音）        2. 晚上10点准时休息        3. 学习期间不准酗酒        4. 无重大事件不准请假    3. 日报        1. 每日必填    4. 教学时间        1. 分为大小周教学    5. 教室、宿舍环境保证清洁卫生    6. 教室、宿舍禁止抽烟</code></pre><h2 id="2-时间安排-——–-gt-45天-不含休息日"><a href="#2-时间安排-——–-gt-45天-不含休息日" class="headerlink" title="2. 时间安排                ——–&gt;  45天(不含休息日)"></a>2. 时间安排                ——–&gt;  45天(不含休息日)</h2><pre><code>1. 第一章 基础              -----------&gt; 14工作天2. 第二章 操作              -----------&gt; 6工作天3. 第三章 接口测试        -----------&gt; 5工作日4. 第四章 性能测试        -----------&gt; 3工作天5. 第五章 APP测试        -----------&gt; 2工作天6. 第六章 自动化测试    -----------&gt; 6工作天7. 第七章 安全测试       -----------&gt; 1工作天8. 第八章 项目             -----------&gt; 5工作天9. 简历编写                 -----------&gt; 1工作天10. 模拟面试题分析       -----------&gt; 2工作天11. 面试题分析             -----------&gt; 30工作日(不在学习时间范围内)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课前 </category>
+          
+          <category> 学习规则 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课前 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学习规则</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-学习规则："><a href="#1-学习规则：" class="headerlink" title="1. 学习规则："></a>1. 学习规则：</h2><pre><code>1. 上课时间：大小周    1. 打卡        1. 要求每天打卡四次：            1. 早上9：00（后期会有调整）、中午11：30与14：00、下午18：00    2. 教学规则        1. 上课期间手机等电子产品一律放入手机篮（手机调至静音）        2. 晚上10点准时休息        3. 学习期间不准酗酒        4. 无重大事件不准请假    3. 日报        1. 每日必填    4. 教学时间        1. 分为大小周教学    5. 教室、宿舍环境保证清洁卫生    6. 教室、宿舍禁止抽烟</code></pre><h2 id="2-时间安排-——–-gt-45天-不含休息日"><a href="#2-时间安排-——–-gt-45天-不含休息日" class="headerlink" title="2. 时间安排                ——–&gt;  45天(不含休息日)"></a>2. 时间安排                ——–&gt;  45天(不含休息日)</h2><pre><code>1. 第一章 基础              -----------&gt; 14工作天2. 第二章 操作              -----------&gt; 6工作天3. 第三章 接口测试        -----------&gt; 5工作日4. 第四章 性能测试        -----------&gt; 3工作天5. 第五章 APP测试        -----------&gt; 2工作天6. 第六章 自动化测试    -----------&gt; 6工作天7. 第七章 安全测试       -----------&gt; 1工作天8. 第八章 项目             -----------&gt; 5工作天9. 简历编写                 -----------&gt; 1工作天10. 模拟面试题分析       -----------&gt; 2工作天11. 面试题分析             -----------&gt; 30工作日(不在学习时间范围内)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课前 </category>
+          
+          <category> 学习规则 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课前 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学习规则</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/08_%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E9%A1%B9%E7%9B%AE/08_%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E9%A1%B9%E7%9B%AE/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/08_%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E9%A1%B9%E7%9B%AE/08_%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E9%A1%B9%E7%9B%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-学习规则："><a href="#1-学习规则：" class="headerlink" title="1. 学习规则："></a>1. 学习规则：</h2><pre><code>1. 上课时间：大小周    1. 打卡        1. 要求每天打卡四次：            1. 早上9：00（后期会有调整）、中午11：30与14：00、下午18：00    2. 教学规则        1. 上课期间手机等电子产品一律放入手机篮（手机调至静音）        2. 晚上10点准时休息        3. 学习期间不准酗酒        4. 无重大事件不准请假    3. 日报        1. 每日必填    4. 教学时间        1. 分为大小周教学    5. 教室、宿舍环境保证清洁卫生    6. 教室、宿舍禁止抽烟</code></pre><h2 id="2-时间安排-——–-gt-45天-不含休息日"><a href="#2-时间安排-——–-gt-45天-不含休息日" class="headerlink" title="2. 时间安排                ——–&gt;  45天(不含休息日)"></a>2. 时间安排                ——–&gt;  45天(不含休息日)</h2><pre><code>1. 第一章 基础              -----------&gt; 14工作天2. 第二章 操作              -----------&gt; 6工作天3. 第三章 接口测试        -----------&gt; 5工作日4. 第四章 性能测试        -----------&gt; 3工作天5. 第五章 APP测试        -----------&gt; 2工作天6. 第六章 自动化测试    -----------&gt; 6工作天7. 第七章 安全测试       -----------&gt; 1工作天8. 第八章 项目             -----------&gt; 5工作天9. 简历编写                 -----------&gt; 1工作天10. 模拟面试题分析       -----------&gt; 2工作天11. 面试题分析             -----------&gt; 30工作日(不在学习时间范围内)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课前 </category>
+          
+          <category> 学习规则 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课前 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学习规则</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/07_%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/07_%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/07_%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/07_%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-学习规则："><a href="#1-学习规则：" class="headerlink" title="1. 学习规则："></a>1. 学习规则：</h2><pre><code>1. 上课时间：大小周    1. 打卡        1. 要求每天打卡四次：            1. 早上9：00（后期会有调整）、中午11：30与14：00、下午18：00    2. 教学规则        1. 上课期间手机等电子产品一律放入手机篮（手机调至静音）        2. 晚上10点准时休息        3. 学习期间不准酗酒        4. 无重大事件不准请假    3. 日报        1. 每日必填    4. 教学时间        1. 分为大小周教学    5. 教室、宿舍环境保证清洁卫生    6. 教室、宿舍禁止抽烟</code></pre><h2 id="2-时间安排-——–-gt-45天-不含休息日"><a href="#2-时间安排-——–-gt-45天-不含休息日" class="headerlink" title="2. 时间安排                ——–&gt;  45天(不含休息日)"></a>2. 时间安排                ——–&gt;  45天(不含休息日)</h2><pre><code>1. 第一章 基础              -----------&gt; 14工作天2. 第二章 操作              -----------&gt; 6工作天3. 第三章 接口测试        -----------&gt; 5工作日4. 第四章 性能测试        -----------&gt; 3工作天5. 第五章 APP测试        -----------&gt; 2工作天6. 第六章 自动化测试    -----------&gt; 6工作天7. 第七章 安全测试       -----------&gt; 1工作天8. 第八章 项目             -----------&gt; 5工作天9. 简历编写                 -----------&gt; 1工作天10. 模拟面试题分析       -----------&gt; 2工作天11. 面试题分析             -----------&gt; 30工作日(不在学习时间范围内)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课前 </category>
+          
+          <category> 学习规则 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课前 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学习规则</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-学习规则："><a href="#1-学习规则：" class="headerlink" title="1. 学习规则："></a>1. 学习规则：</h2><pre><code>1. 上课时间：大小周    1. 打卡        1. 要求每天打卡四次：            1. 早上9：00（后期会有调整）、中午11：30与14：00、下午18：00    2. 教学规则        1. 上课期间手机等电子产品一律放入手机篮（手机调至静音）        2. 晚上10点准时休息        3. 学习期间不准酗酒        4. 无重大事件不准请假    3. 日报        1. 每日必填    4. 教学时间        1. 分为大小周教学    5. 教室、宿舍环境保证清洁卫生    6. 教室、宿舍禁止抽烟</code></pre><h2 id="2-时间安排-——–-gt-45天-不含休息日"><a href="#2-时间安排-——–-gt-45天-不含休息日" class="headerlink" title="2. 时间安排                ——–&gt;  45天(不含休息日)"></a>2. 时间安排                ——–&gt;  45天(不含休息日)</h2><pre><code>1. 第一章 基础              -----------&gt; 14工作天2. 第二章 操作              -----------&gt; 6工作天3. 第三章 接口测试        -----------&gt; 5工作日4. 第四章 性能测试        -----------&gt; 3工作天5. 第五章 APP测试        -----------&gt; 2工作天6. 第六章 自动化测试    -----------&gt; 6工作天7. 第七章 安全测试       -----------&gt; 1工作天8. 第八章 项目             -----------&gt; 5工作天9. 简历编写                 -----------&gt; 1工作天10. 模拟面试题分析       -----------&gt; 2工作天11. 面试题分析             -----------&gt; 30工作日(不在学习时间范围内)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课前 </category>
+          
+          <category> 学习规则 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课前 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学习规则</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%20APP%E6%B5%8B%E8%AF%95/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%20APP%E6%B5%8B%E8%AF%95/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%20APP%E6%B5%8B%E8%AF%95/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%20APP%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-学习规则："><a href="#1-学习规则：" class="headerlink" title="1. 学习规则："></a>1. 学习规则：</h2><pre><code>1. 上课时间：大小周    1. 打卡        1. 要求每天打卡四次：            1. 早上9：00（后期会有调整）、中午11：30与14：00、下午18：00    2. 教学规则        1. 上课期间手机等电子产品一律放入手机篮（手机调至静音）        2. 晚上10点准时休息        3. 学习期间不准酗酒        4. 无重大事件不准请假    3. 日报        1. 每日必填    4. 教学时间        1. 分为大小周教学    5. 教室、宿舍环境保证清洁卫生    6. 教室、宿舍禁止抽烟</code></pre><h2 id="2-时间安排-——–-gt-45天-不含休息日"><a href="#2-时间安排-——–-gt-45天-不含休息日" class="headerlink" title="2. 时间安排                ——–&gt;  45天(不含休息日)"></a>2. 时间安排                ——–&gt;  45天(不含休息日)</h2><pre><code>1. 第一章 基础              -----------&gt; 14工作天2. 第二章 操作              -----------&gt; 6工作天3. 第三章 接口测试        -----------&gt; 5工作日4. 第四章 性能测试        -----------&gt; 3工作天5. 第五章 APP测试        -----------&gt; 2工作天6. 第六章 自动化测试    -----------&gt; 6工作天7. 第七章 安全测试       -----------&gt; 1工作天8. 第八章 项目             -----------&gt; 5工作天9. 简历编写                 -----------&gt; 1工作天10. 模拟面试题分析       -----------&gt; 2工作天11. 面试题分析             -----------&gt; 30工作日(不在学习时间范围内)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课前 </category>
+          
+          <category> 学习规则 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课前 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学习规则</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-学习规则："><a href="#1-学习规则：" class="headerlink" title="1. 学习规则："></a>1. 学习规则：</h2><pre><code>1. 上课时间：大小周    1. 打卡        1. 要求每天打卡四次：            1. 早上9：00（后期会有调整）、中午11：30与14：00、下午18：00    2. 教学规则        1. 上课期间手机等电子产品一律放入手机篮（手机调至静音）        2. 晚上10点准时休息        3. 学习期间不准酗酒        4. 无重大事件不准请假    3. 日报        1. 每日必填    4. 教学时间        1. 分为大小周教学    5. 教室、宿舍环境保证清洁卫生    6. 教室、宿舍禁止抽烟</code></pre><h2 id="2-时间安排-——–-gt-45天-不含休息日"><a href="#2-时间安排-——–-gt-45天-不含休息日" class="headerlink" title="2. 时间安排                ——–&gt;  45天(不含休息日)"></a>2. 时间安排                ——–&gt;  45天(不含休息日)</h2><pre><code>1. 第一章 基础              -----------&gt; 14工作天2. 第二章 操作              -----------&gt; 6工作天3. 第三章 接口测试        -----------&gt; 5工作日4. 第四章 性能测试        -----------&gt; 3工作天5. 第五章 APP测试        -----------&gt; 2工作天6. 第六章 自动化测试    -----------&gt; 6工作天7. 第七章 安全测试       -----------&gt; 1工作天8. 第八章 项目             -----------&gt; 5工作天9. 简历编写                 -----------&gt; 1工作天10. 模拟面试题分析       -----------&gt; 2工作天11. 面试题分析             -----------&gt; 30工作日(不在学习时间范围内)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课前 </category>
+          
+          <category> 学习规则 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课前 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学习规则</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-学习规则："><a href="#1-学习规则：" class="headerlink" title="1. 学习规则："></a>1. 学习规则：</h2><pre><code>1. 上课时间：大小周    1. 打卡        1. 要求每天打卡四次：            1. 早上9：00（后期会有调整）、中午11：30与14：00、下午18：00    2. 教学规则        1. 上课期间手机等电子产品一律放入手机篮（手机调至静音）        2. 晚上10点准时休息        3. 学习期间不准酗酒        4. 无重大事件不准请假    3. 日报        1. 每日必填    4. 教学时间        1. 分为大小周教学    5. 教室、宿舍环境保证清洁卫生    6. 教室、宿舍禁止抽烟</code></pre><h2 id="2-时间安排-——–-gt-45天-不含休息日"><a href="#2-时间安排-——–-gt-45天-不含休息日" class="headerlink" title="2. 时间安排                ——–&gt;  45天(不含休息日)"></a>2. 时间安排                ——–&gt;  45天(不含休息日)</h2><pre><code>1. 第一章 基础              -----------&gt; 14工作天2. 第二章 操作              -----------&gt; 6工作天3. 第三章 接口测试        -----------&gt; 5工作日4. 第四章 性能测试        -----------&gt; 3工作天5. 第五章 APP测试        -----------&gt; 2工作天6. 第六章 自动化测试    -----------&gt; 6工作天7. 第七章 安全测试       -----------&gt; 1工作天8. 第八章 项目             -----------&gt; 5工作天9. 简历编写                 -----------&gt; 1工作天10. 模拟面试题分析       -----------&gt; 2工作天11. 面试题分析             -----------&gt; 30工作日(不在学习时间范围内)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课前 </category>
+          
+          <category> 学习规则 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课前 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学习规则</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/02_%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%93%8D%E4%BD%9C/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/02_%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%93%8D%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-学习规则："><a href="#1-学习规则：" class="headerlink" title="1. 学习规则："></a>1. 学习规则：</h2><pre><code>1. 上课时间：大小周    1. 打卡        1. 要求每天打卡四次：            1. 早上9：00（后期会有调整）、中午11：30与14：00、下午18：00    2. 教学规则        1. 上课期间手机等电子产品一律放入手机篮（手机调至静音）        2. 晚上10点准时休息        3. 学习期间不准酗酒        4. 无重大事件不准请假    3. 日报        1. 每日必填    4. 教学时间        1. 分为大小周教学    5. 教室、宿舍环境保证清洁卫生    6. 教室、宿舍禁止抽烟</code></pre><h2 id="2-时间安排-——–-gt-45天-不含休息日"><a href="#2-时间安排-——–-gt-45天-不含休息日" class="headerlink" title="2. 时间安排                ——–&gt;  45天(不含休息日)"></a>2. 时间安排                ——–&gt;  45天(不含休息日)</h2><pre><code>1. 第一章 基础              -----------&gt; 14工作天2. 第二章 操作              -----------&gt; 6工作天3. 第三章 接口测试        -----------&gt; 5工作日4. 第四章 性能测试        -----------&gt; 3工作天5. 第五章 APP测试        -----------&gt; 2工作天6. 第六章 自动化测试    -----------&gt; 6工作天7. 第七章 安全测试       -----------&gt; 1工作天8. 第八章 项目             -----------&gt; 5工作天9. 简历编写                 -----------&gt; 1工作天10. 模拟面试题分析       -----------&gt; 2工作天11. 面试题分析             -----------&gt; 30工作日(不在学习时间范围内)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课前 </category>
+          
+          <category> 学习规则 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课前 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学习规则</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-学习规则："><a href="#1-学习规则：" class="headerlink" title="1. 学习规则："></a>1. 学习规则：</h2><pre><code>1. 上课时间：大小周    1. 打卡        1. 要求每天打卡四次：            1. 早上9：00（后期会有调整）、中午11：30与14：00、下午18：00    2. 教学规则        1. 上课期间手机等电子产品一律放入手机篮（手机调至静音）        2. 晚上10点准时休息        3. 学习期间不准酗酒        4. 无重大事件不准请假    3. 日报        1. 每日必填    4. 教学时间        1. 分为大小周教学    5. 教室、宿舍环境保证清洁卫生    6. 教室、宿舍禁止抽烟</code></pre><h2 id="2-时间安排-——–-gt-45天-不含休息日"><a href="#2-时间安排-——–-gt-45天-不含休息日" class="headerlink" title="2. 时间安排                ——–&gt;  45天(不含休息日)"></a>2. 时间安排                ——–&gt;  45天(不含休息日)</h2><pre><code>1. 第一章 基础              -----------&gt; 14工作天2. 第二章 操作              -----------&gt; 6工作天3. 第三章 接口测试        -----------&gt; 5工作日4. 第四章 性能测试        -----------&gt; 3工作天5. 第五章 APP测试        -----------&gt; 2工作天6. 第六章 自动化测试    -----------&gt; 6工作天7. 第七章 安全测试       -----------&gt; 1工作天8. 第八章 项目             -----------&gt; 5工作天9. 简历编写                 -----------&gt; 1工作天10. 模拟面试题分析       -----------&gt; 2工作天11. 面试题分析             -----------&gt; 30工作日(不在学习时间范围内)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课前 </category>
+          
+          <category> 学习规则 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课前 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计算机基础</title>
+      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<ol><li><h3 id="练习打字：要求1000字的文章，平均一分钟35字"><a href="#练习打字：要求1000字的文章，平均一分钟35字" class="headerlink" title="练习打字：要求1000字的文章，平均一分钟35字"></a>练习打字：要求1000字的文章，平均一分钟35字</h3></li><li><h3 id="操作系统："><a href="#操作系统：" class="headerlink" title="操作系统："></a>操作系统：</h3><ol><li><p><a href="../901_%E6%96%87%E4%BB%B6/01_windows%E5%BF%AB%E6%8D%B7%E9%94%AE/">windows快捷键</a></p><ol><li>win+r  —-&gt; cmd—-&gt; 输入  ipconfig   查看本机ip</li><li>win+r  —-&gt; cmd—-&gt; 输入ping + url（ip）  查看与对方url（ip）是否互通</li></ol></li><li><p><a href="../901_%E6%96%87%E4%BB%B6/02_Linux%E7%B3%BB%E7%BB%9F/">Linux</a></p></li><li><p><a href="../901_%E6%96%87%E4%BB%B6/03_windows%E4%B8%8Elinux%E7%9A%84%E5%8C%BA%E5%88%AB/">windows与linux的区别</a></p></li></ol></li><li><h3 id="编程基础："><a href="#编程基础：" class="headerlink" title="编程基础："></a>编程基础：</h3><ol><li><p>什么是编程语言</p><ol><li>编程语言（programming language）可以简单的理解为一种计算机和人都能识别的语言。一种计算机语言让程序员能够准确地定义计算机所需要使用的数据，并精确地定义在不同情况下所应当采取的行动。编程语言处在不断的发展和变化中，从最初的机器语言发展到如今的2500种以上的高级语言，每种语言都有其特定的用途和不同的发展轨迹。编程语言并不像人类自然语言发展变化一样的缓慢而又持久，其发展是相当快速的，这主要是计算机硬件、互联网和IT业的发展促进了编程语言的发展。</li><li><a href="https://www.runoob.com/">编码基础课程（所有）</a></li></ol></li></ol></li><li><h3 id="公司中常用的文件类型"><a href="#公司中常用的文件类型" class="headerlink" title="公司中常用的文件类型"></a>公司中常用的文件类型</h3><ol><li><p>.txt，.doc（word），.xls（excel），.ppt，.pdf,   .csv、.xmind</p><pre><code> 压缩文件：.rar格式，.zip格式，.tar格式 执行文件：.bat格式（windows），.sh格式（linux），.exe格式（windows） 日志文件：.log（一般是日志debug日志，系统日志，错误日志）</code></pre><ul><li><p>xmind 快捷键</p><ul><li><img src="/assets/image-20220215095739-lhdjz41.png" alt="image.png"></li></ul></li></ul></li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课中 </category>
+          
+          <category> 计算机基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课中 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>学习规则</title>
       <link href="/2022/04/23/01_%E8%AF%BE%E5%89%8D/06_%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%99/"/>
       <url>/2022/04/23/01_%E8%AF%BE%E5%89%8D/06_%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%99/</url>
       
-        <content type="html"><![CDATA[<ol><li><h4 id="学习规则："><a href="#学习规则：" class="headerlink" title="学习规则："></a>学习规则：</h4><ol><li><p>上课时间：大小周</p><ol><li><p>打卡</p><ol><li><p>要求每天打卡四次：</p><ol><li>早上9：00（后期会有调整）、中午11：30与14：00、下午18：00</li></ol></li></ol></li><li><p>教学规则</p><ol><li>上课期间手机等电子产品一律放入手机篮（手机调至静音）</li><li>晚上10点准时休息</li><li>学习期间不准酗酒</li><li>无重大事件不准请假</li></ol></li><li><p>日报</p><ol><li>每日必填</li></ol></li><li><p>教学时间</p><ol><li>分为大小周教学</li></ol></li><li><p>教室、宿舍环境保证清洁卫生</p></li><li><p>教室、宿舍禁止抽烟</p></li></ol></li></ol></li><li><h4 id="时间安排-——–-gt-45天-不含休息日"><a href="#时间安排-——–-gt-45天-不含休息日" class="headerlink" title="时间安排                ——–&gt;  45天(不含休息日)"></a>时间安排                ——–&gt;  45天(不含休息日)</h4><ol><li><a href="assets/%E8%AF%BE%E7%A8%8B%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D-20211223165158-eyfor9x.xlsx">课程详细介绍.xlsx</a></li><li>第一章 基础              ———–&gt; 14工作天</li><li>第二章 操作              ———–&gt; 6工作天</li><li>第三章 接口测试        ———–&gt; 5工作日</li><li>第四章 性能测试        ———–&gt; 3工作天</li><li>第五章 APP测试        ———–&gt; 2工作天</li><li>第六章 自动化测试    ———–&gt; 6工作天</li><li>第七章 安全测试       ———–&gt; 1工作天</li><li>第八章 项目             ———–&gt; 5工作天</li><li>简历编写                 ———–&gt; 1工作天</li><li>模拟面试题分析       ———–&gt; 2工作天</li><li>面试题分析             ———–&gt; 30工作日(不在学习时间范围内)</li></ol></li></ol>]]></content>
+        <content type="html"><![CDATA[<h2 id="1-学习规则："><a href="#1-学习规则：" class="headerlink" title="1. 学习规则："></a>1. 学习规则：</h2><pre><code>1. 上课时间：大小周    1. 打卡        1. 要求每天打卡四次：            1. 早上9：00（后期会有调整）、中午11：30与14：00、下午18：00    2. 教学规则        1. 上课期间手机等电子产品一律放入手机篮（手机调至静音）        2. 晚上10点准时休息        3. 学习期间不准酗酒        4. 无重大事件不准请假    3. 日报        1. 每日必填    4. 教学时间        1. 分为大小周教学    5. 教室、宿舍环境保证清洁卫生    6. 教室、宿舍禁止抽烟</code></pre><h2 id="2-时间安排-——–-gt-45天-不含休息日"><a href="#2-时间安排-——–-gt-45天-不含休息日" class="headerlink" title="2. 时间安排                ——–&gt;  45天(不含休息日)"></a>2. 时间安排                ——–&gt;  45天(不含休息日)</h2><pre><code>1. 第一章 基础              -----------&gt; 14工作天2. 第二章 操作              -----------&gt; 6工作天3. 第三章 接口测试        -----------&gt; 5工作日4. 第四章 性能测试        -----------&gt; 3工作天5. 第五章 APP测试        -----------&gt; 2工作天6. 第六章 自动化测试    -----------&gt; 6工作天7. 第七章 安全测试       -----------&gt; 1工作天8. 第八章 项目             -----------&gt; 5工作天9. 简历编写                 -----------&gt; 1工作天10. 模拟面试题分析       -----------&gt; 2工作天11. 面试题分析             -----------&gt; 30工作日(不在学习时间范围内)</code></pre>]]></content>
       
       
       <categories>
@@ -87,19 +585,6 @@
       <title>hello-world - 副本</title>
       <link href="/2022/04/23/03_%E8%AF%BE%E5%90%8E/hello-world/"/>
       <url>/2022/04/23/03_%E8%AF%BE%E5%90%8E/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>hello-world - 副本</title>
-      <link href="/2022/04/23/02_%E8%AF%BE%E4%B8%AD/hello-world/"/>
-      <url>/2022/04/23/02_%E8%AF%BE%E4%B8%AD/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
