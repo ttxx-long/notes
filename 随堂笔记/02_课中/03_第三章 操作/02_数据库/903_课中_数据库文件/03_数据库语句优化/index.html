@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		数据库语句优化 | 
+	 
+	TTXX课程
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<header id="header">
+    <a id="title" href="/" class="logo">TTXX课程</a>
+
+	<ul id="menu">
+		<!-- <li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li> -->
+	
+
+	
+
+		<!-- <li class="menu-item">
+			<a href="/" class="menu-item-link" target="_blank">
+				ttxx
+			</a>
+		</li> -->
+		<li class="menu-item">
+			<a href="/" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	<script>
+		var kiaguan = false
+		if (kiaguan == true) {
+			
+var passwor = "ttxxjs";
+var password=""
+password=prompt('请输入密码(本网站需输入密码才可以进入):','');
+function custom_close(){undefined
+window.opener=null;
+window.open('','_self');
+window.close();
+}
+	
+	if (password !=passwor){undefined
+	custom_close();
+	//加这一段是为了避免有些浏览器不支持关闭浏览器的js ,所以请求跳转到一个新页面！
+	window.location.href='/';
+};
+		}	
+		color="122 103 238" opacity='0.7' zIndex="-2" count="2000" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+
+	</script>
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										随堂笔记
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01_课前
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/01_%E8%AF%BE%E5%89%8D/01_%E5%88%9D%E8%AF%86%E6%B5%8B%E8%AF%95/" >
+                     
+										    01_初识测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/01_%E8%AF%BE%E5%89%8D/02_%E6%B5%8B%E8%AF%95%E8%A1%8C%E4%B8%9A/" >
+                     
+										    02_测试行业
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/01_%E8%AF%BE%E5%89%8D/03_%E5%A4%9A%E7%BB%B4%E5%BA%A6%E5%88%86%E6%9E%90/" >
+                     
+										    03_多维度分析
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/01_%E8%AF%BE%E5%89%8D/04_%E8%96%AA%E8%B5%84%E5%88%86%E6%9E%90/" >
+                     
+										    04_薪资分析
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/01_%E8%AF%BE%E5%89%8D/05_%E6%B5%8B%E8%AF%95%E7%B4%A0%E8%B4%A8/" >
+                     
+										    05_测试素质
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/01_%E8%AF%BE%E5%89%8D/06_%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%99/" >
+                     
+										    06_学习规则
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										02_课中
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01_第一章 基础
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" >
+                     
+										    01_计算机基础
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E6%A6%82%E5%BF%B5/" >
+                     
+										    02_测试理论概念
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										901_文件
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01_计算机基础
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/01_windows%E5%BF%AB%E6%8D%B7%E9%94%AE/" >
+                     
+										    01_windows快捷键
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/02_Linux%E7%B3%BB%E7%BB%9F/" >
+                     
+										    02_Linux系统
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/03_windows%E4%B8%8Elinux%E7%9A%84%E5%8C%BA%E5%88%AB/" >
+                     
+										    03_windows与linux的区别
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										902_测试理论
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92/" >
+                     
+										    01_测试计划
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E5%88%86%E7%B1%BB/" >
+                     
+										    02_软件测试的分类
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95/" >
+                     
+										    03_黑盒测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E6%B5%8B%E8%AF%95%E7%A7%8D%E7%B1%BB%E5%88%92%E5%88%86/" >
+                     
+										    04_测试种类划分
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1/" >
+                     
+										    05_测试用例设计
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%99%BB%E5%BD%95/" >
+                     
+										    06_登录
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/07_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%89%A7%E8%A1%8C/" >
+                     
+										    07_软件测试执行
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/08_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A/" >
+                     
+										    08_软件测试报告
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E6%B5%8B%E8%AF%95%E6%A6%82%E5%BF%B5%E6%80%BB%E7%BB%93/" >
+                     
+										    09_测试概念总结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E8%BF%AD%E4%BB%A3%E6%A8%A1%E5%9E%8B/" >
+                     
+										    10_迭代模型
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										02_第二章 接口测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/02_%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/01_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/" >
+                     
+										    01_接口测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										03_第三章 操作
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01_Linux系统
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/01_Linux%E7%B3%BB%E7%BB%9F/01_linux%E7%B3%BB%E7%BB%9F/" >
+                     
+										    01_linux系统
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										902_课中_linux文件
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/01_Linux%E7%B3%BB%E7%BB%9F/902_%E8%AF%BE%E4%B8%AD_linux%E6%96%87%E4%BB%B6/01_Linux%E5%91%BD%E4%BB%A4/" >
+                     
+										    01_Linux命令
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/01_Linux%E7%B3%BB%E7%BB%9F/902_%E8%AF%BE%E4%B8%AD_linux%E6%96%87%E4%BB%B6/02_linux%E5%91%BD%E4%BB%A4%E5%AE%9E%E6%93%8D/" >
+                     
+										    02_linux命令实操
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										02_数据库
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/01_%E6%95%B0%E6%8D%AE%E5%BA%93/" >
+                     
+										    01_数据库
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										903_课中_数据库文件
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/01_%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" >
+                     
+										    01_数据库基础知识
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/02_%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/" >
+                     
+										    02_数据库命令行操作
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/03_%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%AD%E5%8F%A5%E4%BC%98%E5%8C%96/" >
+                     
+										    03_数据库语句优化
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/04_%E5%85%B6%E4%BB%96%E8%BF%9E%E6%8E%A5%E5%B7%A5%E5%85%B7/" >
+                     
+										    04_其他连接工具
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/05_%E7%B4%A2%E5%BC%95/" >
+                     
+										    05_索引
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/06_%E4%B8%BB%E9%94%AE/" >
+                     
+										    06_主键
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/07_explain%E8%AF%A6%E8%A7%A3/" >
+                     
+										    07_explain详解
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/08_%E7%B4%A2%E5%BC%95%E6%96%87%E7%8C%AE/" >
+                     
+										    08_索引文献
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/09_%E7%A3%81%E7%9B%98/" >
+                     
+										    09_磁盘
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										03_网络协议
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/01_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/" >
+                     
+										    01_网络协议
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										904_网络协议文件
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/01_%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/" >
+                     
+										    01_网络技术
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/02_wireshark%E4%BB%8B%E7%BB%8D/" >
+                     
+										    02_wireshark介绍
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/03_%E7%BD%91%E7%BB%9C%E5%B1%82/" >
+                     
+										    03_网络层
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/04_%E4%BC%A0%E8%BE%93%E5%B1%82/" >
+                     
+										    04_传输层
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/05_%E5%BA%94%E7%94%A8%E5%B1%82/" >
+                     
+										    05_应用层
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										06_http协议
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/01_HTTP%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3/" >
+                     
+										    01_HTTP协议详解
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/02_%E7%BC%93%E5%AD%98/" >
+                     
+										    02_缓存
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/03_%E4%BB%A3%E7%90%86/" >
+                     
+										    03_代理
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/04_%E7%8A%B6%E6%80%81%E7%A0%81/" >
+                     
+										    04_状态码
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/05_cookie/" >
+                     
+										    05_cookie
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										04_第四章 性能测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/" >
+                     
+										    04_第四章 性能测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										05_第五章 APP测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%20APP%E6%B5%8B%E8%AF%95/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%20APP%E6%B5%8B%E8%AF%95/" >
+                     
+										    05_第五章 APP测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										06_第六章 自动化测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/" >
+                     
+										    06_第六章 自动化测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										07_第七章 安全测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/07_%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/07_%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/" >
+                     
+										    07_第七章 安全测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										08_第八章 项目
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/08_%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E9%A1%B9%E7%9B%AE/08_%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E9%A1%B9%E7%9B%AE/" >
+                     
+										    08_第八章 项目
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										09_简历编写
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/" >
+                     
+										    09_简历编写
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										10_模拟面试题分析
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/" >
+                     
+										    10_模拟面试题分析
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										11_面试题分析
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/" >
+                     
+										    11_面试题分析
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										03_课后
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/03_%E8%AF%BE%E5%90%8E/hello-world/" >
+                     
+										    hello-world
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										04_工具
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01_jmeter
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/04_%E5%B7%A5%E5%85%B7/01_jmeter/01_jmeter/" >
+                     
+										    01_jmeter
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										02_postman
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/04_%E5%B7%A5%E5%85%B7/02_postman/02_postman/" >
+                     
+										    02_postman
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										03_soap UI
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/04_%E5%B7%A5%E5%85%B7/03_soap%20UI/03_soap%20UI/" >
+                     
+										    03_soap UI
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										04_VMware
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/04_%E5%B7%A5%E5%85%B7/04_VMware/04_VMware/" >
+                     
+										    04_VMware
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										05_Xshell
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/04_%E5%B7%A5%E5%85%B7/05_Xshell/05_Xshell/" >
+                     
+										    05_Xshell
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										06_navicat
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/04_%E5%B7%A5%E5%85%B7/06_navicat/01_navicat%E5%AE%89%E8%A3%85/" >
+                     
+										    01_navicat安装
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/04_%E5%B7%A5%E5%85%B7/06_navicat/02_SQL%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/" >
+                     
+										    02_SQL语句练习
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/04_%E5%B7%A5%E5%85%B7/hello-world/" >
+                     
+										    hello-world
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										05_其他
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/05_%E5%85%B6%E4%BB%96/hello-world/" >
+                     
+										    hello-world
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/hello-world/" >
+                     
+										    hello-world
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+	数据库语句优化
+</h1>
+<div class="article-meta">
+	
+		<span>
+			阅读量:<span id="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/03_%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%AD%E5%8F%A5%E4%BC%98%E5%8C%96/" class="leancloud_visitors" data-flag-title="数据库语句优化"></span>
+		</span>
+	
+	<span>yulong</span>
+	<span>2022-04-24 15:31:24</span>
+		<div id="article-categories">
+    
+		<span>Categories：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-folder" aria-hidden="true">
+                        <a href="/categories/课中/">课中</a>
+                        </i>
+                      
+                        >
+                      
+                    </span>
+                
+            
+                
+                    <span>
+                        <i class="fa fa-folder" aria-hidden="true">
+                        <a href="/categories/课中/数据库语句优化/">数据库语句优化</a>
+                        </i>
+                      
+                    </span>
+                
+            
+    
+
+    
+		<span>Tags：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-tag" aria-hidden="true">
+                        <a href="/tags/课前/">课前</a>
+                        </i>
+                    </span>
+                
+            
+    
+		</div>
+
+</div>
+
+<div id="article-content">
+	<p>在MySQL数据库怎么加快查询速度，优化查询效率，主要原则就是应尽量避免全表扫描，应该考虑在where及order by 涉及的列上建立索引。</p>
+<p>　　建立索引不是建的越多越好，原则是：</p>
+<p>　　第一：一个表的索引不是越多越好，也没有一个具体的数字，根据以往的经验，一个表的索引最多不能超过6个，因为索引越多，对update和insert操作也会有性能的影响，涉及到索引的新建和重建操作。</p>
+<p>　　第二：建立索引的方法论为：</p>
+<p>　　多数查询经常使用的列；<br>　　很少进行修改操作的列；<br>　　索引需要建立在数据差异化大的列上<br>　　利用以上的基础我们讨论一下如何优化sql.</p>
+<p>1、MySQY语句模型结构优化指导</p>
+<p>　　　　a. ORDER BY + LIMIT组合的索引优化</p>
+<p>　　　　　　如果一个SQL语句形如：SELECT [column1],[column2],…. FROM [TABLE] ORDER BY [sort] LIMIT [offset],[LIMIT];</p>
+<p>　　　　　　这个SQL语句优化比较简单，在[sort]这个栏位上建立索引即可。</p>
+<p>　　　　b. WHERE + ORDER BY + LIMIT组合的索引优化</p>
+<p>　　　　　　如果一个SQL语句形如：SELECT [column1],[column2],…. FROM [TABLE] WHERE [columnX] &#x3D; [VALUE] ORDER BY [sort] LIMIT [offset],[LIMIT];</p>
+<p>　　　　　　这个语句，如果你仍然采用第一个例子中建立索引的方法，虽然可以用到索引，但是效率不高。更高效的方法是建立一个联合索引(columnX,sort)</p>
+<p>　　　　c. WHERE+ORDER BY多个栏位+LIMIT</p>
+<p>　　　　　　 如果一个SQL语句形如：SELECT * FROM [table] WHERE uid&#x3D;1 ORDER x,y LIMIT 0,10;</p>
+<p>　　　　　　 对于这个语句，大家可能是加一个这样的索引:(x,y,uid)。但实际上更好的效果是(uid,x,y)。这是由MySQL处理排序的机制造成的。</p>
+<p>　　2、复合索引(形如(x,y,uid)索引的索引)</p>
+<p>　　　　先看这样一条语句这样的：select* from users where area &#x3D;’beijing’ and age&#x3D;22;</p>
+<p>　　 　 如果我们是在area和age上分别创建索引的话，由于mysql查询每次只能使用一个索引，所以虽然这样已经相对不做索引时全表扫描提高了很多效率，但是如果area，age两列上创建复合索引的话将带来更高的效率。</p>
+<pre><code>　　  在使用索引字段作为条件时，如果该索引是复合索引，那么必须使用到该索引中的第一个字段作为条件时才能保证系统使用该索引，否则该索引将不会被使用，并且应尽可能的让字段顺序与索引顺序相一致。
+</code></pre>
+<p>　　　 例如我们建立了一个这样的索引（area,age,salary），那么其实相当于创建了（area,age,salary）,(area,age),(area)三个索引，这样称为最佳左前缀特性。</p>
+<p>　　3、like语句优化</p>
+<p>　　　　SELECT id FROM A WHERE name like ‘%abc%’<br> 　　　　　　由于abc前面用了“%”，因此该查询必然走全表查询，除非必要，否则不要在关键词前加%，优化成如下</p>
+<p>　　　　SELECT id FROM A WHERE name like ‘abc%’<br> 　　4、where子句使用 ！&#x3D; 或 &lt;&gt; 操作符优化</p>
+<p>　　　　　在where子句中使用 ！&#x3D; 或 &lt;&gt;操作符，索引将被放弃使用，会进行全表查询。</p>
+<p> 　　　　如SQL:SELECT id FROM A WHERE ID !&#x3D; 5 优化成：SELECT id FROM A WHERE ID&gt;5 OR ID&lt;5</p>
+<p>　　5、where子句中使用 IS NULL 或 IS NOT NULL 的优化</p>
+<p>　　　　在where子句中使用 IS NULL 或 IS NOT NULL 判断，索引将被放弃使用，会进行全表查询。</p>
+<p>　　 　　如SQL:SELECT id FROM A WHERE num IS NULL 优化成num上设置默认值0，确保表中num没有null值，然后SQL为：SELECT id FROM A WHERE num&#x3D;0</p>
+<p>　　6、where子句使用or的优化</p>
+<p>　　　　很多时候使用union all 或 nuin(必要的时候)的方式替换“or”会得到更好的效果。where子句中使用了or,索引将被放弃使用。</p>
+<p>　　 　　如SQL:SELECT id FROM A WHERE num &#x3D;10 or num &#x3D; 20 优化成：SELECT id FROM A WHERE num &#x3D; 10 union all SELECT id FROM A WHERE num&#x3D;20</p>
+<p>　　7、where子句使用IN 或 NOT IN的优化</p>
+<p>　　　　in和not in 也要慎用，否则也会导致全表扫描。</p>
+<p>　　 　　方案一：between替换in</p>
+<p>　　 　　　　如SQL:SELECT id FROM A WHERE num in(1,2,3) 优化成：SELECT id FROM A WHERE num between 1 and 3</p>
+<p>　　 　　方案二：exist替换in</p>
+<p>　　 　　　　如SQL:SELECT id FROM A WHERE num in(select num from b ) 优化成：SELECT num FROM A WHERE num exists(select 1 from B where B.num &#x3D; A.num)</p>
+<p>　　 　　方案三：left join替换in</p>
+<p>　　　　　　如SQL:SELECT id FROM A WHERE num in(select num from B) 优化成：SELECT id FROM A LEFT JOIN B ON A.num &#x3D; B.num</p>
+<p>　　8、where子句中对字段进行表达式操作的优化</p>
+<p>　　　　不要在where子句中的“&#x3D;”左边进行函数、算数运算或其他表达式运算，否则系统将可能无法正确使用索引。</p>
+<p>　　 　　如SQL:SELECT id FROM A WHERE num&#x2F;2 &#x3D; 100 优化成：SELECT id FROM A WHERE num &#x3D; 100*2</p>
+<p>　　 　　如SQL:SELECT id FROM A WHERE datediff(day,createdate,’2016-11-30’)&#x3D;0 优化成：SELECT id FROM A WHERE createdate&gt;&#x3D;’2016-11-30’ and createdate&lt;’2016-12-1’</p>
+<p>　　 　　如SQL:SELECT id FROM A WHERE year(addate) &lt;2016 优化成：SELECT id FROM A where addate&lt;’2016-01-01’</p>
+<p>　　9、任何地方都不要用 select * from table ，用具体的字段列表替换”*”，不要返回用不到的字段　　</p>
+<p>　　10、使用“临时表”暂存中间结果</p>
+<p>　　　　采用临时表暂存中间结果好处：</p>
+<p>　　　　　　（1）避免程序中多次扫描主表，减少程序执行“共享锁”阻塞“更新锁”，减少了阻塞，提高了并发性能。</p>
+<p>　　　　　　（2）尽量使用表变量来代替临时表。如果表变量包含大量数据，请注意索引非常有限（只有主键索引）。</p>
+<p>　　　　　　（3）避免频繁创建和删除临时表，以减少系统资源的浪费。</p>
+<p>　　　　　　（4）尽量避免向客户端返回大数据量，若数据量过大，应考虑相应需求是否合理。</p>
+<p>　　11、limit分页优化</p>
+<p>　　　　　　总数据有500万左右，以下例子</p>
+<p>   　　　　　　select * from wl_tagindex where byname&#x3D;’f’ order by id limit 300000,10 执行时间是 3.21s</p>
+<p>　　　　　　优化后：</p>
+<p>　　　　　　　　select * from (</p>
+<p>   　　　　　　　　　　select id from wl_tagindex</p>
+<p>　　　　　　　　　　where byname&#x3D;’f’ order by id limit 300000,10</p>
+<p>　　　　　　　　) a</p>
+<p>　　　　　　　　left join wl_tagindex b on a.id&#x3D;b.id</p>
+<p>   　　　　　　执行时间为 0.11s 速度明显提升</p>
+<p>   　　　　　　这里需要说明的是 我这里用到的字段是 byname ,id 需要把这两个字段做复合索引，否则的话效果提升不明显</p>
+<p>　　12、批量插入优化</p>
+<p>　　　　　　INSERT into person(name,age) values(‘A’,14)<br>　　　　　　INSERT into person(name,age) values(‘B’,14)<br>　　　　　　INSERT into person(name,age) values(‘C’,14)<br>　　　　可优化为：</p>
+<p>　　　　　　INSERT into person(name,age) values(‘A’,14),(‘B’,14),(‘C’,14),<br>　　13、利用limit 1 、top 1 取得一行，<br>　　　　但是需要注意的是，Top关键字只能在SQL Server数据库中可以使用，而在MySQL数据库中就要使用具有同样功能的LIMIT函数</p>
+<p>　　　　有时要查询一张表时，你知道只需要看一条记录，你可能去查询一条特殊的记录。可以使用limit 1 或者 top 1 来终止数据库索引继续扫描整个表或索引。</p>
+<p>　　　　如SQL：SELECT id FROM A LIKE ‘abc%’ 优化为：SELECT id FROM A LIKE ‘abc%’ limit 1</p>
+<p>　　14、尽量不要使用 BY RAND()命令</p>
+<p>　　　　BY RAND()是随机显示结果，这个函数可能会为表中每一个独立的行执行BY RAND()命令，这个会消耗处理器的处理能力。</p>
+<p>　　　　如SQL：SELECT * FROM A order by rand() limit 10 优化为：SELECT * FROM A WHERE id &gt;&#x3D; ((SELECT MAX(id) FROM A)-(SELECT MIN(id) FROM A)) * RAND() + (SELECT MIN(id) FROM A) LIMIT 10</p>
+<p>　　15、排序的索引问题　</p>
+<p>　　 　Mysql查询只是用一个索引，因此如果where子句中已经使用了索引的话，那么order by中的列是不会使用索引的。因此数据库默认排序可以符合要求情况下不要使用排序操作；</p>
+<p>　　　尽量不要包含多个列的排序，如果需要最好给这些列创建复合索引。</p>
+<p>　　16、尽量用 union all 替换 union</p>
+<p>　　　union和union all的差异主要是前者需要将两个（或者多个）结果集合并后再进行唯一性过滤操作，这就会涉及到排序，增加大量的cpu运算，加大资源消耗及延迟。所以当我们可以确认不可能出现重复结果集或者不在乎重复结果集的时候，尽量使用union all而不是union</p>
+<p>　　17、避免类型转换</p>
+<p>　　　这里所说的“类型转换”是指where子句中出现column字段的类型和传入的参数类型不一致的时候发生的类型转换。人为的上通过转换函数进行转换，直接导致mysql无法使用索引。如果非要转型，应该在传入参数上进行转换。</p>
+<pre><code>   　例如utime 是datetime类型，传入的参数是“2016-07-23”，在比较大小时通常是 date（utime）&gt;&quot;2016-07-23&quot;,可以优化为utime&gt;&quot;2016-07-23 00：00：00&quot;
+</code></pre>
+<p>　　18、尽可能使用更小的字段　　　　　　 　　</p>
+<p>　　　　MySQL从磁盘读取数据后是存储到内存中的，然后使用cpu周期和磁盘I&#x2F;O读取它，这意味着越小的数据类型占用的空间越小，从磁盘读或打包到内存的效率都更好，但也不要太过执着减小数据类型，要是以后应用程序发生什么变化就没有空间了。</p>
+<p>　　　　修改表将需要重构，间接地可能引起代码的改变，这是很头疼的问题，因此需要找到一个平衡点。</p>
+<p>　　19、Inner join 和 left join、right join、子查询</p>
+<p>　　第一：inner join内连接也叫等值连接是，left&#x2F;rightjoin是外连接。</p>
+<p>　　　　 SELECT A.id,A.name,B.id,B.name FROM A LEFT JOIN B ON A.id &#x3D;B.id;</p>
+<p>　　　　 SELECT A.id,A.name,B.id,B.name FROM A RIGHT JOIN ON B A.id&#x3D; B.id;</p>
+<p>　　　　 SELECT A.id,A.name,B.id,B.name FROM A INNER JOIN ON A.id &#x3D;B.id;</p>
+<p>　　 　　经过来之多方面的证实inner join性能比较快，因为inner join是等值连接，或许返回的行数比较少。但是我们要记得有些语句隐形的用到了等值连接，如：</p>
+<p>　　　　SELECT A.id,A.name,B.id,B.name FROM A,B WHERE A.id &#x3D; B.id;</p>
+<p>　　　　推荐：能用inner join连接尽量使用inner join连接</p>
+<p>　　 第二：子查询的性能又比外连接性能慢，尽量用外连接来替换子查询。</p>
+<p>　　　　Select* from A where exists (select * from B where id&gt;&#x3D;3000 and A.uuid&#x3D;B.uuid);</p>
+<p>　　　　A表的数据为十万级表，B表为百万级表，在本机执行差不多用2秒左右，我们可以通过explain可以查看到子查询是一个相关子查询(DEPENDENCE SUBQUERY);Mysql是先对外表A执行全表查询，然后根据uuid逐次执行子查询，如果外层表是一个很大的表，我们可以想象查询性能会表现比这个更加糟糕。</p>
+<pre><code>  　　一种简单的优化就是用innerjoin的方法来代替子查询，查询语句改为：
+</code></pre>
+<p>  　　　Select* from A inner join B ON A.uuid&#x3D;B.uuid using(uuid) where b.uuid&gt;&#x3D;3000;  这个语句执行测试不到一秒；</p>
+<p>　　第三：使用JOIN时候，应该用小的结果驱动打的结果（left join 左边表结果尽量小，如果有条件应该放到左边先处理，right join同理反向），同时尽量把牵涉到多表联合的查询拆分多个query (多个表查询效率低，容易锁表和阻塞)。如：</p>
+<p>　　Select * from A left join B A.id&#x3D;B.ref_id where  A.id&gt;10;可以优化为：select * from (select * from A wehre id &gt;10) T1 left join B on T1.id&#x3D;B.ref_id;</p>
+<p>　　20、exist 代替 in</p>
+<p>SELECT * from A WHERE idin (SELECT id from B)<br>SELECT * from A WHERE id EXISTS(SELECT 1 from A.id&#x3D; B.id)<br>　　in 是在内存中遍历比较</p>
+<p>　　exist 需要查询数据库，所以当B的数据量比较大时，exists效率优于in.</p>
+<p>　　in()只执行一次，把B表中的所有id字段缓存起来，之后检查A表的id是否与B表中的id相等，如果id相等则将A表的记录加入到结果集中，直到遍历完A表的所有记录。</p>
+<p>　　In 操作的流程原理如同一下代码</p>
+<p>　　　　List resultSet&#x3D;{};<br>　　　　Array A&#x3D;(select * from A);<br>　　　　Array B&#x3D;(select id from B);<br>　　　　for(int i&#x3D;0;i&lt;A.length;i++) {<br>　　　　　　for(int j&#x3D;0;j&lt;B.length;j++) {<br>　　　　　　　　if(A[i].id&#x3D;&#x3D;B[j].id) {<br>　　　　　　　　　　resultSet.add(A[i]);<br>　　　　　　　　　　break;<br>　　　　　　　　}<br>　　　　　　}<br>　　　　}<br>　　　return resultSet;</p>
+<p>　　可以看出，当B表数据较大时不适合使用in()，因为它会B表数据全部遍历一次</p>
+<p>　　如：A表有10000条记录，B表有1000000条记录，那么最多有可能遍历10000*1000000次，效率很差。</p>
+<p>　　再如：A表有10000条记录，B表有100条记录，那么最多有可能遍历10000*100次，遍历次数大大减少，效率大大提升。</p>
+<p>　　结论：in()适合B表比A表数据小的情况</p>
+<p>　　exist()会执行A.length()次，执行过程代码如下</p>
+<p>　　　　List resultSet&#x3D;{};<br>　　　　Array A&#x3D;(select * from A);<br>　　　　for(int i&#x3D;0;i&lt;A.length;i++) {<br>　　　　　　if(exists(A[i].id) { &#x2F;&#x2F;执行select 1 from B where B.id&#x3D;A.id是否有记录返回<br>　　　　　　　　resultSet.add(A[i]);<br>　　　　　　}<br>　　　　}<br>　　　　return resultSet;</p>
+<p>　　当B表比A表数据大时适合使用exists()，因为它没有那么多遍历操作，只需要再执行一次查询就行。</p>
+<p>　　如：A表有10000条记录，B表有1000000条记录，那么exists()会执行10000次去判断A表中的id是否与B表中的id相等。</p>
+<p>　　如：A表有10000条记录，B表有100000000条记录，那么exists()还是执行10000次，因为它只执行A.length次，可见B表数据越多，越适合exists()发挥效果。</p>
+<p>　　再如：A表有10000条记录，B表有100条记录，那么exists()还是执行10000次，还不如使用in()遍历10000*100次，因为in()是在内存里遍历比较，而exists()需要查询数据库，</p>
+<p>　　我们都知道查询数据库所消耗的性能更高，而内存比较很快。</p>
+<p>　　结论：exists()适合B表比A表数据大的情况</p>
+<p>　　 当A表数据与B表数据一样大时，in与exists效率差不多，可任选一个使用。</p>
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/06_%E4%B8%BB%E9%94%AE/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  主键
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/04_%E5%85%B6%E4%BB%96%E8%BF%9E%E6%8E%A5%E5%B7%A5%E5%85%B7/">
+                数据库其他连接工具
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			el: '#vcomments',
+			appId: 'MYx1g2JQxjBJnkxS0qMRYkJK-gzGzoHsz',
+			appKey: 'TkKUNT3bIQCA2MV3eSE3wpVI',
+			placeholder: '请输入评论',
+			path: window.location.pathname,
+			avatar: 'retro',
+			highlight: false,
+      recordIP: true,
+      enableQQ: true,
+			requiredFields: ['nick','mail']
+		})
+	
+	
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2021-<span id="footerYear"></span> 
+	<a href="/">yulong</a> 
+	
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	<!-- Theme <a href="/" target="_blank">TTXX</a>
+	by <a href="/" target="_blank">TTXX</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a> -->
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+	// 禁止右键菜单
+	document.oncontextmenu = function(){ return false; };
+	// 禁止文字选择
+	document.onselectstart = function(){ return false; };
+	// 禁止复制
+	document.oncopy = function(){ return false; };
+	// 禁止剪切
+	document.oncut = function(){ return false; };
+</script>
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
