@@ -1638,4 +1638,67 @@
         <tag>课中</tag>
       </tags>
   </entry>
+  <entry>
+    <title>测试用例设计</title>
+    <url>/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E7%9A%84%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<ul>
+<li><p>((20211203110538-j9uafl7 “黑盒测试”))</p>
+</li>
+<li><p>((20211203142245-ngnn77u “测试用例是什么样的”))</p>
+</li>
+<li><p>目的</p>
+<ul>
+<li>绕不过的面试题</li>
+<li>测试人员必备技能</li>
+</ul>
+</li>
+<li><p>测试用例</p>
+<ul>
+<li>测试用例是为了发现软件存在的问题编写的一组包含测试输入、执行条件以及预期结果的文档，用来核实软件产品是否满需求</li>
+<li><img src="/assets/image-20211120151028-c13v85v.png" alt="image.png"></li>
+</ul>
+</li>
+<li><p>测试用例的目的</p>
+<ul>
+<li>理清思路，避免漏测和重测</li>
+<li>提高测试效率</li>
+<li>跟进测试进度</li>
+<li>告诉领导做过什么</li>
+<li>跟进重复性工作</li>
+<li>更好的记录问题，发现问题，复现问题</li>
+</ul>
+</li>
+<li><p>测试用例的组成</p>
+<ul>
+<li>用例编号<br>模块<br>测试标题<br>前置条件<br>操作步骤<br>预期结果<br>实际结果</li>
+</ul>
+</li>
+<li><p>测试用例编写工具</p>
+<ul>
+<li>ximnd：思维导图工具<br>插入子主题：tab<br>插入兄弟主题（后面）：enter<br>插入兄弟主题（前面）：shift+enter</li>
+<li>Excel</li>
+</ul>
+</li>
+<li><p>测试用例编写方法</p>
+<ul>
+<li>划分功能模块<br>正向功能验证：正确的操作功能是否实现<br>单个功能项验证：正向+异常<br>功能之间交互验证：模块之间的数据传递<br>隐形需求：熟悉业务</li>
+</ul>
+</li>
+<li><p>输入项设计要点</p>
+<ul>
+<li>数据长度验证<br>数据类型验证<br>是否必填项验证<br>限制约束验证</li>
+</ul>
+</li>
+<li><p>((20220220192358-x93dh14 “实战：登录”))</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>课中</category>
+        <category>测试用例设计</category>
+      </categories>
+      <tags>
+        <tag>课中</tag>
+      </tags>
+  </entry>
 </search>
