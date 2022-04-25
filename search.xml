@@ -1103,7 +1103,7 @@ firewall-cmd --reload
 <p>　　　　　　3、进入手机设置—&gt;安全和隐私—&gt;更多安全设置—&gt;加密和凭据—&gt;从存储设备安装—&gt;选择我们刚下载的证书,安装即可（华为手机的安装方式，其它安卓机型可以自行百度）</p>
 <p><img src="/assets/image-20211122223400-1qxenel.png" alt="image.png"></p>
 <p>　　　　　　常见手机：小米手机，华为手机，需要设置手机锁屏密码</p>
-<p>　　<img src="/assets/image-20211122223300-pys14z8.png" alt="image.png"></p>
+<p><img src="/assets/image-20211122223300-pys14z8.png" alt="image.png"></p>
 <p><img src="/assets/image-20211122223422-xh9tzfh.png" alt="image.png"></p>
 <p> 　</p>
 <h2 id="4-设置抓取https"><a href="#4-设置抓取https" class="headerlink" title="4.设置抓取https"></a>4.设置抓取https</h2><p> 　　　　默认charles只可以抓取http协议的包，https的更安全，需要如下配置方可</p>
@@ -5079,7 +5079,7 @@ c、命名风格
 <p>**返回体：  验证重点是返回体。  **</p>
 <p><strong>2、postman 里 怎么完成断言：</strong></p>
 <p><strong>tests菜单（其实是执行请求之后，得到返回了再执行的内容）中，编写断言脚本。</strong></p>
-<p><img src="https://cdn.nlark.com/yuque/0/2021/png/1540532/1636557731387-529025f0-0d5d-4f72-9d11-e519fe4aeef0.png"></p>
+<p><img src="/04_Postman%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98_files/2.jpg"></p>
 <p>**1、在tests编辑中，用&#x2F;&#x2F;表示注释，是不执行的代码，说明文字。 **</p>
 <p><strong>可以用 ctrl+&#x2F; 快速注释一行。</strong></p>
 <p><strong>2、常用的断言模板：</strong></p>
