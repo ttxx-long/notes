@@ -16,16 +16,16 @@
 <meta property="og:site_name" content="TTXX课程">
 <meta property="og:description" content="1、postman从接口调试到自动化测试：1、自动判断执行是否成功。  -通过代码 来进行结果的断言。 2、多个接口如何批量运行。  -通过 postman的 collection 进行运行。 3、测试数据管理方式 4、工作中如何定时执行或者将自动化测试结合到研发体系中。 2、Postman断言：1、想清楚断言的标准是什么，断言的对象是什么。 断言什么？  返回内容 **返回行： 状态码  **">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/04_Postman%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98_files/2.jpg">
+<meta property="og:image" content="http://example.com/assets/2.jpg">
 <meta property="og:image" content="http://example.com/assets/image-20220324173242-h2j4mkh.png">
 <meta property="og:image" content="http://example.com/assets/image-20220324173251-hewimyl.png">
 <meta property="og:image" content="http://example.com/assets/image-20220324173257-u4s7d2y.png">
 <meta property="article:published_time" content="2022-04-25T10:58:36.603Z">
-<meta property="article:modified_time" content="2022-04-25T15:23:44.252Z">
+<meta property="article:modified_time" content="2022-04-25T15:50:15.450Z">
 <meta property="article:author" content="yulong">
 <meta property="article:tag" content="课中">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/04_Postman%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98_files/2.jpg">
+<meta name="twitter:image" content="http://example.com/assets/2.jpg">
     
 
     
@@ -695,7 +695,7 @@
 <p>**返回体：  验证重点是返回体。  **</p>
 <p><strong>2、postman 里 怎么完成断言：</strong></p>
 <p><strong>tests菜单（其实是执行请求之后，得到返回了再执行的内容）中，编写断言脚本。</strong></p>
-<p><img src="/04_Postman%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98_files/2.jpg"></p>
+<p><img src="/assets/2.jpg"></p>
 <p>**1、在tests编辑中，用&#x2F;&#x2F;表示注释，是不执行的代码，说明文字。 **</p>
 <p><strong>可以用 ctrl+&#x2F; 快速注释一行。</strong></p>
 <p><strong>2、常用的断言模板：</strong></p>
@@ -978,5 +978,29 @@ pm.test(&quot;返回结果msg是success&quot;, function () &#123;
 
 
     </div>
+	
+	
+<script>
+	var kiaguan = false
+	var theme = Wikitten
+	if (kiaguan == true ) {
+		
+			var passwor = "ttxxjs";
+			var password=""
+			password=prompt('请输入密码(本网站需输入密码才可以进入):','');
+			function custom_close(){undefined
+			window.opener=null;
+			window.open('','_self');
+			window.close();
+			}
+				
+				if (password !=passwor){undefined
+				custom_close();
+				//加这一段是为了避免有些浏览器不支持关闭浏览器的js ,所以请求跳转到一个新页面！
+				window.location.href='about:blank';
+			};
+	}	
+		
+</script>
 </body>
 </html>
