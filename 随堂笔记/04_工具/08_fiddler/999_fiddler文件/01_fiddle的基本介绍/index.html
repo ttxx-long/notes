@@ -936,11 +936,9 @@
     </div>
 	
 	
-<script>
-	var kiaguan = false
-	var theme = Wikitten
-	if (kiaguan == true ) {
-		
+ 
+	if (kiaguan == false) {
+		<!-- 
 			var passwor = "ttxxjs";
 			var password=""
 			password=prompt('请输入密码(本网站需输入密码才可以进入):','');
@@ -954,9 +952,20 @@
 				custom_close();
 				//加这一段是为了避免有些浏览器不支持关闭浏览器的js ,所以请求跳转到一个新页面！
 				window.location.href='about:blank';
-			};
+			}; -->
+			<script type="text/javascript">
+			    loopy()  
+			    function loopy() {  
+				var passwor = "ttxxjs";
+			    var sWord =""  
+			    while (sWord != passwor) {//设置密码
+			    sWord = prompt("输入正确密码才能登陆!")  
+			   }  
+			    // alert("欢迎访问")  
+			   }  
+			    </script> 
 	}	
 		
-</script>
+
 </body>
 </html>
