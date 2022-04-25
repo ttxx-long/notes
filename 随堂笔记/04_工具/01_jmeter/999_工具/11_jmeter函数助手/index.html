@@ -2152,36 +2152,36 @@ var _hmt = _hmt || [];
 <p> 废话不多话，下面步入正题</p>
 <p> 如何添加自定义变量控件呢</p>
 <p> 选中  线程组—配置元件—-用户自定义变量</p>
-<p> <img src="/assets/image-20220326105124-7rgr85p.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220326105130-ujsj4py.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326105124-7rgr85p.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326105130-ujsj4py.png" alt="image.png"></p>
 <p> 我们这里设置完了之后，我们怎么引用呢？</p>
 <p> Jmeter的标准引用格式是：${IP}这种格式进行访问</p>
-<p> <img src="/assets/image-20220326105140-vfl9a43.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326105140-vfl9a43.png" alt="image.png"></p>
 <p> 接下来 咱们开始使用函数助手，重点即将开始—-点击选项—-选择 函数助手对话框</p>
 <p> 文件参数化：</p>
 <pre><code>                    1：函数助手
 
                     2：csv data set config
 </code></pre>
-<p> <img src="/assets/image-20220326105150-gafco24.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326105150-gafco24.png" alt="image.png"></p>
 <p> 打开函数助手对话框，选择_CSVRead</p>
-<p> <img src="/assets/image-20220326105158-04kx5nw.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326105158-04kx5nw.png" alt="image.png"></p>
 <p> CSV file to get values from | * ,这个参数是 文件的路径，csv的文件分隔符是逗号，咱们使用txt文本进行逗号分隔也是可以使用的</p>
 <p> CSV文件列号| next| *alias  见名知意    这里的主要意思，取列数，列入第一行是用户名，第二行是密码，一一对应</p>
 <p> 注意：这里取值的时候  是从0进行开始取值，</p>
-<p> <img src="/assets/image-20220326105211-xfyhoii.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220326105215-um5ggha.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326105211-xfyhoii.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326105215-um5ggha.png" alt="image.png"></p>
 <p> 生成之后，我们${__CSVRead(C:\Users\Administrator\Desktop\user.txt,0)}这行复制出来</p>
 <p> 0代表取的文件第一列，1代表取的第二列</p>
-<p> <img src="/assets/image-20220326105221-5me8p5z.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326105221-5me8p5z.png" alt="image.png"></p>
 <p> 我们需要http请求的时候进行调用</p>
 <p> 我们的参数，用户名使用${__CSVRead(C:\Users\Administrator\Desktop\user.txt,0)}</p>
 <p> 密码使用。${__CSVRead(C:\Users\Administrator\Desktop\user.txt,1)}</p>
-<p> <img src="/assets/image-20220326105229-xghzept.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326105229-xghzept.png" alt="image.png"></p>
 <p> 然后我们设置完 就可以进行模仿不同用户进行登录</p>
 <p> 我在这儿线程组，设置的为100，会一直循环进行模仿 这10个用户进行登录</p>
-<p> <img src="/assets/image-20220326105239-wypbk2s.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220326105245-6o5iilg.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326105239-wypbk2s.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326105245-6o5iilg.png" alt="image.png"></p>
 
 </div>
 

@@ -2150,7 +2150,7 @@ var _hmt = _hmt || [];
 <p>Fiddler能捕获IOS设备发出的请求，比如IPhone, IPad, MacBook. 等等苹果的设备。  同理，也可以截获Andriod，Windows Phone的等设备发出的HTTP&#x2F;HTTPS。</p>
 <p>本文介绍Fiddler截获IPhone发出的HTTP&#x2F;HTTPS包</p>
 <p>前提条件是：安装Fiddler的机器，跟Iphone 在同一个网络里， 否则IPhone不能把HTTP发送到Fiddler的机器上来。</p>
-<p><img src="/assets/wpsBBA7.tmp-20211222153414-4k7ab2o.jpg"></p>
+<p><img src="/assets/1/wpsBBA7.tmp-20211222153414-4k7ab2o.jpg"></p>
 <h1 id="截获智能手机发出的HTTP包有什么用"><a href="#截获智能手机发出的HTTP包有什么用" class="headerlink" title="截获智能手机发出的HTTP包有什么用?"></a><strong>截获智能手机发出的HTTP包有什么用?</strong></h1><p>用处一： 手机软件程序员利用Fiddler，可以截获手机发出的HTTP包， 从而调试程序</p>
 <p>用处二： 软件测试人员用于测试智能手机上的软件。</p>
 <p>用处三： 可以用来在App应用商店中刷排名</p>
@@ -2158,19 +2158,19 @@ var _hmt = _hmt || [];
 <h1 id="配置Fiddler-允许”远程连接”"><a href="#配置Fiddler-允许”远程连接”" class="headerlink" title="配置Fiddler,  允许”远程连接”"></a><strong>配置Fiddler,  允许”远程连接”</strong></h1><p>打开Fiddler,     Tools-&gt; Fiddler Options 。  （配置完后记得要重启Fiddler）.</p>
 <p>选中”Decrpt HTTPS traffic”,    Fiddler就可以截获HTTPS请求</p>
 <p>选中”Allow remote computers to connect”.  是允许别的机器把HTTP&#x2F;HTTPS请求发送到Fiddler上来</p>
-<p><img src="/assets/wpsBBA8.tmp-20211222153414-p1ehtm5.png"><img src="/assets/wpsBBA9.tmp-20211222153414-e9jz0p5.jpg"></p>
-<p><img src="/assets/wpsBBAA.tmp-20211222153414-m1e3p7w.png"><img src="/assets/wpsBBAB.tmp-20211222153414-1qorg2w.jpg"></p>
+<p><img src="/assets/1/wpsBBA8.tmp-20211222153414-p1ehtm5.png"><img src="/assets/1/wpsBBA9.tmp-20211222153414-e9jz0p5.jpg"></p>
+<p><img src="/assets/1/wpsBBAA.tmp-20211222153414-m1e3p7w.png"><img src="/assets/1/wpsBBAB.tmp-20211222153414-1qorg2w.jpg"></p>
 <h1 id="获取Fiddler所在机器的IP地址"><a href="#获取Fiddler所在机器的IP地址" class="headerlink" title="获取Fiddler所在机器的IP地址"></a><strong>获取Fiddler所在机器的IP地址</strong></h1><p>这个简单吧。   我Fidder所在的机器地址是: 192.168.1.104</p>
 <h1 id="IPhone上安装Fiddler证书"><a href="#IPhone上安装Fiddler证书" class="headerlink" title="IPhone上安装Fiddler证书"></a><strong>IPhone上安装Fiddler证书</strong></h1><p>这一步是为了让Fiddler能捕获HTTPS请求。 如果你只需要截获HTTP请求， 可以忽略这一步</p>
 <ol>
 <li>首先要知道Fiddler所在的机器的IP地址：　假如我安装了Fiddler的机器的IP地址是:192.168.1.104</li>
 <li>打开IPhone 的Safari, 访问  <a href="http://192.168.1.104:8888，">http://192.168.1.104:8888，</a> 点”FiddlerRoot certificate” 然后安装证书</li>
 </ol>
-<p><img src="/assets/wpsBBAC.tmp-20211222153414-c3e8vfu.png"><img src="/assets/wpsBBAD.tmp-20211222153414-7xz2llb.jpg"></p>
-<p> <img src="/assets/wpsBBAE.tmp-20211222153414-6h56pvh.jpg"></p>
-<p><img src="/assets/wpsBBAF.tmp-20211222153414-rc0e4xc.png"></p>
+<p><img src="/assets/1/wpsBBAC.tmp-20211222153414-c3e8vfu.png"><img src="/assets/1/wpsBBAD.tmp-20211222153414-7xz2llb.jpg"></p>
+<p> <img src="/assets/1/wpsBBAE.tmp-20211222153414-6h56pvh.jpg"></p>
+<p><img src="/assets/1/wpsBBAF.tmp-20211222153414-rc0e4xc.png"></p>
 <h1 id="IPhone上配置Fiddler为代理"><a href="#IPhone上配置Fiddler为代理" class="headerlink" title="IPhone上配置Fiddler为代理"></a><strong>IPhone上配置Fiddler为代理</strong></h1><p> 打开IPhone,  找到你的网络连接， 打开HTTP代理， 输入Fiddler所在机器的IP地址(比如:192.168.1.104) 以及Fiddler的端口号8888</p>
-<p><img src="/assets/wpsBBB0.tmp-20211222153414-1jct4ls.png"><img src="/assets/wpsBBB1.tmp-20211222153414-f7fgldl.jpg"></p>
+<p><img src="/assets/1/wpsBBB0.tmp-20211222153414-1jct4ls.png"><img src="/assets/1/wpsBBB1.tmp-20211222153414-f7fgldl.jpg"></p>
 <h1 id="大功告成，开始抓包"><a href="#大功告成，开始抓包" class="headerlink" title="大功告成，开始抓包"></a><strong>大功告成，开始抓包</strong></h1><p>现在IPhone上的应用（比如Safari, Firefox, Itunes, App Store）发出的HTTP&#x2F;HTTPS都可以被Fiddler获取。</p>
 <p>实例：　打开Safari，　　</p>
 <ol>

@@ -2147,47 +2147,47 @@ var _hmt = _hmt || [];
 	<p>一、JSON提取器</p>
 <ol>
 <li><p>JSON提取器是专门用来对返回的响应结果是application&#x2F;json格式的报文进行提取，如下所示</p>
-<p> <img src="/assets/image-20220310180655-r4lg5zc.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220310180707-9lamju0.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180655-r4lg5zc.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180707-9lamju0.png" alt="image.png"></p>
 </li>
 <li><p>首先在需要提前变量的HTTP请求点击右键》添加》后置处理器》JSON提取器</p>
-<p> <img src="/assets/image-20220310180717-swpsysb.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180717-swpsysb.png" alt="image.png"></p>
 </li>
 <li><p>JSON提取器，变量应用范围，默认选择Main sample only即可</p>
-<p> <img src="/assets/image-20220310180725-zrdedue.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180725-zrdedue.png" alt="image.png"></p>
 </li>
 <li><p>下面给大家讲解写怎么写JSON PATH，只有写出正确的JSON PATH，才能获取到我们需要的变量值，默认我们jmeter的察看结果树显示的结果是Text文本格式，这样我们就不能快速的看出变量的层级，所以需要把查看结果树的显示格式改成JSON Path Tester，该查看结果树还支持直接对结果进行调试，这是很多刚入门的小伙伴不知道的一个功能，很方便，如下所示</p>
-<p> <img src="/assets/image-20220310180734-7sd2ozo.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220310180740-17p7iyw.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180734-7sd2ozo.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180740-17p7iyw.png" alt="image.png"></p>
 </li>
 <li><p>JSON的基本语法就是$.然后后面跟要取字段名，比如要取data，就直接写$.data，如果要取msg，就直接写$.msg如下所示</p>
-<p> <img src="/assets/image-20220310180747-b5py5r7.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220310180752-9c6i5jn.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180747-b5py5r7.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180752-9c6i5jn.png" alt="image.png"></p>
 </li>
 <li><p>如果还要往下取值，就像文中的token，就需要继续在后面加”.”，(.代表子元素)，然后跟字段名，如$.data.token</p>
-<p> <img src="/assets/image-20220310180740-17p7iyw.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180740-17p7iyw.png" alt="image.png"></p>
 </li>
 <li><p>在给大家介绍一种结果为数组格式的怎么取值，如下图所示，results保存了数组格式的值，先要知道数组索引，然后才能继续读取数组下的值，学过python的应该就清楚，只要从0依次递增就能取到需要的值，如resulst[0]，resulst[1]，比如我想取第一个数组中的name值，只需要填写$.data.results[0].name</p>
-<p> <img src="/assets/image-20220310180813-2eois8o.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180813-2eois8o.png" alt="image.png"></p>
 </li>
 <li><p>实际工作中，可能返回的查询结果经常会变化，这时候如果在写死数组索引的位置，比如上面给大家介绍的，写成$.data.results[0].name，如果系统新增了项目，可能就会导致取的值不正确，这时候就需要用到另外一种取值方式，$…results[?(@.name&#x3D;&#x3D;‘function’)].id，该json path可以通过一个变量定位到自己所在的数组的索引，然后在去取需要的id，比如automation这个值是唯一值，就可以通过该值取到需要的值，语法如下$…然后后面跟数组名称，本文为results，然后跟[?(@.name&#x3D;&#x3D;‘function’)]，其中name是序列中的一个唯一值，可以根据需要修改，function是name实际为什么值就填什么，最后在加”.”后面跟你需要取的字段名如id，pah都行，只要在这个数组中存在</p>
-<p> <img src="/assets/image-20220310180848-jkna4en.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180848-jkna4en.png" alt="image.png"></p>
 </li>
 <li><p>在给大家介绍一个经常用到的json 转换网站， <a target="_blank" rel="noopener" href="https://www.json.cn/">https://www.json.cn/</a> 打开该网站，拷贝json格式响应结果到该网站，系统就会帮你自动转换成json层级格式，方便调试，如下所示</p>
-<p> <img src="/assets/image-20220310180912-yqckvy7.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180912-yqckvy7.png" alt="image.png"></p>
 </li>
 <li><p>我们之前通过json path取到的变量token，现在需要写入到信息头管理器，这样下面的请求才会被调用到，格式为${token}</p>
-<p> <img src="/assets/image-20220310180927-3dcmt7l.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220310180934-cetu5ts.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180927-3dcmt7l.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310180934-cetu5ts.png" alt="image.png"></p>
 </li>
 <li><p>JSON PATH语法如下列表，具体语法使用规则，还需要大家多多尝试，可以在察看结果树中切换成JSON Path Tester模式进行测试</p>
-<p> <img src="/assets/image-20220310181008-e6gbt4g.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310181008-e6gbt4g.png" alt="image.png"></p>
 </li>
 <li><p>末尾在给大家介绍JSON怎么通过一个提取器提取多个变量，多个变量时则每个变量用“；”间隔开，正则表达式、匹配序列、默认值也一样，需要用“；”隔开，下面先介绍当正则表达式取固定的序列的时候，填写的规则如下图</p>
-<p> <img src="/assets/image-20220310181022-g26pabm.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310181022-g26pabm.png" alt="image.png"></p>
 </li>
 <li><p>当表达式取任意序列时(匹配所有符合的值)，填写规则如下图</p>
-<p> <img src="/assets/image-20220310181035-d7kaned.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310181035-d7kaned.png" alt="image.png"></p>
 </li>
 </ol>
 

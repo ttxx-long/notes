@@ -2175,19 +2175,19 @@ var _hmt = _hmt || [];
 <p>以我的windows7， IE8为例，  cookie存在这： C:\Users\xiaoj\AppData\Local\Microsoft\Windows\Temporary Internet Files</p>
 <p>注意： 缓存文件和cookie文件，是存在一起的, 都在这个目录下。</p>
 <p>你也可以这样找, 打开IE，点击Tools-&gt;Internet Options-&gt;General Tab下的-&gt;Browsing history下的Setting按钮，弹出的对话框中点击View files.</p>
-<p><img src="/assets/wps7EA5.tmp-20211222151419-fbxtpyw.png"><img src="/assets/wps7EA6.tmp-20211222151419-olwgxkx.jpg"></p>
+<p><img src="/assets/1/wps7EA5.tmp-20211222151419-fbxtpyw.png"><img src="/assets/1/wps7EA6.tmp-20211222151419-olwgxkx.jpg"></p>
 <p>不同的网站会有不同的cookie文件</p>
-<p><img src="/assets/wps7EA7.tmp-20211222151419-qi8mr5o.png"><img src="/assets/wps7EA8.tmp-20211222151419-zru7a1f.jpg"></p>
+<p><img src="/assets/1/wps7EA7.tmp-20211222151419-qi8mr5o.png"><img src="/assets/1/wps7EA8.tmp-20211222151419-zru7a1f.jpg"></p>
 <h1 id="使用和禁用Cookie"><a href="#使用和禁用Cookie" class="headerlink" title="使用和禁用Cookie"></a><strong>使用和禁用Cookie</strong></h1><p>IE:   工具-&gt;Internet 选项 -&gt; 隐私</p>
-<p><img src="/assets/wps7EA9.tmp-20211222151419-ptu9ut9.png"><img src="/assets/wps7EAA.tmp-20211222151419-aop8gqr.jpg"></p>
+<p><img src="/assets/1/wps7EA9.tmp-20211222151419-ptu9ut9.png"><img src="/assets/1/wps7EAA.tmp-20211222151419-aop8gqr.jpg"></p>
 <h1 id="Fiddler查看HTTP中的Cookie"><a href="#Fiddler查看HTTP中的Cookie" class="headerlink" title="Fiddler查看HTTP中的Cookie"></a><strong>Fiddler查看HTTP中的Cookie</strong></h1><p>浏览器把cookie通过HTTP Request 中的“Cookie: header”发送给Web服务器</p>
 <p>Web服务器通过HTTP Response中的”Set-Cookie: header”把cookie发送给浏览器</p>
 <p>使用Fiddler可以清楚地看到cookie在HTTP中传递。 Fiddler工具中可以清晰的看到Http Request 中的Cookie， 和Http Response中的cookie</p>
 <p>实例： 启动Fiddler,  启动浏览器访问一些购物网站，就可以看到。</p>
-<p><img src="/assets/wps7EAB.tmp-20211222151419-2d6q7ul.png"> <img src="/assets/wps7EAC.tmp-20211222151419-zvo47bs.jpg"></p>
+<p><img src="/assets/1/wps7EAB.tmp-20211222151419-2d6q7ul.png"> <img src="/assets/1/wps7EAC.tmp-20211222151419-zvo47bs.jpg"></p>
 <h1 id="网站自动登陆的原理"><a href="#网站自动登陆的原理" class="headerlink" title="网站自动登陆的原理"></a><strong>网站自动登陆的原理</strong></h1><p>我们以”博客园自动登陆“的例子，来说明cookie是如何传递的。</p>
 <p>大家知道博客园是可以自动登陆的。 如下图，这个是什么原理呢?</p>
-<p><img src="/assets/wps7EAD.tmp-20211222151419-onffgyw.png"><img src="/assets/wps7EAE.tmp-20211222151419-7eoj92p.jpg"></p>
+<p><img src="/assets/1/wps7EAD.tmp-20211222151419-onffgyw.png"><img src="/assets/1/wps7EAE.tmp-20211222151419-7eoj92p.jpg"></p>
 <p>假如我已经在登陆页面输入了用户名，密码，选择了保存密码，登陆。</p>
 <p>（这时候，其实在你的机器上保存好了登陆的cookie, 不信你可以按照上节介绍方法去你的电脑上找下博客园的cookie）</p>
 <p>当我下次访问博客园流程如下。</p>
@@ -2196,7 +2196,7 @@ var _hmt = _hmt || [];
 <li>IE首先会在硬盘中查找关于cnblogs.com的cookie. 然后把cookie放到HTTP Request中，再把Request发给Web服务器。</li>
 <li>Web服务器返回博客园首页（你会看到你已经登陆了）。</li>
 </ol>
-<p><img src="/assets/wps7EAF.tmp-20211222151419-vob6ewr.png"><img src="/assets/wps7EB0.tmp-20211222151419-w1gki0n.jpg"></p>
+<p><img src="/assets/1/wps7EAF.tmp-20211222151419-vob6ewr.png"><img src="/assets/1/wps7EB0.tmp-20211222151419-w1gki0n.jpg"></p>
 <h1 id="截获Cookie，冒充别人身份"><a href="#截获Cookie，冒充别人身份" class="headerlink" title="截获Cookie，冒充别人身份"></a><strong>截获Cookie，冒充别人身份</strong></h1><p>通过上面这个例子，可以看到cookie是很重要的，识别是否是登陆用户，就是通过cookie。  假如截获了别人的cookie是否可以冒充他人的身份登陆呢？  当然可以， 这就是一种黑客技术叫Cookie欺骗。</p>
 <p>利用Cookie 欺骗， 不需要知道用户名密码。就可以直接登录，使用别人的账户做坏事。</p>
 <p>我知道有两种方法可以截获他人的cookie，</p>
@@ -2208,7 +2208,7 @@ var _hmt = _hmt || [];
 <h1 id="Cookie和文件缓存的区别"><a href="#Cookie和文件缓存的区别" class="headerlink" title="Cookie和文件缓存的区别"></a><strong>Cookie和文件缓存的区别</strong></h1><p>很多人会把cookie和文件缓存弄混淆， 这两个完全是不一样的东西。唯一的相同之处可能是它们俩都存在硬盘上，而且是存在同一个文件夹下。</p>
 <p>关于HTTP缓存请看这 【<a target="_blank" rel="noopener" href="http://www.cnblogs.com/TankXiao/archive/2012/11/28/2793365.html">HTTP协议之缓存</a>】</p>
 <p>我们在IE中可以选择分别删除Cookie和缓存文件</p>
-<p><img src="/assets/wps7EC1.tmp-20211222151419-9749lqa.png"> <img src="/assets/wps7EC2.tmp-20211222151419-x09ud12.jpg"></p>
+<p><img src="/assets/1/wps7EC1.tmp-20211222151419-9749lqa.png"> <img src="/assets/1/wps7EC2.tmp-20211222151419-x09ud12.jpg"></p>
 <h1 id="Cookie-泄露隐私"><a href="#Cookie-泄露隐私" class="headerlink" title="Cookie 泄露隐私"></a><strong>Cookie 泄露隐私</strong></h1><p>2013年央视的315晚会上， 曝光了很多不法公司利用Cookie跟踪并采集用户的个人信息，并转卖给网络广告商，形成了一条窃取用户信息的灰色产业链。从而实现广告准确投放。严重干扰了用户的正常网络应用，侵害了个人的隐私和利益。</p>
 <p>我经常就在门户网站上发现广告位上显示的是我在电商网站上流量过的商品。  这就是我的cookie被泄露了。</p>
 <p>目前在欧洲， 已经对Cookie立法， 如果网站需要保存用户的cookie, 必须弹出一个对话框，要用户确认后才能保存Cookie.</p>

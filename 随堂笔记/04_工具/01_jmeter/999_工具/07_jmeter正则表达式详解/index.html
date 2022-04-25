@@ -2147,16 +2147,16 @@ var _hmt = _hmt || [];
 	<p>二、正则表达式提取器</p>
 <ol>
 <li><p>正则表达式也是我们在开发案例过程中用的最多的一种提取器，他支持对各种格式的响应结果进行提取，比如application&#x2F;json、HTML格式等等</p>
-<p> <img src="/assets/image-20220310181104-6c4x6qh.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310181104-6c4x6qh.png" alt="image.png"></p>
 </li>
 <li><p>首先在需要提前变量的HTTP请求点击右键》添加》后置处理器》正则表达式提取器</p>
-<p> <img src="/assets/image-20220310181111-jer2dz0.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310181111-jer2dz0.png" alt="image.png"></p>
 </li>
 <li><p>正则表达式提取器，变量应用范围，默认选择Main sample only即可，要检查的响应字段选择主体</p>
-<p> <img src="/assets/image-20220310181118-854pmzh.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310181118-854pmzh.png" alt="image.png"></p>
 </li>
 <li><p>下面给大家讲解写怎么写正则表达式，只有写出正确的正则表达式，才能获取到我们需要的变量值，默认我们jmeter的察看结果树显示的结果是Text文本格式，所以需要把查看结果树的显示格式改成RegExp Tester，上面已经介绍了，这种可以支持写出正则，然后进行调试，看取值是否正确</p>
-<p> <img src="/assets/image-20220310181126-moq19ue.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220310181126-moq19ue.png" alt="image.png"></p>
 </li>
 <li><p>我们写正则，只需要拷贝变量所在的左右边界，data”:“c7a86d03-4684-4302-9456-e4f15e849368”, 然后把需要取的变量替换成(.)即可，“data”:”(.)”, 该表达式即是我们需要的效果，当然如果返回的响应结果有很多相同的左右边界，这时候还需要细化正则(本人经验，返回结果为application&#x2F;json格式的都用json path取值，不用正则)</p>
 </li>

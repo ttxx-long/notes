@@ -2147,59 +2147,59 @@ var _hmt = _hmt || [];
 	<p>Jmeter参数化方法：</p>
 <ol>
 <li>直接自定义入参<br> 举例：当前需要实现5个请求，请求中包含一个参数输入，需要分别读取5个不同值进行请求<br> 步骤1：设置一个线程组，在线程组下添加一个用户定义变量的配置元件；</li>
-<li><img src="/assets/image-20211207112358-g2u7b44.png" alt="image.png"></li>
-<li><img src="/assets/image-20211207112408-11olk9s.png" alt="image.png"></li>
+<li><img src="/assets/1/image-20211207112358-g2u7b44.png" alt="image.png"></li>
+<li><img src="/assets/1/image-20211207112408-11olk9s.png" alt="image.png"></li>
 </ol>
 <p>步骤2：添加5个请求，每个请求中参数通过${用户定义的变量名}的方式读取值；</p>
-<p><img src="/assets/image-20211207112415-t1zp0q5.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112415-t1zp0q5.png" alt="image.png"></p>
 <p>步骤3：点击执行，并观察执行结果；</p>
-<p><img src="/assets/image-20211207112421-6vqwrb2.png" alt="image.png"></p>
-<p><img src="/assets/image-20211207112427-3i28sdh.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112421-6vqwrb2.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112427-3i28sdh.png" alt="image.png"></p>
 <ol start="2">
 <li>使用CSV Data Set Config的设置，从csv文件导入<br> 举例：当前需要实现一个请求，请求中包含一个参数输入，需要分别读取5个不同值进行请求<br> 步骤1：设置一个线程组，假设需要包含一共有5个参数入参，则设置循环次数为5次；</li>
-<li><img src="/assets/image-20211207112434-dk9k02r.png" alt="image.png"></li>
+<li><img src="/assets/1/image-20211207112434-dk9k02r.png" alt="image.png"></li>
 </ol>
 <p>步骤2：在一个目录中创建一个CSV文件，变量名写在第一行（也可以不写变量名，当不写变量名时，添加CSV数据文件配置中需要设置一下指定读取参数是否忽略首行），当然此处不仅仅可以读取csv文件，也可以读取txt文件之类的，此处我们用csv文件作为例子；</p>
-<p><img src="/assets/image-20211207112441-h3u0ge2.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112441-h3u0ge2.png" alt="image.png"></p>
 <p>步骤3：在线程组下添加一个CSV数据文件配置的配置元件，根据实际需要来进行配置；</p>
-<p><img src="/assets/image-20211207112447-ta1gwgb.png" alt="image.png"></p>
-<p><img src="/assets/image-20211207112452-kto9lah.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112447-ta1gwgb.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112452-kto9lah.png" alt="image.png"></p>
 <p>步骤4：添加察看结果树，并将结果保存到一个指定文件；</p>
-<p><img src="/assets/image-20211207112459-ymiepcc.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112459-ymiepcc.png" alt="image.png"></p>
 <p>步骤5：点击执行，并观察执行结果；</p>
-<p><img src="/assets/image-20211207112505-ochla6s.png" alt="image.png"></p>
-<p><img src="/assets/image-20211207112510-jn8tkga.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112505-ochla6s.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112510-jn8tkga.png" alt="image.png"></p>
 <ol start="3">
 <li>使用计数器，来输入<br> 举例：当前需要实现一个请求，请求中包含一个参数输入，这5个参数可以是前缀+数值递增的格式，需要分别读取5个不同值进行请求<br> 步骤1：设置一个线程组，假设需要包含一共有5个参数入参，则设置循环次数为5次；</li>
-<li><img src="/assets/image-20211207112518-2c7xdd8.png" alt="image.png"></li>
+<li><img src="/assets/1/image-20211207112518-2c7xdd8.png" alt="image.png"></li>
 </ol>
 <p>步骤2：添加一个计数器，并设置输出的格式和参数变量名，我们此处举例是需要输入的参数为maowei-001、maowei-002、maowei-003、maowei-004、maowei-005，具体配置如下图所示；</p>
-<p><img src="/assets/image-20211207112526-x0cpevn.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112526-x0cpevn.png" alt="image.png"></p>
 <p>步骤3：添加请求和查看结果树，具体操作如上一种方法所示；</p>
-<p><img src="/assets/image-20211207112531-d8yjv77.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112531-d8yjv77.png" alt="image.png"></p>
 <p>步骤4：点击执行并查看执行结果；</p>
-<p><img src="/assets/image-20211207112539-khj9gmq.png" alt="image.png"></p>
-<p><img src="/assets/image-20211207112544-pca74ss.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112539-khj9gmq.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112544-pca74ss.png" alt="image.png"></p>
 <ol start="4">
 <li>使用随机函数来生成随机值</li>
-<li><img src="/assets/image-20211207112549-byih28h.png" alt="image.png"></li>
+<li><img src="/assets/1/image-20211207112549-byih28h.png" alt="image.png"></li>
 </ol>
 <p>4.1使用__Random函数来实现随机生成数值</p>
-<p><img src="/assets/image-20211207112556-8vljx1e.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112556-8vljx1e.png" alt="image.png"></p>
 <p>将函数式复制到请求页面的变量值输入框中，可以在函数式前面加想要输入的字符串前缀，例如maowei-，后面接随机值</p>
-<p><img src="/assets/image-20211207112605-d8lpmd3.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112605-d8lpmd3.png" alt="image.png"></p>
 <p>点击执行，可以查看结果，【注意】此随机值函数，可以产生入值参数重复的情况，假如不想入参出现重复，建议不要使用这种方式</p>
-<p><img src="/assets/image-20211207112611-9z64wa2.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112611-9z64wa2.png" alt="image.png"></p>
 <p>4.2使用__RandomDate函数来实现随机生成数值</p>
-<p><img src="/assets/image-20211207112618-z7bjnzp.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112618-z7bjnzp.png" alt="image.png"></p>
 <p>点击执行，可以查看结果，【注意】此随机值函数，可以产生入值参数重复的情况，假如不想入参出现重复，建议不要使用这种方式</p>
-<p><img src="/assets/image-20211207112625-0je5puy.png" alt="image.png"></p>
-<p><img src="/assets/image-20211207112631-g8flyis.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112625-0je5puy.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112631-g8flyis.png" alt="image.png"></p>
 <p>4.3使用__RandomString函数来实现随机生成数值</p>
-<p><img src="/assets/image-20211207112638-t4nxhld.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112638-t4nxhld.png" alt="image.png"></p>
 <p>点击执行，可以查看结果，【注意】此随机值函数，概率性产生入值参数重复的情况，假如不想入参出现重复，建议不要使用这种方式</p>
-<p><img src="/assets/image-20211207112645-l8ytl87.png" alt="image.png"></p>
-<p><img src="/assets/image-20211207112658-y6oy4lk.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112645-l8ytl87.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211207112658-y6oy4lk.png" alt="image.png"></p>
 
 </div>
 

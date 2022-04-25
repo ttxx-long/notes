@@ -2164,14 +2164,14 @@ var _hmt = _hmt || [];
 <p>三，monkey前的准备命令</p>
 <p>1.windows+r 输入cmd进入dos命令行；</p>
 <p>2.输入adb devices 下面出现类似下图的组合你就成功了；（</p>
-<p><img src="/assets/image-20220312153527-miroy1y.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312153527-miroy1y.png" alt="image.png"></p>
 <p>3.获取包名（我常用的几种）</p>
 <p>（1）输入 adb shell pm list packages    查看你的手机所有的安装包；输入 adb shell pm list packages -3 查看手机上所有的第三方安装包，看一眼差不多就知道哪一个是你要的安装包;</p>
 <p>（2）使用uiaotumator之类的软件查看，</p>
-<p><img src="/assets/image-20220312153538-c9b58oa.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312153538-c9b58oa.png" alt="image.png"></p>
 <p>（3）DOS环境输入：adb shell logcat|findstr “Displayed”   ，打开待测试的APP；</p>
 <p>红线1是包名，红线2是appActivity（自动化测试时能用到）</p>
-<p><img src="/assets/image-20220312153549-tym78kw.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312153549-tym78kw.png" alt="image.png"></p>
 <p>这样可以尽快的找到想要的安装包名称；</p>
 <p>四，首先用一个最简单的mokey去试着找哪个是你想要的安装包名称：</p>
 <p>1.&#x2F; &#x2F; -p参数：表示指定测试的程序（空格后面跟安装包名字，拿刚才的第三方安装包一个个试）</p>
@@ -2179,7 +2179,7 @@ var _hmt = _hmt || [];
 <p>  &#x2F; &#x2F;数字100:表示测试事件数为100</p>
 <p> 指定一个包   adb shell monkey  -p  com.tencent.news  -v -v -v  100   （此时指定软件会被打开并开始乱点乱按）<br> 指定多个包   adb shell monkey -p com.tencent.news -p com.pdfreader -p com.widgets  -v 1000<br> 不指定包       adb shell monkey -v 1000</p>
 <p> 结果如图：</p>
-<p><img src="/assets/image-20220312153601-91xcpjd.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312153601-91xcpjd.png" alt="image.png"></p>
 <p>Event percentages（事件百分比）:</p>
 <p>0：触摸事件百分比，参数–pct-touch</p>
 <p>1：滑动事件百分比，参数–pct-motion</p>

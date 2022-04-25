@@ -2126,52 +2126,52 @@ var _hmt = _hmt || [];
 <h2 id="Java环境安装"><a href="#Java环境安装" class="headerlink" title="Java环境安装"></a>Java环境安装</h2><p><strong>由于许多工具配套支持的jdk版本为1.8版本，所以尽量选择</strong>jdk1.8<strong>版本使用。</strong></p>
 <h3 id="1-下载jdk"><a href="#1-下载jdk" class="headerlink" title="1.  下载jdk"></a>1.  <strong>下载</strong>jdk</h3><p><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html</a></p>
 <p><strong>选择对应系统版本匹配的</strong>JDK<strong>，点击右边的下载。</strong></p>
-<p><img src="/assets/image-20220324172511-lke1vl3.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172511-lke1vl3.png" alt="image.png"></p>
 <p><strong>在弹出的窗口中勾选同意用户协议，并点击下载，若没有登录则会弹出登录界面，注册一个账号进行下载即可。</strong></p>
-<p><img src="/assets/image-20220324172521-1ya4f0w.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172521-1ya4f0w.png" alt="image.png"></p>
 <p><strong>JDK</strong>下载完成后，直接双击运行安装，建议默认安装到C:\Program Files\Java，记住自己的安装路径。点击下一步等待安装即可。</p>
-<p><img src="/assets/image-20220324172527-erl5zf5.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172527-erl5zf5.png" alt="image.png"></p>
 <p><strong>之后会弹出JRE环境安装的提示，建议同样使用默认路径，直接下一步。等待安装完成之后关闭。</strong></p>
-<p><img src="/assets/image-20220324172533-ettqoz2.png" alt="image.png"></p>
-<p><img src="/assets/image-20220324172539-8x11wj1.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172533-ettqoz2.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172539-8x11wj1.png" alt="image.png"></p>
 <h3 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2.  配置环境变量"></a>2.  <strong>配置环境变量</strong></h3><p><strong>配置环境变量之前，先检查确认java安装成功：</strong></p>
 <p><strong>进入安装目录中，确认安装目录下jdk和jre都已经安装成功。确认jdk目录的bin目录下，包含java.exe，javac.exe,javaw.exe。如果没有，尝试卸载重装。</strong></p>
-<p><img src="/assets/image-20220324172545-zymly6w.png" alt="image.png"></p>
-<p><img src="/assets/image-20220324172550-2jd1t1a.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172545-zymly6w.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172550-2jd1t1a.png" alt="image.png"></p>
 <p><strong>环境变量操作方法：</strong></p>
 <p><strong>Win7</strong>：<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/d5a880eb6aca7213f047cc6c.html">https://jingyan.baidu.com/article/d5a880eb6aca7213f047cc6c.html</a></p>
 <p><strong>Win10</strong>：<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/ad310e80d2ebe31848f49e59.html">https://jingyan.baidu.com/article/ad310e80d2ebe31848f49e59.html</a></p>
 <p><strong>以</strong>WIN10<strong>为例：</strong></p>
-<h4 id="一、在系统变量中，添加JAVA-HOME变量，值为JDK安装目录。"><a href="#一、在系统变量中，添加JAVA-HOME变量，值为JDK安装目录。" class="headerlink" title="一、在系统变量中，添加JAVA_HOME变量，值为JDK安装目录。"></a>一、在系统变量中，添加<strong>JAVA_HOME</strong>变量，值为<strong>JDK</strong>安装目录。</h4><p><img src="/assets/image-20220324172557-k5e0kcd.png" alt="image.png"></p>
+<h4 id="一、在系统变量中，添加JAVA-HOME变量，值为JDK安装目录。"><a href="#一、在系统变量中，添加JAVA-HOME变量，值为JDK安装目录。" class="headerlink" title="一、在系统变量中，添加JAVA_HOME变量，值为JDK安装目录。"></a>一、在系统变量中，添加<strong>JAVA_HOME</strong>变量，值为<strong>JDK</strong>安装目录。</h4><p><img src="/assets/1/image-20220324172557-k5e0kcd.png" alt="image.png"></p>
 <h4 id="二、编辑系统变量中的Path"><a href="#二、编辑系统变量中的Path" class="headerlink" title="二、编辑系统变量中的Path:"></a>二、编辑系统变量中的P<strong>ath</strong>:</h4><p><strong>1、删除变量</strong>C:\Program Files (x86)\Common Files\Oracle\Java\javapath，通常在第一个。</p>
-<p><strong>确认是</strong>Oracle\Java\javapath再删除！！！<img src="/assets/image-20220324172606-hx3wr2s.png" alt="image.png"></p>
+<p><strong>确认是</strong>Oracle\Java\javapath再删除！！！<img src="/assets/1/image-20220324172606-hx3wr2s.png" alt="image.png"></p>
 <p><strong>2、在Path中新建</strong>%<strong>JAVA_HOME%\bin</strong>请确保这个目录下包含<strong>java.exe</strong>和<strong>javac.exe。</strong></p>
-<p><img src="/assets/image-20220324172626-q4ank4m.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172626-q4ank4m.png" alt="image.png"></p>
 <h4 id="三-安装检查"><a href="#三-安装检查" class="headerlink" title="三.  安装检查"></a>三.  <strong>安装检查</strong></h4><p><strong>检查</strong>path<strong>：在</strong>cmd<strong>下输入 echo %path% ，确保</strong>path<strong>里面，</strong>java<strong>的路径是正确的，并且没有其他</strong>java<strong>的路径。</strong></p>
-<p><img src="/assets/image-20220324172632-c5i0tqu.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172632-c5i0tqu.png" alt="image.png"></p>
 <p><strong>cmd</strong>在任意目录下，执行<strong>java -version</strong>和<strong>javac -version</strong>。两个版本与安装版本一致，说明配置成功。</p>
-<p><img src="/assets/image-20220324172638-br4z8gt.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172638-br4z8gt.png" alt="image.png"></p>
 <h1 id="Jenkins安装部署"><a href="#Jenkins安装部署" class="headerlink" title="Jenkins安装部署"></a>Jenkins安装部署</h1><h2 id="Tomcat下载解压："><a href="#Tomcat下载解压：" class="headerlink" title="Tomcat下载解压："></a>Tomcat下载解压：</h2><p><strong>tomcat是非常常用的轻量级web应用服务器，用于进行web项目的发布。要完成jenkins的部署，首先需要安装Java环境和tomcat。</strong></p>
 <p><strong>Java环境的安装请参考文档中的《java环境搭建》一文。</strong></p>
 <p>1、下载tomcat： <a target="_blank" rel="noopener" href="https://tomcat.apache.org/download-80.cgi">https://tomcat.apache.org/download-80.cgi</a></p>
 <p><strong>2、下载之后直接解压即可使用。</strong></p>
 <h2 id="Jenkins部署到tomcat启动"><a href="#Jenkins部署到tomcat启动" class="headerlink" title="Jenkins部署到tomcat启动"></a>Jenkins部署到tomcat启动</h2><p>1、下载Jenkins.war，联系悠米老师领取或者从官网下载均可： <a target="_blank" rel="noopener" href="https://www.jenkins.io/download/">https://www.jenkins.io/download/</a></p>
 <p><strong>2、将Jenkins.war包复制到到Tomcat的webapps目录下，然后在tomcat的bin目录下运行startup.bat，启动tomcat。</strong></p>
-<p><img src="/assets/image-20220324172712-md4nob9.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172712-md4nob9.png" alt="image.png"></p>
 <p><strong>3、   在浏览器中访问<a target="_blank" rel="noopener" href="http://localhost:8080/jenkins%EF%BC%8C%E7%AD%89%E5%BE%85%E7%BD%91%E9%A1%B5%E5%88%9D%E5%A7%8B%E5%8C%96%E6%88%90%E5%8A%9F%EF%BC%8C%E7%9B%B4%E5%88%B0%E5%87%BA%E7%8E%B0%E4%B8%8B%E9%9D%A2%E7%9A%84%E7%95%8C%E9%9D%A2%EF%BC%9A">http://localhost:8080/jenkins，等待网页初始化成功，直到出现下面的界面：</a></strong></p>
-<p><img src="/assets/image-20220324172717-fw32cnu.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172717-fw32cnu.png" alt="image.png"></p>
 <p><strong>4、  用记事本或Notepad++等文本编辑工具</strong>打开图中红色标识目录中的<strong>initialAdminPassword</strong>文件，复制里面的字符串，粘贴到图中输入框。然后点击图中的继续按钮。</p>
 <p><strong>5、   跳转</strong>到下图页面，建议选择Install suggested plugins安装推荐插件，熟悉基本插件之后，可以选择Select plugins to install自定义配置安装的插件。</p>
-<p><img src="/assets/image-20220324172725-r2o7lwv.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172725-r2o7lwv.png" alt="image.png"></p>
 <hr>
 <p><strong>6、    <strong>等待插件安装（需要较长时间），当进度条读满，所有插件项目都变成红色或者绿色之后，说明安装结束，如果安装完成页面没有自动跳转，请</strong>手动刷新浏览器页面。</strong></p>
-<p><img src="/assets/image-20220324172731-py63260.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172731-py63260.png" alt="image.png"></p>
 <p><strong>7、    <strong>忽略安装失败，点击</strong>continue</strong>。</p>
-<p><img src="/assets/image-20220324172737-a5ccczb.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172737-a5ccczb.png" alt="image.png"></p>
 <p><strong>8、    <strong>创建一个管理员用户名密码，请</strong>记住</strong>用户名和密码，用于之后登录使用。配置完成点击<strong>save and finish</strong>结束。</p>
-<p><img src="/assets/image-20220324172743-yybujku.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172743-yybujku.png" alt="image.png"></p>
 <p><strong>9、    <strong>进入</strong>Jenkins</strong>页面。此时，安装完成</p>
-<p><img src="/assets/image-20220324172750-9wxgelu.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324172750-9wxgelu.png" alt="image.png"></p>
 
 </div>
 

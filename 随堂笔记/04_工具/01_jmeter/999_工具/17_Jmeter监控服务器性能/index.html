@@ -2144,7 +2144,7 @@ var _hmt = _hmt || [];
 </div>
 
 <div id="article-content">
-	<h3 id="jmeter也可以像loadrunner一样监控服务器CPU、内存等性能参数，不过需要安装一些插件"><a href="#jmeter也可以像loadrunner一样监控服务器CPU、内存等性能参数，不过需要安装一些插件" class="headerlink" title="jmeter也可以像loadrunner一样监控服务器CPU、内存等性能参数，不过需要安装一些插件"></a>jmeter也可以像loadrunner一样监控服务器CPU、内存等性能参数，不过需要安装一些插件</h3><h3 id="1、下载需要的jmeter插件"><a href="#1、下载需要的jmeter插件" class="headerlink" title="** 1、下载需要的jmeter插件**"></a>** 1、下载需要的jmeter插件**</h3><p><img src="/assets/image-20220326104327-nzp9r33.png" alt="image.png"></p>
+	<h3 id="jmeter也可以像loadrunner一样监控服务器CPU、内存等性能参数，不过需要安装一些插件"><a href="#jmeter也可以像loadrunner一样监控服务器CPU、内存等性能参数，不过需要安装一些插件" class="headerlink" title="jmeter也可以像loadrunner一样监控服务器CPU、内存等性能参数，不过需要安装一些插件"></a>jmeter也可以像loadrunner一样监控服务器CPU、内存等性能参数，不过需要安装一些插件</h3><h3 id="1、下载需要的jmeter插件"><a href="#1、下载需要的jmeter插件" class="headerlink" title="** 1、下载需要的jmeter插件**"></a>** 1、下载需要的jmeter插件**</h3><p><img src="/assets/1/image-20220326104327-nzp9r33.png" alt="image.png"></p>
 <pre><code>   如图上面两个是jmeter插件，可以再下面的链接中下载：
 </code></pre>
 <p><a target="_blank" rel="noopener" href="https://jmeter-plugins.org/downloads/old">https://jmeter-plugins.org/downloads/old</a></p>
@@ -2152,9 +2152,9 @@ var _hmt = _hmt || [];
 <p><a target="_blank" rel="noopener" href="http://pan.baidu.com/share/link?shareid=2974853586&amp;uk=1528396991&amp;fid=512652594025385">http://pan.baidu.com/share/link?shareid=2974853586&amp;uk=1528396991&amp;fid=512652594025385</a></p>
 <h3 id="2、解压压缩包"><a href="#2、解压压缩包" class="headerlink" title="2、解压压缩包"></a>2、解压压缩包</h3><p>参见包里面的说明文档：”Just copy the JAR file into JMeter’s lib&#x2F;ext directory.Then you can start JMeter and add additional items to your Test Plan.Java version 1.6 and JMeter 2.4 are required.”</p>
 <p>所以我们需要找到解压包中的JAR文件，并拷贝到jmeter的lib&#x2F;ext目录下，这里下载的1.4版本的插件需要在jdk1.6及jmeter2.4以上的版本使用</p>
-<p><img src="/assets/image-20220326104336-mnxzztx.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220326104336-mnxzztx.png" alt="image.png"></p>
 <p>   如上图，把的两个jar包放到JMeter的 lib&#x2F;ext目录下，重启jmeter，出现如下新增的组件，则说明启动成功</p>
-<p><img src="/assets/image-20220326104342-izjjvmn.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220326104342-izjjvmn.png" alt="image.png"></p>
 <h3 id="3、-常用组件简要介绍："><a href="#3、-常用组件简要介绍：" class="headerlink" title="** 3、 常用组件简要介绍：**"></a>** 3、 常用组件简要介绍：**</h3><ol>
 <li><strong>jp@gc - Bytes Throughput Over Time:</strong> 不同时间吞吐量展示（图表）<br> 聚合报告里，Throughput是按请求个数来展示的，比如说1.9&#x2F;sec，就是每s发送1.9个请求；而这里的展示是按字节Bytes来展示的图表</li>
 <li>**jp@gc - Composite Graph： **混合图表<br> 在它的Graphs里面可以设置多少个图表一起展示，它可以同时展示多个图表</li>
@@ -2165,21 +2165,21 @@ var _hmt = _hmt || [];
 <li><strong>jp@gc - Transactions per Second：</strong> 每秒事务数，服务器每秒处理的事务数</li>
 </ol>
 <p> 4、将监控服务器的serverAgent拷贝到需监测的服务器</p>
-<p><img src="/assets/image-20220326104350-fmnkbou.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220326104350-fmnkbou.png" alt="image.png"></p>
 <pre><code>   windows服务器中启动startAgent.bat，Linux服务器启动startAgent.sh即可
 
    在linux中启动 ./startAgent.sh 是，可能会提示：“-bash: ./startAgent.sh: 权限不够”，那么我们需要执行命令：
 
    chmod +x startAgent.sh
 </code></pre>
-<p><img src="/assets/image-20220326104359-7bjy6ks.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220326104359-7bjy6ks.png" alt="image.png"></p>
 <h3 id="5、准备测试脚本"><a href="#5、准备测试脚本" class="headerlink" title="** 5、准备测试脚本**"></a>** 5、准备测试脚本**</h3><pre><code>    这里用到一个登陆测试系统的简单脚本做压力测试demo
 </code></pre>
-<p><img src="/assets/image-20220326104405-5wtfz9j.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220326104405-5wtfz9j.png" alt="image.png"></p>
 <h3 id="6、配置监控服务器性能参数的组件"><a href="#6、配置监控服务器性能参数的组件" class="headerlink" title="**  6、配置监控服务器性能参数的组件**"></a>**  6、配置监控服务器性能参数的组件**</h3><pre><code>    主要用到这个组件：jp@gc - PerfMon Metrics Collector，配置如下：
 </code></pre>
-<p><img src="/assets/image-20220326104411-n8o04th.png" alt="image.png"></p>
-<h3 id="7、设置负载，执行脚本，查看监控结果"><a href="#7、设置负载，执行脚本，查看监控结果" class="headerlink" title="7、设置负载，执行脚本，查看监控结果"></a>7、设置负载，执行脚本，查看监控结果</h3><p><img src="/assets/image-20220326104416-6yys6lr.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220326104411-n8o04th.png" alt="image.png"></p>
+<h3 id="7、设置负载，执行脚本，查看监控结果"><a href="#7、设置负载，执行脚本，查看监控结果" class="headerlink" title="7、设置负载，执行脚本，查看监控结果"></a>7、设置负载，执行脚本，查看监控结果</h3><p><img src="/assets/1/image-20220326104416-6yys6lr.png" alt="image.png"></p>
 <h3 id="8、图表可导出成csv文件，配合聚合报告，分析服务器性能状况"><a href="#8、图表可导出成csv文件，配合聚合报告，分析服务器性能状况" class="headerlink" title="8、图表可导出成csv文件，配合聚合报告，分析服务器性能状况"></a>8、图表可导出成csv文件，配合聚合报告，分析服务器性能状况</h3>
 </div>
 

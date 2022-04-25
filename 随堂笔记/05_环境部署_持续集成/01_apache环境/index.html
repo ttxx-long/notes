@@ -2144,7 +2144,7 @@ var _hmt = _hmt || [];
 </code></pre>
 <h2 id="2-3-查看apache版本"><a href="#2-3-查看apache版本" class="headerlink" title="2.3 查看apache版本"></a>2.3 查看apache版本</h2><pre><code>httpd -v
 </code></pre>
-<p><img src="/assets/image-20211122230737-ixxygo6.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122230737-ixxygo6.png" alt="image.png"></p>
 <p> 可以看到apache安装的是2.4.6，也可以知道apache安装成功。</p>
 <h2 id="2-4-开启80端口"><a href="#2-4-开启80端口" class="headerlink" title="2.4 开启80端口"></a>2.4 开启80端口</h2><h1 id="添加80端口永久开启"><a href="#添加80端口永久开启" class="headerlink" title="添加80端口永久开启"></a>添加80端口永久开启</h1><pre><code>firewall-cmd --add-port=80/tcp --permanent
 </code></pre>
@@ -2173,7 +2173,7 @@ var _hmt = _hmt || [];
 </code></pre>
 <h2 id="3-4-查看mysql版本"><a href="#3-4-查看mysql版本" class="headerlink" title="3.4 查看mysql版本"></a>3.4 查看mysql版本</h2><pre><code>mysql -V
 </code></pre>
-<p><img src="/assets/image-20211122230745-87is6zt.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122230745-87is6zt.png" alt="image.png"></p>
 <hr>
 <h1 id="四、部署php"><a href="#四、部署php" class="headerlink" title="四、部署php"></a>四、部署php</h1><h2 id="4-1-安装"><a href="#4-1-安装" class="headerlink" title="4.1 安装"></a>4.1 安装</h2><pre><code>yum install -y php
 </code></pre>
@@ -2181,7 +2181,7 @@ var _hmt = _hmt || [];
 </code></pre>
 <h2 id="4-3-查看php版本"><a href="#4-3-查看php版本" class="headerlink" title="4.3 查看php版本"></a>4.3 查看php版本</h2><pre><code>php --version
 </code></pre>
-<p><img src="/assets/image-20211122230751-hh1f83z.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122230751-hh1f83z.png" alt="image.png"></p>
 <h2 id="4-4-查看详细信息"><a href="#4-4-查看详细信息" class="headerlink" title="4.4 查看详细信息"></a>4.4 查看详细信息</h2><h1 id="新增文件phpmess-php"><a href="#新增文件phpmess-php" class="headerlink" title="新增文件phpmess.php"></a>新增文件phpmess.php</h1><pre><code>vim /var/www/html/phpmess.php
 </code></pre>
 <p> 增加下面的内容，wq保存。</p>
@@ -2189,7 +2189,7 @@ var _hmt = _hmt || [];
     phpinfo();
 </code></pre>
 <p>浏览器访问ip&#x2F;phpmess.php查看，出现类似下面的内容就说明php安装是成功的。</p>
-<p><img src="/assets/image-20211122230756-t0j1bii.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122230756-t0j1bii.png" alt="image.png"></p>
 <h2 id="4-5-安全其他版本PHP"><a href="#4-5-安全其他版本PHP" class="headerlink" title="4.5 安全其他版本PHP"></a>4.5 安全其他版本PHP</h2><p>卸载原来低版本的PHP</p>
 <pre><code>rpm -qa |grep php|xargs rpm -e
 </code></pre>
@@ -2201,15 +2201,15 @@ var _hmt = _hmt || [];
 <p>安装PHP常用模块</p>
 <p>yum -y install php72-php php72-php-common php72-php-devel php72-php-gd php72-php-mysqlnd php72-php-pecl-mysql php72-php-pecl-memcached php72-php-pecl-memcache php72-php-pecl-redis php72-php-opcache</p>
 <p>&#x2F;&#x2F;装好后看一下装了哪些包<br>yum list installed |grep php</p>
-<p>&#x2F;&#x2F;最后重启下httpd<br>systemctl restart httpd<br><img src="/assets/image-20211122230802-4mgxljy.png" alt="image.png"></p>
+<p>&#x2F;&#x2F;最后重启下httpd<br>systemctl restart httpd<br><img src="/assets/1/image-20211122230802-4mgxljy.png" alt="image.png"></p>
 <h2 id="5-更改Apache网站默认目录"><a href="#5-更改Apache网站默认目录" class="headerlink" title="5.更改Apache网站默认目录"></a>5.更改Apache网站默认目录</h2><p>Apache默认的网站目录是在&#x2F;var&#x2F;www&#x2F;html，</p>
 <p>现在要把网站目录更改到&#x2F;home&#x2F;wwwroot&#x2F;web1&#x2F;htdocs，</p>
 <p>操作如下<br><strong>准备工作：</strong><br>创建目录：<br>cd &#x2F;home<br>mkdir wwwroot<br>cd wwwroot<br>mkdir web1<br>cd web1<br>mkdir htdocs<br>touch index.php<br><strong>操作步骤：</strong><br>1、vi &#x2F;etc&#x2F;httpd&#x2F;conf&#x2F;httpd.conf<br>找到 DocumentRoot “&#x2F;var&#x2F;www&#x2F;html” 这一段     #apache的根目录<br>把&#x2F;var&#x2F;www&#x2F;html 这个目录改为&#x2F;home&#x2F;wwwroot&#x2F;web1&#x2F;htdocs<br>再找到 &lt;Directory “&#x2F;var&#x2F;www&#x2F;html”&gt;   #定义apache &#x2F;var&#x2F;www&#x2F;html这个区域<br>把 &#x2F;var&#x2F;www&#x2F;html改成&#x2F;home&#x2F;wwwroot&#x2F;web1&#x2F;htdocs<br>这样我们就把apahce的默认路径改掉了<br>service httpd restart  #重启Apache服务器<br>2、访问localhost的时候，会发现访问拒绝，这是为什么呢？<br>系统运维 <a target="_blank" rel="noopener" href="http://www.osyunwei.com/">www.osyunwei.com</a> 温馨提醒：qihang01原创内容©版权所有,转载请注明出处及原文链接<br>主要是因为你的&#x2F;home&#x2F;wwwroot&#x2F;web1&#x2F;htdocs的权限是750，apache这个用户没有权限访问，你需要更改掉权限，可以这样改<br>chmod -R 755 &#x2F;home&#x2F;wwwroot&#x2F;web1&#x2F;htdocs<br>然后去访问 发现正常运行了（apache的用户：apache 运行apache的组：apache）<br> <strong>至此，</strong> <strong>Apache****默认网站目录更改成功。</strong></p>
 <h2 id="6-绑定域名"><a href="#6-绑定域名" class="headerlink" title="6.绑定域名"></a>6.绑定域名</h2><p>vi &#x2F;etc&#x2F;httpd&#x2F;conf&#x2F;httpd.conf　　更改配置文件</p>
-<p><img src="/assets/image-20211122230808-8zh112f.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122230808-8zh112f.png" alt="image.png"></p>
 <p> 在配置文件最后加入如下</p>
 <h1 id="域名配置"><a href="#域名配置" class="headerlink" title="域名配置"></a>域名配置</h1><p>&lt;VirtualHost *:80&gt;<br>DocumentRoot “&#x2F;www&#x2F;dz&#x2F;“<br>ServerName dz.m616.top<br></VirtualHost></p>
-<p><img src="/assets/image-20211122230814-l1ybpb2.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122230814-l1ybpb2.png" alt="image.png"></p>
 
 </div>
 

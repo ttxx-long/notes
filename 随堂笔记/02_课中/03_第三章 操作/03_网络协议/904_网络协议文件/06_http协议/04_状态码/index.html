@@ -2169,7 +2169,7 @@ var _hmt = _hmt || [];
 	<h1 id="什么是HTTP状态码"><a href="#什么是HTTP状态码" class="headerlink" title="什么是HTTP状态码"></a><strong>什么是HTTP状态码</strong></h1><p>HTTP状态码的作用是：Web服务器用来告诉客户端，发生了什么事。</p>
 <p>状态码位于HTTP Response 的第一行中，会返回一个”三位数字的状态码“和一个“状态消息”。 ”三位数字的状态码“便于程序进行处理， “状态消息”更便于人理解。</p>
 <p>如下图，  当客户端请求一个不存在的URL的时候， Web服务器会返回 “HTTP&#x2F;1.1 404 Not Found” 告诉浏览器客户端。 服务器无法找到所请求的URL。</p>
-<p><img src="/assets/wps58D2.tmp-20211222151316-t1cgk41.jpg"></p>
+<p><img src="/assets/1/wps58D2.tmp-20211222151316-t1cgk41.jpg"></p>
 <h1 id="状态码分类"><a href="#状态码分类" class="headerlink" title="状态码分类"></a><strong>状态码分类</strong></h1><p>HTTP状态码被分为五大类， 目前我们使用的HTTP协议版本是1.1， 支持以下的状态码。随着协议的发展，HTTP规范中会定义更多的状态码。</p>
 <p>小技巧：  假如你看到一个状态码518， 你并不知道具体518是什么意思。 这时候你只要知道518是属于（5XX，服务器错误就可以了）</p>
 <table>
@@ -2539,7 +2539,7 @@ var _hmt = _hmt || [];
 <li>通过查看Header, 测试资源是否被修改了。</li>
 </ol>
 <p>实例：先打开Fiddler, 然后启动浏览器访问ditu.google.cn,  你会捕获到很多204</p>
-<p><img src="/assets/wps58E3.tmp-20211222151316-3psm9de.png"></p>
+<p><img src="/assets/1/wps58E3.tmp-20211222151316-3psm9de.png"></p>
 <h1 id="206-Partial-Content-部分内容"><a href="#206-Partial-Content-部分内容" class="headerlink" title="206 Partial Content(部分内容)"></a><strong>206 Partial Content(部分内容)</strong></h1><p>206状态码代表服务器已经成功处理了部分GET请求（只有发送GET 方法的request, web服务器才可能返回206），</p>
 <p>应用场景：</p>
 <ol>
@@ -2552,55 +2552,55 @@ var _hmt = _hmt || [];
 <li>浏览器发送一个Get 方法的request.  header中包含 Range: bytes&#x3D;5303296-5336063. (意思就是请求得到5303296-5336063这个范围的数据)。</li>
 <li>Web服务器返回一个206 的Response. header中包含Content-Range: bytes 5303296-5336063&#x2F;12129376(表明这次返回的内容范围)</li>
 </ol>
-<p><img src="/assets/wps58E4.tmp-20211222151316-tq4eq8y.jpg"></p>
+<p><img src="/assets/1/wps58E4.tmp-20211222151316-tq4eq8y.jpg"></p>
 <h1 id="301-Moved-Permanently（永久移除"><a href="#301-Moved-Permanently（永久移除" class="headerlink" title="301 Moved Permanently（永久移除)"></a><strong>301 Moved Permanently（永久移除)</strong></h1><p>请求的URL已移走。Response中应该包含一个Location URL, 说明资源现在所处的位置</p>
 <p>例如：  1.  浏览器客户端访问 <a target="_blank" rel="noopener" href="http://map.google.cn/">http://map.google.cn</a></p>
 <ol start="2">
 <li>Web服务器返回Response 301，Location&#x3D;<a target="_blank" rel="noopener" href="http://titu.google.cn/">http://titu.google.cn</a>  （告诉客户端我们的资源位于这里， ）</li>
 <li>浏览器客户端会自动再发送一个Request 去访问<a target="_blank" rel="noopener" href="http://titu.google.cn/">http://titu.google.cn</a></li>
 </ol>
-<p><img src="/assets/wps58E5.tmp-20211222151316-23pq1a5.png"></p>
+<p><img src="/assets/1/wps58E5.tmp-20211222151316-23pq1a5.png"></p>
 <h1 id="400-Bad-Request（坏请求"><a href="#400-Bad-Request（坏请求" class="headerlink" title="400 Bad Request（坏请求)"></a><strong>400 Bad Request（坏请求)</strong></h1><p>发送的Request中的数据有错误(比如：表单有错误，Cookie有错误)，  这个我们也经常见到。</p>
 <p>实例： 还没想到， 想到了再贴个实例上来。</p>
 <h1 id="403-Forbidden-禁止"><a href="#403-Forbidden-禁止" class="headerlink" title="403 Forbidden(禁止)"></a><strong>403 Forbidden(禁止)</strong></h1><p>Web客户端发送的请求被Web服务器拒绝了， 如果服务器想说明为什么拒绝请求，可以包含实体的主体部分来对原因进行描述。但这个状态码通常是服务器不想说明拒绝原因。</p>
 <p>访问下面的URL， 会被服务器拒绝. 并且返回403状态码</p>
 <p><a target="_blank" rel="noopener" href="http://t2.baidu.com/it/u=1791561788,200960144&fm=0&gp=0.jpg">http://t2.baidu.com/it/u=1791561788,200960144&fm=0&gp=0.jpg</a></p>
 <h1 id="404-Page-not-Found-请求的资源不存在"><a href="#404-Page-not-Found-请求的资源不存在" class="headerlink" title="404 Page not Found (请求的资源不存在)"></a><strong>404 Page not Found (请求的资源不存在)</strong></h1><p>这个大家都懂的， 值得一提的是：　腾讯把404页面做成了“寻找被拐儿童”</p>
-<p><img src="/assets/wps58E6.tmp-20211222151316-qyq8gno.png"></p>
+<p><img src="/assets/1/wps58E6.tmp-20211222151316-qyq8gno.png"></p>
 <h1 id="405-Method-Not-Allowed-不允许使用的方法"><a href="#405-Method-Not-Allowed-不允许使用的方法" class="headerlink" title="405 Method Not Allowed(不允许使用的方法)"></a><strong>405 Method Not Allowed(不允许使用的方法)</strong></h1><p>405是指Web服务器不支持Request中的方法。</p>
 <p>我个人认为状态码405Method Not Allowed和501 Not Implemented 是一样的意思。都是不支持Request的方法。 （目前我还不知道这两个的区别）</p>
 <p>实例:  发送一个是trace方法的Request 给<a target="_blank" rel="noopener" href="http://www.google.com/">www.google.com</a></p>
-<p><img src="/assets/wps58E7.tmp-20211222151316-g6wvu4u.png"></p>
-<p><img src="/assets/wps58E8.tmp-20211222151316-5dizdq9.png"></p>
+<p><img src="/assets/1/wps58E7.tmp-20211222151316-g6wvu4u.png"></p>
+<p><img src="/assets/1/wps58E8.tmp-20211222151316-5dizdq9.png"></p>
 <h1 id="411-Length-Required（要求长度指示）"><a href="#411-Length-Required（要求长度指示）" class="headerlink" title="411 Length Required（要求长度指示）"></a><strong>411 Length Required（要求长度指示）</strong></h1><p>服务器要求在Request中包含Content-Length。</p>
 <p>当浏览器使用Post方法，发送数据给Web服务器时， 必须要有Content-Length。这样Web服务器才知道你要发送多少数据，否则Web服务器会返回411状态码</p>
 <p>实例： 发送一个Post方法的Request 给<a target="_blank" rel="noopener" href="http://www.google.com/">www.google.com</a>.   Request中没有Content-Length</p>
-<p><img src="/assets/wps58F9.tmp-20211222151316-iql1y7y.png"></p>
-<p><img src="/assets/wps58FA.tmp-20211222151316-gdysfe6.png"></p>
+<p><img src="/assets/1/wps58F9.tmp-20211222151316-iql1y7y.png"></p>
+<p><img src="/assets/1/wps58FA.tmp-20211222151316-gdysfe6.png"></p>
 <h1 id="413-Request-Entity-Too-Large（请求实体太大）"><a href="#413-Request-Entity-Too-Large（请求实体太大）" class="headerlink" title="413 Request Entity Too Large（请求实体太大）"></a><strong>413 Request Entity Too Large（请求实体太大）</strong></h1><p>作用：客户端发送的实体主体部分比服务器能够或者希望处理的要大。  一般情况下我们看不到这个状态码。 因为浏览器不会发送太大的数据给网站，但是机器人可能会。</p>
 <p>实例: 用post方法发送一个大文件(100MB以上)给<a target="_blank" rel="noopener" href="http://www.google.com/">www.google.com</a></p>
-<p><img src="/assets/wps58FB.tmp-20211222151316-qtpckvt.png"></p>
-<p><img src="/assets/wps58FC.tmp-20211222151316-fin7xes.png"></p>
+<p><img src="/assets/1/wps58FB.tmp-20211222151316-qtpckvt.png"></p>
+<p><img src="/assets/1/wps58FC.tmp-20211222151316-fin7xes.png"></p>
 <h1 id="414-Request-URI-Too-Long-请求URI太长"><a href="#414-Request-URI-Too-Long-请求URI太长" class="headerlink" title="414 Request URI Too Long(请求URI太长)"></a><strong>414 Request URI Too Long(请求URI太长)</strong></h1><p>就是说Request URI太长， 一般浏览器本身对URI的长度就会有限制，所以不会发送URI很长的Request. 我们平常是根本看不到414错误的。 但是机器人可以发送很长URI。</p>
 <p>例如：我们用Fiddler Composer发送一个很长的URI给Google, 比如 “<a target="_blank" rel="noopener" href="http://www.google.com/?q">www.google.com?q</a>&#x3D;asdfasdasf..”  q&#x3D;后面的参数很长。 就可以看到414了</p>
-<p><img src="/assets/wps58FD.tmp-20211222151316-ai45r9x.png"></p>
-<p><img src="/assets/wps58FE.tmp-20211222151316-k42ksdg.png"></p>
+<p><img src="/assets/1/wps58FD.tmp-20211222151316-ai45r9x.png"></p>
+<p><img src="/assets/1/wps58FE.tmp-20211222151316-k42ksdg.png"></p>
 <h1 id="500-Internal-Server-Error-内部服务器错误"><a href="#500-Internal-Server-Error-内部服务器错误" class="headerlink" title="500 Internal Server Error(内部服务器错误)"></a><strong>500 Internal Server Error(内部服务器错误)</strong></h1><p>这个太常见了， 我们开发网站的时候，当我们的程序出错了时，就会返回500错误。</p>
 <p>实例：ASP.NET 程序出错</p>
-<p><img src="/assets/wps58FF.tmp-20211222151316-hapybyl.png"></p>
-<p> <img src="/assets/wps5900.tmp-20211222151316-u3y9rl9.png"></p>
+<p><img src="/assets/1/wps58FF.tmp-20211222151316-hapybyl.png"></p>
+<p> <img src="/assets/1/wps5900.tmp-20211222151316-u3y9rl9.png"></p>
 <h1 id="501-Not-Implemented-未实现"><a href="#501-Not-Implemented-未实现" class="headerlink" title="501 Not Implemented(未实现)"></a><strong>501 Not Implemented(未实现)</strong></h1><p>客户端发起的请求超出服务器的能力范围(比如，使用了服务器不支持的请求方法)时，使用此状态码）。  一般的Web服务器只支持GET和POST方法。</p>
 <p>实例： 使用Fiddler Composer 给<a target="_blank" rel="noopener" href="http://www.qq.com/">www.qq.com</a>,  发送一个OPTIONS 方法的Request.   服务器就能返回501了。</p>
-<p><img src="/assets/wps5901.tmp-20211222151316-l7a5n1g.jpg"></p>
-<p><img src="/assets/wps5902.tmp-20211222151316-jpgi2af.jpg"></p>
+<p><img src="/assets/1/wps5901.tmp-20211222151316-l7a5n1g.jpg"></p>
+<p><img src="/assets/1/wps5902.tmp-20211222151316-jpgi2af.jpg"></p>
 <h1 id="502-Bad-Gateway（网关故障）"><a href="#502-Bad-Gateway（网关故障）" class="headerlink" title="502 Bad Gateway（网关故障）"></a><strong>502 Bad Gateway（网关故障）</strong></h1><p>代理使用的服务器遇到了上游的无效响应。</p>
 <p>Fiddler本身就是代理服务器。  当我们访问<a target="_blank" rel="noopener" href="http://www.facebook.com,这网站被我们天朝屏蔽了./">www.facebook.com，这网站被我们天朝屏蔽了。</a> 所以我们可以得到502</p>
-<p><img src="/assets/wps5903.tmp-20211222151316-xc9razj.png"></p>
+<p><img src="/assets/1/wps5903.tmp-20211222151316-xc9razj.png"></p>
 <h1 id="505-HTTP-Version-Not-Supported-不支持的HTTP版本"><a href="#505-HTTP-Version-Not-Supported-不支持的HTTP版本" class="headerlink" title="505 HTTP Version Not Supported(不支持的HTTP版本)"></a><strong>505 HTTP Version Not Supported(不支持的HTTP版本)</strong></h1><p>表示Web服务器不支持此HTTP协议的版本。</p>
 <p>众所周知我们现在使用的HTTP协议版本是HTTP&#x2F;1.1， 如果我们发送一个HTTP&#x2F;2.0 的request 给博客园， 博客园肯定不能支持HTTP&#x2F;2.0，所以会返回505</p>
 <p>想要发送这样的request, 可以使用Fiddler工具中的Composer来发送自定义的request, 如下图。</p>
-<p><img src="/assets/wps5904.tmp-20211222151316-986ruis.png"></p>
-<p><img src="/assets/wps5905.tmp-20211222151316-egcdh5j.jpg"></p>
+<p><img src="/assets/1/wps5904.tmp-20211222151316-986ruis.png"></p>
+<p><img src="/assets/1/wps5905.tmp-20211222151316-egcdh5j.jpg"></p>
 
 </div>
 

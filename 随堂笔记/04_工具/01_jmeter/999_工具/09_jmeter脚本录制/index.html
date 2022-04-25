@@ -2146,11 +2146,11 @@ var _hmt = _hmt || [];
 <div id="article-content">
 	<h2 id="配置JMeter"><a href="#配置JMeter" class="headerlink" title="配置JMeter"></a>配置JMeter</h2><ol>
 <li><p>打开JMeter，并新增一个线程组（选中“测试计划”，右键选择“添加” -&gt; “Threads (Users)” -&gt; “线程组”），如下图所示：</p>
-<p> <a href=""><img src="/assets/image-20211210100851-rgrip8q.png" alt="image.png"></a></p>
+<p> <a href=""><img src="/assets/1/image-20211210100851-rgrip8q.png" alt="image.png"></a></p>
 </li>
 <li><p>添加“HTTP代理服务器”</p>
 <p> 选中“工作台”，右键选择“添加” -&gt; “非测试元件” -&gt; “HTTP代理服务器”，如下图所示：</p>
-<p> <img src="/assets/image-20211210100858-3hys0sy.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20211210100858-3hys0sy.png" alt="image.png"></p>
 </li>
 <li><p>配置HTTP代理服务器，如下图所示：</p>
 <ol>
@@ -2158,40 +2158,40 @@ var _hmt = _hmt || [];
 <li>修改分组为“每个组放入一个新的控制器”</li>
 <li>还根据需要可以修改代理端口号（默认8888）等配置</li>
 </ol>
-<p> <a href=""><img src="/assets/image-20211210100903-lbzw22o.png" alt="image.png"></a></p>
+<p> <a href=""><img src="/assets/1/image-20211210100903-lbzw22o.png" alt="image.png"></a></p>
 </li>
 <li><ol start="4">
 <li>选择“Requests Filtering”，在“包含模式”中填入“.+(baidu.com).+”用以过滤非baidu.com的请求</li>
 <li>同时在“排除模式”中填入“(?i).*.(bmp|css|js|gif|ico|jpe?g|png|swf|woff|woff2|htm|html).”用以过滤js、图片、html等资源文件请求</li>
 <li>最后点击“启动”按钮启动HTTP代理，如下图所示：</li>
 </ol>
-<p> <a href=""><img src="/assets/image-20211210100907-xhe41n6.png" alt="image.png"></a></p>
+<p> <a href=""><img src="/assets/1/image-20211210100907-xhe41n6.png" alt="image.png"></a></p>
 <p> <strong>END</strong></p>
 </li>
 </ol>
 <h2 id="录制脚本"><a href="#录制脚本" class="headerlink" title="录制脚本"></a>录制脚本</h2><ol>
 <li><p>配置代理</p>
 <p> 打开IE浏览器，点击右上方工具按钮，依次选择“Internet选项” -&gt; “连接” -&gt; “局域网设置” -&gt; “代理服务器”，勾选“为LAN使用代理服务器”，输入本地IP地址127.0.0.1及端口号8888，点击确定保存，如下图所示：</p>
-<p> <a href=""><img src="/assets/image-20211210100912-26k2b0p.png" alt="image.png"></a></p>
+<p> <a href=""><img src="/assets/1/image-20211210100912-26k2b0p.png" alt="image.png"></a></p>
 </li>
 <li><p>访问页面</p>
 <p> 使用IE浏览器打开百度首页，并进行一次搜索（如搜索lovesoo）；若页面提示“此网站的安全证书存在问题”，点击“继续浏览此网站(不推荐) ”即可，如下图所示：</p>
-<p> <a href=""><img src="/assets/image-20211210100917-yn5vsdk.png" alt="image.png"></a></p>
+<p> <a href=""><img src="/assets/1/image-20211210100917-yn5vsdk.png" alt="image.png"></a></p>
 <p> <strong>END</strong></p>
 </li>
 </ol>
 <h2 id="脚本处理"><a href="#脚本处理" class="headerlink" title="脚本处理"></a>脚本处理</h2><ol>
 <li><p>现在我们打开JMeter查看我们刚才录制的脚本，可以看到JMeter录制了整个流程的请求，包括开始的搜索建议，访问首页请求，获取搜索历史及搜索等请求，如下图所示：</p>
-<p> <a href=""><img src="/assets/image-20211210100921-lj9tq23.png" alt="image.png"></a></p>
+<p> <a href=""><img src="/assets/1/image-20211210100921-lj9tq23.png" alt="image.png"></a></p>
 </li>
 <li><p>此时，我们需要对这些HTTP请求做一些删除操作，只保留访问首页及搜索的请求，如下图所示：</p>
-<p> <a href=""><img src="/assets/image-20211210100926-hyot478.png" alt="image.png"></a></p>
+<p> <a href=""><img src="/assets/1/image-20211210100926-hyot478.png" alt="image.png"></a></p>
 </li>
 <li><p>然后，我们添加“查看结果树”及“聚合报告”，点击运行即可查询相应的搜索结果，如下图所示：</p>
-<p> <a href=""><img src="/assets/image-20211210100930-qn83bfp.png" alt="image.png"></a></p>
+<p> <a href=""><img src="/assets/1/image-20211210100930-qn83bfp.png" alt="image.png"></a></p>
 </li>
 <li><p>最后，我们还可以对接口进行响应的参数化及断言，用以校验HTTP请求返回值是否正确，如下图所示：</p>
-<p> <a href=""><img src="/assets/image-20211210100934-4sxodie.png" alt="image.png"></a></p>
+<p> <a href=""><img src="/assets/1/image-20211210100934-4sxodie.png" alt="image.png"></a></p>
 </li>
 </ol>
 

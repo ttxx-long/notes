@@ -2147,31 +2147,31 @@ var _hmt = _hmt || [];
 	<pre><code>一、将服务器的返回数据（即原资源）重定向到本地的文件进行调试
 </code></pre>
 <p>1、打开fiddler，打开浏览器输入<a target="_blank" rel="noopener" href="https://www.baidu.com(已百度为例),再回到fiddler进行设置/">https://www.baidu.com(已百度为例)，再回到fiddler进行设置</a></p>
-<p>2、按照截图所示，分别将4个选购全部勾选，勾选完成后，将待重定向的网址直接拖到右方【手动填写完整地址&#x2F;正则表达式进行模糊匹配的地址】即可 </p>
-<p><img src="/assets/wpsC4D9.tmp-20211222152849-xddwtw5.png"><img src="/assets/wpsC4E9.tmp-20211222152849-dnpk6z2.jpg"></p>
-<p>3、填写要替换的内容，下拉框有很多选项可以选择， 比如201、302、404，502等status code <br>注，我的一开始是404_Plain.dat</p>
-<p><img src="/assets/wpsC4EA.tmp-20211222152849-7l8x6s8.png"><img src="/assets/wpsC4EB.tmp-20211222152849-x7naahz.jpg"></p>
-<p>4、设置完成之后，刷新百度网页，请求回来的数据已经是替换后的内容了 </p>
-<p><img src="/assets/wpsC4EC.tmp-20211222152849-llrl5ig.jpg"></p>
-<p><img src="/assets/wpsC4ED.tmp-20211222152849-0tffmuw.png"></p>
+<p>2、按照截图所示，分别将4个选购全部勾选，勾选完成后，将待重定向的网址直接拖到右方【手动填写完整地址&#x2F;正则表达式进行模糊匹配的地址】即可 </p>
+<p><img src="/assets/1/wpsC4D9.tmp-20211222152849-xddwtw5.png"><img src="/assets/1/wpsC4E9.tmp-20211222152849-dnpk6z2.jpg"></p>
+<p>3、填写要替换的内容，下拉框有很多选项可以选择， 比如201、302、404，502等status code<br>注，我的一开始是404_Plain.dat</p>
+<p><img src="/assets/1/wpsC4EA.tmp-20211222152849-7l8x6s8.png"><img src="/assets/1/wpsC4EB.tmp-20211222152849-x7naahz.jpg"></p>
+<p>4、设置完成之后，刷新百度网页，请求回来的数据已经是替换后的内容了 </p>
+<p><img src="/assets/1/wpsC4EC.tmp-20211222152849-llrl5ig.jpg"></p>
+<p><img src="/assets/1/wpsC4ED.tmp-20211222152849-0tffmuw.png"></p>
 <p>注：想取消的话，直接将第1步中勾选的Enable rules去掉即可</p>
 <p>二、利用AutoResponder【重定向功能】修改返回response的数据</p>
 <p>1、在fiddler中打开百度<a target="_blank" rel="noopener" href="http://www.baidu.com,选择syntaxview的内容进行复制,保存到本机上,以baidu.html格式进行保存/">www.baidu.com，选择SyntaxView的内容进行复制，保存到本机上，以baidu.html格式进行保存</a></p>
-<p><img src="/assets/wpsC4EE.tmp-20211222152849-iqjyu7d.png"><img src="/assets/wpsC4EF.tmp-20211222152849-74zklii.jpg"></p>
-<p><img src="/assets/wpsC4F0.tmp-20211222152849-ogk32ph.jpg"></p>
-<p><img src="/assets/wpsC4F1.tmp-20211222152849-vounnot.png"></p>
+<p><img src="/assets/1/wpsC4EE.tmp-20211222152849-iqjyu7d.png"><img src="/assets/1/wpsC4EF.tmp-20211222152849-74zklii.jpg"></p>
+<p><img src="/assets/1/wpsC4F0.tmp-20211222152849-ogk32ph.jpg"></p>
+<p><img src="/assets/1/wpsC4F1.tmp-20211222152849-vounnot.png"></p>
 <p>2、点击AutoResponder，把刚才的网址拖到右边</p>
-<p><img src="/assets/wpsC4F2.tmp-20211222152849-58xedtk.png"><img src="/assets/wpsC4F3.tmp-20211222152849-51zx5n6.jpg"></p>
+<p><img src="/assets/1/wpsC4F2.tmp-20211222152849-58xedtk.png"><img src="/assets/1/wpsC4F3.tmp-20211222152849-51zx5n6.jpg"></p>
 <p>3、第一个下拉框选择Header:Accept&#x3D;html</p>
 <pre><code>第二个下拉框选择你刚才保存baidu.html的路径
 </code></pre>
-<p><img src="/assets/wpsC4F4.tmp-20211222152849-8o1a79i.jpg"></p>
-<p><img src="/assets/wpsC4F5.tmp-20211222152849-dy76gg8.png"></p>
+<p><img src="/assets/1/wpsC4F4.tmp-20211222152849-8o1a79i.jpg"></p>
+<p><img src="/assets/1/wpsC4F5.tmp-20211222152849-dy76gg8.png"></p>
 <p>4、勾选Enable rules之类的四个，然后点击保存</p>
-<p><img src="/assets/wpsC4F6.tmp-20211222152849-sgb5fjf.png"><img src="/assets/wpsC4F7.tmp-20211222152849-d28ppju.jpg"></p>
+<p><img src="/assets/1/wpsC4F6.tmp-20211222152849-sgb5fjf.png"><img src="/assets/1/wpsC4F7.tmp-20211222152849-d28ppju.jpg"></p>
 <p>5、再访问百度</p>
-<p><img src="/assets/wpsC4F8.tmp-20211222152849-upurpao.jpg"></p>
-<p><img src="/assets/wpsC4F9.tmp-20211222152849-o25jqlm.png"></p>
+<p><img src="/assets/1/wpsC4F8.tmp-20211222152849-upurpao.jpg"></p>
+<p><img src="/assets/1/wpsC4F9.tmp-20211222152849-o25jqlm.png"></p>
 <p>注：想取消的话，直接将第1步中勾选的Enable rules去掉即可</p>
 
 </div>

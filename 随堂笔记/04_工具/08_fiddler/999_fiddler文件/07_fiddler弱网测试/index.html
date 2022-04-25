@@ -2144,8 +2144,8 @@ var _hmt = _hmt || [];
 </div>
 
 <div id="article-content">
-	<p><img src="/assets/image-20220312103112-7w4grsr.png" alt="image.png"></p>
-<h1 id="【Fiddler】Fiddler实现弱网测试"><a href="#【Fiddler】Fiddler实现弱网测试" class="headerlink" title="【Fiddler】Fiddler实现弱网测试"></a>【Fiddler】Fiddler实现弱网测试</h1><p><img src="/assets/image-20220312103118-u6c78jk.png" alt="image.png"></p>
+	<p><img src="/assets/1/image-20220312103112-7w4grsr.png" alt="image.png"></p>
+<h1 id="【Fiddler】Fiddler实现弱网测试"><a href="#【Fiddler】Fiddler实现弱网测试" class="headerlink" title="【Fiddler】Fiddler实现弱网测试"></a>【Fiddler】Fiddler实现弱网测试</h1><p><img src="/assets/1/image-20220312103118-u6c78jk.png" alt="image.png"></p>
 <p>南京理工大学 理学硕士</p>
 <p>57 人赞同了该文章</p>
 <h2 id="一、弱网简介"><a href="#一、弱网简介" class="headerlink" title="一、弱网简介"></a><strong>一、弱网简介</strong></h2><p>弱网看字面意思就是网络比较弱，我们通称为信号差，网速慢。</p>
@@ -2156,17 +2156,17 @@ var _hmt = _hmt || [];
 <li>大家都喜欢刷抖音当我们在地铁上刷抖音，滑到下一个时候突然间就会页面卡住，这也是网络的原因导致的。</li>
 <li>很多bug都会在弱网的情况下展现出来，如由于响应慢而多次请求，最终导致app出现ANR问题。</li>
 </ul>
-<p><img src="/assets/image-20220312103127-7z69ay8.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312103127-7z69ay8.png" alt="image.png"></p>
 <p><strong>2、弱网定义</strong></p>
 <p>现在很多时候2G或者在地铁、电梯等场景的3G网，均可定义为弱网，下面是常见网络制式的上行、下载速度表，可以参考。</p>
-<p><img src="/assets/image-20220312103131-u2uo06z.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312103131-u2uo06z.png" alt="image.png"></p>
 <h2 id="二、Fiddler实现弱网的测试"><a href="#二、Fiddler实现弱网的测试" class="headerlink" title="二、Fiddler实现弱网的测试"></a><strong>二、Fiddler实现弱网的测试</strong></h2><p>无论是做web端还是app端的测试，我们都需要对弱网进行测试，对于弱网方法有很多种，如：Fiddler模拟弱网，控制电脑的网速等，今天介绍下Fiddler如何进行弱网测试。</p>
 <p><strong>1、Fiddler中启动弱网</strong></p>
 <p>打开Fiddler，Rules-&gt;Performance-&gt;勾选 Simulate Modem Speeds，勾选之后访问网站会发现网络慢了很多。</p>
-<p><img src="/assets/image-20220312103136-fl10m66.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312103136-fl10m66.png" alt="image.png"></p>
 <p><strong>2、设置弱网的参数</strong></p>
 <p>菜单Rules—&gt;Cutomize Rules</p>
-<p><img src="/assets/image-20220312103140-aj3g5w6.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312103140-aj3g5w6.png" alt="image.png"></p>
 <p>让我们来分析一下这几行代码：</p>
 <pre><code class="text">        if (m_SimulateModem) &#123;
             // Delay sends by 300ms per KB uploaded.
@@ -2194,7 +2194,7 @@ var _hmt = _hmt || [];
 </ul>
 <p><strong>3、验证效果</strong></p>
 <p>同样的接口，开启弱网前后分别运行一次，查看统计数据。</p>
-<p><img src="/assets/image-20220312103144-imlxacs.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312103144-imlxacs.png" alt="image.png"></p>
 <p><strong>4、恢复设置</strong></p>
 <p>完成测试之后，需要再次执行：打开Fiddler，Rules-&gt;Performance-&gt;勾选 Simulate Modem Speeds，关闭弱网模拟。</p>
 

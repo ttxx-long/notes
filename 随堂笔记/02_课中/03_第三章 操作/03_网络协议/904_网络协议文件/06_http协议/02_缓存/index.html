@@ -2176,7 +2176,7 @@ var _hmt = _hmt || [];
 <li>加快了客户端加载网页的速度</li>
 </ol>
 <h1 id="Fiddler可以方便地查看缓存的header"><a href="#Fiddler可以方便地查看缓存的header" class="headerlink" title="Fiddler可以方便地查看缓存的header"></a><strong>Fiddler可以方便地查看缓存的header</strong></h1><p>Fiddler中把header都分门别类的放在一起，这样方便查看。</p>
-<p><img src="/assets/wpsE155.tmp-20211222151127-949mku1.png"></p>
+<p><img src="/assets/1/wpsE155.tmp-20211222151127-949mku1.png"></p>
 <h1 id="如何判断缓存新鲜度"><a href="#如何判断缓存新鲜度" class="headerlink" title="如何判断缓存新鲜度"></a><strong>如何判断缓存新鲜度</strong></h1><p>Web服务器通过2种方式来判断浏览器缓存是否是最新的。</p>
 <p>第一种， 浏览器把缓存文件的最后修改时间通过 header ”If-Modified-Since“来告诉Web服务器。</p>
 <p>第二种， 浏览器把缓存文件的ETag, 通过header “If-None-Match”, 来告诉Web服务器。</p>
@@ -2184,13 +2184,13 @@ var _hmt = _hmt || [];
 <li>浏览器客户端想请求一个文档，  首先检查本地缓存，发现存在这个文档的缓存，  获取缓存中文档的最后修改时间，通过： If-Modified-Since， 发送Request给Web服务器。</li>
 <li>Web服务器收到Request，将服务器的文档修改时间（Last-Modified）: 跟request header 中的，If-Modified-Since相比较， 如果时间是一样的， 说明缓存还是最新的， Web服务器将发送304 Not Modified给浏览器客户端， 告诉客户端直接使用缓存里的版本。如下图。</li>
 </ol>
-<p><img src="/assets/wpsE156.tmp-20211222151127-4a40jej.jpg"></p>
+<p><img src="/assets/1/wpsE156.tmp-20211222151127-4a40jej.jpg"></p>
 <ol start="3">
 <li>假如该文档已经被更新了。Web服务器将发送该文档的最新版本给浏览器客户端， 如下图。</li>
 </ol>
-<p><img src="/assets/wpsE157.tmp-20211222151127-uyh67po.jpg"></p>
+<p><img src="/assets/1/wpsE157.tmp-20211222151127-uyh67po.jpg"></p>
 <p>实例： 打开Fiddler, 然后打开博客园首页。然后F5刷新几次浏览器。 你会看到博客园首页也用了缓存。</p>
-<p><img src="/assets/wpsE158.tmp-20211222151127-etqucwh.jpg"></p>
+<p><img src="/assets/1/wpsE158.tmp-20211222151127-etqucwh.jpg"></p>
 <h1 id="与缓存有关的header"><a href="#与缓存有关的header" class="headerlink" title="与缓存有关的header"></a><strong>与缓存有关的header</strong></h1><p>我们来看看每个header的具体含义。</p>
 <p>Request</p>
 <table>
@@ -2272,7 +2272,7 @@ var _hmt = _hmt || [];
 <li>一些文件的最后修改时间改变了，但是内容并未改变。 我们不希望客户端认为这个文件修改了。</li>
 </ol>
 <p>实例， 打开Fiddler, 打开博客园首页。  你可以看到很多图片，或者CSS文件都是用了缓存。 这些都是通过比较ETag的值，来判断文件是否更新了。</p>
-<p><img src="/assets/wpsE159.tmp-20211222151127-o57jc2l.jpg"></p>
+<p><img src="/assets/1/wpsE159.tmp-20211222151127-o57jc2l.jpg"></p>
 <h1 id="浏览器不使用缓存"><a href="#浏览器不使用缓存" class="headerlink" title="浏览器不使用缓存"></a><strong>浏览器不使用缓存</strong></h1><p>CTRL+F5强制刷新浏览器，或者设置IE。  可以让浏览器不使用缓存。</p>
 <ol>
 <li>浏览器发送Http request, 给Web 服务器， header中带有Cache-Control: no-cache.   明确告诉Web服务器，客户端不使用缓存。</li>
@@ -2280,26 +2280,26 @@ var _hmt = _hmt || [];
 </ol>
 <p>实例:</p>
 <p>打开Fiddler, 打开博客园首页， 然后按CTRL+F5强制刷新浏览器，你将看到</p>
-<p><img src="/assets/wpsE15A.tmp-20211222151127-xzmycng.jpg"></p>
+<p><img src="/assets/1/wpsE15A.tmp-20211222151127-xzmycng.jpg"></p>
 <p>Pragma: no-cache的作用和Cache-Control: no-cache一模一样。 都是不使用缓存。</p>
 <p>Pragma: no-cache 是HTTP 1.0中定义的， 所以为了兼容HTTP 1.0. 所以会同时使用Pragma: no-cache和Cache-Control: no-cache</p>
 <h1 id="直接使用缓存，不去服务器验证"><a href="#直接使用缓存，不去服务器验证" class="headerlink" title="直接使用缓存，不去服务器验证"></a><strong>直接使用缓存，不去服务器验证</strong></h1><p>按F5刷新浏览器和在地址栏里输入网址然后回车。 这两个行为是不一样的。</p>
 <p>按F5刷新浏览器， 浏览器会去Web服务器验证缓存。</p>
 <p>如果是在地址栏输入网址然后回车，浏览器会”直接使用有效的缓存”, 而不会发http request 去服务器验证缓存，这种情况叫做缓存命中，如下图</p>
-<p><img src="/assets/wpsE15B.tmp-20211222151127-vlk8i3m.jpg"></p>
+<p><img src="/assets/1/wpsE15B.tmp-20211222151127-vlk8i3m.jpg"></p>
 <p>实例： 比较第一次访问博客园主页和第二次博客园主页</p>
 <ol>
 <li>启动Fiddler, 用firefox打开博客园主页， 发现有50多个session。</li>
 <li>按CTRL+X将Fiddler中的所有session删除。 关闭firefox,重新打开一个firefox，打开博客园主页。   发现只有30多个session.</li>
 </ol>
 <p>分析；  少了的session是因为firefox直接用了缓存，而没有发http request。</p>
-<p><img src="/assets/wpsE15C.tmp-20211222151127-owy880x.jpg"></p>
+<p><img src="/assets/1/wpsE15C.tmp-20211222151127-owy880x.jpg"></p>
 <h1 id="如何设置IE不使用缓存"><a href="#如何设置IE不使用缓存" class="headerlink" title="如何设置IE不使用缓存"></a><strong>如何设置IE不使用缓存</strong></h1><p>打开IE。点击工具栏上的， 工具-&gt;Internet选项-&gt;常规-&gt;浏览历史记录 设置. 选择“从不”。然后保存。</p>
 <p>然后点击“删除”  把Internet临时文件都删掉 （IE缓存的文件就是Internet临时文件）。</p>
-<p><img src="/assets/wpsE15D.tmp-20211222151127-tnxmonf.jpg"></p>
+<p><img src="/assets/1/wpsE15D.tmp-20211222151127-tnxmonf.jpg"></p>
 <h1 id="公有缓存和私有缓存的区别"><a href="#公有缓存和私有缓存的区别" class="headerlink" title="公有缓存和私有缓存的区别"></a><strong>公有缓存和私有缓存的区别</strong></h1><p>Cache-Control: public 指可以公有缓存， 可以是数千名用户共享的。</p>
 <p>Cache-Control: private 指只支持私有缓存， 私有缓存是单个用户专用的。</p>
-<p><img src="/assets/wpsE16E.tmp-20211222151127-uql8c7i.jpg"></p>
+<p><img src="/assets/1/wpsE16E.tmp-20211222151127-uql8c7i.jpg"></p>
 
 </div>
 

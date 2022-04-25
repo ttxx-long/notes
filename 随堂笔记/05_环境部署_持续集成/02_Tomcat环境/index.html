@@ -2135,7 +2135,7 @@ OpenJDK 64-Bit Server VM (build 25.212-b04, mixed mode)
 <p>将入其文件夹</p>
 <p>[root@test ~]# cd &#x2F;usr&#x2F;local</p>
 <p>2.去tomcat官网复制你想下载的版本下载链接。注意一定要选择tar.gz这是liunx下的安装包，比如链接：<a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=http://mirror.bit.edu.cn/apache/tomcat/tomcat-9/v9.0.19/bin/apache-tomcat-9.0.19.tar.gz">http://mirror.bit.edu.cn/apache/tomcat/tomcat-9/v9.0.19/bin/apache-tomcat-9.0.19.tar.gz</a></p>
-<p><img src="/assets/image-20211125152847-ggl37xb.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211125152847-ggl37xb.png" alt="image.png"></p>
 <p>在这里插入图片描述</p>
 <p>3.wget命令下载安装包</p>
 <blockquote>
@@ -2146,7 +2146,7 @@ OpenJDK 64-Bit Server VM (build 25.212-b04, mixed mode)
 <p>4.查看</p>
 <pre><code>[root@instance-wi0t3arq local]# ls
 </code></pre>
-<p><img src="/assets/image-20211125152852-2lujja3.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211125152852-2lujja3.png" alt="image.png"></p>
 <p>在这里插入图片描述</p>
 <p>5.解压</p>
 <p>个人习惯喜欢把安装包改一下名字</p>
@@ -2169,7 +2169,7 @@ Tomcat started.
 <pre><code>[root@instance-wi0t3arq bin]# curl http://localhost:8080
 </code></pre>
 <p>出现页面代码表示tomcat安装成功</p>
-<p><img src="/assets/image-20211125152856-tpa141d.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211125152856-tpa141d.png" alt="image.png"></p>
 <p>在这里插入图片描述</p>
 <hr>
 <p>如果curl <a href="http://localhost:8080出现未知错误：需修改配置文件">http://localhost:8080出现未知错误：需修改配置文件</a>  操作如下：</p>
@@ -2178,7 +2178,7 @@ Tomcat started.
 <p>[root@instance-wi0t3arq conf]#  vi server.xml</p>
 <pre><code class="把">~~~~~~~~~~~~~~~~ 把  8080  改为 其他如  80~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 </code></pre>
-<p><img src="/assets/image-20220415181625-p6oh0j3.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220415181625-p6oh0j3.png" alt="image.png"></p>
 <p>7.启动远程访问（不要瞎改配置这只会让你陷入死循环。按照这三步来一点问题都没有）</p>
 <p>a.关闭防火墙并关机禁止启动</p>
 <pre><code>[root@instance-wi0t3arq bin]# systemctl stop firewalld
@@ -2190,7 +2190,7 @@ Tomcat started.
 [root@instance-wi0t3arq bin]#  systemctl disable firewalld
 </code></pre>
 <p>b.安全组配置8080端口(这个去云服务商网站配置一下就ok了)</p>
-<p><img src="/assets/image-20211125152901-aehe6s1.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211125152901-aehe6s1.png" alt="image.png"></p>
 <p>在这里插入图片描述</p>
 <p>c.重启tomcat</p>
 <p>然后在你的浏览器里输入ip+:8080就可以访问到tomcat界面了</p>
@@ -2214,7 +2214,7 @@ Tomcat started.
 <p>5.登录mysql修改本地登录密码</p>
 <p>查看本机密码</p>
 <p>[root@instance-wi0t3arq bin]  grep ‘temporary password’ &#x2F;var&#x2F;log&#x2F;mysqld.log</p>
-<p><img src="/assets/image-20211125152906-kwvgdv6.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211125152906-kwvgdv6.png" alt="image.png"></p>
 <p>在这里插入图片描述</p>
 <p>登录修改密码：注意此处密码一定要按照此格式来因为有验证规则。</p>
 <pre><code>  [root@instance-wi0t3arq local]#  mysql -u root -p
@@ -2223,7 +2223,7 @@ mysql&gt; ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;MyNew
 </code></pre>
 <p>6.开启远程连接</p>
 <p>a.配置安全组3306端口</p>
-<p><img src="/assets/image-20211125152910-ziubdm5.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211125152910-ziubdm5.png" alt="image.png"></p>
 <p>在这里插入图片描述</p>
 <p>b.开启远程访问</p>
 <blockquote>
@@ -2257,7 +2257,7 @@ yum -y install perl
 </blockquote>
 <pre><code>tar xvf mysql-5.7.30-1.el7.x86_64.rpm-bundle.tar
 </code></pre>
-<p>在这里插入图片描述<br><img src="https://lexiangla.com/assets/d1c7d855e0624a266d378bdde1956586?from_outside=1" alt="在这里插入图片描述"></p>
+<p>在这里插入图片描述<br><img src="https://lexiangla.com/assets/1/d1c7d855e0624a266d378bdde1956586?from_outside=1" alt="在这里插入图片描述"></p>
 <h2 id="安装服务器端程序"><a href="#安装服务器端程序" class="headerlink" title="安装服务器端程序"></a>安装服务器端程序</h2><pre><code>[root@localhost src]# rpm -ivh mysql-community-common-5.7.32-1.el7.x86_64.rpm
 
 [root@localhost src]# rpm -ivh mysql-community-libs-5.7.32-1.el7.x86_64.rpm
@@ -2275,13 +2275,13 @@ yum -y install perl
 <h2 id="查看并修改临时MySQL密码"><a href="#查看并修改临时MySQL密码" class="headerlink" title="查看并修改临时MySQL密码"></a>查看并修改临时MySQL密码</h2><pre><code>#查看临时密码：得知临时密码就是如图
 grep password /var/log/mysqld.log
 </code></pre>
-<p><img src="https://lexiangla.com/assets/33ff088d3189441e781c1276b12695fe?from_outside=1" alt="在这里插入图片描述"></p>
+<p><img src="https://lexiangla.com/assets/1/33ff088d3189441e781c1276b12695fe?from_outside=1" alt="在这里插入图片描述"></p>
 <pre><code>#用临时密码登录mysql
 [root@localhost src]# mysql -uroot –p
 #修改成新的密码
 mysql&gt; set password = password(&quot;Root_123&quot;);
 </code></pre>
-<p><img src="https://lexiangla.com/assets/7a8743824a3c49b453cbfe5c9e37611d?from_outside=1" alt="在这里插入图片描述"></p>
+<p><img src="https://lexiangla.com/assets/1/7a8743824a3c49b453cbfe5c9e37611d?from_outside=1" alt="在这里插入图片描述"></p>
 <h2 id="开启远程连接-允许远程连接数据库"><a href="#开启远程连接-允许远程连接数据库" class="headerlink" title="开启远程连接,允许远程连接数据库"></a>开启远程连接,允许远程连接数据库</h2><blockquote>
 <p>设置远程访问（使用root密码）</p>
 </blockquote>
@@ -2299,7 +2299,7 @@ skip-name-resolve                #在连接远程数据库的时候，直接跳�
 </code></pre>
 <h2 id="防火墙设置允许3306端口"><a href="#防火墙设置允许3306端口" class="headerlink" title="防火墙设置允许3306端口"></a>防火墙设置允许3306端口</h2><pre><code>vim /etc/sysconfig/iptables
 </code></pre>
-<p>模仿22端口开放命令添加如图所示的一行即表示对外开放3306端口<br><img src="https://lexiangla.com/assets/b075e7556ef2404d6bac3b3de8763b05?from_outside=1" alt="在这里插入图片描述"></p>
+<p>模仿22端口开放命令添加如图所示的一行即表示对外开放3306端口<br><img src="https://lexiangla.com/assets/1/b075e7556ef2404d6bac3b3de8763b05?from_outside=1" alt="在这里插入图片描述"></p>
 <blockquote>
 <p>重启防火墙</p>
 </blockquote>
@@ -2314,9 +2314,9 @@ firewall-cmd --reload
 </blockquote>
 <pre><code>vi /etc/rc.local
 </code></pre>
-<p>加入mysql启动命令<br><img src="https://lexiangla.com/assets/c07c0b30d3a7456a6e85c952a2034310?from_outside=1" alt="在这里插入图片描述"></p>
+<p>加入mysql启动命令<br><img src="https://lexiangla.com/assets/1/c07c0b30d3a7456a6e85c952a2034310?from_outside=1" alt="在这里插入图片描述"></p>
 <h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><blockquote>
-<p>使用sqlyog连接mysql<br><img src="https://lexiangla.com/assets/719d1d2aec4b46437bfdabe5839cf993?from_outside=1" alt="在这里插入图片描述"></p>
+<p>使用sqlyog连接mysql<br><img src="https://lexiangla.com/assets/1/719d1d2aec4b46437bfdabe5839cf993?from_outside=1" alt="在这里插入图片描述"></p>
 </blockquote>
 <h1 id="安装tomcat-1"><a href="#安装tomcat-1" class="headerlink" title="安装tomcat"></a>安装tomcat</h1><h2 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h2><blockquote>
 <p>在&#x2F;usr&#x2F;local目录下新建tomcat目录</p>
@@ -2342,7 +2342,7 @@ firewall-cmd --reload
 <h2 id="测试-1"><a href="#测试-1" class="headerlink" title="测试"></a>测试</h2><blockquote>
 <p>访问 http:&#x2F;&#x2F;虚拟机地址:8080</p>
 </blockquote>
-<p><img src="https://lexiangla.com/assets/25bbfa73c8fe4d354ae7c2c10a38b22f?from_outside=1" alt="在这里插入图片描述"></p>
+<p><img src="https://lexiangla.com/assets/1/25bbfa73c8fe4d354ae7c2c10a38b22f?from_outside=1" alt="在这里插入图片描述"></p>
 
 </div>
 

@@ -2157,20 +2157,20 @@ var _hmt = _hmt || [];
 <h1 id="本文做压力测试的例子"><a href="#本文做压力测试的例子" class="headerlink" title="本文做压力测试的例子"></a><strong>本文做压力测试的例子</strong></h1><p>本文举的实例是： 在一台电脑用Jmeter模拟200个用户，同时去使用bing搜索不同的关键字， 查看页面返回的时间是否在正常范围内。</p>
 <h1 id="第一步：-使用CSV-Data-Set-Config-来参数化"><a href="#第一步：-使用CSV-Data-Set-Config-来参数化" class="headerlink" title="第一步： 使用CSV Data Set Config 来参数化"></a><strong>第一步： 使用CSV Data Set Config 来参数化</strong></h1><p>首先我们把测试需要用到的2个参数放在txt文件中，</p>
 <p>新建一个data.txt文件，输入些数据， 一行有两个数据，用逗号分隔。</p>
-<p><img src="/assets/wpsA389.tmp-20211222151639-v1yct5t.png"><img src="/assets/wpsA38A.tmp-20211222151639-jjq1wud.jpg"></p>
+<p><img src="/assets/1/wpsA389.tmp-20211222151639-v1yct5t.png"><img src="/assets/1/wpsA38A.tmp-20211222151639-jjq1wud.jpg"></p>
 <p>启动Jmeter, 先添加一个Thread Group, 然后添加一个CSV Data Set Config (Add -&gt; Config Element -&gt; CSV Data Set Config)</p>
-<p><img src="/assets/wpsA38B.tmp-20211222151639-2pu141a.png"><img src="/assets/wpsA38C.tmp-20211222151639-pau65wi.jpg"></p>
+<p><img src="/assets/1/wpsA38B.tmp-20211222151639-2pu141a.png"><img src="/assets/1/wpsA38C.tmp-20211222151639-pau65wi.jpg"></p>
 <h1 id="第二步：添加HTTP-Request"><a href="#第二步：添加HTTP-Request" class="headerlink" title="第二步：添加HTTP Request."></a><strong>第二步：添加HTTP Request.</strong></h1><p>我们添加http 请求，发送get 到 <a target="_blank" rel="noopener" href="http://cn.bing.com/search?q=testteststtssdfds">http://cn.bing.com/search?q=</a>博客园+小坦克</p>
 <p>选择Thread Group 右键 (Add -&gt;Sampler -&gt; HTTP Request)，  需要填的数据如下：</p>
-<p><img src="/assets/wpsA38D.tmp-20211222151639-lnmmrhi.png"> <img src="/assets/wpsA38E.tmp-20211222151639-xufwtlv.jpg"></p>
+<p><img src="/assets/1/wpsA38D.tmp-20211222151639-lnmmrhi.png"> <img src="/assets/1/wpsA38E.tmp-20211222151639-xufwtlv.jpg"></p>
 <h1 id="第三步：-使用Thread-Group，-控制模拟多少用户"><a href="#第三步：-使用Thread-Group，-控制模拟多少用户" class="headerlink" title="第三步： 使用Thread Group， 控制模拟多少用户"></a><strong>第三步： 使用Thread Group， 控制模拟多少用户</strong></h1><p>选中Thread Group</p>
-<p><img src="/assets/wpsA38F.tmp-20211222151639-q49txfd.png"> <img src="/assets/wpsA390.tmp-20211222151639-pzriw4y.jpg"></p>
+<p><img src="/assets/1/wpsA38F.tmp-20211222151639-q49txfd.png"> <img src="/assets/1/wpsA390.tmp-20211222151639-pzriw4y.jpg"></p>
 <p>Number of Threads(users):     一个用户占一个线程，  200个线程就是模拟200个用户</p>
 <p>Ramp-Up Period(in seconds):   设置线程需要多长时间全部启动。如果线程数为200 ，准备时长为10 ，那么需要1秒钟启动20个线程。也就是每秒钟启动20个线程。</p>
 <p>Loop Count: 每个线程发送请求的次数。如果线程数为200 ，循环次数为10 ，那么每个线程发送10次请求。总请求数为200*10&#x3D;2000 。如果勾选了“永远”，那么所有线程会一直发送请求，直到选择停止运行脚本。</p>
 <h1 id="第四步：-添加Summary-Report-用来查看测试结果"><a href="#第四步：-添加Summary-Report-用来查看测试结果" class="headerlink" title="第四步：  添加Summary Report 用来查看测试结果"></a><strong>第四步：  添加Summary Report 用来查看测试结果</strong></h1><p>选中Thread Group 右键(Add -&gt; Listener -&gt; Summary Report)</p>
 <h1 id="第五步：-运行一下"><a href="#第五步：-运行一下" class="headerlink" title="第五步： 运行一下"></a><strong>第五步： 运行一下</strong></h1><p>到目前为止， 脚本就全写好了， 我们来运行下， 如何看下测试的结果</p>
-<p><img src="/assets/wpsA391.tmp-20211222151639-p939i7p.png"><img src="/assets/wpsA392.tmp-20211222151639-w2xoqt3.jpg"></p>
+<p><img src="/assets/1/wpsA391.tmp-20211222151639-p939i7p.png"><img src="/assets/1/wpsA392.tmp-20211222151639-w2xoqt3.jpg"></p>
 
 </div>
 

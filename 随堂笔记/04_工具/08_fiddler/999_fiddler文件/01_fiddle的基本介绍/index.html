@@ -2151,8 +2151,8 @@ var _hmt = _hmt || [];
 <p>你对HTTP 协议越了解， 你就能越掌握Fiddler的使用方法. 你越使用Fiddler,就越能帮助你了解HTTP协议.</p>
 <p>Fiddler无论对开发人员或者测试人员来说，都是非常有用的工具</p>
 <h1 id="Fiddler的工作原理"><a href="#Fiddler的工作原理" class="headerlink" title="Fiddler的工作原理"></a><strong>Fiddler的工作原理</strong></h1><p>Fiddler 是以代理web服务器的形式工作的,它使用代理地址:127.0.0.1, 端口:8888. 当Fiddler会自动设置代理， 退出的时候它会自动注销代理，这样就不会影响别的程序。不过如果Fiddler非正常退出，这时候因为Fiddler没有自动注销，会造成网页无法访问。解决的办法是重新启动下Fiddler.</p>
-<p><img src="/assets/wps701A.tmp-20211222153038-q6eifas.jpg"></p>
-<p><img src="/assets/wps701B.tmp-20211222153038-fn7pf76.jpg"></p>
+<p><img src="/assets/1/wps701A.tmp-20211222153038-q6eifas.jpg"></p>
+<p><img src="/assets/1/wps701B.tmp-20211222153038-fn7pf76.jpg"></p>
 <h1 id="同类的其它工具"><a href="#同类的其它工具" class="headerlink" title="同类的其它工具"></a><strong>同类的其它工具</strong></h1><p>同类的工具有: httpwatch, firebug, wireshark</p>
 <h1 id="Fiddler-如何捕获Firefox的会话"><a href="#Fiddler-如何捕获Firefox的会话" class="headerlink" title="Fiddler 如何捕获Firefox的会话"></a><strong>Fiddler 如何捕获Firefox的会话</strong></h1><p>能支持HTTP代理的任意程序的数据包都能被Fiddler嗅探到，Fiddler的运行机制其实就是本机上监听8888端口的HTTP代理。 Fiddler2启动的时候默认IE的代理设为了127.0.0.1:8888，而其他浏览器是需要手动设置的，所以将Firefox的代理改为127.0.0.1:8888就可以监听数据了。</p>
 <p>Firefox 上通过如下步骤设置代理</p>
@@ -2160,21 +2160,21 @@ var _hmt = _hmt || [];
 <h1 id="Firefox-中安装Fiddler插件"><a href="#Firefox-中安装Fiddler插件" class="headerlink" title="Firefox 中安装Fiddler插件"></a><strong>Firefox 中安装Fiddler插件</strong></h1><p>修改Firefox 中的代理比较麻烦， 不用fiddler的时候还要去掉代理。 麻烦</p>
 <p>推荐你在firefox中使用fiddler hook 插件, 这样你非常方便的使用Fiddler获取firefox中的request 和response</p>
 <p>当你安装fiddler后， 就已经装好了Fiddler hook插件， 你需要到firefox中去启用这个插件<br>打开firefox   tools-&gt;Add ons -&gt; Extensions 启动 FiddlerHook</p>
-<p><img src="/assets/wps701C.tmp-20211222153038-4i3wuow.png"></p>
-<p><img src="/assets/wps701D.tmp-20211222153038-evclzag.jpg"></p>
+<p><img src="/assets/1/wps701C.tmp-20211222153038-4i3wuow.png"></p>
+<p><img src="/assets/1/wps701D.tmp-20211222153038-evclzag.jpg"></p>
 <h1 id="Fiddler如何捕获HTTPS会话"><a href="#Fiddler如何捕获HTTPS会话" class="headerlink" title="Fiddler如何捕获HTTPS会话"></a><strong>Fiddler如何捕获HTTPS会话</strong></h1><p>默认下，Fiddler不会捕获HTTPS会话，需要你设置下, 打开Fiddler  Tool-&gt;Fiddler Options-&gt;HTTPS tab</p>
-<p><img src="/assets/wps701E.tmp-20211222153038-cycwn84.jpg"></p>
+<p><img src="/assets/1/wps701E.tmp-20211222153038-cycwn84.jpg"></p>
 <p> 选中checkbox, 弹出如下的对话框，点击”YES”</p>
-<p><img src="/assets/wps702F.tmp-20211222153038-bbinumj.jpg"></p>
-<p><img src="/assets/wps7030.tmp-20211222153038-7q65chy.jpg"></p>
+<p><img src="/assets/1/wps702F.tmp-20211222153038-bbinumj.jpg"></p>
+<p><img src="/assets/1/wps7030.tmp-20211222153038-7q65chy.jpg"></p>
 <p>点击”Yes” 后，就设置好了</p>
 <h1 id="Fiddler的基本界面"><a href="#Fiddler的基本界面" class="headerlink" title="Fiddler的基本界面"></a><strong>Fiddler的基本界面</strong></h1><p> 看看Fiddler的基本界面</p>
-<p><img src="/assets/wps7031.tmp-20211222153038-oq4itv1.jpg"></p>
+<p><img src="/assets/1/wps7031.tmp-20211222153038-oq4itv1.jpg"></p>
 <p>Inspectors tab下有很多查看Request或者Response的消息。 其中Raw Tab可以查看完整的消息，Headers tab 只查看消息中的header. 如下图</p>
-<p><img src="/assets/wps7032.tmp-20211222153038-f8wa2um.jpg"></p>
+<p><img src="/assets/1/wps7032.tmp-20211222153038-f8wa2um.jpg"></p>
 <h1 id="Fiddler的HTTP统计视图"><a href="#Fiddler的HTTP统计视图" class="headerlink" title="Fiddler的HTTP统计视图"></a><strong>Fiddler的HTTP统计视图</strong></h1><p>通过陈列出所有的HTTP通信量，Fiddler可以很容易的向您展示哪些文件生成了您当前请求的页面。使用Statistics页签，用户可以通过选择多个会话来得来这几个会话的总的信息统计，比如多个请求和传输的字节数。</p>
 <p>选择第一个请求和最后一个请求，可获得整个页面加载所消耗的总体时间。从条形图表中还可以分别出哪些请求耗时最多，从而对页面的访问进行访问速度优化</p>
-<p><img src="/assets/wps7033.tmp-20211222153038-plyv1mk.jpg"></p>
+<p><img src="/assets/1/wps7033.tmp-20211222153038-plyv1mk.jpg"></p>
 <h1 id="QuickExec命令行的使用"><a href="#QuickExec命令行的使用" class="headerlink" title="QuickExec命令行的使用"></a><strong>QuickExec命令行的使用</strong></h1><p>Fiddler的左下角有一个命令行工具叫做QuickExec,允许你直接输入命令。</p>
 <p>常见得命令有</p>
 <p>help  打开官方的使用页面介绍，所有的命令都会列出来</p>
@@ -2182,13 +2182,13 @@ var _hmt = _hmt || [];
 <p>select  选择会话的命令</p>
 <p>?.png  用来选择png后缀的图片</p>
 <p>bpu  截获request</p>
-<p><img src="/assets/wps7034.tmp-20211222153038-y77q9rt.jpg"></p>
+<p><img src="/assets/1/wps7034.tmp-20211222153038-y77q9rt.jpg"></p>
 <h1 id="Fiddler中设置断点修改Request"><a href="#Fiddler中设置断点修改Request" class="headerlink" title="Fiddler中设置断点修改Request"></a><strong>Fiddler中设置断点修改Request</strong></h1><p>[[作者：小坦克]](<a target="_blank" rel="noopener" href="http://www.cnblogs.com/TankXiao/admin/[%E4%BD%9C%E8%80%85%EF%BC%9A%E5%B0%8F%E5%9D%A6%E5%85%8B]">http://www.cnblogs.com/TankXiao/admin/[%E4%BD%9C%E8%80%85%EF%BC%9A%E5%B0%8F%E5%9D%A6%E5%85%8B]</a> http:&#x2F;<a target="_blank" rel="noopener" href="http://www.cnblogs.com/TankXiao/">www.cnblogs.com/TankXiao/</a>)  Fiddler最强大的功能莫过于设置断点了，设置好断点后，你可以修改httpRequest 的任何信息包括host, cookie或者表单中的数据。设置断点有两种方法</p>
 <p>第一种：打开Fiddler 点击Rules-&gt; Automatic Breakpoint  -&gt;Before Requests(这种方法会中断所有的会话)</p>
 <p>如何消除命令呢？  点击Rules-&gt; Automatic Breakpoint  -&gt;Disabled</p>
 <p>第二种:  在命令行中输入命令:  bpu <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a>   (这种方法只会中断<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a>)</p>
 <p>如何消除命令呢？  在命令行中输入命令 bpu</p>
-<p><img src="/assets/wps7035.tmp-20211222153038-zgcb88d.png"></p>
+<p><img src="/assets/1/wps7035.tmp-20211222153038-zgcb88d.png"></p>
 <p>看个实例，模拟博客园的登录， 在IE中打开博客园的登录页面，输入错误的用户名和密码，用Fiddler中断会话，修改成正确的用户名密码。这样就能成功登录</p>
 <ol>
 <li>用IE 打开博客园的登录界面  <a target="_blank" rel="noopener" href="http://passport.cnblogs.com/login.aspx">http://passport.cnblogs.com/login.aspx</a></li>
@@ -2197,13 +2197,13 @@ var _hmt = _hmt || [];
 <li>Fiddler 能中断这次会话，选择被中断的会话，点击Inspectors tab下的WebForms tab 修改用户名密码，然后点击Run to Completion 如下图所示。</li>
 <li>结果是正确地登录了博客园</li>
 </ol>
-<p><img src="/assets/wps7036.tmp-20211222153038-l8i5okh.jpg"></p>
+<p><img src="/assets/1/wps7036.tmp-20211222153038-l8i5okh.jpg"></p>
 <h1 id="Fiddler中设置断点修改Response"><a href="#Fiddler中设置断点修改Response" class="headerlink" title="Fiddler中设置断点修改Response"></a><strong>Fiddler中设置断点修改Response</strong></h1><p>当然Fiddler中也能修改Response</p>
 <p>第一种：打开Fiddler 点击Rules-&gt; Automatic Breakpoint  -&gt;After Response  (这种方法会中断所有的会话)</p>
 <p>如何消除命令呢？  点击Rules-&gt; Automatic Breakpoint  -&gt;Disabled</p>
 <p>第二种:  在命令行中输入命令:  bpafter <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a>   (这种方法只会中断<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a>)</p>
 <p>如何消除命令呢？  在命令行中输入命令 bpafter,</p>
-<p><img src="/assets/wps7037.tmp-20211222153038-aaeugkg.png"></p>
+<p><img src="/assets/1/wps7037.tmp-20211222153038-aaeugkg.png"></p>
 <p>具体用法和上节差不多，就不多说了。</p>
 <h1 id="Fiddler中创建AutoResponder规则"><a href="#Fiddler中创建AutoResponder规则" class="headerlink" title="Fiddler中创建AutoResponder规则"></a><strong>Fiddler中创建AutoResponder规则</strong></h1><p>Fiddler 的AutoResponder tab允许你从本地返回文件，而不用将http request 发送到服务器上。</p>
 <p>看个实例. 1. 打开博客园首页，把博客园的logo图片保存到本地，并且对图片做些修改。</p>
@@ -2213,22 +2213,22 @@ var _hmt = _hmt || [];
 <li>在下面的Rule Editor 下面选择 Find a file… 选择本地保存的图片.  最后点击Save 保存下。</li>
 <li>再用IE博客园首页, 你会看到首页的图片用的是本地的。</li>
 </ol>
-<p><img src="/assets/wps7038.tmp-20211222153038-z3okqru.jpg"></p>
-<p><img src="/assets/wps7039.tmp-20211222153038-g40yklv.jpg"></p>
+<p><img src="/assets/1/wps7038.tmp-20211222153038-z3okqru.jpg"></p>
+<p><img src="/assets/1/wps7039.tmp-20211222153038-g40yklv.jpg"></p>
 <h1 id="Fiddler中如何过滤会话"><a href="#Fiddler中如何过滤会话" class="headerlink" title="Fiddler中如何过滤会话"></a><strong>Fiddler中如何过滤会话</strong></h1><p>每次使用Fiddler, 打开一个网站，都能在Fiddler中看到几十个会话，看得眼花缭乱。最好的办法是过滤掉一些会话，比如过滤掉图片的会话. Fiddler中有过滤的功能, 在右边的Filters tab中，里面有很多选项, 稍微研究下，就知道怎么用。</p>
 <h1 id="Fiddler中会话比较功能"><a href="#Fiddler中会话比较功能" class="headerlink" title="Fiddler中会话比较功能"></a><strong>Fiddler中会话比较功能</strong></h1><p>选中2个会话，右键然后点击Compare，就可以用WinDiff来比较两个会话的不同了 (当然需要你安装WinDiff)</p>
-<p><img src="/assets/wps703A.tmp-20211222153038-th26nvr.jpg"></p>
+<p><img src="/assets/1/wps703A.tmp-20211222153038-th26nvr.jpg"></p>
 <h1 id="Fiddler中提供的编码小工具"><a href="#Fiddler中提供的编码小工具" class="headerlink" title="Fiddler中提供的编码小工具"></a><strong>Fiddler中提供的编码小工具</strong></h1><p>点击Fiddler 工具栏上的TextWizard,  这个工具可以Encode和Decode string.</p>
-<p><img src="/assets/wps704A.tmp-20211222153038-hz5h6gx.jpg"></p>
+<p><img src="/assets/1/wps704A.tmp-20211222153038-hz5h6gx.jpg"></p>
 <h1 id="Fiddler中查询会话"><a href="#Fiddler中查询会话" class="headerlink" title="Fiddler中查询会话"></a><strong>Fiddler中查询会话</strong></h1><p>用快捷键Ctrl+F 打开 Find Sessions的对话框，输入关键字查询你要的会话。 查询到的会话会用黄色显示</p>
-<p><img src="/assets/wps704B.tmp-20211222153038-hl6aiol.jpg"></p>
+<p><img src="/assets/1/wps704B.tmp-20211222153038-hl6aiol.jpg"></p>
 <h1 id="Fiddler中保存会话"><a href="#Fiddler中保存会话" class="headerlink" title="Fiddler中保存会话"></a><strong>Fiddler中保存会话</strong></h1><p>有些时候我们需要把会话保存下来，以便发给别人或者以后去分析。  保存会话的步骤如下：</p>
 <p>选择你想保存的会话，然后点击File-&gt;Save-&gt;Selected Sessions</p>
 <h1 id="Fiddler的script系统"><a href="#Fiddler的script系统" class="headerlink" title="Fiddler的script系统"></a><strong>Fiddler的script系统</strong></h1><p>Fiddler最复杂的莫过于script系统了 官方的帮助文档: <a target="_blank" rel="noopener" href="http://www.fiddler2.com/Fiddler/dev/ScriptSamples.asp">http://www.fiddler2.com/Fiddler/dev/ScriptSamples.asp</a></p>
 <p>首先先安装SyntaxView插件，Inspectors tab-&gt;Get SyntaxView tab-&gt;Download and Install SyntaxView Now… 如下图</p>
-<p><img src="/assets/wps704C.tmp-20211222153038-b5r8aw6.jpg"></p>
+<p><img src="/assets/1/wps704C.tmp-20211222153038-b5r8aw6.jpg"></p>
 <p>安装成功后Fiddler 就会多了一个Fiddler Script tab, 如下图</p>
-<p><img src="/assets/wps704D.tmp-20211222153038-20jrxw6.jpg"></p>
+<p><img src="/assets/1/wps704D.tmp-20211222153038-20jrxw6.jpg"></p>
 <p>在里面我们就可以编写脚本了， 看个实例 让所有cnblogs的会话都显示红色。</p>
 <p>把这段脚本放在OnBeforeRequest(oSession: Session) 方法下，并且点击”Save script”</p>
 <pre><code> if (oSession.HostnameIs(&quot;www.cnblogs.com&quot;)) &#123;
@@ -2238,7 +2238,7 @@ var _hmt = _hmt || [];
 <p>这样所有的cnblogs的会话都会显示红色</p>
 <h1 id="如何在VS调试网站的时候使用Fiddler"><a href="#如何在VS调试网站的时候使用Fiddler" class="headerlink" title="如何在VS调试网站的时候使用Fiddler"></a><strong>如何在VS调试网站的时候使用Fiddler</strong></h1><p>我们在用visual stuido 开发ASP.NET网站的时候也需要用Fiddler来分析HTTP， 默认的时候Fiddler是不能嗅探到localhost的网站。不过只要在localhost后面加个点号，Fiddler就能嗅探到。</p>
 <p>例如：原本ASP.NET的地址是 <a target="_blank" rel="noopener" href="http://localhost:2391/Default.aspx%EF%BC%8C">http://localhost:2391/Default.aspx，</a>  加个点号后，变成 <a target="_blank" rel="noopener" href="http://localhost.:2391/Default.aspx">http://localhost.:2391/Default.aspx</a> 就可以了</p>
-<p><img src="/assets/wps704E.tmp-20211222153038-bt0z5s3.jpg"></p>
+<p><img src="/assets/1/wps704E.tmp-20211222153038-bt0z5s3.jpg"></p>
 <p>第二个办法就是在hosts文件中加入  127.0.0.1  localsite</p>
 <p>如何你访问<a href="http://localsite:端口号">http://localsite:端口号</a>   。  这样Fiddler也能截取到了。</p>
 <h1 id="Response-是乱码的"><a href="#Response-是乱码的" class="headerlink" title="Response 是乱码的"></a><strong>Response 是乱码的</strong></h1><p>有时候我们看到Response中的HTML是乱码的， 这是因为HTML被压缩了， 我们可以通过两种方法去解压缩。</p>
@@ -2246,7 +2246,7 @@ var _hmt = _hmt || [];
 <li>点击Response Raw上方的”Response is encoded any may need to be decoded before inspection. click here to transform”</li>
 <li>选中工具栏中的”Decode”。  这样会自动解压缩。</li>
 </ol>
-<p><img src="/assets/wps704F.tmp-20211222153038-l1ovf1e.jpg"></p>
+<p><img src="/assets/1/wps704F.tmp-20211222153038-l1ovf1e.jpg"></p>
 
 </div>
 

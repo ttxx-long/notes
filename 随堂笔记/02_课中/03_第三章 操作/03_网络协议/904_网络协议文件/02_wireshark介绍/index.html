@@ -2173,11 +2173,11 @@ var _hmt = _hmt || [];
 </ol>
 <p>总之跟网络相关的东西，都可能会用到wireshark.</p>
 <h1 id="wireshark-开始抓包"><a href="#wireshark-开始抓包" class="headerlink" title="wireshark 开始抓包"></a><strong>wireshark 开始抓包</strong></h1><p>开始界面</p>
-<p><img src="/assets/wps223.tmp-20211222150251-4msi772.jpg"></p>
+<p><img src="/assets/1/wps223.tmp-20211222150251-4msi772.jpg"></p>
 <p>wireshark是捕获机器上的某一块网卡的网络包，当你的机器上有多块网卡的时候，你需要选择一个网卡。</p>
 <p>点击Caputre-&gt;Interfaces.. 出现下面对话框，选择正确的网卡。然后点击”Start”按钮, 开始抓包</p>
-<p><img src="/assets/wps224.tmp-20211222150251-8mp50nu.jpg"></p>
-<h1 id="Wireshark-窗口介绍"><a href="#Wireshark-窗口介绍" class="headerlink" title="Wireshark 窗口介绍"></a><strong>Wireshark 窗口介绍</strong></h1><p><img src="/assets/wps225.tmp-20211222150251-8ptmq5c.jpg"></p>
+<p><img src="/assets/1/wps224.tmp-20211222150251-8mp50nu.jpg"></p>
+<h1 id="Wireshark-窗口介绍"><a href="#Wireshark-窗口介绍" class="headerlink" title="Wireshark 窗口介绍"></a><strong>Wireshark 窗口介绍</strong></h1><p><img src="/assets/1/wps225.tmp-20211222150251-8ptmq5c.jpg"></p>
 <p>WireShark 主要分为这几个界面</p>
 <ol>
 <li>Display Filter(显示过滤器)，  用于过滤</li>
@@ -2186,16 +2186,16 @@ var _hmt = _hmt || [];
 <li>Dissector Pane(16进制数据)</li>
 <li>Miscellanous(地址栏，杂项)</li>
 </ol>
-<h1 id="Wireshark-显示过滤"><a href="#Wireshark-显示过滤" class="headerlink" title="Wireshark 显示过滤"></a><strong>Wireshark 显示过滤</strong></h1><p><img src="/assets/wps226.tmp-20211222150251-ih9fas3.jpg"></p>
+<h1 id="Wireshark-显示过滤"><a href="#Wireshark-显示过滤" class="headerlink" title="Wireshark 显示过滤"></a><strong>Wireshark 显示过滤</strong></h1><p><img src="/assets/1/wps226.tmp-20211222150251-ih9fas3.jpg"></p>
 <p>使用过滤是非常重要的， 初学者使用wireshark时，将会得到大量的冗余信息，在几千甚至几万条记录中，以至于很难找到自己需要的部分。搞得晕头转向。</p>
 <p>过滤器会帮助我们在大量的数据中迅速找到我们需要的信息。</p>
 <p>过滤器有两种，</p>
 <p>一种是显示过滤器，就是主界面上那个，用来在捕获的记录中找到所需要的记录</p>
 <p>一种是捕获过滤器，用来过滤捕获的封包，以免捕获太多的记录。 在Capture -&gt; Capture Filters 中设置</p>
 <h1 id="保存过滤"><a href="#保存过滤" class="headerlink" title="保存过滤"></a><strong>保存过滤</strong></h1><p>在Filter栏上，填好Filter的表达式后，点击Save按钮， 取个名字。比如”Filter 102”,</p>
-<p><img src="/assets/wps227.tmp-20211222150251-vuhqcm5.jpg"></p>
+<p><img src="/assets/1/wps227.tmp-20211222150251-vuhqcm5.jpg"></p>
 <p>Filter栏上就多了个”Filter 102” 的按钮。</p>
-<p><img src="/assets/wps228.tmp-20211222150251-vqp495b.jpg"></p>
+<p><img src="/assets/1/wps228.tmp-20211222150251-vqp495b.jpg"></p>
 <h1 id="过滤表达式的规则"><a href="#过滤表达式的规则" class="headerlink" title="过滤表达式的规则"></a><strong>过滤表达式的规则</strong></h1><p>表达式规则</p>
 <ol>
 <li>协议过滤</li>
@@ -2245,7 +2245,7 @@ var _hmt = _hmt || [];
 </tbody></table>
 <h1 id="封包列表-Packet-List-Pane"><a href="#封包列表-Packet-List-Pane" class="headerlink" title="封包列表(Packet List Pane)"></a><strong>封包列表(Packet List Pane)</strong></h1><p>封包列表的面板中显示，编号，时间戳，源地址，目标地址，协议，长度，以及封包信息。 你可以看到不同的协议用了不同的颜色显示。</p>
 <p>你也可以修改这些显示颜色的规则，  View -&gt;Coloring Rules.</p>
-<p><img src="/assets/wps229.tmp-20211222150251-4lpd7s0.jpg"></p>
+<p><img src="/assets/1/wps229.tmp-20211222150251-4lpd7s0.jpg"></p>
 <h1 id="封包详细信息-Packet-Details-Pane"><a href="#封包详细信息-Packet-Details-Pane" class="headerlink" title="封包详细信息 (Packet Details Pane)"></a><strong>封包详细信息 (Packet Details Pane)</strong></h1><p>这个面板是我们最重要的，用来查看协议中的每一个字段。</p>
 <p>各行信息分别为</p>
 <p>Frame:   物理层的数据帧概况</p>
@@ -2253,27 +2253,27 @@ var _hmt = _hmt || [];
 <p>Internet Protocol Version 4: 互联网层IP包头部信息</p>
 <p>Transmission Control Protocol:  传输层T的数据段头部信息，此处是TCP</p>
 <p>Hypertext Transfer Protocol:  应用层的信息，此处是HTTP协议</p>
-<h1 id="wireshark与对应的OSI七层模型"><a href="#wireshark与对应的OSI七层模型" class="headerlink" title="wireshark与对应的OSI七层模型"></a><strong>wireshark与对应的OSI七层模型</strong></h1><p><img src="/assets/wps22A.tmp-20211222150252-f5a714s.jpg"></p>
+<h1 id="wireshark与对应的OSI七层模型"><a href="#wireshark与对应的OSI七层模型" class="headerlink" title="wireshark与对应的OSI七层模型"></a><strong>wireshark与对应的OSI七层模型</strong></h1><p><img src="/assets/1/wps22A.tmp-20211222150252-f5a714s.jpg"></p>
 <h1 id="TCP包的具体内容"><a href="#TCP包的具体内容" class="headerlink" title="TCP包的具体内容"></a><strong>TCP包的具体内容</strong></h1><p> 从下图可以看到wireshark捕获到的TCP包中的每个字段。</p>
-<p><img src="/assets/wps22B.tmp-20211222150252-ful58qc.jpg"></p>
+<p><img src="/assets/1/wps22B.tmp-20211222150252-ful58qc.jpg"></p>
 <h1 id="实例分析TCP三次握手过程"><a href="#实例分析TCP三次握手过程" class="headerlink" title="实例分析TCP三次握手过程"></a><strong>实例分析TCP三次握手过程</strong></h1><p>看到这， 基本上对wireshak有了初步了解， 现在我们看一个TCP三次握手的实例</p>
 <p> 三次握手过程为</p>
-<p><img src="/assets/wps22C.tmp-20211222150252-2d6j1q0.jpg"></p>
+<p><img src="/assets/1/wps22C.tmp-20211222150252-2d6j1q0.jpg"></p>
 <p>这图我都看过很多遍了， 这次我们用wireshark实际分析下三次握手的过程。</p>
 <p>打开wireshark, 打开浏览器输入 <a target="_blank" rel="noopener" href="http://www.cnblogs.com/tankxiao">http://www.cnblogs.com/tankxiao</a></p>
 <p>在wireshark中输入http过滤， 然后选中GET &#x2F;tankxiao HTTP&#x2F;1.1的那条记录，右键然后点击”Follow TCP Stream”,</p>
 <p>这样做的目的是为了得到与浏览器打开网站相关的数据包，将得到如下图</p>
-<p><img src="/assets/wps22D.tmp-20211222150252-oq4qbxm.jpg"></p>
+<p><img src="/assets/1/wps22D.tmp-20211222150252-oq4qbxm.jpg"></p>
 <p>图中可以看到wireshark截获到了三次握手的三个数据包。第四个包才是HTTP的， 这说明HTTP的确是使用TCP建立连接的。</p>
 <p>第一次握手数据包</p>
 <p>客户端发送一个TCP，标志位为SYN，序列号为0， 代表客户端请求建立连接。 如下图</p>
-<p><img src="/assets/wps22E.tmp-20211222150252-ozixvlj.jpg"></p>
+<p><img src="/assets/1/wps22E.tmp-20211222150252-ozixvlj.jpg"></p>
 <p>第二次握手的数据包</p>
 <p>服务器发回确认包, 标志位为 SYN,ACK. 将确认序号(Acknowledgement Number)设置为客户的I S N加1以.即0+1&#x3D;1, 如下图</p>
-<p><img src="/assets/wps22F.tmp-20211222150252-6x3zq2e.jpg"></p>
+<p><img src="/assets/1/wps22F.tmp-20211222150252-6x3zq2e.jpg"></p>
 <p>第三次握手的数据包</p>
 <p>客户端再次发送确认包(ACK) SYN标志位为0,ACK标志位为1.并且把服务器发来ACK的序号字段+1,放在确定字段中发送给对方.并且在数据段放写ISN的+1, 如下图:</p>
-<p><img src="/assets/wps230.tmp-20211222150252-1xrltr9.jpg"></p>
+<p><img src="/assets/1/wps230.tmp-20211222150252-1xrltr9.jpg"></p>
 <p> 就这样通过了TCP三次握手，建立了连接</p>
 
 </div>

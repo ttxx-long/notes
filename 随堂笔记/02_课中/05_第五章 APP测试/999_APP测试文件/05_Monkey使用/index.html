@@ -2160,19 +2160,19 @@ var _hmt = _hmt || [];
 <p><strong>二、查找手机上的安装包包名</strong></p>
 <p><strong>1.adb shell pm list package 查看手机上所有的安装包</strong></p>
 <p><strong>2.adb shell pm list package -3 查看第三方安装包</strong></p>
-<p><img src="/assets/image-20220312153216-8qt8k4z.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312153216-8qt8k4z.png" alt="image.png"></p>
 <p><strong>3.adb shell pm list packages -s 查看系统的包</strong></p>
 <p><strong>4.adb shell pm list packages -e “要搜索的内容” 查看启动包中搜索的包</strong></p>
-<p><img src="/assets/image-20220312153223-azw8vyc.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312153223-azw8vyc.png" alt="image.png"></p>
 <p><strong>5.adb shell dumpsys window | findstr mCurrentFocus 后面的是当前启动的acivity）：获取当前打开的APP包名（前面的为包名，斜杠</strong></p>
-<p><img src="/assets/image-20220312153229-ysknr4c.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312153229-ysknr4c.png" alt="image.png"></p>
 <p><strong>三、Monkey 命令 基本参数的介绍注意：所有的参数都需要放在monkey和设置的次数之间，参数的顺序可以调整；若带了-p ，-p必须放在monkey之后，参数必须在-p和count之间：</strong></p>
 <p><strong>adb shell monkey -p 包名 –throttle 100 –ignore-crashes –ignore-timeouts –ignore-security-exceptions –ignore-native-crashes –monitor-native-crashes -v -v -v –s 1540475754297 100</strong></p>
 <p><strong>1.-p ，此命令用于指定包，若不指定则在整个系统中执行</strong></p>
 <p><strong>a.指定一个包执行10次：adb shell monkey -p包名 10，如下出现事件执行次数和所耗时间，则算是执行成功；</strong></p>
-<p><img src="/assets/image-20220312153237-5ve4t6y.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312153237-5ve4t6y.png" alt="image.png"></p>
 <p><strong>b.指定多个包执行10次：adb shell monkey -p 包名–p包名10，</strong></p>
-<p><img src="/assets/image-20220312153242-oe4tten.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220312153242-oe4tten.png" alt="image.png"></p>
 <p><strong>2.-v ，用于反馈日志的详细程度级别</strong></p>
 <p><strong>Level 0:adb shell monkey -p 包名 -v 10&#x2F;&#x2F; 默认级别，仅提供启动、测试完成和最终结果等少量信息</strong></p>
 <p><strong>Level 1:adb shell monkey -p包名 -v-v 10&#x2F;&#x2F; 提供较为详细的日志，包括每个发送到Activity的事件信息</strong></p>

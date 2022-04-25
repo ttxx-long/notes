@@ -2148,37 +2148,37 @@ var _hmt = _hmt || [];
 <p><strong>使用 jmeter 一般用于以下两种类型的性能测试</strong></p>
 <p>负载测试：通过测试系统在资源超负荷情况下的表现，以发现设计上的错误或验证系统的负载能力。<br>压力测试：测试系统能承受的最大负载能力。目的在于发挖掘出目标服务系统可以处理的最大负载。</p>
 <h2 id="基本过程"><a href="#基本过程" class="headerlink" title="基本过程"></a>基本过程</h2><p> 下面我们看下使用 jmeter 进行性能测试的基本过程</p>
-<p><img src="/assets/image-20211209004611-ubgkfsm.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004611-ubgkfsm.png" alt="image.png"></p>
 <p>对上图进行简要的说明<br><strong>新增线程组</strong><br>创建测试线程组，并设置线程数量及线程初始化启动方式。<br><strong>新增 JMeter 元组</strong><br>创建各种默认元组及测试元组，填入目标测试静态资源请求和动态资源请求参数及数据。<br><strong>新增监听器</strong><br>创建各种形式的结果搜集元组，以便在运行过程及运行结束后搜集监控指标数据。<br><strong>运行&amp;查看结果</strong><br>调试运行，分析指标数据，挖掘性能瓶颈、评估系统性能状态；</p>
 <p>示例<br>下面我们以打开百度演示上述过程。<br>新增线程组<br>在 jmeter 的 bin 目录下双击 jmeter.bat或ApacheJMeter.jar 启动 jmeter，如下图：</p>
-<p><img src="/assets/image-20211209004618-fiqfada.png" alt="image.png"><br>在左边操作栏中选择“测试计划”，右击新增一个线程组，如图所示：</p>
-<p><img src="/assets/image-20211209004634-l377nn4.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004618-fiqfada.png" alt="image.png"><br>在左边操作栏中选择“测试计划”，右击新增一个线程组，如图所示：</p>
+<p><img src="/assets/1/image-20211209004634-l377nn4.png" alt="image.png"></p>
 <p>初始化线程组相关信息</p>
-<p><img src="/assets/image-20211209004641-gclhau2.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004641-gclhau2.png" alt="image.png"></p>
 <p>新增 JMeter 元组<br>添加默认配置元素，添加如下默认配置，如图</p>
-<p><img src="/assets/image-20211209004648-qgtsoxh.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004648-qgtsoxh.png" alt="image.png"></p>
 <p>各默认组件配置如图所示。HTTP Cache Manager</p>
-<p><img src="/assets/image-20211209004655-3p9tuyj.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004655-3p9tuyj.png" alt="image.png"></p>
 <p>HTTP Cookie 管理器</p>
-<p><img src="/assets/image-20211209004701-41vyihu.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004701-41vyihu.png" alt="image.png"></p>
 <p>HTTP 请求默认值</p>
-<p><img src="/assets/image-20211209004708-2gryv4f.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004708-2gryv4f.png" alt="image.png"></p>
 <p>添加 HTTP Request 元组<br>在线程组上右击新增 HTTP 请求，如图：</p>
-<p><img src="/assets/image-20211209004714-l6raanu.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004714-l6raanu.png" alt="image.png"></p>
 <p>HTTP 请求设置如图：</p>
-<p><img src="/assets/image-20211209004721-o8a3zz8.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004721-o8a3zz8.png" alt="image.png"></p>
 <p>新增监听器<br>在这里我们添加如下监听器，如图所示</p>
-<p><img src="/assets/image-20211209004727-k4cadnq.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004727-k4cadnq.png" alt="image.png"></p>
 <p>运行&amp;查看结果<br>如果启动运行 jmeter，可以单击添加的监听器查看运行过程中的监控指标数据，也可以等运行结束后，再查看。</p>
-<p><img src="/assets/image-20211209004734-osigcbx.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004734-osigcbx.png" alt="image.png"></p>
 <p>结果说明<br>下面我们就监听器所采集的结果图进行简要的说明：图形结果</p>
-<p><img src="/assets/image-20211209004740-o2l0pz4.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004740-o2l0pz4.png" alt="image.png"></p>
 <p>察看结果树</p>
-<p><img src="/assets/image-20211209004747-1ff5ysa.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004747-1ff5ysa.png" alt="image.png"></p>
 <p>用表格查看结果</p>
-<p><img src="/assets/image-20211209004754-uhk341o.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004754-uhk341o.png" alt="image.png"></p>
 <p>聚合报告</p>
-<p><img src="/assets/image-20211209004800-177qcka.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211209004800-177qcka.png" alt="image.png"></p>
 
 </div>
 

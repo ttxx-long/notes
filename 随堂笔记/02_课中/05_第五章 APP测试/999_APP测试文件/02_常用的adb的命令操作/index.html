@@ -2150,24 +2150,24 @@ var _hmt = _hmt || [];
 <p>adb 服务启动后，Windows 可以在任务管理器中找到 adb.exe 这个进程</p>
 <p>· 运行在 Android 设备上的 adb 后台进程</p>
 <p>执行 adb shell ps | grep adbd ，可以找到该后台进程，windows 请使用 findstr 替代 grep</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155428238-1085192595.png"><img src="/assets/image-20211209002906-t3thtny.png" alt="image.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155428238-1085192595.png"><img src="/assets/1/image-20211209002906-t3thtny.png" alt="image.png"></a></p>
 <p><strong>通过adb<strong><strong>操作android</strong></strong>设备</strong></p>
 <p>连接上数据线，然后把手机开发者模式打开，打开usb调试。</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155429039-1959136890.png"><img src="/assets/image-20211209002912-qu9x3ln.png" alt="image.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155429039-1959136890.png"><img src="/assets/1/image-20211209002912-qu9x3ln.png" alt="image.png"></a></p>
 <h3 id="adb-命令"><a href="#adb-命令" class="headerlink" title="adb 命令"></a>adb 命令</h3><p>在开发或者测试的过程中，我们可以通过 adb 来管理多台设备，其一般的格式为：</p>
 <p>| adb [-e | -d | -s &lt;设备序列号&gt;] &lt;子命令&gt; |<br>| —————————————— |</p>
 <p>在配好环境变量的前提下，在命令窗口当中输入 adb help 或者直接输入 adb ，将会列出所有的选项说明及子命令。</p>
 <h4 id="这里介绍一些里面常用的命令："><a href="#这里介绍一些里面常用的命令：" class="headerlink" title="这里介绍一些里面常用的命令："></a>这里介绍一些里面常用的命令：</h4><p><strong>1.adb devices</strong> , 获取设备列表及设备状态</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155429797-1825941225.png"><img src="/assets/image-20211209002919-iijez5g.png" alt="image.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155429797-1825941225.png"><img src="/assets/1/image-20211209002919-iijez5g.png" alt="image.png"></a></p>
 <p><strong>2.adb get-state</strong> , 获取设备的状态</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155430475-494564427.png"><img src="/assets/image-20211209002927-cz0moet.png" alt="image.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155430475-494564427.png"><img src="/assets/1/image-20211209002927-cz0moet.png" alt="image.png"></a></p>
 <p>设备的状态有 3 钟，device , offline , unknown</p>
 <p>device：设备正常连接</p>
 <p>offline：连接出现异常，设备无响应</p>
 <p>unknown：没有连接设备</p>
 <p> <strong>3.</strong> <strong>安装卸载应用程序</strong></p>
 <p>adb install <strong>用于安装</strong></p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155431186-1764437344.png"><img src="/assets/image-20211209002933-8fu1e6o.png" alt="image.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155431186-1764437344.png"><img src="/assets/1/image-20211209002933-8fu1e6o.png" alt="image.png"></a></p>
 <p>安装成功，返回成功提示 “Success”；</p>
 <p>安装失败，会返回以下：</p>
 <p>INSTALL_FAILED_ALREADY_EXISTS</p>
@@ -2180,7 +2180,7 @@ var _hmt = _hmt || [];
 <p>adb uninstall 后面带的是应用的包名，而不是应用名。</p>
 <p>查看系统所有应用的包名：</p>
 <p>adb shell pm list packages –f</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155432148-1001670330.png"><img src="/assets/image-20211209002941-sseqhpz.png" alt="image.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155432148-1001670330.png"><img src="/assets/1/image-20211209002941-sseqhpz.png" alt="image.png"></a></p>
 <p> <strong>4</strong> <strong>．上传、下载文件</strong></p>
 <p>adb push 命令将PC机上的文件推到 DLT-RK3288 机器上；</p>
 <p>adb pull  命令将DLT-RK3288机器上的文件拉到PC机上；</p>
@@ -2189,14 +2189,14 @@ var _hmt = _hmt || [];
 <p>将D盘下new.txt文件 推到内部存储器</p>
 <p>adb pull &#x2F;sdcard&#x2F;new.txt    d:\</p>
 <p>将DLT-RK3288 内部存储器根目录下的new.txt 拉到D盘</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155433167-1446733020.png"><img src="/assets/image-20211209002948-6va6z60.png" alt="image.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155433167-1446733020.png"><img src="/assets/1/image-20211209002948-6va6z60.png" alt="image.png"></a></p>
 <p><strong>5. adb shell pm list package</strong></p>
 <p>Package Manager , 可以用获取到一些安装在 Android 设备上得应用信息</p>
 <p>-s：列出系统应用</p>
 <p>-f：列出应用包名及对应的apk名及存放位置</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155433984-688635705.png"><img src="/assets/image-20211209002954-o4pcw6x.png" alt="image.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155433984-688635705.png"><img src="/assets/1/image-20211209002954-o4pcw6x.png" alt="image.png"></a></p>
 <p><strong>过滤应用</strong></p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155434808-820533597.png"><img src="/assets/image-20211209003001-a9kavr6.png" alt="image.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155434808-820533597.png"><img src="/assets/1/image-20211209003001-a9kavr6.png" alt="image.png"></a></p>
 <p><strong>5.adb shell</strong></p>
 <p>通过adb shell 命令，就可以进入设备或者模拟器的shell环境了，在这个Linux shell中，我们就可以执行各种Linux命令了。</p>
 <p>如果只想执行一条shell命令，就可以采用：adb shell [shell_command]，在实际使用中，经常与grep或findstr一起使用，起到过滤作用，查看自己需要的关键信息。    exit ：  退出  shell状态</p>
@@ -2218,7 +2218,7 @@ var _hmt = _hmt || [];
 <p>下面介绍adb logcat中的详细参数命令以及如何才能高效的打印日志，或者把日志保存到我们指定的位置。</p>
 <p>二.adb logcat <strong>详解</strong></p>
 <p>adb logcat如果用过，但是具体命令又不记得，可以输入adb logcat -help，查看一下一些简单的数据格式：</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155435688-2050217910.png"><img src="/assets/image-20211209003008-58zctpg.png" alt="image.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155435688-2050217910.png"><img src="/assets/1/image-20211209003008-58zctpg.png" alt="image.png"></a></p>
 <p><strong>日志过滤：adb logcat <tag>[:priority]</strong></p>
 <p>tag表示标签，priority输出的级别，日志默认级别是V，如果错误日志我们选择E就可以。</p>
 <p>Android 的日志分为如下几个优先级（priority）：</p>
@@ -2253,9 +2253,9 @@ var _hmt = _hmt || [];
 <p><strong>二、Monkey命令的简单帮助</strong></p>
 <p>要获取Monkey命令自带的简单帮助，在CMD中执行命令：</p>
 <p>adb shell monkey –help</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155436837-2037617676.png"><img src="/assets/image-20211209003017-y9nul0y.png" alt="image.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155436837-2037617676.png"><img src="/assets/1/image-20211209003017-y9nul0y.png" alt="image.png"></a></p>
 <p><strong>四、Monkey命令参数介绍</strong></p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155437967-241629749.png"><img src="/assets/image-20211209003024-qq7uae5.png" alt="image.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155437967-241629749.png"><img src="/assets/1/image-20211209003024-qq7uae5.png" alt="image.png"></a></p>
 <p>说明：第一个-s指定设备，如果只连接了一台设备，可不用该参数。</p>
 <p>-p &lt;apk包名&gt;只允许系统启动指定的app，如果不指定，将允许系统启动设备中的所有app，也可指定多个包。</p>
 <p>–throttle &lt;毫秒数&gt; 指定用户操作（事件）间的时延。</p>

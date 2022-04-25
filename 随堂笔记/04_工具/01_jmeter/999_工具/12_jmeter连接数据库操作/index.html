@@ -2145,13 +2145,13 @@ var _hmt = _hmt || [];
 
 <div id="article-content">
 	<p> 1、下载安装mysql驱动包<br> 提供下载地址：<a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/connector/j/">https://dev.mysql.com/downloads/connector/j/</a></p>
-<p> <img src="/assets/image-20220326104628-z3y3izm.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326104628-z3y3izm.png" alt="image.png"></p>
 <p> 也可以自行百度搜索下载。</p>
 <p> 下载完成之后，将mysql驱动放置到…\apache-jmeter-3.2\lib目录下。</p>
-<p> <img src="/assets/image-20220326104637-3hy3v7z.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326104637-3hy3v7z.png" alt="image.png"></p>
 <p> 然后重新启动JMeter。</p>
 <p> 2、测试计划添加mysql驱动</p>
-<p> <img src="/assets/image-20220326104648-8ad0kyu.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326104648-8ad0kyu.png" alt="image.png"></p>
 <p> 3、配置JDBC<br> 给线程组添加配置原件&gt;JDBC Connection Configuration。</p>
 <p> 1)Varible Name: 这个是变量的名字，具有唯一性，不能重复</p>
 <ol start="2">
@@ -2159,34 +2159,34 @@ var _hmt = _hmt || [];
 <li>JDBC Driver Class ：org.gjt.mm.mysql.Driver  或者 com.mysql.jdbc.Driver   这是固定值</li>
 <li>Username：这个数据库的登录名</li>
 <li>Password： 这个是数据库的登录密码</li>
-<li><img src="/assets/image-20220326104701-ypfc3ln.png" alt="image.png"></li>
-<li><img src="/assets/image-20220326104737-abfdea1.png" alt="image.png"></li>
+<li><img src="/assets/1/image-20220326104701-ypfc3ln.png" alt="image.png"></li>
+<li><img src="/assets/1/image-20220326104737-abfdea1.png" alt="image.png"></li>
 </ol>
 <p> 4、添加JDBC Request<br> 给线程组添加Sampler&gt;JDBC Request。</p>
 <p> Variable Name：<br> 数据库连接池的名字，需要与上面配置的JDBC Connection Configuration中Variable Name Bound Pool的Variable Name相同<br> Query：填写的sql语句未尾不要加“;”<br> Parameter valus：参数值<br> Parameter types：参数类型，可参考：Javadoc for java.sql.Types<br> Variable names：保存sql语句返回结果的变量名<br> Result variable name：创建一个对象变量，保存所有返回的结果<br> Query timeout：查询超时时间<br> Handle result set：定义如何处理由callable statements语句返回的结果</p>
-<p> <img src="/assets/image-20220326104745-60ube5i.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326104745-60ube5i.png" alt="image.png"></p>
 <p> 5、添加查看结果树，运行线程组，查看结果</p>
-<p> <img src="/assets/image-20220326104754-janco21.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326104754-janco21.png" alt="image.png"></p>
 <p> 6、其他地方引用查询结果作为参数<br> 我们需要在JDBC Request中设置Variable names作为参数名，该参数名也具有唯一性，必须不与其他变量名重复。</p>
 <p> 上图中我们已经设置了Variable names&#x3D;UserName。</p>
 <p> 我们的SQL语句只查询了UserName这一个字段，那么我们想要引用第1个UserName，可以如下书写：${UserName_1}；第2个可以如下书写：${UserName_2}，依次类推。</p>
-<p> <img src="/assets/image-20220326104807-cnwxb7i.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326104807-cnwxb7i.png" alt="image.png"></p>
 <p> 以下是JMeter帮助文档中的介绍：</p>
-<p> <img src="/assets/image-20220326104814-x9ytcpj.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326104814-x9ytcpj.png" alt="image.png"></p>
 <h1 id="jmeter使用beanshell和jdbc-将sql查询出来的数据写入文件中"><a href="#jmeter使用beanshell和jdbc-将sql查询出来的数据写入文件中" class="headerlink" title="jmeter使用beanshell和jdbc 将sql查询出来的数据写入文件中"></a>jmeter使用beanshell和jdbc 将sql查询出来的数据写入文件中</h1><p> 需求<br> 通过sql查询结果，将结果写入scv文件中。<br> 1<br> 思路<br> 1、使用jdbc取样器获取sql查询结果<br> 2、使用beanshell将查询结果写入指定的文件中。</p>
 <p> 操作步骤<br> 1、创建一个配置原件JDBC Connection Configuration，如下图</p>
-<p> <img src="/assets/image-20220326150842-uw0e7l1.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326150842-uw0e7l1.png" alt="image.png"></p>
 <p> 2、创建一个jdbc request 请求，如下图：</p>
-<p> <img src="/assets/image-20220326150851-j6kt7mi.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326150851-j6kt7mi.png" alt="image.png"></p>
 <p> 3、创建一个beanshell取样器，如下图</p>
-<p> <img src="/assets/image-20220326150857-sv6vur8.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326150857-sv6vur8.png" alt="image.png"></p>
 <blockquote>
 <p>&#x2F;&#x2F;创建文件对象<br>FileWriter fw &#x3D;new FileWriter(“d:\deviceNum.csv”,true);</p>
 <p>&#x2F;&#x2F;创建一个字符缓存输出流<br>BufferedWriter bufw&#x3D;new BufferedWriter (fw);<br>&#x2F;&#x2F;获取sql查询结果的行数<br>String num&#x3D;vars.get(“deviceNum_#”);<br>&#x2F;&#x2F;字符串转换成int<br>int count &#x3D; Integer.parseInt(num);<br>&#x2F;&#x2F;控制循环次数，写入count行文件<br>for(int i&#x3D;1;i&lt;&#x3D;count;i++){<br>    &#x2F;&#x2F;获取sql查询结果第i行的数据<br>    str&#x3D;vars.get(“deviceNum_”+i);<br>    &#x2F;&#x2F;将数据写入磁盘文件中<br>    bufw.write(str);<br>    &#x2F;&#x2F;换行<br>    bufw.write(“\r\n”);<br>}<br>&#x2F;&#x2F;文件写入结束后，关闭流<br>bufw.close();<br>fw.close();<br><br /></p>
 </blockquote>
 <p> 4、执行，查看结果，生成了文件，并查看文件内容。</p>
-<p> <img src="/assets/image-20220326151132-f02glae.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220326151136-6ejnxww.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326151132-f02glae.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220326151136-6ejnxww.png" alt="image.png"></p>
 
 </div>
 

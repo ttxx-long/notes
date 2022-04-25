@@ -2182,69 +2182,69 @@ var _hmt = _hmt || [];
 <li>启动Jmeter<br> MAC启动Jmeter，进入到jmeter的bin目录下 ，运行以下命令</li>
 </ol>
 <p> sh jmeter</p>
-<p> <img src="/assets/image-20220329110728-p8yq4py.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110728-p8yq4py.png" alt="image.png"></p>
 <ol start="2">
 <li><p>设置为中文版(根据个人喜好)<br> 进入jmeter -bin目录下，找到jmeter.properties 文件，设置language&#x3D;zh_CN，设置完需要重启Jmeter</p>
-<p> <img src="/assets/image-20220329110738-012ezuy.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110738-012ezuy.png" alt="image.png"></p>
 </li>
 <li><p>配置元件-Http Cookie管理器<br> 配置元件（Config Element）用于提供对静态数据配置的支持，Http Cookie管理器可以用来对 HTTP Request Sampler 的 cookie 进行管理</p>
 </li>
 </ol>
 <p> 如果想要Jmeter像浏览器一样，保存cookie，那么可以借助“配置元件-Http Cookie管理器”，</p>
 <p> （1）若没有 Http Cookie管理器：</p>
-<p> <img src="/assets/image-20220329110751-cekwjn7.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110751-cekwjn7.png" alt="image.png"></p>
 <p> （2）当我们第一个请求，有了cookie之后，那么“Http Cookie管理器”就会保存这个cookie，给后面的请求用，就像在浏览器里的用法一样</p>
-<p> <img src="/assets/image-20220329110759-9twhwms.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110759-9twhwms.png" alt="image.png"></p>
 <p> 4.断言<br> 比较重要的断言主要有：响应断言(Response Assertion)、大小断言(Size Assertion)、持续时间断言(Duration Assertion)</p>
 <p> （1）响应断言(Response Assertion)</p>
 <p> ①响应文本(Test Response)断言</p>
 <p> 断言内容 –相当于预期结果</p>
-<p> <img src="/assets/image-20220329110812-jvc7c57.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110812-jvc7c57.png" alt="image.png"></p>
 <p> 响应中看到的数据 –相当于实际结果</p>
-<p> <img src="/assets/image-20220329110844-gioik3d.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110844-gioik3d.png" alt="image.png"></p>
 <p> 执行脚本后，若实际结果与预期结果不一致，则断言失败</p>
-<p> <img src="/assets/image-20220329110854-hegwwd0.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110854-hegwwd0.png" alt="image.png"></p>
 <p> ②响应代码(Response Code)断言</p>
 <p> 设置断言，假设Response Code预期应为500</p>
-<p> <img src="/assets/image-20220329110900-2q9ure7.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110900-2q9ure7.png" alt="image.png"></p>
 <p> 实际运行结果，Response Code 为200</p>
-<p> <img src="/assets/image-20220329110907-fvv6jl7.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110907-fvv6jl7.png" alt="image.png"></p>
 <p> 则断言失败</p>
 <p> （2）大小断言(Size Assertion)</p>
 <p> 验证生成的响应的大小，以字节为单位，这也是吞吐量参数，当我们加负载的时候，若网站处理不过来时，就可能出现有的数据没有加载出来，这时的就不会返回完整的字节大小，当我们加负载时，我们也会参考这个参数，看看是否完全加载出来</p>
-<p> <img src="/assets/image-20220329110922-z7yzpnx.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329110927-a25tlos.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329110934-qzvoi78.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110922-z7yzpnx.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110927-a25tlos.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110934-qzvoi78.png" alt="image.png"></p>
 <p> （3）持续时间断言(Duration Assertion)-主要用来验证性能指标</p>
 <p> 当我们在断言中，设置为1000时，代表最大耗时不能超过1000ms</p>
 <p> 这边为了演示断言出错，持续时间故意设置比较短，方便查看效果</p>
-<p> <img src="/assets/image-20220329110941-xhqopv6.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110941-xhqopv6.png" alt="image.png"></p>
 <p> 断言失败，并给出提示</p>
-<p> <img src="/assets/image-20220329110946-dpcmple.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110946-dpcmple.png" alt="image.png"></p>
 <p> 通过“监听器-用表格查看结果”来看下这个sample的持续时间</p>
-<p> <img src="/assets/image-20220329110954-bosq9nn.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329110954-bosq9nn.png" alt="image.png"></p>
 <p> 5.接口关联（Json提取器&amp;正则表达式提取器）<br> 我们在进行接口测试时，一般会有业务场景的关联性，接口关联就是把应用中动态变化返回的数据获取到，把它保存为一个参数，提供给后面需要用到的地方进行使用。</p>
 <p> 最常见的比如登录的接口会返回一个token，便于之后其他接口调用时来认证身份，那么这个时候，我们就需要通过接口关联来实现参数传递，最常用的方法有两种，一个是Json提取器，一个是正则表达式提取器</p>
-<p> <img src="/assets/image-20220329111002-2mbz4a9.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111002-2mbz4a9.png" alt="image.png"></p>
 <p> (1)Json 提取器</p>
 <p> 我们先来看下登录接口返回参数中，是否能把pytoken这个值取到，其中$表示根元素，图中$.data.pyToken为Json路径表达式</p>
-<p> <img src="/assets/image-20220329111011-dsqe93e.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111011-dsqe93e.png" alt="image.png"></p>
 <p> 然后在登录接口里添加后置处理器-json提取器，用json path表达式取到得值，放在pyToken这个变量里</p>
 <p> Names of created variables ：接收值的变量名，自定义</p>
 <p> JSON Path expression： json path表达式</p>
 <p> Match No.(0 for Random)：1 代表匹配获取到的第一个值，我们这边只有一个值（0表示随机；n取第几个匹配值；-1匹配所有。若只要获取到匹配的第一个值，则填写1）</p>
 <p> Default Values： 缺省值，匹配不到值的时候取该值，可写error也可不写</p>
-<p> <img src="/assets/image-20220329111038-yu16ymc.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111038-yu16ymc.png" alt="image.png"></p>
 <p> 我们也可以使用调试取样器（Debug Sample）来查看pyToken取值是否正确</p>
-<p> <img src="/assets/image-20220329111050-nndd4wc.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111050-nndd4wc.png" alt="image.png"></p>
 <p> 对json提取器取到的值，进行变量引用，格式为${变量名}，所以此处为 ${pyToken}</p>
-<p> <img src="/assets/image-20220329111056-x39n204.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111056-x39n204.png" alt="image.png"></p>
 <p> (2)正则表达式提取器</p>
 <p> 运行登录接口，查看响应结果，把需要提取的数据复制出来，然后用正则表达式代替即可</p>
-<p> <img src="/assets/image-20220329111104-lutkk9n.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111104-lutkk9n.png" alt="image.png"></p>
 <p> “pyToken”:”03d8aa93-8f52-471f-8c12-f51a692ae7b5”}}</p>
 <p> –&gt; 可以看到黄色部分，我们使用(.+?)进行了替代，因为黄色部分是动态变化的</p>
-<p> <img src="/assets/image-20220329111112-z0y8vtn.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111112-z0y8vtn.png" alt="image.png"></p>
 <p> 说明：</p>
 <p> . 代表：匹配换行符\n之外的任何单字符</p>
 <p> +代表：匹配前面的子表达式一次或多次</p>
@@ -2256,12 +2256,12 @@ var _hmt = _hmt || [];
 <p> 6.Jmeter数据驱动<br> Jmeter里参数化一般分为①从文件里读数据，②从数据库里读数据，③用后置处理器从响应里读数据(第五节中就是从后置处理器中进行数据读取)</p>
 <p> 数据驱动的目标就是，我们在单独的一个Execl里来维护数据，而不是在请求里面硬编码</p>
 <p> (1)添加配置元素-CSV Data Set Config</p>
-<p> 数据驱动csv文件：<img src="/assets/image-20220329111123-8vn9dch.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329111128-3vksb6n.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329111133-0wri3fv.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329111137-y9f44d1.png" alt="image.png"></p>
+<p> 数据驱动csv文件：<img src="/assets/1/image-20220329111123-8vn9dch.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111128-3vksb6n.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111133-0wri3fv.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111137-y9f44d1.png" alt="image.png"></p>
 <p> 设置线程数2，运行后结果查看：</p>
-<p> <img src="/assets/image-20220329111145-dbl0nse.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111145-dbl0nse.png" alt="image.png"></p>
 <p> CSV数据文件设置字段说明：</p>
 <p> ① 变量名称(Variable Names)：需要输入文本里各列都叫什么名字</p>
 <p> ② 分隔符(Delimiter)：用英文的逗号隔开</p>
@@ -2272,70 +2272,70 @@ var _hmt = _hmt || [];
 <p> ②当csv文件在jmeter的bin目录或脚本目录时，只需给出文件名即可</p>
 <p> (2)用函数助手参数化-从csv文件取数据</p>
 <p> 依然使用（1）中的csv文件</p>
-<p> <img src="/assets/image-20220329111154-cxrpva0.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111154-cxrpva0.png" alt="image.png"></p>
 <p> 点击生成后，就拷贝到粘贴板上，直接去粘贴就可以了</p>
-<p> <img src="/assets/image-20220329111203-88y4cc4.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329111208-rez34ee.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111203-88y4cc4.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111208-rez34ee.png" alt="image.png"></p>
 <p> (3)计数器</p>
 <p> 在CSV里读数据，不管是用CSV Date Set Config还是用函数助手，那些数据都可能重复，我们都是手动的把它设置成不一样，如果我们不想一直去修改csv的数据，那么可以使用计数器，这样我们只需要修改计数器的起始点，最大值等，就能通过csv里的测试数据和计数器使得测试数据不重复</p>
 <p> 来看下计数器的定义：允许用户在线程组中任何位置创建引用的计数器。 计数器配置允许用户配置起始点，最大值和增量。 计数器将从开始循环到最大，然后从开始重新开始，继续进行，直到测试结束。</p>
 <p> 我们以函数助手参数化为实例（CSV Data Set Config同理）来实战一下</p>
 <p> ①设置计数器</p>
-<p> <img src="/assets/image-20220329111219-o15996z.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111219-o15996z.png" alt="image.png"></p>
 <p> a. Staring value：开始值，比如设置为1</p>
 <p> b. 递增(Increment) ：递增值，比如设置为2，那么从1开始，下一个数就是3，是两个两个递增的</p>
 <p> c. Maximum value： 最大值，比如设置10，就是涨到10就不涨了</p>
 <p> d. 数字格式(Number format)： 什么格式的，比如我写00，则是01，02，03一直到10，如果写的是000，则是001，002，003这种</p>
 <p> e. 引用名称(Exported Variable Name)：变量名，比如就叫num</p>
 <p> ②设置csv文件</p>
-<p> <img src="/assets/image-20220329111228-6rorvdl.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111228-6rorvdl.png" alt="image.png"></p>
 <p> ③函数助手设置</p>
-<p> <img src="/assets/image-20220329111234-gepxtrv.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111234-gepxtrv.png" alt="image.png"></p>
 <p> ④根据计数器和函数助手设置接口变量</p>
-<p> <img src="/assets/image-20220329111239-xibw7da.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111239-xibw7da.png" alt="image.png"></p>
 <p> ⑤运行查看结果（此处实例中用了循环控制器，一个线程，但设置新增项目进度接口循环五次），查看结果</p>
-<p> <img src="/assets/image-20220329111246-r6y3m5l.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329111256-fby96lv.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329111301-9n038tm.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111246-r6y3m5l.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111256-fby96lv.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111301-9n038tm.png" alt="image.png"></p>
 <p> ⑥计数器的定义中提到： 计数器将从开始循环到最大，然后从开始重新开始，继续进行，直到测试结束</p>
 <p> 这个是指，如果我循环的次数（或者是线程数）多于开始到最大的总数，那么会从开始的值继续执行，知道我们设置的循环次数（或者是线程数）执行完毕，例如设置开始数字1，递增是2，最大值是10，而我们设置的循环次数或者是线程数是 7，则num 分别为1，3，5，7，9，1</p>
 <p> ⑦与每个用户独立的跟踪计数器(Track counter independently for each user)：若勾选这一项，则代表每个用户（线程）是独立计数的，我们可以设置线程数是2，循环次数是3，来看下效果</p>
-<p> <img src="/assets/image-20220329111309-5qtrwom.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111309-5qtrwom.png" alt="image.png"></p>
 <p> 7.JDBC Request<br> 要用这个JDBC Request，需要配置下数据库链接 添加(Add)–&gt;配置与案件(Config Element) –&gt;JDBC链接配置(JDBC Connection Configuration)</p>
 <p> 网站：JDBC Driver List | SoapUI 可以下载JDBC的Driver，还可以找到不同数据库的链接地址，不同的数据库，有不同的链接地址和数据库驱动</p>
 <p> (1)配置</p>
 <p> ①下载数据库驱动</p>
-<p> <img src="/assets/image-20220329111322-ii079cw.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111322-ii079cw.png" alt="image.png"></p>
 <p> 按照提示进行下载，下载解压后，将文件夹中的两个jar包中的一个，拷贝到Jmeter的lib目录下</p>
-<p> <img src="/assets/image-20220329111328-7074j17.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111328-7074j17.png" alt="image.png"></p>
 <p> 为了方便大家下载，此处提供mysql driver的网盘下载地址：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1rSz0cEvAhAElPC9WPO44mw">https://pan.baidu.com/s/1rSz0cEvAhAElPC9WPO44mw</a>  密码:pxuv</p>
 <p> ②复制数据库连接地址(这个也可以直接问开发要)</p>
-<p> <img src="/assets/image-20220329111335-mr908un.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111335-mr908un.png" alt="image.png"></p>
 <p> 复制链接地址到 Database URL里，并在图中红框之后维护你的数据库的地址和端口号，后面的用户名和密码可以删除，因为Jmeter后面可以直接维护</p>
-<p> <img src="/assets/image-20220329111343-9722roi.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111343-9722roi.png" alt="image.png"></p>
 <p> ③JDBC Driver class(mysql的固定写法是 com.mysql.jdbc.Driver)</p>
-<p> <img src="/assets/image-20220329111353-tac4hzb.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111353-tac4hzb.png" alt="image.png"></p>
 <p> 完成数据库链接配置，并设置Variable Name for created pool（为了在JDBC Request中被引用）</p>
-<p> <img src="/assets/image-20220329111401-97jv5xr.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329111408-zh7shdh.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111401-97jv5xr.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111408-zh7shdh.png" alt="image.png"></p>
 <p> (2)Jmeter中数据库操作</p>
 <p> ①Query Type ：Select Statement (查询)</p>
-<p> <img src="/assets/image-20220329111415-olsxb61.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111415-olsxb61.png" alt="image.png"></p>
 <p> 察看结果树：</p>
-<p> <img src="/assets/image-20220329111422-3wrcdep.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111422-3wrcdep.png" alt="image.png"></p>
 <p> 来验证下，看看数据库里数据是否和查出来的一致</p>
-<p> <img src="/assets/image-20220329111428-v2k1fad.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111428-v2k1fad.png" alt="image.png"></p>
 <p> ②Query Type ：Update Statement (更新)</p>
-<p> <img src="/assets/image-20220329111434-p1rxzak.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329111440-cnw602a.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329111445-kcjou9i.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329111454-ohlu7qg.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111434-p1rxzak.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111440-cnw602a.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111445-kcjou9i.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111454-ohlu7qg.png" alt="image.png"></p>
 <p> 大家可以在尝试下delete</p>
-<p> <img src="/assets/image-20220329111505-8ues2ze.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111505-8ues2ze.png" alt="image.png"></p>
 <p> 数据已被删除</p>
-<p> <img src="/assets/image-20220329111513-4tk2gk2.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111513-4tk2gk2.png" alt="image.png"></p>
 <p> ③按照以上的测试配置，仅能执行一条sql语句，若想执行多条，需在 JDBC Connection Configuration中设置的Database URL中设置allowMultiQueries&#x3D;true</p>
-<p> <img src="/assets/image-20220329111525-8vg2o1g.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111525-8vg2o1g.png" alt="image.png"></p>
 <p> 5种Query Type 总结（以是否设置allowMultiQueries&#x3D;true来分类）：</p>
 <table>
 <thead>
@@ -2374,7 +2374,7 @@ var _hmt = _hmt || [];
 </thead>
 </table>
 <p> ④若在测试过程中，执行成功，却未得到对应的结果，可能是因为编码的问题，jmeter识别不了，那么此时，我们需要在 JDBC Connection Configuration的Database URL加上useUnicode&#x3D;true&amp;characterEncoding&#x3D;utf8来对他进行编码</p>
-<p> <img src="/assets/image-20220329111935-jhhvptk.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111935-jhhvptk.png" alt="image.png"></p>
 <p> ⑤接下来我们来看下Select Statement与Prepared Select Statement，Update Statement与Prepared Update Statement的区别</p>
 <p> Select Statement：静态select语句</p>
 <p> Update Statement： 静态DML(insert、update、delete)</p>
@@ -2382,9 +2382,9 @@ var _hmt = _hmt || [];
 <p> Prepared Update Statement：动态DML语句，参数化DML语句</p>
 <p> Prepared Select Statement和Prepared Update Statement是可以防sql注入的</p>
 <p> 一般我们测试insert的时候会使用Prepared Update Statement而不是Update Statement</p>
-<p> <img src="/assets/image-20220329111946-xoiet3s.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329111951-7k7l3a3.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329111956-qvucil1.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111946-xoiet3s.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111951-7k7l3a3.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329111956-qvucil1.png" alt="image.png"></p>
 <p> 上一次安全培训的时候，有提到关于防止sql注入的问题，一个很有效的方式，就是采用预编译的方式组装sql， “？”就是占位符，我们温习下：</p>
 <p> 【预编译占位符为什么能防止sql注入】</p>
 <p> a. 使用占位符：select * from table where name &#x3D; ？</p>
@@ -2392,131 +2392,131 @@ var _hmt = _hmt || [];
 <p> 这个就不会有注入的风险了，sql会把传进来的是一个参数字符串，而不是语法</p>
 <p> ⑥JDBC Request本身也是可以将返回值取出给到定义好的变量</p>
 <p> 我们以select查询返回后的结果为例</p>
-<p> <img src="/assets/image-20220329112005-fzzjkw2.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112005-fzzjkw2.png" alt="image.png"></p>
 <p> 运行后的结果</p>
-<p> <img src="/assets/image-20220329112011-qmlr3wq.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112011-qmlr3wq.png" alt="image.png"></p>
 <p> 调试取样器查看取值情况</p>
-<p> <img src="/assets/image-20220329112017-ngokexr.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112017-ngokexr.png" alt="image.png"></p>
 <p> (3)JDBC Request 结合后置处理器-正则表达式提取器</p>
 <p> 通过JDBC Request获取数据库的数据，用正则表达式提取器进行提取后，给到其他接口使用</p>
 <p> 假设此处我们需要取出这边的登录账号 admin</p>
-<p> <img src="/assets/image-20220329112029-kppl3ot.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112029-kppl3ot.png" alt="image.png"></p>
 <p> 添加调试取样器，我们来查看结果（调试取样器直接用${username}命名），可以看到是可以正确取到值的</p>
-<p> <img src="/assets/image-20220329112035-rgmtssu.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112035-rgmtssu.png" alt="image.png"></p>
 <p> 注意：正则表达式中 空白用\s ，换行用 \n</p>
 <p> 8.函数助手<br> 在第6节中，我们有简单讲到过一个函数助手，用CSVRead实现数据驱动，不管是使用什么函数，使用方法都是类似的，就是我们选择某个函数，并且按要求为其参数设定值，不同的函数要求的参数也不同，然后生成函数字符串，供脚本使用，后续时间充裕会将常用的Jmeter函数做下总结，这边我们就先拿__Random函数取了例子，主要演示下函数生成和使用</p>
 <p> __Random函数：返回指定最大值和最小值之间的随机数</p>
-<p> <img src="/assets/image-20220329112044-fce51qc.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329112050-gfunnb2.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329112053-25pe9vq.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112044-fce51qc.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112050-gfunnb2.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112053-25pe9vq.png" alt="image.png"></p>
 <p> 9.BeanShell<br> 10.Jmeter事物&#x2F;模块控制器<br> 三、Ant简介<br> 下载地址：Apache Ant - Binary Distributions</p>
 <p> windows下载zip包，mac下载tar包</p>
-<p> <img src="/assets/image-20220329112105-ywqkh6w.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112105-ywqkh6w.png" alt="image.png"></p>
 <p> 下载后解压，配置环境变量（同java的配置方式，可百度）</p>
 <p> 配置环境变量后，在命令行运行如下命令，查看ant是否生效</p>
 <p> ant -version</p>
-<p> <img src="/assets/image-20220329112110-j041oem.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112110-j041oem.png" alt="image.png"></p>
 <p> 四、Jenkins介绍及安装配置<br> Jenkins官网下载地址（选择稳定的版本进行下载）：Jenkins download and deployment</p>
 <p> MAC版本下载：链接:<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/19OpTt5aQhAhmXx4oeW4JeA">https://pan.baidu.com/s/19OpTt5aQhAhmXx4oeW4JeA</a>  密码:hltv</p>
 <p> 下载后按照提示安装即可</p>
 <p> mac版本获取密码时，可以在iterm里 输入：sudo less 提示的地址 ，来获取登录的初始密码</p>
 <p> 登录后记得及时修改密码！！！</p>
-<p> <img src="/assets/image-20220329112121-uxlruia.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112121-uxlruia.png" alt="image.png"></p>
 <p> 五、Jmeter自动化测试的配置</p>
 <ol>
 <li><p>原理</p>
-<p> <img src="/assets/image-20220329112127-di6hlur.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112127-di6hlur.png" alt="image.png"></p>
 </li>
 <li><p>Jmeter.property配置<br> Jmeter配置文件中，默认的报告是csv格式的，因为csv的报告不是很好看，达不到想要的效果，所以要改成xml，改成xml后，生成的报告，就能生成html的格式（注：修改后要重启Jmeter才能生效）</p>
-<p> <img src="/assets/image-20220329112147-6zucq8s.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112147-6zucq8s.png" alt="image.png"></p>
 </li>
 <li><p>Ant配置<br> 需要把Jmeter下面的一个Jar包（ant-jmeter-x.x.x.jar），复制到ant的安装目录lib目录下面，这样Ant就能使用Jmeter</p>
-<p> <img src="/assets/image-20220329112156-i9aqdla.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112156-i9aqdla.png" alt="image.png"></p>
 </li>
 <li><p>Jenkins 配置-相关插件安装<br> （1）安装Ant插件：安装后，我们才能用Jenkins结合Ant去运行build.xml文件</p>
-<p> <img src="/assets/image-20220329112206-3gxcbrc.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112206-3gxcbrc.png" alt="image.png"></p>
 </li>
 </ol>
 <p> （2）安装完成后，还需要配置Java 和Ant的环境变量</p>
-<p> <img src="/assets/image-20220329112213-ma31b32.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329112222-n7v1zno.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112213-ma31b32.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112222-n7v1zno.png" alt="image.png"></p>
 <p> （3）安装jtl和html报告插件：HTML Publisher</p>
-<p> <img src="/assets/image-20220329112228-r3fsf4q.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112228-r3fsf4q.png" alt="image.png"></p>
 <ol start="5">
 <li><p>邮件通知配置<br> （1）安装插件：Email Extension Template、Email Ext Recipients Column</p>
-<p> <img src="/assets/image-20220329112245-qcg5tbq.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112245-qcg5tbq.png" alt="image.png"></p>
 </li>
 </ol>
 <p> （2）以QQ邮箱为例，配置发送邮箱，QQ邮箱-设置-账户-SMTP服务必须是开启的，才能发送邮件，需要获得授权码</p>
-<p> <img src="/assets/image-20220329112252-o5tjbi8.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329112256-x9sb5he.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112252-o5tjbi8.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112256-x9sb5he.png" alt="image.png"></p>
 <p> （3）进入Jenkins - Manage Jenkins - Configure System，找到邮件服务器，进行配置</p>
-<p> <img src="/assets/image-20220329112303-e39zlrr.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112303-e39zlrr.png" alt="image.png"></p>
 <p> （4）将Jmeter里的两个Jar包（javax.activation-1.2.0.jar，mail-1.5.0-b01.jar）拷贝到Ant的lib目录下 ，否则进行ant build的时候会报错</p>
-<p> <img src="/assets/image-20220329112311-hdods8i.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112311-hdods8i.png" alt="image.png"></p>
 <ol start="6">
 <li><p>Ant build.xml 文件</p>
-<p> <img src="/assets/image-20220329112318-iyd1ewj.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112318-iyd1ewj.png" alt="image.png"></p>
 </li>
 </ol>
 <p> Jenkins 新建Job<br> （1）构建触发器，此处设置一个定时任务，为了演示，假设每1分钟执行一次</p>
-<p> <img src="/assets/image-20220329112331-yde7206.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112331-yde7206.png" alt="image.png"></p>
 <p> （2）安装过Ant插件后，此处构建时下拉列表就会有“Invoke Ant”选项，如图进行配置</p>
-<p> <img src="/assets/image-20220329112338-j7w1mjz.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329112342-4uwc06v.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112338-j7w1mjz.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112342-4uwc06v.png" alt="image.png"></p>
 <p> （3）构建后操作里下拉选择 “Publish HTML reports”，HTML文件的路径为jenkins workspace中html报告 的存放路径，报告名称为 index.html(可自定义，但需和xml文件中一致)</p>
-<p> <img src="/assets/image-20220329112350-obucsvl.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112350-obucsvl.png" alt="image.png"></p>
 <ol start="6">
 <li><p>运行-看结果</p>
-<p> <img src="/assets/image-20220329112403-ywffi1t.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329112413-n3ak8ol.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112403-ywffi1t.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112413-n3ak8ol.png" alt="image.png"></p>
 </li>
 </ol>
 <p> 查看邮件</p>
-<p> <img src="/assets/image-20220329112422-uw4xrm4.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112422-uw4xrm4.png" alt="image.png"></p>
 <ol start="7">
 <li><p>配置过程中遇到的问题总结<br> （1）jenkins html 报告格式丢失</p>
-<p> <img src="/assets/image-20220329112437-3kg61n8.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112437-3kg61n8.png" alt="image.png"></p>
 </li>
 </ol>
 <p> 解决方法参考：jenkins使用HTML Publisher Plugin插件 拉取报告样式缺失问题解决 - 凯宾斯基 - 博客园</p>
 <p> ①安装插件：Groovy，startup Trigger</p>
 <p> ②配置方法</p>
 <p> 新建一个job，该job专门用于Jenkins启动时执行的配置命令；<br> 在Build Triggers模块下，勾选Build when job nodes start；<br> 在Build模块下，Add build step-&gt; Execute system Groovy script，在Groovy Script中输入配置命令，System.setProperty(“hudson.model.DirectoryBrowserSupport.CSP”, “”)<br> 解决后，报告显示正常</p>
-<p> <img src="/assets/image-20220329112446-58a067u.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112446-58a067u.png" alt="image.png"></p>
 <p> （2）Html报告中，MinTime和 Max Time 显示为NaN</p>
-<p> <img src="/assets/image-20220329112453-clzth2w.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112453-clzth2w.png" alt="image.png"></p>
 <p> 解决方法一：</p>
 <p> jmete-lib目录下这两个jar包，复制到ant的lib目录下即可</p>
-<p> <img src="/assets/image-20220329112459-dvivbp0.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112459-dvivbp0.png" alt="image.png"></p>
 <p> 解决方法二：在xml文档中引用这两个jar包即可</p>
-<p> <img src="/assets/image-20220329112505-9soji57.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112505-9soji57.png" alt="image.png"></p>
 <p> （3）Jenkins构建时遇到SSL警告</p>
-<p> <img src="/assets/image-20220329112511-2lexqq6.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112511-2lexqq6.png" alt="image.png"></p>
 <p> 解决方法，需要在JDBC Connection Configuration的Database URL中，增加三个参数：useUnicode&#x3D;true&amp;characterEncoding&#x3D;utf8&amp;useSSL&#x3D;false</p>
-<p> <img src="/assets/image-20220329112520-arj1oaf.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112520-arj1oaf.png" alt="image.png"></p>
 <p> （4）Jenkins构建时 控制台提示jmeter.log 权限不足</p>
-<p> <img src="/assets/image-20220329112527-4vj8e1v.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329112531-z2s6btq.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112527-4vj8e1v.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112531-z2s6btq.png" alt="image.png"></p>
 <p> 解决方法：进入到jmeter.log的目录下，对该文件的权限进行变更</p>
-<p> <img src="/assets/image-20220329112540-11x47zt.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112540-11x47zt.png" alt="image.png"></p>
 <ol start="8">
 <li>分享中提到的关于TestReport的名称优化<br> 目标：使展示的TestReport展示成变化的值(本身展示的是index.html)</li>
 </ol>
 <p> （1）在Jenkins中安装插件</p>
-<p> <img src="/assets/image-20220329112551-bu7qznm.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112551-bu7qznm.png" alt="image.png"></p>
 <p> （2）进入系统配置</p>
-<p> <img src="/assets/image-20220329112557-ocebez9.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329112604-ihl79vz.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329112610-s1tpg83.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329112615-zcy27c2.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112557-ocebez9.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112604-ihl79vz.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112610-s1tpg83.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112615-zcy27c2.png" alt="image.png"></p>
 <p> 进入jenkins 对应的jmeter自动化的Job中，点击Configure，我们去修改一下当时的配置，</p>
-<p> <img src="/assets/image-20220329112622-vfi5b12.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112622-vfi5b12.png" alt="image.png"></p>
 <p> 修改构建后操作（Post-build Actions），将原先设置的index.html改成和 TestReport${time}.html，点击save</p>
-<p> <img src="/assets/image-20220329112719-4kwtn2h.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112719-4kwtn2h.png" alt="image.png"></p>
 <p> 我们来构建并查看报告，看下是否达到我们想要的效果</p>
-<p> <img src="/assets/image-20220329112645-2czf07j.png" alt="image.png"></p>
-<p> <img src="/assets/image-20220329112654-zcqagi3.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112645-2czf07j.png" alt="image.png"></p>
+<p> <img src="/assets/1/image-20220329112654-zcqagi3.png" alt="image.png"></p>
 
 </div>
 

@@ -2154,7 +2154,7 @@ var _hmt = _hmt || [];
 <p><strong>以上两种方法都能够实现移动设备的弱网专项测试，也已经是比较成熟的方案，但都存在以下几点缺点：</strong></p>
 <p>（1）需要额外的PC或者服务器，弱网环境构建成本高；<br>（2）需要安装、部署额外的工具，并且弱网络环境需要在PC上或者Web上进行配置，使用成本高；<br>（3）弱网络环境功能并不完善，比如Fiddler不支持丢包、抖动等弱网环境。</p>
 <h3 id="三、工具使用介绍"><a href="#三、工具使用介绍" class="headerlink" title="三、工具使用介绍"></a>三、工具使用介绍</h3><p>具体查看官网：<a target="_blank" rel="noopener" href="https://cdn.wetest.qq.com/qnet/files/QNET%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B72.0.pdf">https://cdn.wetest.qq.com/qnet/files/QNET网络测试工具2.0.pdf</a></p>
-<h3 id="四、弱网功能详细介绍"><a href="#四、弱网功能详细介绍" class="headerlink" title="四、弱网功能详细介绍"></a>四、弱网功能详细介绍</h3><h4 id="1、自定义模板参数介绍"><a href="#1、自定义模板参数介绍" class="headerlink" title="1、自定义模板参数介绍"></a>1、自定义模板参数介绍</h4><p><img src="/assets/image-20220311173743-wnv5mqz.png" alt="image.png"></p>
+<h3 id="四、弱网功能详细介绍"><a href="#四、弱网功能详细介绍" class="headerlink" title="四、弱网功能详细介绍"></a>四、弱网功能详细介绍</h3><h4 id="1、自定义模板参数介绍"><a href="#1、自定义模板参数介绍" class="headerlink" title="1、自定义模板参数介绍"></a>1、自定义模板参数介绍</h4><p><img src="/assets/1/image-20220311173743-wnv5mqz.png" alt="image.png"></p>
 <p>（1）网络模板<br>单位kbps，限制当前网络上下行最大的带宽容量，例如针对腾讯视频设置1024kbps限速后，下载速度 只能达到128KB&#x2F;s左右：</p>
 <p>（2）网络延时<br>单位ms，当前网络的上下行延时约等于设置值，设置延时100ms,200ms,300ms</p>
 <p>（3）延时抖动<br>对每个数据包以设置的概率进行抖动选择，延时范围在0~抖动值之间随时产生</p>
@@ -2162,7 +2162,7 @@ var _hmt = _hmt || [];
 <p>（5）周期弱网<br>按照放行时长、弱网时长设置交替切换，根据弱网类型进行弱网。</p>
 <p>弱网类型：<br> <strong>【完全丢包】</strong> ：处于弱网时长的数据包直接丢包<br> <strong>【Burst】</strong> ：模拟路由或者底层硬件在判断当前网络连接不通时保存数据包，在网络通畅后爆发式的将 数据包推送出去，</p>
 <p>（6）协议控制<br>支持对不同协议的弱网控制，协议类型包括TCP\UDP\ICMP\DNS；<br>（7）IP控制 可以针对IP进行弱网控制，多个IP以|分割。</p>
-<h4 id="2、场景模板介绍"><a href="#2、场景模板介绍" class="headerlink" title="2、场景模板介绍"></a>2、场景模板介绍</h4><p><img src="/assets/image-20220311173751-5142qan.png" alt="image.png"></p>
+<h4 id="2、场景模板介绍"><a href="#2、场景模板介绍" class="headerlink" title="2、场景模板介绍"></a>2、场景模板介绍</h4><p><img src="/assets/1/image-20220311173751-5142qan.png" alt="image.png"></p>
 <p>（1）网络选择<br>提供真实的省市间网络传递的数据参数、运营商数据、网络类型数据；<br>（2）场景选择<br>提供多个真实测量不同场景下的网络波形</p>
 <p>接下来：<br>应用实际场景中<br>掌握基础知识</p>
 

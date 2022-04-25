@@ -2144,41 +2144,41 @@ var _hmt = _hmt || [];
 </div>
 
 <div id="article-content">
-	<p>现在我们来看看Fiddler的高级用法. Fiddler Script。   Fiddler中的script 可以让我们自动修改Http request和Response 的内容。  而不用手动地去下”断点”来修改http Request或Response中的值。</p>
-<h1 id="Fiddler的作者"><a href="#Fiddler的作者" class="headerlink" title="Fiddler的作者"></a><strong>Fiddler的作者</strong></h1><p>Fiddler 的作者是 Eric Lawrence 是个大师级的人物， 目前在微软总部西雅图工作。 他的博客是: <a target="_blank" rel="noopener" href="http://www.ericlawrence.com/Eric/">http://www.ericlawrence.com/Eric/</a></p>
+	<p>现在我们来看看Fiddler的高级用法. Fiddler Script。   Fiddler中的script 可以让我们自动修改Http request和Response 的内容。  而不用手动地去下”断点”来修改http Request或Response中的值。</p>
+<h1 id="Fiddler的作者"><a href="#Fiddler的作者" class="headerlink" title="Fiddler的作者"></a><strong>Fiddler的作者</strong></h1><p>Fiddler 的作者是 Eric Lawrence 是个大师级的人物， 目前在微软总部西雅图工作。 他的博客是: <a target="_blank" rel="noopener" href="http://www.ericlawrence.com/Eric/">http://www.ericlawrence.com/Eric/</a></p>
 <p>博客中能看到他的简历，以及一些生活照.</p>
 <h1 id="遇到问题如何向Fiddler的作者请教"><a href="#遇到问题如何向Fiddler的作者请教" class="headerlink" title="遇到问题如何向Fiddler的作者请教"></a><strong>遇到问题如何向Fiddler的作者请教</strong></h1><p>Eric Lawrence 在Google 论坛中建了一个Fiddler 的讨论组， 地址是:<a href="#!forum/httpfiddler">https://groups.google.com/forum/?fromgroups#!forum&#x2F;httpfiddler</a></p>
-<p>在这里Fiddler的使用者如果遇到任何问题，都可以这论坛里直接问Eric Law. Eric Law一般都会很快答复你。  在问问题之前，请搜索下。因为你的问题很可能别人早就问过了。</p>
+<p>在这里Fiddler的使用者如果遇到任何问题，都可以这论坛里直接问Eric Law. Eric Law一般都会很快答复你。  在问问题之前，请搜索下。因为你的问题很可能别人早就问过了。</p>
 <h1 id="关于Fiddler-Script"><a href="#关于Fiddler-Script" class="headerlink" title="关于Fiddler Script"></a><strong>关于Fiddler Script</strong></h1><p>Fiddler 包含了一个脚本文件可以自动修改Http Request 和Response.这样我们就不需要手动地下”断点”去修改了，</p>
-<p>实际上它是一个脚本文件CustomRules.js </p>
+<p>实际上它是一个脚本文件CustomRules.js </p>
 <p>位于: C:\Documents and Settings[your user]\My Documents\Fiddler2\Scripts\CustomRules.js 下</p>
-<p>你也可以在Fiddler 中打开CustomRules.js 文件，  启动Fiddler, 点击菜单Rules-&gt;Customize Rules…</p>
+<p>你也可以在Fiddler 中打开CustomRules.js 文件，  启动Fiddler, 点击菜单Rules-&gt;Customize Rules…</p>
 <p>Fiddler Script 的官方帮助文档必须认真阅读， 地址是：<a target="_blank" rel="noopener" href="http://www.fiddler2.com/Fiddler/dev/ScriptSamples.asp">http://www.fiddler2.com/Fiddler/dev/ScriptSamples.asp</a></p>
-<h1 id="Fiddler-Script-是用JScript-NET语言写的"><a href="#Fiddler-Script-是用JScript-NET语言写的" class="headerlink" title="Fiddler Script 是用JScript.NET语言写的"></a><strong>Fiddler Script 是用JScript.NET语言写的</strong></h1><p>我从来没听说过JScript.NET语言，可能是JScript的升级版吧。  写起来有点类似C#</p>
+<h1 id="Fiddler-Script-是用JScript-NET语言写的"><a href="#Fiddler-Script-是用JScript-NET语言写的" class="headerlink" title="Fiddler Script 是用JScript.NET语言写的"></a><strong>Fiddler Script 是用JScript.NET语言写的</strong></h1><p>我从来没听说过JScript.NET语言，可能是JScript的升级版吧。  写起来有点类似C#</p>
 <h1 id="安装Fiddler-Script-Editor"><a href="#安装Fiddler-Script-Editor" class="headerlink" title="安装Fiddler Script Editor"></a><strong>安装Fiddler Script Editor</strong></h1><p>你可以直接用notepadCustomRules.js文件，</p>
 <p>强烈推荐下载Fiddler Script Editor 地址是：　<a target="_blank" rel="noopener" href="http://www.fiddler2.com/fiddler/fse.asp">http://www.fiddler2.com/fiddler/fse.asp</a></p>
 <p>Fiddler Script Editor 提供了语法高亮，以及智能提示的功能， 如下图:</p>
-<p><img src="/assets/wpsAE7F.tmp-20211222152526-hmqvvef.png"></p>
+<p><img src="/assets/1/wpsAE7F.tmp-20211222152526-hmqvvef.png"></p>
 <h1 id="CustomRules-js中的主要方法"><a href="#CustomRules-js中的主要方法" class="headerlink" title="CustomRules.js中的主要方法"></a><strong>CustomRules.js中的主要方法</strong></h1><p>&#x2F;&#x2F; 在这个方法中修改Request的内容， 我们用得最多,</p>
 <p>static function OnBeforeRequest(oSession: Session)</p>
 <p>&#x2F;&#x2F; 在这个方法中修改Response的内容，</p>
 <p>static function OnBeforeResponse(oSession: Session)</p>
-<p>&#x2F;&#x2F; 在个方法中包含Fiddler 命令。  在Fiddler界面中左下方的QuickExec Box</p>
+<p>&#x2F;&#x2F; 在个方法中包含Fiddler 命令。  在Fiddler界面中左下方的QuickExec Box</p>
 <p>static function OnExecAction(sParams: String[])</p>
 <h1 id="给Fiddler添加菜单"><a href="#给Fiddler添加菜单" class="headerlink" title="给Fiddler添加菜单"></a><strong>给Fiddler添加菜单</strong></h1><p>Fiddler可以模拟各种浏览器，你可以通过点击菜单 Rules-&gt;User-Agents</p>
-<p>不过好像没有Iphone 4S safari 的， 我们现在添加一个。  先查询在网上Iphone 4S safari 的user-Agents, 然后添加如下代码代码就可以了</p>
+<p>不过好像没有Iphone 4S safari 的， 我们现在添加一个。  先查询在网上Iphone 4S safari 的user-Agents, 然后添加如下代码代码就可以了</p>
 <p>RulesStringValue(23, “Iphone 4S safari”, “Mozilla&#x2F;5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; en-us) AppleWebKit&#x2F;532.9 (KHTML, like Gecko) Version&#x2F;4.0.5 Mobile&#x2F;8A293 Safari&#x2F;6531.22.7”)</p>
 <p> 保存脚本， 重启Fiddler就可以看到菜单中多了个Iphone 4s</p>
-<p><img src="/assets/wpsAE80.tmp-20211222152526-jcg446q.jpg"></p>
+<p><img src="/assets/1/wpsAE80.tmp-20211222152526-jcg446q.jpg"></p>
 <p>你可以把你常用的操作，都定义成一个menu，</p>
-<h1 id="修改Session在Fiddler的显示样式"><a href="#修改Session在Fiddler的显示样式" class="headerlink" title="修改Session在Fiddler的显示样式"></a><strong>修改Session在Fiddler的显示样式</strong></h1><p>我们可以控制Session在Fiddler中显示的样式， 具体文档是： <a target="_blank" rel="noopener" href="http://www.fiddler2.com/Fiddler/dev/SessionFlags.asp">http://www.fiddler2.com/Fiddler/dev/SessionFlags.asp</a></p>
+<h1 id="修改Session在Fiddler的显示样式"><a href="#修改Session在Fiddler的显示样式" class="headerlink" title="修改Session在Fiddler的显示样式"></a><strong>修改Session在Fiddler的显示样式</strong></h1><p>我们可以控制Session在Fiddler中显示的样式， 具体文档是： <a target="_blank" rel="noopener" href="http://www.fiddler2.com/Fiddler/dev/SessionFlags.asp">http://www.fiddler2.com/Fiddler/dev/SessionFlags.asp</a></p>
 <p>把这段脚本放在OnBeforeRequest(oSession: Session) 方法下，并且点击”Save script”, 这样所有的cnblogs的会话都会显示红色.</p>
 <pre><code> if (oSession.HostnameIs(&quot;www.cnblogs.com&quot;)) &#123;
         oSession[&quot;ui-color&quot;] = &quot;red&quot;;
     &#125;
 </code></pre>
 <p>运行效果如</p>
-<p><img src="/assets/wpsAE81.tmp-20211222152526-t4u7xd4.jpg"></p>
+<p><img src="/assets/1/wpsAE81.tmp-20211222152526-t4u7xd4.jpg"></p>
 <h1 id="如何在Fiddler-Script中修改Cookie"><a href="#如何在Fiddler-Script中修改Cookie" class="headerlink" title="如何在Fiddler Script中修改Cookie"></a><strong>如何在Fiddler Script中修改Cookie</strong></h1><p>cookie其实就是request 中的一个header.</p>
 <p>&#x2F;&#x2F; 删除所有的cookie</p>
 <p>oSession.oRequest.headers.Remove(“Cookie”);</p>
@@ -2219,7 +2219,7 @@ var _hmt = _hmt || [];
 
     strBody=strBody.replace(&quot;1111&quot;,&quot;2222&quot;);
 
-    // 弹个对话框检查下修改后的body               
+    // 弹个对话框检查下修改后的body               
     FiddlerObject.alert(strBody);
 
     // 将修改后的body，重新写回Request中
@@ -2229,7 +2229,7 @@ var _hmt = _hmt || [];
 &#125;
 </code></pre>
 <p>}</p>
-<p>方法二:  提供了一个非常简单的方法，可以直接替换body中的数据</p>
+<p>方法二:  提供了一个非常简单的方法，可以直接替换body中的数据</p>
 <p> oSession.utilReplaceInRequest(“1111”, “2222”);</p>
 
 </div>

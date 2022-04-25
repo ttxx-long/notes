@@ -2185,13 +2185,13 @@ var _hmt = _hmt || [];
 <p><strong>使用淘宝的npm镜像下载newman工具。</strong></p>
 <p>**检查newman的安装：  ** npm config ls   <strong>查看到prefix 目录，也就是npm安装内容的目录。 检查一下newman是不是已经装好了，并且将这个目录配置到环境变量PATH里，方便进行newman的使用。</strong></p>
 <p><strong>最后cmd运行newman得到如下结果即安装成功：</strong></p>
-<p><img src="/assets/image-20220324173410-0kvakk8.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324173410-0kvakk8.png" alt="image.png"></p>
 <p><strong>3、通过newman执行postman的collection。</strong></p>
 <p>**需要的内容：  环境变量 、 测试集collection 、测试数据csv等。 **</p>
 <p><strong>需要在postman中导出 collection 和 环境变量 environments。   不仅可以用于newman执行，还可以进行导入，查看别人的测试集。</strong></p>
 <p><strong>注意：在导出的时候，最好创建一个文件夹管理，不要用中文，同时，导出的文件最好也不要中文名。</strong></p>
 <p><strong>执行方式 newman run xxxx.collection.json  -e xxxx.enviroments.json</strong></p>
-<p><img src="/assets/image-20220324173415-kj253np.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20220324173415-kj253np.png" alt="image.png"></p>
 <p><strong>4、newman生成 html测试报告：</strong></p>
 <p><strong>1、通过以下命令先安装 newman的html报告插件。</strong></p>
 <p><strong>npm install -g newman-reporter-html</strong></p>

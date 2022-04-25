@@ -2143,48 +2143,48 @@ var _hmt = _hmt || [];
 <p>　　　注意：生成的jar包只有10分钟的有效期，需要在10分钟内完成破解的操作</p>
 <h1 id="三、基本配置"><a href="#三、基本配置" class="headerlink" title="三、基本配置"></a>三、基本配置</h1><p>　　我使用的是win7的系统，所以以下配置适用于win7的电脑系统，win10也是类似的配置</p>
 <h2 id="1-PC端安装证书"><a href="#1-PC端安装证书" class="headerlink" title="1.PC端安装证书"></a>1.PC端安装证书</h2><p>　　打开charles，选择help–&gt;SSL Proxying–&gt; Install Charles Root Ceriticate，点击安装证书，一直点击下一步完成即可成功安装。如下图所示：</p>
-<p><img src="/assets/image-20211122223234-nojtb3x.png" alt="image.png"></p>
-<p><img src="/assets/image-20211122223242-xn8ntu6.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223234-nojtb3x.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223242-xn8ntu6.png" alt="image.png"></p>
 <p>　　</p>
 <h2 id="2-web端抓包配置"><a href="#2-web端抓包配置" class="headerlink" title="2.web端抓包配置"></a>2.web端抓包配置</h2><p>　　　以火狐浏览器为例，其它浏览器类似配置即可。</p>
 <p>　　　安装charles后访问火狐浏览器，无论访问什么链接都会提示您的连接不安全，解决办法与fiddler同理，需要安装charles证书</p>
-<p><img src="/assets/image-20211122223251-00hwiqu.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223251-00hwiqu.png" alt="image.png"></p>
 <p>　　　　　a.将charles证书保存到本地，选择help→SSL Proxying→Save Charles Certificate</p>
-<p><img src="/assets/image-20211122223300-pys14z8.png" alt="image.png"></p>
-<p><img src="/assets/image-20211122223306-sd4git4.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223300-pys14z8.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223306-sd4git4.png" alt="image.png"></p>
 <p>　　　　　b.进入Firefox浏览器选择—高级-证书，点击查看证书—导入，选择本地保存的证书，勾选信任，导入即可。</p>
-<p><img src="/assets/image-20211122223313-6yf2nee.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223313-6yf2nee.png" alt="image.png"></p>
 <p>　　　　</p>
 <p>　　　　　c.重启火狐浏览器，发现网页可以正常打开，charles也可以正常抓包</p>
 <p> 　　</p>
 <h2 id="3-手机抓包配置"><a href="#3-手机抓包配置" class="headerlink" title="3.手机抓包配置"></a>3.手机抓包配置</h2><h3 id="1-手机端设置代理"><a href="#1-手机端设置代理" class="headerlink" title="1)手机端设置代理"></a>1)手机端设置代理</h3><p>　　　　　此时你的手机必须和电脑在同一个网络&#x2F;wifi里,手机选择和电脑相同wifi—&gt;长按此wifi弹框中选择修改网络—&gt;显示高级选项—&gt;服务器主机名输入框中输入电脑ip地址,服务器端口号填写8888——&gt;保存即可,此时手机和电脑绑定在一起一遍电脑抓手机上请求网络数据</p>
-<p><img src="/assets/image-20211122223322-4svba9s.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223322-4svba9s.png" alt="image.png"></p>
 <p>　　　　第一次设置成功代理后，随便打开一个需要网络的应用，PC端会自动弹出以下提示，选择allow允许Charles代理</p>
-<p><img src="/assets/image-20211122223329-5n7vd3g.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223329-5n7vd3g.png" alt="image.png"></p>
 <p>　　　　如果没有弹出该提示，也可以在菜单栏中的proxy—Access Control settings中手动将手机和电脑的ip加入其中（手机的ip地址怎么查看可以自行百度）</p>
-<p><img src="/assets/image-20211122223335-gs6uiq5.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223335-gs6uiq5.png" alt="image.png"></p>
 <h3 id="2-手机安装charles证书"><a href="#2-手机安装charles证书" class="headerlink" title="2)手机安装charles证书"></a>2)手机安装charles证书</h3><h4 id="a-IOS客户端"><a href="#a-IOS客户端" class="headerlink" title="a.IOS客户端"></a>a.IOS客户端</h4><p>　　　　　　前提：手机WiFi代理已经设置好，参考前文设置　　　</p>
 <p>　　　　　　1、打开Charles，选择help→SSL Proxying→Install Charles Root Certificate on a Mobile Device or Remote Browser</p>
 <p>　　　　　　2、手机连接电脑代理，打开safari，输入网址：chls.pro&#x2F;ssl</p>
 <p>　　　　　　3、手机弹出提示：此网站正尝试打开“设置”已向您显示一个配置描述文件。您要允许吗？忽略|允许，选择允许，安装描述文件，并信任</p>
 <p>　　　　　　4、iOS10以上的手机需要在：设置→ 通用 → 关于本机 → 证书信任设置→ 找到charles proxy CA证书，打开信任即可</p>
 <h4 id="b-android客户端"><a href="#b-android客户端" class="headerlink" title="b.android客户端"></a>b.android客户端</h4><h5 id="方式一："><a href="#方式一：" class="headerlink" title="方式一："></a>方式一：</h5><p>　　　　　　点击 help–&gt;SSL Proxying–&gt; Install Charles Root Ceriticate on a Mobile Device or Remote Browser,</p>
-<p><img src="/assets/image-20211122223345-8gyec9n.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223345-8gyec9n.png" alt="image.png"></p>
 <p>　　　手机设置好WiFi代理后,在手机浏览器打开下面弹框里提到的链接chls.pro&#x2F;ssl,下载证书,安装即可(华为手机最好不要用自带的浏览器，因为自带的浏览器下载的证书为pem格式，无法直接安装，我用的百度浏览器)</p>
 <p>　　　cer格式的证书下载完可以直接点击安装，安装证书过程中会要求输入锁屏密码</p>
-<p><img src="/assets/image-20211122223353-794bj8s.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223353-794bj8s.png" alt="image.png"></p>
 <h5 id="方式二："><a href="#方式二：" class="headerlink" title="方式二："></a>方式二：</h5><p>　　　　　　1、打开Charles，选择help→SSL Proxying→Save Charles Certificate，然后将证书导入到手机中</p>
 <p>　　　　　　2、导入后直接点击安装证书，提示无法打开（pem格式），cer格式的key直接安装，可以忽略第三步</p>
 <p>　　　　　　3、进入手机设置—&gt;安全和隐私—&gt;更多安全设置—&gt;加密和凭据—&gt;从存储设备安装—&gt;选择我们刚下载的证书,安装即可（华为手机的安装方式，其它安卓机型可以自行百度）</p>
-<p><img src="/assets/image-20211122223400-1qxenel.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223400-1qxenel.png" alt="image.png"></p>
 <p>　　　　　　常见手机：小米手机，华为手机，需要设置手机锁屏密码</p>
-<p><img src="/assets/image-20211122223300-pys14z8.png" alt="image.png"></p>
-<p><img src="/assets/image-20211122223422-xh9tzfh.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223300-pys14z8.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223422-xh9tzfh.png" alt="image.png"></p>
 <p> 　</p>
 <h2 id="4-设置抓取https"><a href="#4-设置抓取https" class="headerlink" title="4.设置抓取https"></a>4.设置抓取https</h2><p> 　　　　默认charles只可以抓取http协议的包，https的更安全，需要如下配置方可</p>
 <p>　　　　菜单栏 Proxy–&gt;SSL Proxying Setting–&gt;选择SSL Proxying——&gt;点击add在弹框中port里填写443(443代表通用https端口号)， host中的*代表抓取所有地址的包</p>
-<p><img src="/assets/image-20211122223428-zyk9mt1.png" alt="image.png"></p>
-<p><img src="/assets/image-20211122223435-52u5oe8.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223428-zyk9mt1.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211122223435-52u5oe8.png" alt="image.png"></p>
 
 </div>
 

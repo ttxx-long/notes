@@ -2156,31 +2156,31 @@ var _hmt = _hmt || [];
 
 <div id="article-content">
 	<h3 id="查看服务器mysql服务有没有开启"><a href="#查看服务器mysql服务有没有开启" class="headerlink" title="查看服务器mysql服务有没有开启:"></a>查看服务器mysql服务有没有开启:</h3><p>ps -ef | grep mysql</p>
-<p><img src="/assets/image-20211120233959-4dpkuvo.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120233959-4dpkuvo.png" alt="image.png"></p>
 <hr>
 <h3 id="登录到MySQL"><a href="#登录到MySQL" class="headerlink" title="登录到MySQL:"></a><strong>登录到MySQL:</strong></h3><p>mysql -h 主机名 -u 用户名 -p</p>
 <p>-h : 该命令用于指定客户端所要登录的MySQL主机名, 登录当前机器该参数可以省略;<br>-u : 所要登录的用户名;<br>-p : 告诉服务器将会使用一个密码来登录, 如果所要登录的用户名密码为空, 可以忽略此选项。</p>
-<p><img src="/assets/image-20211120234007-btx7xmn.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234007-btx7xmn.png" alt="image.png"></p>
 <hr>
 <h2 id="一-查看数据库、表、数据字段、数据"><a href="#一-查看数据库、表、数据字段、数据" class="headerlink" title="一 查看数据库、表、数据字段、数据"></a>一 查看数据库、表、数据字段、数据</h2><h3 id="查看当前所有的数据库："><a href="#查看当前所有的数据库：" class="headerlink" title="查看当前所有的数据库："></a>查看当前所有的数据库：</h3><pre><code>  show  databases；
 </code></pre>
-<p><img src="/assets/image-20211120234015-huoyybn.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234015-huoyybn.png" alt="image.png"></p>
 <hr>
 <h3 id="选择（进入）-数据库："><a href="#选择（进入）-数据库：" class="headerlink" title="选择（进入） 数据库："></a>选择（进入） 数据库：</h3><pre><code> use   数据库名；
 </code></pre>
-<p><img src="/assets/image-20211120234022-bbmujsd.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234022-bbmujsd.png" alt="image.png"></p>
 <hr>
 <h3 id="查看当前数据库所有的表："><a href="#查看当前数据库所有的表：" class="headerlink" title="查看当前数据库所有的表："></a>查看当前数据库所有的表：</h3><pre><code>show tables；
 </code></pre>
-<p><img src="/assets/image-20211120234028-ue71c2x.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234028-ue71c2x.png" alt="image.png"></p>
 <hr>
 <h3 id="查看-某个表的字段结构-："><a href="#查看-某个表的字段结构-：" class="headerlink" title="查看 某个表的字段结构 ："></a>查看 某个表的字段结构 ：</h3><pre><code> desc  表名；
 </code></pre>
-<p><img src="/assets/image-20211120234037-6qr8p92.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234037-6qr8p92.png" alt="image.png"></p>
 <hr>
 <h3 id="查询表数据："><a href="#查询表数据：" class="headerlink" title="查询表数据："></a>查询表数据：</h3><pre><code> select * from  表名；
 </code></pre>
-<p><img src="/assets/image-20211120234046-g3smurz.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234046-g3smurz.png" alt="image.png"></p>
 <pre><code>    SELECT user_qq AS &#39;玩家QQ&#39;,user_name AS &#39;玩家昵称&#39;  FROM users    //显示中文别名
     SELECT DISTINCT user_qq  FROM scores    //消除重复行
     SELECT * FROM users LIMIT 2,3           //从下标为2的记录开始，显示3条数据（3-5条数据）
@@ -2188,7 +2188,7 @@ var _hmt = _hmt || [];
 <hr>
 <h2 id="二-新建数据库、数据表（表）、数据（添加数据）"><a href="#二-新建数据库、数据表（表）、数据（添加数据）" class="headerlink" title="二 新建数据库、数据表（表）、数据（添加数据）"></a>二 新建数据库、数据表（表）、数据（添加数据）</h2><h3 id="新建数据库："><a href="#新建数据库：" class="headerlink" title="新建数据库："></a>新建数据库：</h3><pre><code>create  database  数据库名；
 </code></pre>
-<p><img src="/assets/image-20211120234057-lksi10b.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234057-lksi10b.png" alt="image.png"></p>
 <hr>
 <h3 id="新建表："><a href="#新建表：" class="headerlink" title="新建表："></a>新建表：</h3><pre><code>CREATE TABLE 表名 &lt;
     字段名字   数据类型  修饰,
@@ -2196,37 +2196,37 @@ var _hmt = _hmt || [];
  &gt;; 
 </code></pre>
 <p>注意至少要有一个字段 修饰与数据类型在这里不再详细说明 关键字大写 字段间用，隔开 最后一行不用</p>
-<p><img src="/assets/image-20211120234057-lksi10b.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234057-lksi10b.png" alt="image.png"></p>
 <hr>
 <h3 id="添加数据："><a href="#添加数据：" class="headerlink" title="添加数据："></a>添加数据：</h3><pre><code>insert into 表名 valuse（值，值）；
 </code></pre>
-<p><img src="/assets/image-20211120234114-73elez8.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234114-73elez8.png" alt="image.png"></p>
 <hr>
 <h2 id="三-修改数据表，修改数据"><a href="#三-修改数据表，修改数据" class="headerlink" title="三 修改数据表，修改数据"></a>三 修改数据表，修改数据</h2><h3 id="修改数据表："><a href="#修改数据表：" class="headerlink" title="修改数据表："></a>修改数据表：</h3><pre><code>alter table 表名 add 字段名 类型 修饰【加的列在表的最后面】
 </code></pre>
-<p><img src="/assets/image-20211120234120-uqqruem.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234120-uqqruem.png" alt="image.png"></p>
 <pre><code>alter table 表名 add 字段名  类型 修饰 after 某列【把新列加在某列后面】
 </code></pre>
-<p><img src="/assets/image-20211120234125-0wyw6yo.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234125-0wyw6yo.png" alt="image.png"></p>
 <hr>
 <h3 id="修改数据："><a href="#修改数据：" class="headerlink" title="修改数据："></a>修改数据：</h3><pre><code> update user set name=新值 where
 </code></pre>
-<p><img src="/assets/image-20211120234131-u9lqob9.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234131-u9lqob9.png" alt="image.png"></p>
 <hr>
 <h2 id="四-删除数据库，数据表，数据"><a href="#四-删除数据库，数据表，数据" class="headerlink" title="四 删除数据库，数据表，数据"></a>四 删除数据库，数据表，数据</h2><h3 id="删除数据库："><a href="#删除数据库：" class="headerlink" title="删除数据库："></a>删除数据库：</h3><pre><code>drop database 数据库名；
 </code></pre>
-<p><img src="/assets/image-20211120234137-i3k1y62.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234137-i3k1y62.png" alt="image.png"></p>
 <hr>
 <h3 id="删除数据表："><a href="#删除数据表：" class="headerlink" title="删除数据表："></a>删除数据表：</h3><pre><code> drop  table  表名;
 </code></pre>
-<p><img src="/assets/image-20211120234143-v4gn8sk.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234143-v4gn8sk.png" alt="image.png"></p>
 <hr>
 <h3 id="删除列："><a href="#删除列：" class="headerlink" title="删除列："></a><strong>删除列：</strong></h3><pre><code>alter table 表名 drop 列名称;
 </code></pre>
-<h3 id=""><a href="#" class="headerlink" title=""></a><img src="/assets/image-20211120234151-ilexh3g.png" alt="image.png"></h3><hr>
+<h3 id=""><a href="#" class="headerlink" title=""></a><img src="/assets/1/image-20211120234151-ilexh3g.png" alt="image.png"></h3><hr>
 <h3 id="删除数据："><a href="#删除数据：" class="headerlink" title="删除数据："></a>删除数据：</h3><pre><code> delete  from  表名 where；
 </code></pre>
-<p><img src="/assets/image-20211120234158-ibmm67v.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211120234158-ibmm67v.png" alt="image.png"></p>
 <hr>
 <h3 id="MySQL有三大类数据类型"><a href="#MySQL有三大类数据类型" class="headerlink" title="MySQL有三大类数据类型"></a>MySQL有三大类数据类型</h3><p>分别为 <strong>数字</strong> 、 <strong>日期\时间</strong> 、 <strong>字符串</strong> 。这三大类中又更细致的划分了许多子类型:</p>
 <p><strong>整数:</strong> tinyint、smallint、mediumint、int、bigint<br>浮点数: float、double、real、decimal</p>

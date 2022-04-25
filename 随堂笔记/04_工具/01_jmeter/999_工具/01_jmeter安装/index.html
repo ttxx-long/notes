@@ -2155,38 +2155,38 @@ var _hmt = _hmt || [];
 <p>1、官网下载链接：</p>
 <p><a target="_blank" rel="noopener" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
 <p>2、选择accept，之后才能下载对应的版本；这里我选择的是Windows x86版本；</p>
-<p><img src="/assets/image-20211204000805-eyza1hc.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000805-eyza1hc.png" alt="image.png"></p>
 <p>3、下载完后，找到下载后的这文件，双击运行。点击下一步，出现如下图一内容，这里是设置安装路径，可以默认，用户可自行选择，这里我安装在D:\JAVA\JDK，如下图二。这路径记好，一会设置环境变量需要用到，设置好后点击下一步，过一会会出现安装Jre路径，如下图三，用户自行选择，点击下一步等待安转完毕即可。</p>
-<p><img src="/assets/image-20211204000813-ecja7mn.png" alt="image.png"></p>
-<p><img src="/assets/image-20211204000819-zupyhze.png" alt="image.png"></p>
-<p><img src="/assets/image-20211204000827-tfqdqnr.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000813-ecja7mn.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000819-zupyhze.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000827-tfqdqnr.png" alt="image.png"></p>
 <p>4、到了这，离成功又近了一步，开始设置环境变量。我的电脑是win7,这里主要以win7为例，其他系统可自行查阅资料，在桌面找到计算机图标右键选择属性，出现如下图一所示内容，点击高级系统设置，出现下图二内容，点击环境变量。</p>
-<p><img src="/assets/image-20211204000834-lruterg.png" alt="image.png"></p>
-<p><img src="/assets/image-20211204000839-2rca6yt.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000834-lruterg.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000839-2rca6yt.png" alt="image.png"></p>
 <p>5、点击环境变量后出现如下图一所示，在系统变量下面点击新建,然后在下图二弹窗中输入以下内容，变量值就是在步骤4里设置的路径，我的是D:\JAVA\JDK，所以就设置成这个。设置完后再重复刚才步骤新建一个系统变量如下图三，这个可以和我设置一样，变量值为“%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;”。设置好后别忘了确定呀，如下图四。</p>
-<p><img src="/assets/image-20211204000846-cb27j2t.png" alt="image.png"></p>
-<p><img src="/assets/image-20211204000856-xfwkx75.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000846-cb27j2t.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000856-xfwkx75.png" alt="image.png"></p>
 <p>6、一切大功告成。但怎么样才能确定安装成功了呢？点击windows图标，在命令行中输入cmd，如下图一，按回车键。就会出现一个命令窗口（一个黑色的框框），再输入“javac”按回车键，如果出现如下图二就真的大功告成了，如果没有就重温下以上的步骤。</p>
-<p><img src="/assets/image-20211204000905-bluwpbb.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000905-bluwpbb.png" alt="image.png"></p>
 <p><strong>JMETER下载及安装配置</strong></p>
 <p>1、打开下载地址<a target="_blank" rel="noopener" href="http://jmeter.apache.org/download_jmeter.cgi">http://jmeter.apache.org/download_jmeter.cgi</a></p>
 <p>2、（Windows版本下载zip，Linux版本下载tgz）一般下载Binaries，Source含有源码；</p>
-<p><img src="/assets/image-20211204000912-j11sxx2.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000912-j11sxx2.png" alt="image.png"></p>
 <p>3、下载后无需安装，解压后即可使用。下图为解压后的目录。</p>
-<p><img src="/assets/image-20211204000918-11fk6vd.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000918-11fk6vd.png" alt="image.png"></p>
 <p>4、完成以上操作后，需要进行配置jmeter的环境变量。</p>
 <p>jmeter环境变量配置如下：</p>
 <p>（1）新增JMETER_HOME变量，注意：变量值为你下载后解压的路径。</p>
-<p><img src="/assets/image-20211204000925-ts7ok5b.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000925-ts7ok5b.png" alt="image.png"></p>
 <p>（2）编辑CLASSPATH变量，加上%JMETER_HOME%\lib\ext\ApacheJMeter_core.jar;%JMETER_HOME%\lib\jorphan.jar;%JMETER_HOME%\lib\logkit-2.0.jar;注：如果电脑重没找到CLASSPATH，添加在PATH也可以；</p>
-<p><img src="/assets/image-20211204000930-31qpx0p.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000930-31qpx0p.png" alt="image.png"></p>
 <p>5、操作完上面的步骤，我们就可以点击Jmeter中bin目录下面的jmeter.bat文件即可打开Jmeter了。<br>注意：打开的时候会有两个窗口，Jmeter的命令窗口和Jmeter的图形操作界面，不可以关闭命令窗口。</p>
 <p>注：打开如果提示“findstr不是内部或外部命令”， 这是PATH环境变量的问题，将windows命令的目录添加到PATH中就over了。即：在path中追加：%SystemRoot%&#x2F;system32;%SystemRoot%;</p>
-<p><img src="/assets/image-20211204000935-jcinai9.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000935-jcinai9.png" alt="image.png"></p>
 <p>6、进入JMeter界面。</p>
-<p><img src="/assets/image-20211204000941-230j3vm.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000941-230j3vm.png" alt="image.png"></p>
 <p>7、 备注：也可以通过ApacheJMeter.jar打开。</p>
-<p><img src="/assets/image-20211204000949-k1rry3j.png" alt="image.png"></p>
+<p><img src="/assets/1/image-20211204000949-k1rry3j.png" alt="image.png"></p>
 
 </div>
 
