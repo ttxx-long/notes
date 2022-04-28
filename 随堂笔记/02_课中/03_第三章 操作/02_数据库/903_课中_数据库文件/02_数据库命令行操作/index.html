@@ -9,12 +9,12 @@
         <meta name="keywords" content="课前" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="查看服务器mysql服务有没有开启:ps -ef | grep mysql   登录到MySQL:mysql -h 主机名 -u 用户名 -p -h : 该命令用于指定客户端所要登录的MySQL主机名, 登录当前机器该参数可以省略;-u : 所要登录的用户名;-p : 告诉服务器将会使用一个密码来登录, 如果所要登录的用户名密码为空, 可以忽略此选项。   一 查看数据库、表、数据字段、数据查看当">
+    <meta name="description" content="查看服务器mysql服务有没有开启:ps -ef | grep mysql  登录到MySQL:mysql -h 主机名 -u 用户名 -p-h : 该命令用于指定客户端所要登录的MySQL主机名, 登录当前机器该参数可以省略;-u : 所要登录的用户名;-p : 告诉服务器将会使用一个密码来登录, 如果所要登录的用户名密码为空, 可以忽略此选项。  一 查看数据库、表、数据字段、数据查看当前所有">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据库命令行操作">
 <meta property="og:url" content="http://example.com/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/02_%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="TTXX课程">
-<meta property="og:description" content="查看服务器mysql服务有没有开启:ps -ef | grep mysql   登录到MySQL:mysql -h 主机名 -u 用户名 -p -h : 该命令用于指定客户端所要登录的MySQL主机名, 登录当前机器该参数可以省略;-u : 所要登录的用户名;-p : 告诉服务器将会使用一个密码来登录, 如果所要登录的用户名密码为空, 可以忽略此选项。   一 查看数据库、表、数据字段、数据查看当">
+<meta property="og:description" content="查看服务器mysql服务有没有开启:ps -ef | grep mysql  登录到MySQL:mysql -h 主机名 -u 用户名 -p-h : 该命令用于指定客户端所要登录的MySQL主机名, 登录当前机器该参数可以省略;-u : 所要登录的用户名;-p : 告诉服务器将会使用一个密码来登录, 如果所要登录的用户名密码为空, 可以忽略此选项。  一 查看数据库、表、数据字段、数据查看当前所有">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/assets/1/image-20211120233959-4dpkuvo.png">
 <meta property="og:image" content="http://example.com/assets/1/image-20211120234007-btx7xmn.png">
@@ -33,8 +33,8 @@
 <meta property="og:image" content="http://example.com/assets/1/image-20211120234143-v4gn8sk.png">
 <meta property="og:image" content="http://example.com/assets/1/image-20211120234151-ilexh3g.png">
 <meta property="og:image" content="http://example.com/assets/1/image-20211120234158-ibmm67v.png">
-<meta property="article:published_time" content="2022-04-25T10:58:35.861Z">
-<meta property="article:modified_time" content="2022-04-25T18:02:40.106Z">
+<meta property="article:published_time" content="2022-04-28T09:42:18.943Z">
+<meta property="article:modified_time" content="2022-04-28T15:24:33.814Z">
 <meta property="article:author" content="yulong">
 <meta property="article:tag" content="课前">
 <meta name="twitter:card" content="summary">
@@ -226,7 +226,7 @@
                             &nbsp;
                             01_计算机基础
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/01_windows%E5%BF%AB%E6%8D%B7%E9%94%AE/">windows快捷键</a></li>  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/02_Linux%E7%B3%BB%E7%BB%9F/">Linux系统</a></li>  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/03_windows%E4%B8%8Elinux%E7%9A%84%E5%8C%BA%E5%88%AB/">windows与linux的区别</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/01_windows%E5%BF%AB%E6%8D%B7%E9%94%AE/">windows快捷键</a></li>  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/02_Linux%E7%B3%BB%E7%BB%9F/">Linux系统</a></li>  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/03_windows%E4%B8%8Elinux%E7%9A%84%E5%8C%BA%E5%88%AB/">windows与linux的区别</a></li>  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/04_%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/">进制之间的转换</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -659,7 +659,7 @@
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/02_%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/">
-            <time datetime="2022-04-25T10:58:35.861Z" itemprop="datePublished">2022-04-25</time>
+            <time datetime="2022-04-28T09:42:18.943Z" itemprop="datePublished">2022-04-28</time>
         </a>
     </div>
 
@@ -687,30 +687,19 @@
             
         
         
-            <h3 id="查看服务器mysql服务有没有开启"><a href="#查看服务器mysql服务有没有开启" class="headerlink" title="查看服务器mysql服务有没有开启:"></a>查看服务器mysql服务有没有开启:</h3><p>ps -ef | grep mysql</p>
-<p><img src="/assets/1/image-20211120233959-4dpkuvo.png" alt="image.png"></p>
+            <h3 id="查看服务器mysql服务有没有开启"><a href="#查看服务器mysql服务有没有开启" class="headerlink" title="查看服务器mysql服务有没有开启:"></a>查看服务器mysql服务有没有开启:</h3><p>ps -ef | grep mysql<br><img src="/assets/1/image-20211120233959-4dpkuvo.png" alt="image.png"></p>
 <hr>
-<h3 id="登录到MySQL"><a href="#登录到MySQL" class="headerlink" title="登录到MySQL:"></a><strong>登录到MySQL:</strong></h3><p>mysql -h 主机名 -u 用户名 -p</p>
-<p>-h : 该命令用于指定客户端所要登录的MySQL主机名, 登录当前机器该参数可以省略;<br>-u : 所要登录的用户名;<br>-p : 告诉服务器将会使用一个密码来登录, 如果所要登录的用户名密码为空, 可以忽略此选项。</p>
-<p><img src="/assets/1/image-20211120234007-btx7xmn.png" alt="image.png"></p>
+<h3 id="登录到MySQL"><a href="#登录到MySQL" class="headerlink" title="登录到MySQL:"></a><strong>登录到MySQL:</strong></h3><p>mysql -h 主机名 -u 用户名 -p<br>-h : 该命令用于指定客户端所要登录的MySQL主机名, 登录当前机器该参数可以省略;<br>-u : 所要登录的用户名;<br>-p : 告诉服务器将会使用一个密码来登录, 如果所要登录的用户名密码为空, 可以忽略此选项。<br><img src="/assets/1/image-20211120234007-btx7xmn.png" alt="image.png"></p>
 <hr>
 <h2 id="一-查看数据库、表、数据字段、数据"><a href="#一-查看数据库、表、数据字段、数据" class="headerlink" title="一 查看数据库、表、数据字段、数据"></a>一 查看数据库、表、数据字段、数据</h2><h3 id="查看当前所有的数据库："><a href="#查看当前所有的数据库：" class="headerlink" title="查看当前所有的数据库："></a>查看当前所有的数据库：</h3><pre><code>  show  databases；
 </code></pre>
-<p><img src="/assets/1/image-20211120234015-huoyybn.png" alt="image.png"></p>
-<hr>
-<h3 id="选择（进入）-数据库："><a href="#选择（进入）-数据库：" class="headerlink" title="选择（进入） 数据库："></a>选择（进入） 数据库：</h3><pre><code> use   数据库名；
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="/assets/1/image-20211120234015-huoyybn.png" alt="image.png"></h2><h3 id="选择（进入）-数据库："><a href="#选择（进入）-数据库：" class="headerlink" title="选择（进入） 数据库："></a>选择（进入） 数据库：</h3><pre><code> use   数据库名；
 </code></pre>
-<p><img src="/assets/1/image-20211120234022-bbmujsd.png" alt="image.png"></p>
-<hr>
-<h3 id="查看当前数据库所有的表："><a href="#查看当前数据库所有的表：" class="headerlink" title="查看当前数据库所有的表："></a>查看当前数据库所有的表：</h3><pre><code>show tables；
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="/assets/1/image-20211120234022-bbmujsd.png" alt="image.png"></h2><h3 id="查看当前数据库所有的表："><a href="#查看当前数据库所有的表：" class="headerlink" title="查看当前数据库所有的表："></a>查看当前数据库所有的表：</h3><pre><code>show tables；
 </code></pre>
-<p><img src="/assets/1/image-20211120234028-ue71c2x.png" alt="image.png"></p>
-<hr>
-<h3 id="查看-某个表的字段结构-："><a href="#查看-某个表的字段结构-：" class="headerlink" title="查看 某个表的字段结构 ："></a>查看 某个表的字段结构 ：</h3><pre><code> desc  表名；
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><img src="/assets/1/image-20211120234028-ue71c2x.png" alt="image.png"></h2><h3 id="查看-某个表的字段结构-："><a href="#查看-某个表的字段结构-：" class="headerlink" title="查看 某个表的字段结构 ："></a>查看 某个表的字段结构 ：</h3><pre><code> desc  表名；
 </code></pre>
-<p><img src="/assets/1/image-20211120234037-6qr8p92.png" alt="image.png"></p>
-<hr>
-<h3 id="查询表数据："><a href="#查询表数据：" class="headerlink" title="查询表数据："></a>查询表数据：</h3><pre><code> select * from  表名；
+<h2 id="-3"><a href="#-3" class="headerlink" title=""></a><img src="/assets/1/image-20211120234037-6qr8p92.png" alt="image.png"></h2><h3 id="查询表数据："><a href="#查询表数据：" class="headerlink" title="查询表数据："></a>查询表数据：</h3><pre><code> select * from  表名；
 </code></pre>
 <p><img src="/assets/1/image-20211120234046-g3smurz.png" alt="image.png"></p>
 <pre><code>    SELECT user_qq AS &#39;玩家QQ&#39;,user_name AS &#39;玩家昵称&#39;  FROM users    //显示中文别名
@@ -720,50 +709,32 @@
 <hr>
 <h2 id="二-新建数据库、数据表（表）、数据（添加数据）"><a href="#二-新建数据库、数据表（表）、数据（添加数据）" class="headerlink" title="二 新建数据库、数据表（表）、数据（添加数据）"></a>二 新建数据库、数据表（表）、数据（添加数据）</h2><h3 id="新建数据库："><a href="#新建数据库：" class="headerlink" title="新建数据库："></a>新建数据库：</h3><pre><code>create  database  数据库名；
 </code></pre>
-<p><img src="/assets/1/image-20211120234057-lksi10b.png" alt="image.png"></p>
-<hr>
-<h3 id="新建表："><a href="#新建表：" class="headerlink" title="新建表："></a>新建表：</h3><pre><code>CREATE TABLE 表名 &lt;
+<h2 id="-4"><a href="#-4" class="headerlink" title=""></a><img src="/assets/1/image-20211120234057-lksi10b.png" alt="image.png"></h2><h3 id="新建表："><a href="#新建表：" class="headerlink" title="新建表："></a>新建表：</h3><pre><code>CREATE TABLE 表名 &lt;
     字段名字   数据类型  修饰,
     ...
  &gt;; 
 </code></pre>
-<p>注意至少要有一个字段 修饰与数据类型在这里不再详细说明 关键字大写 字段间用，隔开 最后一行不用</p>
-<p><img src="/assets/1/image-20211120234057-lksi10b.png" alt="image.png"></p>
+<p>注意至少要有一个字段 修饰与数据类型在这里不再详细说明 关键字大写 字段间用，隔开 最后一行不用<br><img src="/assets/1/image-20211120234057-lksi10b.png" alt="image.png"></p>
 <hr>
 <h3 id="添加数据："><a href="#添加数据：" class="headerlink" title="添加数据："></a>添加数据：</h3><pre><code>insert into 表名 valuse（值，值）；
 </code></pre>
-<p><img src="/assets/1/image-20211120234114-73elez8.png" alt="image.png"></p>
-<hr>
-<h2 id="三-修改数据表，修改数据"><a href="#三-修改数据表，修改数据" class="headerlink" title="三 修改数据表，修改数据"></a>三 修改数据表，修改数据</h2><h3 id="修改数据表："><a href="#修改数据表：" class="headerlink" title="修改数据表："></a>修改数据表：</h3><pre><code>alter table 表名 add 字段名 类型 修饰【加的列在表的最后面】
+<h2 id="-5"><a href="#-5" class="headerlink" title=""></a><img src="/assets/1/image-20211120234114-73elez8.png" alt="image.png"></h2><h2 id="三-修改数据表，修改数据"><a href="#三-修改数据表，修改数据" class="headerlink" title="三 修改数据表，修改数据"></a>三 修改数据表，修改数据</h2><h3 id="修改数据表："><a href="#修改数据表：" class="headerlink" title="修改数据表："></a>修改数据表：</h3><pre><code>alter table 表名 add 字段名 类型 修饰【加的列在表的最后面】
 </code></pre>
 <p><img src="/assets/1/image-20211120234120-uqqruem.png" alt="image.png"></p>
 <pre><code>alter table 表名 add 字段名  类型 修饰 after 某列【把新列加在某列后面】
 </code></pre>
-<p><img src="/assets/1/image-20211120234125-0wyw6yo.png" alt="image.png"></p>
-<hr>
-<h3 id="修改数据："><a href="#修改数据：" class="headerlink" title="修改数据："></a>修改数据：</h3><pre><code> update user set name=新值 where
+<h2 id="-6"><a href="#-6" class="headerlink" title=""></a><img src="/assets/1/image-20211120234125-0wyw6yo.png" alt="image.png"></h2><h3 id="修改数据："><a href="#修改数据：" class="headerlink" title="修改数据："></a>修改数据：</h3><pre><code> update user set name=新值 where
 </code></pre>
-<p><img src="/assets/1/image-20211120234131-u9lqob9.png" alt="image.png"></p>
-<hr>
-<h2 id="四-删除数据库，数据表，数据"><a href="#四-删除数据库，数据表，数据" class="headerlink" title="四 删除数据库，数据表，数据"></a>四 删除数据库，数据表，数据</h2><h3 id="删除数据库："><a href="#删除数据库：" class="headerlink" title="删除数据库："></a>删除数据库：</h3><pre><code>drop database 数据库名；
+<h2 id="-7"><a href="#-7" class="headerlink" title=""></a><img src="/assets/1/image-20211120234131-u9lqob9.png" alt="image.png"></h2><h2 id="四-删除数据库，数据表，数据"><a href="#四-删除数据库，数据表，数据" class="headerlink" title="四 删除数据库，数据表，数据"></a>四 删除数据库，数据表，数据</h2><h3 id="删除数据库："><a href="#删除数据库：" class="headerlink" title="删除数据库："></a>删除数据库：</h3><pre><code>drop database 数据库名；
 </code></pre>
-<p><img src="/assets/1/image-20211120234137-i3k1y62.png" alt="image.png"></p>
-<hr>
-<h3 id="删除数据表："><a href="#删除数据表：" class="headerlink" title="删除数据表："></a>删除数据表：</h3><pre><code> drop  table  表名;
+<h2 id="-8"><a href="#-8" class="headerlink" title=""></a><img src="/assets/1/image-20211120234137-i3k1y62.png" alt="image.png"></h2><h3 id="删除数据表："><a href="#删除数据表：" class="headerlink" title="删除数据表："></a>删除数据表：</h3><pre><code> drop  table  表名;
 </code></pre>
-<p><img src="/assets/1/image-20211120234143-v4gn8sk.png" alt="image.png"></p>
-<hr>
-<h3 id="删除列："><a href="#删除列：" class="headerlink" title="删除列："></a><strong>删除列：</strong></h3><pre><code>alter table 表名 drop 列名称;
+<h2 id="-9"><a href="#-9" class="headerlink" title=""></a><img src="/assets/1/image-20211120234143-v4gn8sk.png" alt="image.png"></h2><h3 id="删除列："><a href="#删除列：" class="headerlink" title="删除列："></a><strong>删除列：</strong></h3><pre><code>alter table 表名 drop 列名称;
 </code></pre>
-<h3 id=""><a href="#" class="headerlink" title=""></a><img src="/assets/1/image-20211120234151-ilexh3g.png" alt="image.png"></h3><hr>
+<h3 id="-10"><a href="#-10" class="headerlink" title=""></a><img src="/assets/1/image-20211120234151-ilexh3g.png" alt="image.png"></h3><hr>
 <h3 id="删除数据："><a href="#删除数据：" class="headerlink" title="删除数据："></a>删除数据：</h3><pre><code> delete  from  表名 where；
 </code></pre>
-<p><img src="/assets/1/image-20211120234158-ibmm67v.png" alt="image.png"></p>
-<hr>
-<h3 id="MySQL有三大类数据类型"><a href="#MySQL有三大类数据类型" class="headerlink" title="MySQL有三大类数据类型"></a>MySQL有三大类数据类型</h3><p>分别为 <strong>数字</strong> 、 <strong>日期\时间</strong> 、 <strong>字符串</strong> 。这三大类中又更细致的划分了许多子类型:</p>
-<p><strong>整数:</strong> tinyint、smallint、mediumint、int、bigint<br>浮点数: float、double、real、decimal</p>
-<p>日期和时间: date、time、datetime、timestamp、year</p>
-<p>字符串: char、varchar<br><strong>文本:</strong> tinytext、text、mediumtext、longtext<br> <strong>二进制</strong> (可用来存储图片、音乐等): tinyblob、blob、mediumblob、longblob</p>
+<h2 id="-11"><a href="#-11" class="headerlink" title=""></a><img src="/assets/1/image-20211120234158-ibmm67v.png" alt="image.png"></h2><h3 id="MySQL有三大类数据类型"><a href="#MySQL有三大类数据类型" class="headerlink" title="MySQL有三大类数据类型"></a>MySQL有三大类数据类型</h3><p>分别为 <strong>数字</strong> 、 <strong>日期\时间</strong> 、 <strong>字符串</strong> 。这三大类中又更细致的划分了许多子类型:<br><strong>整数:</strong> tinyint、smallint、mediumint、int、bigint<br>浮点数: float、double、real、decimal<br>日期和时间: date、time、datetime、timestamp、year<br>字符串: char、varchar<br><strong>文本:</strong> tinytext、text、mediumtext、longtext<br> <strong>二进制</strong> (可用来存储图片、音乐等): tinyblob、blob、mediumblob、longblob</p>
 <hr>
 <p><strong>End</strong></p>
 

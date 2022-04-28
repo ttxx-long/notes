@@ -9,12 +9,12 @@
         <meta name="keywords" content="课中" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="adb 其实就是 Android Debug Bridge, Android 调试桥的缩写，adb 是一个 C&#x2F;S 架构的命令行工具，用于通过电脑端与模拟器或者真实设备交互。在某些特殊的情况下进入不了系统，adb就派上用场啦！主要由 3 部分组成： · 运行在 PC 端的 Client : 可以通过它对 Android 应用进行安装、卸载及调试 · 运行在 PC 端的 Service :">
+    <meta name="description" content="adb 其实就是 Android Debug Bridge, Android 调试桥的缩写，adb 是一个 C&#x2F;S 架构的命令行工具，用于通过电脑端与模拟器或者真实设备交互。在某些特殊的情况下进入不了系统，adb就派上用场啦！主要由 3 部分组成：· 运行在 PC 端的 Client : 可以通过它对 Android 应用进行安装、卸载及调试· 运行在 PC 端的 Service : 其">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常用的adb的命令操作">
 <meta property="og:url" content="http://example.com/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%20APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/02_%E5%B8%B8%E7%94%A8%E7%9A%84adb%E7%9A%84%E5%91%BD%E4%BB%A4%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="TTXX课程">
-<meta property="og:description" content="adb 其实就是 Android Debug Bridge, Android 调试桥的缩写，adb 是一个 C&#x2F;S 架构的命令行工具，用于通过电脑端与模拟器或者真实设备交互。在某些特殊的情况下进入不了系统，adb就派上用场啦！主要由 3 部分组成： · 运行在 PC 端的 Client : 可以通过它对 Android 应用进行安装、卸载及调试 · 运行在 PC 端的 Service :">
+<meta property="og:description" content="adb 其实就是 Android Debug Bridge, Android 调试桥的缩写，adb 是一个 C&#x2F;S 架构的命令行工具，用于通过电脑端与模拟器或者真实设备交互。在某些特殊的情况下进入不了系统，adb就派上用场啦！主要由 3 部分组成：· 运行在 PC 端的 Client : 可以通过它对 Android 应用进行安装、卸载及调试· 运行在 PC 端的 Service : 其">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/assets/1/image-20211209002906-t3thtny.png">
 <meta property="og:image" content="http://example.com/assets/1/image-20211209002912-qu9x3ln.png">
@@ -28,8 +28,8 @@
 <meta property="og:image" content="http://example.com/assets/1/image-20211209003008-58zctpg.png">
 <meta property="og:image" content="http://example.com/assets/1/image-20211209003017-y9nul0y.png">
 <meta property="og:image" content="http://example.com/assets/1/image-20211209003024-qq7uae5.png">
-<meta property="article:published_time" content="2022-04-25T10:58:36.118Z">
-<meta property="article:modified_time" content="2022-04-25T18:02:40.070Z">
+<meta property="article:published_time" content="2022-04-28T09:42:19.117Z">
+<meta property="article:modified_time" content="2022-04-28T15:43:44.013Z">
 <meta property="article:author" content="yulong">
 <meta property="article:tag" content="课中">
 <meta name="twitter:card" content="summary">
@@ -221,7 +221,7 @@
                             &nbsp;
                             01_计算机基础
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/01_windows%E5%BF%AB%E6%8D%B7%E9%94%AE/">windows快捷键</a></li>  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/02_Linux%E7%B3%BB%E7%BB%9F/">Linux系统</a></li>  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/03_windows%E4%B8%8Elinux%E7%9A%84%E5%8C%BA%E5%88%AB/">windows与linux的区别</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/01_windows%E5%BF%AB%E6%8D%B7%E9%94%AE/">windows快捷键</a></li>  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/02_Linux%E7%B3%BB%E7%BB%9F/">Linux系统</a></li>  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/03_windows%E4%B8%8Elinux%E7%9A%84%E5%8C%BA%E5%88%AB/">windows与linux的区别</a></li>  <li class="file"><a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/04_%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/">进制之间的转换</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -654,7 +654,7 @@
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/02_%E8%AF%BE%E4%B8%AD/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%20APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/02_%E5%B8%B8%E7%94%A8%E7%9A%84adb%E7%9A%84%E5%91%BD%E4%BB%A4%E6%93%8D%E4%BD%9C/">
-            <time datetime="2022-04-25T10:58:36.118Z" itemprop="datePublished">2022-04-25</time>
+            <time datetime="2022-04-28T09:42:19.117Z" itemprop="datePublished">2022-04-28</time>
         </a>
     </div>
 
@@ -682,67 +682,10 @@
             
         
         
-            <p>adb 其实就是 Android Debug Bridge, Android 调试桥的缩写，adb 是一个 <em>C&#x2F;S</em> 架构的命令行工具，用于通过电脑端与模拟器或者真实设备交互。在某些特殊的情况下进入不了系统，adb就派上用场啦！主要由 3 部分组成：</p>
-<p>· 运行在 PC 端的 Client : 可以通过它对 Android 应用进行安装、卸载及调试</p>
-<p>· 运行在 PC 端的 Service : 其管理客户端到 Android 设备上 adb 后台进程的连接</p>
-<p>adb 服务启动后，Windows 可以在任务管理器中找到 adb.exe 这个进程</p>
-<p>· 运行在 Android 设备上的 adb 后台进程</p>
-<p>执行 adb shell ps | grep adbd ，可以找到该后台进程，windows 请使用 findstr 替代 grep</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155428238-1085192595.png"><img src="/assets/1/image-20211209002906-t3thtny.png" alt="image.png"></a></p>
-<p><strong>通过adb<strong><strong>操作android</strong></strong>设备</strong></p>
-<p>连接上数据线，然后把手机开发者模式打开，打开usb调试。</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155429039-1959136890.png"><img src="/assets/1/image-20211209002912-qu9x3ln.png" alt="image.png"></a></p>
+            <p>adb 其实就是 Android Debug Bridge, Android 调试桥的缩写，adb 是一个 <em>C&#x2F;S</em> 架构的命令行工具，用于通过电脑端与模拟器或者真实设备交互。在某些特殊的情况下进入不了系统，adb就派上用场啦！主要由 3 部分组成：<br>· 运行在 PC 端的 Client : 可以通过它对 Android 应用进行安装、卸载及调试<br>· 运行在 PC 端的 Service : 其管理客户端到 Android 设备上 adb 后台进程的连接<br>adb 服务启动后，Windows 可以在任务管理器中找到 adb.exe 这个进程<br>· 运行在 Android 设备上的 adb 后台进程<br>执行 adb shell ps | grep adbd ，可以找到该后台进程，windows 请使用 findstr 替代 grep<br><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155428238-1085192595.png"><img src="/assets/1/image-20211209002906-t3thtny.png" alt="image.png"></a><br><strong>通过adb<strong><strong>操作android</strong></strong>设备</strong><br>连接上数据线，然后把手机开发者模式打开，打开usb调试。<br><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155429039-1959136890.png"><img src="/assets/1/image-20211209002912-qu9x3ln.png" alt="image.png"></a></p>
 <h3 id="adb-命令"><a href="#adb-命令" class="headerlink" title="adb 命令"></a>adb 命令</h3><p>在开发或者测试的过程中，我们可以通过 adb 来管理多台设备，其一般的格式为：</p>
-<p>| adb [-e | -d | -s &lt;设备序列号&gt;] &lt;子命令&gt; |<br>| —————————————— |</p>
-<p>在配好环境变量的前提下，在命令窗口当中输入 adb help 或者直接输入 adb ，将会列出所有的选项说明及子命令。</p>
-<h4 id="这里介绍一些里面常用的命令："><a href="#这里介绍一些里面常用的命令：" class="headerlink" title="这里介绍一些里面常用的命令："></a>这里介绍一些里面常用的命令：</h4><p><strong>1.adb devices</strong> , 获取设备列表及设备状态</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155429797-1825941225.png"><img src="/assets/1/image-20211209002919-iijez5g.png" alt="image.png"></a></p>
-<p><strong>2.adb get-state</strong> , 获取设备的状态</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155430475-494564427.png"><img src="/assets/1/image-20211209002927-cz0moet.png" alt="image.png"></a></p>
-<p>设备的状态有 3 钟，device , offline , unknown</p>
-<p>device：设备正常连接</p>
-<p>offline：连接出现异常，设备无响应</p>
-<p>unknown：没有连接设备</p>
-<p> <strong>3.</strong> <strong>安装卸载应用程序</strong></p>
-<p>adb install <strong>用于安装</strong></p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155431186-1764437344.png"><img src="/assets/1/image-20211209002933-8fu1e6o.png" alt="image.png"></a></p>
-<p>安装成功，返回成功提示 “Success”；</p>
-<p>安装失败，会返回以下：</p>
-<p>INSTALL_FAILED_ALREADY_EXISTS</p>
-<p>此时需要用 -r 参数来重新安装。</p>
-<p>INSTALL_FAILED_SIGNATURE_ERROR</p>
-<p>应用的签名不一致，可能是发布版和调试版签名不同所致。也有可能是没卸载旧应用导致。</p>
-<p>INSTALL_FAILED_INSUFFICIENT_STORAGE</p>
-<p>存储空间不足，需要检查设备存储情况。</p>
-<p><strong>adb uninstall</strong> 用于卸载</p>
-<p>adb uninstall 后面带的是应用的包名，而不是应用名。</p>
-<p>查看系统所有应用的包名：</p>
-<p>adb shell pm list packages –f</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155432148-1001670330.png"><img src="/assets/1/image-20211209002941-sseqhpz.png" alt="image.png"></a></p>
-<p> <strong>4</strong> <strong>．上传、下载文件</strong></p>
-<p>adb push 命令将PC机上的文件推到 DLT-RK3288 机器上；</p>
-<p>adb pull  命令将DLT-RK3288机器上的文件拉到PC机上；</p>
-<p>例如：</p>
-<p>adb push d:&#x2F;new.txt &#x2F;sdcard&#x2F;</p>
-<p>将D盘下new.txt文件 推到内部存储器</p>
-<p>adb pull &#x2F;sdcard&#x2F;new.txt    d:\</p>
-<p>将DLT-RK3288 内部存储器根目录下的new.txt 拉到D盘</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155433167-1446733020.png"><img src="/assets/1/image-20211209002948-6va6z60.png" alt="image.png"></a></p>
-<p><strong>5. adb shell pm list package</strong></p>
-<p>Package Manager , 可以用获取到一些安装在 Android 设备上得应用信息</p>
-<p>-s：列出系统应用</p>
-<p>-f：列出应用包名及对应的apk名及存放位置</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155433984-688635705.png"><img src="/assets/1/image-20211209002954-o4pcw6x.png" alt="image.png"></a></p>
-<p><strong>过滤应用</strong></p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155434808-820533597.png"><img src="/assets/1/image-20211209003001-a9kavr6.png" alt="image.png"></a></p>
-<p><strong>5.adb shell</strong></p>
-<p>通过adb shell 命令，就可以进入设备或者模拟器的shell环境了，在这个Linux shell中，我们就可以执行各种Linux命令了。</p>
-<p>如果只想执行一条shell命令，就可以采用：adb shell [shell_command]，在实际使用中，经常与grep或findstr一起使用，起到过滤作用，查看自己需要的关键信息。    exit ：  退出  shell状态</p>
-<p> <strong>6.</strong> <strong>常见命令：</strong></p>
-<p>如 ls, cd, rm, mkdir, touch, pwd, cp, mv, ifconfig, netstat, ping, ps, top等，进入adb shell即可执行，与linux相似</p>
-<p><strong>7. adb logcat</strong></p>
-<p> <strong>一.</strong> <strong>在cmd<strong><strong>窗口查看手机的Log</strong></strong>日志</strong></p>
-<p>有时候我们在手机程序上的日志要在其他地方调试，然后要看里面的Log日志。在cmd窗口中输入如下命令：</p>
+<p>| adb [-e | -d | -s &lt;设备序列号&gt;] &lt;子命令&gt; |<br>| —————————————— |<br>在配好环境变量的前提下，在命令窗口当中输入 adb help 或者直接输入 adb ，将会列出所有的选项说明及子命令。</p>
+<h4 id="这里介绍一些里面常用的命令："><a href="#这里介绍一些里面常用的命令：" class="headerlink" title="这里介绍一些里面常用的命令："></a>这里介绍一些里面常用的命令：</h4><p><strong>1.adb devices</strong> , 获取设备列表及设备状态<br><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155429797-1825941225.png"><img src="/assets/1/image-20211209002919-iijez5g.png" alt="image.png"></a><br><strong>2.adb get-state</strong> , 获取设备的状态<br><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155430475-494564427.png"><img src="/assets/1/image-20211209002927-cz0moet.png" alt="image.png"></a><br>设备的状态有 3 钟，device , offline , unknown<br>device：设备正常连接<br>offline：连接出现异常，设备无响应<br>unknown：没有连接设备<br> <strong>3.</strong> <strong>安装卸载应用程序</strong><br>adb install <strong>用于安装</strong><br><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155431186-1764437344.png"><img src="/assets/1/image-20211209002933-8fu1e6o.png" alt="image.png"></a><br>安装成功，返回成功提示 “Success”；<br>安装失败，会返回以下：<br>INSTALL_FAILED_ALREADY_EXISTS<br>此时需要用 -r 参数来重新安装。<br>INSTALL_FAILED_SIGNATURE_ERROR<br>应用的签名不一致，可能是发布版和调试版签名不同所致。也有可能是没卸载旧应用导致。<br>INSTALL_FAILED_INSUFFICIENT_STORAGE<br>存储空间不足，需要检查设备存储情况。<br><strong>adb uninstall</strong> 用于卸载<br>adb uninstall 后面带的是应用的包名，而不是应用名。<br>查看系统所有应用的包名：<br>adb shell pm list packages –f<br><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155432148-1001670330.png"><img src="/assets/1/image-20211209002941-sseqhpz.png" alt="image.png"></a><br> <strong>4</strong> <strong>．上传、下载文件</strong><br>adb push 命令将PC机上的文件推到 DLT-RK3288 机器上；<br>adb pull  命令将DLT-RK3288机器上的文件拉到PC机上；<br>例如：<br>adb push d:&#x2F;new.txt &#x2F;sdcard&#x2F;<br>将D盘下new.txt文件 推到内部存储器<br>adb pull &#x2F;sdcard&#x2F;new.txt    d:<br>将DLT-RK3288 内部存储器根目录下的new.txt 拉到D盘<br><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155433167-1446733020.png"><img src="/assets/1/image-20211209002948-6va6z60.png" alt="image.png"></a><br><strong>5. adb shell pm list package</strong><br>Package Manager , 可以用获取到一些安装在 Android 设备上得应用信息<br>-s：列出系统应用<br>-f：列出应用包名及对应的apk名及存放位置<br><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155433984-688635705.png"><img src="/assets/1/image-20211209002954-o4pcw6x.png" alt="image.png"></a><br><strong>过滤应用</strong><br><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155434808-820533597.png"><img src="/assets/1/image-20211209003001-a9kavr6.png" alt="image.png"></a><br><strong>5.adb shell</strong><br>通过adb shell 命令，就可以进入设备或者模拟器的shell环境了，在这个Linux shell中，我们就可以执行各种Linux命令了。<br>如果只想执行一条shell命令，就可以采用：adb shell [shell_command]，在实际使用中，经常与grep或findstr一起使用，起到过滤作用，查看自己需要的关键信息。    exit ：  退出  shell状态<br> <strong>6.</strong> <strong>常见命令：</strong><br>如 ls, cd, rm, mkdir, touch, pwd, cp, mv, ifconfig, netstat, ping, ps, top等，进入adb shell即可执行，与linux相似<br><strong>7. adb logcat</strong><br> <strong>一.</strong> <strong>在cmd<strong><strong>窗口查看手机的Log</strong></strong>日志</strong><br>有时候我们在手机程序上的日志要在其他地方调试，然后要看里面的Log日志。在cmd窗口中输入如下命令：</p>
 <table>
 <thead>
 <tr>
@@ -750,64 +693,7 @@
 </tr>
 </thead>
 </table>
-<p>这时手机日志更新什么日志，cmd窗口也会同步更新数据。</p>
-<p>但是这样没有过滤条件，如果Log日志很多，很难找到我们想要的信息，</p>
-<p>当然也可以复制cmd中的数据到一个文本中慢慢处理的，就是效率不高。</p>
-<p>下面介绍adb logcat中的详细参数命令以及如何才能高效的打印日志，或者把日志保存到我们指定的位置。</p>
-<p>二.adb logcat <strong>详解</strong></p>
-<p>adb logcat如果用过，但是具体命令又不记得，可以输入adb logcat -help，查看一下一些简单的数据格式：</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155435688-2050217910.png"><img src="/assets/1/image-20211209003008-58zctpg.png" alt="image.png"></a></p>
-<p><strong>日志过滤：adb logcat <tag>[:priority]</strong></p>
-<p>tag表示标签，priority输出的级别，日志默认级别是V，如果错误日志我们选择E就可以。</p>
-<p>Android 的日志分为如下几个优先级（priority）：</p>
-<p>V —— Verbose（最低，输出得最多）</p>
-<p>D —— Debug</p>
-<p>I —— Info</p>
-<p>W —— Warning</p>
-<p>E —— Error</p>
-<p>F —— Fatal</p>
-<p>S —— Silent（最高，啥也不输出）</p>
-<p>按某级别过滤日志则会将该级别及以上的日志输出。比如，命令：adb logcat *:W</p>
-<p>其实*可以是某个tag，如果没有指明，就表示所有。</p>
-<p>tag可以由多个 [:priority] 组成。比如，命令：</p>
-<p>adb logcat ActivityManager:I MyApp:D *:S</p>
-<p>表示输出 tag ActivityManager 的 Info 以上级别日志，输出 tag MyApp 的 Debug 以上级别日志，及其它 tag 的 Silent 级别日志（即屏蔽其它 tag 日志）。</p>
-<p><strong>adb logcat选项解析</strong></p>
-<p>–”-s”选项 : 设置输出日志*：s的标签, 只显示该标签的日志;</p>
-<p>–”-f”选项 : 将日志输出到文件, 默认输出到标准输出流中, -f 参数执行不成功;</p>
-<p>–”-r”选项 : 按照每千字节输出日志, 需要 -f 参数, 不过这个命令没有执行成功;</p>
-<p>–”-n”选项 : 设置日志输出的最大数目, 需要 -r 参数, 这个执行 感觉 跟 adb logcat 效果一样;</p>
-<p>–”-v”选项 : 设置日志的输出格式, 注意只能设置一项;</p>
-<p>–”-c”选项 : 清空所有的日志缓存信息;</p>
-<p>–”-d”选项 : 将缓存的日志输出到屏幕上, 并且不会阻塞;</p>
-<p>–”-t”选项 : 输出最近的几行日志, 输出完退出, 不阻塞;</p>
-<p>–”-g”选项 : 查看日志缓冲区信息;</p>
-<p>–”-B”选项 : 以二进制形式输出日志;</p>
-<p><strong>把日志信息保存到电脑中</strong></p>
-<p>adb logcat最后添加” &gt; 保存文件的地址，比如需要将的信息保存到电脑中使用下面的命令： adb logcat -v time &gt; D:\log.txt</p>
-<p><strong>8.monkey测试</strong></p>
-<p><strong>一、Monkey测试简介</strong></p>
-<p>Monkey测试是Android平台自动化测试的一种手段，通过Monkey程序模拟用户触摸屏幕、滑动Trackball、按键等操作来对设备上的程序进行压</p>
-<p><strong>二、Monkey命令的简单帮助</strong></p>
-<p>要获取Monkey命令自带的简单帮助，在CMD中执行命令：</p>
-<p>adb shell monkey –help</p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155436837-2037617676.png"><img src="/assets/1/image-20211209003017-y9nul0y.png" alt="image.png"></a></p>
-<p><strong>四、Monkey命令参数介绍</strong></p>
-<p><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155437967-241629749.png"><img src="/assets/1/image-20211209003024-qq7uae5.png" alt="image.png"></a></p>
-<p>说明：第一个-s指定设备，如果只连接了一台设备，可不用该参数。</p>
-<p>-p &lt;apk包名&gt;只允许系统启动指定的app，如果不指定，将允许系统启动设备中的所有app，也可指定多个包。</p>
-<p>–throttle &lt;毫秒数&gt; 指定用户操作（事件）间的时延。</p>
-<p>–ignore-crashes 指定当应用程序崩溃时，Monkey依然发送事件，直到事件计数完成。</p>
-<p>–ignore-timeouts 当应用程序发生ANR错误时，Monkey依然会发送事件，直到事件计数完成。</p>
-<p>第2个-s，用于指定伪随机数生成器的seed值，如果seed相同，则两次Monkey测试所产生的事件序列也相同的。</p>
-<p>-v 用于指定反馈信息级别，总共分为level 0、level 1、level 2三个级别，级别越高，输出的日志越详细。</p>
-<p>日志级别 Level0 示例 adb shellmonkey -p com.amaker.mp –v 100</p>
-<p>说明 缺省值，仅提供启动提示、测试完成和最终结果等少量信息</p>
-<p>日志级别 Level 1 示例 adb shellmonkey -p com.amaker.mp –v -v 100</p>
-<p>说明 提供较为详细的日志，包括每个发送到Activity的事件信息</p>
-<p><strong>日志级别 Level 2</strong> 示例 adb shellmonkey -p com.amaker.mp –v -v –v 100</p>
-<p>说明 最详细的日志，包括了测试中选中&#x2F;未选中的Activity信息</p>
-<p>最后的数字（这里是500）：表示Monkey程序模拟500次随机用户操作事件。</p>
+<p>这时手机日志更新什么日志，cmd窗口也会同步更新数据。<br>但是这样没有过滤条件，如果Log日志很多，很难找到我们想要的信息，<br>当然也可以复制cmd中的数据到一个文本中慢慢处理的，就是效率不高。<br>下面介绍adb logcat中的详细参数命令以及如何才能高效的打印日志，或者把日志保存到我们指定的位置。<br>二.adb logcat <strong>详解</strong><br>adb logcat如果用过，但是具体命令又不记得，可以输入adb logcat -help，查看一下一些简单的数据格式：<br><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155435688-2050217910.png"><img src="/assets/1/image-20211209003008-58zctpg.png" alt="image.png"></a><br><strong>日志过滤：adb logcat <tag>[:priority]</strong><br>tag表示标签，priority输出的级别，日志默认级别是V，如果错误日志我们选择E就可以。<br>Android 的日志分为如下几个优先级（priority）：<br>V —— Verbose（最低，输出得最多）<br>D —— Debug<br>I —— Info<br>W —— Warning<br>E —— Error<br>F —— Fatal<br>S —— Silent（最高，啥也不输出）<br>按某级别过滤日志则会将该级别及以上的日志输出。比如，命令：adb logcat <em>:W<br>其实</em>可以是某个tag，如果没有指明，就表示所有。<br>tag可以由多个 [:priority] 组成。比如，命令：<br>adb logcat ActivityManager:I MyApp:D <em>:S<br>表示输出 tag ActivityManager 的 Info 以上级别日志，输出 tag MyApp 的 Debug 以上级别日志，及其它 tag 的 Silent 级别日志（即屏蔽其它 tag 日志）。<br><strong>adb logcat选项解析</strong><br>–”-s”选项 : 设置输出日志</em>：s的标签, 只显示该标签的日志;<br>–”-f”选项 : 将日志输出到文件, 默认输出到标准输出流中, -f 参数执行不成功;<br>–”-r”选项 : 按照每千字节输出日志, 需要 -f 参数, 不过这个命令没有执行成功;<br>–”-n”选项 : 设置日志输出的最大数目, 需要 -r 参数, 这个执行 感觉 跟 adb logcat 效果一样;<br>–”-v”选项 : 设置日志的输出格式, 注意只能设置一项;<br>–”-c”选项 : 清空所有的日志缓存信息;<br>–”-d”选项 : 将缓存的日志输出到屏幕上, 并且不会阻塞;<br>–”-t”选项 : 输出最近的几行日志, 输出完退出, 不阻塞;<br>–”-g”选项 : 查看日志缓冲区信息;<br>–”-B”选项 : 以二进制形式输出日志;<br><strong>把日志信息保存到电脑中</strong><br>adb logcat最后添加” &gt; 保存文件的地址，比如需要将的信息保存到电脑中使用下面的命令： adb logcat -v time &gt; D:\log.txt<br><strong>8.monkey测试</strong><br><strong>一、Monkey测试简介</strong><br>Monkey测试是ndroid平台自动化测试的一种手段，通过Monkey程序模拟用户触摸屏幕、滑动Trackball、按键等操作来对设备上的程序进行压<br><strong>二、Monkey命令的简单帮助</strong><br>要获取Monkey命令自带的简单帮助，在CMD中执行命令：<br>adb shell monkey –help<br><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155436837-2037617676.png"><img src="/assets/1/image-20211209003017-y9nul0y.png" alt="image.png"></a><br><strong>四、Monkey命令参数介绍</strong><br><a target="_blank" rel="noopener" href="https://img2018.cnblogs.com/blog/465934/201906/465934-20190606155437967-241629749.png"><img src="/assets/1/image-20211209003024-qq7uae5.png" alt="image.png"></a><br>说明：第一个-s指定设备，如果只连接了一台设备，可不用该参数。<br>-p &lt;apk包名&gt;只允许系统启动指定的app，如果不指定，将允许系统启动设备中的所有app，也可指定多个包。<br>–throttle &lt;毫秒数&gt; 指定用户操作（事件）间的时延。<br>–ignore-crashes 指定当应用程序崩溃时，Monkey依然发送事件，直到事件计数完成。<br>–ignore-timeouts 当应用程序发生ANR错误时，Monkey依然会发送事件，直到事件计数完成。<br>第2个-s，用于指定伪随机数生成器的seed值，如果seed相同，则两次Monkey测试所产生的事件序列也相同的。<br>-v 用于指定反馈信息级别，总共分为level 0、level 1、level 2三个级别，级别越高，输出的日志越详细。<br>日志级别 Level0 示例 adb shellmonkey -p com.amaker.mp –v 100<br>说明 缺省值，仅提供启动提示、测试完成和最终结果等少量信息<br>日志级别 Level 1 示例 adb shellmonkey -p com.amaker.mp –v -v 100<br>说明 提供较为详细的日志，包括每个发送到Activity的事件信息<br><strong>日志级别 Level 2</strong> 示例 adb shellmonkey -p com.amaker.mp –v -v –v 100<br>说明 最详细的日志，包括了测试中选中&#x2F;未选中的Activity信息<br>最后的数字（这里是500）：表示Monkey程序模拟500次随机用户操作事件。</p>
 <blockquote>
 <p>输出测试结果到D:\monkeylog.txt</p>
 </blockquote>
