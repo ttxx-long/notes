@@ -17,7 +17,7 @@
 <meta property="og:description" content="什么情况下会进行接口测试 版本一：后台开发出来，但前端页面还没有完成，需要对后台开发出来的功能进行测试 版本二：一般有需求就会做，后台的接口开发好，就可以开始测。例外，如果增加了新需求，也要做接口测试，还有就是开发对后台的接口做了修改，交互逻辑发生变化，我们也要重新对接口进行测试。   接口测试的目的&#x2F; 为什么要进行接口测试 可以前置测试时间，减少测试成本，提高测试效率，能够今早的定位">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-25T10:58:35.797Z">
-<meta property="article:modified_time" content="2022-04-25T14:02:04.974Z">
+<meta property="article:modified_time" content="2022-04-27T13:10:40.481Z">
 <meta property="article:author" content="yulong">
 <meta property="article:tag" content="课中">
 <meta name="twitter:card" content="summary">
@@ -679,14 +679,18 @@
 <li>可以前置测试时间，减少测试成本，提高测试效率，能够今早的定位缺陷尽早修复</li>
 </ol>
 </li>
-<li><h2 id="接口测试的主要辅助工具—-gt-lt-桩模块-gt"><a href="#接口测试的主要辅助工具—-gt-lt-桩模块-gt" class="headerlink" title="接口测试的主要辅助工具—&gt;&lt;桩模块&gt;"></a>接口测试的主要辅助工具—&gt;&lt;桩模块&gt;</h2><ol>
-<li><a href="../../../04_%E5%B7%A5%E5%85%B7/02_postman/01_postman">postman</a></li>
-<li><a href="../../../04_%E5%B7%A5%E5%85%B7/01_jmeter/01_jmeter/">jmeter</a></li>
-<li><a href="../../../04_%E5%B7%A5%E5%85%B7/03_soapUI/01_soapUI/">soapUI</a></li>
-<li>apipost：<a target="_blank" rel="noopener" href="https://www.apipost.cn/">ApiPost - API 文档、调试、Mock、测试一体化协作平台</a></li>
-<li>mock： 模拟数据，当前端开发出来，后端接口不能使用时可以模拟数据</li>
+<li><h2 id="接口测试的主要辅助工具—-gt-lt-桩模块-gt"><a href="#接口测试的主要辅助工具—-gt-lt-桩模块-gt" class="headerlink" title="接口测试的主要辅助工具—&gt;&lt;桩模块&gt;"></a>接口测试的主要辅助工具—&gt;&lt;桩模块&gt;</h2></li>
 </ol>
-</li>
+<!--    1. [postman](../../../04_工具/02_postman/01_postman)
+ -->	1. <a href="../../../04_工具/02_postman/01_postman" target="_blank">postman</a> <br/>
+<!--    2. [jmeter](../../../04_工具/01_jmeter/01_jmeter/)
+ -->	2. <a href="../../../04_工具/01_jmeter/01_jmeter/" target="_blank">jmeter</a><br/>
+<!--    3. [soapUI](../../../04_工具/03_soapUI/01_soapUI/)
+ -->	3. <a href="../../../04_工具/03_soapUI/01_soapUI/" target="_blank">soapUI</a>
+<pre><code>4. apipost：[ApiPost - API 文档、调试、Mock、测试一体化协作平台](https://www.apipost.cn/)
+5. mock： 模拟数据，当前端开发出来，后端接口不能使用时可以模拟数据
+</code></pre>
+<ol start="4">
 <li><h2 id="什么是接口测试？"><a href="#什么是接口测试？" class="headerlink" title="什么是接口测试？"></a>什么是接口测试？</h2><ol>
 <li>系统与系统，模块与模块之间数据的交互、调用</li>
 <li>api是接口的通道，每个系统都有自己的格式</li>
@@ -905,18 +909,24 @@
 <li>对于这个其实在 JMeter的 http请求这个组件中的参数配置栏目中，第二个栏目有一个消息体数据， 我们把需要上传的参数组装成 json格式，然后编写到 body data里面，然后，需要在http信息头管理其中，需要将数据格式设置为 json格式，这个就是设置 Content-Type为 application&#x2F;json;charset&#x3D;utf-8， 这样就可以了。</li>
 </ol>
 </li>
-<li><h3 id="抓包工具"><a href="#抓包工具" class="headerlink" title="抓包工具"></a>抓包工具</h3><ul>
-<li><p>Charles  ，抓包</p>
+<li><h3 id="抓包工具"><a href="#抓包工具" class="headerlink" title="抓包工具"></a>抓包工具</h3></li>
+</ol>
 <ul>
-<li><a href="../../../04_%E5%B7%A5%E5%85%B7/07_Charles/01_charles%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/">Charles安装</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.charlesproxy.com/documentation/welcome/">官方文档</a></li>
+<li>Charles  ，抓包</li>
 </ul>
+<!--       * [Charles安装](../../../04_工具/07_Charles/01_charles安装与使用/)-->	   
+<ul>
+<li><p><a href="../../../04_工具/07_Charles/01_charles安装与使用/" target="_blank">Charles安装</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.charlesproxy.com/documentation/welcome/">官方文档</a></p>
 </li>
 <li><p>Fiddler（windows好用）</p>
-<ul>
-<li><a href="../../../04_%E5%B7%A5%E5%85%B7/08_fiddler/01_Fiddler/">fiddler安装、配置与使用</a></li>
-</ul>
 </li>
+</ul>
+<!--       * [fiddler安装、配置与使用](../../../04_工具/08_fiddler/01_Fiddler/)-->	  
+<ul>
+<li><p><a href="../../../04_工具/08_fiddler/01_Fiddler/" target="_blank">fiddler安装、配置与使用</a></p>
+<ul>
 <li><p>wireshark</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://wireshark.en.softonic.com/">官网1</a></li>
@@ -926,6 +936,8 @@
 </li>
 </ul>
 </li>
+</ul>
+<ol start="24">
 <li><h3 id="没有接口文档的时候怎么做接口测试？"><a href="#没有接口文档的时候怎么做接口测试？" class="headerlink" title="没有接口文档的时候怎么做接口测试？"></a>没有接口文档的时候怎么做接口测试？</h3><ol>
 <li>首先，做接口测试，有接口文档比没有接口文档的效率要高很多，所以在条件允许的情况下，还是尽可能的要搞一份接口文档出来。</li>
 <li>其次，如果没有接口文档，但是系统已经集成接口，并且有UI界面，那么我们可以借助于抓包工具来抓取接口信息。启动并设置好抓包工具比如Fiddler，然后在UI界面进行操作，在Fiddler中就可以查看接口的请求和响应，根据请求和响应的相关信息，反推接口信息，比如请求的方法、地址、参数、响应报文等等。必要的时候，我们需要在UI界面做实验，以获取或者猜测接口信息。获取到接口信息后，就可以依据接口的要素信息设计测试用例，利用测试工具Jmeter等来对接口进行测试。这个过程相对来说多了一个收集接口信息的步骤，时间长，还可能出错，所以比有接口文档的测试效率，要低了很多。</li>
