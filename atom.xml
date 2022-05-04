@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-03T02:41:24.968Z</updated>
+  <updated>2022-05-04T01:20:00.635Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,547 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>JIRA瀑布模型</title>
+    <title>Airtest命令运行脚本与报告生成</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/06_Airtest%E5%91%BD%E4%BB%A4%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E4%B8%8E%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/06_Airtest%E5%91%BD%E4%BB%A4%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E4%B8%8E%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90/</id>
+    <published>2022-05-04T01:08:46.031Z</published>
+    <updated>2022-05-04T01:20:00.635Z</updated>
+    
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="02_接口测试篇" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/"/>
+    
+    <category term="06_airtest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/"/>
+    
+    <category term="01_airtest文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/01-airtest%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课中" scheme="http://example.com/tags/%E8%AF%BE%E4%B8%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Airtest场景处理-登录状态访问网页</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/05_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E7%99%BB%E5%BD%95%E7%8A%B6%E6%80%81%E8%AE%BF%E9%97%AE%E7%BD%91%E9%A1%B5/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/05_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E7%99%BB%E5%BD%95%E7%8A%B6%E6%80%81%E8%AE%BF%E9%97%AE%E7%BD%91%E9%A1%B5/</id>
+    <published>2022-05-04T01:08:40.422Z</published>
+    <updated>2022-05-04T01:19:56.956Z</updated>
+    
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="02_接口测试篇" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/"/>
+    
+    <category term="06_airtest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/"/>
+    
+    <category term="01_airtest文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/01-airtest%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课中" scheme="http://example.com/tags/%E8%AF%BE%E4%B8%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Airtest场景处理-文件上传</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/04_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/04_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</id>
+    <published>2022-05-04T01:08:40.022Z</published>
+    <updated>2022-05-04T01:19:53.089Z</updated>
+    
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="02_接口测试篇" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/"/>
+    
+    <category term="06_airtest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/"/>
+    
+    <category term="01_airtest文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/01-airtest%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课中" scheme="http://example.com/tags/%E8%AF%BE%E4%B8%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Airtest场景处理-页面Frame操作</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/03_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E9%A1%B5%E9%9D%A2Frame%E6%93%8D%E4%BD%9C/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/03_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E9%A1%B5%E9%9D%A2Frame%E6%93%8D%E4%BD%9C/</id>
+    <published>2022-05-04T01:08:39.637Z</published>
+    <updated>2022-05-04T01:19:48.716Z</updated>
+    
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="02_接口测试篇" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/"/>
+    
+    <category term="06_airtest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/"/>
+    
+    <category term="01_airtest文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/01-airtest%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课中" scheme="http://example.com/tags/%E8%AF%BE%E4%B8%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AirtestWeb自动化基本使用与脚本录制</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/02_AirtestWeb%E8%87%AA%E5%8A%A8%E5%8C%96%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E8%84%9A%E6%9C%AC%E5%BD%95%E5%88%B6/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/02_AirtestWeb%E8%87%AA%E5%8A%A8%E5%8C%96%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E8%84%9A%E6%9C%AC%E5%BD%95%E5%88%B6/</id>
+    <published>2022-05-04T01:08:39.042Z</published>
+    <updated>2022-05-04T01:13:50.044Z</updated>
+    
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="02_接口测试篇" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/"/>
+    
+    <category term="06_airtest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/"/>
+    
+    <category term="01_airtest文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/01-airtest%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课中" scheme="http://example.com/tags/%E8%AF%BE%E4%B8%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Airtest进阶操作启动器实现Web自动化实战</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/07_Airtest%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C%E5%90%AF%E5%8A%A8%E5%99%A8%E5%AE%9E%E7%8E%B0Web%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%88%98/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/07_Airtest%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C%E5%90%AF%E5%8A%A8%E5%99%A8%E5%AE%9E%E7%8E%B0Web%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%88%98/</id>
+    <published>2022-05-04T01:08:38.441Z</published>
+    <updated>2022-05-04T01:20:04.366Z</updated>
+    
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="02_接口测试篇" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/"/>
+    
+    <category term="06_airtest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/"/>
+    
+    <category term="01_airtest文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/01-airtest%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课中" scheme="http://example.com/tags/%E8%AF%BE%E4%B8%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AirtestWeb自动化原理与配置</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/01_AirtestWeb%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8E%9F%E7%90%86%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/01_AirtestWeb%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8E%9F%E7%90%86%E4%B8%8E%E9%85%8D%E7%BD%AE/</id>
+    <published>2022-05-04T01:07:33.163Z</published>
+    <updated>2022-05-04T01:19:26.542Z</updated>
+    
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="02_接口测试篇" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/"/>
+    
+    <category term="06_airtest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/"/>
+    
+    <category term="01_airtest文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/01-airtest%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课中" scheme="http://example.com/tags/%E8%AF%BE%E4%B8%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Airtest</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest/</id>
+    <published>2022-05-04T01:06:04.904Z</published>
+    <updated>2022-05-04T01:24:53.877Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/01_AirtestWeb%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8E%9F%E7%90%86%E4%B8%8E%E9%85%8D%E7%BD%AE/">AirtestWeb自动化原理与配置</a><br><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/06_Airtest%E5%91%BD%E4%BB%A4%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E4%B8%8E%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90/">Airtest命令运行脚本与报告生成</a><br><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/03_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E9%A1%B5%E9%9D%A2Frame%E6%93%8D%E4%BD%9C/">Airtest场景处理-页面Frame操作</a><br><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/02_AirtestWeb%E8%87%AA%E5%8A%A8%E5%8C%96%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E8%84%9A%E6%9C%AC%E5%BD%95%E5%88%B6/">AirtestWeb自动化基本使用与脚本录制</a><br><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/04_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/">Airtest场景处理-文件上传</a><br><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/05_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E7%99%BB%E5%BD%95%E7%8A%B6%E6%80%81%E8%AE%BF%E9%97%AE%E7%BD%91%E9%A1%B5/">Airtest场景处理-登录状态访问网页</a><br><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/07_Airtest%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C%E5%90%AF%E5%8A%A8%E5%99%A8%E5%AE%9E%E7%8E%B0Web%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%88%98/">Airtest进阶操作启动器实现Web自动化实战</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="02_接口测试篇" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/"/>
+    
+    <category term="06_airtest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06-airtest/"/>
+    
+    
+    <category term="课中" scheme="http://example.com/tags/%E8%AF%BE%E4%B8%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>19_Jira与Bugzilla</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/19_Jira%E4%B8%8EBugzilla/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/19_Jira%E4%B8%8EBugzilla/</id>
+    <published>2022-05-03T04:30:59.502Z</published>
+    <updated>2022-05-03T04:32:21.886Z</updated>
+    
+    <content type="html"><![CDATA[<p>Jira和Bugzilla是大型组织广泛使用的bug跟踪工具。如今这两种工具都需求巨大，但这两种工具的性能各不相同。让我们首先看看这两个工具的关键点，然后再看看这两个工具之间的区别。</p><h2 id="Jira"><a href="#Jira" class="headerlink" title="Jira"></a>Jira</h2><p>Jira是一家由澳大利亚Atlassian公司于2002年开发的错误跟踪工具。它用于项目管理，问题跟踪和错误跟踪。Jira不是一个开源工具，即Jira软件不是免费提供的; 这是一项付费服务。</p><p><strong>Jira软件的优点</strong></p><ul><li>Jira工具对于功能测试很有用。</li><li>它用于确定任务的优先级。</li><li>随着Jira工具提供更好的可见性，人们可以轻松了解构建的下一个版本。</li><li>它提供了更好的灵活性工作流程，以便团队可以相应调整。</li></ul><h2 id="Bugzilla"><a href="#Bugzilla" class="headerlink" title="Bugzilla"></a>Bugzilla</h2><p>Bugzilla也是一个由Mozilla Foundation于1998年开发的bug跟踪工具。它是一个非常流行的报告工具，具有简单的用户界面。由于其简单的界面，初学者不会花时间了解其工作流程。</p><p><strong>Bugzilla的优点</strong></p><ul><li>它提高了产品的质量。</li><li>它增强了开发团队和测试团队之间的沟通。</li><li>它具有适应多种情况的能力。</li></ul><h2 id="Jira和Bugzilla区别"><a href="#Jira和Bugzilla区别" class="headerlink" title="Jira和Bugzilla区别"></a>Jira和Bugzilla区别</h2><p><img src="/assets/2/image-20220503123207-dbym8wh.png" alt="image.png"></p><p>以下是Jira和Bugzilla之间的区别是：</p><ul><li><strong>许可证</strong><br>Jira软件仅适用于商业许可证所有者，而Bugzilla软件是一种开源工具，即无需任何许可即可使用。</li><li><strong>服务器端架构</strong><br>Jira软件的服务器端架构基于MySQL，Oracle，PostgreSQL，Perl构建，而Bugzilla软件的服务器端架构构建于J2EE，Tomcat，Lucene，MySQL，Oracle，PostgreSQL之上。</li><li><strong>服务器负载</strong><br>与Jira软件相比，Bugzilla中的服务器负载相当低。在Bugzilla中，多个实例可以在一台服务器上运行而没有太多开销，而Jira是一个复杂的系统，每个Web请求执行大多数服务器端代码，因为服务器负载要高得多。建议为Jira提供强大的硬件，即现代CPU和1 GB内存。根据Atlassian社区的说法，不要在单个JIRA实例上存储超过200,000个问题。</li><li><strong>拖放问题优先级</strong><br>拖放问题优先级功能在Jira中可用，但在Bugzilla中不可用。在Jira中，您可以根据问题的优先级轻松拖放问题，但这在Bugzilla中是不可能的。</li><li><strong>带有自定义小工具的仪表板</strong><br>小工具提供所有详细信息的摘要，例如团队的进度，报告等。Jira提供“带有自定义小工具的仪表板”功能，您可以根据需要自定义小工具，但Bugzilla中不提供此功能。</li><li><strong>实时发布跟踪</strong><br>软件开发过程中最重要的一点是可见性。Jira通过提供开发团队和测试团队之间的沟通来克服这个问题，团队成员可以通过该沟通了解“任务何时开始”和“任务何时完成”。Bugzilla不提供此功能。</li><li><strong>附件</strong><br>在Jira中，一次可以附加多个文件，而在Bugzilla中，一次只能添加一个文件。</li><li><strong>文件附件的大小限制</strong><br>Jira中文件的大小限制为10 MB，而Bugzilla中文件附件的大小限制为1mb。</li><li><strong>看板支持</strong><br>Jira支持看板项目，但Bugzilla不支持看板项目。</li><li><strong>用户界面</strong><br>Jira用户界面比Bugzilla的用户界面要好得多。在Jira中，已经做了很多努力来改进用户界面，但在Bugzilla中，界面多年来没有太大变化。</li><li><strong>自定义字段类型</strong><br>Bugzilla中提供的自定义字段类型包括文本字段，多选，下拉列表，错误ID。Jira中有太多可用的字段类型，插件中提供了更多自定义字段类型。</li><li><strong>工作流程</strong><br>在Bugzilla中，管理员通过编辑转换矩阵来定义所有产品的全局工作流，而Jira允许用户根据问题和项目的类型定义多个工作流，并且问题经历多个状态。</li><li><strong>搜索</strong><br>Bugzilla提供了一种高级搜索功能，但Jira具有更灵活的Jira查询语言，可提供更强大的搜索功能，用于创建项目状态和监控项目进度。</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Jira和Bugzilla是大型组织广泛使用的bug跟踪工具。如今这两种工具都需求巨大，但这两种工具的性能各不相同。让我们首先看看这两个工具的关键点，然后再看看这两个工具之间的区别。&lt;/p&gt;
+&lt;h2 id=&quot;Jira&quot;&gt;&lt;a href=&quot;#Jira&quot; class=&quot;head</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
+    
+    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>22_Jira报告</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/22_Jira%E6%8A%A5%E5%91%8A/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/22_Jira%E6%8A%A5%E5%91%8A/</id>
+    <published>2022-05-03T04:06:22.844Z</published>
+    <updated>2022-05-03T04:39:48.605Z</updated>
+    
+    <content type="html"><![CDATA[<p>报告用于跟踪和分析整个项目中团队的绩效。Jira有一系列报告，显示有关您的项目，版本，冲刺，史诗和问题的信息。<br>以下是报告生成的报告：</p><h4 id="平均时长报告"><a href="#平均时长报告" class="headerlink" title="平均时长报告"></a>平均时长报告</h4><p>平均时长报告显示项目或过滤器未解决问题的平均时长。它可以帮助您显示积压是否保持最新。</p><p>基本上，它找到问题未解决的平均天数。</p><p>生成平均时长告，该报告取决于所选项目，过滤器中选择的问题类型以及时间(小时&#x2F;天&#x2F;周&#x2F;月)。</p><p>平均时长报告如下所示：</p><p><img src="/assets/2/image-20220503123842-sp2l09c.png" alt="image.png"><br>上面的屏幕显示了过去30天内所有未解决问题的平均时长。</p><h4 id="饼图"><a href="#饼图" class="headerlink" title="饼图"></a>饼图</h4><p>饼图显示从指定项目或问题过滤器返回的问题。我们可以创建一个问题过滤器，用于检索属于特定项目特定版本的所有问题。创建饼图以对属于特定统计类型的所有问题进行分组，统计类型可以是受理人，项目等。</p><p>假设选择统计类型作为受让人。</p><p><img src="/assets/2/image-20220503123846-ga9c7vn.png" alt="image.png"></p><p>上面的屏幕显示了基于“受让人”类型的饼图。上图显示一个问题分配给 <strong>Akshita Gupta</strong> ，其他四个问题未分配。</p><h4 id="已创建与已解决的问题"><a href="#已创建与已解决的问题" class="headerlink" title="已创建与已解决的问题"></a>已创建与已解决的问题</h4><p>已创建与已解决的问题是一个报告，显示在给定时间段内创建和解决的问题数。<br>此报告是基于用户选择的项目和问题过滤器创建的，图表可以是累积的，也可以是累积的。</p><p><img src="/assets/2/image-20220503123851-xolknwz.png" alt="image.png"></p><h4 id="最近创建的问题报告"><a href="#最近创建的问题报告" class="headerlink" title="最近创建的问题报告"></a>最近创建的问题报告</h4><p>最近创建的问题报告显示了已创建的问题数，并解决了一些问题。<br><img src="/assets/2/image-20220503123856-2682c9c.png" alt="image.png"></p><p>在上面的屏幕中，红色部分显示问题已创建且未解决，而绿色显示问题已创建，但已解决。</p><h4 id="解决时间报告"><a href="#解决时间报告" class="headerlink" title="解决时间报告"></a>解决时间报告</h4><p>解决时间报告确定解决项目&#x2F;过滤器问题所用时间的长度。</p><h4 id="按报告单级组"><a href="#按报告单级组" class="headerlink" title="按报告单级组"></a>按报告单级组</h4><p>按报告的单级组按问题过滤器的特定字段对问题进行分类，但不显示图表。</p><p><img src="/assets/2/image-20220503123901-q4dgspj.png" alt="image.png"></p><p>上面的屏幕显示分配了一个问题，即HEL-1，而其他四个问题，即HEL-5，HEL-3，HEL-2，HEL-4，是未分配的。“按级别分组报告”显示已分配和未分配问题的进度。</p><h4 id="自问题报告以来的时间"><a href="#自问题报告以来的时间" class="headerlink" title="自问题报告以来的时间"></a>自问题报告以来的时间</h4><p>自问题报告以来的时间生成报告，该报告显示所选数据字段的问题数，并且数据字段可以是创建，更新，到期，已解决。</p><p><img src="/assets/2/image-20220503123905-bv2urpp.png" alt="image.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;报告用于跟踪和分析整个项目中团队的绩效。Jira有一系列报告，显示有关您的项目，版本，冲刺，史诗和问题的信息。&lt;br&gt;以下是报告生成的报告：&lt;/p&gt;
+&lt;h4 id=&quot;平均时长报告&quot;&gt;&lt;a href=&quot;#平均时长报告&quot; class=&quot;headerlink&quot; title=&quot;平均</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
+    
+    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>21_Jira版本</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/21_Jira%E7%89%88%E6%9C%AC/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/21_Jira%E7%89%88%E6%9C%AC/</id>
+    <published>2022-05-03T04:06:22.289Z</published>
+    <updated>2022-05-03T04:37:55.927Z</updated>
+    
+    <content type="html"><![CDATA[<p>版本用于组织和计划发布。如果创建了版本并在版本上分配了问题，那么我们可以使用该版本来过滤各种报告中的信息。</p><p>可以将问题分配给特定版本，并可以组织该版本中的sprint。</p><h4 id="创建版本"><a href="#创建版本" class="headerlink" title="创建版本"></a>创建版本</h4><p> <strong>第1步：</strong> 进入到您的项目。<br> <strong>第2步：</strong> 单击面板左侧显示的版本( <em>Releases</em> )。</p><p><img src="/assets/2/image-20220503123653-71s5ctt.png" alt="image.png"></p><p> <strong>第3步：</strong> 点击<strong>Releases</strong>链接后，屏幕出现，如下所示：</p><p><img src="/assets/2/image-20220503123658-adcyssn.png" alt="image.png"></p><p> <strong>第4步：</strong> 单击“创建版本”按钮。<br> <strong>第5步：</strong> 单击“创建版本”按钮，将出现弹出窗口，询问版本名称及其描述。</p><p><img src="/assets/2/image-20220503123703-1bxxc58.png" alt="image.png"></p><h4 id="向版本添加问题"><a href="#向版本添加问题" class="headerlink" title="向版本添加问题"></a>向版本添加问题</h4><p> <strong>第1步：</strong> 进入到您的项目。<br> <strong>第2步：</strong> 单击面板左侧显示的Backlog。<br> <strong>第3步：</strong> 单击“版本”面板。</p><p><img src="/assets/2/image-20220503123708-ee2ni5s.png" alt="image.png"></p><p> <strong>第4步：</strong> 将问题拖到要在版本中添加的版本。</p><h4 id="完成一个版本"><a href="#完成一个版本" class="headerlink" title="完成一个版本"></a>完成一个版本</h4><p>可以在准备好发布版本时完成版本。当问题完成时，版本已准备好发布，并且会检查和检查代码。</p><p> <strong>第1步：</strong> 导航到您的项目。<br> <strong>第2步：</strong> 单击面板左侧显示的“版本”链接。</p><p><img src="/assets/2/image-20220503123713-rppzmpe.png" alt="image.png"></p><p> <strong>第3步：</strong> 要发布版本，请转到省略号**(…)** -&gt; <strong>发布</strong> 。</p><p><img src="/assets/2/image-20220503123718-3k8h61k.png" alt="image.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;版本用于组织和计划发布。如果创建了版本并在版本上分配了问题，那么我们可以使用该版本来过滤各种报告中的信息。&lt;/p&gt;
+&lt;p&gt;可以将问题分配给特定版本，并可以组织该版本中的sprint。&lt;/p&gt;
+&lt;h4 id=&quot;创建版本&quot;&gt;&lt;a href=&quot;#创建版本&quot; class=&quot;head</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
+    
+    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>20_Jira史诗（Epic）</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/20_Jira%E5%8F%B2%E8%AF%97%EF%BC%88Epic%EF%BC%89/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/20_Jira%E5%8F%B2%E8%AF%97%EF%BC%88Epic%EF%BC%89/</id>
+    <published>2022-05-03T04:06:21.942Z</published>
+    <updated>2022-05-03T04:36:03.554Z</updated>
+    
+    <content type="html"><![CDATA[<p>Jira史诗(Epic)是一个大型用户故事，根据客户或最终用户需求分解为较小的任务(用户故事)。</p><ul><li>根据客户需求，根据需要在史诗中添加或删除任务。</li><li>Epic用于组织工作和创建层次结构。</li><li>Epic通过将更大的任务组织成更小的任务来保持敏捷性。</li><li>Epic是工作层次结构的顶层，开发人员使用它。</li><li>Epic是更大的故事，具有明显的开始和结束。</li><li>Epic可以跨越多个冲刺，即，史诗是通过多个冲刺传递的。</li><li>Epic可以包含故事，错误和任务，并将它们分组成一个大故事。</li><li>当Epic包含故事，错误或任务时，所有这些问题类型都表示在Jira的层次结构中的同一级别。</li><li>故事，错误，任务代表单件作品，而史诗则是一组相关问题。</li></ul><p><strong>下面我们来理解史诗的结构流程：</strong></p><p>史诗由多个故事组成，而初步行动由Epics组成。因此，我们可以说这些初步行动举措超越了史诗。初步行动从多个团队中获取Epics，以实现比任何Epics都能实现的目标更大的目标。</p><p><img src="https://www.yiibai.com/uploads/article/2019/08/27/075442_67722.png" alt="史诗的结构流程" title="史诗的结构流程"></p><h2 id="史诗的工作"><a href="#史诗的工作" class="headerlink" title="史诗的工作"></a>史诗的工作</h2><h4 id="创造一个史诗"><a href="#创造一个史诗" class="headerlink" title="创造一个史诗"></a>创造一个史诗</h4><p>创建史诗有两种方法：</p><ul><li>从新问题创建史诗</li></ul><p><strong>第1步：</strong> 单击面板左侧显示的“+”图标。</p><p><img src="/assets/2/image-20220503123338-eyvewfq.png" alt="image.png"></p><p> <strong>第2步：</strong> 单击 <strong>+</strong> 图标，屏幕出现，如下所示：</p><p><img src="/assets/2/image-20220503123343-f9dv2d0.png" alt="image.png"></p><p> <strong>第3步：</strong> 选择问题类型为Epic。</p><ul><li>从Epics面板创建一个史诗</li></ul><p> <strong>第1步：</strong> 单击面板左侧显示的Backlog。<br><img src="/assets/2/image-20220503123348-d21m1uo.png" alt="image.png"></p><p><strong>第2步：</strong> 单击史诗面板中显示的Epics。</p><p><img src="/assets/2/image-20220503123405-vigcbeo.png" alt="image.png"></p><p> <strong>第3步：</strong> 单击<strong>Create Epic</strong>链接。</p><p>在上述两种情况下，需要输入以下详细信息才能创建史诗：</p><ul><li>史诗名称：它是史诗的简短唯一标识符。</li><li>史诗摘要：它提供了史诗的简短描述。</li></ul><h4 id="添加和删除故事"><a href="#添加和删除故事" class="headerlink" title="添加和删除故事"></a>添加和删除故事</h4><p>在史诗中添加故事的方法有两种：</p><ul><li>从问题创建屏幕添加问题</li></ul><p> <strong>第1步：</strong> 单击面板左侧出现的 <strong>+</strong> 图标。</p><p><img src="/assets/2/image-20220503123410-vsf5uob.png" alt="image.png"></p><p><strong>第2步：</strong> 单击问题类型的下拉列表，然后选择史诗以外的问题类型。<br><img src="/assets/2/image-20220503123410-vsf5uob.png" alt="image.png"></p><p>上面的屏幕显示我们已经创建了Bug类型的问题，在史诗“摘要”中添加了这个问题。我们在史诗链接字段中添加史诗。</p><ul><li><strong>从Epics面板添加问题</strong></li></ul><p> <strong>第1步：</strong> 单击面板左侧显示的Backlog。<br> <strong>第2步：</strong> 点击Epics面板中的Epics。<br> <strong>第3步：</strong> 单击史诗链接中的创建问题。<br><img src="/assets/2/image-20220503123420-45g6iym.png" alt="image.png"></p><ul><li><strong>从史诗中删除一个问题</strong></li></ul><p>要从Epic中删除问题，请按照以下步骤操作：</p><p> <strong>第1步：</strong> 移至Backlog页面。<br> <strong>第2步：</strong> 将问题拖放到没有史诗的问题。</p><p><img src="/assets/2/image-20220503123425-mbhqqsl.png" alt="image.png"></p><h4 id="查看所有的Epics"><a href="#查看所有的Epics" class="headerlink" title="查看所有的Epics"></a>查看所有的Epics</h4><p>可以在Backlog中看到与史诗相关的信息。</p><p><img src="/assets/2/image-20220503123431-k4usd83.png" alt="image.png"></p><ul><li><strong>Epics面板：</strong> 导航到Backlog，然后单击Epics面板以查看和管理epics。</li><li><strong>Epics列表：</strong> Epics面板显示项目中所有史诗的列表。</li><li><strong>查看史诗中的问题：</strong> 单击史诗的名称可查看所有史诗冲刺中的所有问题。</li></ul><h4 id="完成史诗"><a href="#完成史诗" class="headerlink" title="完成史诗"></a>完成史诗</h4><p>一旦完成了与史诗相关的所有工作，那么史诗就会被标记为完整。</p><p>以下是完成史诗所需的步骤：</p><ul><li>单击面板左侧显示的Backlog。</li><li>点击Epics面板中的Epics。</li><li>选择要将其标记为“完成”的史诗。</li><li>单击下拉列表并选择“标记为完成”选项。<br><img src="/assets/2/image-20220503123437-z76lk5b.png" alt="image.png"></li></ul><p>将史诗标记为“完成”时，将出现确认完成对话框。</p><p><img src="/assets/2/image-20220503123442-z74tugo.png" alt="image.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Jira史诗(Epic)是一个大型用户故事，根据客户或最终用户需求分解为较小的任务(用户故事)。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;根据客户需求，根据需要在史诗中添加或删除任务。&lt;/li&gt;
+&lt;li&gt;Epic用于组织工作和创建层次结构。&lt;/li&gt;
+&lt;li&gt;Epic通过将更大的任务组织</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
+    
+    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>18_JIRA缺陷生命周期</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/18_JIRA%E7%BC%BA%E9%99%B7%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/18_JIRA%E7%BC%BA%E9%99%B7%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</id>
+    <published>2022-05-03T04:06:21.666Z</published>
+    <updated>2022-05-03T04:30:45.092Z</updated>
+    
+    <content type="html"><![CDATA[<p>JIRA bug生命周期也称为缺陷生命周期。错误生命周期由一组错误通过的状态组成。错误经历的状态数因项目而异。我们可以将Bug定义为错误，缺陷或者我们可以说当实际输出与预期输出不匹配时，它被称为错误或缺陷。这两个术语，即bug和缺陷都是常用的，但最流行的是一个bug。可以在SDLC(软件开发生命周期)的任何阶段生成错误，它可以存在于需求收集，设计SRS文档的设计阶段，开发阶段，测试阶段或最终用户在 使用申请的时间。</p><p>从错误登录到错误关闭点的角度来看，错误的生命周期。Bug经历以下状态：</p><ul><li>新建(New)</li><li>分配(Assigned)</li><li>打开(Open)</li><li>确定(Fixed)</li><li>复验(Retesting)</li><li>重打开(Reopen)</li><li>已验证(Verified)</li><li>关闭(Closed)</li></ul><p><img src="/assets/2/image-20220503123024-e1ie1uc.png" alt="image.png"></p><h4 id="新建-New"><a href="#新建-New" class="headerlink" title="新建(New)"></a>新建(New)</h4><p>在测试阶段，测试人员会识别错误或缺陷，并登录到Jira，Bugzilla等错误跟踪工具中。测试人员检测到的错误将首次发布在错误跟踪工具中。此状态被指定为新状态。</p><h4 id="分配-Assigned"><a href="#分配-Assigned" class="headerlink" title="分配(Assigned)"></a>分配(Assigned)</h4><p>将新状态的错误分配给软件开发人员，他们将查看错误以检查错误是有效还是无效。如果错误无效，则他们将状态更改为无效。如果错误有效，则状态将更改为已分配，然后软件开发人员开始处理缺陷以获得修复。</p><h4 id="打开-Open"><a href="#打开-Open" class="headerlink" title="打开(Open)"></a>打开(Open)</h4><p>当错误被分配给软件开发人员时，他们就开始对其进行分析并处理缺陷修复。错误或缺陷可以分三个阶段打开：</p><h4 id="确定-Fixed"><a href="#确定-Fixed" class="headerlink" title="确定(Fixed)"></a>确定(Fixed)</h4><ul><li><strong>重复</strong><br>如果缺陷重复两次或缺陷对应于前一个bug的相同概念，则它将状态更改为Duplicate。</li><li><strong>被拒绝</strong><br>如果开发人员认为缺陷不是真正的缺陷，那么它会将状态更改为“已拒绝”。</li><li><strong>递延</strong><br>如果错误的优先级不高并且可以在下一个版本中解决，则状态将更改为Deferred。延迟状态也称为推迟状态。</li></ul><h4 id="复验-Retesting"><a href="#复验-Retesting" class="headerlink" title="复验(Retesting)"></a>复验(Retesting)</h4><p>当开发人员进行必要的代码更改并验证更改时，他&#x2F;她可以将错误状态设置为已修复。当开发人员修复错误后，状态将更改为“重新打开”或“已验证”。</p><h4 id="重打开-Reopen"><a href="#重打开-Reopen" class="headerlink" title="重打开(Reopen)"></a>重打开(Reopen)</h4><p>如果在开发人员修复了bug之后bug仍然存在，那么测试人员将状态更改为Reopen，并且bug再次通过整个bug生命周期。</p><h4 id="已验证-Verified"><a href="#已验证-Verified" class="headerlink" title="已验证(Verified)"></a>已验证(Verified)</h4><p>如果没有发现错误，测试人员在开发人员修复错误后重新测试该错误，然后将状态更改为已验证。</p><h4 id="关闭-Closed"><a href="#关闭-Closed" class="headerlink" title="关闭(Closed)"></a>关闭(Closed)</h4><p>如果错误不再存在，则会将状态更改为“已关闭”。</p><p>Bug生命周期的参与者 -</p><ul><li><strong>Bug报告者</strong><br>识别错误的人称为 <strong>Bug Reporter</strong> 。Bug报告者验证错误并将所有与bug相关的详细信息输入到错误跟踪工具中，例如正确的主题，错误优先级，应用程序组件，测试环境，错误受理人，错误描述。如果需要，测试人员需要发送附加的屏幕截图以澄清错误详细信息。</li><li><strong>错误跟踪工具</strong><br>可以将错误记录到错误跟踪工具中，错误跟踪工具可以是Jira，Bugzilla，Assembla等。</li><li><strong>Bug小组</strong><br>Bug小组是一组可以查看错误详细信息的人。Bug小组可以包括报告错误的测试人员或最终用户，分配错误的开发人员，项目经理，QA经理。</li><li><strong>Bug所有者</strong><br>错误所有者是审核并拥有该错误的人。错误所有者检查错误信息是否足够，如果没有，则将错误分配给错误报告者以提供更多信息。根据bug的优先级，Bug所有者获取bug的所有权并在截止日期内修复它。</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;JIRA bug生命周期也称为缺陷生命周期。错误生命周期由一组错误通过的状态组成。错误经历的状态数因项目而异。我们可以将Bug定义为错误，缺陷或者我们可以说当实际输出与预期输出不匹配时，它被称为错误或缺陷。这两个术语，即bug和缺陷都是常用的，但最流行的是一个bug。可以在</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
+    
+    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>17_Jira控制面板</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/17_Jira%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/17_Jira%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF/</id>
+    <published>2022-05-03T04:06:21.357Z</published>
+    <updated>2022-05-03T04:29:01.397Z</updated>
+    
+    <content type="html"><![CDATA[<p>控制面板显示项目中发生的所有问题，为您提供查看，管理和报告工作进度的灵活方式。</p><p>Jira中存在三种类型的控制面板：</p><p><img src="/assets/2/image-20220503122700-julhaka.png" alt="image.png"></p><ul><li><strong>下一代板</strong><br>这个板对那些刚接触敏捷的人很有用。它是一个非常简化，直接和流线型的板。</li><li><strong>Scrum板</strong><br>当团队处理包含待办事项的冲刺时，此板很有用。</li><li><strong>看板</strong><br>看板是一种灵活的项目管理工具，专为工作可视化，限制在制品和最大化效率而设计。</li></ul><h4 id="Scrum板"><a href="#Scrum板" class="headerlink" title="Scrum板"></a>Scrum板</h4><p>Scrum板分为三个部分：</p><ul><li><strong>积压</strong><br>积压( <em>backlog</em> )是项目中可用的一组活动或问题。所有问题都分为积压和冲刺。在scrum backlog中，可以创建和更新问题，拖放问题并将其分配给sprint，拖放问题以对其进行排名。</li></ul><p><img src="/assets/2/image-20220503122706-3bggp2f.png" alt="image.png"><br>上面的屏幕显示了包含问题<strong>TP-1</strong>的积压，它的描述是登录按钮不起作用。</p><ul><li>活动冲刺<br><strong>Active sprint</strong>是一个包含团队当前正在处理的问题。也可以拖放问题并将其分配回待办事项。</li></ul><p><strong>创建活动sprint的步骤：</strong></p><p>单击Backlog。点击Backlog后，屏幕出现，如下所示：<br><img src="/assets/2/image-20220503122712-qs7ord4.png" alt="image.png"></p><p>上面的屏幕显示Backlog，其中包含“登录按钮无法正常工作”的问题。</p><ul><li>单击<strong>Create sprint</strong>按钮创建sprint。单击<strong>Create sprint</strong>按钮，将出现如下屏幕所示的屏幕：</li></ul><p><img src="/assets/2/image-20220503122717-snhqs6x.png" alt="image.png"></p><p>上面的屏幕显示的sprint是 <strong>Sprint 1</strong> 。</p><ul><li>将问题从积压拖放到 <strong>Sprint 1</strong> ，如下图所示 -<br><img src="/assets/2/image-20220503122722-rux1bm0.png" alt="image.png"></li></ul><p>在上面的屏幕中，我们观察到问题已从积压拖到 <strong>Sprint 1</strong> ，并且问题已从积压中删除。</p><ul><li>单击开始冲刺按钮以进行活动冲刺。</li><li>单击面板左侧显示的Active sprint。</li></ul><p><img src="/assets/2/image-20220503122728-j30xmvk.png" alt="image.png"></p><p>上面的屏幕显示<strong>Sprint 1</strong>是团队目前正在进行的活跃冲刺。</p><ul><li><strong>报告</strong></li></ul><p>报告是将在整个项目中执行的活动。制作报告，用于显示有关项目，版本，史诗，冲刺和问题的信息。</p><h4 id="看板"><a href="#看板" class="headerlink" title="看板"></a>看板</h4><p>看板是一个过程，它提供您今天所做的所有工作的可视化。</p><p>看板由三部分组成：</p><ul><li><strong>积压</strong><br>看板有一个单独的Backlog列，我们为团队计划工作。在一个小栏目中规划工作变得非常困难，因此通过使用看板积压为处理问题提供了更大的空间。</li></ul><p><strong>在看板框架中创建待办事项的步骤：</strong></p><p>创建一个问题。当创建一个问题时，它会自动添加到Backlog中。<br><img src="/assets/2/image-20220503122734-fafagt1.png" alt="image.png"><br>上面的屏幕显示我们创建的<strong>HEL-1</strong>问题已添加到待办事项中。</p><ul><li><p><strong>看板控制面板</strong> - 看板是一个基于持续交付工作的过程。在看板框架中，不是计划迭代，而是连续监视工作流当任务完成时，新任务被添加到进行中状态。看板控制面板由三种状态组成：</p><ul><li>入选开发</li><li>进行中</li><li>完成</li></ul></li><li><p><strong>报告</strong><br>报告是将在整个项目中执行的活动。制作报告，用于显示有关项目，版本，史诗，冲刺和问题的信息。</p></li></ul><h4 id="下一代控制面板"><a href="#下一代控制面板" class="headerlink" title="下一代控制面板"></a>下一代控制面板</h4><p>下一代(next-gen)控制面板与经典的scrum和看板相同。但是，next-gen控制面板在开始时并未提供所有功能，它仅在您需要时提供该功能。Next-gen项目可以在两个模板中完成，即<strong>Next-gen Scrum</strong>和 <strong>Next-gen Kanban</strong> 。</p><p>如何创建下一代项目？</p><p><strong>可以通过以下步骤创建下一代项目：</strong></p><p>单击<strong>Create project</strong>下拉菜单，然后选择<strong>Try next-gen project</strong>选项。</p><p><img src="/assets/2/image-20220503122741-wwfxa3y.png" alt="image.png"></p><ul><li>单击<strong>Try next-gen</strong>项目后，屏幕出现，如下所示：</li></ul><p><img src="/assets/2/image-20220503122748-tqceb3a.png" alt="image.png"></p><p>上面的屏幕显示选择了Scrum模板，也可以通过点击链接更改模板来更改模板。选择模板后，输入项目名称，我们将<em>Test Project</em> 作为项目名称。单击“创建”按钮。</p><p>单击创建按钮后，将创建<strong>Next-gen Scrum</strong>项目，如下所示：</p><p><img src="/assets/2/image-20220503122754-rfrmfb7.png" alt="image.png"></p><blockquote><p><strong>注意：</strong> Next-Gen Scrum和Next-Gen Kanban项目都有一个路线图功能，可以显示团队的进度，还可以定义项目的截止日期。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;控制面板显示项目中发生的所有问题，为您提供查看，管理和报告工作进度的灵活方式。&lt;/p&gt;
+&lt;p&gt;Jira中存在三种类型的控制面板：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/2/image-20220503122700-julhaka.png&quot; alt=&quot;image.</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
+    
+    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>16_Jira创建冲刺（Sprint）</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/16_Jira%E5%88%9B%E5%BB%BA%E5%86%B2%E5%88%BA%EF%BC%88Sprint%EF%BC%89/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/16_Jira%E5%88%9B%E5%BB%BA%E5%86%B2%E5%88%BA%EF%BC%88Sprint%EF%BC%89/</id>
+    <published>2022-05-03T04:06:21.143Z</published>
+    <updated>2022-05-03T04:25:36.639Z</updated>
+    
+    <content type="html"><![CDATA[<p>团队需要在指定的时间段内完成一系列问题称为sprint。冲刺的持续时间由团队和产品所有者决定。</p><h4 id="创建Sprint"><a href="#创建Sprint" class="headerlink" title="创建Sprint"></a>创建Sprint</h4><p>以下是创建sprint的步骤：</p><ul><li>点击左侧出现的Backlog，如下图所示：</li></ul><p><img src="/assets/2/image-20220503122325-hc37vwk.png" alt="image.png"></p><ul><li>单击右下角出现的<strong>Create sprint</strong>按钮，如下面的屏幕截图所示：</li></ul><p><img src="/assets/2/image-20220503122330-wxxneyf.png" alt="image.png"></p><ul><li>单击<strong>Create sprint</strong>按钮后，将出现如下屏幕所示的屏幕：<br><img src="/assets/2/image-20220503122336-9h0prjr.png" alt="image.png"></li></ul><p>上面的屏幕显示sprint已创建名称为“Sprint 1”，现在可以将问题添加到此sprint中。</p><h4 id="向sprint添加问题"><a href="#向sprint添加问题" class="headerlink" title="向sprint添加问题"></a>向sprint添加问题</h4><p>以下是将问题添加到sprint所需的步骤：</p><ul><li>点击积压(Backlog)。</li><li>在“积压”列表中，右键单击该问题，然后选择要在其中添加问题的sprint。我们刚刚创建了名为<strong>Sprint 1</strong>的sprint，选择 <strong>Sprint 1</strong> 。<br><img src="/assets/2/image-20220503122342-a8sjdfm.png" alt="image.png"></li><li>问题<strong>TP-1</strong>被添加到sprint，即 <strong>Sprint 1</strong> 。<br><img src="/assets/2/image-20220503122347-2fbg1eh.png" alt="image.png"></li></ul><p>从上面的屏幕中，我们观察到<strong>TP-1</strong>问题被添加到<strong>Sprint 1</strong>中。</p><h4 id="从sprint中删除问题"><a href="#从sprint中删除问题" class="headerlink" title="从sprint中删除问题"></a>从sprint中删除问题</h4><p>从sprint中删除问题所遵循的步骤：</p><ul><li>单击Backlog。</li><li>将要从<strong>Sprint 1</strong>移动的问题拖放回Backlog列表。</li></ul><p><img src="/assets/2/image-20220503122352-1y9hbb7.png" alt="image.png"></p><p>上面的屏幕显示问题TP-1从Sprint 1移动到Backlog。</p><h4 id="开始冲刺"><a href="#开始冲刺" class="headerlink" title="开始冲刺"></a>开始冲刺</h4><p>开始一个冲刺的步骤：</p><ul><li>单击Backlog。</li><li>单击开始冲刺( <em>start sprint</em> )按钮开始冲刺。<br><img src="/assets/2/image-20220503122358-e851ht1.png" alt="image.png"></li></ul><p>填写以下详细信息以开始冲刺，例如冲刺名称，冲刺持续时间，结束日期，开始日期，冲刺目标。</p><p><img src="/assets/2/image-20220503122407-4txg2c7.png" alt="image.png"></p><p>现在，<strong>Sprint 1</strong>已经启动。最初，问题属于<strong>TO DO</strong>状态。</p><p><img src="/assets/2/image-20220503122413-422npat.png" alt="image.png"></p><h4 id="结束冲刺"><a href="#结束冲刺" class="headerlink" title="结束冲刺"></a>结束冲刺</h4><p>结束冲刺的步骤如下：</p><ul><li>单击Backlog。</li><li>单击项目左侧显示的活动冲刺。</li><li>选择要完成的sprint或结束sprint。</li><li>所有问题都完成后，点击右上角出现的完整冲刺按钮。</li></ul><p><img src="/assets/2/image-20220503122418-ptnmgap.png" alt="image.png"></p><ul><li>它将显示所有问题是否已完成，如果没有，则它会要求您将问题移至另一个尚未完成的sprint。</li></ul><p><img src="/assets/2/image-20220503122423-hd2jgct.png" alt="image.png"></p><h4 id="删除冲刺"><a href="#删除冲刺" class="headerlink" title="删除冲刺"></a>删除冲刺</h4><p>删除sprint要遵循的步骤：</p><ul><li>单击Backlog。</li><li>选择要删除的sprint，然后单击“…”图标。出现下拉列表，然后选择“删除sprint”选项。</li></ul><p><img src="/assets/2/image-20220503122429-4d0jq8k.png" alt="image.png"></p><ul><li>单击“删除冲刺( <em>Delete sprint</em> )”选项，单击“确认”按钮。</li></ul><p><img src="/assets/2/image-20220503122435-mjt7ncv.png" alt="image.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;团队需要在指定的时间段内完成一系列问题称为sprint。冲刺的持续时间由团队和产品所有者决定。&lt;/p&gt;
+&lt;h4 id=&quot;创建Sprint&quot;&gt;&lt;a href=&quot;#创建Sprint&quot; class=&quot;headerlink&quot; title=&quot;创建Sprint&quot;&gt;&lt;/a&gt;创建Sprin</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
+    
+    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>15_Jira Scrum板</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/15_JiraScrum%E6%9D%BF/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/15_JiraScrum%E6%9D%BF/</id>
+    <published>2022-05-03T04:06:20.905Z</published>
+    <updated>2022-05-03T04:21:16.232Z</updated>
+    
+    <content type="html"><![CDATA[<p>Jira Scrum Board是一个用于团结团队以实现单一目标和增量迭代交付的工具。</p><h4 id="Scrum-Board的功能"><a href="#Scrum-Board的功能" class="headerlink" title="Scrum Board的功能"></a>Scrum Board的功能</h4><ul><li>增加沟通和透明度<br>Jira Scrum板是团队成员随时可以访问团队所有工作的唯一来源。这增加了团队成员之间的沟通和透明度。</li><li>促进sprint计划和迭代开发<br>Scrum框架的核心是sprint，这是团队建立可释放产品增量的固定时间。Jira scrum board主要是为了让团队能够在sprint时间范围内组织他们的工作。</li><li>改善团队关注和组织<br>有时团队忘记了项目的最后期限，他们对工作量的承诺过度。Jira Scrum Boards通过将工作分成多个阶段并提供燃尽和速度报告，为团队的工作提供透明度。</li></ul><h4 id="以下是与Scrum-Board相关的重要术语："><a href="#以下是与Scrum-Board相关的重要术语：" class="headerlink" title="以下是与Scrum Board相关的重要术语："></a>以下是与Scrum Board相关的重要术语：</h4><ul><li><p><strong>冲刺(Sprint)</strong><br>冲刺是一个时间框的时间迭代，主要时间是2周。当冲刺完成后，它就会产生市场上最有价值，最实用，最可释放的产品。</p></li><li><p><strong>积压(Backlog)</strong><br>Backlog由产品所有者拥有。产品待办事项列表是产品中要考虑的功能，缺陷，增强功能和实验的列表。</p></li><li><p><strong>用户故事</strong></p><ul><li>用户故事是敏捷框架中最小的工作单元。用户故事是一个目标，而不是根据用户的观点表达的功能。</li><li>用户故事的目的是展示一件作品如何将特定价值回馈给客户。</li><li>用户故事是用简单语言编写的句子，以提供所需的结果。</li><li>它应该采用粒度格式，以便可以在sprint中传递。Sprint只是一个有时间限制的迭代来提供工作软件。</li><li>用户故事来自史诗，史诗是一大块工作，用户故事来自史诗。一些用户故事来自史诗并被放置在特定的冲刺中。这个循环一直持续到除非sprint中的所有用户故事都完成。</li></ul></li><li><p><strong>问题</strong><br>一个问题也称为用户故事。在scrum board中，一个问题包含执行单个工作所需的所有任务，依赖关系和其他相关信息。</p></li><li><p><strong>史诗</strong><br>史诗是一大块工作。它基本上是一个庞大的用户故事，可以分解成许多小故事。史诗中的所有用户故事可能需要多次冲刺才能完成。</p></li><li><p><strong>Swimlane</strong><br>Swimlane是一种在scrum board或kanban board的活跃冲刺中对问题进行分类的方法。它可以帮助您区分不同类别的任务，例如用户，工作流等。</p></li></ul><h4 id="Scrum-Board布局"><a href="#Scrum-Board布局" class="headerlink" title="Scrum Board布局"></a>Scrum Board布局</h4><p>Scrum Board是一个物理板，用于显示当前sprint backlog中的用户故事。</p><p><img src="/assets/2/image-20220503122015-p19ylml.png" alt="image.png"></p><p>Scrum board分为以下列：</p><ul><li><strong>故事(Stories)</strong> ：此列包含当前sprint backlog中可用的所有用户故事。</li><li><strong>待办(TODO)</strong> ：此状态包含尚未开始工作的故事的子任务。</li><li><strong>处理中(In Progress)</strong> ：此状态包含工作已开始的所有任务。</li><li><strong>完成(Done)</strong> ：此状态包含已完成工作的所有任务。</li></ul><h4 id="创建Scrum项目的步骤"><a href="#创建Scrum项目的步骤" class="headerlink" title="创建Scrum项目的步骤"></a>创建Scrum项目的步骤</h4><ul><li>单击页面左侧显示的项目。</li></ul><p><img src="/assets/2/image-20220503122019-ta9y6rk.png" alt="image.png"></p><ul><li>单击“创建项目”按钮以创建出现在页面右上角的新项目。</li><li>单击模板链接。</li></ul><p><img src="/assets/2/image-20220503122025-smumc1l.png" alt="image.png"></p><ul><li>从模板中选择scrum项目。<br><img src="/assets/2/image-20220503122030-nal44cl.png" alt="image.png"></li><li>输入项目名称。<br><img src="/assets/2/image-20220503122035-w1tgzki.png" alt="image.png"></li><li>在下图中，创建了TP Board，它是名为“Test project”的项目的简称。</li></ul><p><img src="/assets/2/image-20220503122040-v9gvfcr.png" alt="image.png"></p><p>上图中显示的白板是Jira板，它包含与特定项目相关的问题。在Scrum板上显示问题可以灵活地查看，管理和跟踪问题的进度。对于新创建的项目，积压是空的。只有在Backlog中添加任务或问题时才会填充它。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Jira Scrum Board是一个用于团结团队以实现单一目标和增量迭代交付的工具。&lt;/p&gt;
+&lt;h4 id=&quot;Scrum-Board的功能&quot;&gt;&lt;a href=&quot;#Scrum-Board的功能&quot; class=&quot;headerlink&quot; title=&quot;Scrum Board的功</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
+    
+    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>14_Jira积压（待办事项）</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/14_Jira%E7%A7%AF%E5%8E%8B%EF%BC%88%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%EF%BC%89/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/14_Jira%E7%A7%AF%E5%8E%8B%EF%BC%88%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%EF%BC%89/</id>
+    <published>2022-05-03T04:06:20.674Z</published>
+    <updated>2022-05-03T04:18:43.486Z</updated>
+    
+    <content type="html"><![CDATA[<p>积压(待办事项&#x2F;backlog)是团队需要在特定迭代中解决的一组活动或问题。您的项目的所有问题都分组在积压和冲刺(sprint)中。</p><p>在scrum backlog中，可以执行多个活动，例如创建和更新问题，拖放问题以确定优先级，将它们分配给sprint，epics，版本，管理epics等。</p><p>以下是可以在scrum backlog中执行的活动：</p><ul><li><strong>将问题添加到待办事项中</strong> - 要在待办事项中添加问题，需要创建一个问题。单击全局侧栏中的 <strong>+</strong> 图标以创建问题。填写与问题相关的所有详细信息，然后单击“创建”按钮。创建的问题将添加到待办事项中。</li><li><strong>优先处理积压</strong> - 还可以拖放问题，以便在待办事项中确定问题的优先级。还可以右键单击该问题以打开菜单，此菜单可将问题移至待办事项的顶部或底部。</li><li><strong>查看和编辑问题的详细信息</strong> - 单击电路板上的问题以查看问题的所有详细信息。如果要在单独的窗口中查看问题，请右键单击问题键。</li><li><strong>确定用户的工作量</strong> - 分配到的工作的用户显示在sprint的顶部。单击“…”选项以查看受理人的工作量。</li><li><strong>创建子任务</strong> - 单击一个问题，然后单击Jira Backlog图标以创建子任务。子任务对于将故事分解为可实现的部分非常有用。</li><li><strong>转换问题</strong> - 可以将问题从Backlog部分拖放到相关的sprint，或者可以说将问题从Backlog部分移动到相关的sprint。</li><li><strong>拆分问题</strong> - 右键单击该问题，然后选择拆分问题。它可以在Backlog以及sprint部分中分割问题。当您想要将大任务分解为两个或更多问题以使工作更易于管理时，拆分非常有用。</li><li><strong>删除问题</strong> - 也可以通过选择问题来删除问题，然后选择 <strong>…</strong> -&gt; <strong>删除</strong> 。</li><li><strong>查找问题</strong> - 可以创建自己的快速筛选器以仅查看所需的问题。</li></ul><h4 id="创建待办事项的步骤"><a href="#创建待办事项的步骤" class="headerlink" title="创建待办事项的步骤"></a>创建待办事项的步骤</h4><ul><li>单击窗格最左侧的 <strong>+</strong> 。</li></ul><p><img src="/assets/2/image-20220503121742-yml67po.png" alt="image.png"></p><ul><li>填写所有详细信息以创建问题。</li></ul><p><img src="/assets/2/image-20220503121748-g9p2u8c.png" alt="image.png"></p><p><img src="/assets/2/image-20220503121754-xf7ukpc.png" alt="image.png"></p><p>在上面的表单中，填写所有必填详细信息，并保留其他字段的空白或默认值。</p><p><strong>必填字段是：</strong></p><ul><li><strong>项目</strong> - 它定义项目的名称。假设已将项目名称命名为“测试项目”。</li><li><strong>问题类型</strong> - 它定义了问题的类型。它可以是一个bug，epic，故事等。</li><li><strong>摘要</strong> - 它告诉了问题的整体描述。</li><li><strong>优先</strong> - 它定义了问题的优先级。它可以是中等，低或高。</li></ul><p>假设创建了一个类型为Bug的问题，描述是“登录按钮不起作用”，问题的优先级很高。<br><img src="/assets/2/image-20220503121801-dzm43i5.png" alt="image.png"></p><p>在上面的屏幕中，可以看到问题已创建并存放在Backlog中。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;积压(待办事项&amp;#x2F;backlog)是团队需要在特定迭代中解决的一组活动或问题。您的项目的所有问题都分组在积压和冲刺(sprint)中。&lt;/p&gt;
+&lt;p&gt;在scrum backlog中，可以执行多个活动，例如创建和更新问题，拖放问题以确定优先级，将它们分配给sprint</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
+    
+    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>13_Jira问题类型</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/13_Jira%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/13_Jira%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B/</id>
+    <published>2022-05-03T04:06:20.217Z</published>
+    <updated>2022-05-03T04:15:58.417Z</updated>
+    
+    <content type="html"><![CDATA[<p>JIRA应用程序可用于将工作分解为问题。问题可以表示为任务，子任务，bud，epic，功能请求或其他工作。每个Jira软件都附带一些适合您的项目和团队的默认问题类型。</p><p>JIRA软件附带有三种类型的默认Jira问题类型：</p><p><img src="/assets/2/image-20220503121515-n325nyi.png" alt="image.png"></p><ul><li>Jira Core(业务项目)问题类型</li><li>Jira Software(软件项目)问题类型</li><li>Jira服务台(服务台项目)问题类型</li></ul><h4 id="Jira-Core问题类型"><a href="#Jira-Core问题类型" class="headerlink" title="Jira Core问题类型"></a>Jira Core问题类型</h4><ul><li>任务 - 任务是为完成团队目标而完成或完成的工作。</li><li>子任务 - 这是一个问题的子任务。记录在案的问题下的所有任务都称为子任务。</li></ul><h4 id="Jira软件问题类型"><a href="#Jira软件问题类型" class="headerlink" title="Jira软件问题类型"></a>Jira软件问题类型</h4><ul><li><p>Bug - 错误是产品功能中出现的问题或缺陷。</p></li><li><p>Epic - <img src="/assets/2/image-20220503121523-lxwtiu9.png" alt="image.png"></p><ul><li>Epic是一个庞大的用户故事，可以分解成更小的故事</li><li>它无法在单个sprint中实现。</li><li>整个Epic已在几个月内完成。</li><li>Epic指的是一组尚未转换为用户故事的活动。</li><li>首先，将Epics转换为用户故事，然后将用户故事转换为敏捷团队工作的几个任务。</li><li>Epic的范围很广，缺乏细节，它们分为敏捷团队工作的小型和多个故事。</li><li>Epic被称为工作层次结构中的顶层。</li></ul></li><li><p><strong>Subtask</strong> - 子任务是完成整个工作的一项工作。</p></li><li><p><strong>Task</strong> - 任务是为完成团队目标而完成或完成的工作。</p></li><li><p><strong>Story</strong></p><ul><li>story是需要在项目中完成的任务列表。</li><li>它定义了项目要求的高级设计。</li><li>它定义了整个项目的简短描述。</li><li>它由公司的产品所有者拥有，但任何人都可以编写用户故事。</li><li>它用简单的语言编写，以便客户了解最终产品。</li><li>用户故事可以被视为“败类的核心”，因为它充当了冲刺的基石。</li></ul></li><li><p><strong>Jira服务台问题类型</strong></p><ul><li><strong>更改</strong> - 它要求更改当前的IT配置文件。</li><li><strong>IT帮助</strong> - 它用于请求IT相关问题的帮助。</li><li><strong>事件</strong> - 它报告事件或服务IT中断。</li><li><strong>新功能</strong> - 它要求添加新功能或软件功能。</li><li><strong>问题</strong> - 它用于报告多个事件的原因。</li><li><strong>服务请求</strong> - 它用于从内部或客户服务台请求帮助。</li><li><strong>服务请求获得批准</strong> - 它用于请求需要经理或董事会批准的帮助。</li><li><strong>支持</strong> - 它用于请求客户支持问题的帮助。</li></ul></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;JIRA应用程序可用于将工作分解为问题。问题可以表示为任务，子任务，bud，epic，功能请求或其他工作。每个Jira软件都附带一些适合您的项目和团队的默认问题类型。&lt;/p&gt;
+&lt;p&gt;JIRA软件附带有三种类型的默认Jira问题类型：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/as</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
+    
+    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>11_JIRA登录</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/11_JIRA%E7%99%BB%E5%BD%95/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/11_JIRA%E7%99%BB%E5%BD%95/</id>
+    <published>2022-05-03T04:06:19.792Z</published>
+    <updated>2022-05-03T04:10:16.693Z</updated>
+    
+    <content type="html"><![CDATA[<p>以下是登录Jira的步骤：</p><ul><li>要登录Jira，请转到我们在Jira中创建的网站。出现登录页面，然后您需要填写用户名和密码等凭据。单击继续按钮。<br><img src="/assets/2/image-20220503120850-xjv99s2.png" alt="image.png"></li><li>输入密码，然后单击“登录”按钮。<br><img src="/assets/2/image-20220503120858-r3yruj5.png" alt="image.png"></li><li>如果密码不正确，则会显示验证消息“不正确的电子邮件地址或密码”。这显示在下面的屏幕截图中：</li></ul><p><img src="/assets/2/image-20220503120905-bvwcebu.png" alt="image.png"></p><ul><li>要解决上述错误，请单击“无法登录”？链接。点击链接，我们将看到如下所示的屏幕：<br><img src="/assets/2/image-20220503120911-xt71qda.png" alt="image.png"></li><li>单击“发送恢复链接”按钮。单击“发送恢复链接”按钮后，邮件将发送到已注册的电子邮件ID，并要求您重置密码。当您单击<strong>重置我的密码</strong>按钮时，将显示如下所示的屏幕：</li></ul><p><img src="/assets/2/image-20220503120917-avhqbw3.png" alt="image.png"></p><ul><li>输入新密码，然后单击“继续”按钮。</li><li>当我们提供错误的用户名或密码时，会出现上述情况。成功登录后，您的jira帐户将会打开，并出现如下所示的屏幕：</li></ul><p><img src="/assets/2/image-20220503120923-1jt0lmc.png" alt="image.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;以下是登录Jira的步骤：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;要登录Jira，请转到我们在Jira中创建的网站。出现登录页面，然后您需要填写用户名和密码等凭据。单击继续按钮。&lt;br&gt;&lt;img src=&quot;/assets/2/image-20220503120850-xjv99s2.p</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
+    
+    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>03_JIRA瀑布模型</title>
     <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/03_JIRA%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B/"/>
     <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/03_JIRA%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B/</id>
     <published>2022-04-30T14:51:28.812Z</published>
-    <updated>2022-05-03T02:41:24.968Z</updated>
+    <updated>2022-05-03T03:03:09.541Z</updated>
     
     <content type="html"><![CDATA[<p>在了解敏捷和JIRA之前，需要了解瀑布模型。</p><h2 id="什么是瀑布模型？"><a href="#什么是瀑布模型？" class="headerlink" title="什么是瀑布模型？"></a>什么是瀑布模型？</h2><p>瀑布模型是IT行业用于开发软件的最古老的模型。不同公司使用不同模型和流程，但瀑布模型是IT行业中最古老，最安全，最简单的模型。</p><p>它是构建代表现实生活的软件的最简单模型。下面我们来了解瀑布模型。瀑布模型分为多个阶段：<br><img src="/assets/2/image-20220503104035-tukzgc5.png" alt="image.png"></p><h4 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h4><p>假设有客户想要开发软件，然后客户联系到一家软件公司。假设客户联系了这家服务型公司并要求该公司为他们构建软件。</p><p><strong>公司做什么？</strong></p><p>公司将收集客户的所有需求，知识或客户希望拥有的软件，公司将从客户收集所有信息并准备文档。执行此活动后，设计阶段即开始。</p><h4 id="设计"><a href="#设计" class="headerlink" title="设计"></a>设计</h4><p>在此阶段，我们准备高级和低级设计。在开发软件之前，需要设计软件。假设客户想要与亚马逊类似的电子商务网站，那么网站的UI(用户界面)将由设计者制作，数据流也在这个阶段设计，数据将如何流动。完成此阶段后，开发阶段即可开始。</p><h4 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h4><p>在开发阶段，软件开发团队开始编写和开发软件。这是瀑布模型的最长阶段，因为开发人员需要更多时间来构建软件。一旦软件开发完成，项目就会交给测试人员。</p><h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><p>测试团队将测试软件，如果发现有错误，他们会通知开发人员他们发现的问题并确保错误得到修复。测试团队确保完成端到端软件。</p><h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><p>测试项目后，将部署项目，以使其成为实时用户的实时用户。</p><h4 id="维护"><a href="#维护" class="headerlink" title="维护"></a>维护</h4><p>最后，项目已部署并可供客户使用。客户希望维护期为一年或两年，因为如果发现错误或想要在项目中稍微增强功能，那么需要一些团队来处理这些问题。由于这个原因，需要一个维护期。</p><h2 id="瀑布模型的例子"><a href="#瀑布模型的例子" class="headerlink" title="瀑布模型的例子"></a>瀑布模型的例子</h2><p><img src="/assets/2/image-20220503104045-srhqwy5.png" alt="image.png"></p><p>假设客户想要一个像WhatsApp这样的应用程序，那么客户就会找到一个软件开发公司并讨论2个月。软件开发公司在2个月内完成了所有要求的记录。软件开发公司的开发团队开始开发软件，并假设开发软件花了大约10个月的时间。这意味着已经使用了12个月，即需求阶段为2个月，开发阶段为10个月，但客户仍然不了解内部阶段。开发完成后，测试完成，软件质量测试大约需要2个月。一旦测试完成，它将进入集成并启动，以便WhatsApp进入交付试用。然而，当它到达客户端时，客户说它花了一年多的时间，收到的软件却不是他所期望的。之所以发生这种情况，是因为客户只与软件团队进行了口头沟通。如果客户想要对软件进行一些更改，那么整个过程将再次执行。</p><h4 id="瀑布模型的优点"><a href="#瀑布模型的优点" class="headerlink" title="瀑布模型的优点"></a>瀑布模型的优点</h4><ul><li>简单易懂，易于使用</li><li>它代表了您想要在现实生活中完成的所有任务。例如，您需要客户端的需求。它包含不同的阶段，每个阶段仅在前一阶段完成时启动。</li><li>具体的可交付成果和审核流程。</li><li>每个阶段都有一个特定的可交付和审核流程。在需求阶段之后，我们满足客户需求的所有要求。软件开发完成后，我们就可以交付。</li><li>阶段不重叠。</li><li>在该模型中，相位不重叠，即，它们一次完成一次。上一阶段完成后，只有下一阶段开始。例如，开发阶段将仅在设计阶段完成时开始。</li></ul><h4 id="瀑布模型的缺点"><a href="#瀑布模型的缺点" class="headerlink" title="瀑布模型的缺点"></a>瀑布模型的缺点</h4><ul><li>产品上线时间很长。</li><li>只有在完成所有阶段后才会发布产品。因此，此模型需要很长时间才能发布产品。</li><li>出乎意料的结果。</li><li>期望和收到的内容大多不同，因为客户根据文档仅了解产品。客户只有一个想法，这是一个有记录的想法。</li><li>不适合改变需求。</li><li>瀑布模型不适用于需求处于中度到高度变化风险的项目。如果要求发生变化，则不建议使用此模型，因为所有要求都是在需求阶段完成的，这是一个非常耗时的过程。</li></ul>]]></content>
     
@@ -41,521 +577,6 @@
     <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
     
     <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JIRA敏捷</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/04_JIRA%E6%95%8F%E6%8D%B7/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/04_JIRA%E6%95%8F%E6%8D%B7/</id>
-    <published>2022-04-30T14:51:28.509Z</published>
-    <updated>2022-05-03T02:56:14.766Z</updated>
-    
-    <content type="html"><![CDATA[<p>敏捷是一种时间盒式的迭代方法，可以逐步构建项目，而不是一次性构建项目。敏捷是一种在整个软件中促进开发和测试的连续迭代的实践。</p><h2 id="什么不需要敏捷？"><a href="#什么不需要敏捷？" class="headerlink" title="什么不需要敏捷？"></a>什么不需要敏捷？</h2><ul><li>主持会议<br>团队每天进行10-15分钟的频繁会议，他们认为频繁的会议将是敏捷的。但是，只有以下会议才会敏捷。</li><li>需求随时变化<br>需求可以随时更改，那不需要敏捷。例如，客户想要添加一些新功能并希望同时更新更改，那么这将不是敏捷。</li><li>非结构化发展<br>假设您没有遵循任何计划并且您正在开发Adhoc，那么它不是敏捷的，其中Adhoc测试，测试人员随机测试应用程序而不遵循任何文档和测试设计技术。</li><li>没有文档<br>如果公司没有制作文档，那么它不是敏捷的。</li></ul><h2 id="什么是敏捷？"><a href="#什么是敏捷？" class="headerlink" title="什么是敏捷？"></a>什么是敏捷？</h2><p>敏捷是一种哲学，即一套决定开发软件的价值观和原则。<br>敏捷基于迭代增量模型。在增量模型中，我们以增量方式创建系统，其中每个增量都是单独开发和测试的。</p><p>下图显示了敏捷模型如何逐步工作 -</p><p><img src="/assets/2/image-20220503105548-8gl6vza.png" alt="image.png"></p><h2 id="什么是价值？"><a href="#什么是价值？" class="headerlink" title="什么是价值？"></a>什么是价值？</h2><p>在敏捷中，需要执行下表中提到的所有八个任务。但是，我们必须确保左侧任务的优先级应该高于右侧任务。</p><table><thead><tr><th>个人和互动</th><th>过程和工具</th></tr></thead><tbody><tr><td>工作软件</td><td>综合文档</td></tr><tr><td>客户协作</td><td>合同谈判</td></tr><tr><td>回应变化</td><td>遵循计划</td></tr></tbody></table><ul><li><strong>个人和互动，优先于过程和工具</strong><br>假设团队在软件中发现任何问题，然后他们搜索另一个流程或工具来解决问题。但是，在敏捷中，最好与客户，经理或团队就问题进行互动，并确保问题得到解决。</li><li><strong>工作软件，优先于文档</strong><br>需要文档，但是非常需要工作软件。敏捷并不是说不需要文档，但是非常需要工作软件。例如，您有20页的文档，但您没有软件的一个原型。在这种情况下，客户端将不满意，因为最终客户端需要一个文档。</li><li><strong>客户协作，优先于合同谈判</strong><br>合同谈判在制定软件预算时很重要，但客户协作比合同谈判更重要。例如，如果您坚持要求或流程，那么就不要签订我们已经协商的合同。您需要与客户互动，收集他们的需求。</li><li><strong>遵循变更，优先于遵循计划</strong><br>在瀑布模型中，一切都是有计划的，即，在什么时间，每个阶段都将完成。有时您需要在软件中间实现新要求，因此您需要具备多种功能才能对软件进行更改。</li></ul><blockquote><p>注意：根据敏捷方法，左侧任务应优先于右侧任务。</p></blockquote><h2 id="敏捷原则"><a href="#敏捷原则" class="headerlink" title="敏捷原则"></a>敏捷原则</h2><ul><li>首要任务是通过尽早和持续交付有价值的软件来满足客户。根据敏捷原则，客户就是他们的一切。无论客户需要什么，他们都有任何问题或想要添加新的要求，他们总是优先考虑客户。倾听客户的意见，并为客户提供高质量的软件。</li><li>它欢迎不断变化的要求，甚至在开发的后期。敏捷流程利用变革为客户带来竞争优势。在瀑布模型中，如果要在软件中间进行任何新的更改，则整个过程将再次完成。因此，瀑布模型是刚性的而不是通用的。敏捷可将这样的工作可以很容易地将新的变化整合到软件中。</li><li>经常提供工作软件，从几周到几个月，优先考虑更短的时间尺度。在瀑布模型中，当整个系统开发出来时，只有它被传递给客户，而敏捷说不要等待太久，等待几周或几个月。无论您开发了什么都要向客户端演示，这样就可以向客户提供您在初始阶段正在开发的软件的每个功能。</li><li>业务人员和开发人员必须在整个项目中每天一起工作。这意味着客户，客户和团队应该每天进行交互。</li><li>围绕有动力的个人建立项目，为他们提供所需的环境和支持，并信任他们完成工作。敏捷相信你的团队，客户和公司。假设给团队成员一个任务，然后提供他需要的所有资源，如文档，系统，信息研究等。</li><li>向开发团队内部和内部传达信息的最有效和最有效的方法是面对面交谈。假设有些情况需要与客户进行交互，开发团队通常通过邮件或电话进行，但最好进行面对面交谈。</li><li>工作软件是进步的主要衡量标准。敏捷无论是通过文档还是项目经理所说的内容，开发或工作的软件数量都是进度的衡量标准。</li><li>敏捷过程促进可持续发展。赞助商，开发者和用户应该能够无限期地保持稳定的步伐。敏捷说，让你的团队在交付时保持不变，这样团队应该有固定的工作时间意味着如果公司的工作时间是8小时，那么团队应该在一天工作8小时。</li><li>持续关注技术卓越和良好的设计提高灵活性意味着团队成员在技术上应该是合理的，以便他们可以做出好的设计，如果做出任何改变，那么它们可以很容易地融入软件中。</li><li>最好的架构，需求和设计来自自组织团队。无论架构团队进行何种设计，他们都确保他们与开发团队坐在一起并讨论软件的架构。</li><li>团队定期反思如何变得更有效，然后调整并相应地调整其行为。这个原则说团队应该经常见面，以便他们可以讨论他们面临的问题，并且可以有效地解决。</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;敏捷是一种时间盒式的迭代方法，可以逐步构建项目，而不是一次性构建项目。敏捷是一种在整个软件中促进开发和测试的连续迭代的实践。&lt;/p&gt;
-&lt;h2 id=&quot;什么不需要敏捷？&quot;&gt;&lt;a href=&quot;#什么不需要敏捷？&quot; class=&quot;headerlink&quot; title=&quot;什么不需要敏</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jira简介</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(8)/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(8)/</id>
-    <published>2022-04-30T14:51:28.289Z</published>
-    <updated>2022-04-30T14:50:28.272Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"><a href="#1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。" class="headerlink" title="1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"></a>1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。</h4><h4 id="2-JIRA基于敏捷方法，目前的Jira版本为6。"><a href="#2-JIRA基于敏捷方法，目前的Jira版本为6。" class="headerlink" title="2. JIRA基于敏捷方法，目前的Jira版本为6。"></a>2. JIRA基于敏捷方法，目前的Jira版本为6。</h4><h4 id="3-以下是Jira提供的有用方面："><a href="#3-以下是Jira提供的有用方面：" class="headerlink" title="3. 以下是Jira提供的有用方面："></a>3. 以下是Jira提供的有用方面：</h4><ul><li>项目：用于非常有效地管理缺陷。</li><li>问题：它用于跟踪和管理缺陷&#x2F;问题。</li><li>工作流程：处理问题&#x2F;缺陷生命周期。假设我们有业务需求，我们创建技术设计，并从技术设计中创建测试用例。创建测试用例后，完成编码，然后对项目执行测试。使用Jira可以实现此设计工作流程。</li><li>搜索：轻松查找。假设在12月初完成了一个项目，其版本是1.0。现在，我们转到1.1版并在12月底完成，需要做的是添加新版本。通过Jira，我们可以了解早期版本中发生的事情，早期项目中发生了多少缺陷以及我们从早期项目中获得的学习。</li><li>仪表板：仪表板是在登录Jira时看到的显示。可以为多个项目创建多个仪表板。可以创建个人仪表板，并可以在仪表板中添加小工具，以便可以跟踪正在处理的分配和问题。<h2 id="1-为什么选择JIRA？"><a href="#1-为什么选择JIRA？" class="headerlink" title="1.为什么选择JIRA？"></a>1.为什么选择JIRA？</h2><h4 id="使用JIRA工具是由于以下原因："><a href="#使用JIRA工具是由于以下原因：" class="headerlink" title="使用JIRA工具是由于以下原因："></a>使用JIRA工具是由于以下原因：</h4></li><li><ol><li>计划，跟踪和工作更快JIRA是一种错误跟踪工具，主要用于跟踪，组织错误并确定其优先级，新增功能以及某些软件版本的改进。 项目细分为问题，问题可以是多种类型，例如错误，新功能，改进和文档任务。当软件的发布日期临近时，软件开发人员需要关注在指定日期之前要修复的剩余问题。 质量保证也很难维持文件的状态，即有时候很难跟踪所有内容。JIRA是处理上述问题的不错选择。 它使软件开发人员能够跟踪问题和改进。 它管理项目以及维护技术文档。</li></ol></li><li><ol start="2"><li>信息的主要来源JIRA是下一个软件版本的主要信息来源。 在JIRA上，软件开发人员的整个团队可以计划要添加的新功能以及在下一版本中修复的错误。它还有助于QA团队编写技术文档。 通过JIRA，QA团队可以检查软件开发人员新添加的每个功能的状态，并根据这些功能，他们可以计划如何记录新版本。</li></ol></li><li><ol start="3"><li>组织文档任务JIRA工具用于组织文档任务。 通过使用组件功能对多个任务进行分组非常有用，甚至可以创建自己的文档。 通过这种方式，您可以创建结构化的文档方式。</li></ol></li><li><ol start="4"><li>跟踪我们文档的进度它是跟踪文档进度的非常有用的工具。 JIRA工具提供了一个非常重要的功能，即饼图宏。 在饼图宏中可以查看打开任务，已关闭任务，已解决任务等任务。</li></ol></li><li><ol start="5"><li>帮助满足文档发布的截止日期<br>   可以定义文档发布的特定截止日期或截止日期，甚至可以使用通知配置JIRA工具，以便可以及时完成文档。</li></ol></li><li><ol start="6"><li>衡量文档所花费的时间<br>   JIRA工具没有用于衡量文档花费时间的默认功能。 JIRA工具与Tempo Timesheets捆绑在一起，可以测量文档花费的时间。</li></ol></li><li><ol start="7"><li>更快地提供反馈<br>   JIRA工具提供Confluence页面，只需单击几下即可连接到问题。 如果需要更新某些内容，则可以直接从Confluence页面创建问题。&#x2F;&#x2F;原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：<a href="https://www.yiibai.com/jira/jira-introduction.html">https://www.yiibai.com/jira/jira-introduction.html</a></li></ol></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h4 id=&quot;1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。&quot;&gt;&lt;a href=&quot;#1-JIRA是由澳大利亚公司Atlassian开</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jira简介</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(7)/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(7)/</id>
-    <published>2022-04-30T14:51:27.984Z</published>
-    <updated>2022-04-30T14:50:28.272Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"><a href="#1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。" class="headerlink" title="1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"></a>1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。</h4><h4 id="2-JIRA基于敏捷方法，目前的Jira版本为6。"><a href="#2-JIRA基于敏捷方法，目前的Jira版本为6。" class="headerlink" title="2. JIRA基于敏捷方法，目前的Jira版本为6。"></a>2. JIRA基于敏捷方法，目前的Jira版本为6。</h4><h4 id="3-以下是Jira提供的有用方面："><a href="#3-以下是Jira提供的有用方面：" class="headerlink" title="3. 以下是Jira提供的有用方面："></a>3. 以下是Jira提供的有用方面：</h4><ul><li>项目：用于非常有效地管理缺陷。</li><li>问题：它用于跟踪和管理缺陷&#x2F;问题。</li><li>工作流程：处理问题&#x2F;缺陷生命周期。假设我们有业务需求，我们创建技术设计，并从技术设计中创建测试用例。创建测试用例后，完成编码，然后对项目执行测试。使用Jira可以实现此设计工作流程。</li><li>搜索：轻松查找。假设在12月初完成了一个项目，其版本是1.0。现在，我们转到1.1版并在12月底完成，需要做的是添加新版本。通过Jira，我们可以了解早期版本中发生的事情，早期项目中发生了多少缺陷以及我们从早期项目中获得的学习。</li><li>仪表板：仪表板是在登录Jira时看到的显示。可以为多个项目创建多个仪表板。可以创建个人仪表板，并可以在仪表板中添加小工具，以便可以跟踪正在处理的分配和问题。<h2 id="1-为什么选择JIRA？"><a href="#1-为什么选择JIRA？" class="headerlink" title="1.为什么选择JIRA？"></a>1.为什么选择JIRA？</h2><h4 id="使用JIRA工具是由于以下原因："><a href="#使用JIRA工具是由于以下原因：" class="headerlink" title="使用JIRA工具是由于以下原因："></a>使用JIRA工具是由于以下原因：</h4></li><li><ol><li>计划，跟踪和工作更快JIRA是一种错误跟踪工具，主要用于跟踪，组织错误并确定其优先级，新增功能以及某些软件版本的改进。 项目细分为问题，问题可以是多种类型，例如错误，新功能，改进和文档任务。当软件的发布日期临近时，软件开发人员需要关注在指定日期之前要修复的剩余问题。 质量保证也很难维持文件的状态，即有时候很难跟踪所有内容。JIRA是处理上述问题的不错选择。 它使软件开发人员能够跟踪问题和改进。 它管理项目以及维护技术文档。</li></ol></li><li><ol start="2"><li>信息的主要来源JIRA是下一个软件版本的主要信息来源。 在JIRA上，软件开发人员的整个团队可以计划要添加的新功能以及在下一版本中修复的错误。它还有助于QA团队编写技术文档。 通过JIRA，QA团队可以检查软件开发人员新添加的每个功能的状态，并根据这些功能，他们可以计划如何记录新版本。</li></ol></li><li><ol start="3"><li>组织文档任务JIRA工具用于组织文档任务。 通过使用组件功能对多个任务进行分组非常有用，甚至可以创建自己的文档。 通过这种方式，您可以创建结构化的文档方式。</li></ol></li><li><ol start="4"><li>跟踪我们文档的进度它是跟踪文档进度的非常有用的工具。 JIRA工具提供了一个非常重要的功能，即饼图宏。 在饼图宏中可以查看打开任务，已关闭任务，已解决任务等任务。</li></ol></li><li><ol start="5"><li>帮助满足文档发布的截止日期<br>   可以定义文档发布的特定截止日期或截止日期，甚至可以使用通知配置JIRA工具，以便可以及时完成文档。</li></ol></li><li><ol start="6"><li>衡量文档所花费的时间<br>   JIRA工具没有用于衡量文档花费时间的默认功能。 JIRA工具与Tempo Timesheets捆绑在一起，可以测量文档花费的时间。</li></ol></li><li><ol start="7"><li>更快地提供反馈<br>   JIRA工具提供Confluence页面，只需单击几下即可连接到问题。 如果需要更新某些内容，则可以直接从Confluence页面创建问题。&#x2F;&#x2F;原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：<a href="https://www.yiibai.com/jira/jira-introduction.html">https://www.yiibai.com/jira/jira-introduction.html</a></li></ol></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h4 id=&quot;1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。&quot;&gt;&lt;a href=&quot;#1-JIRA是由澳大利亚公司Atlassian开</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jira简介</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(6)/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(6)/</id>
-    <published>2022-04-30T14:51:27.710Z</published>
-    <updated>2022-04-30T14:50:28.272Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"><a href="#1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。" class="headerlink" title="1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"></a>1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。</h4><h4 id="2-JIRA基于敏捷方法，目前的Jira版本为6。"><a href="#2-JIRA基于敏捷方法，目前的Jira版本为6。" class="headerlink" title="2. JIRA基于敏捷方法，目前的Jira版本为6。"></a>2. JIRA基于敏捷方法，目前的Jira版本为6。</h4><h4 id="3-以下是Jira提供的有用方面："><a href="#3-以下是Jira提供的有用方面：" class="headerlink" title="3. 以下是Jira提供的有用方面："></a>3. 以下是Jira提供的有用方面：</h4><ul><li>项目：用于非常有效地管理缺陷。</li><li>问题：它用于跟踪和管理缺陷&#x2F;问题。</li><li>工作流程：处理问题&#x2F;缺陷生命周期。假设我们有业务需求，我们创建技术设计，并从技术设计中创建测试用例。创建测试用例后，完成编码，然后对项目执行测试。使用Jira可以实现此设计工作流程。</li><li>搜索：轻松查找。假设在12月初完成了一个项目，其版本是1.0。现在，我们转到1.1版并在12月底完成，需要做的是添加新版本。通过Jira，我们可以了解早期版本中发生的事情，早期项目中发生了多少缺陷以及我们从早期项目中获得的学习。</li><li>仪表板：仪表板是在登录Jira时看到的显示。可以为多个项目创建多个仪表板。可以创建个人仪表板，并可以在仪表板中添加小工具，以便可以跟踪正在处理的分配和问题。<h2 id="1-为什么选择JIRA？"><a href="#1-为什么选择JIRA？" class="headerlink" title="1.为什么选择JIRA？"></a>1.为什么选择JIRA？</h2><h4 id="使用JIRA工具是由于以下原因："><a href="#使用JIRA工具是由于以下原因：" class="headerlink" title="使用JIRA工具是由于以下原因："></a>使用JIRA工具是由于以下原因：</h4></li><li><ol><li>计划，跟踪和工作更快JIRA是一种错误跟踪工具，主要用于跟踪，组织错误并确定其优先级，新增功能以及某些软件版本的改进。 项目细分为问题，问题可以是多种类型，例如错误，新功能，改进和文档任务。当软件的发布日期临近时，软件开发人员需要关注在指定日期之前要修复的剩余问题。 质量保证也很难维持文件的状态，即有时候很难跟踪所有内容。JIRA是处理上述问题的不错选择。 它使软件开发人员能够跟踪问题和改进。 它管理项目以及维护技术文档。</li></ol></li><li><ol start="2"><li>信息的主要来源JIRA是下一个软件版本的主要信息来源。 在JIRA上，软件开发人员的整个团队可以计划要添加的新功能以及在下一版本中修复的错误。它还有助于QA团队编写技术文档。 通过JIRA，QA团队可以检查软件开发人员新添加的每个功能的状态，并根据这些功能，他们可以计划如何记录新版本。</li></ol></li><li><ol start="3"><li>组织文档任务JIRA工具用于组织文档任务。 通过使用组件功能对多个任务进行分组非常有用，甚至可以创建自己的文档。 通过这种方式，您可以创建结构化的文档方式。</li></ol></li><li><ol start="4"><li>跟踪我们文档的进度它是跟踪文档进度的非常有用的工具。 JIRA工具提供了一个非常重要的功能，即饼图宏。 在饼图宏中可以查看打开任务，已关闭任务，已解决任务等任务。</li></ol></li><li><ol start="5"><li>帮助满足文档发布的截止日期<br>   可以定义文档发布的特定截止日期或截止日期，甚至可以使用通知配置JIRA工具，以便可以及时完成文档。</li></ol></li><li><ol start="6"><li>衡量文档所花费的时间<br>   JIRA工具没有用于衡量文档花费时间的默认功能。 JIRA工具与Tempo Timesheets捆绑在一起，可以测量文档花费的时间。</li></ol></li><li><ol start="7"><li>更快地提供反馈<br>   JIRA工具提供Confluence页面，只需单击几下即可连接到问题。 如果需要更新某些内容，则可以直接从Confluence页面创建问题。&#x2F;&#x2F;原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：<a href="https://www.yiibai.com/jira/jira-introduction.html">https://www.yiibai.com/jira/jira-introduction.html</a></li></ol></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h4 id=&quot;1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。&quot;&gt;&lt;a href=&quot;#1-JIRA是由澳大利亚公司Atlassian开</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jira简介</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(5)/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(5)/</id>
-    <published>2022-04-30T14:51:27.455Z</published>
-    <updated>2022-04-30T14:50:28.272Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"><a href="#1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。" class="headerlink" title="1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"></a>1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。</h4><h4 id="2-JIRA基于敏捷方法，目前的Jira版本为6。"><a href="#2-JIRA基于敏捷方法，目前的Jira版本为6。" class="headerlink" title="2. JIRA基于敏捷方法，目前的Jira版本为6。"></a>2. JIRA基于敏捷方法，目前的Jira版本为6。</h4><h4 id="3-以下是Jira提供的有用方面："><a href="#3-以下是Jira提供的有用方面：" class="headerlink" title="3. 以下是Jira提供的有用方面："></a>3. 以下是Jira提供的有用方面：</h4><ul><li>项目：用于非常有效地管理缺陷。</li><li>问题：它用于跟踪和管理缺陷&#x2F;问题。</li><li>工作流程：处理问题&#x2F;缺陷生命周期。假设我们有业务需求，我们创建技术设计，并从技术设计中创建测试用例。创建测试用例后，完成编码，然后对项目执行测试。使用Jira可以实现此设计工作流程。</li><li>搜索：轻松查找。假设在12月初完成了一个项目，其版本是1.0。现在，我们转到1.1版并在12月底完成，需要做的是添加新版本。通过Jira，我们可以了解早期版本中发生的事情，早期项目中发生了多少缺陷以及我们从早期项目中获得的学习。</li><li>仪表板：仪表板是在登录Jira时看到的显示。可以为多个项目创建多个仪表板。可以创建个人仪表板，并可以在仪表板中添加小工具，以便可以跟踪正在处理的分配和问题。<h2 id="1-为什么选择JIRA？"><a href="#1-为什么选择JIRA？" class="headerlink" title="1.为什么选择JIRA？"></a>1.为什么选择JIRA？</h2><h4 id="使用JIRA工具是由于以下原因："><a href="#使用JIRA工具是由于以下原因：" class="headerlink" title="使用JIRA工具是由于以下原因："></a>使用JIRA工具是由于以下原因：</h4></li><li><ol><li>计划，跟踪和工作更快JIRA是一种错误跟踪工具，主要用于跟踪，组织错误并确定其优先级，新增功能以及某些软件版本的改进。 项目细分为问题，问题可以是多种类型，例如错误，新功能，改进和文档任务。当软件的发布日期临近时，软件开发人员需要关注在指定日期之前要修复的剩余问题。 质量保证也很难维持文件的状态，即有时候很难跟踪所有内容。JIRA是处理上述问题的不错选择。 它使软件开发人员能够跟踪问题和改进。 它管理项目以及维护技术文档。</li></ol></li><li><ol start="2"><li>信息的主要来源JIRA是下一个软件版本的主要信息来源。 在JIRA上，软件开发人员的整个团队可以计划要添加的新功能以及在下一版本中修复的错误。它还有助于QA团队编写技术文档。 通过JIRA，QA团队可以检查软件开发人员新添加的每个功能的状态，并根据这些功能，他们可以计划如何记录新版本。</li></ol></li><li><ol start="3"><li>组织文档任务JIRA工具用于组织文档任务。 通过使用组件功能对多个任务进行分组非常有用，甚至可以创建自己的文档。 通过这种方式，您可以创建结构化的文档方式。</li></ol></li><li><ol start="4"><li>跟踪我们文档的进度它是跟踪文档进度的非常有用的工具。 JIRA工具提供了一个非常重要的功能，即饼图宏。 在饼图宏中可以查看打开任务，已关闭任务，已解决任务等任务。</li></ol></li><li><ol start="5"><li>帮助满足文档发布的截止日期<br>   可以定义文档发布的特定截止日期或截止日期，甚至可以使用通知配置JIRA工具，以便可以及时完成文档。</li></ol></li><li><ol start="6"><li>衡量文档所花费的时间<br>   JIRA工具没有用于衡量文档花费时间的默认功能。 JIRA工具与Tempo Timesheets捆绑在一起，可以测量文档花费的时间。</li></ol></li><li><ol start="7"><li>更快地提供反馈<br>   JIRA工具提供Confluence页面，只需单击几下即可连接到问题。 如果需要更新某些内容，则可以直接从Confluence页面创建问题。&#x2F;&#x2F;原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：<a href="https://www.yiibai.com/jira/jira-introduction.html">https://www.yiibai.com/jira/jira-introduction.html</a></li></ol></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h4 id=&quot;1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。&quot;&gt;&lt;a href=&quot;#1-JIRA是由澳大利亚公司Atlassian开</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jira简介</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(4)/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(4)/</id>
-    <published>2022-04-30T14:51:27.215Z</published>
-    <updated>2022-04-30T14:50:28.272Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"><a href="#1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。" class="headerlink" title="1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"></a>1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。</h4><h4 id="2-JIRA基于敏捷方法，目前的Jira版本为6。"><a href="#2-JIRA基于敏捷方法，目前的Jira版本为6。" class="headerlink" title="2. JIRA基于敏捷方法，目前的Jira版本为6。"></a>2. JIRA基于敏捷方法，目前的Jira版本为6。</h4><h4 id="3-以下是Jira提供的有用方面："><a href="#3-以下是Jira提供的有用方面：" class="headerlink" title="3. 以下是Jira提供的有用方面："></a>3. 以下是Jira提供的有用方面：</h4><ul><li>项目：用于非常有效地管理缺陷。</li><li>问题：它用于跟踪和管理缺陷&#x2F;问题。</li><li>工作流程：处理问题&#x2F;缺陷生命周期。假设我们有业务需求，我们创建技术设计，并从技术设计中创建测试用例。创建测试用例后，完成编码，然后对项目执行测试。使用Jira可以实现此设计工作流程。</li><li>搜索：轻松查找。假设在12月初完成了一个项目，其版本是1.0。现在，我们转到1.1版并在12月底完成，需要做的是添加新版本。通过Jira，我们可以了解早期版本中发生的事情，早期项目中发生了多少缺陷以及我们从早期项目中获得的学习。</li><li>仪表板：仪表板是在登录Jira时看到的显示。可以为多个项目创建多个仪表板。可以创建个人仪表板，并可以在仪表板中添加小工具，以便可以跟踪正在处理的分配和问题。<h2 id="1-为什么选择JIRA？"><a href="#1-为什么选择JIRA？" class="headerlink" title="1.为什么选择JIRA？"></a>1.为什么选择JIRA？</h2><h4 id="使用JIRA工具是由于以下原因："><a href="#使用JIRA工具是由于以下原因：" class="headerlink" title="使用JIRA工具是由于以下原因："></a>使用JIRA工具是由于以下原因：</h4></li><li><ol><li>计划，跟踪和工作更快JIRA是一种错误跟踪工具，主要用于跟踪，组织错误并确定其优先级，新增功能以及某些软件版本的改进。 项目细分为问题，问题可以是多种类型，例如错误，新功能，改进和文档任务。当软件的发布日期临近时，软件开发人员需要关注在指定日期之前要修复的剩余问题。 质量保证也很难维持文件的状态，即有时候很难跟踪所有内容。JIRA是处理上述问题的不错选择。 它使软件开发人员能够跟踪问题和改进。 它管理项目以及维护技术文档。</li></ol></li><li><ol start="2"><li>信息的主要来源JIRA是下一个软件版本的主要信息来源。 在JIRA上，软件开发人员的整个团队可以计划要添加的新功能以及在下一版本中修复的错误。它还有助于QA团队编写技术文档。 通过JIRA，QA团队可以检查软件开发人员新添加的每个功能的状态，并根据这些功能，他们可以计划如何记录新版本。</li></ol></li><li><ol start="3"><li>组织文档任务JIRA工具用于组织文档任务。 通过使用组件功能对多个任务进行分组非常有用，甚至可以创建自己的文档。 通过这种方式，您可以创建结构化的文档方式。</li></ol></li><li><ol start="4"><li>跟踪我们文档的进度它是跟踪文档进度的非常有用的工具。 JIRA工具提供了一个非常重要的功能，即饼图宏。 在饼图宏中可以查看打开任务，已关闭任务，已解决任务等任务。</li></ol></li><li><ol start="5"><li>帮助满足文档发布的截止日期<br>   可以定义文档发布的特定截止日期或截止日期，甚至可以使用通知配置JIRA工具，以便可以及时完成文档。</li></ol></li><li><ol start="6"><li>衡量文档所花费的时间<br>   JIRA工具没有用于衡量文档花费时间的默认功能。 JIRA工具与Tempo Timesheets捆绑在一起，可以测量文档花费的时间。</li></ol></li><li><ol start="7"><li>更快地提供反馈<br>   JIRA工具提供Confluence页面，只需单击几下即可连接到问题。 如果需要更新某些内容，则可以直接从Confluence页面创建问题。&#x2F;&#x2F;原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：<a href="https://www.yiibai.com/jira/jira-introduction.html">https://www.yiibai.com/jira/jira-introduction.html</a></li></ol></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h4 id=&quot;1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。&quot;&gt;&lt;a href=&quot;#1-JIRA是由澳大利亚公司Atlassian开</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jira简介</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(3)/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(3)/</id>
-    <published>2022-04-30T14:51:27.009Z</published>
-    <updated>2022-04-30T14:50:28.272Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"><a href="#1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。" class="headerlink" title="1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"></a>1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。</h4><h4 id="2-JIRA基于敏捷方法，目前的Jira版本为6。"><a href="#2-JIRA基于敏捷方法，目前的Jira版本为6。" class="headerlink" title="2. JIRA基于敏捷方法，目前的Jira版本为6。"></a>2. JIRA基于敏捷方法，目前的Jira版本为6。</h4><h4 id="3-以下是Jira提供的有用方面："><a href="#3-以下是Jira提供的有用方面：" class="headerlink" title="3. 以下是Jira提供的有用方面："></a>3. 以下是Jira提供的有用方面：</h4><ul><li>项目：用于非常有效地管理缺陷。</li><li>问题：它用于跟踪和管理缺陷&#x2F;问题。</li><li>工作流程：处理问题&#x2F;缺陷生命周期。假设我们有业务需求，我们创建技术设计，并从技术设计中创建测试用例。创建测试用例后，完成编码，然后对项目执行测试。使用Jira可以实现此设计工作流程。</li><li>搜索：轻松查找。假设在12月初完成了一个项目，其版本是1.0。现在，我们转到1.1版并在12月底完成，需要做的是添加新版本。通过Jira，我们可以了解早期版本中发生的事情，早期项目中发生了多少缺陷以及我们从早期项目中获得的学习。</li><li>仪表板：仪表板是在登录Jira时看到的显示。可以为多个项目创建多个仪表板。可以创建个人仪表板，并可以在仪表板中添加小工具，以便可以跟踪正在处理的分配和问题。<h2 id="1-为什么选择JIRA？"><a href="#1-为什么选择JIRA？" class="headerlink" title="1.为什么选择JIRA？"></a>1.为什么选择JIRA？</h2><h4 id="使用JIRA工具是由于以下原因："><a href="#使用JIRA工具是由于以下原因：" class="headerlink" title="使用JIRA工具是由于以下原因："></a>使用JIRA工具是由于以下原因：</h4></li><li><ol><li>计划，跟踪和工作更快JIRA是一种错误跟踪工具，主要用于跟踪，组织错误并确定其优先级，新增功能以及某些软件版本的改进。 项目细分为问题，问题可以是多种类型，例如错误，新功能，改进和文档任务。当软件的发布日期临近时，软件开发人员需要关注在指定日期之前要修复的剩余问题。 质量保证也很难维持文件的状态，即有时候很难跟踪所有内容。JIRA是处理上述问题的不错选择。 它使软件开发人员能够跟踪问题和改进。 它管理项目以及维护技术文档。</li></ol></li><li><ol start="2"><li>信息的主要来源JIRA是下一个软件版本的主要信息来源。 在JIRA上，软件开发人员的整个团队可以计划要添加的新功能以及在下一版本中修复的错误。它还有助于QA团队编写技术文档。 通过JIRA，QA团队可以检查软件开发人员新添加的每个功能的状态，并根据这些功能，他们可以计划如何记录新版本。</li></ol></li><li><ol start="3"><li>组织文档任务JIRA工具用于组织文档任务。 通过使用组件功能对多个任务进行分组非常有用，甚至可以创建自己的文档。 通过这种方式，您可以创建结构化的文档方式。</li></ol></li><li><ol start="4"><li>跟踪我们文档的进度它是跟踪文档进度的非常有用的工具。 JIRA工具提供了一个非常重要的功能，即饼图宏。 在饼图宏中可以查看打开任务，已关闭任务，已解决任务等任务。</li></ol></li><li><ol start="5"><li>帮助满足文档发布的截止日期<br>   可以定义文档发布的特定截止日期或截止日期，甚至可以使用通知配置JIRA工具，以便可以及时完成文档。</li></ol></li><li><ol start="6"><li>衡量文档所花费的时间<br>   JIRA工具没有用于衡量文档花费时间的默认功能。 JIRA工具与Tempo Timesheets捆绑在一起，可以测量文档花费的时间。</li></ol></li><li><ol start="7"><li>更快地提供反馈<br>   JIRA工具提供Confluence页面，只需单击几下即可连接到问题。 如果需要更新某些内容，则可以直接从Confluence页面创建问题。&#x2F;&#x2F;原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：<a href="https://www.yiibai.com/jira/jira-introduction.html">https://www.yiibai.com/jira/jira-introduction.html</a></li></ol></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h4 id=&quot;1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。&quot;&gt;&lt;a href=&quot;#1-JIRA是由澳大利亚公司Atlassian开</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jira简介</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(2)/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B%20-%20%E5%89%AF%E6%9C%AC%20(2)/</id>
-    <published>2022-04-30T14:51:26.753Z</published>
-    <updated>2022-04-30T14:50:28.272Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"><a href="#1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。" class="headerlink" title="1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"></a>1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。</h4><h4 id="2-JIRA基于敏捷方法，目前的Jira版本为6。"><a href="#2-JIRA基于敏捷方法，目前的Jira版本为6。" class="headerlink" title="2. JIRA基于敏捷方法，目前的Jira版本为6。"></a>2. JIRA基于敏捷方法，目前的Jira版本为6。</h4><h4 id="3-以下是Jira提供的有用方面："><a href="#3-以下是Jira提供的有用方面：" class="headerlink" title="3. 以下是Jira提供的有用方面："></a>3. 以下是Jira提供的有用方面：</h4><ul><li>项目：用于非常有效地管理缺陷。</li><li>问题：它用于跟踪和管理缺陷&#x2F;问题。</li><li>工作流程：处理问题&#x2F;缺陷生命周期。假设我们有业务需求，我们创建技术设计，并从技术设计中创建测试用例。创建测试用例后，完成编码，然后对项目执行测试。使用Jira可以实现此设计工作流程。</li><li>搜索：轻松查找。假设在12月初完成了一个项目，其版本是1.0。现在，我们转到1.1版并在12月底完成，需要做的是添加新版本。通过Jira，我们可以了解早期版本中发生的事情，早期项目中发生了多少缺陷以及我们从早期项目中获得的学习。</li><li>仪表板：仪表板是在登录Jira时看到的显示。可以为多个项目创建多个仪表板。可以创建个人仪表板，并可以在仪表板中添加小工具，以便可以跟踪正在处理的分配和问题。<h2 id="1-为什么选择JIRA？"><a href="#1-为什么选择JIRA？" class="headerlink" title="1.为什么选择JIRA？"></a>1.为什么选择JIRA？</h2><h4 id="使用JIRA工具是由于以下原因："><a href="#使用JIRA工具是由于以下原因：" class="headerlink" title="使用JIRA工具是由于以下原因："></a>使用JIRA工具是由于以下原因：</h4></li><li><ol><li>计划，跟踪和工作更快JIRA是一种错误跟踪工具，主要用于跟踪，组织错误并确定其优先级，新增功能以及某些软件版本的改进。 项目细分为问题，问题可以是多种类型，例如错误，新功能，改进和文档任务。当软件的发布日期临近时，软件开发人员需要关注在指定日期之前要修复的剩余问题。 质量保证也很难维持文件的状态，即有时候很难跟踪所有内容。JIRA是处理上述问题的不错选择。 它使软件开发人员能够跟踪问题和改进。 它管理项目以及维护技术文档。</li></ol></li><li><ol start="2"><li>信息的主要来源JIRA是下一个软件版本的主要信息来源。 在JIRA上，软件开发人员的整个团队可以计划要添加的新功能以及在下一版本中修复的错误。它还有助于QA团队编写技术文档。 通过JIRA，QA团队可以检查软件开发人员新添加的每个功能的状态，并根据这些功能，他们可以计划如何记录新版本。</li></ol></li><li><ol start="3"><li>组织文档任务JIRA工具用于组织文档任务。 通过使用组件功能对多个任务进行分组非常有用，甚至可以创建自己的文档。 通过这种方式，您可以创建结构化的文档方式。</li></ol></li><li><ol start="4"><li>跟踪我们文档的进度它是跟踪文档进度的非常有用的工具。 JIRA工具提供了一个非常重要的功能，即饼图宏。 在饼图宏中可以查看打开任务，已关闭任务，已解决任务等任务。</li></ol></li><li><ol start="5"><li>帮助满足文档发布的截止日期<br>   可以定义文档发布的特定截止日期或截止日期，甚至可以使用通知配置JIRA工具，以便可以及时完成文档。</li></ol></li><li><ol start="6"><li>衡量文档所花费的时间<br>   JIRA工具没有用于衡量文档花费时间的默认功能。 JIRA工具与Tempo Timesheets捆绑在一起，可以测量文档花费的时间。</li></ol></li><li><ol start="7"><li>更快地提供反馈<br>   JIRA工具提供Confluence页面，只需单击几下即可连接到问题。 如果需要更新某些内容，则可以直接从Confluence页面创建问题。&#x2F;&#x2F;原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：<a href="https://www.yiibai.com/jira/jira-introduction.html">https://www.yiibai.com/jira/jira-introduction.html</a></li></ol></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h4 id=&quot;1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。&quot;&gt;&lt;a href=&quot;#1-JIRA是由澳大利亚公司Atlassian开</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jira简介</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/02_JIRA%E5%AE%89%E8%A3%85/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/02_JIRA%E5%AE%89%E8%A3%85/</id>
-    <published>2022-04-30T14:51:25.962Z</published>
-    <updated>2022-04-30T14:57:37.441Z</updated>
-    
-    <content type="html"><![CDATA[<p>JIRA是一个集中式软件，其中所有项目都登录到中央数据库并完成工作流程。工作流程控制项目的状态。</p><h4 id="如何下载和安装JIRA软件"><a href="#如何下载和安装JIRA软件" class="headerlink" title="如何下载和安装JIRA软件"></a>如何下载和安装JIRA软件</h4><p>以下是下载和安装JIRA软件的步骤：</p><p><strong>第1步：</strong> 在Google&#x2F;百度搜索引擎框中输入“Download JIRA software”。屏幕显示如下：</p><p><img src="/assets/2/image-20220430225238-7u6rd5e.png" alt="image.png"></p><p><strong>第2步：</strong> 单击“Download Jira Software Server”。点击后，屏幕显示如下：</p><p><img src="/assets/2/image-20220430225249-zsyrfbq.png" alt="image.png"></p><p>在上面的屏幕中，选择操作系统环境类型，然后单击“下载”按钮。假设，我在Windows上工作，然后选择“Windows 64 Bit”。单击“下载”按钮，将出现如下对话框：</p><p><img src="/assets/2/image-20220430225256-aqbwzh8.png" alt="image.png"></p><p>在上面的对话框中，单击复选框，然后单击“Get started”按钮。单击“Get started”按钮，屏幕显示如下：</p><p><img src="/assets/2/image-20220430225304-shes10s.png" alt="image.png"></p><p>现在，找到已下载的<code>.exe</code>文件，然后单击下载的<code>.exe</code>文件。单击下载的文件，安装将开始。<br>安装向导将显示如下：<br><img src="/assets/2/image-20220430225310-k3kx9zb.png" alt="image.png"></p><p>单击“下一步”按钮。选择适当的安装类型，然后单击“下一步”按钮。</p><p><img src="/assets/2/image-20220430225316-1i6h4hu.png" alt="image.png"></p><p>以下是JIRA软件的详细信息，单击“安装”按钮。</p><p><img src="/assets/2/image-20220430225323-10mekus.png" alt="image.png"></p><p>以下屏幕显示安装已启动。</p><p><img src="/assets/2/image-20220430225330-7kzhxu9.png" alt="image.png"></p><p>安装完成后，屏幕显示如下：</p><p><img src="/assets/2/image-20220430225337-l1xk6hs.png" alt="image.png"></p><p>单击“完成”按钮。<br><img src="/assets/2/image-20220430225344-ix71og0.png" alt="image.png"></p><p>现在，JIRA已在Web浏览器中启动，必须在Jira中注册该帐户。必须选择许可证类型并输入组织的名称。</p><p><img src="/assets/2/image-20220430225351-idrm48k.png" alt="image.png"></p><p>单击 <strong>Generate License(生成许可证)</strong> 按钮后，将出现一个弹出框，该弹出框是一个确认框，询问您是否要在服务器上安装许可证密钥。单击“是”按钮。</p><p><img src="/assets/2/image-20220430225356-ggs2bb2.png" alt="image.png"></p><p>填写登录Jira所需的管理员详细信息。单击“下一步”按钮。</p><p><img src="/assets/2/image-20220430225402-42c0eza.png" alt="image.png"></p><p>Jira将开始完成您的设置。</p><p><img src="/assets/2/image-20220430225408-hcu09nu.png" alt="image.png"></p><p>当设置了Jira，就可以自由使用Jira软件。如下界面所示 -</p><p><img src="/assets/2/image-20220430225414-q8v9c1k.png" alt="image.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;JIRA是一个集中式软件，其中所有项目都登录到中央数据库并完成工作流程。工作流程控制项目的状态。&lt;/p&gt;
-&lt;h4 id=&quot;如何下载和安装JIRA软件&quot;&gt;&lt;a href=&quot;#如何下载和安装JIRA软件&quot; class=&quot;headerlink&quot; title=&quot;如何下载和安装JIR</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jira简介</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B/</id>
-    <published>2022-04-30T14:42:34.882Z</published>
-    <updated>2022-04-30T14:50:28.272Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"><a href="#1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。" class="headerlink" title="1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。"></a>1. JIRA是由澳大利亚公司Atlassian开发的软件测试工具。 它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。</h4><h4 id="2-JIRA基于敏捷方法，目前的Jira版本为6。"><a href="#2-JIRA基于敏捷方法，目前的Jira版本为6。" class="headerlink" title="2. JIRA基于敏捷方法，目前的Jira版本为6。"></a>2. JIRA基于敏捷方法，目前的Jira版本为6。</h4><h4 id="3-以下是Jira提供的有用方面："><a href="#3-以下是Jira提供的有用方面：" class="headerlink" title="3. 以下是Jira提供的有用方面："></a>3. 以下是Jira提供的有用方面：</h4><ul><li>项目：用于非常有效地管理缺陷。</li><li>问题：它用于跟踪和管理缺陷&#x2F;问题。</li><li>工作流程：处理问题&#x2F;缺陷生命周期。假设我们有业务需求，我们创建技术设计，并从技术设计中创建测试用例。创建测试用例后，完成编码，然后对项目执行测试。使用Jira可以实现此设计工作流程。</li><li>搜索：轻松查找。假设在12月初完成了一个项目，其版本是1.0。现在，我们转到1.1版并在12月底完成，需要做的是添加新版本。通过Jira，我们可以了解早期版本中发生的事情，早期项目中发生了多少缺陷以及我们从早期项目中获得的学习。</li><li>仪表板：仪表板是在登录Jira时看到的显示。可以为多个项目创建多个仪表板。可以创建个人仪表板，并可以在仪表板中添加小工具，以便可以跟踪正在处理的分配和问题。<h2 id="1-为什么选择JIRA？"><a href="#1-为什么选择JIRA？" class="headerlink" title="1.为什么选择JIRA？"></a>1.为什么选择JIRA？</h2><h4 id="使用JIRA工具是由于以下原因："><a href="#使用JIRA工具是由于以下原因：" class="headerlink" title="使用JIRA工具是由于以下原因："></a>使用JIRA工具是由于以下原因：</h4></li><li><ol><li>计划，跟踪和工作更快JIRA是一种错误跟踪工具，主要用于跟踪，组织错误并确定其优先级，新增功能以及某些软件版本的改进。 项目细分为问题，问题可以是多种类型，例如错误，新功能，改进和文档任务。当软件的发布日期临近时，软件开发人员需要关注在指定日期之前要修复的剩余问题。 质量保证也很难维持文件的状态，即有时候很难跟踪所有内容。JIRA是处理上述问题的不错选择。 它使软件开发人员能够跟踪问题和改进。 它管理项目以及维护技术文档。</li></ol></li><li><ol start="2"><li>信息的主要来源JIRA是下一个软件版本的主要信息来源。 在JIRA上，软件开发人员的整个团队可以计划要添加的新功能以及在下一版本中修复的错误。它还有助于QA团队编写技术文档。 通过JIRA，QA团队可以检查软件开发人员新添加的每个功能的状态，并根据这些功能，他们可以计划如何记录新版本。</li></ol></li><li><ol start="3"><li>组织文档任务JIRA工具用于组织文档任务。 通过使用组件功能对多个任务进行分组非常有用，甚至可以创建自己的文档。 通过这种方式，您可以创建结构化的文档方式。</li></ol></li><li><ol start="4"><li>跟踪我们文档的进度它是跟踪文档进度的非常有用的工具。 JIRA工具提供了一个非常重要的功能，即饼图宏。 在饼图宏中可以查看打开任务，已关闭任务，已解决任务等任务。</li></ol></li><li><ol start="5"><li>帮助满足文档发布的截止日期<br>   可以定义文档发布的特定截止日期或截止日期，甚至可以使用通知配置JIRA工具，以便可以及时完成文档。</li></ol></li><li><ol start="6"><li>衡量文档所花费的时间<br>   JIRA工具没有用于衡量文档花费时间的默认功能。 JIRA工具与Tempo Timesheets捆绑在一起，可以测量文档花费的时间。</li></ol></li><li><ol start="7"><li>更快地提供反馈<br>   JIRA工具提供Confluence页面，只需单击几下即可连接到问题。 如果需要更新某些内容，则可以直接从Confluence页面创建问题。&#x2F;&#x2F;原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：<a href="https://www.yiibai.com/jira/jira-introduction.html">https://www.yiibai.com/jira/jira-introduction.html</a></li></ol></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h4 id=&quot;1-JIRA是由澳大利亚公司Atlassian开发的软件测试工具。-它是一个错误跟踪工具，可报告软件或移动应用程序相关的所有问题。JIRA这个词来自日语单词，即“Gojira”，意思是哥斯拉。&quot;&gt;&lt;a href=&quot;#1-JIRA是由澳大利亚公司Atlassian开</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>easymock</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_easymock/01_easymock/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_easymock/01_easymock/</id>
-    <published>2022-04-29T18:11:10.749Z</published>
-    <updated>2022-04-29T18:13:36.311Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="02_接口测试篇" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/"/>
-    
-    <category term="05_easymock" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05-easymock/"/>
-    
-    
-    <category term="课中" scheme="http://example.com/tags/%E8%AF%BE%E4%B8%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>apipost</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/04_apipost/01_apipost/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/04_apipost/01_apipost/</id>
-    <published>2022-04-29T18:11:08.767Z</published>
-    <updated>2022-04-29T18:13:45.903Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="02_接口测试篇" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/"/>
-    
-    <category term="04_apipost" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/04-apipost/"/>
-    
-    
-    <category term="课中" scheme="http://example.com/tags/%E8%AF%BE%E4%B8%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Robotium</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/06_Robotium/01_Robotium/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/06_Robotium/01_Robotium/</id>
-    <published>2022-04-29T17:22:28.082Z</published>
-    <updated>2022-04-30T05:22:29.805Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
-    
-    <category term="03_APP自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="06_Robotium" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/06-Robotium/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MonkeyRunner</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/05_MonkeyRunner/01_MonkeyRunner/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/05_MonkeyRunner/01_MonkeyRunner/</id>
-    <published>2022-04-29T17:22:26.084Z</published>
-    <updated>2022-04-30T05:22:21.656Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
-    
-    <category term="03_APP自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="05_MonkeyRunner" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/05-MonkeyRunner/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>monkey</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/04_monkey/01_monkey/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/04_monkey/01_monkey/</id>
-    <published>2022-04-29T17:22:24.310Z</published>
-    <updated>2022-04-30T05:22:13.680Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
-    
-    <category term="03_APP自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="04_monkey" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/04-monkey/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>uiautomator</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/03_uiautomator/01_uiautomator/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/03_uiautomator/01_uiautomator/</id>
-    <published>2022-04-29T17:22:22.604Z</published>
-    <updated>2022-04-30T05:22:05.870Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
-    
-    <category term="03_APP自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="03_uiautomator" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/03-uiautomator/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>instruments</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/02_instruments/01_instruments/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/02_instruments/01_instruments/</id>
-    <published>2022-04-29T17:22:20.912Z</published>
-    <updated>2022-04-30T05:21:56.147Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
-    
-    <category term="03_APP自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_instruments" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/02-instruments/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>appium</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/01_appium/01_appium/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/01_appium/01_appium/</id>
-    <published>2022-04-29T17:22:19.123Z</published>
-    <updated>2022-04-30T05:21:34.407Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
-    
-    <category term="03_APP自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="01_appium" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/01-appium/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>truetimec++ java visual basic</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_truetimec++%20java%20visual%20basic/01_truetimec++%20java%20visual%20basic/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_truetimec++%20java%20visual%20basic/01_truetimec++%20java%20visual%20basic/</id>
-    <published>2022-04-29T17:15:28.541Z</published>
-    <updated>2022-04-30T05:27:07.923Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="14_白盒测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="07_truetimec++ java visual basic" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07-truetimec-java-visual-basic/"/>
     
     
     <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
