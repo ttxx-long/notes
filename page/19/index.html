@@ -563,7 +563,7 @@
                             &nbsp;
                             11_Tapd
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/11_TAPD/01_Tapd/">tapd</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/11_TAPD/01_Tapd/">tapd</a></li>  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/11_TAPD/02_xmind%E8%BD%ACExcel/">xmind转Excel</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -1388,6 +1388,81 @@
 </aside>
             
             <section id="main">
+        <article id="post-软件测试笔记/02_测试理论/05_第五章APP测试/999_APP测试文件/03_逍遥虚拟机" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05-APP%E6%B5%8B%E8%AF%95/">05_APP测试</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05-APP%E6%B5%8B%E8%AF%95/01-%E6%96%87%E4%BB%B6/">01_文件</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/" rel="tag">测试理论</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_%E9%80%8D%E9%81%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/">
+            <time datetime="2022-04-28T09:42:19.121Z" itemprop="datePublished">2022-04-28</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_%E9%80%8D%E9%81%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/">逍遥虚拟机</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+        
+        
+            <p>1、先进入逍遥模拟器安装目录（MEmu文件夹下），如：D:\Program Files\Microvirt\MEmu  （如果设置变量  不需要）<br>2、在CMD下输入：adb connect 127.0.0.1:21503<br>我输入后提示：already connected to 127.0.0.1:21503<br>3、查看是否连接到模拟器，输入命令：adb devices<br>我输入后提示以下两行：<br>List of devices attached<br>127.0.0.1:21503 device<br>4、OK，连接成功<br>5.查询模拟器信息：adb devices -l<br>6..dumpsys:查看包名和activity<br>（1）启动要查看的程序<br>（2）命令行输入：adb shell dumpsys window w |findstr / |findstr name&#x3D;<br> (3) 使用adb shell dumpsys window | findstr mCurrentFocus  命令查看当前运行的包名和Activity更清晰一些。</p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-软件测试笔记/02_测试理论/05_第五章APP测试/999_APP测试文件/02_常用的adb的命令操作" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -2187,100 +2262,6 @@
             </div>   
             <div class="article-more-link">
                 <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/01_QNET-%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-软件测试笔记/02_测试理论/04_第四章性能测试/01_性能测试" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04-%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">04_性能测试</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E8%AF%BE%E5%89%8D/" rel="tag">课前</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/01_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">
-            <time datetime="2022-04-28T09:42:19.067Z" itemprop="datePublished">2022-04-28</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/01_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">性能测试</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><ol>
-<li><h3 id="性能测试的定义-x2F-什么是性能测试？"><a href="#性能测试的定义-x2F-什么是性能测试？" class="headerlink" title="性能测试的定义&#x2F;什么是性能测试？"></a>性能测试的定义&#x2F;什么是性能测试？</h3><ol>
-<li>涉及到大批量的并发时系统或软件的承载能力</li>
-</ol>
-</li>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/01_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/#more">查看更多</a>
             </div>
         
         <footer class="article-footer">
