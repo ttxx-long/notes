@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-04T01:20:00.635Z</updated>
+  <updated>2022-05-07T10:40:05.049Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>bugzilla安装</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/04_bugzilla/02_bugzilla%E5%AE%89%E8%A3%85/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/04_bugzilla/02_bugzilla%E5%AE%89%E8%A3%85/</id>
+    <published>2022-05-07T10:38:21.190Z</published>
+    <updated>2022-05-07T10:40:05.049Z</updated>
+    
+    <content type="html"><![CDATA[<p>安装bugzilla<br>安装bugzilla有两种方式，一种是利用Git克隆源码，这样有利于以后更新。<br>第二种方式是直接到官网下载源码。我采用的是第二种，以为是外网，没有翻墙工具网速很慢我怕Git失败会出现很多问题就直接去下载源码。下载之后放在自己喜欢的磁盘中就可以。但是一般存放路径不用出现中文。Bugzilla安装可以说是很简单了。最重要的还是配置。<br>下载地址：<a href="https://www.bugzilla.org/">https://www.bugzilla.org/</a></p><p>安装ActivePerl<br>ActivePerl也是一样到官网下载，但是官网只能下载5.26和5.28的版本这两个版本太高了有一些插件无法安装。因此我在网上找了一些资源下载的5.20的版本：ActivePerl-5.20.2.2002-MSWin32-x64-299195.msi。下载好之后直接点击运行就可以。</p><p><img src="/assets/2/image-20220507183216-c1cjmcg.png" alt="image.png"></p><p>选择同意：</p><p><img src="/assets/2/image-20220507183225-5opabz0.png" alt="image.png"></p><p>选择第一个：</p><p><img src="/assets/2/image-20220507183232-8xox7er.png" alt="image.png"></p><p>可以根据自己的情况选择文件安装，默认是安装在c盘下的Perl64文件：</p><p><img src="/assets/2/image-20220507183240-2jpt9kq.png" alt="image.png"></p><p><img src="/assets/2/image-20220507183251-87d36kf.png" alt="image.png"></p><p><img src="/assets/2/image-20220507183257-t9m6mdq.png" alt="image.png"></p><p><img src="/assets/2/image-20220507183303-0ht4i4o.png" alt="image.png"></p><p><img src="/assets/2/image-20220507183310-irxh0iw.png" alt="image.png"></p><p>安装好之后将bin文件添加到系统环境变量。Win+R键打开cmd输入ppm version出现以下内容就表示安装成功以及环境变量配置成功。</p><p><img src="/assets/2/image-20220507183318-q20jbf2.png" alt="image.png"></p><p>配置bugzilla<br>进入bugzilla安装文件按住shift+鼠标右键进去cmd命令窗口</p><p><img src="/assets/2/image-20220507183327-e1rfnuk.png" alt="image.png"></p><p>输入checksetup.pl运行checksetup.pl文件</p><p><img src="/assets/2/image-20220507183335-wizp4a2.png" alt="image.png"></p><p>可以看到bugzilla缺少的插件有可选的，有必选的，必选的就必须安装。</p><p><img src="/assets/2/image-20220507183342-sa8mwkl.png" alt="image.png"></p><p>将安装命令复制到命令行按下回车就可以安装，从上往下依次安装。如果安装失败可以先跳过，最后再来安装，有些插件有依赖关系。安装命令如：ppm install DateTime</p><p>安装完之后重新输入checksetup.pl会是这样</p><p><img src="/assets/2/image-20220507183350-pfaoz9w.png" alt="image.png"></p><p>接下来就是会在bufzilla目录下生成一个localconfig的文件，我们需要进去配置一下才能连接我们的数据库。</p><p><img src="/assets/2/image-20220507183357-l1xp9cp.png" alt="image.png"></p><p>由于我是在本地做配置，所以就只需要改这些地方就可以了，如果需要连接远程数据库还需要修改$db_host的值。配置完之后再执行checksetup.pl就会自动创建数据库。</p><p><img src="/assets/2/image-20220507183404-rvmp4o5.png" alt="image.png"></p><p>但是呢，在这个过程中我遇到了一些挫折，首先是数据库连接失败，原因是我没有启动本地数据库。手动启动数据库之后又出现的问题是数据库版本太低，又将我5.5版本的数据库升级到了5.7版本。这里提醒一下啊，不要直接将数据库版本升级太高，可能Navicat工具不支持那么高版本的数据库还得升级Navicat工具。<br>输入管理员名字和账号（该账号是一个email地址）以及管理员登陆的密码.和确认密码</p><p><img src="/assets/2/image-20220507183413-mgzryyf.png" alt="image.png"></p><p>到这里bugzilla就配置好了。</p><p>安装mysql数据库<br>安装数据库其实很简单，我安装的是mysql数据库，去mysql官网下载自己需要的mysql安装包，运行程序根据提示就可以了。如果是第一次安装mysql的可以去网上看看安装教程，我就不做详细介绍了。我重点来讲一下本地数据库升级应该注意什么。<br>首先升级本地数据库我们就得先备份数据库的数据。不然就会发现数据库一片空白，以前的数据全没了。<br>第一步：找到数据库安装路径C:\ProgramData\MySQL，将Mysql server5.5备份到别的地方。<br>第二步：到任务管理器将MySQL服务关闭。<br>第三步：通过控制面板的程序卸载将数据库卸载即可。<br>第四步：安装提前下好的数据库，我安装的是MySQL5.7.20版本。注重要的一步是取消“Development Components”的勾选（因为我们只需要安装mysql server）</p><p><img src="/assets/2/image-20220507183424-qm55dtu.png" alt="image.png"></p><p>第五步：我们将备份的Mysql server5.5下的data复制到C:\ProgramData\MySQL\ Mysql server5.7文件夹下，直接替换掉就可以。这样我们启动数据库还是能看到以前的数据。如果替换不掉就需要去任务管理器去将MySQL服务关掉。</p><p>配置IIS<br>IIS作为web服务器是非常好用的，一般Windows系统都会自带。想了解更多可以去网上查查资料，这里只讲如何配置。<br>第一步：需要先开启这些服务。WIn+R，输入OptionalFeatures，打开Windows功能，选上如下的功能。</p><p><img src="/assets/2/image-20220507183436-3zhpfk8.png" alt="image.png"></p><p>第二步：继续Win+R，输入inetmgr，打开Windows IIS配置管理工具。鼠标右键选择添加网站。</p><p><img src="/assets/2/image-20220507183443-nu7r0za.png" alt="image.png"></p><p>第三步：如下图。端口号为了避免影响以后的开发，可以选择一个不常用的端口。</p><p><img src="/assets/2/image-20220507183453-tpa89jp.png" alt="image.png"></p><p>双击默认文档，添加一个index.cgi</p><p><img src="/assets/2/image-20220507183500-cko5dnc.png" alt="image.png"></p><p>双击处理程序映射，添加脚本映射，perl.exe的路径根据实际情况来。</p><p><img src="/assets/2/image-20220507183507-wo91et0.png" alt="image.png"></p><p>然后预览一下，出现这个界面就算完成啦。</p><p><img src="/assets/2/image-20220507183514-6l4zmva.png" alt="image.png"></p><p>最后如果喜欢中文的可以将汉语包放大bugzilla&#x2F;template下就可以了。</p><p><img src="/assets/2/image-20220507183519-272bbih.png" alt="image.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;安装bugzilla&lt;br&gt;安装bugzilla有两种方式，一种是利用Git克隆源码，这样有利于以后更新。&lt;br&gt;第二种方式是直接到官网下载源码。我采用的是第二种，以为是外网，没有翻墙工具网速很慢我怕Git失败会出现很多问题就直接去下载源码。下载之后放在自己喜欢的磁盘中就可</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="04_bugzilla" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/04-bugzilla/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>tapd</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/11_TAPD/01_Tapd/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/11_TAPD/01_Tapd/</id>
+    <published>2022-05-07T10:36:28.604Z</published>
+    <updated>2022-05-07T10:37:34.250Z</updated>
+    
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="11_Tapd" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/11-Tapd/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
   
   <entry>
     <title>Airtest命令运行脚本与报告生成</title>
@@ -503,69 +552,6 @@
     <summary type="html">&lt;p&gt;JIRA应用程序可用于将工作分解为问题。问题可以表示为任务，子任务，bud，epic，功能请求或其他工作。每个Jira软件都附带一些适合您的项目和团队的默认问题类型。&lt;/p&gt;
 &lt;p&gt;JIRA软件附带有三种类型的默认Jira问题类型：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/as</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11_JIRA登录</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/11_JIRA%E7%99%BB%E5%BD%95/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/11_JIRA%E7%99%BB%E5%BD%95/</id>
-    <published>2022-05-03T04:06:19.792Z</published>
-    <updated>2022-05-03T04:10:16.693Z</updated>
-    
-    <content type="html"><![CDATA[<p>以下是登录Jira的步骤：</p><ul><li>要登录Jira，请转到我们在Jira中创建的网站。出现登录页面，然后您需要填写用户名和密码等凭据。单击继续按钮。<br><img src="/assets/2/image-20220503120850-xjv99s2.png" alt="image.png"></li><li>输入密码，然后单击“登录”按钮。<br><img src="/assets/2/image-20220503120858-r3yruj5.png" alt="image.png"></li><li>如果密码不正确，则会显示验证消息“不正确的电子邮件地址或密码”。这显示在下面的屏幕截图中：</li></ul><p><img src="/assets/2/image-20220503120905-bvwcebu.png" alt="image.png"></p><ul><li>要解决上述错误，请单击“无法登录”？链接。点击链接，我们将看到如下所示的屏幕：<br><img src="/assets/2/image-20220503120911-xt71qda.png" alt="image.png"></li><li>单击“发送恢复链接”按钮。单击“发送恢复链接”按钮后，邮件将发送到已注册的电子邮件ID，并要求您重置密码。当您单击<strong>重置我的密码</strong>按钮时，将显示如下所示的屏幕：</li></ul><p><img src="/assets/2/image-20220503120917-avhqbw3.png" alt="image.png"></p><ul><li>输入新密码，然后单击“继续”按钮。</li><li>当我们提供错误的用户名或密码时，会出现上述情况。成功登录后，您的jira帐户将会打开，并出现如下所示的屏幕：</li></ul><p><img src="/assets/2/image-20220503120923-1jt0lmc.png" alt="image.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;以下是登录Jira的步骤：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;要登录Jira，请转到我们在Jira中创建的网站。出现登录页面，然后您需要填写用户名和密码等凭据。单击继续按钮。&lt;br&gt;&lt;img src=&quot;/assets/2/image-20220503120850-xjv99s2.p</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>03_JIRA瀑布模型</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/03_JIRA%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/03_JIRA%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B/</id>
-    <published>2022-04-30T14:51:28.812Z</published>
-    <updated>2022-05-03T03:03:09.541Z</updated>
-    
-    <content type="html"><![CDATA[<p>在了解敏捷和JIRA之前，需要了解瀑布模型。</p><h2 id="什么是瀑布模型？"><a href="#什么是瀑布模型？" class="headerlink" title="什么是瀑布模型？"></a>什么是瀑布模型？</h2><p>瀑布模型是IT行业用于开发软件的最古老的模型。不同公司使用不同模型和流程，但瀑布模型是IT行业中最古老，最安全，最简单的模型。</p><p>它是构建代表现实生活的软件的最简单模型。下面我们来了解瀑布模型。瀑布模型分为多个阶段：<br><img src="/assets/2/image-20220503104035-tukzgc5.png" alt="image.png"></p><h4 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h4><p>假设有客户想要开发软件，然后客户联系到一家软件公司。假设客户联系了这家服务型公司并要求该公司为他们构建软件。</p><p><strong>公司做什么？</strong></p><p>公司将收集客户的所有需求，知识或客户希望拥有的软件，公司将从客户收集所有信息并准备文档。执行此活动后，设计阶段即开始。</p><h4 id="设计"><a href="#设计" class="headerlink" title="设计"></a>设计</h4><p>在此阶段，我们准备高级和低级设计。在开发软件之前，需要设计软件。假设客户想要与亚马逊类似的电子商务网站，那么网站的UI(用户界面)将由设计者制作，数据流也在这个阶段设计，数据将如何流动。完成此阶段后，开发阶段即可开始。</p><h4 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h4><p>在开发阶段，软件开发团队开始编写和开发软件。这是瀑布模型的最长阶段，因为开发人员需要更多时间来构建软件。一旦软件开发完成，项目就会交给测试人员。</p><h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><p>测试团队将测试软件，如果发现有错误，他们会通知开发人员他们发现的问题并确保错误得到修复。测试团队确保完成端到端软件。</p><h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><p>测试项目后，将部署项目，以使其成为实时用户的实时用户。</p><h4 id="维护"><a href="#维护" class="headerlink" title="维护"></a>维护</h4><p>最后，项目已部署并可供客户使用。客户希望维护期为一年或两年，因为如果发现错误或想要在项目中稍微增强功能，那么需要一些团队来处理这些问题。由于这个原因，需要一个维护期。</p><h2 id="瀑布模型的例子"><a href="#瀑布模型的例子" class="headerlink" title="瀑布模型的例子"></a>瀑布模型的例子</h2><p><img src="/assets/2/image-20220503104045-srhqwy5.png" alt="image.png"></p><p>假设客户想要一个像WhatsApp这样的应用程序，那么客户就会找到一个软件开发公司并讨论2个月。软件开发公司在2个月内完成了所有要求的记录。软件开发公司的开发团队开始开发软件，并假设开发软件花了大约10个月的时间。这意味着已经使用了12个月，即需求阶段为2个月，开发阶段为10个月，但客户仍然不了解内部阶段。开发完成后，测试完成，软件质量测试大约需要2个月。一旦测试完成，它将进入集成并启动，以便WhatsApp进入交付试用。然而，当它到达客户端时，客户说它花了一年多的时间，收到的软件却不是他所期望的。之所以发生这种情况，是因为客户只与软件团队进行了口头沟通。如果客户想要对软件进行一些更改，那么整个过程将再次执行。</p><h4 id="瀑布模型的优点"><a href="#瀑布模型的优点" class="headerlink" title="瀑布模型的优点"></a>瀑布模型的优点</h4><ul><li>简单易懂，易于使用</li><li>它代表了您想要在现实生活中完成的所有任务。例如，您需要客户端的需求。它包含不同的阶段，每个阶段仅在前一阶段完成时启动。</li><li>具体的可交付成果和审核流程。</li><li>每个阶段都有一个特定的可交付和审核流程。在需求阶段之后，我们满足客户需求的所有要求。软件开发完成后，我们就可以交付。</li><li>阶段不重叠。</li><li>在该模型中，相位不重叠，即，它们一次完成一次。上一阶段完成后，只有下一阶段开始。例如，开发阶段将仅在设计阶段完成时开始。</li></ul><h4 id="瀑布模型的缺点"><a href="#瀑布模型的缺点" class="headerlink" title="瀑布模型的缺点"></a>瀑布模型的缺点</h4><ul><li>产品上线时间很长。</li><li>只有在完成所有阶段后才会发布产品。因此，此模型需要很长时间才能发布产品。</li><li>出乎意料的结果。</li><li>期望和收到的内容大多不同，因为客户根据文档仅了解产品。客户只有一个想法，这是一个有记录的想法。</li><li>不适合改变需求。</li><li>瀑布模型不适用于需求处于中度到高度变化风险的项目。如果要求发生变化，则不建议使用此模型，因为所有要求都是在需求阶段完成的，这是一个非常耗时的过程。</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;在了解敏捷和JIRA之前，需要了解瀑布模型。&lt;/p&gt;
-&lt;h2 id=&quot;什么是瀑布模型？&quot;&gt;&lt;a href=&quot;#什么是瀑布模型？&quot; class=&quot;headerlink&quot; title=&quot;什么是瀑布模型？&quot;&gt;&lt;/a&gt;什么是瀑布模型？&lt;/h2&gt;&lt;p&gt;瀑布模型是IT行业用于开发软件的</summary>
       
     
     

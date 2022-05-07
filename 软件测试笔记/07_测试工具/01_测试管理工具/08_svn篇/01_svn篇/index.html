@@ -9,16 +9,131 @@
         <meta name="keywords" content="课后" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="article">
+    <meta name="description" content="文章目录  什么是SVN？ 版本控制： 常用的版本控制工具： SVN的优势  搭建VisualSVN Server服务器  SVN服务器创建仓库与用户 3.1 创建仓库 3.2 SVN标准目录结构 3.3 创建用户 3.4 修改仓库权限  安装TortoiseSVN客户端  使用Checkout检出仓库代码  添加文件、修改文件 6.1 添加文件 6.2 查看日志 6.3 修改文件  版本回滚">
+<meta property="og:type" content="article">
 <meta property="og:title" content="svn篇">
 <meta property="og:url" content="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/08_svn%E7%AF%87/01_svn%E7%AF%87/index.html">
 <meta property="og:site_name" content="TTXX课程">
+<meta property="og:description" content="文章目录  什么是SVN？ 版本控制： 常用的版本控制工具： SVN的优势  搭建VisualSVN Server服务器  SVN服务器创建仓库与用户 3.1 创建仓库 3.2 SVN标准目录结构 3.3 创建用户 3.4 修改仓库权限  安装TortoiseSVN客户端  使用Checkout检出仓库代码  添加文件、修改文件 6.1 添加文件 6.2 查看日志 6.3 修改文件  版本回滚">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193512-9d4nlms.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193524-u136u49.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193535-3r4qtfh.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193548-nr6owm4.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193559-xkku5fm.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193609-a0ku9i3.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193616-n3k92fk.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193628-69cqo42.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193636-chtdmyr.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193643-iw6lvl1.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193650-if5vo0t.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193657-vc922wo.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193705-l0oypbd.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193722-nu8qixt.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193729-ch0evsy.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193735-1lnq20r.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193745-kbkndrn.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193752-xlu7oha.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193800-kwhciab.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193809-zvxo8e7.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193817-fzb2cpo.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193834-3bytm2c.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193840-nud08nr.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193846-j2660j7.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193853-2q1gexn.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193904-rq54wno.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193912-9rzbghw.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193921-wgojj4v.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507193930-h1jfa5n.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194004-jcgbkru.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194012-cew8bzm.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194019-jkvzgj6.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194027-sr06dxl.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194036-aw2uaqh.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194043-vy4fx91.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194053-njpqdhl.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194059-cay0k8k.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194106-kizum1r.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194114-b9vksi2.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194120-7708ar8.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194126-sa2t3c5.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194141-q5dpkqt.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194150-u28meae.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194200-vjfcwnu.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194207-3xyjbuf.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194213-3wju7cr.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194234-0weu0ji.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194241-dw2xzcq.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194250-vzi1z3m.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194255-r7unfvx.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194302-yr9rxug.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194310-cx73sbp.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194317-w2k0x42.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194327-sb7nf8m.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194336-rc63iov.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194343-5e6qwpy.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194352-nvs0pqe.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194400-gzjstyg.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194408-v9acz3u.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194415-fej0fy5.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194422-59kpcfr.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194429-hzcki47.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194437-p87juim.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194445-zo28y49.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194457-tl9zfqj.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194504-2z7ioom.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194511-kdrua7q.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194519-js3uomp.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194526-xm7oudz.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194535-l37d67y.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194542-2hogi2v.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194551-kig86ob.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194600-whnhwyb.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194609-47wdqmg.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194617-4km3ud1.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194624-m8zyocv.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194638-hifg5e8.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194646-jf6kh2q.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194653-hk6t6ap.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194659-9mvtcvs.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194708-dr8mn9d.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194721-frknmle.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194728-73ek59w.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194738-4dirh5y.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194745-pdn64zz.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194750-8ll7trg.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194756-z04d1vz.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194803-tnh19uy.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194809-2ynjjzq.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194820-ri6d3gb.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194829-rffiwjp.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194837-yf9atqi.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194844-k2o48ri.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194851-ip6lujk.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194858-m03fhi6.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194905-g883x2y.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194914-xklwrh0.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194923-0ep1rsy.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194930-zsl5zhb.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194936-8dj5hwv.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194942-7hhnlta.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194949-cdqoe91.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507194955-wqm3bci.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507195006-87kyiej.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507195013-51ij04d.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507195019-rcff0e2.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507195025-y7va5xf.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507195031-rrnp20o.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507195031-rrnp20o.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507195045-klu1846.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507195053-t87jv8j.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220507195100-jhj6rsg.png">
 <meta property="article:published_time" content="2022-04-29T17:13:41.066Z">
-<meta property="article:modified_time" content="2022-04-30T05:19:05.883Z">
+<meta property="article:modified_time" content="2022-05-07T11:51:38.789Z">
 <meta property="article:author" content="yulong">
 <meta property="article:tag" content="课后">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/2/image-20220507193512-9d4nlms.png">
     
 
     
@@ -503,7 +618,7 @@
                             &nbsp;
                             04_bugzilla
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/04_bugzilla/01_bugzilla/">bugzilla</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/04_bugzilla/01_bugzilla/">bugzilla</a></li>  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/04_bugzilla/02_bugzilla%E5%AE%89%E8%A3%85/">bugzilla安装</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -546,7 +661,7 @@
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
                             &nbsp;
-                            10_git篇
+                            09_git篇
                         </a>
                          <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/09_git%E7%AF%87/01_git%E7%AF%87/">git篇</a></li>  </ul> 
                     </li> 
@@ -555,9 +670,18 @@
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
                             &nbsp;
-                            11_TestDirector
+                            10_TestDirector
                         </a>
                          <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/10_TestDirector/01_TestDirector/">TestDirector</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            11_Tapd
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/11_TAPD/01_Tapd/">tapd</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -1432,7 +1556,278 @@
             
         
         
-            
+            <p>文章目录</p>
+<ol>
+<li><p>什么是SVN？<br> 版本控制：<br> 常用的版本控制工具：<br> SVN的优势</p>
+</li>
+<li><p>搭建VisualSVN Server服务器</p>
+</li>
+<li><p>SVN服务器创建仓库与用户<br> 3.1 创建仓库<br> 3.2 SVN标准目录结构<br> 3.3 创建用户<br> 3.4 修改仓库权限</p>
+</li>
+<li><p>安装TortoiseSVN客户端</p>
+</li>
+<li><p>使用Checkout检出仓库代码</p>
+</li>
+<li><p>添加文件、修改文件<br> 6.1 添加文件<br> 6.2 查看日志<br> 6.3 修改文件</p>
+</li>
+<li><p>版本回滚</p>
+</li>
+<li><p>删除文件</p>
+</li>
+<li><p>解决冲突<br> 9.1 产生冲突的情况？<br> 9.2 解决冲突</p>
+</li>
+<li><p>创建分支<br> 10.1 创建分支<br> 10.2 合并分支<br> GO GO GO~<br> 感谢大家，关注点一波~</p>
+</li>
+<li><p>什么是SVN？<br> 版本控制：<br> 它可以记录每一次文件和目录的修改情况，这样就可以借此将数据恢复到以前的版本，并可以查看数据的更改细节！</p>
+<p> <img src="/assets/2/image-20220507193512-9d4nlms.png" alt="image.png"></p>
+</li>
+</ol>
+<p>Subversion（简称SVN）是一个自由开源的版本控制系统。在Subversion管理下，文件和目录可以超越时空。</p>
+<p>常用的版本控制工具：</p>
+<p><img src="/assets/2/image-20220507193524-u136u49.png" alt="image.png"></p>
+<p><a target="_blank" rel="noopener" href="http://subversion.apache.org/">http://subversion.apache.org/</a></p>
+<p><img src="/assets/2/image-20220507193535-3r4qtfh.png" alt="image.png"></p>
+<p>SVN的优势<br>统一的版本号</p>
+<p>Subversion下，任何一次提交都会对所有文件增加到同一个新版本号，即使是提交并不涉及的文件，版本号相同的文件构成软件的一个版本。</p>
+<p>原子提交</p>
+<p>一次提交不管是单个还是多个文件，都是作为一个整体提交的。在这当中发生的意外例如传输中断，不会引起数据库的不完整和数据损坏。</p>
+<p>多级管理系统</p>
+<p>超级管理员：对所有配置库具有完全权限。</p>
+<p>目录管理员：目录管理员可对指定的目录&#x2F;SVN库进行权限管理。</p>
+<p>普通用户：可以查看用户名、查看权限设置、修改自己密码。</p>
+<p>一致的数据操作</p>
+<p>Subversion用一个二进制差异算法描述文件的变化，对于文本（可读）和二进制（不可读）文件其操作方式是一致的。这两种类型的文件压缩存储在版本库中，而差异信息则在网络上双向传递。</p>
+<p>简单、易操作</p>
+<p>SVN对中文支持好，操作简单，使用没有难度，使用界面统一，功能完善，操作方便。</p>
+<ol start="2">
+<li><p>搭建VisualSVN Server服务器<br> 集中式代码管理的核心是SVN服务器：</p>
+<p> <img src="/assets/2/image-20220507193548-nr6owm4.png" alt="image.png"></p>
+</li>
+</ol>
+<p>SVN服务端：Subversion和VisualSVN Server</p>
+<p>因为如果直接使用Subversion，那么在Windows系统上，要想让它随系统启动，就要封装SVN Server为windws service，还要通过修改配置文件来控制用户权限，另外如果要想以Web方式htp协议访问，一般还要安装配置Apache，如果是新手，岂不是很头痛？</p>
+<p>而VisualSVN Serve集成了Subversion和Apache，省去了以上所有的麻烦。</p>
+<p>下载地址：</p>
+<p><a target="_blank" rel="noopener" href="https://www.visualsvn.com/server/">https://www.visualsvn.com/server/</a></p>
+<p><img src="/assets/2/image-20220507193559-xkku5fm.png" alt="image.png"></p>
+<p>安装图解：</p>
+<p>下载</p>
+<p><img src="/assets/2/image-20220507193609-a0ku9i3.png" alt="image.png"></p>
+<p>双击安装：</p>
+<p><img src="/assets/2/image-20220507193616-n3k92fk.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507193628-69cqo42.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507193636-chtdmyr.png" alt="image.png"></p>
+<p>设置仓库地址、端口</p>
+<p><img src="/assets/2/image-20220507193643-iw6lvl1.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507193650-if5vo0t.png" alt="image.png"></p>
+<p>安装完成</p>
+<p><img src="/assets/2/image-20220507193657-vc922wo.png" alt="image.png"></p>
+<ol start="3">
+<li><p>SVN服务器创建仓库与用户<br> VisualSVN Server Manager 主界面</p>
+<p> <img src="/assets/2/image-20220507193705-l0oypbd.png" alt="image.png"></p>
+</li>
+</ol>
+<p>3.1 创建仓库</p>
+<p><img src="/assets/2/image-20220507193722-nu8qixt.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507193729-ch0evsy.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507193735-1lnq20r.png" alt="image.png"></p>
+<p>这里选择仓库类型</p>
+<p>类型1：空仓库</p>
+<p><img src="/assets/2/image-20220507193745-kbkndrn.png" alt="image.png"></p>
+<p>类型2：主分支-分支-标签</p>
+<p><img src="/assets/2/image-20220507193752-xlu7oha.png" alt="image.png"></p>
+<p>访问权限设置</p>
+<p><img src="/assets/2/image-20220507193800-kwhciab.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507193809-zvxo8e7.png" alt="image.png"></p>
+<p>创建完成</p>
+<p><img src="/assets/2/image-20220507193817-fzb2cpo.png" alt="image.png"></p>
+<p>3.2 SVN标准目录结构<br>trunk是主分支，是日常开发进行的地方。<br>branches是分支。一些阶段性的release版本，这些版本是可以继续进行开发和维护的，则放在branches目录中。又比如为不同用户客制化的版本，也可以放在分支中进行开发。<br>tags目录一般是只读的，这里存储阶段性的发布版本，只是作为一个里程碑的版本进行存档。<br>3.3 创建用户<br>创建user1、user2两个用户</p>
+<p>创建user1（密码123456）</p>
+<p><img src="/assets/2/image-20220507193834-3bytm2c.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507193840-nud08nr.png" alt="image.png"></p>
+<p>创建user2（密码123456）</p>
+<p><img src="/assets/2/image-20220507193846-j2660j7.png" alt="image.png"></p>
+<p>重设密码</p>
+<p><img src="/assets/2/image-20220507193853-2q1gexn.png" alt="image.png"></p>
+<p>3.4 修改仓库权限<br>右键仓库，属性</p>
+<p><img src="/assets/2/image-20220507193904-rq54wno.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507193912-9rzbghw.png" alt="image.png"></p>
+<ol start="4">
+<li><p>安装TortoiseSVN客户端</p>
+<p> <img src="/assets/2/image-20220507193921-wgojj4v.png" alt="image.png"></p>
+</li>
+</ol>
+<p>TortoiseSVN是Subversion版本控制系统的一个优秀的免费开源客户端。</p>
+<p>官方网址： Home · TortoiseSVN</p>
+<p><img src="/assets/2/image-20220507193930-h1jfa5n.png" alt="image.png"></p>
+<p>下载地址：</p>
+<p><a target="_blank" rel="noopener" href="https://tortoisesvn.net/downloads.html">Downloads · TortoiseSVN</a></p>
+<p><img src="/assets/2/image-20220507194004-jcgbkru.png" alt="image.png"></p>
+<p>安装图解：</p>
+<p><img src="/assets/2/image-20220507194012-cew8bzm.png" alt="image.png"></p>
+<p>一路next：</p>
+<p><img src="/assets/2/image-20220507194019-jkvzgj6.png" alt="image.png"></p>
+<p>安装成功后、右键单击、可出现SVN菜单：</p>
+<p><img src="/assets/2/image-20220507194027-sr06dxl.png" alt="image.png"></p>
+<p>汉化：</p>
+<p><img src="/assets/2/image-20220507194036-aw2uaqh.png" alt="image.png"></p>
+<ol start="5">
+<li><p>使用Checkout检出仓库代码<br> 查看仓库地址：</p>
+<p> <img src="/assets/2/image-20220507194043-vy4fx91.png" alt="image.png"></p>
+</li>
+</ol>
+<p>右键 -&gt; SVN Checkout…</p>
+<p><img src="/assets/2/image-20220507194053-njpqdhl.png" alt="image.png"></p>
+<p>查看本机IP：</p>
+<p><img src="/assets/2/image-20220507194059-cay0k8k.png" alt="image.png"></p>
+<p>检出rep1仓库：</p>
+<p><img src="/assets/2/image-20220507194106-kizum1r.png" alt="image.png"></p>
+<p>接受证书：</p>
+<p><img src="/assets/2/image-20220507194114-b9vksi2.png" alt="image.png"></p>
+<p>输入用户名和密码，并保存认证：</p>
+<p><img src="/assets/2/image-20220507194120-7708ar8.png" alt="image.png"></p>
+<p>成功检出到本地：</p>
+<p><img src="/assets/2/image-20220507194126-sa2t3c5.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194141-q5dpkqt.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194150-u28meae.png" alt="image.png"></p>
+<ol start="6">
+<li><p>添加文件、修改文件<br> 6.1 添加文件<br> 在rep1文件夹下新建1.txt并保存</p>
+<p> <img src="/assets/2/image-20220507194200-vjfcwnu.png" alt="image.png"></p>
+</li>
+</ol>
+<p>右键 -&gt; 增加 ：将文件加入版本管理</p>
+<p><img src="/assets/2/image-20220507194207-3xyjbuf.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194213-3wju7cr.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194234-0weu0ji.png" alt="image.png"></p>
+<p>增加成功后，文件上面多了一个 ＋ 号</p>
+<p><img src="/assets/2/image-20220507194241-dw2xzcq.png" alt="image.png"></p>
+<p>右键 -&gt; 提交，写上备注</p>
+<p><img src="/assets/2/image-20220507194250-vzi1z3m.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194255-r7unfvx.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194302-yr9rxug.png" alt="image.png"></p>
+<p>提交成功后，文件上多了一个 “✓” 号</p>
+<p><img src="/assets/2/image-20220507194310-cx73sbp.png" alt="image.png"></p>
+<p>6.2 查看日志<br>TortoiseSVN -&gt; 显示日志</p>
+<p><img src="/assets/2/image-20220507194317-w2k0x42.png" alt="image.png"></p>
+<p>可以看到新增日志：</p>
+<p><img src="/assets/2/image-20220507194327-sb7nf8m.png" alt="image.png"></p>
+<p>服务器上可以看到文件：</p>
+<p><img src="/assets/2/image-20220507194336-rc63iov.png" alt="image.png"></p>
+<p>在新的地方更新目录：</p>
+<p><img src="/assets/2/image-20220507194343-5e6qwpy.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194352-nvs0pqe.png" alt="image.png"></p>
+<p>6.3 修改文件<br>修改文件并保存，文件图标变为红色感叹号</p>
+<p><img src="/assets/2/image-20220507194400-gzjstyg.png" alt="image.png"></p>
+<p>提交修改：</p>
+<p><img src="/assets/2/image-20220507194408-v9acz3u.png" alt="image.png"></p>
+<p>填写备注：</p>
+<p><img src="/assets/2/image-20220507194415-fej0fy5.png" alt="image.png"></p>
+<p>提交完成：</p>
+<p><img src="/assets/2/image-20220507194422-59kpcfr.png" alt="image.png"></p>
+<p>查看日志</p>
+<p><img src="/assets/2/image-20220507194429-hzcki47.png" alt="image.png"></p>
+<p>双击日志，可以显示出和上个版本的区别：</p>
+<p><img src="/assets/2/image-20220507194437-p87juim.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194445-zo28y49.png" alt="image.png"></p>
+<p>去查看另一个仓库，发现没有更新</p>
+<p><img src="/assets/2/image-20220507194457-tl9zfqj.png" alt="image.png"></p>
+<p>更新：</p>
+<p><img src="/assets/2/image-20220507194504-2z7ioom.png" alt="image.png"></p>
+<p>打开，发现已经同步：</p>
+<p><img src="/assets/2/image-20220507194511-kdrua7q.png" alt="image.png"></p>
+<ol start="7">
+<li><p>版本回滚<br> 在rep1文件夹下打开1.txt，修改如下，此刻文件出现“！”号</p>
+<p> <img src="/assets/2/image-20220507194519-js3uomp.png" alt="image.png"></p>
+</li>
+</ol>
+<p>如果你没有提交，那么直接删除此文件，然后 更新 即可， 发现文件回复了，并且为“✓”号。</p>
+<p><img src="/assets/2/image-20220507194526-xm7oudz.png" alt="image.png"></p>
+<p>如果你已经提交了，且有日志记录</p>
+<p><img src="/assets/2/image-20220507194535-l37d67y.png" alt="image.png"></p>
+<p>那么就使用回滚</p>
+<p><img src="/assets/2/image-20220507194542-2hogi2v.png" alt="image.png"></p>
+<p>1.查看版本 2.选择版本 3.确定</p>
+<p><img src="/assets/2/image-20220507194551-kig86ob.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194600-whnhwyb.png" alt="image.png"></p>
+<p>注意：再次更新，会恢复到最新，提交的记录无法删除！！！</p>
+<p><img src="/assets/2/image-20220507194609-47wdqmg.png" alt="image.png"></p>
+<p>这样才能表示历史记录可追溯：</p>
+<p><img src="/assets/2/image-20220507194617-4km3ud1.png" alt="image.png"></p>
+<ol start="8">
+<li><p>删除文件<br> 新建2.txt，并提交</p>
+<p> <img src="/assets/2/image-20220507194624-m8zyocv.png" alt="image.png"></p>
+<p> <img src="/assets/2/image-20220507194638-hifg5e8.png" alt="image.png"></p>
+</li>
+</ol>
+<p>TortoiseSVN -&gt; 删除，此时文件会消失</p>
+<p><img src="/assets/2/image-20220507194646-jf6kh2q.png" alt="image.png"></p>
+<p>提交删除：</p>
+<p><img src="/assets/2/image-20220507194653-hk6t6ap.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194659-9mvtcvs.png" alt="image.png"></p>
+<ol start="9">
+<li><p>解决冲突<br> 9.1 产生冲突的情况？<br> 当开发人员A和开发人员B从版本库同时检出文档1.txt，而A和B同事修改了1.txt的同一个地方，先提交的不会有任何问题，后提交的一方会在提交的时候产生冲突。</p>
+<p> <img src="/assets/2/image-20220507194708-dr8mn9d.png" alt="image.png"></p>
+</li>
+</ol>
+<p>A修改并提交：</p>
+<p><img src="/assets/2/image-20220507194721-frknmle.png" alt="image.png"></p>
+<p>B 修改并提交：</p>
+<p><img src="/assets/2/image-20220507194728-73ek59w.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194738-4dirh5y.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194745-pdn64zz.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194750-8ll7trg.png" alt="image.png"></p>
+<p>冲突会导致提交失败，并自动返回：</p>
+<p><img src="/assets/2/image-20220507194756-z04d1vz.png" alt="image.png"></p>
+<p>9.2 解决冲突<br>产生冲突的目录编程这样了，文件出现黄色的感叹号：</p>
+<p><img src="/assets/2/image-20220507194803-tnh19uy.png" alt="image.png"></p>
+<p>右键 -&gt; TortoiseSVN -&gt; 编辑冲突</p>
+<p><img src="/assets/2/image-20220507194809-2ynjjzq.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194820-ri6d3gb.png" alt="image.png"></p>
+<p>先删除掉问号：</p>
+<p><img src="/assets/2/image-20220507194829-rffiwjp.png" alt="image.png"></p>
+<p>拷贝到合并后的文件：</p>
+<p><img src="/assets/2/image-20220507194837-yf9atqi.png" alt="image.png"></p>
+<p>保存：</p>
+<p><img src="/assets/2/image-20220507194844-k2o48ri.png" alt="image.png"></p>
+<p>黄色的感叹号消失：</p>
+<p><img src="/assets/2/image-20220507194851-ip6lujk.png" alt="image.png"></p>
+<p>文件修改已经合并：</p>
+<p><img src="/assets/2/image-20220507194858-m03fhi6.png" alt="image.png"></p>
+<p>重新提交：</p>
+<p><img src="/assets/2/image-20220507194905-g883x2y.png" alt="image.png"></p>
+<ol start="10">
+<li>创建分支<br> 什么是分支？</li>
+</ol>
+<p>在版本控制的系统中，我们经常需要对开发周期中的单独生命线作单独的修改，这条单独的开发生命线就可以称为Branches即分支。分支经常用于添加新的功能以及产品发布后的bug修复等，这样可以不影响主要的产品开发线以及避免编译错误等。当我们添加的新功能完成后可以将其合并到主干中。</p>
+<p>10.1 创建分支<br>TortoiseSVN -&gt; 分支&#x2F;标记</p>
+<p><img src="/assets/2/image-20220507194914-xklwrh0.png" alt="image.png"></p>
+<p>创建分支：</p>
+<p>1.源路径<br>2.分支路径<br>3.备注<br>4.版本</p>
+<p><img src="/assets/2/image-20220507194923-0ep1rsy.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507194930-zsl5zhb.png" alt="image.png"></p>
+<p>创建成功：</p>
+<p><img src="/assets/2/image-20220507194936-8dj5hwv.png" alt="image.png"></p>
+<p>服务器上也出现了：</p>
+<p><img src="/assets/2/image-20220507194942-7hhnlta.png" alt="image.png"></p>
+<p>在分支中添加文件：</p>
+<p><img src="/assets/2/image-20220507194949-cdqoe91.png" alt="image.png"></p>
+<p>10.2 合并分支<br>TortoiseSVN -&gt; 合并</p>
+<p><img src="/assets/2/image-20220507194955-wqm3bci.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507195006-87kyiej.png" alt="image.png"></p>
+<p>选择合并源：</p>
+<p><img src="/assets/2/image-20220507195013-51ij04d.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507195019-rcff0e2.png" alt="image.png"></p>
+<p>合并完成：</p>
+<p><img src="/assets/2/image-20220507195025-y7va5xf.png" alt="image.png"></p>
+<p>文件被合并到了trunk中</p>
+<p><img src="/assets/2/image-20220507195031-rrnp20o.png" alt="image.png"></p>
+<p>提交分支点合并到主分支</p>
+<p><img src="/assets/2/image-20220507195031-rrnp20o.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507195045-klu1846.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507195053-t87jv8j.png" alt="image.png"></p>
+<p>查看日志：</p>
+<p><img src="/assets/2/image-20220507195100-jhj6rsg.png" alt="image.png"></p>
+
             </div>
         
         <footer class="article-footer">
