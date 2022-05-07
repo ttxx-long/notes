@@ -6105,7 +6105,287 @@ page.evaluate(&quot;&quot;&quot;
   <entry>
     <title>git篇</title>
     <url>/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/09_git%E7%AF%87/01_git%E7%AF%87/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>文章目录<br>转载地址<br>Git简介<br>Git安装（仅列出在Windows系统下的安装过程）<br>Git本地仓库操作<br>创建版本库<br>修改文件<br>版本回退<br>工作区和暂存区<br>管理修改<br>撤销修改<br>删除文件&#96;<br>Git与远程仓库交互<br>远程仓库准备工作<br>添加远程库<br>从远程库克隆<br>创建与合并分支<br>bug分支<br>多人协作</p>
+<ol>
+<li>推送分支：</li>
+<li>抓取分支：<br> 工作使用Git<br> 如何在Windows的cmd 中使用linux的命令<br> 思维导图<br> 转载地址<br> <a href="https://blog.csdn.net/weixin_42152081/article/details/80558282?utm_source=app&app_version=4.7.0&code=app_1562916241&uLinkId=usr1mkqgl919blen">Git教程（完整）</a><br> <a href="https://blog.csdn.net/u011535541/article/details/83379151?utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-12.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-12.control">Git使用教程</a><br> <a href="https://pypypy.blog.csdn.net/article/details/104551896">git使用教程</a></li>
+</ol>
+<p>Git简介<br>Git是目前世界上最先进的分布式版本控制系统，在处理各种项目时都十分高效，而且非常的高大上。</p>
+<p>SVN是集中式版本控制系统，版本库是集中放在中央服务器的，而干活的时候，用的都是自己的电脑，所以首先要从中央服务器哪里得到最新的版本，然后干活，干完后，需要把自己做完的活推送到中央服务器。而且集中式版本控制系统是必须联网才能工作。</p>
+<p>Git是分布式版本控制系统，它就没有中央服务器的，每个人的电脑就是一个完整的版本库，这样，工作的时候就不需要联网了，因为版本都是在自己的电脑上。</p>
+<p>Git安装（仅列出在Windows系统下的安装过程）<br>打开Git官网下载安装程序，然后按照默认选项安装即可。</p>
+<p>安装完成后，打开Git bash软件，弹出一个类似cmd的命令行窗口，证明安装成功。</p>
+<p><img src="/assets/2/image-20220507195916-hlisywu.png" alt="image.png"></p>
+<p>安装完成后，需要进行设置，在命令行输入以下代码：</p>
+<blockquote>
+<p>$ git config –global user.name “Your Name”<br>$ git config –global user.email “<a href="mailto:&#101;&#109;&#97;&#105;&#x6c;&#64;&#x65;&#x78;&#x61;&#109;&#x70;&#108;&#x65;&#46;&#x63;&#x6f;&#x6d;">&#101;&#109;&#97;&#105;&#x6c;&#64;&#x65;&#x78;&#x61;&#109;&#x70;&#108;&#x65;&#46;&#x63;&#x6f;&#x6d;</a>“</p>
+</blockquote>
+<p>顾名思义，这是设置你的名字和Email地址。</p>
+<p>我们可以查看一下用户名和密码：</p>
+<p>$ git config user.name<br>$ git config user.email<br>1<br>2<br>假如我们这时候报错，证明Git的用户名和密码没有配置成功，我们还可以这样做：</p>
+<p>在用户主目录下找到 .git 文件夹：</p>
+<p><img src="/assets/2/image-20220507200013-kkruo86.png" alt="image.png"></p>
+<p>然后打开 config 文件，这是专门用来配置和读取相应的工作环境变量的，在里面加上如图所示内容：</p>
+<p>这样也就完成了对Git用户名和邮箱的配置。</p>
+<p>Git本地仓库操作<br>创建版本库<br>版本库(repository)也叫仓库，可以看做一个目录，这个目录里的所以文件都由Git进行管理，每个文件的修改、删除，Git都能跟踪。</p>
+<p>1.选择一个合适的地方，创建一个空目录：</p>
+<p>$ mkdir learngit &#x2F;&#x2F;创建一个名叫learngit的空目录<br>$ cd learngit &#x2F;&#x2F;把learngit设置为当前目录<br>$ pwd &#x2F;&#x2F;查看当前目录<br>&#x2F;c&#x2F;Users&#x2F;Administrator&#x2F;learngit<br>1<br>2<br>3<br>4<br>如果使用Windows系统，要保证目录名不包含中文。</p>
+<p>2.通过如下命令把这个目录变成Git可以管理的仓库：</p>
+<p>$ git init<br>Initialized empty Git repository in &#x2F;Users&#x2F;Administrator&#x2F;learngit&#x2F;.git&#x2F;<br>1<br>2<br>这样Git就把仓库建好啦，我们可以看到在当前目录下多了一个 .git 的目录，这个目录是Git来跟踪管理版本库的。<br>3.把文件添加到版本库</p>
+<p>我们在 learngit 目录下编写一个 readme.txt 文件，内容如下：</p>
+<p>Git is a version control system.<br>Git is free software.<br>1<br>2<br>(1) 用 git add 命令，把文件添加到仓库：</p>
+<p>$ git add readme.txt<br>1<br>执行以上命令，没有任何显示。</p>
+<p>(2) 用 git commit 命令，把文件提交到仓库：</p>
+<p>$ git commit -m “wrote a readme file” &#x2F;&#x2F;-m后面输入的是本次提交的说明，可以输入任意内容。<br>[master (root-commit) eaadf4e] wrote a readme file<br> 1 file changed, 2 insertions(+) &#x2F;&#x2F;1 file changed：1个文件被改动（新添加的readme.txt文件）；2 insertions：插入了两行内容（readme.txt内有两行内容）<br> create mode 100644 readme.txt<br>1<br>2<br>3<br>4<br>修改文件<br>我们已经成功添加并提交了一个 readme.txt 文件，继续修改 readme.txt 文件，改成如下内容：</p>
+<p>Git is a distributed version control system.<br>Git is free software.<br>1<br>2<br>运行 git status 命令：</p>
+<p>$ git status &#x2F;&#x2F;查看仓库当前的状态<br>On branch master<br>Changes not staged for commit: &#x2F;&#x2F;没有文件将要被提交<br>  (use “git add <file>…” to update what will be committed)<br>  (use “git checkout – <file>…” to discard changes in working directory)</p>
+<pre><code>modified:   readme.txt
+</code></pre>
+<p>no changes added to commit (use “git add” and&#x2F;or “git commit -a”)<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>上面的命令告诉我们，readme.txt 文件被修改过了，但还没有准备提交的修改。</p>
+<p>如果我们想知道上次是怎么修改readme.txt 文件的，需要用 git diff 命令：</p>
+<p>$ git diff readme.txt<br>diff –git a&#x2F;readme.txt b&#x2F;readme.txt<br>index 46d49bf..9247db6 100644<br>— a&#x2F;readme.txt<br>+++ b&#x2F;readme.txt<br>@@ -1,2 +1,2 @@<br>-Git is a version control system. &#x2F;&#x2F;这一句是被删掉的<br>+Git is a distributed version control system. &#x2F;&#x2F;这一句是新添加的<br> Git is free software.<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>接下来还是那两步：</p>
+<p>(1) git add</p>
+<p>$ git add readme.txt<br>1<br>没有任何输出，这时候可以用 git status 查看一下当前仓库状态：</p>
+<p>$ git status<br>On branch master<br>Changes to be committed: &#x2F;&#x2F;将要被提交的文件包括 readme.txt<br>  (use “git reset HEAD <file>…” to unstage)</p>
+<pre><code>modified:   readme.txt
+</code></pre>
+<p>1<br>2<br>3<br>4<br>5<br>6<br>(2) git commit</p>
+<p>$ git commit -m “add distributed”<br>[master e475afc] add distributed<br> 1 file changed, 1 insertion(+), 1 deletion(-)<br>1<br>2<br>3<br>再用 git status 查看一下当前仓库状态：</p>
+<p>$ git status<br>On branch master<br>nothing to commit, working tree clean &#x2F;&#x2F;当前没有需要提交的修改，而且，工作目录是干净的。<br>1<br>2<br>3<br>版本回退<br>如果我们继续对 readme.txt 文件进行修改，改成如下内容：</p>
+<p>Git is a distributed version control system.<br>Git is free software distributed under the GPL.<br>1<br>2<br>然后添加并提交：</p>
+<p>$ git add readme.txt<br>$ git commit -m “append GPL”<br>[master 1094adb] append GPL<br> 1 file changed, 1 insertion(+), 1 deletion(-)<br>1<br>2<br>3<br>4<br>到目前为止，readme.txt 文件一共有三个版本被提交到了 Git 仓库里，我们可以用 git log 命令进行查看：</p>
+<p>$ git log &#x2F;&#x2F;查看历史记录<br>commit 1094adb7b9b3807259d8cb349e7df1d4d6477073 (HEAD -&gt; master)<br>Author: Michael Liao <a href="mailto:&#x61;&#x73;&#x6b;&#120;&#117;&#x65;&#x66;&#x65;&#110;&#103;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#x6f;&#109;">&#x61;&#x73;&#x6b;&#120;&#117;&#x65;&#x66;&#x65;&#110;&#103;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#x6f;&#109;</a><br>Date:   Fri May 18 21:06:15 2018 +0800</p>
+<pre><code>append GPL
+</code></pre>
+<p>commit e475afc93c209a690c39c13a46716e8fa000c366<br>Author: Michael Liao <a href="mailto:&#x61;&#x73;&#x6b;&#x78;&#x75;&#x65;&#102;&#101;&#x6e;&#x67;&#64;&#103;&#109;&#x61;&#x69;&#108;&#46;&#99;&#111;&#x6d;">&#x61;&#x73;&#x6b;&#x78;&#x75;&#x65;&#102;&#101;&#x6e;&#x67;&#64;&#103;&#109;&#x61;&#x69;&#108;&#46;&#99;&#111;&#x6d;</a><br>Date:   Fri May 18 21:03:36 2018 +0800</p>
+<pre><code>add distributed
+</code></pre>
+<p>commit eaadf4e385e865d25c48e7ca9c8395c3f7dfaef0<br>Author: Michael Liao <a href="mailto:&#x61;&#x73;&#107;&#120;&#117;&#101;&#x66;&#101;&#110;&#x67;&#64;&#103;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x61;&#x73;&#107;&#120;&#117;&#101;&#x66;&#101;&#110;&#x67;&#64;&#103;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a><br>Date:   Fri May 18 20:59:18 2018 +0800</p>
+<pre><code>wrote a readme file
+</code></pre>
+<p>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>我们还可以加上 –pretty&#x3D;oneline 参数：</p>
+<p>$ git log –pretty&#x3D;oneline<br>1094adb7b9b3807259d8cb349e7df1d4d6477073 (HEAD -&gt; master) append GPL<br>e475afc93c209a690c39c13a46716e8fa000c366 add distributed<br>eaadf4e385e865d25c48e7ca9c8395c3f7dfaef0 wrote a readme file &#x2F;&#x2F;一大串数字是 commit id ，而且每个人的都不一样。<br>1<br>2<br>3<br>4<br>好了，现在如果我们想把 readme.txt 文件退回到上一个版本，就可以使用 git reset 命令：</p>
+<p>$ git reset –hard HEAD^ &#x2F;&#x2F;HEAD表示当前版本，则HEAD^表示上一个版本，那么上上版本就是HEAD^^<br>HEAD is now at e475afc add distributed<br>1<br>2<br>这时候用 cat 命令查看一下 readme.txt 的内容：</p>
+<p>$ cat readme.txt &#x2F;&#x2F;查看 readme.txt 文件的内容<br>Git is a distributed version control system.<br>Git is free software.<br>1<br>2<br>3<br>果然 readme.txt 文件返回到了上一个版本。</p>
+<p>我们现在想要回到最新的版本，还是使用 git reset 命令：</p>
+<p>$ git reset –hard 1094a &#x2F;&#x2F;这里不能用HEAD而必须使用 commit id ，因为最新版本在之前返回时已经被删除了，1094a就是最新版本的 commit id，可以在之前的代码中查到<br>HEAD is now at 83b0afe append GPL<br>1<br>2<br>这时再查看一下 readme.txt 文件内容：</p>
+<p>$ cat readme.txt<br>Git is a distributed version control system.<br>Git is free software distributed under the GPL.<br>1<br>2<br>3<br>果然，又回到了最新的版本</p>
+<p>工作区和暂存区<br>工作区（Working Directory）</p>
+<p>learngit 文件夹就是一个工作区。</p>
+<p>版本库（Repository）</p>
+<p>工作区有个隐藏目录 .git ，这个不算工作区，而是 Git 的版本库。</p>
+<p>版本库里面的 index(stage) 文件叫暂存区，还有Git为我们自动创建的第一个分支 master ，以及指向 master 的一个指针叫做 HEAD。</p>
+<p><img src="/assets/2/image-20220507200142-lfxgbjm.png" alt="image.png"></p>
+<p>前面我们提到过，如果我们想把文件添加到Git里面时，需要分两步：</p>
+<p>第一步是用 git add 把文件添加进去，实际上就是把文件修改添加到暂存区。</p>
+<p>第二步是用 git commit 提交更改，实际上就是把暂存区的所有内容提交到当前分支。（我们现在只有唯一一个分支 master，所以现在就是往 master 分支上提交更改）</p>
+<p>我们可以实践一下：</p>
+<p>在 readme.txt 文件中加上一行内容：</p>
+<p>Git is a distributed version control system.<br>Git is free software distributed under the GPL.<br>Git has a mutable index called stage.<br>1<br>2<br>3<br>然后在工作区新建一个 LICENSE 文本文档（任意内容）</p>
+<p>使用两次 git add 命令分别把 readme.txt 和 LICENSE 都添加后，可以用 git status 命令查看一下：</p>
+<p>$ git status<br>On branch master<br>Changes to be committed:<br>  (use “git reset HEAD <file>…” to unstage)</p>
+<pre><code>new file:   LICENSE
+modified:   readme.txt
+</code></pre>
+<p>1<br>2<br>3<br>4<br>5<br>6<br>7<br>现在，暂存区的状态就变成这样了：</p>
+<p><img src="/assets/2/image-20220507200154-0zls1qv.png" alt="image.png"></p>
+<p>再使用 git commit 命令把暂存区的所有修改提交到分支：</p>
+<p>$ git commit -m “understand how stage works”<br>[master e43a48b] understand how stage works<br> 2 files changed, 2 insertions(+)<br> create mode 100644 LICENSE<br>1<br>2<br>3<br>4<br>这时候的工作区就是干净的：</p>
+<p>$ git status<br>On branch master<br>nothing to commit, working tree clean<br>1<br>2<br>3<br>这时候版本库就变成了这样：</p>
+<p><img src="/assets/2/image-20220507200206-crz6ggh.png" alt="image.png"></p>
+<p>管理修改<br>Git 如此的优秀是因为，Git 跟踪并管理的不是文件，而是修改。</p>
+<p>我们对 readme.txt 文件进行修改：</p>
+<p>$ cat readme.txt<br>Git is a distributed version control system.<br>Git is free software distributed under the GPL.<br>Git has a mutable index called stage.<br>Git tracks changes.<br>1<br>2<br>3<br>4<br>5<br>然后，添加：</p>
+<p>$ git add readme.txt<br>$ git status</p>
+<h1 id="On-branch-master"><a href="#On-branch-master" class="headerlink" title="On branch master"></a>On branch master</h1><h1 id="Changes-to-be-committed"><a href="#Changes-to-be-committed" class="headerlink" title="Changes to be committed:"></a>Changes to be committed:</h1><h1 id="use-“git-reset-HEAD-…”-to-unstage"><a href="#use-“git-reset-HEAD-…”-to-unstage" class="headerlink" title="(use “git reset HEAD …” to unstage)"></a>(use “git reset HEAD <file>…” to unstage)</h1><h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="modified-readme-txt"><a href="#modified-readme-txt" class="headerlink" title="modified:   readme.txt"></a>modified:   readme.txt</h1><h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><p>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>然后再修改 readme.txt 文件：</p>
+<p>$ cat readme.txt<br>Git is a distributed version control system.<br>Git is free software distributed under the GPL.<br>Git has a mutable index called stage.<br>Git tracks changes of files.&#96;&#96;&#96;<br>1<br>2<br>3<br>4<br>5<br>提交：</p>
+<p>$ git commit -m “git tracks changes”<br>[master 519219b] git tracks changes<br> 1 file changed, 1 insertion(+)<br>1<br>2<br>3<br>这时候我们查看一下状态：</p>
+<p>$ git status<br>On branch master<br>Changes not staged for commit:<br>  (use “git add <file>…” to update what will be committed)<br>  (use “git checkout – <file>…” to discard changes in working directory)</p>
+<pre><code>modified:   readme.txt
+</code></pre>
+<p>no changes added to commit (use “git add” and&#x2F;or “git commit -a”)<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>我们可以发现，第二次修改并没有被提交。</p>
+<p>因为在工作区的第一次修改被放入暂存区，准备提交；而在工作区的第二次修改并没有被放入暂存区，所以， git commit 命令只负责把暂存区的修改提交了。</p>
+<p>提交后，我们可以用 git diff HEAD – readme.txt 命令去查看工作区和版本库里面最新版本的区别：</p>
+<p>$ git diff HEAD – readme.txt<br>diff –git a&#x2F;readme.txt b&#x2F;readme.txt<br>index 76d770f..a9c5755 100644<br>— a&#x2F;readme.txt<br>+++ b&#x2F;readme.txt<br>@@ -1,4 +1,4 @@<br> Git is a distributed version control system.<br> Git is free software distributed under the GPL.<br> Git has a mutable index called stage.<br>-Git tracks changes.<br>+Git tracks changes of files.<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>撤销修改<br>假如说你在 readme.txt 文件中添加了一行内容如下：</p>
+<p>$ cat readme.txt<br>Git is a distributed version control system.<br>Git is free software distributed under the GPL.<br>Git has a mutable index called stage.<br>Git tracks changes of files.<br>My stupid boss still prefers SVN.<br>1<br>2<br>3<br>4<br>5<br>6<br>最后一行是万万不能让BOSS看到的，应该怎么撤销呢？</p>
+<p>(1) 没有 git add 之前</p>
+<p>可以手动删除最后一行，手动把文件恢复到上一个版本的状态。然后再用 git checkout – file 命令丢弃工作区的修改</p>
+<p>$ git checkout – readme.txt &#x2F;&#x2F;把readme.txt文件在工作区的修改全部撤销。<br>1<br>现在看一下 readme.txt 文件内容：</p>
+<p>$ cat readme.txt<br>Git is a distributed version control system.<br>Git is free software distributed under the GPL.<br>Git has a mutable index called stage.<br>Git tracks changes of files.<br>1<br>2<br>3<br>4<br>5<br>果然复原了。</p>
+<p>(2) git add了，但没有git commit</p>
+<p>这时候的修改添加到了暂存区，但没有提交到分支，用git status查看一下：</p>
+<p>$ git status<br>On branch master<br>Changes to be committed:<br>  (use “git reset HEAD <file>…” to unstage)</p>
+<pre><code>modified:   readme.txt
+</code></pre>
+<p>1<br>2<br>3<br>4<br>5<br>6<br>这时候我们可以使用 git reset HEAD file 命令把把暂存区的修改撤销掉，重新放回工作区：</p>
+<p>$ git reset HEAD readme.txt &#x2F;&#x2F;git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区，HEAD表示最新版本。<br>Unstaged changes after reset:<br>M    readme.txt<br>1<br>2<br>3<br>现在再用 git status 查看一下：</p>
+<p>$ git status<br>On branch master<br>Changes not staged for commit:<br>  (use “git add <file>…” to update what will be committed)<br>  (use “git checkout – <file>…” to discard changes in working directory)</p>
+<pre><code>modified:   readme.txt //暂存区是干净的，工作区有修改。
+</code></pre>
+<p>1<br>2<br>3<br>4<br>5<br>6<br>7<br>这时候再丢弃工作区的修改就OK了：</p>
+<p>$ git checkout – readme.txt &#x2F;&#x2F;丢弃工作区的修改。</p>
+<p>$ git status<br>On branch master<br>nothing to commit, working tree clean<br>1<br>2<br>3<br>4<br>5<br>终于大功告成了。</p>
+<p>(3) 既 git add 了，也 git commit 了</p>
+<p>可以回退到上一个版本，见回退版本内容。</p>
+<p>删除文件&#96;<br>在工作区即 learngit 文件夹下新建一个 test.txt 文件，并添加和提交到Git：</p>
+<p>$ git add test.txt</p>
+<p>$ git commit -m “add test.txt”<br>[master b84166e] add test.txt<br> 1 file changed, 1 insertion(+)<br> create mode 100644 test.txt<br>1<br>2<br>3<br>4<br>5<br>6<br>这时候可用 rm 命令删除：</p>
+<p>$ rm test.txt<br>1<br>这时工作区和版本库就不一样了。</p>
+<p>现在又分两种情况：</p>
+<p>(1) 确实要从版本库中删除该文件，那就用 git rm 命令删除，并且 git commit：</p>
+<p>$ git rm test.txt<br>rm ‘test.txt’</p>
+<p>$ git commit -m “remove test.txt”<br>[master d46f35e] remove test.txt<br> 1 file changed, 1 deletion(-)<br> delete mode 100644 test.txt<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>这时候文件就从版本库被删除了。<br>(2) 文件被删错了。因为版本库里有，所以很好恢复：</p>
+<p>$ git checkout – test.txt &#x2F;&#x2F;用版本库里的版本替换工作区的版本。<br>1<br>Git与远程仓库交互<br>远程仓库准备工作<br>在开始这部分之前，我们需要自行注册GitHub账号。而且，因为你的本地Git仓库和GitHub仓库之间的传输是通过SSH加密的，所以需要设置：</p>
+<p>(1) 创建SSH Key。在用户主目录下，看看有没有.ssh 目录，如果有的话，看此目录下</p>
+<p><img src="/assets/2/image-20220507200333-vwye9mw.png" alt="image.png"></p>
+<p>有没有 id_rsa 和 id_rsa.pub 这两个文件，如果有，直接跳到下一步。如果没有，打开Git Bash，创建SSH</p>
+<p>(2) 登陆GitHub，打开”Account settings”</p>
+<p><img src="/assets/2/image-20220507200343-sclrfq2.png" alt="image.png"></p>
+<p>然后点击”Add SSH and GPG Keys”，再点击”New SSH Key”进行SSH Key 的创建，填上任意 Title ，把 id_rsa.pub 中的内容复制到Key文本框内：</p>
+<p><img src="/assets/2/image-20220507200352-c38yp2i.png" alt="image.png"></p>
+<p>添加远程库<br>现在我们已经在本地创建了一个Git仓库了，又想在GitHub上创建一个Git仓库，然后让这两个仓库进行远程同步，这样，GitHub上的仓库既可以作为备份，又可以让其他人通过该仓库来协作。那么我们应该怎么做呢？</p>
+<p>首先，登陆GitHub，在右上角找到“Create a new repo”按钮，创建一个新的仓库：</p>
+<p><img src="/assets/2/image-20220507200401-gerwzac.png" alt="image.png"></p>
+<p>在Repository name填入 learngit （因为我已经创建完成了，所以提示此用户名存在）其他保持默认设置，点击“Create repository”按钮，就成功地创建了一个新的Git仓库：</p>
+<p><img src="/assets/2/image-20220507200409-ueso7yv.png" alt="image.png"></p>
+<p>如上图所示我已经把本地仓库的内容推送到了GitHub上了，大家创建完以后应该是一个空的仓库。这时候我们可以在本地learngit仓库下运行命令：</p>
+<p>$ git remote add origin <a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#116;&#64;&#103;&#105;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;</a>:RFHzhj&#x2F;learngit.git &#x2F;&#x2F;“RFHzhj”是我的GitHub的账户名，你需要填写你自己的账户名<br>1<br>添加后，远程库的名字就是 origin ，这是Git默认的叫法。</p>
+<p>然后，我们就可以把本地库的所有内容推送到远程库上：</p>
+<p>$ git push -u origin master<br>Counting objects: 20, done.<br>Delta compression using up to 4 threads.<br>Compressing objects: 100% (15&#x2F;15), done.<br>Writing objects: 100% (20&#x2F;20), 1.64 KiB | 560.00 KiB&#x2F;s, done.<br>Total 20 (delta 5), reused 0 (delta 0)<br>remote: Resolving deltas: 100% (5&#x2F;5), done.<br>To github.com:RFHzhj&#x2F;learngit.git</p>
+<ul>
+<li>[new branch]      master -&gt; master<br>Branch ‘master’ set up to track remote branch ‘master’ from ‘origin’.<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>使用 git push 命令，就是把当前分支 master 推送到远程。</li>
+</ul>
+<p>因为远程库是空的，所以我们在第一次推送 master 分支时，要加上 -u 参数，Git不但会把本地的 master 分支内容推送的远程新的 master 分支，还会把本地的 master 分支和远程的 master 分支关联起来，在以后的推送或者拉取时就可以简化命令。</p>
+<p>推送成功后，可以立刻在GitHub页面中看到远程库的内容已经和本地一模一样：</p>
+<p><img src="/assets/2/image-20220507200422-9h9jrnv.png" alt="image.png"></p>
+<p>从现在起，只要本地作了提交，就可以通过命令：</p>
+<p>$ git push origin master<br>1<br>把本地 master 分支的最新修改推送至GitHub。现在，我们拥有了真正的分布式版本库。</p>
+<p>从远程库克隆<br>我们的学习过程是先有了本地库，后有了远程库，然后再对远程库进行关联。</p>
+<p>其实，我们大部分时候是先创建远程库，然后再从远程库克隆。<br>（截取从第二个转载连接的远程仓库部分进行转载）<br>上面我们了解了先有本地库，后有远程库时候，如何关联远程库。</p>
+<p>现在我们想，假如远程库有新的内容了，我想克隆到本地来 如何克隆呢？</p>
+<p>首先，登录github，创建一个新的仓库，名字叫testgit2.如下：</p>
+<p><img src="/assets/2/image-20220507200435-r2bolam.png" alt="image.png"></p>
+<p>如下，我们看到：</p>
+<p><img src="/assets/2/image-20220507200444-lf8dy3d.png" alt="image.png"></p>
+<p>现在，远程库已经准备好了，下一步是使用命令git clone克隆一个本地库了。如下所示：</p>
+<p><img src="/assets/2/image-20220507200452-8d1eoig.png" alt="image.png"></p>
+<p>接着在我本地目录下 生成testgit2目录了，如下所示：</p>
+<p><img src="/assets/2/image-20220507200459-6grha7b.png" alt="image.png"></p>
+<p>创建与合并分支<br>在 版本回填退里，你已经知道，每次提交，Git都把它们串成一条时间线，这条时间线就是一个分支。截止到目前，只有一条时间线，在Git里，这个分支叫主分支，即master分支。HEAD严格来说不是指向提交，而是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支。</p>
+<p>首先，我们来创建dev分支，然后切换到dev分支上。如下操作：</p>
+<p><img src="/assets/2/image-20220507200506-arsjbya.png" alt="image.png"></p>
+<p>git checkout 命令加上 –b参数表示创建并切换，相当于如下2条命令</p>
+<p>git branch dev</p>
+<p>git checkout dev</p>
+<p>git branch查看分支，会列出所有的分支，当前分支前面会添加一个星号。然后我们在dev分支上继续做demo，比如我们现在在readme.txt再增加一行 7777777777777</p>
+<p>首先我们先来查看下readme.txt内容，接着添加内容77777777，如下：</p>
+<p><img src="/assets/2/image-20220507200513-hzo4stk.png" alt="image.png"></p>
+<p>现在dev分支工作已完成，现在我们切换到主分支master上，继续查看readme.txt内容如下：</p>
+<p><img src="/assets/2/image-20220507200520-53i1n9y.png" alt="image.png"></p>
+<p>现在我们可以把dev分支上的内容合并到分支master上了，可以在master分支上，使用如下命令 git merge dev 如下所示：</p>
+<p><img src="/assets/2/image-20220507200529-2g2fj46.png" alt="image.png"></p>
+<p>git merge命令用于合并指定分支到当前分支上，合并后，再查看readme.txt内容，可以看到，和dev分支最新提交的是完全一样的。</p>
+<p>注意到上面的Fast-forward信息，Git告诉我们，这次合并是“快进模式”，也就是直接把master指向dev的当前提交，所以合并速度非常快。</p>
+<p>合并完成后，我们可以接着删除dev分支了，操作如下：</p>
+<p><img src="/assets/2/image-20220507200550-r1l4a5j.png" alt="image.png"></p>
+<p>总结创建与合并分支命令如下：</p>
+<p>查看分支：git branch</p>
+<p>创建分支：git branch name</p>
+<p>切换分支：git checkout name</p>
+<p>创建+切换分支：git checkout –b name</p>
+<p>合并某分支到当前分支：git merge name</p>
+<p>删除分支：git branch –d name</p>
+<p>如何解决冲突？<br>下面我们还是一步一步来，先新建一个新分支，比如名字叫fenzhi1，在readme.txt添加一行内容8888888，然后提交，如下所示：</p>
+<p><img src="/assets/2/image-20220507200602-9pmx2mb.png" alt="image.png"></p>
+<p>同样，我们现在切换到master分支上来，也在最后一行添加内容，内容为99999999，如下所示：</p>
+<p><img src="/assets/2/image-20220507200609-l8r3v1e.png" alt="image.png"></p>
+<p>现在我们需要在master分支上来合并fenzhi1，如下操作：</p>
+<p><img src="/assets/2/image-20220507200618-g0t0yzf.png" alt="image.png"></p>
+<p>Git用&lt;&lt;&lt;&lt;&lt;&lt;&lt;，&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;，&gt;&gt;&gt;&gt;&gt;&gt;&gt;标记出不同分支的内容，其中&lt;&lt;&lt;HEAD是指主分支修改的内容，&gt;&gt;&gt;&gt;&gt;fenzhi1 是指fenzhi1上修改的内容，我们可以修改下如下后保存：</p>
+<p><img src="/assets/2/image-20220507200625-itwxuwe.png" alt="image.png"></p>
+<p>如果我想查看分支合并的情况的话，需要使用命令 git log 命令行演示如下：</p>
+<p><img src="/assets/2/image-20220507200633-3zgtf4c.png" alt="image.png"></p>
+<p>3.分支管理策略。 通常合并分支时，git一般使用”Fast forward”模式，在这种模式下，删除分支后，会丢掉分支信息，现在我们来使用带参数 –no-ff 来禁用”Fast forward”模式。首先我们来做demo演示下：</p>
+<p>创建一个dev分支。<br>修改readme.txt内容。<br>添加到暂存区。<br>切换回主分支(master)。<br>合并dev分支，使用命令 git merge –no-ff -m “注释” dev<br>查看历史记录<br>截图如下：</p>
+<p><img src="/assets/2/image-20220507200642-xurq5wg.png" alt="image.png"></p>
+<p>分支策略：首先master主分支应该是非常稳定的，也就是用来发布新版本，一般情况下不允许在上面干活，干活一般情况下在新建的dev分支上干活，干完后，比如上要发布，或者说dev分支代码稳定后可以合并到主分支master上来。</p>
+<p>bug分支<br>在开发中，会经常碰到bug问题，那么有了bug就需要修复，在Git中，分支是很强大的，每个bug都可以通过一个临时分支来修复，修复完成后，合并分支，然后将临时的分支删除掉。</p>
+<p>比如我在开发中接到一个404 bug时候，我们可以创建一个404分支来修复它，但是，当前的dev分支上的工作还没有提交。比如如下：</p>
+<p><img src="/assets/2/image-20220507200656-upvowcm.png" alt="image.png"></p>
+<p>并不是我不想提交，而是工作进行到一半时候，我们还无法提交，比如我这个分支bug要2天完成，但是我issue-404 bug需要5个小时内完成。怎么办呢？还好，Git还提供了一个stash功能，可以把当前工作现场 ”隐藏起来”，等以后恢复现场后继续工作。如下：</p>
+<p><img src="/assets/2/image-20220507200705-gv9i4f0.png" alt="image.png"></p>
+<p>所以现在我可以通过创建issue-404分支来修复bug了。</p>
+<p>首先我们要确定在那个分支上修复bug，比如我现在是在主分支master上来修复的，现在我要在master分支上创建一个临时分支，演示如下：</p>
+<p><img src="/assets/2/image-20220507200713-cobq3ek.png" alt="image.png"></p>
+<p>修复完成后，切换到master分支上，并完成合并，最后删除issue-404分支。演示如下：</p>
+<p><img src="/assets/2/image-20220507200720-t5kjmxl.png" alt="image.png"></p>
+<p>现在，我们回到dev分支上干活了。</p>
+<p><img src="/assets/2/image-20220507200730-cu0s1ef.png" alt="image.png"></p>
+<p>工作区是干净的，那么我们工作现场去哪里呢？我们可以使用命令 git stash list 来查看下。如下：</p>
+<p><img src="/assets/2/image-20220507200738-uk13e10.png" alt="image.png"></p>
+<p>工作现场还在，Git把stash内容存在某个地方了，但是需要恢复一下，可以使用如下2个方法：</p>
+<p>1.git stash apply恢复，恢复后，stash内容并不删除，你需要使用命令git stash drop来删除。<br>2.另一种方式是使用git stash pop,恢复的同时把stash内容也删除了。<br>演示如下</p>
+<p><img src="/assets/2/image-20220507200747-zfv1sag.png" alt="image.png"></p>
+<p>多人协作<br>当你从远程库克隆时候，实际上Git自动把本地的master分支和远程的master分支对应起来了，并且远程库的默认名称是origin。</p>
+<p>要查看远程库的信息 使用 git remote</p>
+<p>要查看远程库的详细信息 使用 git remote –v<br>如下演示：</p>
+<p><img src="/assets/2/image-20220507200754-jm65prs.png" alt="image.png"></p>
+<ol>
+<li>推送分支：<br> 推送分支就是把该分支上所有本地提交到远程库中，推送时，要指定本地分支，这样，Git就会把该分支推送到远程库对应的远程分支上： 使用命令 git push origin master</li>
+</ol>
+<p>比如我现在的github上的readme.txt代码如下：</p>
+<p><img src="/assets/2/image-20220507200806-ou2rdju.png" alt="image.png"></p>
+<p>本地的readme.txt代码如下：</p>
+<p><img src="/assets/2/image-20220507200813-u2izoh6.png" alt="image.png"></p>
+<p>现在我想把本地更新的readme.txt代码推送到远程库中，使用命令如下：</p>
+<p><img src="/assets/2/image-20220507200841-in0bcfd.png" alt="image.png"></p>
+<p>我们可以看到如上，推送成功，我们可以继续来截图github上的readme.txt内容 如下：</p>
+<p><img src="/assets/2/image-20220507200852-hyor60m.png" alt="image.png"></p>
+<p>可以看到 推送成功了，如果我们现在要推送到其他分支，比如dev分支上，我们还是那个命令 git push origin dev</p>
+<p>那么一般情况下，那些分支要推送呢？</p>
+<p>master分支是主分支，因此要时刻与远程同步。<br>一些修复bug分支不需要推送到远程去，可以先合并到主分支上，然后把主分支master推送到远程去。</p>
+<ol start="2">
+<li>抓取分支：<br> 多人协作时，大家都会往master分支上推送各自的修改。现在我们可以模拟另外一个同事，可以在另一台电脑上（注意要把SSH key添加到github上）或者同一台电脑上另外一个目录克隆，新建一个目录名字叫testgit2</li>
+</ol>
+<p>但是我首先要把dev分支也要推送到远程去，如下</p>
+<p><img src="/assets/2/image-20220507200905-bq9eypq.png" alt="image.png"></p>
+<p>接着进入testgit2目录，进行克隆远程的库到本地来，如下：</p>
+<p><img src="/assets/2/image-20220507200913-7z5adse.png" alt="image.png"></p>
+<p>现在目录下生成有如下所示：</p>
+<p><img src="/assets/2/image-20220507200921-k7xy767.png" alt="image.png"></p>
+<p>现在我们的小伙伴要在dev分支上做开发，就必须把远程的origin的dev分支到本地来，于是可以使用命令创建本地dev分支：</p>
+<p>git checkout –b dev origin&#x2F;dev</p>
+<p>现在小伙伴们就可以在dev分支上做开发了，开发完成后把dev分支推送到远程库时。</p>
+<p>如下：</p>
+<p><img src="/assets/2/image-20220507200930-1mx9vw9.png" alt="image.png"></p>
+<p>小伙伴们已经向origin&#x2F;dev分支上推送了提交，而我在我的目录文件下也对同样的文件同个地方作了修改，也试图推送到远程库时，如下：</p>
+<p><img src="/assets/2/image-20220507200940-n959oa8.png" alt="image.png"></p>
+<p>由上面可知：推送失败，因为我的小伙伴最新提交的和我试图推送的有冲突，解决的办法也很简单，上面已经提示我们，先用git pull把最新的提交从origin&#x2F;dev抓下来，然后在本地合并，解决冲突，再推送。</p>
+<p><img src="/assets/2/image-20220507200949-49am5ce.png" alt="image.png"></p>
+<p>git pull也失败了，原因是没有指定本地dev分支与远程origin&#x2F;dev分支的链接，根据提示，设置dev和origin&#x2F;dev的链接：如下：</p>
+<p><img src="/assets/2/image-20220507200957-wjs4io8.png" alt="image.png"></p>
+<p>这回git pull成功，但是合并有冲突，需要手动解决，解决的方法和分支管理中的 解决冲突完全一样。解决后，提交，再push：<br>我们可以先来看看readme.txt内容了。</p>
+<p><img src="/assets/2/image-20220507201022-2visnno.png" alt="image.png"></p>
+<p>现在手动已经解决完了，我接在需要再提交，再push到远程库里面去。如下所示：</p>
+<p><img src="/assets/2/image-20220507201029-vzd554q.png" alt="image.png"></p>
+<p>因此：多人协作工作模式一般是这样的：</p>
+<p>首先，可以试图用git push origin branch-name推送自己的修改.<br>如果推送失败，则因为远程分支比你的本地更新早，需要先用git pull试图合并。<br>如果合并有冲突，则需要解决冲突，并在本地提交。再用git push origin branch-name推送</p>
+<p>工作使用Git<br>不墨迹直接上代码：<br>知道如何生成SSH KEY<br>知道know_hosts文件路径在哪儿<br>loading…<br>项目经理：<br>(1)项目经理搭建项目的框架。<br>(2)搭建完项目框架之后，项目经理把项目框架代码放到服务器。</p>
+<p>普通员工：<br>(1)在自己的电脑上，生成ssh公钥，然后把公钥给项目经理，项目经理把它添加的服务器上面。<br>(2)项目经理会给每个组员的项目代码的地址，组员把代码下载到自己的电脑上。<br>(3)创建本地的分支dev,在dev分支中进行每天的开发。<br>(4)每一个员工开发完自己的代码之后，都需要将代码发布远程的dev分支上。</p>
+<p>项目里一般会有两个分支，如：<br>Master:用于保存发布的项目代码。<br>Dev:用于保存开发过程中的代码。所有的组员开发完自己的代码提交到该分支上。<br>补充小技巧：<br>首先，整体认知一下工作中git常用的就这么几个命令：<br>步骤1.创建项目目录，如git_test【强烈建议返回到2.安装配置一节，学一学在windows中用mkdir git_test。工作中点来点去，文件夹一多就不爽了，学会在windows上用linux命令，工作效率谁用谁知道<del>】<br>步骤2.git init【如果你考皮github上别人的代码，必须将别人的.git文件删掉。步骤：进入项目目录，如git_test，cd git_test，ls -al，rm -rf .git】【工作中linux必会的，赶快回到2.安装配置一节，学一学在windows使用linux命令，这样就不用装linux环境了，简单胜于复杂</del>】<br>步骤3.git add .<br>步骤4.git commit -m “整体提交”<br>步骤5.git remote add origin&#x2F;github URL<br>add 后面的名字可以是【origin&#x2F;github】<br>URL是【你的github&#x2F;gitlab仓库地址】<br>步骤6.git checkout -b dev<br>步骤7.git push origin&#x2F;github dev<br>步骤8：权限控制允许了吗？</p>
+<p>如何在Windows的cmd 中使用linux的命令<br>cmd的命令功能肯定没有linux的命令功能好用，这点毋庸置疑。<br>现在装好了Git，就可以在Windows的cmd中使用linux命令了。<br>记住关键词：环境变量 Git命令<br>怎么玩？如下2步操作：<br>假如你按照上述步骤将Git装在C盘，那么做如下操作：<br>操作1：找Git命令的【.exe文件】。如图：</p>
+<p><img src="/assets/2/image-20220507201104-w87yt8a.png" alt="image.png"></p>
+<p>操作2：添加到环境变量，就可以在cmd里使用linux命令了。如图：</p>
+<p><img src="/assets/2/image-20220507201114-c6q4afi.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220507201127-6qij2o1.png" alt="image.png"></p>
+<p>最终效果：</p>
+<p><img src="/assets/2/image-20220507201135-jzwr6gr.png" alt="image.png"></p>
+<p>PyCharm也可以使用linux命令。【环境变量–全局—使用】</p>
+<p><img src="/assets/2/image-20220507201143-a0dbf4m.png" alt="image.png"></p>
+<p>备注：你可能需要关闭之前打开的cmd窗口&#x2F;PyCharm窗口，重新打开新的cmd窗口&#x2F;&#x2F;PyCharm窗口，使用命令才可能生效。<br>恭喜你已经掌握在Windows环境下使用linux命令了【效率会提高一点点】</p>
+<p>思维导图</p>
+<p><img src="/assets/2/image-20220507201150-2rk7yjo.png" alt="image.png"></p>
+]]></content>
       <categories>
         <category>07_测试工具</category>
         <category>01_测试管理工具</category>
