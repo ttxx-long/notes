@@ -3,22 +3,41 @@
 <head>
     <meta charset="utf-8">
     
-    <title>hudson | TTXX课程</title>
+    <title>hudson安装以及使用 | TTXX课程</title>
     
     
         <meta name="keywords" content="课后" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="article">
-<meta property="og:title" content="hudson">
-<meta property="og:url" content="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02_hudson/01_hudson/index.html">
+    <meta name="description" content="之前已经记录了maven和sonar的安装以及使用： 本篇文章将hudson安装使用说明一下，hudson 与 jenkins一样是可扩展的持续集成引擎。 持续化集成环境    1.JDK:1.8.0_60    2.hudson-3.2.2    3.操作系统 win8 64位    4.tomcat版本apache-tomcat-8.0.24    5.环境变量配置的maven是3.3.9版本">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hudson安装以及使用">
+<meta property="og:url" content="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02_hudson/01_hudson%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="TTXX课程">
+<meta property="og:description" content="之前已经记录了maven和sonar的安装以及使用： 本篇文章将hudson安装使用说明一下，hudson 与 jenkins一样是可扩展的持续集成引擎。 持续化集成环境    1.JDK:1.8.0_60    2.hudson-3.2.2    3.操作系统 win8 64位    4.tomcat版本apache-tomcat-8.0.24    5.环境变量配置的maven是3.3.9版本">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220051-kncrryg.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220107-bfzjg4s.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220123-n6qsb2s.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220133-dh9w0vh.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220139-6etkvzt.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220150-wq4flc8.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220200-7zuogii.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220220-k6mcthc.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220240-0vvbzyo.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220248-dnkpelv.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220255-k6sx3xn.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220310-9p96ji0.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220321-yoqe748.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220332-t6sp991.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220345-6kmlxyv.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508220356-v6wjyip.png">
 <meta property="article:published_time" content="2022-04-29T17:14:25.644Z">
-<meta property="article:modified_time" content="2022-04-30T05:23:09.119Z">
+<meta property="article:modified_time" content="2022-05-08T14:09:02.903Z">
 <meta property="article:author" content="yulong">
 <meta property="article:tag" content="课后">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/2/image-20220508220051-kncrryg.png">
     
 
     
@@ -908,7 +927,7 @@
                             &nbsp;
                             02_hudson
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02_hudson/01_hudson/">hudson</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02_hudson/01_hudson%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8/">hudson安装以及使用</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -1390,7 +1409,7 @@
     <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
             
-            <section id="main"><article id="post-软件测试笔记/07_测试工具/07_持续集成工具/02_hudson/01_hudson" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-软件测试笔记/07_测试工具/07_持续集成工具/02_hudson/01_hudson安装以及使用" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -1412,7 +1431,7 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02_hudson/01_hudson/">
+        <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02_hudson/01_hudson%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8/">
             <time datetime="2022-04-29T17:14:25.644Z" itemprop="datePublished">2022-04-30</time>
         </a>
     </div>
@@ -1428,7 +1447,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            hudson
+            hudson安装以及使用
         </h1>
     
 
@@ -1441,7 +1460,206 @@
             
         
         
-            
+            <p>之前已经记录了maven和sonar的安装以及使用：</p>
+<p>本篇文章将hudson安装使用说明一下，hudson 与 jenkins一样是可扩展的持续集成引擎。</p>
+<p>持续化集成环境</p>
+<p>   1.JDK:1.8.0_60</p>
+<p>   2.hudson-3.2.2</p>
+<p>   3.操作系统 win8 64位</p>
+<p>   4.tomcat版本apache-tomcat-8.0.24</p>
+<p>   5.环境变量配置的maven是3.3.9版本(版本有误,所以最终没有用到)</p>
+<p>   6.重新下载的maven版本3.1.1</p>
+<p>运行war包和可执行jar的环境：</p>
+<p>   1.(dubbo服务)为linux环境。(ip:192.168.103.228)</p>
+<p>注意事项：由于处于两个服务器，所以特别需要注意项目打包使用的jdk和最后jar&#x2F;war包运行的环境中tomcat所使用的jdk要保持一致。</p>
+<p>当时由于配置了使用3.3.9版本maven时执行hudson Job时报错，所以重新又下载了maven 3.1.1,系统管理中配置的maven的maven_home是新的maven 3.1.1的安装主目录</p>
+<p>hudson 的运行,将下载的hudson-3.2.2.war包改个名字为hudson然后丢到tomcat的webapps下(D:\Program Files (x86)\apache-tomcat-8.0.24\webapps)</p>
+<p>插件的安装：</p>
+<p>下载插件的网址：<a target="_blank" rel="noopener" href="http://hudson-ci.org/download/plugins/">http://hudson-ci.org/download/plugins/</a></p>
+<p>方法1. 系统管理-》管理插件  如果这种安装方法出现了问题。可以换成第二种方法</p>
+<p>方法2. 从<a target="_blank" rel="noopener" href="http://hudson-ci.org/download/plugins/%E7%BD%91%E5%9D%80%E4%B8%8B%E4%B8%8B%E8%BD%BD%E5%A5%BD%E6%8F%92%E4%BB%B6%EF%BC%8C%E5%A4%8D%E5%88%B6%E5%88%B0hudson%E7%9A%84%E7%94%A8%E6%88%B7%E7%9B%AE%E5%BD%95%E4%B8%8B%EF%BC%9AC:/Users/a/.hudson/plugins%EF%BC%8C%E7%84%B6%E5%90%8E%E9%87%8D%E6%96%B0%E5%90%AF%E5%8A%A8hudson%E5%8D%B3%E5%8F%AF%E8%87%AA%E5%8A%A8%E5%AE%89%E8%A3%85%E3%80%82">http://hudson-ci.org/download/plugins/网址下下载好插件，复制到hudson的用户目录下：C:\Users\a\.hudson\plugins，然后重新启动hudson即可自动安装。</a></p>
+<p>用到的插件名字：</p>
+<p><img src="/assets/2/image-20220508220051-kncrryg.png" alt="image.png"></p>
+<p>deploy.hpi是将jar包或者war包部署到tomcat，使用tomcat自带的部署方式，只要指定用户名密码和url即可。url:<a target="_blank" rel="noopener" href="http://127.0.0.1:8180/">http://127.0.0.1:8180/</a> 通过tomcat自带的项目管理发布的</p>
+<p>sonar.hpi为sonar插件</p>
+<p>scp.hpi是通过scp方式传输文件之类。(ssh协议)</p>
+<p>ssh.hpi 默认端口22,远程执行脚本</p>
+<p>maven-plugin.hpi为maven插件 但是我还是禁用了，使用自己单独下载的。maven-plugin.hpi.disabled表示禁用吧，其实我猜的。</p>
+<p><img src="/assets/2/image-20220508220107-bfzjg4s.png" alt="image.png"></p>
+<p>hudson用户目录</p>
+<p>hudson主目录下C:\Users\a.hudson\jobs下是每个hudson的job运行时所用的工作区间，在每个job下的工作区间有一个workspace目录，这个目录是从svn上拉下来的代码存放的位置。</p>
+<p>新建一个job是在advanced job options中有一个选项Clean workspace before build可以clean workspace在每次build之前可以clean掉workspace。</p>
+<p>操作步骤：</p>
+<p>hudson系统配置</p>
+<ol>
+<li><p><img src="/assets/2/image-20220508220123-n6qsb2s.png" alt="image.png"></p>
+</li>
+<li><p><img src="/assets/2/image-20220508220133-dh9w0vh.png" alt="image.png"></p>
+</li>
+<li><p><img src="/assets/2/image-20220508220139-6etkvzt.png" alt="image.png"></p>
+</li>
+<li><p>配置sonar-qube服务器,点击advanced配置选项</p>
+<p> <img src="/assets/2/image-20220508220150-wq4flc8.png" alt="image.png"></p>
+</li>
+</ol>
+<p>5.这个一个新的job，负责是打包dubbo服务的成为一个可执行的jar包。</p>
+<p><img src="/assets/2/image-20220508220200-7zuogii.png" alt="image.png"></p>
+<ol start="6">
+<li>clean deploy 并且 删除远程服务器上之前的上传的jar和lib包</li>
+</ol>
+<p>Build Triggers部分配置的是触发构建的方式。可选的三种方式分别为：</p>
+<p>□Build after other project are built：在其他项目构建完成之后构建本项目。</p>
+<p>□Build periodically：周期性地构建本项目。</p>
+<p>□Poll SCM：周期性地轮询源码仓库，发现有更新的时候构建本项目。</p>
+<p><img src="/assets/2/image-20220508220220-k6mcthc.png" alt="image.png"></p>
+<ol start="7">
+<li>配置build完之后接着执行job(pubDobboService)以及通过scp插件上传hudson用户目录下job目录下workspace下执行完deploy之后最新的jar到远程服务器上</li>
+</ol>
+<p>当前目录是workspace目录,必须使用相对路径。配置中source为hudson所在的目录，destination为hudson系统配置下scp repository hosts(SCP sites)配置的远程服务器。</p>
+<p>此处上传了一个可执行jar包和该jar包执行时所需要的jar包(放在lib文件夹下)。</p>
+<blockquote>
+<plugins>
+            <!-- 打包jar文件时，配置manifest文件，加入lib包的jar依赖 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <classesDirectory>target/classes/</classesDirectory>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.alibaba.dubbo.container.Main</mainClass>
+                            <!-- 打包时 MANIFEST.MF文件不记录的时间戳版本 -->
+                            <useUniqueVersions>false</useUniqueVersions>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                        </manifest>
+                        <manifestEntries>
+                            <Class-Path>.</Class-Path>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+
+<pre><code>                    &lt;id&gt;copy-dependencies&lt;/id&gt;
+                    &lt;phase&gt;package&lt;/phase&gt;
+                    &lt;goals&gt;
+                        &lt;goal&gt;copy-dependencies&lt;/goal&gt;
+                    &lt;/goals&gt;
+                    &lt;configuration&gt;
+                        &lt;type&gt;jar&lt;/type&gt;
+                        &lt;includeTypes&gt;jar&lt;/includeTypes&gt;
+                        &lt;useUniqueVersions&gt;false&lt;/useUniqueVersions&gt;
+                        &lt;outputDirectory&gt;
+                            $&#123;project.build.directory&#125;/lib
+                        &lt;/outputDirectory&gt;
+                    &lt;/configuration&gt;
+                &lt;/execution&gt;
+            &lt;/executions&gt;
+        &lt;/plugin&gt;
+    &lt;/plugins&gt;
+</code></pre>
+</blockquote>
+<p><img src="/assets/2/image-20220508220240-0vvbzyo.png" alt="image.png"></p>
+<p>8.这个是在上个job(负责打包可执行jardubbo服务上传到远程服务器)之后执行的。所以Build Triggers中Build after other jobs are built选项勾上，jobs names 为efp-service-core</p>
+<p><img src="/assets/2/image-20220508220248-dnkpelv.png" alt="image.png"></p>
+<ol start="9">
+<li><img src="/assets/2/image-20220508220255-k6sx3xn.png" alt="image.png"></li>
+</ol>
+<p>efpDubboService.sh(参考网址：<a target="_blank" rel="noopener" href="http://blog.csdn.net/chenli522/article/details/47083443">http://blog.csdn.net/chenli522/article/details/47083443</a>)</p>
+<blockquote>
+<p>#!&#x2F;bin&#x2F;sh</p>
+<h2 id="java-env"><a href="#java-env" class="headerlink" title="java env"></a>java env</h2><p>export JAVA_HOME&#x3D;&#x2F;usr&#x2F;java&#x2F;jdk1.7.0_80<br>export JRE_HOME&#x3D;$JAVA_HOME&#x2F;jre</p>
+<h2 id="service-name"><a href="#service-name" class="headerlink" title="service name"></a>service name</h2><p>APP_NAME&#x3D;dubboService</p>
+<p>SERVICE_DIR&#x3D;&#x2F;efp&#x2F;service&#x2F;$APP_NAME<br>SERVICE_NAME&#x3D;efpDubboService<br>JAR_NAME&#x3D;$SERVICE_NAME.jar<br>PID&#x3D;$SERVICE_NAME.pid</p>
+<p>cd $SERVICE_DIR</p>
+<p>case “$1” in</p>
+<pre><code>start)
+    nohup $JRE_HOME/bin/java -Xms256m -Xmx512m -jar $JAR_NAME &gt;/dev/null 2&gt;&amp;1 &amp;
+    echo $! &gt; $SERVICE_DIR/$PID
+    echo &quot;=== start $SERVICE_NAME&quot;
+    ;;
+
+stop)
+    if [ -f $SERVICE_DIR/$PID ]; then
+    txtP_ID=`cat $SERVICE_DIR/$PID`
+    kill -9 $txtP_ID
+        rm -rf $SERVICE_DIR/$PID
+    fi&lt;br /&gt;        echo &quot;=== stop $SERVICE_NAME&quot;
+
+    sleep 5
+
+    P_ID=`ps -ef | grep -w $JAR_NAME | grep -v &quot;grep&quot; | awk &#39;&#123;print $2&#125;&#39;`
+    if [ &quot;$P_ID&quot; == &quot;&quot; ]; then
+        echo &quot;=== $SERVICE_NAME process not exists or stop success&quot;
+    else
+        echo &quot;=== $SERVICE_NAME process pid is:$P_ID&quot;
+        echo &quot;=== begin kill $SERVICE_NAME process, pid is:$P_ID&quot;
+        kill -9 $P_ID
+    fi
+    ;;
+
+restart)
+    $0 stop
+    sleep 2
+    $0 start
+    echo &quot;=== restart $SERVICE_NAME&quot;
+    ;;
+
+*)
+    ## restart
+    $0 stop
+    sleep 2
+    $0 start
+    ;;
+</code></pre>
+<p>esac<br>exit 0<br /></p>
+</blockquote>
+<ol start="10">
+<li></li>
+</ol>
+<p>efp-web-fore项目是web项目是需要打成war包的,所以需要之前各个模块的打成jar包的build deploy job任务已经完成。</p>
+<p><img src="/assets/2/image-20220508220310-9p96ji0.png" alt="image.png"></p>
+<ol start="11">
+<li>build Environment中勾选Execute shell script on remote host using ssh</li>
+</ol>
+<p>SSH site 是在系统配置中配置的SSH remote sites配置的</p>
+<p>SSH sites。<br>此处写了停止tomcat(在build之前执行)和运行tomcat的脚本并且删除之前的efp war包(在build之后执行)</p>
+<p>build执行的是maven指令 clean deploy -Dmaven.test.skip&#x3D;true 表示clean 打包 发布但是跳过执行单元测试</p>
+<p><img src="/assets/2/image-20220508220321-yoqe748.png" alt="image.png"></p>
+<ol start="12">
+<li><p>build完成之后通过scp插件将生成的war包上传到远程服务器上。</p>
+<p> <img src="/assets/2/image-20220508220332-t6sp991.png" alt="image.png"></p>
+</li>
+<li><p>这是一个新的job 负责执行sonar代码检查。</p>
+</li>
+</ol>
+<p>多个模块，我就在一个父文件夹下建立一个sonar-project.properties文件</p>
+<p>sonar-project.properties内容</p>
+<blockquote>
+<h1 id="Root-project-information"><a href="#Root-project-information" class="headerlink" title="Root project information"></a>Root project information</h1><p>sonar.projectKey&#x3D;efp<br>sonar.projectName&#x3D;efp<br>sonar.projectVersion&#x3D;1.0.0</p>
+<h1 id="Some-properties-that-will-be-inherited-by-the-modules"><a href="#Some-properties-that-will-be-inherited-by-the-modules" class="headerlink" title="Some properties that will be inherited by the modules"></a>Some properties that will be inherited by the modules</h1><p>sonar.sources&#x3D;src&#x2F;main&#x2F;java</p>
+<h1 id="List-of-the-module-identifiers"><a href="#List-of-the-module-identifiers" class="headerlink" title="List of the module identifiers"></a>List of the module identifiers</h1><p>sonar.modules&#x3D;efp-common-config,efp-facade-core,efp-common-web,efp-common-util,efp-service-core,efp-web-fore</p>
+<h1 id="Properties-can-obviously-be-overriden-for"><a href="#Properties-can-obviously-be-overriden-for" class="headerlink" title="Properties can obviously be overriden for"></a>Properties can obviously be overriden for</h1><h1 id="each-module-just-prefix-them-with-the-module-ID"><a href="#each-module-just-prefix-them-with-the-module-ID" class="headerlink" title="each module - just prefix them with the module ID"></a>each module - just prefix them with the module ID</h1><p>#efp-common-config module<br>efp-common-config.sonar.projectName&#x3D;efp-common-config<br>efp-common-config.sonar.sources&#x3D;src</p>
+<p>#efp-facade-core<br>efp-facade-core.sonar.projectName&#x3D;efp-facade-core</p>
+<p>#efp-common-web<br>efp-common-web.sonar.projectName&#x3D;efp-common-web<br>efp-common-web.sonar.exclusions&#x3D;&#x2F;src&#x2F;main&#x2F;java&#x2F;com&#x2F;zbiti&#x2F;platform&#x2F;web&#x2F;filter&#x2F;<strong>, src&#x2F;main&#x2F;java&#x2F;com&#x2F;zbiti&#x2F;platform&#x2F;core&#x2F;</strong></p>
+<p>#efp-common-util<br>efp-common-util.sonar.projectName&#x3D;efp-common-util</p>
+<p>#efp-service-core<br>efp-service-core.sonar.projectName&#x3D;efp-service-core</p>
+<p>#efp-web-fore<br>efp-web-fore.sonar.projectName&#x3D;efp-web-fore</p>
+</blockquote>
+<p><img src="/assets/2/image-20220508220345-6kmlxyv.png" alt="image.png"></p>
+<ol start="14">
+<li>之前安装了sonar插件,所以在这里add build step有一个选项Invoke standalone sonar analysis,增加一个 这个选项，jdk选择系统配置中配置的。就好了。</li>
+</ol>
+<p>由于sonar和sonar runner在之前hudson系统配置中已经配置，所以就可以调用了。</p>
+<p><img src="/assets/2/image-20220508220356-v6wjyip.png" alt="image.png"></p>
+<p>参考网址：</p>
+<p><a target="_blank" rel="noopener" href="http://www.cnblogs.com/AlanLee/p/5372283.html">http://www.cnblogs.com/AlanLee/p/5372283.html</a></p>
+
             </div>
         
         <footer class="article-footer">
