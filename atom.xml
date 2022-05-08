@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-07T12:27:47.006Z</updated>
+  <updated>2022-05-08T14:18:50.621Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hudson的使用</title>
+    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02_hudson/02_Hudson%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02_hudson/02_Hudson%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2022-05-08T14:12:14.629Z</published>
+    <updated>2022-05-08T14:18:50.621Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Hudson之——Hudson的使用（使用-Hudson-来自动化编译、分析、打包、发布、部署项目）"><a href="#Hudson之——Hudson的使用（使用-Hudson-来自动化编译、分析、打包、发布、部署项目）" class="headerlink" title="Hudson之——Hudson的使用（使用 Hudson 来自动化编译、分析、打包、发布、部署项目）"></a>Hudson之——Hudson的使用（使用 Hudson 来自动化编译、分析、打包、发布、部署项目）</h2><p>添加项目</p><p><img src="/assets/2/image-20220508221334-gk5k0ho.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221340-c16t81i.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221351-l752mzc.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221358-wfw05al.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221419-px8s80t.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221427-d9t0fj1.png" alt="image.png"></p><p>edu-common-parent为所有项目的父级项目，没有任务Java代码，如果项目中有Java代码，则与上述配置稍微有点区别，具体看下面的步骤。</p><p><img src="/assets/2/image-20220508221440-gpkcq72.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221447-0nmzqyi.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221453-jovsw4g.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221459-jvx6n3r.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221506-hr223s4.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221513-3z1s497.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221519-9tu6ftx.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221552-90dkabg.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221559-rkjzp80.png" alt="image.png"></p><p><img src="/assets/2/image-20220508221604-pbz1sht.png" alt="image.png"></p><p>附录：</p><p>service-user.sh代码如下：</p><blockquote><p>#!&#x2F;bin&#x2F;sh</p><h2 id="java-env"><a href="#java-env" class="headerlink" title="java env"></a>java env</h2><p>export JAVA_HOME&#x3D;&#x2F;usr&#x2F;local&#x2F;java&#x2F;jdk1.7.0_72<br>export JRE_HOME&#x3D;$JAVA_HOME&#x2F;jre</p><h2 id="service-name"><a href="#service-name" class="headerlink" title="service name"></a>service name</h2><p>APP_NAME&#x3D;user</p><p>SERVICE_DIR&#x3D;&#x2F;home&#x2F;wusc&#x2F;edu&#x2F;service&#x2F;$APP_NAME<br>SERVICE_NAME&#x3D;edu-service-$APP_NAME<br>JAR_NAME&#x3D;$SERVICE_NAME.jar<br>PID&#x3D;$SERVICE_NAME.pid</p><p>cd $SERVICE_DIR</p><p>case “$1” in</p><pre><code>start)    nohup $JRE_HOME/bin/java -Xms256m -Xmx512m -jar $JAR_NAME &gt;/dev/null 2&gt;&amp;1 &amp;    echo $! &gt; $SERVICE_DIR/$PID    echo &quot;=== start $SERVICE_NAME&quot;    ;;stop)    kill `cat $SERVICE_DIR/$PID`    rm -rf $SERVICE_DIR/$PID    echo &quot;=== stop $SERVICE_NAME&quot;    sleep 5    P_ID=`ps -ef | grep -w &quot;$SERVICE_NAME&quot; | grep -v &quot;grep&quot; | awk &#39;&#123;print $2&#125;&#39;`    if [ &quot;$P_ID&quot; == &quot;&quot; ]; then        echo &quot;=== $SERVICE_NAME process not exists or stop success&quot;    else        echo &quot;=== $SERVICE_NAME process pid is:$P_ID&quot;        echo &quot;=== begin kill $SERVICE_NAME process, pid is:$P_ID&quot;        kill -9 $P_ID    fi    ;;restart)    $0 stop    sleep 2    $0 start    echo &quot;=== restart $SERVICE_NAME&quot;    ;;*)    ## restart    $0 stop    sleep 2    $0 start    ;;</code></pre><p>esac<br>exit 0</p></blockquote><p>restart.sh代码如下：</p><blockquote><h2 id="java-env-1"><a href="#java-env-1" class="headerlink" title="java env"></a>java env</h2><p>export JAVA_HOME&#x3D;&#x2F;usr&#x2F;local&#x2F;java&#x2F;jdk1.7.0_72<br>export JRE_HOME&#x3D;$JAVA_HOME&#x2F;jre</p><h2 id="restart-tomcat"><a href="#restart-tomcat" class="headerlink" title="restart tomcat"></a>restart tomcat</h2><p>&#x2F;home&#x2F;wusc&#x2F;edu&#x2F;web&#x2F;boss-tomcat&#x2F;bin&#x2F;shutdown.sh<br>sleep 3<br>rm -rf &#x2F;home&#x2F;wusc&#x2F;edu&#x2F;web&#x2F;boss-tomcat&#x2F;webapps&#x2F;edu-web-boss<br>&#x2F;home&#x2F;wusc&#x2F;edu&#x2F;web&#x2F;boss-tomcat&#x2F;bin&#x2F;startup.sh</p></blockquote><h1 id=""><a href="#" class="headerlink" title=""></a></h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Hudson之——Hudson的使用（使用-Hudson-来自动化编译、分析、打包、发布、部署项目）&quot;&gt;&lt;a href=&quot;#Hudson之——Hudson的使用（使用-Hudson-来自动化编译、分析、打包、发布、部署项目）&quot; class=&quot;headerlink&quot;</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="07_持续集成工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07-%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="02_hudson" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07-%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02-hudson/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
   
   <entry>
     <title>xmind转Excel</title>
@@ -534,37 +562,6 @@
       
     <summary type="html">&lt;p&gt;Jira Scrum Board是一个用于团结团队以实现单一目标和增量迭代交付的工具。&lt;/p&gt;
 &lt;h4 id=&quot;Scrum-Board的功能&quot;&gt;&lt;a href=&quot;#Scrum-Board的功能&quot; class=&quot;headerlink&quot; title=&quot;Scrum Board的功</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_测试管理工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jira" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/"/>
-    
-    <category term="01_jira文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01-jira/01-jira%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>14_Jira积压（待办事项）</title>
-    <link href="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/14_Jira%E7%A7%AF%E5%8E%8B%EF%BC%88%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%EF%BC%89/"/>
-    <id>http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/14_Jira%E7%A7%AF%E5%8E%8B%EF%BC%88%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%EF%BC%89/</id>
-    <published>2022-05-03T04:06:20.674Z</published>
-    <updated>2022-05-03T04:18:43.486Z</updated>
-    
-    <content type="html"><![CDATA[<p>积压(待办事项&#x2F;backlog)是团队需要在特定迭代中解决的一组活动或问题。您的项目的所有问题都分组在积压和冲刺(sprint)中。</p><p>在scrum backlog中，可以执行多个活动，例如创建和更新问题，拖放问题以确定优先级，将它们分配给sprint，epics，版本，管理epics等。</p><p>以下是可以在scrum backlog中执行的活动：</p><ul><li><strong>将问题添加到待办事项中</strong> - 要在待办事项中添加问题，需要创建一个问题。单击全局侧栏中的 <strong>+</strong> 图标以创建问题。填写与问题相关的所有详细信息，然后单击“创建”按钮。创建的问题将添加到待办事项中。</li><li><strong>优先处理积压</strong> - 还可以拖放问题，以便在待办事项中确定问题的优先级。还可以右键单击该问题以打开菜单，此菜单可将问题移至待办事项的顶部或底部。</li><li><strong>查看和编辑问题的详细信息</strong> - 单击电路板上的问题以查看问题的所有详细信息。如果要在单独的窗口中查看问题，请右键单击问题键。</li><li><strong>确定用户的工作量</strong> - 分配到的工作的用户显示在sprint的顶部。单击“…”选项以查看受理人的工作量。</li><li><strong>创建子任务</strong> - 单击一个问题，然后单击Jira Backlog图标以创建子任务。子任务对于将故事分解为可实现的部分非常有用。</li><li><strong>转换问题</strong> - 可以将问题从Backlog部分拖放到相关的sprint，或者可以说将问题从Backlog部分移动到相关的sprint。</li><li><strong>拆分问题</strong> - 右键单击该问题，然后选择拆分问题。它可以在Backlog以及sprint部分中分割问题。当您想要将大任务分解为两个或更多问题以使工作更易于管理时，拆分非常有用。</li><li><strong>删除问题</strong> - 也可以通过选择问题来删除问题，然后选择 <strong>…</strong> -&gt; <strong>删除</strong> 。</li><li><strong>查找问题</strong> - 可以创建自己的快速筛选器以仅查看所需的问题。</li></ul><h4 id="创建待办事项的步骤"><a href="#创建待办事项的步骤" class="headerlink" title="创建待办事项的步骤"></a>创建待办事项的步骤</h4><ul><li>单击窗格最左侧的 <strong>+</strong> 。</li></ul><p><img src="/assets/2/image-20220503121742-yml67po.png" alt="image.png"></p><ul><li>填写所有详细信息以创建问题。</li></ul><p><img src="/assets/2/image-20220503121748-g9p2u8c.png" alt="image.png"></p><p><img src="/assets/2/image-20220503121754-xf7ukpc.png" alt="image.png"></p><p>在上面的表单中，填写所有必填详细信息，并保留其他字段的空白或默认值。</p><p><strong>必填字段是：</strong></p><ul><li><strong>项目</strong> - 它定义项目的名称。假设已将项目名称命名为“测试项目”。</li><li><strong>问题类型</strong> - 它定义了问题的类型。它可以是一个bug，epic，故事等。</li><li><strong>摘要</strong> - 它告诉了问题的整体描述。</li><li><strong>优先</strong> - 它定义了问题的优先级。它可以是中等，低或高。</li></ul><p>假设创建了一个类型为Bug的问题，描述是“登录按钮不起作用”，问题的优先级很高。<br><img src="/assets/2/image-20220503121801-dzm43i5.png" alt="image.png"></p><p>在上面的屏幕中，可以看到问题已创建并存放在Backlog中。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;积压(待办事项&amp;#x2F;backlog)是团队需要在特定迭代中解决的一组活动或问题。您的项目的所有问题都分组在积压和冲刺(sprint)中。&lt;/p&gt;
-&lt;p&gt;在scrum backlog中，可以执行多个活动，例如创建和更新问题，拖放问题以确定优先级，将它们分配给sprint</summary>
       
     
     
