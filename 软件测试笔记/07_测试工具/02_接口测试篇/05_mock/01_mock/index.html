@@ -3,19 +3,33 @@
 <head>
     <meta charset="utf-8">
     
-    <title>分类: 05_easymock | TTXX课程</title>
+    <title>mock | TTXX课程</title>
     
     
-        <meta name="keywords" content="TTXX课程" />
+        <meta name="keywords" content="课中" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="TTXX课程">
-<meta property="og:url" content="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05-easymock/index.html">
+    <meta name="description" content="背景 在实际产品开发过程中，某个服务或前端依赖一个服务接口，该接口可能依赖多个底层服务或模块，或第三方接口，比如说服务 A 依赖服务B，服务B又依赖服务 C，如下图所示：   这种依赖的问题会导致原本的需求目的是要验证服务A，但由于所依赖的服务B或者服务C不稳定或者未开发完成，导致工作无法正常开展。   那作为测试工程师，面对这样的情形，我们该怎么办呢？解决这类问题的核心的思路：引入依赖服务替">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mock">
+<meta property="og:url" content="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_mock/01_mock/index.html">
 <meta property="og:site_name" content="TTXX课程">
+<meta property="og:description" content="背景 在实际产品开发过程中，某个服务或前端依赖一个服务接口，该接口可能依赖多个底层服务或模块，或第三方接口，比如说服务 A 依赖服务B，服务B又依赖服务 C，如下图所示：   这种依赖的问题会导致原本的需求目的是要验证服务A，但由于所依赖的服务B或者服务C不稳定或者未开发完成，导致工作无法正常开展。   那作为测试工程师，面对这样的情形，我们该怎么办呢？解决这类问题的核心的思路：引入依赖服务替">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508161516-7fizz3n.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508161535-ikefszs.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508161546-audsq22.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508161603-96r63e8.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508161622-75wiy64.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508161632-ktmz7q1.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508161640-h5odkk3.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508161652-1gbxioy.png">
+<meta property="article:published_time" content="2022-04-29T18:11:10.749Z">
+<meta property="article:modified_time" content="2022-05-08T08:31:10.518Z">
 <meta property="article:author" content="yulong">
+<meta property="article:tag" content="课中">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/2/image-20220508161516-7fizz3n.png">
     
 
     
@@ -444,9 +458,9 @@
                          <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/06_%E6%B5%8B%E8%AF%95%E4%B8%93%E5%AE%B6/01_%E6%B5%8B%E8%AF%95%E4%B8%93%E5%AE%B6/">测试专家</a></li>  </ul> 
                     </li> 
                     
-                    <li class="directory">
+                    <li class="directory open">
                         <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
+                            <i class="fa fa-folder-open"></i>
                             &nbsp;
                             07_测试工具
                         </a>
@@ -568,9 +582,9 @@
                      </ul> 
                     </li> 
                     
-                    <li class="directory">
+                    <li class="directory open">
                         <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
+                            <i class="fa fa-folder-open"></i>
                             &nbsp;
                             02_接口测试篇
                         </a>
@@ -629,13 +643,13 @@
                          <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/04_apipost/01_apipost/">apipost</a></li>  </ul> 
                     </li> 
                     
-                    <li class="directory">
+                    <li class="directory open">
                         <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
+                            <i class="fa fa-folder-open"></i>
                             &nbsp;
-                            05_easymock
+                            05_mock
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_easymock/01_easymock/">easymock</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_mock/01_mock/">mock</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -1387,50 +1401,247 @@
     <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
             
-            <section id="main">
-<div class="timeline timeline-wrap">
-    <div class="timeline-row timeline-row-major">
-        <span class="node"><i class="fa fa-folder"></i></span>
-        <h1 class="title">05_easymock</h1>
-    </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+            <section id="main"><article id="post-软件测试笔记/07_测试工具/02_接口测试篇/05_mock/01_mock" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
                 
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_easymock/01_easymock/">easymock</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_easymock/01_easymock/">
-            <time datetime="2022-04-29T18:11:10.749Z" itemprop="datePublished">2022-04-30</time>
-        </a>
-    </div>
-
-
-                    
+                    <div class="article-meta">
+                        
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/">02_接口测试篇</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05-easymock/">05_easymock</a>
+        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/">02_接口测试篇</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05-mock/">05_mock</a>
     </div>
 
-                    
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link-link" href="/tags/%E8%AF%BE%E4%B8%AD/" rel="tag">课中</a>
     </div>
 
-                </div>
-            </div>
-        </div>
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_mock/01_mock/">
+            <time datetime="2022-04-29T18:11:10.749Z" itemprop="datePublished">2022-04-30</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
     
-</div>
+        <h1 class="article-title" itemprop="name">
+            mock
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <p><img src="/assets/2/image-20220508161516-7fizz3n.png" alt="image.png"></p>
+<ol>
+<li><p>背景<br> 在实际产品开发过程中，某个服务或前端依赖一个服务接口，该接口可能依赖多个底层服务或模块，或第三方接口，比如说服务 A 依赖服务B，服务B又依赖服务 C，如下图所示：</p>
+<p> <img src="/assets/2/image-20220508161535-ikefszs.png" alt="image.png"><br> 这种依赖的问题会导致原本的需求目的是要验证服务A，但由于所依赖的服务B或者服务C不稳定或者未开发完成，导致工作无法正常开展。</p>
+<p> <img src="/assets/2/image-20220508161546-audsq22.png" alt="image.png"><br> 那作为测试工程师，面对这样的情形，我们该怎么办呢？解决这类问题的核心的思路：引入依赖服务替身，更通俗的叫法，引入Mock服务。</p>
+</li>
+</ol>
+<p>今天就结合unittest框架，给大家分享一些关于Mock的一些常见使用。</p>
+<ol start="2">
+<li>Mock是什么<br> 可能还有些读者之前并没有接触过Mock，不清楚Mock是个啥。</li>
+</ol>
+<p>Mock简单来理解，就是在测试过程中，对于某些不容易构造或者不容易获取的对象，用一个虚拟的对象来创建以便测试。而这个虚拟的对象就是mock对象。mock对象就是真实对象在调试期间的代替品。</p>
+<p>有时也将Mock服务称之为测试服务替身，或者测试服务档板，下图很形象的描述了Mock的作用。</p>
+<p><img src="/assets/2/image-20220508161603-96r63e8.png" alt="image.png"><br>3. Mock能做什么<br>就Mock功能而言，本身适用场景较多，但在实际项目中，引入Mock常用来解决的几类，概括起来，主要有：</p>
+<p>接口间的相互依赖<br>单元测试<br>第三方接口调用<br>1.前后端联调</p>
+<p>比如你是一个前端页面开发，现在需要开发一个功能：下一个订单，支付页面的接口，根据支付结果，支付成功，展示支付成功页，支付失败，展示支付失败页。要完成此功能，你需要调用后端的接口，根据返回给你的结果，来展示不同的页面。此时后端接口还没开发好，作为一个前端开发总不能等别人开发好了，你再开发，那你只有加班的命了。为了同步开发完成任务，此时，你可以根据接口文档的规定，把接口的地址和入参传过去，然后自己mock接口的不同返回界面，来完成前端的开发任务。</p>
+<p>2.单元测试</p>
+<p>由于单元测试仅针对当前单元进行测试，这就要求所有的内部或者外部依赖都应该是稳定的，采用mock的方法模拟跟本单元依赖的其他单元，可以将测试重点放在当前单元功能，排除外界因素干扰，提升测试精准度。</p>
+<p>3.第三方接口依赖</p>
+<p>在做接口自动化的时候，有时候需要调用第三方的接口，但是别人公司的接口服务不受你的控制，有可能别人提供的测试环境今天服务给你开着，别人就关掉了，给自动化接口测试带来很多的麻烦，此时就可以通过mock来模拟接口的返回数据，比如模拟各种第三方异常时的返回。</p>
+<ol start="4">
+<li>Mock实现方式<br> Mock虽然是作为依赖服务的替身，但并不需要原原本本去构造实现一个完整的服务逻辑，比如现在有一个A服务依赖B服务，需要通过Mock来替换B服务（做一个假的B服务替身）。</li>
+</ol>
+<p>在这里还是要推荐下我的软件测试学习交流地 644956177 ，群里技术大牛，如果你正在学习，小编欢迎你加入，大家都是测试开发党，不定期分享干货，包括我自己整理的一份2021最新的资料。</p>
+<p><img src="/assets/2/image-20220508161622-75wiy64.png" alt="image.png"></p>
+<p>那么我们做一个 Mock 服务其实就是做了一个简单的服务 B，它不需要实现原有服务 B 负载的处理逻辑，只要能按服务A需要服务B返回的处理逻辑给出对应返回数据就可以了。</p>
+<p>目前常见服务或接口协议主要两种，一种是RPC，另一种是HTTP&#x2F;HTTPS，mock原理都类似，要么是修改原服务地址为Mock服务地址，要么是拦截原服务的请求Mock返回值，总之就是构造一个假的服务，替代原有服务。</p>
+<p><img src="/assets/2/image-20220508161632-ktmz7q1.png" alt="image.png"><br>5. Mock市面上常见的解决方案<br>如果你不想自己动手构建一套Mock解决方案，市面上也提供了很多现存的Mock方案。常用的有：EasyMock、Mockito 、WireMock、JMockit、Mock、Moco。</p>
+<p>如果你团队技术基础相对比较薄弱，推荐你看看Moco这个方案，官网如下：</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/dreamhead/moco/">https://github.com/dreamhead/moco/</a></p>
+<p><img src="/assets/2/image-20220508161640-h5odkk3.png" alt="image.png"><br>接下来，重点介绍Python系下Mock方案的使用。</p>
+<p>Python下unittest.mock使用<br>unittest.mock是一个用于在Python中进行单元测试的库，顾名思义这个库的主要功能是模拟一些东西。它的主要功能是使用mock对象替代掉指定的Python对象，以达到模拟对象的行为。<br>需要注意的是在Python2.x版本中，Mock需要单独安装</p>
+<blockquote>
+<p>pip install -U mock</p>
+</blockquote>
+<p>从Python 3.3以后的版本mock已经合并到unittest模块中了，是unittest单元测试的一部分，直接导入过来就行</p>
+<blockquote>
+<p>from unittest import mock</p>
+</blockquote>
+<p>官方文档：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://docs.python.org/dev/library/unittest.mock.html">https://docs.python.org/dev/library/unittest.mock.html</a></p>
+</blockquote>
+<p>unittest.mock模块中最常用的是Mock类。</p>
+<p><img src="/assets/2/image-20220508161652-1gbxioy.png" alt="image.png"></p>
+<p>Mock类库是一个专门用于在unittest过程中制作（伪造）和修改（篡改）测试对象的类库，避免这些对象在单元测试过程中依赖外部资源（网络资源，数据库连接，其它服务以及耗时过长等）</p>
+<p>案例：如下场景：支付是一个独立的接口，由其它开发提供，根据支付的接口返回状态去显示失败，还是成功，这个是你需要实现的功能，代码存放在pay.py脚本中:</p>
+<blockquote>
+<p>&#x2F;usr&#x2F;bin&#x2F;python3</p>
+<p>-<em>- coding: utf-8 -</em>-</p>
+<p>@Author : Mike Zhou</p>
+<p>@Email : 公众号：测试开发技术</p>
+<p>@File : pay.py</p>
+<p>def zhifu():<br>    ‘’’假设这里是一个支付的功能,未开发完<br>    支付成功返回：{“result”: “success”, “msg”:”支付成功”}<br>    支付失败返回：{“result”: “fail”, “msg”:”余额不足”}<br>    ‘’’<br>    pass</p>
+<p>def zhifu_statues():<br>    ‘’’根据支付的结果success or fail，判断跳转到对应页面’’’<br>    result &#x3D; zhifu()<br>    try:<br>        if result[“result”] &#x3D;&#x3D; “success”:<br>            return “支付成功”<br>        elif result[“result”] &#x3D;&#x3D; “fail”:<br>            return “支付失败”<br>        else:<br>            return “未知错误异常”<br>    except:<br>        return “Error, 服务端返回异常!”</p>
+</blockquote>
+<h1 id="在zhifu-statues方法中，依赖了zhifu方法，但由于zhifu支付方法的接口是由另外一个同事开发，正常情况下，你同事开发的进度你是无法控制的，需要等他开发完了你才能进行联调你所负责的zhifu-statues接口，因此我们可以通过引入Mock来解决这个问题。"><a href="#在zhifu-statues方法中，依赖了zhifu方法，但由于zhifu支付方法的接口是由另外一个同事开发，正常情况下，你同事开发的进度你是无法控制的，需要等他开发完了你才能进行联调你所负责的zhifu-statues接口，因此我们可以通过引入Mock来解决这个问题。" class="headerlink" title="在zhifu_statues方法中，依赖了zhifu方法，但由于zhifu支付方法的接口是由另外一个同事开发，正常情况下，你同事开发的进度你是无法控制的，需要等他开发完了你才能进行联调你所负责的zhifu_statues接口，因此我们可以通过引入Mock来解决这个问题。"></a>在zhifu_statues方法中，依赖了zhifu方法，但由于zhifu支付方法的接口是由另外一个同事开发，正常情况下，你同事开发的进度你是无法控制的，需要等他开发完了你才能进行联调你所负责的zhifu_statues接口，因此我们可以通过引入Mock来解决这个问题。</h1><p>引入mock后单元测试用例代码</p>
+<blockquote>
+<p>!&#x2F;usr&#x2F;bin&#x2F;python3</p>
+<p>-<em>- coding: utf-8 -</em>-</p>
+<p>@Author : Mike Zhou</p>
+<p>@Email : 公众号：测试开发技术</p>
+<p>import unittest<br>from unittest import mock<br>import pay</p>
+<p>class TestZhifuStatues(unittest.TestCase):<br>    ‘’’单元测试用例’’’<br>    def test_01(self):<br>        ‘’’测试支付成功场景’’’<br>        # mock一个支付成功的数据<br>        pay.zhifu &#x3D; mock.Mock(return_value&#x3D;{“result”: “success”, “msg”:”支付成功”})<br>        # 根据支付结果测试页面跳转<br>        statues &#x3D; pay.zhifu_statues()<br>        print(statues)<br>        self.assertEqual(statues, “支付成功”)</p>
+<pre><code>def test_02(self):
+    &#39;&#39;&#39;测试支付失败场景&#39;&#39;&#39;
+    # mock一个支付失败的数据
+    pay.zhifu = mock.Mock(return_value=&#123;&quot;result&quot;: &quot;fail&quot;, &quot;msg&quot;: &quot;余额不足&quot;&#125;)
+    # 根据支付结果测试页面跳转
+    statues = pay.zhifu_statues()
+    print(statues)
+    self.assertEqual(statues, &quot;支付失败&quot;)
+</code></pre>
+<p>if <strong>name</strong> &#x3D;&#x3D; “<strong>main</strong>“:<br>    unittest.main()</p>
+</blockquote>
+<p>上述代码引入Mock后，我们就可以顺利完成对支付成功和支付异常两类场景的验证工作。（实际你可以补充更多）</p>
+<p>mock中还有另一种实现方式，通过patch装饰器的使用,patch作为函数装饰器，为您创建模拟并将其传递到装饰函数。</p>
+<p>用mock.patch实现如下：</p>
+<blockquote>
+<p>!&#x2F;usr&#x2F;bin&#x2F;python3</p>
+<p>-<em>- coding: utf-8 -</em>-</p>
+<p>@Author : Mike Zhou</p>
+<p>@Email : 公众号：测试开发技术</p>
+<p>import unittest<br>from unittest import mock<br>import pay</p>
+<p>class TestZhifuStatues(unittest.TestCase):<br>    ‘’’单元测试用例’’’</p>
+<pre><code>@mock.patch(&quot;pay.zhifu&quot;)
+def test_001(self, mock_zhifu):
+    &#39;&#39;&#39;测试支付成功场景&#39;&#39;&#39;
+    # 方法一：mock一个支付成功的数据
+    # pay.zhifu = mock.Mock(return_value=&#123;&quot;result&quot;: &quot;success&quot;, &quot;msg&quot;:&quot;支付成功&quot;&#125;)
+    # print(pay.zhifu())
+
+    # 方法二：mock.path装饰器模拟返回结果
+    mock_zhifu.return_value = &#123;&quot;result&quot;: &quot;success&quot;, &quot;msg&quot;:&quot;支付成功&quot;&#125;
+
+    # # 根据支付结果测试页面跳转
+    statues = pay.zhifu_statues()
+    print(statues)
+    self.assertEqual(statues, &quot;支付成功&quot;)
+
+@mock.patch(&quot;pay.zhifu&quot;)
+def test_002(self, mock_zhifu):
+    &#39;&#39;&#39;测试支付失败场景&#39;&#39;&#39;
+    # mock一个支付失败的数据
+
+    mock_zhifu.return_value = &#123;&quot;result&quot;: &quot;fail&quot;, &quot;msg&quot;: &quot;余额不足&quot;&#125;
+    # 根据支付结果测试页面跳转
+    statues = pay.zhifu_statues()
+    self.assertEqual(statues, &quot;支付失败&quot;)
+</code></pre>
+<p>if <strong>name</strong> &#x3D;&#x3D; “<strong>main</strong>“:<br>    unittest.main()</p>
+</blockquote>
+<blockquote>
+<p>-<em>- coding: utf-8 -</em>-</p>
+<p>@Author : Mike Zhou</p>
+<p>@Email : 公众号：测试开发技术</p>
+<p>@File : pay.py</p>
+<p>def zhifu():<br>    ‘’’假设这里是一个支付的功能,未开发完<br>    支付成功返回：{“result”: “success”, “msg”:”支付成功”}<br>    支付失败返回：{“result”: “fail”, “msg”:”余额不足”}<br>    ‘’’<br>    pass</p>
+<p>def zhifu_statues():<br>    ‘’’根据支付的结果success or fail，判断跳转到对应页面’’’<br>    result &#x3D; zhifu()<br>    try:<br>        if result[“result”] &#x3D;&#x3D; “success”:<br>            return “支付成功”<br>        elif result[“result”] &#x3D;&#x3D; “fail”:<br>            return “支付失败”<br>        else:<br>            return “未知错误异常”<br>    except:<br>        return “Error, 服务端返回异常!”</p>
+<p>class TestZhifuStatues(unittest.TestCase):<br>    ‘’’单元测试用例’’’</p>
+<pre><code>@mock.patch(&quot;pay.zhifu&quot;)
+def test_001(self, mock_zhifu):
+    &#39;&#39;&#39;测试支付成功场景&#39;&#39;&#39;
+    # 方法一：mock一个支付成功的数据
+    # pay.zhifu = mock.Mock(return_value=&#123;&quot;result&quot;: &quot;success&quot;, &quot;msg&quot;:&quot;支付成功&quot;&#125;)
+    # print(pay.zhifu())
+
+    # 方法二：mock.path装饰器模拟返回结果
+    mock_zhifu.return_value = &#123;&quot;result&quot;: &quot;success&quot;, &quot;msg&quot;:&quot;支付成功&quot;&#125;
+
+    # # 根据支付结果测试页面跳转
+    statues = pay.zhifu_statues()
+    print(statues)
+    self.assertEqual(statues, &quot;支付成功&quot;)
+
+@mock.patch(&quot;pay.zhifu&quot;)
+def test_002(self, mock_zhifu):
+    &#39;&#39;&#39;测试支付失败场景&#39;&#39;&#39;
+    # mock一个支付失败的数据
+
+    mock_zhifu.return_value = &#123;&quot;result&quot;: &quot;fail&quot;, &quot;msg&quot;: &quot;余额不足&quot;&#125;
+    # 根据支付结果测试页面跳转
+    statues = pay.zhifu_statues()
+    self.assertEqual(statues, &quot;支付失败&quot;)
+</code></pre>
+<p>if <strong>name</strong> &#x3D;&#x3D; “<strong>main</strong>“:<br>    unittest.main()<br><br /></p>
+</blockquote>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    01_jira简介
+                
+            </div>
+        </a>
+    
+    
+        <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/04_apipost/01_apipost/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">apipost</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
 </section>
         </div>
         <footer id="footer">

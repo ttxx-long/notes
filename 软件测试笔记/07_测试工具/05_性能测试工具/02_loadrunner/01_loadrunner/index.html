@@ -9,16 +9,41 @@
         <meta name="keywords" content="课后" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="article">
+    <meta name="description" content="文章目录  Virtural User Generator Controller Analysis loadrunner的使用  Virtural User Generator：录制脚本，编写并发测试代码于需求，设计并发测试实施的代码逻辑和执行思路 Controller：场景测试，收集并发测试的数据，显示执行并发过程中的各数据的动态图表（多个用户并发场景） Analysis：分析系统并发测试的数据">
+<meta property="og:type" content="article">
 <meta property="og:title" content="loadrunner">
 <meta property="og:url" content="http://example.com/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_loadrunner/01_loadrunner/index.html">
 <meta property="og:site_name" content="TTXX课程">
+<meta property="og:description" content="文章目录  Virtural User Generator Controller Analysis loadrunner的使用  Virtural User Generator：录制脚本，编写并发测试代码于需求，设计并发测试实施的代码逻辑和执行思路 Controller：场景测试，收集并发测试的数据，显示执行并发过程中的各数据的动态图表（多个用户并发场景） Analysis：分析系统并发测试的数据">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163245-29h8tps.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163256-a24p1sz.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163305-uqm1ue8.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163313-fybw2p3.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163323-i0x10x3.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163333-94l1kao.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163340-bb7hv51.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163348-mfcja8d.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163356-tb22lgb.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163405-7u9sds6.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163415-x2gx1ox.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163422-9am7gu4.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163429-fm7g1c5.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163437-5rb2534.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163445-52mw2li.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163455-458c0sf.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163503-1fdcnje.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163511-gjmyo1d.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163517-uvdm70k.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163527-j9eponj.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163535-9xkn06o.png">
+<meta property="og:image" content="http://example.com/assets/2/image-20220508163546-bz8mgji.png">
 <meta property="article:published_time" content="2022-04-29T17:14:02.105Z">
-<meta property="article:modified_time" content="2022-04-30T05:20:22.608Z">
+<meta property="article:modified_time" content="2022-05-08T08:36:14.675Z">
 <meta property="article:author" content="yulong">
 <meta property="article:tag" content="课后">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/2/image-20220508163245-29h8tps.png">
     
 
     
@@ -636,9 +661,9 @@
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
                             &nbsp;
-                            05_easymock
+                            05_mock
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_easymock/01_easymock/">easymock</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_mock/01_mock/">mock</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -1441,7 +1466,61 @@
             
         
         
-            
+            <p>文章目录</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/ip66666/article/details/119648720#Virtural_User_Generator_2">Virtural User Generator</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/ip66666/article/details/119648720#Controller_6">Controller</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/ip66666/article/details/119648720#Analysis_10">Analysis</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/ip66666/article/details/119648720#loadrunner_20">loadrunner的使用</a></li>
+</ul>
+<p>Virtural User Generator<br>：录制脚本，编写并发测试代码于需求，设计并发测试实施的代码逻辑和执行思路</p>
+<p>Controller<br>：场景测试，收集并发测试的数据，显示执行并发过程中的各数据的动态图表（多个用户并发场景）</p>
+<p>Analysis<br>：分析系统并发测试的数据，生成报告和图标</p>
+<p>loadrunner做性能测试的原理？<br>性能测试主要是多用户的并发，就是多线程模拟用户的操作，<br>什么是集合点，为什莫需要集合点？<br>因为先初始化好的线程需要等待后面还没初始化好的线程，所以设置一个集合点，用来等待。<br>性能测试的过程<br>在做系统的性能测试时，已经知道性能测试的范围，如何选取性能测试的主要功能？<br>在测试范围内，选取用户经常使用的功能，</p>
+<p>loadrunner的使用</p>
+<p><img src="/assets/2/image-20220508163245-29h8tps.png" alt="image.png"><br>1，先启动启动它自身的服务器<br>首先在安装目录下开启loadrunner服务</p>
+<p><img src="/assets/2/image-20220508163256-a24p1sz.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220508163305-uqm1ue8.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220508163313-fybw2p3.png" alt="image.png"></p>
+<p>2，然后启动Virtual User Generrator</p>
+<p>新建文件</p>
+<p><img src="/assets/2/image-20220508163323-i0x10x3.png" alt="image.png"></p>
+<p>选择协议；选择http协议，此次性能测试完成loadrunner自带的浏览器的多用户登录并发操作</p>
+<p>3，点击录制，配置集合点，集合点放在事务之前。</p>
+<p><img src="/assets/2/image-20220508163333-94l1kao.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220508163340-bb7hv51.png" alt="image.png"></p>
+<p>脚本录制结束。<br>给录制脚本中插入事务或者检查点</p>
+<p><img src="/assets/2/image-20220508163348-mfcja8d.png" alt="image.png"></p>
+<p>如何判断虚拟用户登陆成功？<br>使用检查点，插入登陆成功后的语句，于Welcome, jojo, to the Web Tours reservation pages.进行比较，判断是否登录成功。后面插入检查点：“SaveCount&#x3D;reservation_Count”<br>关联：“NotFound&#x3D;warning”</p>
+<p><img src="/assets/2/image-20220508163356-tb22lgb.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220508163405-7u9sds6.png" alt="image.png"></p>
+<p>加入检查点之后运行看是否成功。<br>常见的函数：<br>lr_eval_string 该函数功能是得到参数（参数化输入中）当前的值<br>exg: lr_output_message(“temp &#x3D; %s”, lr_eval_string(“{WCSParam2}”));<br>lr_save_string 该函数功能是把一个字符串保存到参数中<br>exg: lr_save_string(“439”,“WCSParam3”);<br>6，参数化</p>
+<p><img src="/assets/2/image-20220508163415-x2gx1ox.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220508163422-9am7gu4.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220508163429-fm7g1c5.png" alt="image.png"></p>
+<p>添加用户数量，</p>
+<p><img src="/assets/2/image-20220508163437-5rb2534.png" alt="image.png"></p>
+<p>在这个目录下添加用户名</p>
+<p>使用参数，把所有的用户名改变，</p>
+<p><img src="/assets/2/image-20220508163445-52mw2li.png" alt="image.png"></p>
+<p>Sequential：每运行一次选择一个用户。<br>Each itretion：每一次取新一行的变量<br>Each ocurrence：每一次随机取值<br>Onece：每一次都取相同的值</p>
+<p><img src="/assets/2/image-20220508163455-458c0sf.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220508163503-1fdcnje.png" alt="image.png"></p>
+<p>设置了4个用户，这里设置为4<br>那怎么设置能知道本次的登录的用户就是你想要其登录的用户，就是输出本次用户名。</p>
+<p><img src="/assets/2/image-20220508163511-gjmyo1d.png" alt="image.png"></p>
+<p>判断当前用户是不是jojo，如果是输出名字，如果不是输出this is not jojo！</p>
+<p><img src="/assets/2/image-20220508163517-uvdm70k.png" alt="image.png"></p>
+<p>7，虚拟用户的数量怎么设置？<br>根据测试场景，做并发测试，测试系统在不同的用户数量的级别下， 系统的表现，找出系统性能的拐点。<br>3个用户并发访问loadrunner自带的功能登录功能的性能指标<br>5个<br>7个<br>场景运行时间比较短，3-5min<br>设置并发数，打开Controller。</p>
+<p><img src="/assets/2/image-20220508163527-j9eponj.png" alt="image.png"></p>
+<p>做并发测试：loadrunner自带的服务，我们要查看测试在不同的用户数量级别下登录操作的性能指标。 首先使用3个用户来测试。响应时间是否在3s内。（运行时间在3-5分钟）</p>
+<p><img src="/assets/2/image-20220508163535-9xkn06o.png" alt="image.png"></p>
+<p>在controller中设置具体的参数。</p>
+<p>哪一种测试类型需要性能测试的时间比较长？<br>可靠性测试。（军事系统要求系统可靠性达到99.9999%）<br>loadrunner通过多线程来模拟虚拟用户，</p>
+<p>生成测试报表</p>
+<p><img src="/assets/2/image-20220508163546-bz8mgji.png" alt="image.png"></p>
+<p>不同的参数，</p>
+<p>如何排查系统性能达到瓶颈？<br>各参数是否达到需求要求的临界值。<br>————————————————<br>版权声明：本文为CSDN博主「小小小小滴」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/ip66666/article/details/119648720">https://blog.csdn.net/ip66666/article/details/119648720</a></p>
+<h1 id="在zhifu-statues方法中，依赖了zhifu方法，但由于zhifu支付方法的接口是由另外一个同事开发，正常情况下，你同事开发的进度你是无法控制的，需要等他开发完了你才能进行联调你所负责的zhifu-statues接口，因此我们可以通过引入Mock来解决这个问题。"><a href="#在zhifu-statues方法中，依赖了zhifu方法，但由于zhifu支付方法的接口是由另外一个同事开发，正常情况下，你同事开发的进度你是无法控制的，需要等他开发完了你才能进行联调你所负责的zhifu-statues接口，因此我们可以通过引入Mock来解决这个问题。" class="headerlink" title="在zhifu_statues方法中，依赖了zhifu方法，但由于zhifu支付方法的接口是由另外一个同事开发，正常情况下，你同事开发的进度你是无法控制的，需要等他开发完了你才能进行联调你所负责的zhifu_statues接口，因此我们可以通过引入Mock来解决这个问题。"></a>在zhifu_statues方法中，依赖了zhifu方法，但由于zhifu支付方法的接口是由另外一个同事开发，正常情况下，你同事开发的进度你是无法控制的，需要等他开发完了你才能进行联调你所负责的zhifu_statues接口，因此我们可以通过引入Mock来解决这个问题。</h1>
             </div>
         
         <footer class="article-footer">
