@@ -7765,7 +7765,144 @@ c、命名风格
   <entry>
     <title>jenkins</title>
     <url>/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/01_jenkins/01_jenkins/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>大纲</p>
+<p><img src="/assets/2/image-20220508214427-30ucs3r.png" alt="image.png"></p>
+<p>1.背景<br>　　在实际开发中，我们经常要一边开发一边测试，当然这里说的测试并不是程序员对自己代码的单元测试，而是同组程序员将代码提交后，由测试人员测试；</p>
+<p>　　或者前后端分离后，经常会修改接口，然后重新部署；</p>
+<p>　　这些情况都会涉及到频繁的打包部署；</p>
+<p>　　手动打包常规步骤：</p>
+<p>　　1.提交代码</p>
+<p>　　2.问一下同组小伙伴有没有要提交的代码</p>
+<p>　　3.拉取代码并打包（war包，或者jar包）</p>
+<p>　　4.上传到Linux服务器</p>
+<p>　　5.查看当前程序是否在运行</p>
+<p>　　6.关闭当前程序</p>
+<p>　　7.启动新的jar包</p>
+<p>　　8.观察日志看是否启动成功</p>
+<p>　　9.如果有同事说，自己还有代码没有提交……再次重复1到8的步骤！！！！！（一上午没了）</p>
+<p>　　那么，有一种工具能够实现，将代码提交到git后就自动打包部署勒，答案是肯定的：Jenkins</p>
+<p>　　当然除了Jenkins以外，也还有其他的工具可以实现自动化部署，如Hudson等</p>
+<p>　　只是Jenkins相对来说，使用得更广泛。</p>
+<p>2.Jenkins服务器搭建及基本配置<br>2.1.简介<br>　　Jenkins是一个开源软件项目，是基于Java开发的一种持续集成工具，用于监控持续重复的工作，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。</p>
+<p>2.2.Jenkins自动化部署实现原理<br>　　<img src="/assets/2/image-20220508214439-29idy7v.png" alt="image.png"></p>
+<p> 2.3.Jenkins部署环境<br>　　基本环境：</p>
+<p>　　1.jdk环境，Jenkins是java语言开发的，因需要jdk环境。</p>
+<p>　　2.git&#x2F;svn客户端，因一般代码是放在git&#x2F;svn服务器上的，我们需要拉取代码。</p>
+<p>　　3.maven客户端，因一般java程序是由maven工程，需要maven打包，当然也有其他打包方式，如：gradle</p>
+<p>　　以上是自动化部署java程序jenkins需要的基本环境，请自己提前安装好，下面着重讲解Jenkins的安装部署配置。</p>
+<p>2.4.Jenkins安装<br>　　1.下载安装包jenkins.war；</p>
+<p>　　2.在安装包根路径下，运行命令 java -jar jenkins.war –httpPort&#x3D;8080，（linux环境、Windows环境都一样）；</p>
+<p>　　补充:一个童鞋遇到的问题,反馈说,git自动触发时报错403,启动加如下参数可以解决问题</p>
+<p>　　nohup java -jar -Dhudson.security.csrf.GlobalCrumbIssuerConfiguration.DISABLE_CSRF_PROTECTION&#x3D;true  &#x2F;usr&#x2F;local&#x2F;jenkins&#x2F;jenkins.war –httpPort&#x3D;8080  &amp;</p>
+<p>　　3.打开浏览器进入链接 <a href="http://localhost:8080/">http://localhost:8080</a>.</p>
+<p>　　4.填写初始密码，激活系统</p>
+<p>　　<img src="/assets/2/image-20220508214450-efrghfb.png" alt="image.png"></p>
+<p>　　5.进入插件安装选择</p>
+<p>　　这里建议选择，推荐安装的插件，保证基本常用的功能可以使用。</p>
+<p>　　<img src="/assets/2/image-20220508214456-nqlpd1r.png" alt="image.png"></p>
+<p>　　选择后，进入插件安装页面</p>
+<p>　　<img src="/assets/2/image-20220508214504-gj4fcah.png" alt="image.png"></p>
+<p>　　6.设置初始用户和密码</p>
+<p>　　<img src="/assets/2/image-20220508214510-ojaxcg6.png" alt="image.png"></p>
+<p>　　7.进入系统，安装完成</p>
+<p><img src="/assets/2/image-20220508214518-0mita5n.png" alt="image.png"></p>
+<p>　　注意，如果还是进入不了系统，需要稍等一下，或者刷新页面，如果还是进入不了，需要重新启动jenkinds服务器。</p>
+<p>2.5.Jenkins基本配置<br>2.5.1.系统初始化配置<br>　　<img src="/assets/2/image-20220508214528-z8d4eqq.png" alt="image.png"></p>
+<p>　　1.Configure System (系统设置)</p>
+<p>　　在系统设置这里，我们只需要设置最后面的一项，配置远程服务器地址，</p>
+<p>　　即我们代码最终运行的服务器地址信息，就像我们之前手动部署时使用xshell登录Linux服务器一样，</p>
+<p>　　当然这里是可以配置多台远程Linux服务器的，配置完成后点击保存即可，为后面我们配置自动化部署做准备，配置如下图</p>
+<p>　　<img src="/assets/2/image-20220508214537-hamyd5k.png" alt="image.png"></p>
+<p>　　2.Configure  Global Security (全局安全配置)</p>
+<p>　　a.配置用户相关的权限</p>
+<p>　　<img src="/assets/2/image-20220508214544-jnt5etc.png" alt="image.png"></p>
+<p>　　b.配置钩子程序（当用代码更新时通知）访问权限，避免报403错误</p>
+<p>　　默认是勾选上了的，这里去掉勾选</p>
+<p>　　<img src="/assets/2/image-20220508214551-t46m6x0.png" alt="image.png"></p>
+<p>　　3.Global Tool Configuration (全局工具配置 )</p>
+<p>　　a.配置maven的全局settings路径</p>
+<p>　　<img src="/assets/2/image-20220508214557-6feagj8.png" alt="image.png"></p>
+<p>　　b.配置jdk</p>
+<p>　　<img src="/assets/2/image-20220508214602-2wm5owl.png" alt="image.png"></p>
+<p>　　c.配置git</p>
+<p>　　<img src="/assets/2/image-20220508214609-pqaytah.png" alt="image.png"></p>
+<p>　　d.配置maven的安装路径</p>
+<p>　　<img src="/assets/2/image-20220508214615-toa8bq1.png" alt="image.png"></p>
+<p> 　　4.配置必要插件</p>
+<p>　　 主要是检查如下这两个插件是否已安装</p>
+<p>　　插件1：Publish over SSH<br>　　插件2：Deploy to container Plugin</p>
+<p>　　<img src="/assets/2/image-20220508214622-i27iubb.png" alt="image.png"></p>
+<p>　　到这里，我们配置一个自动化部署的的java程序（springBoot+maven+gitHub），基本必要配置就差不多了，后面配置过程中如果需要在配置。</p>
+<p>3.Jenkins自动化部署（springBoot+maven+gitHub）项目<br>　3.1.Jenkins服务器上创建项目和配置<br>　　大体步骤：General(基础配置)–》源码管理–》构建触发器–》构建环境–》构建–》构建后操作</p>
+<p>　　1.创建一个工程</p>
+<p>　　<img src="/assets/2/image-20220508214629-eu7q3g4.png" alt="image.png"></p>
+<p>　　2.General(基础配置)</p>
+<p>　　仅需填写标准部分，其他可不填写</p>
+<p>　　<img src="/assets/2/image-20220508214635-w7c8vc5.png" alt="image.png"></p>
+<p>　　3.源码管理</p>
+<p>　　<img src="/assets/2/image-20220508214641-3b18j8o.png" alt="image.png"></p>
+<p>　　上图中点击“添加”按钮添加一组账号和密码</p>
+<p>　　<img src="/assets/2/image-20220508214648-wrivq5s.png" alt="image.png"></p>
+<p>　　4.构建触发器</p>
+<p>　　<img src="/assets/2/image-20220508214654-smg7s25.png" alt="image.png"></p>
+<p>　　如上图：当前项目的回调地址为：</p>
+<p>　　<a href="http://localhost:8080/job/jenkinsSpringBootDemo/build?token=token_demo2">http://localhost:8080/job/jenkinsSpringBootDemo/build?token=token_demo2</a></p>
+<p>　　只要执行这个地址（在浏览器上访问改地址），该项目就会发起一次构建项目，即拉取代码打包部署操作，</p>
+<p>　　在实际中，是由git服务器回调改地址，在后面讲git服务器配置时详细讲解 ，</p>
+<p>　　值得注意的是，如果你是学习测试，使用的是GitHub服务，要确保你的回调地址已经试外网映射过的，即往外网可以访问</p>
+<p>　　5.构建环境（无需配置）</p>
+<p>　　6.构建</p>
+<p>　　<img src="/assets/2/image-20220508214700-y1ag6px.png" alt="image.png"></p>
+<p>　　7.构建后操作</p>
+<p>　　构建后操作的意思是，jar打包好后，要将jar发送到哪里去，发送后去和启动等</p>
+<p>　　这里需要提前在需要部署的服务器上配置好路径，写好启动和停止项目的脚本，并设置为可以执行的脚本，</p>
+<p>　　其实就是我们平时在Linux上手动部署项目操作的脚本</p>
+<p>　　<img src="/assets/2/image-20220508214707-n9obb2d.png" alt="image.png"></p>
+<p>　　案例中给出的stop.sh脚本如下：</p>
+<p>1 #!&#x2F;bin&#x2F;bash<br>2 echo “Stop Procedure : demo2-0.0.1-SNAPSHOT.jar”<br>3 pid&#x3D;<code>ps -ef |grep java|grep demo2-0.0.1-SNAPSHOT.jar|awk &#39;&#123;print $2&#125;&#39;</code><br>4 echo ‘old Procedure pid:’$pid<br>5 if [ -n “$pid” ]<br>6 then<br>7 kill -9 $pid<br>8 fi</p>
+<p>　　案例中给出的start.sh脚本如下：</p>
+<p>1 #!&#x2F;bin&#x2F;bash<br>2 export JAVA_HOME&#x3D;&#x2F;usr&#x2F;java&#x2F;jdk1.8.0_131<br>3 echo ${JAVA_HOME}<br>4 echo ‘Start the program : demo2-0.0.1-SNAPSHOT.jar’<br>5 chmod 777 &#x2F;home&#x2F;ldp&#x2F;app&#x2F;demo2-0.0.1-SNAPSHOT.jar<br>6 echo ‘——-Starting——-‘<br>7 cd &#x2F;home&#x2F;ldp&#x2F;app&#x2F;<br>8 nohup ${JAVA_HOME}&#x2F;bin&#x2F;java -jar demo2-0.0.1-SNAPSHOT.jar &amp;<br>9 echo ‘start success’</p>
+<p> 　　到此，Jenkinds服务器配置完成，接下来我还有要配置Linux服务器和Git服务器。</p>
+<p>3.2.Linux服务器配置<br>　　在Liux服务上，上传上文中的两个脚本，用于启动和停止</p>
+<p>　　<img src="/assets/2/image-20220508214722-wh8h3vb.png" alt="image.png"></p>
+<p>3.3.GitHub服务器配置<br>　　在GitHub服务器上的指定项目里面配置上文中提到的回调地址</p>
+<p>　　特别注意：为了保证回调地址网可以使用，</p>
+<p>　　我已经将地址：<a href="http://localhost:8080/job/jenkinsSpringBootDemo/build?token=token_demo2%EF%BC%8C">http://localhost:8080/job/jenkinsSpringBootDemo/build?token=token_demo2，</a></p>
+<p>　　通过花生壳进行外网映射为：<a href="http://zhishidi.imwork.net/job/jenkinsSpringBootDemo/build?token=token_demo2">http://zhishidi.imwork.net/job/jenkinsSpringBootDemo/build?token=token_demo2</a></p>
+<p>　　所以，下面配置的是外网映射地址。</p>
+<p>　　<img src="/assets/2/image-20220508214729-mhj5qon.png" alt="image.png"></p>
+<p>　　到这里所有配置搞定，只需修改代码，提交到git,然后访问程序看是否生效。</p>
+<p> 4.测试<br> 　　1.测试代码</p>
+<p>　　<img src="/assets/2/image-20220508214736-mdbd2ps.png" alt="image.png"></p>
+<p>　　2.提交代码到git,触发构建</p>
+<p>　　3.在GitHub服务器上去看，是否已经触发</p>
+<p>　　<img src="/assets/2/image-20220508214742-8qgbsd0.png" alt="image.png"></p>
+<p>　　4.在Jenkins的控制台查看是否，正在构建</p>
+<p>　　从下图中可以看出，正在构建</p>
+<p>　　<img src="/assets/2/image-20220508214749-q9snkr8.png" alt="image.png"></p>
+<p>　　5.查看当次构建的控制台日志</p>
+<p>　　<img src="/assets/2/image-20220508214756-y5xggdu.png" alt="image.png"></p>
+<p>　　说明已经启动成功</p>
+<p>　　6.查看Linux服务器，是否上传代码</p>
+<p>　　<img src="/assets/2/image-20220508214802-wy8v8sv.png" alt="image.png"></p>
+<p>　　7.在Linux上使用命令jps，查看是否启动</p>
+<p>　　<img src="/assets/2/image-20220508214808-81pbset.png" alt="image.png"></p>
+<p>　　8.浏览器上访问，看是否能用</p>
+<p>　　<img src="/assets/2/image-20220508214814-8odu8d3.png" alt="image.png"></p>
+<p>　　说明，已经正常启动可以使用。</p>
+<p>　　9.再次确认是否能自动化部署</p>
+<p>　　修改代码，重新提交代码，循环1到8步查看。</p>
+<p>　　如果测试结果是你预期的，那么自动化部署成功。</p>
+<p>5.总结&amp;资料下载<br>5.1.总结<br>　　自动化部署Jenkins，作为一款工具，有着非常强大的功能，</p>
+<p>　　上面我们只是讲了生产上做Java自动化部署的一个主要流程，</p>
+<p>　　其他的功能，大家可以参看官方文档：<a href="https://jenkins.io/zh/doc/">https://jenkins.io/zh/doc/</a></p>
+<p>　　但是，本着学习是为了解决生产的原则，</p>
+<p>　　个人建议，用到Jenkins的什么功能就学什么就可以了，</p>
+<p>　　没必要把Jenkins的所有功能都学完在使用，</p>
+<p>　　就如同我们使用word文档一样，并没有系统的他word文档学完后，在开始使用，而是用到什么功能就学习什么功能！</p>
+<p>5.2.相关资料<br>　　1.案例中的源码地址：<a href="https://github.com/bangbangw/demo01.git">https://github.com/bangbangw/demo01.git</a></p>
+<p>　　2.官方文档：<a href="https://jenkins.io/zh/doc/">https://jenkins.io/zh/doc/</a><br><br /></p>
+]]></content>
       <categories>
         <category>07_测试工具</category>
         <category>07_持续集成工具</category>
