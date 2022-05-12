@@ -1,0 +1,2224 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <meta charset="utf-8">
+    
+    <title>逻辑性问题 | TTXX课程</title>
+    
+    
+        <meta name="keywords" content="测试理论" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="你让工人为你工作7天，回报是一根金条，这个金条平分成相连的7段，你必须在每天结束的时候 给他们一段。如果只允许你两次把金条弄断，你如何给你的工人付费？  解题思路：  本题实质问题是数字表示问题。由1、2两个数字可表示1-3三个数字。由1、2、4三个数字可表示1-7七个数字（即1，2，1+2，4，4+1，4+2，4+2+1）。由1、2、4、8四个数字可表示1-15十五个数字。依此类推。   参考">
+<meta property="og:type" content="article">
+<meta property="og:title" content="逻辑性问题">
+<meta property="og:url" content="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/04_%E9%80%BB%E8%BE%91%E6%80%A7%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:site_name" content="TTXX课程">
+<meta property="og:description" content="你让工人为你工作7天，回报是一根金条，这个金条平分成相连的7段，你必须在每天结束的时候 给他们一段。如果只允许你两次把金条弄断，你如何给你的工人付费？  解题思路：  本题实质问题是数字表示问题。由1、2两个数字可表示1-3三个数字。由1、2、4三个数字可表示1-7七个数字（即1，2，1+2，4，4+1，4+2，4+2+1）。由1、2、4、8四个数字可表示1-15十五个数字。依此类推。   参考">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-28T09:42:19.315Z">
+<meta property="article:modified_time" content="2022-05-12T15:32:46.313Z">
+<meta property="article:author" content="yulong">
+<meta property="article:tag" content="测试理论">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="TTXX课程" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/favicon.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">TTXX课程</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>分类</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_测试基础
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/01_%E5%88%9D%E8%AF%86%E6%B5%8B%E8%AF%95/">初识软件测试</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/02_%E6%B5%8B%E8%AF%95%E8%A1%8C%E4%B8%9A/">了解软件测试行业</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/03_%E5%A4%9A%E7%BB%B4%E5%BA%A6%E5%88%86%E6%9E%90/">多维度分析</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/04_%E8%96%AA%E8%B5%84%E5%88%86%E6%9E%90/">薪资分析</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/05_%E6%B5%8B%E8%AF%95%E7%B4%A0%E8%B4%A8/">测试素质</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/06_%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%99/">学习规则</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            02_测试理论
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_第一章基础
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            901_文件
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_计算机基础
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/01_windows%E5%BF%AB%E6%8D%B7%E9%94%AE/">windows快捷键</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/02_Linux%E7%B3%BB%E7%BB%9F/">Linux系统</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/03_windows%E4%B8%8Elinux%E7%9A%84%E5%8C%BA%E5%88%AB/">windows与linux的区别</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/04_%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/">进制之间的转换</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            902_测试理论
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92/">测试计划</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E5%88%86%E7%B1%BB/">软件测试的分类</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95/">黑盒测试</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E6%B5%8B%E8%AF%95%E7%A7%8D%E7%B1%BB%E5%88%92%E5%88%86/">测试种类划分</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1/">测试用例设计</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%99%BB%E5%BD%95/">登录</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/07_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%89%A7%E8%A1%8C/">软件测试执行</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/08_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A/">软件测试报告</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E6%B5%8B%E8%AF%95%E6%A6%82%E5%BF%B5%E6%80%BB%E7%BB%93/">测试概念总结</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E8%BF%AD%E4%BB%A3%E6%A8%A1%E5%9E%8B/">迭代模型</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">计算机基础</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E6%A6%82%E5%BF%B5/">测试理论概念</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_第二章接口测试
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/02_%E7%AC%AC%E4%BA%8C%E7%AB%A0%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/01_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/">接口测试</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_第三章操作
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_Linux系统
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            902_课中_linux文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/01_Linux%E7%B3%BB%E7%BB%9F/902_%E8%AF%BE%E4%B8%AD_linux%E6%96%87%E4%BB%B6/01_Linux%E5%91%BD%E4%BB%A4/">linux基本命令</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/01_Linux%E7%B3%BB%E7%BB%9F/902_%E8%AF%BE%E4%B8%AD_linux%E6%96%87%E4%BB%B6/02_linux%E5%91%BD%E4%BB%A4%E5%AE%9E%E6%93%8D/">linux命令实操</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/01_Linux%E7%B3%BB%E7%BB%9F/01_linux%E7%B3%BB%E7%BB%9F/">linux系统</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_数据库
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            903_课中_数据库文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/01_%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">数据库基础知识</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/02_%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/">数据库命令行操作</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/03_%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%AD%E5%8F%A5%E4%BC%98%E5%8C%96/">数据库语句优化</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/04_%E5%85%B6%E4%BB%96%E8%BF%9E%E6%8E%A5%E5%B7%A5%E5%85%B7/">数据库其他连接工具</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/05_%E7%B4%A2%E5%BC%95/">索引</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/06_%E4%B8%BB%E9%94%AE/">主键</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/07_explain%E8%AF%A6%E8%A7%A3/">explain详解</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/08_%E7%B4%A2%E5%BC%95%E6%96%87%E7%8C%AE/">索引文献</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/09_%E7%A3%81%E7%9B%98/">磁盘</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/01_%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_网络协议
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            904_网络协议文件
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_http协议
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/01_HTTP%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3/">HTTP协议详解</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/02_%E7%BC%93%E5%AD%98/">缓存</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/03_%E4%BB%A3%E7%90%86/">代理</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/04_%E7%8A%B6%E6%80%81%E7%A0%81/">状态码</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/05_cookie/">cookie</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/01_%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/">网络技术</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/02_wireshark%E4%BB%8B%E7%BB%8D/">wireshark介绍</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/03_%E7%BD%91%E7%BB%9C%E5%B1%82/">网络层</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/04_%E4%BC%A0%E8%BE%93%E5%B1%82/">传输层</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/05_%E5%BA%94%E7%94%A8%E5%B1%82/">应用层</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/01_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">网络协议</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_第四章性能测试
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            905_性能测试文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/01_QNET-%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">QNET-网络测试工具</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/02_locust/">locust</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_%E5%90%84%E9%A1%B9%E6%8C%87%E6%A0%87%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/">各项指标的计算方法</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/04_%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87%E7%9A%84%E6%A0%87%E5%87%861/">性能指标的标准1</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/05_%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87%E7%9A%84%E6%A0%87%E5%87%862/">性能指标的标准2</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/06_%E6%9C%89%E6%B2%A1%E6%9C%89%E5%81%9A%E8%BF%87%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">有没有做过性能测试</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/01_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">性能测试</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_第五章APP测试
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            999_APP测试文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/01_adb%E5%91%BD%E4%BB%A4%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">adb命令环境配置</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/02_%E5%B8%B8%E7%94%A8%E7%9A%84adb%E7%9A%84%E5%91%BD%E4%BB%A4%E6%93%8D%E4%BD%9C/">常用的adb的命令操作</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_%E9%80%8D%E9%81%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/">逍遥虚拟机</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/04_Monkey%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D/">Monkey工具介绍</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/05_Monkey%E4%BD%BF%E7%94%A8/">Monkey使用</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/01_APP%E6%B5%8B%E8%AF%95/">APP测试</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_第六章自动化测试
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            999_自动化测试文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/01_python%E5%9F%BA%E7%A1%80/">python基础</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/02_UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">UI自动化测试</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_selenium/">selenium</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/04_Puppeteer/">Puppeteer</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/05_Playwright/">Playwright</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/06_PlayWright%E6%95%99%E7%A8%8B(%E4%B8%80)/">PlayWright教程(一)</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/07_PlayWright%E6%95%99%E7%A8%8B(%E4%BA%8C)/">PlayWright教程(二)</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/08_%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/">接口自动化</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/09_APP%E8%87%AA%E5%8A%A8%E5%8C%96/">APP自动化</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/10_python%E5%9F%BA%E7%A1%80%E7%BB%83%E4%B9%A0/">python基础练习</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/06_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">自动化测试</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_第七章安全测试
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/07_%E7%AC%AC%E4%B8%83%E7%AB%A0%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/01_%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/">安全测试</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            08_第八章项目
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/08_%E7%AC%AC%E5%85%AB%E7%AB%A0%E9%A1%B9%E7%9B%AE/01_%E9%A1%B9%E7%9B%AE/">项目</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            09_简历编写
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/01_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/">简历编写</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/02_%E7%AE%80%E5%8E%86%E7%9A%84%E5%86%85%E5%AE%B9%E4%B8%8E%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84/">简历的内容与逻辑结构</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/03_%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF/">简历模板</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            10_模拟面试题分析
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/01_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/">学习规则</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            11_面试题分析
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            999_面试文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/01_%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/">自我介绍</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/02_%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/">项目介绍</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/03_%E8%AE%BE%E8%AE%A1%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/">设计测试用例</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/04_01_%E5%85%B6%E4%BB%96%E9%80%BB%E8%BE%91%E6%80%A7%E9%97%AE%E9%A2%98/">其他逻辑性问题</a></li>  <li class="file active"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/04_%E9%80%BB%E8%BE%91%E6%80%A7%E9%97%AE%E9%A2%98/">逻辑性问题</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/05_%E4%B8%AA%E4%BA%BA%E9%97%AE%E9%A2%98/">个人问题</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/06_%E5%BC%80%E6%94%BE%E6%80%A7%E9%97%AE%E9%A2%98/">开放性问题</a></li>  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/07_%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/">数据库相关</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/01_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/">面试题问题分析</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_测试初阶
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/">测试初阶</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_测试中阶
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/04_%E6%B5%8B%E8%AF%95%E4%B8%AD%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E4%B8%AD%E9%98%B6/">测试中阶</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_测试高阶
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/">测试高阶</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_测试专家
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/06_%E6%B5%8B%E8%AF%95%E4%B8%93%E5%AE%B6/01_%E6%B5%8B%E8%AF%95%E4%B8%93%E5%AE%B6/">测试专家</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_测试工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_测试管理工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_jira
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            jira文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B/">01_jira简介</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/02_JIRA%E5%AE%89%E8%A3%85/">02_jira安装</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/05_JIRAScrum/">05_JIRA Scrum</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/07_%E7%9C%8B%E6%9D%BF%E6%96%B9%E6%B3%95/">07_看板方法</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/08_%E7%9C%8B%E6%9D%BF%EF%BC%88Kanban%EF%BC%89%E4%B8%8EScrum%E5%8C%BA%E5%88%AB/">08_看板（Kanban）与Scrum区别</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/09_JIRA%E9%97%AE%E9%A2%98/">09_JIRA问题</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/10_JIRA%E5%B7%A5%E4%BD%9C%E6%B5%81/">10_JIRA工作流</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/12_JIRA%E4%BB%AA%E8%A1%A8%E7%9B%98/">12_JIRA仪表盘</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/06_Sprint%E7%9A%84%E5%B7%A5%E4%BD%9C/">06_Sprint的工作</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/04_JIRA%E6%95%8F%E6%8D%B7/">04_JIRA敏捷</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/03_JIRA%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B/">03_JIRA瀑布模型</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/11_JIRA%E7%99%BB%E5%BD%95/">11_JIRA登录</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/13_Jira%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B/">13_Jira问题类型</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/14_Jira%E7%A7%AF%E5%8E%8B%EF%BC%88%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%EF%BC%89/">14_Jira积压（待办事项）</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/15_JiraScrum%E6%9D%BF/">15_Jira Scrum板</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/16_Jira%E5%88%9B%E5%BB%BA%E5%86%B2%E5%88%BA%EF%BC%88Sprint%EF%BC%89/">16_Jira创建冲刺（Sprint）</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/17_Jira%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF/">17_Jira控制面板</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/18_JIRA%E7%BC%BA%E9%99%B7%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">18_JIRA缺陷生命周期</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/20_Jira%E5%8F%B2%E8%AF%97%EF%BC%88Epic%EF%BC%89/">20_Jira史诗（Epic）</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/21_Jira%E7%89%88%E6%9C%AC/">21_Jira版本</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/22_Jira%E6%8A%A5%E5%91%8A/">22_Jira报告</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/19_Jira%E4%B8%8EBugzilla/">19_Jira与Bugzilla</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/01_jira/">jira</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_QualityCenter
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/02_QualityCenter/01_QualityCenter/">QualityCenter</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_禅道
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/03_%E7%A6%85%E9%81%93/01_%E7%A6%85%E9%81%93/">禅道</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_bugzilla
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/04_bugzilla/01_bugzilla/">bugzilla</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/04_bugzilla/02_bugzilla%E5%AE%89%E8%A3%85/">bugzilla安装</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_vss
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/05_vss/01_vss/">vss</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_note
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/06_note/01_note/">note</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_CQ
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/07_CQ/01_CQ/">CQ</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            08_svn篇
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/08_svn%E7%AF%87/01_svn%E7%AF%87/">svn篇</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            09_git篇
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/09_git%E7%AF%87/01_git%E7%AF%87/">git篇</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            10_TestDirector
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/10_TestDirector/01_TestDirector/">TestDirector</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            11_TAPD
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/11_TAPD/01_Tapd/">tapd</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/11_TAPD/02_xmind%E8%BD%ACExcel/">xmind转Excel</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_接口测试篇
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_jmeter
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            999_工具
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/01_jmeter%E5%AE%89%E8%A3%85/">jmeter安装</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/02_jmeter%E7%95%8C%E9%9D%A2%E4%BB%8B%E7%BB%8D/">jmeter界面介绍</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/03_jmeter%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C(%E4%B8%80)/">jmeter简单操作(一)</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/04_jmeter%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C(%E4%BA%8C)/">jmeter简单操作(二)</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/05_jmeter%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C(%E4%B8%89)/">jmeter简单操作(三)</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/06_jmeter%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C(%E5%9B%9B)/">jmeter简单操作(四)</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/07_jmeter%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%A6%E8%A7%A3/">jmeter正则表达式详解</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/08_jmeterjson%E6%8F%90%E5%8F%96%E5%99%A8%E8%AF%A6%E8%A7%A3/">jmeter json提取器详解</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/09_jmeter%E8%84%9A%E6%9C%AC%E5%BD%95%E5%88%B6/">jmeter脚本录制</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/10_jmeter%E8%BF%9C%E7%A8%8B%E5%90%AF%E5%8A%A8/">jmeter远程启动</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/11_jmeter%E5%87%BD%E6%95%B0%E5%8A%A9%E6%89%8B/">jmeter函数助手</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/12_jmeter%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/">JMeter 连接 MySQL数据库测试</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/13_Jmeter%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/">Jmeter接口自动化</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/14_blazemeter(%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BD%95%E5%88%B6%E8%84%9A%E6%9C%AC)/">blazemeter</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/15_badboy(%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BD%95%E5%88%B6%E8%84%9A%E6%9C%AC)/">badboy</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/16_jmeter%E7%AE%80%E5%8D%95%E7%9A%84%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">jmeter简单的性能测试</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/17_Jmeter%E7%9B%91%E6%8E%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%80%A7%E8%83%BD/">Jmeter监控服务器性能</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/18_jmeter%E6%8F%92%E4%BB%B6/">jmeter插件</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/19_jmeter%E6%80%A7%E8%83%BD%E7%AF%87/">jmeter性能篇</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/01_jmeter/">jmeter</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_postman
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            999_postman文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/01_postman%E7%95%8C%E9%9D%A2%E4%BB%8B%E7%BB%8D/">postman界面介绍</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/02_postman%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">postman基本操作</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/03_Postman%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3%E8%AF%B7%E6%B1%82/">Postman实现接口请求</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/04_Postman%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/">Postman项目实战</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/05_Postman%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/">Postman数据驱动与持续集成</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/06_postman-%E6%96%AD%E8%A8%80%E5%8F%98%E9%87%8F/">postman-断言变量</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/01_postman/">postman</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_soapUI
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/03_soapUI/01_soapUI/">soapUI</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_apipost
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/04_apipost/01_apipost/">apipost</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_mock
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_mock/01_mock/">mock</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_airtest
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_airtest文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/01_AirtestWeb%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8E%9F%E7%90%86%E4%B8%8E%E9%85%8D%E7%BD%AE/">AirtestWeb自动化原理与配置</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/07_Airtest%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C%E5%90%AF%E5%8A%A8%E5%99%A8%E5%AE%9E%E7%8E%B0Web%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%88%98/">Airtest进阶操作启动器实现Web自动化实战</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/02_AirtestWeb%E8%87%AA%E5%8A%A8%E5%8C%96%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E8%84%9A%E6%9C%AC%E5%BD%95%E5%88%B6/">AirtestWeb自动化基本使用与脚本录制</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/03_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E9%A1%B5%E9%9D%A2Frame%E6%93%8D%E4%BD%9C/">Airtest场景处理-页面Frame操作</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/04_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/">Airtest场景处理-文件上传</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/05_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E7%99%BB%E5%BD%95%E7%8A%B6%E6%80%81%E8%AE%BF%E9%97%AE%E7%BD%91%E9%A1%B5/">Airtest场景处理-登录状态访问网页</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/06_Airtest%E5%91%BD%E4%BB%A4%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E4%B8%8E%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90/">Airtest命令运行脚本与报告生成</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest/">Airtest</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_数据库
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_navicat
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_%E6%95%B0%E6%8D%AE%E5%BA%93/01_navicat/01_navicat%E5%AE%89%E8%A3%85/">navicat  安装</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_%E6%95%B0%E6%8D%AE%E5%BA%93/01_navicat/02_SQL%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/">navicat  SQL语句练习</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_Linux相关
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_VMware
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/01_VMware/01_VMware/">VMware</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_Xshell
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/02_Xshell/01_Xshell/">Xshell</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_性能测试工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_jmeter
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_jmeter/01_jmeter/">jmeter</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_loadrunner
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_loadrunner/01_loadrunner/">loadrunner</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_webbench
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_webbench/01_webbench/">webbench</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_loadUI
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_loadUI/01_loadUI/">loadUI</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_httperf
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_httperf/01_httperf/">httperf</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_siege
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_siege/01_siege/">siege</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_gatling
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_gatling/01_gatling/">gatling</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_自动化
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_pycharm
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/01_pycharm/01_%E8%AE%A4%E8%AF%86PycharmPython/">认识PycharmPython</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/01_pycharm/02_pycharm%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">pycharm安装教程</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/01_pycharm/03_python%E5%AE%89%E8%A3%85/">python安装</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/01_pycharm/04_python%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/">python配置环境变量</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/01_pycharm/05_python_%E8%87%AA%E5%8A%A8%E5%8C%96/">python自动化篇</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_自动化实操
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_UI自动化
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            UI自动化测试框架
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6_%E5%85%B3%E9%94%AE%E5%AD%97%E9%A9%B1%E5%8A%A8+%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8/">UI自动化测试框架_关键字驱动+数据驱动</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/">UI自动化</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_API自动化
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/01_API%E8%87%AA%E5%8A%A8%E5%8C%96/">API自动化</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_APP自动化
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_appium
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/01_appium/01_appium/">appium</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_instruments
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/02_instruments/01_instruments/">instruments</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_uiautomator
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/03_uiautomator/01_uiautomator/">uiautomator</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_monkey
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/04_monkey/01_monkey/">monkey</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_MonkeyRunner
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/05_MonkeyRunner/01_MonkeyRunner/">MonkeyRunner</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_Robotium
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/06_Robotium/01_Robotium/">Robotium</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/01_APP%E8%87%AA%E5%8A%A8%E5%8C%96/">APP自动化</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_持续集成工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_jenkins
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/01_jenkins/01_jenkins/">jenkins</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_hudson
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02_hudson/01_hudson%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8/">hudson安装以及使用</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02_hudson/02_Hudson%E7%9A%84%E4%BD%BF%E7%94%A8/">Hudson的使用</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            08_辅助测试编程工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            HBuilderX
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/08_%E8%BE%85%E5%8A%A9%E6%B5%8B%E8%AF%95%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/HBuilderX/01_HBuilderX/">HBuilderX</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            notepad++
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/08_%E8%BE%85%E5%8A%A9%E6%B5%8B%E8%AF%95%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/notepad++/01_notepad++/">notepad++</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            09_编程工具
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/09_%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/01_%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/">测试专家</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            10_C_S自动化工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_qtp
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/10_C_S%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/01_qtp/01_qtp/">qtp</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_winrunner
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/10_C_S%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/02_winrunner/01_winrunner/">winrunner</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_autoit
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/10_C_S%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/03_autoit/01_autoit/">autoit</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            11_代码扫描工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_coverity
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/01_coverity/01_coverity/">coverity</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_cppcheck c++
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/02_cppcheck%20c++/01_cppcheck%20c++/">cppcheck++</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_gcover
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/03_gcover/01_gcover/">gcover</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_findbugs
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/04_findbugs/01_findbugs/">findbugs</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_sonarlint
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/05_sonarlint/01_sonarlint/">sonarlint</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_tscancode
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/06_tscancode/01_tscancode/">tscancode</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            12_网络测试工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_思博伦
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%80%9D%E5%8D%9A%E4%BC%A6/01_%E6%80%9D%E5%8D%9A%E4%BC%A6/">思博伦</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_lxia
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_lxia/01_lxia/">lxia</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_wirshark
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_wirshark/01_wirshark/">wirshark</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_tc
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_tc/01_tc/">tc</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_iperf
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_iperf/01_iperf/">iperf</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_tcpping
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_tcpping/01_tcpping/">tcpping</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            13_web安全测试工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_appscan
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_appscan/01_appscan/">appscan</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_NetsparkerCommunityEdition
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_NetsparkerCommunityEdition/01_NetsparkerCommunityEdition/">NetsparkerCommunityEdition</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_websecurify
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_websecurify/01_websecurify/">websecurify</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_wapiti
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_wapiti/01_wapiti/">wapiti</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_N-StalkerFreeVersion
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_N-StalkerFreeVersion/01_N-StalkerFreeVersion/">N-StalkerFreeVersion</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_skipfish
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_skipfish/01_skipfish/">skipfish</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_scrawlr
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_scrawlr/01_scrawlr/">scrawlr</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            08_watcher
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/08_watcher/01_watcher/">watcher</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            09_webscarab
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/09_webscarab/01_webscarab/">webscarab</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            10_burpsuite
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/10_burpsuite/01_burpsuite/">burpsuite</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            11_fiddler
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            999_fiddler文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/01_fiddle%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D/">fiddle的基本介绍</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/02_fiddler%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/">fiddler常用的快捷键</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/03_FiddlerScript/">FiddlerScript</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/04_fiddle%E5%88%A9%E7%94%A8AutoResponder%E8%BF%9B%E8%A1%8C%E8%B0%83%E8%AF%95/">fiddle利用AutoResponder进行调试</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/05_FiddlerComposer%E5%88%9B%E5%BB%BA%E5%92%8C%E5%8F%91%E9%80%81http%E8%AF%B7%E6%B1%82/">FiddlerComposer创建和发送http请求</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/06_fiddle%E5%AE%9E%E7%8E%B0%E6%89%8B%E6%9C%BA%E6%8A%93%E5%8C%85/">fiddle实现手机抓包</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/07_fiddler%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95/">fiddler弱网测试</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/01_Fiddler/">Fiddler</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            12_Charles
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_Charles/01_charles%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/">charles安装与使用</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            14_白盒测试工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_jtestjava
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_jtestjava/01_jtestjava/">jtestjava</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_junit
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_junit/01_junit/">junit</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_cppunit
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_cppunit/01_cppunit/">cppunit</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_gtest
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_gtest/01_gtest/">gtest</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_phpunitphp
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_phpunitphp/01_phpunitphp/">phpunitphp</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_boundscheckerc++ delphiapi ole
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_boundscheckerc++%20delphiapi%20ole/01_boundscheckerc++%20delphiapi%20ole/">boundscheckerc++ delphiapi ole</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_truetimec++ java visual basic
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_truetimec++%20java%20visual%20basic/01_truetimec++%20java%20visual%20basic/">truetimec++ java visual basic</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            15_环境部署_持续集成
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/15_%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/01_apache%E7%8E%AF%E5%A2%83/">Apache环境部署</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/15_%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/02_Tomcat%E7%8E%AF%E5%A2%83/">Tomcat环境部署</a></li>  <li class="file"><a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/15_%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/03_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/">持续集成</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-02_测试理论/11_面试题分析/999_面试文件/04_逻辑性问题" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/">11_面试题分析</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11-%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999-%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/">999_面试文件</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/" rel="tag">测试理论</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/04_%E9%80%BB%E8%BE%91%E6%80%A7%E9%97%AE%E9%A2%98/">
+            <time datetime="2022-04-28T09:42:19.315Z" itemprop="datePublished">2022-04-28</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            逻辑性问题
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <ol>
+<li><p>你让工人为你工作7天，回报是一根金条，这个金条平分成相连的7段，你必须在每天结束的时候 给他们一段。如果只允许你两次把金条弄断，你如何给你的工人付费？</p>
+<ol>
+<li><p>解题思路：</p>
+<ol>
+<li><strong>本题实质问题是数字表示问题。由1、2两个数字可表示1-3三个数字。由1、2、4三个数字可表示1-7七个数字（即1，2，1+2，4，4+1，4+2，4+2+1）。由1、2、4、8四个数字可表示1-15十五个数字。依此类推。</strong></li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li>把金条分成1&#x2F;7、2&#x2F;7和4&#x2F;7三份。这样，第1天我就可以给他1&#x2F;7；第2天我给他2&#x2F;7，让他找回我1&#x2F;7；第3天我就再给他1&#x2F;7，加上原先的2&#x2F;7就是3&#x2F;7；第4天我给他那块4&#x2F;7，让他找回那两块1&#x2F;7和2&#x2F;7的金条；第5天，再给他1&#x2F;7；第6天和第2天一样；第7天给他找回的那个1&#x2F;7</li>
+</ol>
+</li>
+<li><p><strong>试题拓展：</strong></p>
+<ol>
+<li><strong>你让工人为你工作15天，给工人的回报是一根金条。金条平分成相连的15段，你必须在每天结束时给他们一段金条，如果只许你三次把金条弄断，你如何给你的工人付费？（1&#x2F;15，2&#x2F;15，4&#x2F;15，8&#x2F;15）</strong></li>
+<li><strong>你让工人为你工作31天，给工人的回报是一根金条。金条平分成相连的31段，你必须在每天结束时给他们一段金条，如果只许你四次把金条弄断，你如何给你的工人付费？（1&#x2F;31，2&#x2F;31，4&#x2F;31，8&#x2F;31，16&#x2F;31）</strong></li>
+<li><strong>你让工人为你工作（2^n）-1天，给工人的回报是一根金条。金条平分成相连的（2^n）-1段，你必须在每天结束时给他们一段金条，如果只许你n-1次把金条弄断，你如何给你的工人付费？（1&#x2F;（（2^n）-1），2&#x2F;（（2^n）-1），4&#x2F;（（2^n）-1），…）</strong></li>
+<li><strong>人民币为什么只有1、2、5、10的面值？（便于找零钱。理想状态下应是1、2、4、8，在现实生活中常用10进制，故将4、8变为5、10。只要2有两个，1、2、2、5、10五个数字可表示1-20。）</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>5 个强盗分 100 个金币，如果第一个人提出的分配方案得到半数以上（含半数）的人同意则执行，否则处死第一个人，再由第二个人提出方案，直到分配完成。第一个人提出怎样的方案才能既获得最大利益又没有杀身之祸？</p>
+<ol>
+<li><p>方案一：</p>
+<ol>
+<li><p>这里假设每个人都是理性的且追求最大的利益。</p>
+</li>
+<li><p>第 1 个人提出的分配方案要满足两个条件，一是得到半数以上的人支持。二是使自己获得最大的利益。为了取得别人的支持需要给他们部分利益，显然这部分利益要超过他们在第 2 个人提出的可接受分配方案中所获得的利益。如果不这样，他们会反对，从而接受第 2 个人提出的方案。</p>
+</li>
+<li><p>问题变成了求第 2 个人提出的可接受方案。他的方案也要满足上面的两点。 以此类推，问题变成最后一个人提出可接受方案，显然可以提可接受的方案，因为没有人反对，把金币全部分给自己。</p>
+</li>
+<li><p>下面是他们的方案：</p>
+<ol>
+<li>第5个人的方案： 0 ， 0 ， 0 ， 0 ， 100 。（不需要别人的支持）</li>
+<li>第4个人的方案： 0 ， 0 ， 0 ， 100 ， 0 。（不需要别人的支持）</li>
+<li>第3个人的方案： 0 ， 0 ， 99 ， 0 ， 1 。（第5个人会支持他）</li>
+<li>第2个人的方案： 0 ， 99 ， 0 ， 1 ， 0 。（第4个人会支持他）</li>
+<li>第1个人的方案： 98 ， 0 ， 1 ， 0 ， 1 。（第3，5个人会支持他）</li>
+</ol>
+</li>
+<li><p>这道题的答案有些让人吃惊，本以为第一个人最危险，反而能获得较大利益。问题出在题目的假设： 每个人都是理性的且追求最大的利益，从而低估了生命的价值。</p>
+</li>
+</ol>
+</li>
+<li><p>方案二</p>
+<ol>
+<li>1号的分法应该是：自己98枚，2号和4号没知有，3号和5号每人1枚。<br> 　　98 0 1 0 1<br> 　　推理如下；最后一个海盗没有被扔的可能，所以从5号开始<br> 　　 如果前4人都被扔了，则5号可以得到100枚<br> 　　 如果只剩4号和5号，4号会道给自己分100个给五号分0，自己的一票，达到了50%。<br> 　　 若剩3，4，5号三人，3号便会给自己99枚，5号1枚，5号会赞成3的方法，加上回自己一票，可通过。<br> 　　 如果是2号出方案答，他考虑到前面3，4，5的想法，便会给自己分99个给可以支持自己的4号1枚<br> 　　 一号想到了2的方法，所以一号的方法应该是98 0 1 0 1<br> 　　3号和五号支持1号，加上1号自己的1票，就可以通过了。</li>
+</ol>
+</li>
+<li><p>方案三</p>
+<ol>
+<li>1号强盗分给3号1枚金币，4号或5号强盗2枚，独得97枚。分配方案可写成（97，0，1，2，0）或（97，0，1，0，2）。<br> 　　<br> 　　推理过程是这样的：从后向前推，如果1-3号强盗都喂了鲨鱼，只剩4号和5号的话，5号一定投反对票让4号喂鲨鱼，以独吞全部金币。所以，4号惟有支持3号才能保命。3号知道这一点，就会提（100，0，0）的分配方案，对4号、5号一毛不拔而将全部金币归为已有，因为他知道4号一无所获但还是会投赞成票，再加上自己一票他的方案即可通过。不过，2号推知到3号的方案，就会提出（98，0，1，1）的方案，即放弃3号，而给予4号和5号各一枚金币。由于该方案对于4号和5号来说比在3号分配时更为有利，他们将支持他而不希望他出局而由3号来分配。这样，2号将拿走98枚金币。不过， 2号的方案会被1号所洞悉，1号并将提出（97 ，0，1，2，0）或（97，0，1，0，2）的方案，即放弃2号，而给3号一枚金币，同时给4号（或5号）枚金币。由于1号的这一方案对于3号和4号（或5号）来说，相比2号分配时更优，他们将投1号的赞成票，再加上1号自己的票，1号的方案可获通过，97枚金币可轻松落入囊中。这无疑是1号能够获取最大收益的方案了！</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>猜牌问题</strong></p>
+<ol>
+<li><p>S先生、P先生、Q先生他们知道桌子的抽屉里有16张扑克牌：红桃A、Q、4 黑桃J、8、4、2、7、3 草花K、Q、5、4、6 方块A、5。约翰教授从这16张牌中挑出一张牌来，并把这张牌的点数告诉 P先生，把这张牌的花色告诉Q先生。这时，约翰教授问P先生和Q 先生：你们能从已知的点数或花色中推知这张牌是什么牌吗？ 于是，S先生听到如下的对话：<br> P先生：我不知道这张牌。<br> Q先生：我知道你不知道这张牌。<br> P先生：现在我知道这张牌了。<br> Q先生：我也知道了。<br> 听罢以上的对话，S先生想了一想之后，就正确地推出这张牌是什么牌。<br> 请问：这张牌是什么牌？</p>
+</li>
+<li><p><strong>解题思路：</strong></p>
+<p> <strong>由第一句话“P先生：我不知道这张牌。”可知，此牌必有两种或两种以上花色，即可能是A、Q、4、5。如果此牌只有一种花色，P先生知道这张牌的点数，P先生肯定知道这张牌。<br> 由第二句话“Q先生：我知道你不知道这张牌。”可知，此花色牌的点数只能包括A、Q、4、5，符合此条件的只有红桃和方块。Q先生知道此牌花色，只有红桃和方块花色包括A、Q、4、5，Q先生才能作此断言。<br> 由第三句话“P先生：现在我知道这张牌了。”可知，P先生通过“Q先生：我知道你不知道这张牌。”判断出花色为红桃和方块，P先生又知道这张牌的点数，P先生便知道这张牌。据此，排除A，此牌可能是Q、4、5。如果此牌点数为A，P先生还是无法判断。<br> 由第四句话“Q先生：我也知道了。”可知，花色只能是方块。如果是红桃，Q先生排除A后，还是无法判断是Q还是4。<br> 综上所述，这张牌是方块5。<br> 参考答案：<br> 这张牌是方块5。</strong></p>
+</li>
+</ol>
+</li>
+<li><p><strong>燃绳问题</strong></p>
+<ol>
+<li><p><strong>烧一根不均匀的绳，从头烧到尾总共需要1个小时。现在有若干条材质相同的绳子，问如何用烧绳的方法来计时一个小时十五分钟呢？</strong></p>
+</li>
+<li><p><strong>解题思路：</strong></p>
+<ol>
+<li><strong>烧一根这样的绳，从头烧到尾1个小时。由此可知，头尾同时烧共需半小时。同时烧两根这样的绳，一个烧一头，一个烧两头；当烧两头的绳燃尽时，共要半小时，烧一头的绳继续烧还需半小时；如果此时将烧一头的绳的另一头也点燃，那么只需十五分钟。<br> 参考答案：<br> 同时燃两根这样的绳，一个烧一头，一个烧两头；等一根燃尽，将另一根掐灭备用。标记为绳2。再找一根这样的绳，标记为绳1。一头燃绳1需要1个小时，再两头燃绳2需十五分钟，用此法可计时一个小时十五分钟。</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>乒乓球问题</p>
+<ol>
+<li><p><strong>假设排列着100个乒乓球，由两个人轮流拿球装入口袋，能拿到第100个乒乓球的人为胜利者。条件是：每次拿球者至少要拿1个，但最多不能超过5个，问：如果你是最先拿球的人，你该拿几个？以后怎么拿就能保证你能得到第100个乒乓球？</strong></p>
+</li>
+<li><p><strong>解题思路：</strong></p>
+<ol>
+<li><p><strong>1、我们不妨逆向推理，如果只剩6个乒乓球，让对方先拿球，你一定能拿到第6个乒乓球。理由是：如果他拿1个，你拿5个；如果他拿2个，你拿4个；如果他拿3个，你拿3个；如果他拿4个，你拿2个；如果他拿5个，你拿1个。<br> 2、我们再把100个乒乓球从后向前按组分开，6个乒乓球一组。100不能被6整除，这样就分成17组；第1组4个，后16组每组6个。<br> 3、这样先把第1组4个拿完，后16组每组都让对方先拿球，自己拿完剩下的。这样你就能拿到第16组的最后一个，即第100个乒乓球。</strong></p>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li><strong>先拿4个，他拿n个，你拿6-n，依此类推，保证你能得到第100个乒乓球。(1&lt;&#x3D;n&lt;&#x3D;5)</strong></li>
+</ol>
+</li>
+<li><p><strong>试题拓展：</strong></p>
+<ol>
+<li><strong>假设排列着100个乒乓球，由两个人轮流拿球装入口袋，能拿到第100个乒乓球的人为胜利者。条件是：每次拿球者至少要拿2个，但最多不能超过7个，问：如果你是最先拿球的人，你该拿几个？以后怎么拿就能保证你能得到第100个乒乓球？（先拿1个，他拿n个，你拿9-n，依此类推）</strong></li>
+<li><strong>假设排列着X个乒乓球，由两个人轮流拿球装入口袋，能拿到第X个乒乓球的人为胜利者。条件是：每次拿球者至少要拿Y个，但最多不能超过Z个，问：如果你是最先拿球的人，你该拿几个？以后怎么拿就能保证你能得到第X个乒乓球？（先拿X&#x2F;(Y+Z)的余数个，他拿n个，你拿(Y+Z)-n，依此类推。当然必须保证X&#x2F;(Y+Z)的余数不等于0）</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>喝汽水问题</p>
+<ol>
+<li><p><strong>1元钱一瓶汽水，喝完后两个空瓶换一瓶汽水，问：你有20元钱，最多可以喝到几瓶汽水？</strong></p>
+</li>
+<li><p><strong>解题思路1：</strong></p>
+<ol>
+<li><strong>一开始20瓶没有问题，随后的10瓶和5瓶也都没有问题，接着把5瓶分成4瓶和1瓶，前4个空瓶再换2瓶，喝完后2瓶再换1瓶，此时喝完后手头上剩余的空瓶数为2个，把这2个瓶换1瓶继续喝，喝完后把这1个空瓶换1瓶汽水，喝完换来的那瓶再把瓶子还给人家即可，所以最多可以喝的汽水数为：20＋10＋5＋2＋1＋1＋1＝40</strong></li>
+</ol>
+</li>
+<li><p><strong>解题思路2：</strong></p>
+<ol>
+<li><strong>先看1元钱最多能喝几瓶汽水。喝1瓶余1个空瓶，借商家1个空瓶，2个瓶换1瓶继续喝，喝完后把这1个空瓶还给商家。即1元钱最多能喝2瓶汽水。20元钱当然最多能喝40瓶汽水。</strong></li>
+</ol>
+</li>
+<li><p><strong>解题思路3：</strong></p>
+<ol>
+<li><strong>两个空瓶换一瓶汽水，可知纯汽水只值5角钱。20元钱当然最多能喝40瓶的纯汽水。N元钱当然最多能喝2N瓶汽水。</strong></li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li><strong>40瓶</strong></li>
+</ol>
+</li>
+<li><p><strong>试题拓展：</strong></p>
+<ol>
+<li><strong>1元钱一瓶汽水，喝完后两个空瓶换一瓶汽水，问：你有N元钱，最多可以喝到几瓶汽水？（答案2N）</strong></li>
+<li><strong>1元钱一瓶汽水，喝完后两个空瓶换一瓶汽水，问：你有N元钱，最多可以喝到几瓶汽水？（答案2N）</strong></li>
+<li>1元钱一瓶汽水，喝完后四个空瓶换一瓶汽水，问：你有15元钱，最多可以喝到几瓶汽水？（答案20）</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>鬼谷考徒</strong></p>
+<ol>
+<li>孙膑，庞涓都是鬼谷子的徒弟；一天鬼出了这道题目：他从2到99中选出两个不同的整数，把积告诉孙，把和告诉庞。<br> 庞说：我虽然不能确定这两个数是什么，但是我肯定你也不知道这两个数是什么。<br> 孙说：我本来的确不知道，但是听你这么一说，我现在能够确定这两个数字了。<br> 庞说：既然你这么说，我现在也知道这两个数字是什么了。<br> 问这两个数字是什么？为什么？<ol>
+<li><p><strong>解题思路1：</strong></p>
+<ol>
+<li><strong>假设数为 X,Y;和为X+Y&#x3D;A,积为X<em>Y&#x3D;B.<br> 根据庞第一次所说的：“我肯定你也不知道这两个数是什么”。由此知道，X+Y不是两个素数之和。那么A的可能11,17,23,27,29,35,37,41,47,51,53,57,59,65,67,71,77,79,83,87,89,95,97.<br> 我们再计算一下B的可能值：<br> 和是11能得到的积:18,24,28,30<br> 和是17能得到的积:30,42,52,60,66,70,72<br> 和是23能得到的积:42,60…<br> 和是27能得到的积:50,72…<br> 和是29能得到的积:…<br> 和是35能得到的积:66…<br> 和是37能得到的积:70…<br> ……<br> 我们可以得出可能的B为….，当然了，有些数（30&#x3D;5</em>6&#x3D;2*15）出现不止一次。<br> 这时候，孙依据自己的数比较计算后，“我现在能够确定这两个数字了。”<br> 我们依据这句话，和我们算出来的B的集合，我们又可以把计算出来的B的集合删除一些重复数。<br> 和是11能得到的积:18,24,28<br> 和是17能得到的积:52<br> 和是23能得到的积:42,76…<br> 和是27能得到的积:50,92…<br> 和是29能得到的积:54,78…<br> 和是35能得到的积:96,124…<br> 和是37能得到的积:,…<br> ……<br> 因为庞说：“既然你这么说，我现在也知道这两个数字是什么了。”那么由和得出的积也必须是唯一的，由上面知道只有一行是剩下一个数的，那就是和17积52。 那么X和Y分别是4和13。</strong></li>
+</ol>
+</li>
+<li><p><strong>解题思路2：</strong></p>
+<ol>
+<li><strong>说话依次编号为S1，P1，S2。<br> 设这两个数为x，y，和为s，积为p。<br> 由S1，P不知道这两个数，所以s不可能是两个质数相加得来的，而且s＜＝41，因为如果s＞41，那么P拿到41×（s－41）必定可以猜出s了（关于这一点，参考老马的证明，这一点很巧妙，可以省不少事情）。所以和s为{11，17，23，27，29，35，37，41}之一，设这个集合为A。<br> 1).假设和是11。11＝2＋9＝3＋8＝4＋7＝5＋6，如果P拿到18，18＝3×6＝2×9，只有2＋9落在集合A中，所以P可以说出P1，但是这时候S能不能说出S2呢？我们来看，如果P拿到24，24＝6×4＝3×8＝2×12，P同样可以说P1，因为至少有两种情况P都可以说出P1，所以A就无法断言S2，所以和不是11。<br> 2).假设和是17。17＝2＋15＝3＋14＝4＋13＝5＋12＝6＋11＝7＋10＝8＋9，很明显，由于P拿到4×13可以断言P1，而其他情况，P都无法断言P1，所以和是17。<br> 3).假设和是23。23＝2＋21＝3＋20＝4＋19＝5＋18＝6＋17＝7＋16＝8＋15＝9＋14＝10＋13＝11＋12，咱们先考虑含有2的n次幂或者含有大质数的那些组，如果P拿到4×19或7×16都可以断言P1，所以和不是23。<br> 4).假设和是27。如果P拿到8×19或4×23都可以断言P1，所以和不是27。<br> 5).假设和是29。如果P拿到13×16或7×22都可以断言P1，所以和不是29。<br> 6).假设和是35。如果P拿到16×19或4×31都可以断言P1，所以和不是35。<br> 7).假设和是37。如果P拿到8×29或11×26都可以断言P1，所以和不是37。<br> 8).假设和是41。如果B拿到4×37或8×33，都可以断言P1，所以和不是41。<br> 综上所述：这两个数是4和13。</strong></li>
+</ol>
+</li>
+<li><p><strong>解题思路3：</strong></p>
+<ol>
+<li>*<em>孙庞猜数的手算推理解法<br> 1)按照庞的第一句话的后半部分，我们肯定庞知道的和S肯定不会大于54。<br> 因为如果和54&lt;S&lt;54+99，那么S可以写为S&#x3D;53+a，a&lt;&#x3D;99。如果鬼谷子选的两个数字<br> 恰好是53和a，那么孙知道的积M就是M&#x3D;53*a，于是孙知道，这原来两个数中至少有<br> 一个含有53这个因子，因为53是个素数。可是小于100，又有53这个因子的，只能是<br> 53本身，所以孙就可以只凭这个积53*a推断出这两个数术53和a。所以如果庞知道的<br> S大于54的话，他就不敢排除两个数是53和a这种可能，也就不敢贸然说“但是我肯定<br> 你也不知道这两个数是什么”这种话。<br> 如果53+99&lt;S&lt;&#x3D;97+99，那么S可以写为S&#x3D;97+a，同以上推理，也不可能。<br> 如果S&#x3D;98+99，那么庞可以立刻判断出，这两个数只能是98和99，而且M只能是98*99，<br> 孙也可以知道这两个术，所以显然不可能。<br> 2)按照庞的第一句话的后半部分，我们还可以肯定庞知道的和S不可以表示为两个素数的和。<br> 否则的话，如果鬼谷子选的两个数字恰好就是这两个素数，那么孙知道积M后，就可以得到唯一的素因子分解，判断出结果。于是庞还是不敢说“但是我肯定你也不知道这两个数是什么”这种话。<br> 根据哥德巴赫猜想，任何大于4的偶数都可以表示为两个素数之和，对54以下的偶数，猜想肯定被验证过，所以S一定不能是偶数。<br> 另外型为S&#x3D;2+p的奇数，其中p是奇素数的那些S也同样要排除掉。<br> 还有S&#x3D;51也要排除掉，因为51&#x3D;17+2*17。如果鬼谷子选的是(17,2*17)，那么孙知道<br> 的将是M&#x3D;2*17*17，他对鬼谷子原来的两数的猜想只能是(17,2*17)。（为什么51要单独拿出来，要看下面的推理）<br> 3)于是我们得到S必须在以下数中：<br> 11 17 23 27 29 35 37 41 47 53<br> 另外一方面，只要庞的S在上面这些数中，他就可以说“但是我肯定你也不知道这两个<br> 数是什么”，因为这些数无论怎么拆成两数和，都至少有一个数是合数（必是一偶一<br> 奇，如果偶的那个大于2，它就是合数，如果偶的那个等于2，我们上面的步骤已经保<br> 证奇的那个是合数），也就是S只能拆成<br> 　a) S&#x3D;2+a*b　或　b) S&#x3D;a+2^n*b<br> 这两个样子，其中a和b都是奇数，n&gt;&#x3D;1。<br> 那么（下面我说的“至少两组数”中的两组数都不相同，而且的确存在（也就是那些<br> 数都小于100）的理由我就不写了，根据条件很显然）<br> 　a)或者孙的M&#x3D;2</em>a<em>b，孙就会在(2</em>a,b)和(2,a<em>b)至少两组数里拿不定主意（a和<br> 　　b都是奇数，所以这两组数一定不同）；<br> 　b)或者M&#x3D;2^n</em>a<em>b，<br> 　　如果n&gt;1，那么孙就会在(2^(n-1)<em>a,2</em>b)和(2^n</em>a,b)至少两组数里拿不定主意；<br> 　　如果n&#x3D;1，而且a不等于b，那么孙就会在(2<em>a,b)和(2b,a)至少两组数里拿不定主<br> 　　意；<br> 　　如果n&#x3D;1，而且a等于b，这意味着S&#x3D;a+2</em>a&#x3D;3a，所以S一定是3的倍数，我们只要<br> 　　讨论S&#x3D;27就可以了。27如果被拆成了S&#x3D;9+18，那么孙拿到的M&#x3D;9<em>18，他就会在<br> 　　(9，18)和(27,6)至少两组数里拿不定主意。<br> 　（上面对51的讨论就是从这最后一种情况的讨论发现的，我不知道上面的论证是否<br> 　过分烦琐了，但是看看51这个“特例”，我怀疑严格的论证可能就得这么烦）<br> 现在我们知道，当且仅当庞得到的和数S在<br> C&#x3D;{11, 17, 23, 27, 29, 35, 37, 41, 47, 53}<br> 中，他才会说出“我虽然不能确定这两个数是什么，但是我肯定你也不知道这两个数<br> 是什么”这句话<br> 孙膑可以和我们得到同样的结论，他还比我们多知道那个M。<br> 4)孙的话“我现在能够确定这两个数字了”表明，他把M分解成素因子后，然后组合成<br> 关于鬼谷子的那两个数的若干个猜想中，有且仅有一个猜想的和在C中。否则的话，他<br> 还是会在多个猜想之间拿不定主意。<br> 庞涓听了孙的话也可以得到和我们一样的结论，他还比我们多知道那个S。<br> 5)庞的话“我现在也知道这两个数字是什么了”表明，他把S拆成两数和后，也得到了<br> 关于鬼谷子的那两个数的若干个猜想，但是在所有这些拆法中，只有一种满足4)里的<br> 条件，否则他不会知道究竟是哪种情况，使得孙膑推断出那两个数来。<br> 于是我们可以排除掉C中那些可以用两种方法表示为S&#x3D;2^n+p的S，其中n&gt;1，p为素数。<br> 因为如果S&#x3D;2^n1+p1&#x3D;2^n2+p2，无论是(2^n1,p1)还是(2^n2,p2)这两种情况，孙膑都<br> 可以由M&#x3D;2^n1</em>p1或M&#x3D;2^n2<em>p2来断定出正确的结果，因为由M得到的各种两数组合，<br> 只有(2^n,p)这样的组合，两数和才是奇数，从而在C中，于是孙膑就可以宣布自己知道<br> 了是怎么回事，可庞涓却还得为(2^n1,p1)还是(2^n2,p2)这两种情况犯愁。<br> 因为11&#x3D;4+7&#x3D;8+3，23&#x3D;4+19&#x3D;16+7，27&#x3D;4+23&#x3D;16+11，35&#x3D;4+31&#x3D;16+19，37&#x3D;8+29&#x3D;32+5，<br> 47&#x3D;4+43&#x3D;16+31。于是S的可能值只能在<br> 17 29 41 53<br> 中。让我们继续缩小这个表。<br> 29不可能，因为29&#x3D;2+27&#x3D;4+25。无论是(2,27)和(4,25)，孙膑都可以正确判断出来：<br> 　a)如果是(2,27)，M&#x3D;2</em>27&#x3D;2<em>3</em>3<em>3，那么孙可以猜的组合是(2,27)(3,18)(6,9)，<br> 　　后面两种对应的S为21和15，都不在C中，故不可能，于是只能是(2,27)。<br> 　b)如果是(4,25)，M&#x3D;4</em>25&#x3D;2<em>2</em>5<em>5，那么孙可以猜的组合是(2,50)(4,25)(5,20)<br> 　　(10,10)。只有(4,25)的S才在C中。<br> 可是庞涓却要为孙膑的M到底是2</em>27还是4<em>25苦恼。<br> 41不可能，因为41&#x3D;4+37&#x3D;10+31。后面推理略。<br> 53不可能，因为53&#x3D;6+47&#x3D;16+37。后面推理略。<br> 研究一下17。这下我们得考虑所有17的两数和拆法：<br> (2,15)：那么M&#x3D;2</em>15&#x3D;2<em>3</em>5&#x3D;6<em>5，而6+5&#x3D;11也在C中，所以一定不是这个M，否则4)<br> 的条件不能满足，孙“我现在能够确定这两个数字了”的话说不出来。<br> (3,14)：那么M&#x3D;3</em>14&#x3D;2<em>3</em>7&#x3D;2<em>21，而2+21&#x3D;23也在C中。后面推理略。<br> (4,13)：那么M&#x3D;4</em>13&#x3D;2<em>2</em>13。那么孙可以猜的组合是(2,26)(4,13)，只有(4,13)<br> 的和在C中，所以这种情况孙膑可以说4)中的话。<br> (5,12)：那么M&#x3D;5<em>12&#x3D;2</em>2<em>3</em>5&#x3D;3<em>20，而3+20&#x3D;23也在C中。后面推理略。<br> (6,11)：那么M&#x3D;6</em>11&#x3D;2<em>3</em>11&#x3D;2<em>33，而2+33&#x3D;35也在C中。后面推理略。<br> (7,10)：那么M&#x3D;7</em>10&#x3D;2<em>5</em>7&#x3D;2<em>35，而2+35&#x3D;37也在C中。后面推理略。<br> (8,9)：那么M&#x3D;8</em>9&#x3D;2<em>2</em>2<em>3</em>3&#x3D;3<em>24，而3+24&#x3D;27也在C中。后面推理略。<br> 于是在S&#x3D;17时，只有(4,13)这种情况，孙膑才可以猜出那两数是什么，既然如此，庞涓就知道这两个数是什么，说出“我现在也知道这两个数字是什么了”。听了庞涓的话，于是我们也知道，这两数该是(4,13)。</em>*</li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li><strong>这两个数字是4和13。原因同上。</strong></li>
+</ol>
+</li>
+<li><p><strong>试题拓展：</strong></p>
+<ol>
+<li>你有&gt;1并且&lt;30的两个不同的数字只把和告诉甲，然后只把积告诉乙。<br> 甲对乙说：“我不知道这两个数字是什么，但你也肯定不知道。”<br> 乙就说了：“我本来不知道的，你这么一说，我就知道两个数字是什么了。”<br> 甲于是说：“现在我也知道了!”<br> 请问这两个数字是分别是什么？ （答案：4和13。）</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>舀酒难题</p>
+<ol>
+<li><p><strong>据说有人给酒肆的老板娘出了一个难题：此人明明知道店里只有两个舀酒的勺子，分别能舀7两和11两酒，却硬要老板娘卖给他2两酒。聪明的老板娘毫不含糊，用这两个勺子在酒缸里舀酒，并倒来倒去，居然量出了2两酒，聪明的你能做到吗？</strong></p>
+<ol>
+<li><p><strong>解题思路1：</strong></p>
+<ol>
+<li><strong>设舀7两的勺子为A和舀11两的勺子为B。要解决此题须使A不断舀酒倒入B中，B满后再倒入酒缸，如此反复即可。</strong></li>
+</ol>
+</li>
+<li><p><strong>解题思路2：</strong></p>
+<ol>
+<li><strong>本题实质是计算下列式子：2<em>7-11&#x3D;3,2</em>7+3-11&#x3D;6,1<em>7+6-11&#x3D;2,2</em>7+2-11&#x3D;5,1<em>7+5-11&#x3D;1,2</em>7+1-11&#x3D;4,1*7+4-11&#x3D;0。即A、B两个勺子可量出1-6两酒，加上7、11，A、B两个勺子可量出1-18两酒</strong></li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li><strong>设舀7两的勺子为A和舀11两的勺子为B。倒法如下：<br>     A       B<br>     7       0<br>     0       7     A-&gt;B<br>     7       7<br>     3       11    A-&gt;B<br>     3       0<br>     0       3     A-&gt;B    （2<em>7-11&#x3D;3）<br>     7       3<br>     0       10    A-&gt;B<br>     7       10<br>     6       11    A-&gt;B<br>     6       0<br>     0       6     A-&gt;B    （2</em>7+3-11&#x3D;6）<br>     7       6<br />        2       11    A-&gt;B    （1*7+6-11&#x3D;2）<br>  A勺中有2两酒。</strong></li>
+</ol>
+</li>
+<li><p><strong>试题拓展：：</strong></p>
+<ol>
+<li><strong>如果你有无穷多的水，一个3公升的提捅，一个5公升的提捅，两只提捅形状上下都不均匀，问你如何才能准确称出4公升的水？</strong></li>
+<li><strong>有一个装满葡萄酒的8升罐子，另有一个3升，一个5升的空罐子，问怎么倒可以把葡萄酒分成两个4升的？</strong></li>
+<li><strong>假设有一个池塘，里面有无穷多的水。现有2个空水壶，容积分别为 5升和6升。问题是如何只用这2个水壶从池塘里取得3升的水。</strong></li>
+<li><strong>两位妇人分别拿着4斤的奶瓶和5斤的奶瓶去奶店各买2斤奶，适逢店的称坏了，这时店里只有两大满奶桶，但聪明的店老板却成功地凭借现有的条件满足了两位妇人的要求。</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>五个囚犯</strong></p>
+<ol>
+<li><strong>5个囚犯，分别按1-5号在装有100颗绿豆的麻袋抓绿豆，规定每人至少抓一颗，而抓得最多和最少的人将被处死，而且，他们之间不能交流，但在抓的时候，可以摸出剩下的豆子数。问他们中谁的存活机率最大？？<br> 提示：<br> 1，他们都是很聪明的人<br> 2，他们的原则是先求保命，再去多杀人<br> 3，100颗不必都分完<br> 4，若有重复的情况，则也算最大或最小，一并处死</strong><ol>
+<li><p>解题思路</p>
+<ol>
+<li><em>5个囚犯的策略<br> 由题设条件可知：摸到最大绿豆数的囚犯必死，摸到最小绿豆数的囚犯必死，摸到重复绿豆数的囚犯必死。<br> 整体来看，至少有两个囚犯必死。绿豆数为5时，2个囚犯必死(11111)。绿豆数为4时，3-4个囚犯必死(1211，2111)。绿豆数为3时，4-5个囚犯必死(131，311，221，212)。绿豆数为2、1时，5个囚犯必死。<br> 5个囚犯的策略应该是：5个囚犯必须使摸到的绿豆数不重复，这样才会有最多存活机会；又必须使自己摸到的绿豆数居中，才会有最大存活机会。<br> 明确了这一点，就可以往下分析了。<br> 具体分析求机率<br> 设1号囚犯摸到的绿豆数为N。<br> 则2号囚犯摸到的绿豆数为N+1或N-1。因为2号囚犯可以通过摸剩余绿豆的方法得知1号囚犯摸到的绿豆数,2号囚犯摸到的绿豆数为N的话就会重复是找死，如果摸到的绿豆数与N相差大于1的话，又会使得3号囚犯有机会使摸到的绿豆数居中。<br> 3号囚犯也会使自己摸到的绿豆数与1、2号的紧密相邻，即使自己摸到的绿豆数比1、2号的之中最大的大1，最小的小1。因为3号囚犯可以通过摸剩余绿豆的方法得知1、2号囚犯摸到的绿豆总数，又知1、2号囚犯摸到的绿豆数相差为1，从而判断出1、2号囚犯各自摸到的绿豆数。<br> 4、5号囚犯与3号囚犯想法基本相同。即使自己摸到的绿豆数比自己前面所有的之中最大的大1，最小的小1。<br> 综上所述，5个囚犯摸到的绿豆数为5个连续整数。<br> 1号囚犯存活机率。1号囚犯有两种情况必死：摸到的绿豆数最大或最小。摸到的绿豆数最大或最小，只能由后4位囚犯决定，由分析可知后4位囚犯的摸到绿豆数的位置都只有两个，即一组连续整数的两边。因此1号囚犯摸到的绿豆数为最大时的机率为（1&#x2F;2）</em>（1&#x2F;2）<em>（1&#x2F;2）</em>（1&#x2F;2）&#x3D;1&#x2F;16，最小时的机率也为1&#x2F;16，1号囚犯存活机率为1-（1&#x2F;16）<em>2&#x3D;7&#x2F;8<br> 2号囚犯存活机率。由对称性可知2号囚犯存活机率与1号相同，也为7&#x2F;8。<br> 3号囚犯存活机率。3号囚犯摸到的绿豆数为最大时的机率为（1&#x2F;2）</em>（1&#x2F;2）<em>（1&#x2F;2）&#x3D;1&#x2F;8，最小时的机率也为1&#x2F;8，1号囚犯存活机率为1-（1&#x2F;8）</em>2&#x3D;3&#x2F;4。<br> 4号囚犯存活机率。4号囚犯摸到的绿豆数为最大时的机率为（1&#x2F;2）<em>（1&#x2F;2）&#x3D;1&#x2F;4，最小时的机率也为1&#x2F;4，4号囚犯存活机率为1-（1&#x2F;4）</em>2&#x3D;1&#x2F;2。<br> 5号囚犯存活机率。5号囚犯摸到的绿豆数不是最大就是最小，必死无疑。5号囚犯存活机率为0。<br><br> [本题到此告一段落。但是5个囚犯的策略似乎有点问题：5号囚犯在必死无疑的情况下，还会为前4人保驾护航吗？他会不会临死拉个垫背的？于是有了以下分析。]<br><br> 5号囚犯的“觉醒”（临死拉个垫背的，在必死无疑的情况下多杀人）<br> 1-4号囚犯策略如前，则4个囚犯摸到的绿豆数为4个连续整数，而5号囚犯的“觉醒”促使他多杀人。要多杀人，他摸到的绿豆数必须为4个连续整数的中间两个，这样有4人必死，只有1人存活。5号囚犯必死，4号囚犯摸到的绿豆数为4个连续整数的最大或最小值，也必死，1-3号囚犯有可能存活。<br> 先不考虑5号囚犯。<br> 1号囚犯存活机率。1号囚犯摸到的绿豆数为4个连续整数的最大或最小值，则必死。1号囚犯摸到的绿豆数为最大时的机率为（1&#x2F;2）<em>（1&#x2F;2）</em>（1&#x2F;2）&#x3D;1&#x2F;8，最小时的机率也为1&#x2F;8，1号囚犯存活机率为1-（1&#x2F;8）<em>2&#x3D;3&#x2F;4<br> 2号囚犯存活机率。由对称性可知2号囚犯存活机率与1号相同，也为3&#x2F;4。<br> 3号囚犯存活机率。3号囚犯摸到的绿豆数为最大时的机率为（1&#x2F;2）</em>（1&#x2F;2）&#x3D;1&#x2F;4，最小时的机率也为1&#x2F;4，3号囚犯存活机率为1-（1&#x2F;4）<em>2&#x3D;1&#x2F;2。<br> 考虑5号囚犯。<br> 由于5号囚犯摸到的绿豆数必为4个连续整数的中间两个，故1-3号囚犯存活机率都将减半。即1、2号囚犯存活机率为（3&#x2F;4）</em>（1&#x2F;2）&#x3D;3&#x2F;8，3号囚犯存活机率（1&#x2F;2）*（1&#x2F;2）&#x3D;1&#x2F;4。<br><br> [5号囚犯的“觉醒”等于宣判了4号囚犯的死刑，4号囚犯考虑到这一点后，随之“觉醒”。]<br><br> 4、5号囚犯共同“觉醒”<br> 此情况很简单，大家同赴九泉。<br><br> 综合考虑后，1、2号囚犯存活机率最大</li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li>1、2号囚犯存活机率最大</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>爱因斯坦的问题</strong></p>
+<ol>
+<li><p><strong>爱因斯坦出了一道题，他说世界上有90％的人回答不出，看看你是否属于10％。</strong></p>
+</li>
+<li><p><strong>内容:<br> 　　1． 有5栋5种颜色的房子<br> 　　2． 每一位房子的主人国籍都不同<br> 　　3． 这五个人每人只喝一个牌子的饮料，只抽一个牌子的香烟，只养一种宠物<br> 　　4． 没有人有相同的宠物，抽相同牌子的烟，喝相同牌子的饮料<br> 　　已知条件：<br> 　　1． 英国人住在红房子里<br> 　　2． 瑞典人养了一条狗<br> 　　3． 丹麦人喝茶<br> 　　4． 绿房子在白房子的左边<br> 　　5． 绿房子主人喝咖啡<br> 　　6． 抽PALL MALL 烟的人养了一只鸟<br> 　　7． 黄房子主人抽DUNHILL烟<br> 　　8． 住在中间房子的人喝牛奶<br> 　　9． 挪威人住在第一间房子<br> 　　10． 抽混合烟的人住在养猫人的旁边<br> 　　11． 养马人住在抽DUNHILL烟人的旁边<br> 　　12． 抽BLUE MASTER烟的人喝啤酒<br> 　　13． 德国人抽PRINCE烟<br> 　　14． 挪威人住在蓝房子旁边<br> 　　15． 抽混合烟的人的邻居喝矿泉水<br> 　　问题：谁养鱼？</strong></p>
+<ol>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li><pre><code>黄        蓝         红            绿       白
+ 挪威      丹麦       英国          德国     瑞典
+ 猫        马         鸟            鱼       狗
+ 矿泉水    茶         牛奶          咖啡     啤酒
+ DUNHILL   混合       PALL MALL     PRINCE   BLUE MASTER
+
+ 德国人养鱼。
+</code></pre>
+</li>
+</ol>
+</li>
+<li><p><strong>试题拓展：</strong></p>
+<ol>
+<li>有五位小姐排成一列，所有的小姐姓不同、穿的衣服颜色不同、喝不同的饮料、养不同的宠物、吃不同的水果；<br>已知条件：<br>1、钱小姐穿红色衣服；<br>2 、翁小姐养了一只狗；<br>3、陈小姐喝茶；<br>4、穿绿衣服的站在穿白衣服的左边；<br>5、穿绿衣服的小姐喝咖啡；<br>6、吃西瓜的小姐养鸟；<br>7、穿黄衣服的小姐吃梨；<br>8、站在中间的小姐喝牛奶；<br>9、赵小姐站在最左边；<br>10、吃桔子的小姐站在养猫的旁边；<br>11、养鱼小姐旁边的那位吃梨；<br>12、吃苹果的小姐喝香槟；<br>13、江小姐吃香蕉；<br>14、赵小姐站在穿蓝衣服的小姐旁边；<br>15、喝开水的小姐站在吃桔子的小姐旁边；<br>请问哪位小姐养蛇？</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>盲人分袜</strong></p>
+<ol>
+<li><p><strong>有两位盲人，他们都各自买了两对黑袜和两对白袜，八对袜子的布质、大小完全相同，而每对袜子都有一张商标纸连着。两位盲人不小心将八对袜子混在一起。他们每人怎样才能取回黑袜和白袜各两对呢？</strong></p>
+<ol>
+<li><p><strong>解题思路1：</strong></p>
+<ol>
+<li><strong>把八对袜子商标纸撕开一人一半平分，袜子不分左右。但是怎么穿呢？</strong></li>
+</ol>
+</li>
+<li><p><strong>解题思路2：</strong></p>
+<ol>
+<li><strong>将八对袜子淋湿，在太阳下晒，先干的是黑袜，后干的是白袜。再平分。</strong></li>
+</ol>
+</li>
+<li><p><strong>解题思路3：</strong></p>
+<ol>
+<li>在太阳下晒，热的是黑袜，稍凉的是白袜。再平分。</li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li>同上</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>国王与预言家</strong></p>
+<ol>
+<li><strong>在临上刑场前，国王对预言家说：“你不是很会预言吗？你怎么不能预言到你今天要被处死呢？我给你一个机会，你可以预言一下今天我将如何处死你。你如果预言对了，我就让你服毒死；否则，我就绞死你。”<br> 但是聪明的预言家的回答，使得国王无论如何也无法将他处死。<br> 请问，他是如何预言的？</strong><ol>
+<li><p><strong>解题思路：</strong></p>
+<ol>
+<li><strong>看似必死，其实不然。预言家如果预言：你不会处死我，国王肯定让他绞死，因为他预言错了。他如果预言：你会处死我，国王肯定让他服毒死，因为他预言对了。他想到这层后，便知道自己必死，他只能预言服毒死或绞死。如果预言服毒死，就预言对了，就会服毒而死。如果预言绞死，情况一，国王绞死他，预言正确，让他服毒死，矛盾；情况二，国王让他服毒死，预言错误，让他绞死，矛盾；于是国王无论如何也无法将他处死。</strong></li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li><strong>预言家预言：你将绞死我。</strong></li>
+</ol>
+</li>
+<li><p><strong>试题拓展：</strong></p>
+<ol>
+<li><strong>在太平洋的一个小岛上生活着土人，他们不愿意被外人打扰，一天，一个探险家到了岛上，被土人抓住，土人的祭司告诉他，你临死前还可以有一个机会留下一句话，如果这句话是真的，你将被烧死，是假的，你将被五马分尸，可怜的探险家如何才能活下来？（答案：探险家说：我将被五马分尸。）</strong></li>
+<li><strong>一个岔路口分别通向诚实国和说谎国。来了两个人，已知一个是诚实国的，另一个是说谎国的。诚实国永远说实话，说谎国永远说谎话。现在你要去说谎国，但不知道应该走哪条路，需要问这两个人。请问应该怎么问？（答案：应该问：你的国家怎么走?他肯定指向的是诚实国。）</strong></li>
+<li><strong>从前，有一个国王，他手下有两个大臣，一个好，一个坏。坏大臣为了独自掌权，总想把好大臣害死。有一天他在国王面前讲了好大臣很多坏话。国王偏听偏信，决定第二天用抓阄的办法来处理好大臣。具体办法是：命令好大臣从盒子里任意抓一个阄，而盒里只有两个阄，一个写“生”，一个写“死”，抓到“生”就活，抓到“死”就死。<br> 　　当天夜里，坏大臣逼迫着做阄的人把两个阄都写成“死”字。这样，好大臣无论抓到哪个阄都得死。坏大臣走了以后，做阄的人就偷偷地给好大臣送了信，告诉他这一情况，请好大臣自己想办法。<br> 　　请问：好大臣在抓阄时，要想什么办法，才能免于处死呢？（请注意，逃走是不可能的）（答案：随便抓一个，吞到肚子里）</strong></li>
+<li><strong>这是选自L?斯缪利安(爱丽丝漫游奇境记)中的一道益智趣题: 特威德勒弟弟与特威德勒哥哥站在他家右边的一棵树下咧开嘴笑着。爱丽丝见到他俩说:”要不是你们的绣花衣领不同，恐怕我分不清哪个是哥哥，哪个是弟弟呢。”<br> 　　一个兄弟答道:”你应当运用逻辑推理的方法。”说罢从口袋里掏出一张扑克牌，向爱丽丝扬了扬——那是一张方块皇后。他说道，”你看，这是一张红牌。红牌表明持牌的人是讲真话的，而黑牌表明持牌的人是讲假话的。现在，我兄弟的口袋里也有一张牌:不是红牌就是黑牌。他马上要说话了。如果他的牌是红的，他将要说真话;要是他的牌是黑的，他就要说假话。你的事儿就是判断一下是特威德勒弟弟呢，还是特威德勒哥哥呢？”<br> 　　正在这时，另一位兄弟开腔了:”我是特威德勒哥哥，我有一张黑牌。”<br> 　　请问，他是谁?<br />   （答案：如果说话的人讲的是真话，那他会是特威德勒哥哥，应持有一张黑牌，但他是决不可能既讲真话而又持黑牌的。因此，他必然在说假话，而这意味着他持有的必然是张黑牌。由于他讲的是假话，所以他决不会是持黑牌的特威德勒哥哥，而一定是持有黑牌的特威德勒弟弟。）</strong></li>
+<li><strong>生死门问题。在你面前有两扇门, 其中一扇为生门, 另一则为死门。生门及死门都有一个人看守著, 而這两个人之中, 其中个只说真话, 另一个只说假话, 這两位守门人知道哪一扇门是生门, 哪一扇是死门, 而你则是不知道的, 同時, 你亦不知道哪一位是只说真话, 哪一位是只说假话, 更不知道哪位守哪扇门。<br> 请问有什么方法, 可以只请其中一位守门者一个问题, 就可以知道哪一扇是生门?</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>称球问题</p>
+<ol>
+<li><p><strong>12个球和一个天平，现知道只有一个和其它的重量不同，问怎样称才能用三次就找到那个球？（注意此题并未说明那个球的重量是轻是重，所以需要仔细考虑)</strong></p>
+<ol>
+<li><strong>此称法称三次就保证找出那个坏球，并知道它比标准球重还是轻。<br> 将十二个球编号为1-12。<br> 第一次，先将1-4号放在左边，5-8号放在右边。<br> 　　1.如果右重则坏球在1-8号。<br> 　　　　第二次将2-4号拿掉，将6-8号从右边移到左边，把9-11号放<br> 　　　　在右边。就是说，把1,6,7,8放在左边，5,9,10,11放在右边。<br> 　　　　　　1.如果右重则坏球在没有被触动的1,5号。如果是1号，<br> 　　　　　　　则它比标准球轻；如果是5号，则它比标准球重。<br> 　　　　　　　　第三次将1号放在左边，2号放在右边。<br> 　　　　　　　　　　1.如果右重则1号是坏球且比标准球轻；<br> 　　　　　　　　　　2.如果平衡则5号是坏球且比标准球重；<br> 　　　　　　　　　　3.这次不可能左重。<br> 　　　　　　2.如果平衡则坏球在被拿掉的2-4号，且比标准球轻。<br> 　　　　　　　　第三次将2号放在左边，3号放在右边。<br> 　　　　　　　　　　1.如果右重则2号是坏球且比标准球轻；<br> 　　　　　　　　　　2.如果平衡则4号是坏球且比标准球轻；<br> 　　　　　　　　　　3.如果左重则3号是坏球且比标准球轻。<br> 　　　　　　3.如果左重则坏球在拿到左边的6-8号，且比标准球重。<br> 　　　　　　　　第三次将6号放在左边，7号放在右边。<br> 　　　　　　　　　　1.如果右重则7号是坏球且比标准球重；<br> 　　　　　　　　　　2.如果平衡则8号是坏球且比标准球重；<br> 　　　　　　　　　　3.如果左重则6号是坏球且比标准球重。<br> 　　2.如果天平平衡，则坏球在9-12号。<br> 　　　　第二次将1-3号放在左边，9-11号放在右边。<br> 　　　　　　1.如果右重则坏球在9-11号且坏球较重。<br> 　　　　　　　　第三次将9号放在左边，10号放在右边。<br> 　　　　　　　　　　1.如果右重则10号是坏球且比标准球重；<br> 　　　　　　　　　　2.如果平衡则11号是坏球且比标准球重；<br> 　　　　　　　　　　3.如果左重则9号是坏球且比标准球重。<br> 　　　　　　2.如果平衡则坏球为12号。<br> 　　　　　　　　第三次将1号放在左边，12号放在右边。<br> 　　　　　　　　　　1.如果右重则12号是坏球且比标准球重；<br> 　　　　　　　　　　2.这次不可能平衡；<br> 　　　　　　　　　　3.如果左重则12号是坏球且比标准球轻。<br> 　　　　　　3.如果左重则坏球在9-11号且坏球较轻。<br> 　　　　　　　　第三次将9号放在左边，10号放在右边。<br> 　　　　　　　　　　1.如果右重则9号是坏球且比标准球轻；<br> 　　　　　　　　　　2.如果平衡则11号是坏球且比标准球轻；<br> 　　　　　　　　　　3.如果左重则10号是坏球且比标准球轻。<br> 　　3.如果左重则坏球在1-8号。<br> 　　　　第二次将2-4号拿掉，将6-8号从右边移到左边，把9-11号放<br> 　　　　在右边。就是说，把1,6,7,8放在左边，5,9,10,11放在右边。<br> 　　　　　　1.如果右重则坏球在拿到左边的6-8号，且比标准球轻。<br> 　　　　　　　　第三次将6号放在左边，7号放在右边。<br> 　　　　　　　　　　1.如果右重则6号是坏球且比标准球轻；<br> 　　　　　　　　　　2.如果平衡则8号是坏球且比标准球轻；<br> 　　　　　　　　　　3.如果左重则7号是坏球且比标准球轻。<br> 　　　　　　2.如果平衡则坏球在被拿掉的2-4号，且比标准球重。<br> 　　　　　　　　第三次将2号放在左边，3号放在右边。<br> 　　　　　　　　　　1.如果右重则3号是坏球且比标准球重；<br> 　　　　　　　　　　2.如果平衡则4号是坏球且比标准球重；<br> 　　　　　　　　　　3.如果左重则2号是坏球且比标准球重。<br> 　　　　　　3.如果左重则坏球在没有被触动的1,5号。如果是1号，<br> 　　　　　　　则它比标准球重；如果是5号，则它比标准球轻。<br> 　　　　　　　　第三次将1号放在左边，2号放在右边。<br> 　　　　　　　　　　1.这次不可能右重。<br> 　　　　　　　　　　2.如果平衡则5号是坏球且比标准球轻；<br> 　　　　　　　　　　3.如果左重则1号是坏球且比标准球重；</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>三个灯泡</strong></p>
+<ol>
+<li><p><strong>门外三个开关分别对应室内三个灯泡，线路良好，在门外控制开关时候不能看到室内灯的情况，现在只允许进门一次，确定开关和灯的对应关系？（这个也是微软面试题，我本人到认为这个是脑筋急转弯类型）</strong></p>
+<ol>
+<li><p><strong>解题思路：</strong></p>
+<ol>
+<li><strong>如果有两个灯泡，只需打开一个灯，即可确定开关和灯的对应关系。现在有三个灯泡，必然要想其他办法。众所周知，灯泡打开一会儿会发热，从此入手即可解决问题。</strong></li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li>打开第一个开关10分钟，再关上，打开第二个开关，进屋。亮的灯由第二个开关控制，不亮的灯摸一摸，热的由第一个开关控制，另一个由第三个开关控制。</li>
+</ol>
+</li>
+<li><p>试题拓展：</p>
+<ol>
+<li><strong>门外四个开关分别对应室内四个灯泡，线路良好，在门外控制开关时候不能看到室内灯的情况，现在只允许进门一次，确定开关和灯的对应关系？（答案：2个亮的1热1凉，2个灭的1热1凉）</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>黑帽子舞会</strong></p>
+<ol>
+<li><p><strong>一群人开舞会，每人头上都戴着一顶帽子。帽子只有黑白两种，黑的至少有一顶。每个人都能看到其它人帽子的颜色，却看不到自己的。主持人先让大家看看别人头上戴的是什幺帽子，然后关灯，如果有人认为自己戴的是黑帽子，就打自己一个耳光。第一次关灯，没有声音。于是再开灯，大家再看一遍，关灯时仍然鸦雀无声。一直到第三次关灯，才有劈劈啪啪打耳光的声音响起。问有多少人戴着黑帽子？</strong></p>
+<ol>
+<li><p><strong>解题思路：</strong></p>
+<ol>
+<li>设有x个黑帽子。<br> x&#x3D;1，则戴黑帽子的第一次就看到其他人都是白帽子，那么自己就肯定是黑帽子了。所以该打自己嘴巴。<br> 但第一次没人打，说明至少有两个黑帽子。<br> x&#x3D;2，第一次开灯后否没人打，说明黑帽不止一个，所以第二次如果有人只看到别人只有一顶黑帽子的话，就能判断自己头上是黑帽子，就该打嘴巴，但没人打，说明至少有3个黑帽。<br> x&#x3D;3,由于前两次没人打，所以至少三顶黑帽。第三次开灯后，有人打嘴巴，说明打嘴巴的人看到其他人只有两顶黑帽，所以能判断自己头上是黑帽。<br> 因此是三顶黑帽子。</li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li><strong>3个人戴着黑帽子。</strong></li>
+</ol>
+</li>
+<li><p>试题拓展：</p>
+<ol>
+<li><strong>（据说这是某国外著名大学MBA入学考试题）<br> 一个村子里有50户人家,每户人家养一条狗,不幸的是村子里的有狗感染了疯狗病,现在要杀死疯狗。<br> 杀狗规则如下:<br> (1)必须确定是疯狗才能杀<br> (2)杀狗用猎枪,开枪杀狗人人都听的见,没聋子.<br> (3)只能观察其他人家的狗是否得了疯狗病,不能观察自己的狗是否有疯狗病<br> (4)只能杀自己家的狗,别人家的狗你就是知道有疯狗病也不能杀.<br> (5)任何观察到了其他人家的狗有疯狗病都不能告诉任何人.<br> (6)每人每天去观察一遍其他人家的狗是否疯狗<br> 现在现象是:第一天没有枪声,第二天没有枪声,第三天响起一片枪声.<br> 问:第三天杀了多少条疯狗?     （答案：3条疯狗。）</strong></li>
+<li><strong>大女子主义村<br> 它发生在一个地点不明的愚昧的大女子主义村子里。<br> 在这个村子里，有50 对夫妇，每个女人在别人的丈夫对妻子不忠实时会立即知道，但从来不知道自己的丈夫如何。<br> 该村严格的大女子主义章程要求，如果一个女人能够证明她的丈夫不忠实，她必须在当天杀死他。<br> 假定女人们是赞同这一章程的、聪明的、能意识到别的妇女的聪明、并且很仁慈(即她们从不向那些丈夫不忠实的妇女通风报信)。<br> 假定在这个村子里发生了这样的事：所有这50个男人都不忠实，但没有哪一个女人能够证明她的丈夫的不忠实，以至这个村子能够快活而又小心翼翼地一如既往。<br> 有一天早晨，森林的远处有一位德高望重的女族长来拜访。她的诚实众所周知，她的话就像法律。她暗中警告说村子里至少有一个风流的丈夫。这个事实，根据她们已经知道的，只该有微不足道的后果，但是一旦这个事实成为公共知识，会发生什么？    （答案：第50天50个丈夫都被自己的女人杀死。）</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>蒙特门难题</strong></p>
+<ol>
+<li><strong>本智力题得名于一位美国电视游戏节目的主持人蒙特，他曾在多年之前主持一档档名为成交的节目。在其中的一个游戏中，Monty向竞猜者展示了三扇门。有一扇门之后是一辆小轿车。另两扇门之后是空房间。蒙特事先知道门后是什么，但您并不知道。<br> 游戏分为三步：<br> 1. 您选择一扇门。<br> 2. 蒙特将会打开剩余的两扇门中的一扇，展示一个空的房间。（他从不会打开那扇后面藏有汽车的。）<br> 3. 然后您可以选择是仍然选择在步骤1中选择的那扇门，还是选择去打开另一扇仍然关闭的。<br> 假定您选择了A门。然后蒙特打开了另两扇门中的一扇，假定为B门。现在您可以选择改选C门或者仍然坚持最初的选择，即A门。如果没有改变选择，那么可能会猜对也可能会猜错。另一方面，如果您改选C门，则还是既可能猜对也可能猜错。您会做出什么选择呢？在蒙特打开一扇门之后，是坚持最初的选择，还是改变前面已做的选择呢？为什么呢？<br /></strong><ol>
+<li><p>第一种观点：改变选择（据说是正确答案）</p>
+<ol>
+<li><p><strong>解题思路：</strong></p>
+<ol>
+<li><p><strong>理由1</strong></p>
+<ol>
+<li><strong>如果您选择A门，则猜中的机会是 1&#x2F;3，因为A门后可能有一辆汽车。B门之后有一辆汽车的机率也是 1&#x2F;3 ，并且C门之后有一辆汽车的机率还是 1&#x2F;3（由于必定有一辆车在某善门后，因此所有机率的总和应该为 1）。车在B门或C门之后的机率为2&#x2F;3。<br> 现在假定蒙特打开B门，展示这是一扇空门。 车在B门或C门之后的机率还是 2&#x2F;3，但我们知道在B门之后的机率为0，因为已经可以肯定那里没有任何东西。因此在C门之后的机率变为2&#x2F;3。机率的总和仍然为1。A门的机率为1&#x2F;3，B门的机率为0，C门的机率为2&#x2F;3。</strong></li>
+</ol>
+</li>
+<li><p><strong>理由</strong>2</p>
+<ol>
+<li><strong>我们可以再通过实验来验证一下：<br> 假定有1000000 扇门。您从中选择一扇门来找那辆车。您正确的机率是百万分之一。车在其余的门后的机率是百万分之999999。 蒙特打开了999998 扇门来展示它们是空的。您最初的猜测正确的机率是1&#x2F;1000000,改变选择，您的猜测正确的机率是999999&#x2F;1000000。<br> 不妨和朋友玩一玩下面的游戏。使用三个纸杯盖住一辆小玩具汽车，或是其他什么东西。您们中的一个人应该作蒙特，隐藏车并将在另一个人做出选择之后揭起一个空纸杯。来上100次，再看一看结果如何。</strong></li>
+</ol>
+</li>
+<li><p><strong>理由</strong>3</p>
+<ol>
+<li><strong>(1)首先，在游戏初始状态，设轿车在门X的后面，P(X)&#x3D; 1&#x2F;3<br> (2)设竞猜者选择了A门，然后Monty准备打开B门<br> (3)如果轿车在A门后，则Monty打开B门的概率为:<br> P(Monty打开B门|A)&#x3D; 1&#x2F;2<br> 如果轿车在B门后，则Monty打开B门的概率为:<br> P(Monty打开B门|B)&#x3D; 0<br> 如果轿车在C门后，则Monty打开B门的概率为:<br> P(Monty打开B门|C)&#x3D; 1<br> 则Monty打开B门的概率为：<br> P(Monty打开B门)&#x3D;P(A)P(Monty打开B门|A)<br> +P(B)P(Monty打开B门|B)<br> +P(C)P(Monty打开B门|C)<br> &#x3D;1&#x2F;6 + 0 + 1&#x2F;3<br> &#x3D;1&#x2F;2<br> (4)据Bayes定理，<br> P(A|Monty打开B门)&#x3D;P(A) * P(Monty打开B门|A)<br> &#x2F; P(Monty打开B门)<br> &#x3D;(1&#x2F;3 * 1&#x2F;2) &#x2F; (1&#x2F;2)<br> &#x3D;1&#x2F;3<br> P(C|Monty打开B门)&#x3D;P(C) * P(Monty打开B门|C)<br> &#x2F; P(Monty打开B门)<br> &#x3D;(1&#x2F;3 * 1) &#x2F; (1&#x2F;2)<br> &#x3D;2&#x2F;3</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>第二种观点：坚持最初选择</strong></p>
+<ol>
+<li><p>理由1</p>
+<ol>
+<li>如果您选择 A 门，则猜中的机会是 1&#x2F;3，现在假定蒙特打开 B 门，展示这是一扇空门, 车在 B 门之后的机率为 0，因为已经可以肯定那里没有任何东西。因此在A、C 门之后的机率变为 1&#x2F;2。机率的总和仍然为 1。<br> 机率都一样，为什么要改变选择呢？！</li>
+</ol>
+</li>
+<li><p>理由2</p>
+<ol>
+<li><strong>我们不妨改变一下游戏：<br> Monty向竞猜者展示了三扇门，有一扇门之后是一辆小轿车。另两扇门之后是空房间。蒙特事先知道门后是什么，但竞猜者并不知道。竞猜者有三个人，但是不准选择同一扇门。<br> 游戏分为三步：<br> 1. 每人选择一扇门。<br> 2. 蒙特将会打开三扇门中的一扇，展示一个空的房间，淘汰一个人。（他从不会打开那扇后面藏有汽车的。）<br> 3. 然后剩余两人可以坚持最初选择，也可以改变选择。<br> 假设1号竞猜者选A门，2号竞猜者选B门，3号竞猜者选C门。蒙特打开B门，展示这是一扇空门，并淘汰2号竞猜者。假定改变选择是正确答案，机率由1&#x2F;3变为2&#x2F;3。于是1号竞猜者认为A门的机率为1&#x2F;3，C门的机率为2&#x2F;3；3号竞猜者认为C门的机率为1&#x2F;3，A门的机率为2&#x2F;3。产生矛盾，假定不成立。</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>三人住店</strong></p>
+<ol>
+<li><p><strong>有三个人去住旅馆，住三间房，每一间房$10元，于是他们一共付给老板$30，第二天，老板觉得三间房只需要$25元就够了于是叫小弟退回$5给三位客人，谁知小弟贪心,只退回每人$1，自己偷偷拿了$2，这样一来便等于那三位客人每人各花了九元，于是三个人一共花了$27，再加上小弟独吞了不$2，总共是$29。可是当初他们三个人一共付出$30那么还有$1呢？</strong></p>
+<ol>
+<li><p><strong>解题思路：</strong></p>
+<ol>
+<li><strong>其实房客的确付了27元，但是30元的算法有问题，这里偷换了概念。10乘3等于30没有错；每人拿回1元等于每人出了9元也不错；老板得了25元，退回5元，总计30元没有错；客人付了30元，拿回3元得27元没有错；小弟拿5元给客人3元自己留2元也没有错；房客付了27元，老板25元小弟2元没有错；但是现在非要27加2得30，当然有错！聪明的你看出来了吧。</strong></li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li><strong>$27不应加$2，而应减；也不存在少$1。</strong></li>
+</ol>
+</li>
+<li><p>这是个典型的偷梁换柱的题目。问题应为“服务员拿了2块钱”,是问者输入错误。  首先,我们应该弄清楚“他们每个人出了九块钱”是怎么回事：    三人交：10×3&#x3D; 30    老板收：30-5&#x3D; 25    每人给老板：25÷3&#x3D; 25&#x2F;3    每人被服务员拿：2÷3&#x3D; 2&#x2F;3    每人给老板和服务员的总额：25&#x2F;3+2&#x2F;3&#x3D; 9    每人给出10元，每人给老板和服务员的总额9元，所以应被找回1元。  其次，我们应该弄清楚为什么会出现“还有一块钱去哪里了”的现象：    三人给老板和服务员的总额：25+2&#x3D; 27（即“每个人出了九块钱”9×3&#x3D;27）     [Ps：这27包括服务员拿的2元了]    问：为什么会出现“还有一块钱去哪里了”的现象呢？    答：出题者 有意在 已经包含了“被服务员拿去的2元”的27元上，又加了一次“被服务员拿  去的2元”来麻痹大家，却没有加应该“找回的3元”。其实，我说“他们每个人出了九块钱，  服务员拿的两块钱包括在这三个九元里了”，你是不是就已经明白了呢？    也就是说，本来应该是：            （10×3-5）+2+3&#x3D;30    却被算作了：            （10×3-5）+2+2&#x3D;29<br> 所以那1块钱根本不存在</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>称量药丸</strong></p>
+<ol>
+<li><p><strong>你有四个装药丸的罐子，每个药丸都有一定的重量，被污染的药丸是没被污染的重量＋1。只称量一次，如何判断哪个罐子的药被污染了？</strong></p>
+<ol>
+<li><p><strong>解题思路：</strong></p>
+<ol>
+<li>** 1、先给四个罐子编号1、2、3、4。<br> 2、如果已知只有一个罐子被污染：则1号1个，2号拿2个，3号拿3个，4号拿4个，称一下，再减去15个药丸的标准重量。结果可能为1,2,3,4。<br> 若是1，就是1号罐；<br> 若是2，就是2号罐；<br> 若是3，就是3号罐；<br> 若是4，就是4号罐；<br> 3、如果四个罐子都可能被污染，也可能不被污染：则1号拿1个，2号拿2个，3号拿4个，4号拿8个，称一下，再减去15个药丸的标准重量。结果可能为0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15。<br> 若是0，四个罐子都没被污染；<br> 若是1，就是1号罐；<br> 若是2，就是2号罐；<br> 若是3，就是1、2号罐；<br> 若是4，就是3号罐；<br> 若是5，就是1、4号罐；<br> 若是6，就是2、3号罐；<br> 若是7，就是1、2、3号罐；<br> 若是8，就是4号罐；<br> 若是9，就是1、4号罐；<br> 若是10，就是2、4号罐；<br> 若是11，就是1、2、4号罐；<br> 若是12，就是2、4号罐；<br> 若是13，就是1、3、4号罐；<br> 若是14，就是2、3、4号罐；<br> 若是15，四个罐子全被污染。<br> （步骤3实际上已经包含步骤2。）**</li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li><strong>同上。</strong></li>
+</ol>
+</li>
+<li><p><strong>试题拓展：</strong></p>
+<ol>
+<li><strong>有10瓶药丸，其中若干瓶内为超重药丸。普通药丸5g&#x2F;每粒，超重药丸6g&#x2F;每粒，每瓶药丸的数量相同。求：只用一架天平，只称一次，找出哪几瓶装有超重药丸。（答案：分别取出1、2、4、8、16、32、64、128、256、512粒）</strong></li>
+<li><strong>有N瓶药丸，其中若干瓶内为超重药丸。普通药丸5g&#x2F;每粒，超重药丸6g&#x2F;每粒，每瓶药丸的数量相同。求：只用一架天平，只称一次，找出哪几瓶装有超重药丸。（答案：分别取出1、2、4、…、2^n粒）</strong></li>
+<li><strong>10个箱子，每个箱子10个苹果，其中一个箱子的苹果是9两&#x2F;个，其他的都是1斤&#x2F;个。 要求利用一个秤，只秤一次，找出那个装9两&#x2F;个的箱子。（答案：编号，分别取出1、2、4、…、10个，秤，减，少n两就是n号）</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>表针重合</strong></p>
+<ol>
+<li><p><strong>在一天的24小时之中，时钟的时针、分针和秒针完全重合在一起的时候有几次？都分别是什么时间？你怎样算出来的？</strong></p>
+<ol>
+<li><p><strong>解题思路：</strong></p>
+<ol>
+<li><strong>很明显，1:05之后有一次，2:10之后有一次，3:15之后有一次，4:20之后有一次，5:25之后有一次，6:30之后有一次，7:35之后有一次，8:40之后有一次，9:45之后有一次，10:50之后有一次，12:00整有一次。24小时之中总共22次。<br> 而且，相邻两次重合之间所需时间相同，即12&#x2F;11小时。准确说都分别是0点，12&#x2F;11点，24&#x2F;11点，36&#x2F;11点，48&#x2F;11点，60&#x2F;11点，72&#x2F;11点，84&#x2F;11点，96&#x2F;11点，108&#x2F;11点，120&#x2F;11点，12点，144&#x2F;11点，156&#x2F;11点，168&#x2F;11点，180&#x2F;11点，192&#x2F;11点，204&#x2F;11点，216&#x2F;11点，228&#x2F;11点，240&#x2F;11点，252&#x2F;11点。<br> 有趣的是这11个点，正好是圆内接正11边形，其中一个顶点在12点处。</strong></li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li><strong>同上</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>奇怪的村庄</strong></p>
+<ol>
+<li><p><strong>某地有两个奇怪的村庄，张庄的人在星期一、三、五说谎，李村的人在星期二、四、六说谎。在其他日子他们说实话。一天，外地的王从明来到这里，见到两个人，分别向他们提出关于日期的题。两个人都说：”前天是我说谎的日子。”<br> 　　如果被问的两个人分别来自张庄和李村，那么这一天是星期几？</strong></p>
+<ol>
+<li><p><strong>解题思路：</strong></p>
+<ol>
+<li><strong>列表如下：<br>    一    二    三    四    五    六    日<br> 张庄  假    真    假    真    假    真    真<br> 李村  真    假    真    假    真    假    真<br> 从这个表中应该不难看出，张庄的人只有在星期日、星期一那样说，李庄的人只有在星期一、星期二那样说，因此这一天是星期一</strong></li>
+</ol>
+</li>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li>这一天是星期一。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>爱瓦梯尔的学费</strong></p>
+<ol>
+<li><strong>古希腊有个著名的诡辩学者，叫普罗太哥拉丝。有一次，他收了一个很有才华的学生叫爱瓦梯尔，两人签了一份合同。普罗太哥拉丝向爱瓦梯尔传授法律知识，而爱瓦梯尔须分两次付清学费：第一次，是在开始授课的时侯，第二次，则在结业后爱瓦梯尔第一次出庭打官司赢了的时候。爱瓦梯尔交上第一次学费，便孜孜不倦地向老师学习法律，学习成绩十分出色。几年后他结业了，但是过了很长时间，总不交第二次的学费。<br> 　　普罗太哥拉丝等了再等，最后都等火了，要到法庭去告爱瓦梯尔，爱瓦梯尔却对普罗太哥拉丝说：“只要你到发庭去告我，我就可以不给你钱了，因为如果我官司打赢了，依照法庭的判决，我当然就不会把钱给输了的人；如果我官司打败了，依照我们的合同，由于第一次出庭败诉，我也不能把钱给你。因此，不论我在这场官司中打输还是打赢，我不可能把钱给你。你还是不要起诉吧。”<br> 　　普罗太哥拉丝听后却有自己的打算，他说：“只要我和你一打官司你就一定要把第二次学费付给我。因为，如果我这次官司打胜了，依照法律的判决，你理所当然地要付学费给我；如果我官司打败了，你当然也要付学费给我，我们当初的合同上就是这样写的。所以，不论怎样你总要向我交第二次的学费。”<br> 　　于是两个人都带着必胜的信心走进了法庭。<br> 　　法官听了他们的诉讼，看过他俩的合同，思索了一会，便当众宣读了他的判决……<br> 　　你知道这位法官怎样判决才能使爱瓦梯尔既交上了学费又心服口服吗？</strong></li>
+</ol>
+</li>
+<li><p><strong>三筐水果</strong></p>
+<ol>
+<li><p><strong>有三筐水果，一筐装的全是苹果，第二筐装的全是橘子，第三筐是橘子与苹果混在一起。筐上的标签都是骗人的，（比如，如果标签写的是橘子，那么可以肯定筐里不会只有橘子，可能还有苹果）你的任务是拿出其中一筐，从里面只拿一只水果，然后正确写出三筐水果的标签。</strong></p>
+<ol>
+<li><p><strong>解题思路：</strong></p>
+<ol>
+<li><strong>假设正确的是苹果A,橘子B,苹果和橘子C<br> 分两种情况：<br> （1）拿出一个水果恰是全是苹果或全是橘子<br> 如果标签B装的是A，那么标签是A的一定是C，如果A标签装的是B，则C装的是C，不符合题设。<br> 所以，在这三筐水果中拿出一个水果就能分辨出这三筐水果各装得是什么。<br> （2）拿出一个水果恰是第三筐是苹果和橘子C,则不能确定。因为不知道是不是第三筐C。</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>两个圆环</strong></p>
+<ol>
+<li><p><strong>两个圆环，半径分别是1和2，小圆在大圆内部绕大圆圆周一周，问小圆自身转了几周？如果在大圆的外部，小圆自身转几周呢？</strong></p>
+<ol>
+<li><p><strong>参考答案：</strong></p>
+<ol>
+<li><strong>从标着“混合”标签的筐里拿一只水果，就可以知道另外两筐装的是什么水果了。如果拿出的是苹果，标着“橘子”标签装的是混合水果，标着“苹果”标签装的是橘子。如果拿出的是橘子，标着“苹果”标签装的是混合水果，标着“橘子”标签装的是苹果。</strong></li>
+</ol>
+</li>
+<li><p>试题拓展：</p>
+<ol>
+<li><strong>一天，金星大酒店里来了3组客人：两个男人，两个女人，还有一对夫妇，他（她）们开了3个房间，门口分别挂上了带有♂♂、♀♀、♂♀标记的牌子，以免进错房间。但是当日的粗心的服务生却把牌子给挂乱了位置，弄得房间里的人和牌子全都对不上号，在这种情况下，据说只要敲一个房间的门，听到里边的两人其中的一声回答，就能全部搞清楚3个房间里的人员情况。<br> 　　请问，要敲的该是挂有什么牌子的房间？为什么？<br>（答案是应该敲♂♀房间。注意这句话“房间里的人和牌子全都对不上号”，♂♀房间里当然不可能是一对夫妇。如果敲门以后听到里面是男人的声音，那么♀♀房间里面必然是一对夫妇、而♂♂房间里则是两个女人；同理，如果敲门以后听到里面是女人的声音，那么♂♂房间里面必然是一对夫妇、而♀♀房间里则是两个男人。答案：♂♀标记的房间）</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>((20211206233413-85ak71h “鲍西娅的肖像”))</strong></p>
+</li>
+<li><p><strong>推断生日</strong></p>
+<ol>
+<li><p>**月薪5万，微软中国研究院最新面试题 **</p>
+</li>
+<li><p>**小明和小强都是张老师的学生，张老师的生日是M月N日，2人都知道张老师的生日是下列10组中的一天，张老师把M值告诉了小明，把N值告诉了小强，张老师问他们知道他的生日是那一天吗？<br>   3月4日 3月5日 3月8日<br>   6月4日 6月7日<br>   9月1日 9月5日<br>   12月1日 12月2日 12月8日<br>   小明说：如果我不知道的话，小强肯定也不知道<br>   小强说：本来我也不知道，但是现在我知道了<br>   小明说：哦，那我也知道了<br>   请根据以上对话推断出张老师的生日是哪一天 **</p>
+</li>
+<li><p>** 如果您看过智力题2(猜牌问题)的话，此题立马可解！请参看猜牌问题。**</p>
+</li>
+<li><p><strong>解题思路：</strong></p>
+<ol>
+<li><p>**此题刚开始感觉无从下手，不知道该如何是好。但是这类题目，一般都是看你能不能利用其中的规律，或者打破常规的奇思妙想。什么情况下，一个人能根据他知道一个数字推出别人的生日呢？在这一题中，小明和小强知道的信息只有：生日可能的10个值，老师告诉他们的一个数字（月或者日）还有他们两个之间的对话。</p>
+<p> 首先是小明先说话，他说他不知道。他知道的可能性也确实很小，因为无论老师高诉他是哪个月，都有2种或者3种可能性让他选择，除非他还知道其他的信息，不然他肯定不知道。不过他不仅说他不知道，而且还说“如果他不知道的话，小强肯定也不知道”。那么小强什么情况下肯定不知道呢？那就是和小明一样，老师告诉他的那个日对应至少2个月份，除非他还知道其他信息，那他肯定不能确定最终生日的。但是仔细观察后，我们可以发现：如果老师告诉小强，是7或者2的话，那么他就可以知道老师的生日了。因为7和2对应的月是唯一的。所以从第一句话可以知道：N不会为7和2，M也不会为6和12（后半句要想清楚了）。</p>
+<p> 那现在的可能值就是：<br> 3月4日 3月5日 3月8日<br> 9月1日 9月5日<br> 现在小强说他知道了。那N就不可能为5了，因为M就有3和9两种可能。</p>
+<p> 那现在的可能值就是：<br> 3月4日 3月8日<br> 9月1日<br> 现在小明也说他也知道了。那M就肯定为9了。因为M为3的为话，N就有4和8两种可能了。</p>
+<p> 所以老师的生日是：9月1日。</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>((20211206233658-v6ql4gr “遗嘱分牛”))</strong></p>
+</li>
+<li><p><strong>((20211206233739-e96eoz8 “帽子的颜色”))</strong></p>
+</li>
+<li><p><strong>土耳其商人和帽子</strong></p>
+<ol>
+<li><strong>许多著名的科学家常常喜欢出一些有趣的题目，来考一考别人的机敏和逻辑推理能力。伟大的物理学家爱因斯坦就曾经出过这样一道题:《土耳其商人和帽子的故事》。<br>   有一个土耳其商人，想找一个助手协助他经商。但是，他要的这个助手必须十分聪明才行。消息传出的三天后，有A、B两个人前来联系。<br>   这个商人为了试一试A、B两个人中哪一个聪明一些，就把他们带进一间伸手不见五指的漆黑的房子里。商人打开电灯说：”这张桌子上有五顶帽子，两顶是红色的，三顶是黑色的。现在，我把灯关掉，并把帽子摆的位置搞乱，然后，我们三人每人摸一顶帽子戴在头上。当我把灯开亮时，请你们尽快地说出自己头上戴的帽子是什么颜色的。” 说完之后，商人就把电灯关掉了，然后，三个人都摸了一顶帽子 戴在头上;同时，商人把余下的两顶帽子藏了起来。<br>   待这一切做完之后，商人把电灯重新开亮。这时候，那两个人看到商人头上戴的是一顶红色的帽子。<br>   过了一会儿，A喊道:”我戴的是黑帽子。” A是如何推理的?</strong></li>
+</ol>
+</li>
+<li><p><strong>天堂里的游戏</strong></p>
+<ol>
+<li><strong>有个人死后来到天堂，圣彼得领着他在天堂各处参观。他们来到高墙下，圣彼得说：”嘘–轻点。”说完，他悄悄从旁边搬来一张长梯子。圣彼得先爬上去，然后招手让那个人也爬上去。他们站在梯子的顶端向里面张望着。原来，这 是一块被墙围起来的草地。草地的正中，坐着七个少年。”他们在干什么?”那个人问。圣彼得说:”如果不是早逝，”他们都是无与伦比的天才。到了天堂，他们志同道合，天天聚在一起玩智力游戏。今天，他们大概在猜 帽子吧。”<br> 六个少年A、B、C、D、E、F按六边形围坐着。另一个少年G则用毛巾蒙着眼睛坐在当中。有人往每人头上戴一顶帽子，其中四顶白帽子，三顶黑帽子。由于G挡住了视线，六个少年都看不见自己正对面的人戴的是 什么颜色的帽子。<br> 现在，让A、B、C、D、E、F猜自己头上戴的帽子的颜色。智力游戏一开始，六个少年陷入沉思，一时都猜不出来。这时，坐在当中的G说:”我猜到了，我戴的是白帽子。”<br> G是如何推理的?</strong></li>
+</ol>
+</li>
+<li><p><strong>六张纸币</strong></p>
+<ol>
+<li><strong>有3个美国孩子，他们摸了摸衣兜，把兜中的钱全部掏出来，共是320美元，其中100美元的两张，50美元的两张，10美元的两张。据了解每个孩子所带的纸币没有一个是相同的。而且，没带100美元纸币的孩子也没带10美元的纸币，没带50美元纸币的孩子也没带100美元的纸币。<br> 　　你能不能弄清楚，3个孩子原来各自带了多少和什么样的纸币？</strong></li>
+</ol>
+</li>
+<li><p><strong>11个教徒</strong></p>
+<ol>
+<li><strong>有一次，一艘船在海上遇到风暴。为了减轻船的重量，摆在25名乘客面前的选择是把一部分人抛到海里。这样，船和剩下的人也许还能得救。谁也不愿意自动跳入海中。乘客里有11个教徒，其中一个想出了一个主意。他让所有的25人坐成一圈，然后依次报数“1、2、3”，规定报到“3”的人就被抛到海里。最后报数的结果有14人被抛下海。剩下的是这11个教徒。那么，他是如何安排这些剩余者的位置的？</strong></li>
+</ol>
+</li>
+<li><p><strong>((20211206233932-f4s56rk “计算年龄”))</strong></p>
+</li>
+<li><p><strong>飞行距离</strong></p>
+<ol>
+<li><em><em>有一辆火车以每小时15公里的速度离开洛杉矶直奔纽约，另一辆火车以每小时20公里的速度从纽约开往洛杉矶。如果有一只鸟，以30公里每小时的速度和两辆火车同时启动，从洛杉矶出发，碰到另一辆车后返回，依次在两辆火车来回飞行，直到两辆火车相遇，请问，这只小鸟飞行了多长距离？<br> 解题思路：<br> 纽约到洛杉矶的路程设为s，因为鸟是不停飞，车相遇的时间就是鸟飞的时间，那么鸟飞的距离则是：[s&#x2F;(20+15)]</em> 30&#x3D;S*6&#x2F;7。<br> 即鸟飞的距离是纽约到洛杉矶路程的6&#x2F;7。</em></li>
+</ol>
+</li>
+<li><p>猜数问题</p>
+<ol>
+<li><strong>一个教授逻辑学的教授，有三个学生，而且三个学生均非常聪明！一天教授给他们出了一个题，教授在每个人脑门上贴了一张纸条并告诉他们，每个人的纸条上都写了一个正整数，且某两个数的和等于第三个！（每个人可以看见另两个数，但看不见自己的）<br> 教授问第一个学生：你能猜出自己的数吗？回答：不能；<br> 问第二个，不能；<br> 第三个，不能；<br> 再问第一个，不能；<br> 第二个，不能；<br> 第三个：我猜出来了，144！<br> 教授很满意的笑了。请问您能猜出另外两个人的数吗？ 请说出理由！</strong></li>
+</ol>
+</li>
+<li><p><strong>猴子搬香蕉</strong></p>
+<ol>
+<li><strong>一个小猴子边上有100根香蕉，它要走过50米才能到家，每次它最多搬50根香蕉，（多了就被压死了），它每走1米就要吃掉一根，请问它最多能把多少根香蕉搬到家里。<br> 提示：他可以把香蕉放下往返的走，但是必须保证它每走一米都能有香蕉吃。也可以走到n米时，放下一些香蕉，拿着n根香蕉走回去重新搬50根。</strong></li>
+</ol>
+</li>
+<li><p><strong>最后剩下谁</strong></p>
+<ol>
+<li><strong>1～50 号运动员按顺序排成一排。教练下令：“单数运动员出列！”剩下的运动员重新排队编号。教练又下令：“单数运动员出列！”如此下去，最后只剩下一个人，他是几号运动员？如果教练下的令是“双数运动员出列！”最后剩下的又是谁？</strong></li>
+</ol>
+</li>
+<li><p><strong>水平思考法</strong></p>
+<ol>
+<li><strong>有一家人决定搬进城里，于是去找房子。<br>   全家三口，夫妻两个和一个5岁的孩子。他们跑了一天，直到傍晚，才好不容易看到一张公寓出租的广告。他们赶紧跑去，房子出乎意料的好。于是，就前去敲门询问。这时，温和的房东出来，对这三位客人从上到下地打量了一番。<br>   丈夫豉起勇气问道：“这房屋出租吗?”<br>   房东遗憾地说：“啊，实在对不起，我们公寓不招有孩子的住户。”<br>   丈夫和妻子听了，一时不知如何是好，于是，他们默默地走开了。那5岁的孩子，把事情的经过从头至尾都看在眼里。那可爱的心灵在想：真的就没办法了?他那红叶般的小手，又去敲房东的大门。这时，丈夫和妻子已走出5米来远，都回头望着。门开了，房东又出来了。<br>   这孩子精神抖擞地说“……”<br>   房东听了之后，高声笑了起来，决定把房子租给他们住。<br>   问：这位5岁的小孩子说了什么话，终于说服了房东?</strong></li>
+</ol>
+</li>
+<li><p><strong>细菌分裂</strong></p>
+<ol>
+<li><strong>有一个细菌，1分钟分裂为2个，再过1分钟，又分别分裂为2 个，总共分裂为4个。这样，一个细菌分裂成满满一瓶需要1个小时。同样的细菌，如果从2个开始分裂，分裂成一瓶需要几分钟。</strong></li>
+</ol>
+</li>
+<li><p><strong>被困小岛</strong></p>
+<ol>
+<li><strong>加尔各答的近郊有一条世界著名的河流–恒河。河的中心有一个流沙堆积起来的小岛，岛上有一座古老的桥与河岸相连，可是这座桥已经破烂不堪，很少有人走了。<br>   但有一个人在散步时，由桥上走到小岛上去了。在返回时，刚走了两三步，桥就发出嘎嘎的响声，好像就要断似的，他只好又返回沙岛。这个人不会游泳，四处呼叫也无人理会。他只好呆在这个岛上，搜肠刮肚地想办法，竟在岛上困了十天，到第十一天，他才过了此桥回到河岸。你说这怎么回事?</strong></li>
+</ol>
+</li>
+<li><p><strong>芭蕾舞演员的影像</strong></p>
+<ol>
+<li><strong>当您面向镜子照看时，映出的常常不见得都是您的真实容貌。一人站在两块相对排放着的立镜中间，就会照出一连串很多的影像。<br>   假设有一间小屋，屋内上下、左右、前后都铺满了无缝隙的镜子，请问:当有个芭蕾舞演员走进这间小屋时，她能看到什么样的影象呢?</strong></li>
+<li>((20211206234426-z8l9sxu “其他问题”))</li>
+</ol>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/baidu_14854543/article/details/40820015">软件测试常见的智力题_激情砍大树-CSDN博客_软件测试智力题</a></p>
+ <br /></li>
+</ol>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/05_%E4%B8%AA%E4%BA%BA%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    个人问题
+                
+            </div>
+        </a>
+    
+    
+        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/04_01_%E5%85%B6%E4%BB%96%E9%80%BB%E8%BE%91%E6%80%A7%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">其他逻辑性问题</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            yulong &copy; 2022 
+            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a >wikitten</a>     <!-- <a target="_blank" rel="noopener" href="https://github.com/zthxxx/hexo-theme-Wikitten"> -->
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+	
+
+ 
+
+	
+
+</body>
+
+
+
+
+<script type="text/javascript"> 
+
+
+
+
+	// 禁止右键菜单
+	document.oncontextmenu = function(){ return false; };
+	// 禁止文字选择
+	document.onselectstart = function(){ return false; };
+	// 禁止复制
+	document.oncopy = function(){ return false; };
+	// 禁止剪切
+	document.oncut = function(){ return false; };
+</script>
+
+
+</html>
