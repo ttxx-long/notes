@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-15T07:25:11.745Z</updated>
+  <updated>2022-05-15T07:58:29.601Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,359 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件测试的16种测试类型</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%8416%E7%A7%8D%E6%B5%8B%E8%AF%95%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%8416%E7%A7%8D%E6%B5%8B%E8%AF%95%E7%B1%BB%E5%9E%8B/</id>
+    <published>2022-05-15T07:56:11.599Z</published>
+    <updated>2022-05-15T07:58:29.601Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="软件测试主要从以下16种类型进行测试："><a href="#软件测试主要从以下16种类型进行测试：" class="headerlink" title="软件测试主要从以下16种类型进行测试："></a>软件测试主要从以下16种类型进行测试：</h2><h3 id="一：功能测试（10个方面）"><a href="#一：功能测试（10个方面）" class="headerlink" title="一：功能测试（10个方面）"></a>一：功能测试（10个方面）</h3><p>　　菜单、工具栏、快捷键、下拉框、按钮、单选按钮、复选按钮、切换、链接、触发键</p><h3 id="二：界面测试"><a href="#二：界面测试" class="headerlink" title="二：界面测试"></a>二：界面测试</h3><pre><code>登陆界面、总界面、输入界面（增、删、改、查）、处理界面、输出界面、报表界面、提示界面</code></pre><h3 id="三：容错测试"><a href="#三：容错测试" class="headerlink" title="三：容错测试"></a>三：容错测试</h3><p>　　数据长度、数据类型、非法此操作</p><h3 id="四：接口测试"><a href="#四：接口测试" class="headerlink" title="四：接口测试"></a>四：接口测试</h3><p>　　接口测试也叫业务流程测试（包括功能模块之间、模块与模块之间、子系统之间）<br>　　内部接口：例如：导入、导出（通俗的讲是接口就是调用）<br>　　外部接口：</p><h3 id="五：性能测试（TPS吞吐量、响应速度、cpu占用率、内存占用率）"><a href="#五：性能测试（TPS吞吐量、响应速度、cpu占用率、内存占用率）" class="headerlink" title="五：性能测试（TPS吞吐量、响应速度、cpu占用率、内存占用率）"></a>五：性能测试（TPS吞吐量、响应速度、cpu占用率、内存占用率）</h3><p>　　平均吞吐量：单位时间内处理事务的个数<br>　　平均响应速度：做一个事务处理所用时间<br>　　例如：界面操作效率测试；报表输出及查询效率测试</p><h3 id="六：负载测试（压力测试、强度测试、容量测试）"><a href="#六：负载测试（压力测试、强度测试、容量测试）" class="headerlink" title="六：负载测试（压力测试、强度测试、容量测试）"></a>六：负载测试（压力测试、强度测试、容量测试）</h3><p>　　压力测试即就是大用户测试（针对B&#x2F;S而言）<br>　　容量测试即就是大数据量测试</p><h3 id="七：并发测试"><a href="#七：并发测试" class="headerlink" title="七：并发测试"></a>七：并发测试</h3><p>　　指多个用户在同一时间对同一条数据的删除或者修改等处理</p><h3 id="八：稳定性测试"><a href="#八：稳定性测试" class="headerlink" title="八：稳定性测试"></a>八：稳定性测试</h3><p>　　例如：1小时触发600条信息，那么8个、10个等发信息的条数测试</p><h3 id="九：恢复测试"><a href="#九：恢复测试" class="headerlink" title="九：恢复测试"></a>九：恢复测试</h3><p>　　突然断电（系统触发正常启动；数据包要在断电的地方继续进行处理）</p><h3 id="十：配置测试"><a href="#十：配置测试" class="headerlink" title="十：配置测试"></a>十：配置测试</h3><p>　　最低配置：<br>　　推荐配置：大多数用户所用的配置</p><h3 id="十一：安装测试"><a href="#十一：安装测试" class="headerlink" title="十一：安装测试"></a>十一：安装测试</h3><p>　　安装过程；卸载过程</p><h3 id="十二：文档测试"><a href="#十二：文档测试" class="headerlink" title="十二：文档测试"></a>十二：文档测试</h3><p>　　交给用户的文档。例如：系统帮助、用户使用手册、用户安装手册</p><h3 id="十三：可用性测试（纯粹靠经验）"><a href="#十三：可用性测试（纯粹靠经验）" class="headerlink" title="十三：可用性测试（纯粹靠经验）"></a>十三：可用性测试（纯粹靠经验）</h3><h3 id="十四：初始化测试"><a href="#十四：初始化测试" class="headerlink" title="十四：初始化测试"></a>十四：初始化测试</h3><p>　　是指系统刚刚安装完成后，在数据位空的情况下，如果被调用的模块为空，点击调用模块的时候，是否进行容错的测试。</p><h3 id="十五：数据完整性测试"><a href="#十五：数据完整性测试" class="headerlink" title="十五：数据完整性测试"></a>十五：数据完整性测试</h3><p>　　是指当主表的某一条件信息被删除后，和这一条相关的从表的信息都应该被删除。<br>　　如果某些数据的主键是由数据库本身而实现的，可以不用删除，如果有些主从表是由程序员写的代码而实现，则要进行数据完整性的测试。</p><h3 id="16种测试类型归类"><a href="#16种测试类型归类" class="headerlink" title="16种测试类型归类"></a>16种测试类型归类</h3><h4 id="1、此软件能做什么？"><a href="#1、此软件能做什么？" class="headerlink" title="1、此软件能做什么？"></a>1、此软件能做什么？</h4><p>　　针对数据进行”功能、接口、容错、界面、权限、初始化、数据完整性测试“</p><h4 id="2、软件做的怎么样？"><a href="#2、软件做的怎么样？" class="headerlink" title="2、软件做的怎么样？"></a>2、软件做的怎么样？</h4><p>　　性能、负载、恢复、稳定性、并发、系统安全</p><h4 id="3、软件在什么环境条件下做？"><a href="#3、软件在什么环境条件下做？" class="headerlink" title="3、软件在什么环境条件下做？"></a>3、软件在什么环境条件下做？</h4><p>　　配置、安装、文档、可用性</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;软件测试主要从以下16种类型进行测试：&quot;&gt;&lt;a href=&quot;#软件测试主要从以下16种类型进行测试：&quot; class=&quot;headerlink&quot; title=&quot;软件测试主要从以下16种类型进行测试：&quot;&gt;&lt;/a&gt;软件测试主要从以下16种类型进行测试：&lt;/h2&gt;&lt;h3 i</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="01_第一章基础" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="901_文件" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901-%E6%96%87%E4%BB%B6/"/>
+    
+    <category term="902_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901-%E6%96%87%E4%BB%B6/902-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/README/"/>
+    <id>http://example.com/README/</id>
+    <published>2022-05-15T07:36:01.938Z</published>
+    <updated>2022-05-15T07:36:01.938Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="md"><a href="#md" class="headerlink" title="md"></a>md</h1><p>自己使用</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;md&quot;&gt;&lt;a href=&quot;#md&quot; class=&quot;headerlink&quot; title=&quot;md&quot;&gt;&lt;/a&gt;md&lt;/h1&gt;&lt;p&gt;自己使用&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>UI自动化</title>
+    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/</id>
+    <published>2022-05-15T07:36:01.746Z</published>
+    <updated>2022-05-15T07:36:01.746Z</updated>
+    
+    <content type="html"><![CDATA[<p>一、原理<br>1、什么是UI自动化测试<br>使用工具或者脚本对需要测试的软件的前端界面在预设的条件下和已经的测试数据下运行系统或者应用程序，并获取其前端页面显示的数据结果进行校验，评估得出测试结论。</p><p>2、UI自动化测试可用于哪里<br>基于测试渠道可分为：手机App、Pc web端、手机Web端等；</p><p>基于测试阶段可分为：冒烟测试、回归测试、生产验收、兼容性测试</p><p>3、为什么要使用UI自动化测试<br>（1）目前测试案例数量过多导致人工执行测试案例耗时过长，并且会出现无法执行完该执行的测试案例导致版本无法按预期上线；</p><p>（2）案例的步骤繁琐，场景复杂，制作测试数据的过程复杂，导致人工执行时间过长；</p><p>（3）需求简单，无前端功能开发的需求可以使用UI自动化进行测试并得出结论；</p><p>（4）可以帮助开发人员进行自测。</p><p>4、哪些测试可以执行UI自动化<br>（1）已经比较成熟的项目，暂无任何大的改动需求的项目；</p><p>（2）人工执行耗时长，流程繁琐的项目；</p><p>（3）单纯的数据校验，列表功能校验；</p><p>5、怎么执行自动化测试<br>（1）开发提测前自用，配置环境和工具，下载脚本执行，可通过测试报告查看执行情况和结果；</p><p>（2）冒烟测试中，测试在开发提测后执行，通过测试报告查看执行情况和测试结果；</p><p>（3）回归测试中，测试人员执行执行纳入回归测试的测试脚本并执行</p><p>（4）生产验收，UI自动化测试脚本可用于生产验收中，无须手动操作就可验证生产的情况。</p><p>6、UI自动化测试的利与弊<br>利处：快捷、方便、无须手工操作</p><p>弊端：脚本编写成本高、案例开发时间长、需要长期维护</p><p>二、总结<br>UI自动化应用于项目组的所负责的系统需求较多，测试案例数量也较多，测试场景复杂，测试数据制作复杂，并且有部分系统已经趋于成熟。</p><p>UI自动化测试其实是一门【水】很深的工作，因为UI自动化测试是需要根据前端页面元素，也就是HTML脚本来进行元素提取、操作、验证的测试流程，另外再加上项目的测试环境软件硬件的因素，在编写自动化测试脚本的时候需要考虑到很多的情况出现而要去判断当前页面出现的元素到底是什么情况，不然脚本的稳定性很不好，维护工作也会非常的高。另外在编写自动化脚本的时候，你会慢慢的熟悉你项目系统前端页面的代码，当下很多前端开发人员在制作新的项目前端页面时都会直接用现成的组件生成，这种HTML代码会使你开发脚本时难上加难，因为里面的标签命名根本就是乱来的。</p><p>三、自动化框架<br>搭建测试框架，框架目录解析</p><p><img src="/assets/2/image-20220510223500-pv7tycu.png" alt="image.png"></p><h2 id="config-配置文件，将项目相关的配置全放到这个文件夹中，python支持yaml，ini"><a href="#config-配置文件，将项目相关的配置全放到这个文件夹中，python支持yaml，ini" class="headerlink" title="config : 配置文件，将项目相关的配置全放到这个文件夹中，python支持yaml，ini"></a>config : 配置文件，将项目相关的配置全放到这个文件夹中，python支持yaml，ini</h2><p><strong>ini文件介绍</strong></p><p>以[section]开始</p><p>以[option&#x3D;value]结尾</p><p>备注以；开头</p><p>section不可重名</p><p><strong>yaml文件介绍</strong></p><p>以—开头，表明文件的开始</p><p>列表中的所有成员都开始于相同的缩进级别，并且使用一个“-”作为开头（一个横杠和一个空格）</p><p>一个字典是由一个简单的键：值的形式（这个冒号后面必须是一个空格）</p><p><strong>ini读取文件封装,yaml读取文件封装</strong></p><p><strong>configutil.py</strong></p><pre><code class="text">import configparserimport osimport yamlclass ReadIni():    def read_ini(file, section, option):        conf = configparser.ConfigParser()        conf.read(file)        res=conf.get(section, option)        print(res)        return resclass ReafYaml():    def read_yaml(file,key):        f=open(file,encoding=&#39;utf-8&#39;)        file_data =f.read()        res=yaml.load(file_data,Loader=yaml.FullLoader)        print(res.get(key))        return res.get(key)if __name__ == &#39;__main__&#39;:    current_path = os.path.dirname(os.path.realpath(__file__))    config_path = os.path.dirname(current_path) + os.sep + &quot;config&quot;    yaml_file = os.path.join(config_path, &#39;test.yaml&#39;)    ReafYaml.read_yaml(yaml_file, &#39;username&#39;)</code></pre><h2 id="data-数据文件，将测试用例参数化相关的文件放在这里，xlsx-csv-json"><a href="#data-数据文件，将测试用例参数化相关的文件放在这里，xlsx-csv-json" class="headerlink" title="data : 数据文件，将测试用例参数化相关的文件放在这里，xlsx,csv,json"></a>data : 数据文件，将测试用例参数化相关的文件放在这里，xlsx,csv,json</h2><h2 id="driver-：驱动文件"><a href="#driver-：驱动文件" class="headerlink" title="driver ：驱动文件"></a>driver ：驱动文件</h2><h2 id="log-：日志文件，如test-log-error-log"><a href="#log-：日志文件，如test-log-error-log" class="headerlink" title="log ：日志文件，如test log,error log"></a>log ：日志文件，如test log,error log</h2><h2 id="report-：测试报告"><a href="#report-：测试报告" class="headerlink" title="report ：测试报告"></a>report ：测试报告</h2><h2 id="test-：测试文件"><a href="#test-：测试文件" class="headerlink" title="test ：测试文件"></a>test ：测试文件</h2><p>case-测试用例</p><p><strong>test.py</strong></p><pre><code class="text">import unittestfrom selenium import webdriverfrom test.locators import *from utils.configutil import ReadIni,ReafYamlfrom test.page import *from utils.excelutil import *from selenium.webdriver.common.action_chains import ActionChainsimport yamlimport osfrom utils.logutil import *current_path = os.path.dirname(os.path.realpath(__file__))config_path = os.path.dirname(current_path) + os.sep + &quot;config&quot;ini_file = os.path.join(config_path, &#39;test.ini&#39;)ip = ReadIni.read_ini(ini_file, &#39;ip_address&#39;, &#39;ip&#39;)# print(ip)url = &#39;&#123;&#125;user/login?redirect=http%3A%2F%2Fmis-next.aunbox.ce%2FuserDetail&#39;.format(ip)excel_file = os.path.join(os.path.dirname(current_path) + os.sep + &quot;data&quot;, &#39;case.xlsx&#39;)username = ReadExcel.read_excel(excel_file,&#39;Sheet1&#39;,&#39;A&#39;)class LoginTest(unittest.TestCase):    def setUp(self):        self.driver = webdriver.Chrome()        self.driver.maximize_window()        self.driver.implicitly_wait(10)        self.driver.get(url)    def test_login(self):        Logger(&#39;C:\\Users\\Administrator\\PycharmProjects\\yunding\\log\\test.log&#39;,&#39;info&#39;).info(&#39;add project&#39;)        for user in username:            loginpage=LoginPage(self.driver)            loginpage.enter_username(user)            loginpage.enter_password()            loginpage.click_login_button()            self.assertEqual(&#39;超级管理员&#39;,loginpage.get_login_name())            quitlogin=self.driver.find_element_by_xpath(&#39;//*[@id=&quot;root&quot;]/section/section/header/div[2]/span&#39;)            ActionChains(self.driver).move_to_element(quitlogin).perform()            self.driver.find_element_by_class_name(&#39;ant-dropdown-menu-item&#39;).click()            self.driver.get(url)        # self.driver.find_element(*LoginLocators.username).send_keys(&quot;&#123;&#125;&quot;.format(user))        # self.driver.find_element(*LoginLocators.password).send_keys(&quot;&#123;&#125;&quot;.format(pad))        # self.driver.find_element(*LoginLocators.loginbutton).click()        # id=self.driver.find_element(*LoginLocators.loginname)        # self.assertEqual(&#39;超级管理员&#39;,id.text)    def tearDown(self):        self.driver.quit()if __name__ == &#39;__main__&#39;:    unittest.main()</code></pre><p>common-测试相关的抽象通用代码</p><p>page-页面类</p><p>元素定位</p><p><strong>locators.py</strong></p><pre><code class="text">from selenium.webdriver.common.by import By# 页面元素class LoginLocators():    username=(By.ID,&#39;account&#39;)    password=(By.ID,&#39;password&#39;)    loginbutton=(By.CLASS_NAME,&#39;ant-btn&#39;)    loginname=(By.CLASS_NAME,&#39;userName___fQOhV&#39;)</code></pre><p>元素操作</p><p><strong>page.py</strong></p><pre><code class="text">from test.locators import *# 页面元素的操作class BasePage():    def __init__(self,driver):        self.driver = driverclass LoginPage(BasePage):    &#39;&#39;&#39;    用户登录页面元素的操作,,,到这里消失    &#39;&#39;&#39;    UserName = (By.XPATH,&#39;//*[@id=&quot;username&quot;]&#39;) #登录名    def enter_username(self,name):        ele = self.driver.find_element(*LoginLocators.username)        # ele.clear()        ele.send_keys(name)  #对用户名元素进行输入    def enter_password(self):        ele = self.driver.find_element(*LoginLocators.password)        ele.send_keys(&#39;123456&#39;) #输入密码    def click_login_button(self):        ele = self.driver.find_element(*LoginLocators.loginbutton)        ele.click()  #点击登录按钮    def get_login_name(self):        ele = self.driver.find_element(*LoginLocators.loginname)        return ele.text  #返回登录名</code></pre><h2 id="utils-：公共方法"><a href="#utils-：公共方法" class="headerlink" title="utils ：公共方法"></a>utils ：公共方法</h2><p>config的类</p><p>log的类</p><p><strong>logutil.py</strong></p><pre><code class="text">import loggingfrom logging import handlersclass Logger(object):    level_relations = &#123;        &#39;debug&#39;:logging.DEBUG,        &#39;info&#39;:logging.INFO,        &#39;warning&#39;:logging.WARNING,        &#39;error&#39;:logging.ERROR,        &#39;critical&#39;:logging.CRITICAL    &#125;    def __init__(self,fp=&#39;d:\\Project_Redmine_01\\log\\test.log&#39;,level=&#39;info&#39;):        self.level = self.level_relations.get(level)        self.logger = logging.getLogger(fp)        self.logger.setLevel(self.level)        formatter = logging.Formatter(&#39;%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s&#39;)        th = handlers.TimedRotatingFileHandler(fp)        th.setFormatter(formatter)        th.setLevel(self.level)        self.logger.addHandler(th)    def debug(self,msg):        self.logger.debug(msg)    def info(self,msg):        self.logger.info(msg)    def warning(self,msg):        self.logger.warning(msg)    def error(self,msg):        self.logger.error(msg)    def critical(self,msg):        self.logger.critical(msg)if __name__ == &#39;__main__&#39;:    log = Logger(&#39;abcd.log&#39;,&#39;debug&#39;)    log.info(&#39;this is info msg&#39;)    log.critical(&#39;this is critical msg&#39;)</code></pre><p>读，写excel的类</p><p><strong>excelutil.py</strong></p><pre><code class="text">import configparserimport osimport yamlclass ReadIni():    def read_ini(file, section, option):        conf = configparser.ConfigParser()        conf.read(file)        res=conf.get(section, option)        print(res)        return resclass ReafYaml():    def read_yaml(file,key):        f=open(file,encoding=&#39;utf-8&#39;)        file_data =f.read()        res=yaml.load(file_data,Loader=yaml.FullLoader)        print(res.get(key))        return res.get(key)if __name__ == &#39;__main__&#39;:    current_path = os.path.dirname(os.path.realpath(__file__))    config_path = os.path.dirname(current_path) + os.sep + &quot;config&quot;    yaml_file = os.path.join(config_path, &#39;test.yaml&#39;)    ReafYaml.read_yaml(yaml_file, &#39;username&#39;)</code></pre><p>生成报告的类</p><p><strong>run.py</strong></p><pre><code class="text">import osimport timeimport unittestimport HTMLTestRunnercurrent_path = os.path.dirname(os.path.realpath(__file__))# print(current_path)report_path = os.path.join(current_path,&#39;report&#39;)# print(report_path)case_path = os.path.join(current_path,&#39;test&#39;)# print(case_path)report_name = time.strftime(&#39;%Y%m%d%H%M%S&#39;,time.localtime((time.time())))testsuite = unittest.TestLoader().discover(case_path)filename = &quot;&#123;&#125;\\&#123;&#125;.html&quot;.format(report_path,report_name)f = open(filename,&#39;wb&#39;)runner = HTMLTestRunner.HTMLTestRunner(stream=f,title=&#39;report&#39;,description=&#39;this is a report&#39;)runner.run(testsuite)f.close()</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;一、原理&lt;br&gt;1、什么是UI自动化测试&lt;br&gt;使用工具或者脚本对需要测试的软件的前端界面在预设的条件下和已经的测试数据下运行系统或者应用程序，并获取其前端页面显示的数据结果进行校验，评估得出测试结论。&lt;/p&gt;
+&lt;p&gt;2、UI自动化测试可用于哪里&lt;br&gt;基于测试渠道可分为：</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
+    
+    <category term="01_UI自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python基础练习</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/10_python%E5%9F%BA%E7%A1%80%E7%BB%83%E4%B9%A0/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/10_python%E5%9F%BA%E7%A1%80%E7%BB%83%E4%B9%A0/</id>
+    <published>2022-05-15T07:36:01.438Z</published>
+    <updated>2022-05-15T07:36:01.438Z</updated>
+    
+    <content type="html"><![CDATA[<p>一. 数据类型</p><ol><li>数据类型实战<ol><li>示例1：存在一个变量number &#x3D;1 ，如果需要输出格式为“001”应如何实现？<ol start="4"><li><blockquote><p>number &#x3D;1<br>print(“03d” %number)</p></blockquote></li><li>上面的实例中，变量number的数据类型是数值型，如果需要格式化字符串输出，则需要使用%d,相当于使用%d替换number变量的真实值1,即如果表达式是”%d”%number,那么结果实际是输出1;而题目要求输出格式是001，则需要在1前面添加两个0，所以此时可以通过使用03d表示输出3位数值型;如果真实数值只有1位，则会在高位自动补0输出，所以结果可以得到001。</li><li>注意：<br> 此处有同学可能会想可不可直接使用pit(0O1)?若采用这种方式输出，终端会提示“不允许十进制<br> 整数前添加0：八进制整型文字前可以使用0作为前缀”。</li></ol></li><li>示例2：存在一个变量number1&#x3D;1.222222,如果需要保留两位小数应如何实现？<ol><li><blockquote><p>print (“8.2f”Snumber1)</p></blockquote></li><li>上面的示例与示例1类似，示例1主要是对整数的处理，示例2主要是对小数的处理。小数的格式化输出需要使用%f,结合示例1综合分析可知保留两位小数表示为%.2f。</li></ol></li><li>示例3：存在一个变量number2&#x3D;1,如果需要输出“%d1”应如何实现？<ol><li><blockquote><p>print(“%%d%d”%number2)</p></blockquote></li><li>示例3需要输出“%d”字符串，在字符串格式化输出中%d表示整型占位符，如果需要以字符串的形式输出，则需要在%d前面添加%进行转义。所以上述代码中%%d表示输出“%d”字符串，第二个%d表示number2的占位符，即可得到结果“%d1”。</li></ol></li></ol></li><li>字符串主流机制问题<ol><li>在Python中会出现字符串驻留(intern)的情况，这是由于CPython的优化产生的，即在某些情况下尝试使用现有的不可变对象，而不是每次都创建一个新对象，这些驻留的对象在内部使用类似字典的结构（驻留池）进行驻留。在被驻留之后，许多变量可能指向内存中的相同字符串对象，从而节省内存。简单来说，字符串驻留表示一种方法，能够实现仅仅存储一份相同而又不可变的字符串。字符串存储的非驻留机制与驻留机制如图1.1所示。</li></ol></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;一. 数据类型&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;数据类型实战&lt;ol&gt;
+&lt;li&gt;示例1：存在一个变量number &amp;#x3D;1 ，如果需要输出格式为“001”应如何实现？&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;&lt;blockquote&gt;
+&lt;p&gt;number &amp;#x3D;1&lt;br&gt;pr</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="06_第六章自动化测试" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="999_自动化测试文件" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>APP自动化</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/09_APP%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/09_APP%E8%87%AA%E5%8A%A8%E5%8C%96/</id>
+    <published>2022-05-15T07:36:01.437Z</published>
+    <updated>2022-05-15T07:36:01.437Z</updated>
+    
+    <content type="html"><![CDATA[<p>APP自动化</p><h2 id="什么是App自动化？为什么要做App自动化？"><a href="#什么是App自动化？为什么要做App自动化？" class="headerlink" title="什么是App自动化？为什么要做App自动化？"></a>什么是App自动化？为什么要做App自动化？</h2><p>App自动化是指给 Android或iOS上的软件应用程序做的自动化测试。<br><strong>手工测试和自动化测试的对比如下：</strong><br> <strong>手工测试优势：</strong> 不可替代、发现更多bug、包含了人的想象力与理解力。</p><blockquote><p>注意，不是所有功能都需要自动化。<br> <strong>自动化测试优势：</strong> 可重复、效率高，增加软件信任度。<br>执行自动化测试可以让测试同事有更多的精力来关注复杂场景，做更多更深层次的测试。</p></blockquote><h2 id="风险分析"><a href="#风险分析" class="headerlink" title="风险分析"></a><strong>风险分析</strong></h2><p><strong>自动化测试的主要风险分析如下：</strong><br>（1）测试用例覆盖率（覆盖率决定测试效率，选择合适用例，应约占功能用例集的20%~50%）<br>（2）测试结果准确度（准确度决定了测试有效性，应尽可能减少误报）。<br>（3）自动化代码维护（维护决定了成本，数据关键字驱动自动化框架，代码应尽可能优化和少改动）。<br>（4）版本开发和测试时间进度（当项目需求和功能较为稳定时，建议用自动化）。<br>（5）开发对控件元素增修改的程度（需开发人员尽可能地用name元素，并且和UI设计一致，修改变动程度不大，测试人员可根据提供的元素提前介入，开发自动化脚本）。<br>App源码权限控制，iOS上测试需要源码。实际测试只需SVN或者git下载权限，而不需要上传权限。防止改动SVN或者git 上的源码。</p><hr><h2 id="技术框架"><a href="#技术框架" class="headerlink" title="技术框架"></a><strong>技术框架</strong></h2><p><strong>1、自动化学习过程</strong><br>自动化测试环境的部署–&gt;自动化测试脚本开发能力—&gt;自动化测试框架研发—&gt;手机自动化持续集成<br><strong>2、andorid 系统架构图</strong><br><img src="/assets/1/image-20211205190326-wan8a0k.png" alt="image.png"><br><strong>3、手机自动化测试环境</strong><br>安装Appium–&gt;安装手机模拟器–&gt;安装selenium和appium的客户端–&gt;安装被测试app<br><strong>4、</strong> <strong>Appium 软件架构</strong><br><img src="/assets/1/image-20211205190332-te9euht.png" alt="image.png"><br>5、<strong>常用的定位技术和工具</strong><br><img src="/assets/1/image-20211205190339-t5x1z1g.png" alt="image.png"><br><strong>6、自动化测试脚本技术</strong><br><img src="/assets/1/image-20211205190345-dv6lxzo.png" alt="image.png"><br><strong>7、技术框架结构图</strong><br><img src="/assets/1/image-20211205190351-9b4ojeg.png" alt="image.png"></p><hr><h2 id="APP自动化测试流程"><a href="#APP自动化测试流程" class="headerlink" title="APP自动化测试流程"></a><strong>APP自动化测试流程</strong></h2><p><strong>1、环境的安装</strong><br><strong>1.1 环境的准备</strong></p><ul><li>jdk1.6以上</li><li>python2.7以上</li><li>android-sdk</li><li>Appium desktop 安装</li></ul><p><strong>1.2 jdk 安装</strong></p><ul><li>下载JDK后傻瓜式安装，<strong>注意：不要有中文路径和空格</strong></li><li><strong>配置环境变量：</strong></li></ul><p><strong>右击“我的电脑”–&gt;”属性”–&gt;”高级系统设置”–&gt;”高级”–&gt;”环境变量”</strong></p><ol><li>在系统变量里新建”JAVA_HOME”变量，变量值为：C:\Program Files\Java\jdk1.8.0_60（根据自己的jdk的安装路径填写）</li><li>在系统变量里新建”classpath”变量，变量值为：.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar <strong>(注意最前面有一点)</strong></li><li>找到path变量（已存在不用新建）添加变量值：%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin</li></ol><p><strong>1.3 python 安装</strong></p><ol><li><strong>傻瓜式安装</strong> ，</li><li><strong>配置环境变量</strong> ：电脑属性系统变量添加python根目录</li></ol><p><strong>1.4 安装Android的测试开发环境</strong></p><ol><li><strong>Android-SDK的安装：</strong> SDK manager.exe 双击打开下载<br><img src="/assets/1/image-20211205190359-2l4539b.png" alt="image.png"></li></ol><p><strong>2.android-sdk环境变量的配置</strong><br>具体操作步骤：</p><ul><li><strong>新建ANDROID_HOME</strong><br>路径为C:\Program Files (x86)\Android\android-sdk\</li><li><strong>在Path 变量中加入路径</strong><br>%ANDROID_HOME%\platform-tools 和 %ANDROID_HOME%\tools</li></ul><p><strong>3.检查adb 环境变量</strong><br><img src="/assets/1/image-20211205190406-lp0oe3n.png" alt="image.png"><br><strong>4.连接手机</strong><br>如果是真机，手机插上USB连接电脑，打开开发者模式，cmd输入adb devices<br>如果是模拟器，需要输入adb connect 127.0.0.1:62001或者52001连接，然后再输入adb devices<br><strong>Appium desktop 安装</strong><br>下载地址：<a href="https://github.com/appium/appium-desktop/releases/tag/v1.3.1">https://github.com/appium/appium-desktop/releases/tag/v1.3.1</a><br>傻瓜式安装 注意：一定要选择所有用户权限要不然用不了<strong>UiAutomator2</strong><br><strong>2、 API脚本</strong><br><strong>2.1 如何获取APP启动的AppPackage和AppActivity</strong></p><ol><li><strong>通过appt获取切换到aapt所在的目录，执行aapt dump</strong> （aapt是sdk自带的一个工具，在sdk\builds-tools\目录下）使用命令aapt dump badging “D:\ jinritoutiao_7500.apk”运行后的结果中以下两行分别是应用包名package和入口activity名称<br>package: name&#x3D;’ com.ss.android.article.news’<br>launchable-activity: name&#x3D;‘com.ss.android.article.news.activity.LaunchActivity’</li></ol><p>**2. 通过 adb shell am start **com.ss.android.article.news&#x2F;com.ss.android.article.news.activity.MainActivity<br>来判断启动的app 是否正确<br><strong>2.2 启动appium</strong><br><img src="/assets/1/image-20211205190411-bss5xmz.png" alt="image.png"><br><img src="/assets/1/image-20211205190416-w001ahq.png" alt="image.png"><br><strong>2.3 写脚本</strong><br> <strong>1.platformName：</strong> 这里是 android 的 apk<br> <strong>2.deviceName：</strong> 手机设备名称，通过 adb devices 查看<br> <strong>3.platformVersion：</strong> android 系统的版本号<br> <strong>4.appPackage：</strong> apk 包名<br> <strong>5.appActivity：</strong> apk 的 launcherActivity<br><img src="/assets/1/image-20211205190422-d8tyhef.png" alt="image.png"><br><strong>2.4生成测试报告</strong><br><img src="/assets/1/image-20211205190433-n8seppi.png" alt="image.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;APP自动化&lt;/p&gt;
+&lt;h2 id=&quot;什么是App自动化？为什么要做App自动化？&quot;&gt;&lt;a href=&quot;#什么是App自动化？为什么要做App自动化？&quot; class=&quot;headerlink&quot; title=&quot;什么是App自动化？为什么要做App自动化？&quot;&gt;&lt;/a&gt;什么是App</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="06_第六章自动化测试" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="999_自动化测试文件" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>selenium</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_selenium/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_selenium/</id>
+    <published>2022-05-15T07:36:01.428Z</published>
+    <updated>2022-05-15T07:36:01.428Z</updated>
+    
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="06_第六章自动化测试" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="999_自动化测试文件" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Puppeteer</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/04_Puppeteer/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/04_Puppeteer/</id>
+    <published>2022-05-15T07:36:01.428Z</published>
+    <updated>2022-05-15T07:36:01.428Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>python系列</p><ul><li><p><a href="">python基础</a></p></li><li><p><a href="">UI自动化</a></p><ul><li><p><a href="">Selenium</a></p></li><li><p><a href="">Puppeteer</a></p></li><li><p><a href="">Playwright</a></p><ul><li><a href="">“【PlayWright教程（一）】核心概念”</a></li><li><a href="">“PlayWright教程（二）】基础操作汇总”</a></li></ul></li></ul></li><li><p><a href="">接口自动化</a></p></li><li><p><a href="">APP自动化</a></p></li></ul></li><li><p>自动化平台</p><ul><li><strong>Phoenix Framework</strong></li><li><strong>metersphere</strong>       </li><li><strong>PhoenixPlatform</strong></li><li><strong>LuckyFrameWeb</strong></li><li><strong>Automagica</strong></li><li><strong>phoenixframe</strong></li><li><strong>TestMP</strong></li><li><strong>sosotest</strong></li><li><strong>EasyTest</strong></li></ul></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;python系列&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;python基础&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;UI自动化&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;Selenium&lt;/a&gt;&lt;/</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="06_第六章自动化测试" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="999_自动化测试文件" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Playwright</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/05_Playwright/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/05_Playwright/</id>
+    <published>2022-05-15T07:36:01.428Z</published>
+    <updated>2022-05-15T07:36:01.428Z</updated>
+    
+    <content type="html"><![CDATA[<p>Playwright是由微软公司2020年初发布的新一代自动化测试工具，相较于目前最常用的Selenium，本文就详细的介绍一下快速上手指南，对新手有一定的帮助，感兴趣的可以了解一下<br><a href="https://playwright.bootcss.com/docs/installation" title="Installation | Playwright 中文文档 | Playwright 中文网">Installation | Playwright 中文文档 | Playwright 中文网</a></p><h5 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h5><ul><li><ol><li>为什么选择Playwright</li></ol><ul><li>1.1 Playwright的优势</li><li>1.2 已知局限性</li></ul></li><li><ol start="2"><li>Playwright使用</li></ol></li><li>2.1 安装</li><li>2.2 自动录制</li><li>2.3 定制化编写</li><li>2.4 网络拦截（Mock接口），示例如下：</li><li>2.6 异步执行，示例如下：</li><li>2.7 Pytest结合，示例如下：</li><li>2.8 移动端操作，示例如下：</li><li><ol start="3"><li>总结<br>Playwright是由微软公司2020年初发布的新一代自动化测试工具，相较于目前最常用的Selenium，它仅用一个API即可自动执行Chromium、Firefox、WebKit等主流浏览器自动化操作。作为针对 Python 语言纯自动化的工具，在回归测试中可更快的实现自动化。<h2 id="1-为什么选择Playwright"><a href="#1-为什么选择Playwright" class="headerlink" title="1. 为什么选择Playwright"></a>1. 为什么选择Playwright</h2><h3 id="1-1-Playwright的优势"><a href="#1-1-Playwright的优势" class="headerlink" title="1.1 Playwright的优势"></a>1.1 Playwright的优势</h3>（1） Selenium需要通过WebDriver操作浏览器；Playwright通过开发者工具与浏览器交互，安装简洁，不需要安装各种Driver。<br>（2） Playwright几乎支持所有语言，且不依赖于各种Driver，通过调用内置浏览器所以启动速度更快。<br>（3） Selenium基于HTTP协议（单向通讯），Playwright基于Websocket（双向通讯）可自动获取浏览器实际情况。<br>（4） Playwright为自动等待。</li></ol></li><li>等待元素出现（定位元素时，自动等待30s，等待时间可以自定义，单位毫秒）</li><li>等待事件发生<h3 id="1-2-已知局限性"><a href="#1-2-已知局限性" class="headerlink" title="1.2 已知局限性"></a>1.2 已知局限性</h3>（1） Playwright不支持旧版Microsoft Edge或IE11。支持新的Microsoft Edge（在Chromium上）；所以对浏览器版本有硬性要求的项目不适用。<br>（2） 需要SSL证书进行访问的网站可能无法录制，该过程需要单独定位编写。<br>（3） 移动端测试是通过桌面浏览器来模拟移动设备（相当于自带模拟器），无法控制真机。<h2 id="2-Playwright使用"><a href="#2-Playwright使用" class="headerlink" title="2. Playwright使用"></a>2. Playwright使用</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3>（1）安装Playwright依赖库（Playwright支持Async\Await语法，故需要Python3.7+）<table><thead><tr><th>1</th><th><code>pip install playwright</code></th></tr></thead></table></li></ul><p>（2）安装Chromium、Firefox、WebKit等浏览器的驱动文件（内置浏览器）</p><table><thead><tr><th>1</th><th><code>python ``-``m playwright install</code></th></tr></thead></table><h3 id="2-2-自动录制"><a href="#2-2-自动录制" class="headerlink" title="2.2 自动录制"></a>2.2 自动录制</h3><p>（1）命令行键入 –help 看到所有可后接选项</p><table><thead><tr><th>1</th><th><code>python ``-``m playwright codegen ``-``-``help</code></th></tr></thead></table><p>（2）从起始页为xingzheai.cn开始录制</p><table><thead><tr><th>1</th><th><code>python ``-``m playwright codegen https:``/``/``xingzheai.cn``/</code></th></tr></thead></table><p>（3）打开xingzheai.cn，用Chromium驱动，将结果保存为my.py的python文件</p><table><thead><tr><th>1</th><th><code>python ``-``m playwright codegen ``-``-``target python ``-``o ``&#39;my.py&#39;</code> <code>-``b chromium https:``/``/``xingzheai.cn``/</code></th></tr></thead></table><p> -target：规定生成脚本的语言，有JS和Python两种，默认为Python<br>-b：指定浏览器驱动<br>-o：将录制的脚本保存到一个文件</p><h3 id="2-3-定制化编写"><a href="#2-3-定制化编写" class="headerlink" title="2.3 定制化编写"></a>2.3 定制化编写</h3><p>（1）元素定位</p><ul><li>选择单个元素：querySelector(engine&#x3D;body)</li><li>选择多个元素：querySelectorAll(engine&#x3D;body)</li><li>选择单个元素，并且自动等待：waitForSelector(engine&#x3D;body)<br>By的8种定位方式，实际为4种</li><li>id、name、tag name、class name（java和pythona将该4种都归为CSS）</li><li>xpath、link text、partial link text、css selector<br>W3C标准规定的webDriver协议为5种定位方式</li><li>CSS、Link text、Partial link text、Tag name、XPath<br>Playwright将选择器汇总为3种</li><li>CSS、XPATH（支持逻辑表达式和函数）、TEXT<br>（2）选择器规则</li><li>CSS： ID选择器、类选择器、元素选择器、属性选择器、通配选择器、层次选择器。</li><li>XPath： XML路径语言，通过“路径标识符”，导航XML文档的，在类XML种（HTML）也可以使用。</li><li>Text： 结构化内容（html，xml，json）使用模糊匹配（忽略大小写，忽略前后空格，搜索子字符串）及精确匹配、非结构化内容使用正则匹配。<br>（3）元素常用操作</li><li>下拉选择框：selectOpion、value、labei、index</li><li>文件上传：setInputFiles、单个文件、多个文件、拖放上传</li><li>鼠标点击：click、dbclick</li><li>鼠标拖动：down、up</li><li>鼠标移动：move</li><li>触摸屏幕：tag</li><li>键盘按键：press</li><li>截屏、录屏：screenshot、recordVideo<h3 id="2-4-网络拦截（Mock接口），示例如下：2-5-同步执行，示例如下："><a href="#2-4-网络拦截（Mock接口），示例如下：2-5-同步执行，示例如下：" class="headerlink" title="2.4 网络拦截（Mock接口），示例如下：2.5 同步执行，示例如下："></a>2.4 网络拦截（Mock接口），示例如下：2.5 同步执行，示例如下：</h3><blockquote><p>page &#x3D; context.newPage()<br>def Whether_intercept() -&gt; bool:<br>return True  #进行拦截</p><h6 id="return-False-不进行拦截"><a href="#return-False-不进行拦截" class="headerlink" title="# return False #不进行拦截"></a># return False #不进行拦截</h6><p>def handler(route:Route):<br>print(route.request.url)<br>#正常访问<br># route.continue_()<br>#拒绝访问<br># route.abort(“网络拦截”)<br># 重定向到非目标地址<br>route.fulfill(<br>    status&#x3D;302,<br>    headers&#x3D;{<br>        ‘Location’ : “<a href="https://xingzheai.cn/&quot;">https://xingzheai.cn/&quot;</a><br>    }<br>)<br>page.route(Whether_intercept,handler)</p></blockquote></li></ul><h3 id="2-5-同步执行，示例如下："><a href="#2-5-同步执行，示例如下：" class="headerlink" title="2.5 同步执行，示例如下："></a>2.5 同步执行，示例如下：</h3><blockquote><p>#依次打开三个浏览器，前往行者官网，截图后退出。<br>from playwright import sync_playwright with sync_playwright() as p:<br>    for browser_type in [p.chromium, p.firefox, p.webkit]:<br>         # 指定为有头模式，Ture为无头模式<br>        browser &#x3D; browser_type.launch(headless&#x3D;False)<br>        page &#x3D; browser.newPage()<br>        page.goto(‘<a href="https://xingzheai.cn/&#39;">https://xingzheai.cn/&#39;</a>)<br>        # 等待页面加载完全后截图<br>        page.waitForSelector(“text&#x3D;智能内容审核”)<br>        page.screenshot(path&#x3D;f’example-{browser_type.name}.png’)<br>        browser.close()</p></blockquote><h3 id="2-6-异步执行，示例如下："><a href="#2-6-异步执行，示例如下：" class="headerlink" title="2.6 异步执行，示例如下："></a>2.6 异步执行，示例如下：</h3><blockquote><p>#同时进行三个浏览器操作<br>import asyncio<br>from playwright import async_playwright<br>async def main():<br> async with async_playwright() as p:<br>     for browser_type in [p.chromium, p.firefox, p.webkit]:<br>          browser &#x3D; await browser_type.launch()<br>         page &#x3D; await browser.newPage()<br>         await page.goto(‘<a href="https://xingzheai.cn/&#39;">https://xingzheai.cn/&#39;</a>)<br>          await page.waitForSelector(“text&#x3D;智能内容审核”)<br>          await page.screenshot(path&#x3D;f’example-{browser_type.name}.png’)<br>          await browser.close()<br>         asyncio.get_event_loop().run_until_complete(main())</p></blockquote><h3 id="2-7-Pytest结合，示例如下："><a href="#2-7-Pytest结合，示例如下：" class="headerlink" title="2.7 Pytest结合，示例如下："></a>2.7 Pytest结合，示例如下：</h3><p>安装：<code>pip install pytest-playwright</code></p><blockquote><p>def test_playwright(page):<br>    page.goto(“<a href="https://xingzheai.cn/&quot;">https://xingzheai.cn/&quot;</a>)<br>    with page.expect_popup() as popup_info:<br /> page.click(‘text&#x3D;”智能内容审核”‘)<br />    assert “智能内容审核” &#x3D;&#x3D; element.textContent()</p></blockquote><h3 id="2-8-移动端操作，示例如下："><a href="#2-8-移动端操作，示例如下：" class="headerlink" title="2.8 移动端操作，示例如下："></a>2.8 移动端操作，示例如下：</h3><p>目前支持模拟机型较少， 参照：仿真设备列表</p><blockquote><p>from time import sleep<br>from playwright import sync_playwright<br />with sync_playwright() as p:<br>    GalaxyS5 &#x3D; p.devices[‘Galaxy S5’]<br>    browser &#x3D; p.chromium.launch(headless&#x3D;False)<br>    context &#x3D; browser.newContext(**GalaxyS5)<br>    page &#x3D; context.newPage()<br>    page.goto(‘<a href="https://xingzheai.cn/&#39;">https://xingzheai.cn/&#39;</a>)<br>    page.click(‘text&#x3D;”智能内容审核”‘)<br>    # 截图<br>    # page.screenshot(path&#x3D;’colosseum-GalaxyS5.png’)<br>    sleep(10)<br>    browser.close()</p></blockquote><h2 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h2><p>Playwright作为新一代自动化测试工具，相较于Selenium不论是易用性，还是实用性都得到了全方位的提升。做到了简约而不简单，相信使用该工具可以帮助我们提升做自动化的工作效率。<br>到此这篇关于Playwright快速上手指南(入门教程)的文章就介绍到这了,更多相关Playwright入门内容请搜索脚本之家以前的文章或继续浏览下面的相关文章希望大家以后多多支持脚本之家！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Playwright是由微软公司2020年初发布的新一代自动化测试工具，相较于目前最常用的Selenium，本文就详细的介绍一下快速上手指南，对新手有一定的帮助，感兴趣的可以了解一下&lt;br&gt;&lt;a href=&quot;https://playwright.bootcss.com/do</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="06_第六章自动化测试" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="999_自动化测试文件" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PlayWright教程(二)</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/07_PlayWright%E6%95%99%E7%A8%8B(%E4%BA%8C)/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/07_PlayWright%E6%95%99%E7%A8%8B(%E4%BA%8C)/</id>
+    <published>2022-05-15T07:36:01.428Z</published>
+    <updated>2022-05-15T07:36:01.428Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="页面基本操作"><a href="#页面基本操作" class="headerlink" title="页面基本操作"></a><strong>页面基本操作</strong></h2><p><a href="https://playwright.bootcss.com/docs/navigations" title="Navigations | Playwright 中文文档 | Playwright 中文网">Navigations | Playwright 中文文档 | Playwright 中文网</a></p><p>按照官网文档，调用 page.goto(url) 后页面加载过程：</p><ol><li>设定 url</li><li>通过网络加载解析页面</li><li>触发 page.on(“domcontentloaded”) 事件</li><li>执行页面的 js 脚本，加载静态资源</li><li>触发 page.on(“laod”) 事件</li><li>页面执行动态加载的脚本</li><li>当 500ms 都没有新的网络请求的时候，触发 networkidle 事件<br><code>page.goto(url)</code> 会跳转到一个新的链接。默认情况下 Playwright 会等待到 load 状态。如果我们不关心加载的 CSS 图片等信息，可以改为等待到 domcontentloaded 状态，如果页面是 ajax 加载，那么我们需要等待到 networkidle 状态。如果 networkidle 也不合适的话，可以采用 page.wait_for_selector 等待某个元素出现。不过对于 click 等操作会自动等待。<pre><code class="python">page.goto(url, referer=&quot;&quot;, timeout=30, wait_until=&quot;domcontentloaded|load|networkidle&quot;)// Navigate and wait until network is idleawait page.goto(&#39;https://example.com&#39;, &#123; waitUntil: &#39;networkidle&#39; &#125;);</code></pre></li></ol><p>Playwright 会自动等待元素处于可操作的稳定状态。当然也可以用 <code>page.wait_for_*</code> 函数来手工等待：</p><pre><code class="python">page.wait_for_event(&quot;event&quot;, event_predict, timeout)page.wait_for_function(js_function)page.wait_for_load_state(state=&quot;domcontentloaded|load|networkidle&quot;, timeout)page.wait_for_selector(selector, timeout)page.wait_for_timeout(timeout)  # 不推荐使用</code></pre><p>对页面的操作方法主要有：</p><pre><code class="python"># selector 指的是 CSS 等表达式page.click(selector)page.fill(selector, value)  # 在 input 中填充值# 例子page.click(&quot;#search&quot;)</code></pre><p>获取页面中的数据的主要方法有：</p><pre><code class="python">page.url  # urlpage.title()  # titlepage.content()  # 获取页面全文page.inner_text(selector)  # element.inner_text()page.inner_html(selector)page.text_content(selector)page.get_attribute(selector, attr)# eval_on_selector 用于获取 DOM 中的值page.eval_on_selector(selector, js_expression)# 比如：search_value = page.eval_on_selector(&quot;#search&quot;, &quot;el =&gt; el.value&quot;)# evaluate 用于获取页面中 JS 中的数据，比如说可以读取 window 中的值result = page.evaluate(&quot;([x, y]) =&gt; Promise.resolve(x * y)&quot;, [7, 8])print(result) # prints &quot;56&quot;</code></pre><h3 id="选择器表达式"><a href="#选择器表达式" class="headerlink" title="选择器表达式"></a><strong>选择器表达式</strong></h3><p>在上面的代码中，我们使用了 CSS 表达式（比如<code>#button</code>）来选取元素。实际上，Playwright 还支持 XPath 和自己定义的两种简单表达式，并且是自动识别的。</p><pre><code class="python"># 通过文本选择元素，这是 Playwright 自定义的一种表达式page.click(&quot;text=login&quot;)# 直接通过 id 选择page.click(&quot;id=login&quot;)# 通过 CSS 选择元素page.click(&quot;#search&quot;)# 除了常用的 CSS 表达式外，Playwright 还支持了几个新的伪类# :has 表示包含某个元素的元素page.click(&quot;article:has(div.prome)&quot;)# :is 用来对自身做断言page.click(&quot;button:is(:text(&#39;sign in&#39;), :text(&#39;log in&#39;))&quot;)# :text 表示包含某个文本的元素page.click(&quot;button:text(&#39;Sign in&#39;)&quot;)  # 包含page.click(&quot;button:text-is(&#39;Sign is&#39;)&quot;)  # 严格匹配page.click(&quot;button:text-matches(&#39;\w+&#39;)&quot;)  # 正则# 还可以根据方位匹配page.click(&quot;button:right-of(#search)&quot;)  # 右边page.click(&quot;button:left-of(#search)&quot;)  # 左边page.click(&quot;button:above(#search)&quot;)  # 上边page.click(&quot;button:below(#search)&quot;)  # 下边page.click(&quot;button:near(#search)&quot;)  # 50px 之内的元素# 通过 XPath 选择page.click(&quot;//button[@id=&#39;search&#39;])&quot;)# 所有 // 或者 .. 开头的表达式都会默认为 XPath 表达式</code></pre><p>对于 CSS 表达式，还可以添加前缀<code>css=</code>来显式指定，比如说 <code>css=.login</code> 就相当于 <code>.login</code>.</p><p>除了上面介绍的四种表达式以外，Playwright 还支持使用 <code>&gt;&gt;</code> 组合表达式，也就是混合使用四种表达式。</p><pre><code class="python">page.click(&#39;css=nav &gt;&gt; text=Login&#39;)</code></pre><h2 id="复用-Cookies-等认证信息"><a href="#复用-Cookies-等认证信息" class="headerlink" title="复用 Cookies 等认证信息"></a><strong>复用 Cookies 等认证信息</strong></h2><p>在 Puppeteer 中，复用 Cookies 也是一个老大难问题了。这个是 Playwright 特别方便的一点，他可以直接导出 Cookies 和 LocalStorage, 然后在新的 Context 中使用。</p><pre><code class="python"># 保存状态import jsonstorage = context.storage_state()with open(&quot;state.json&quot;, &quot;w&quot;) as f:    f.write(json.dumps(storage))# 加载状态with open(&quot;state.json&quot;) as f:    storage_state = json.loads(f.read())context = browser.new_context(storage_state=storage_state)</code></pre><h2 id="监听事件"><a href="#监听事件" class="headerlink" title="监听事件"></a><strong>监听事件</strong></h2><p>通过 page.on(event, fn) 可以来注册对应事件的处理函数：</p><pre><code class="python">def log_request(intercepted_request):    print(&quot;a request was made:&quot;, intercepted_request.url)page.on(&quot;request&quot;, log_request)# sometime later...page.remove_listener(&quot;request&quot;, log_request)</code></pre><p>其中比较重要的就是 request 和 response 两个事件</p><h3 id="拦截更改网络请求"><a href="#拦截更改网络请求" class="headerlink" title="拦截更改网络请求"></a><strong>拦截更改网络请求</strong></h3><p>可以通过 page.on(“request”) 和 page.on(“response”) 来监听请求和响应事件。</p><pre><code class="python">from playwright.sync_api import sync_playwright as playwrightdef run(pw):    browser = pw.webkit.launch()    page = browser.new_page()    # Subscribe to &quot;request&quot; and &quot;response&quot; events.    page.on(&quot;request&quot;, lambda request: print(&quot;&gt;&gt;&quot;, request.method, request.url))    page.on(&quot;response&quot;, lambda response: print(&quot;&lt;&lt;&quot;, response.status, response.url))    page.goto(&quot;https://example.com&quot;)    browser.close()with playwright() as pw:    run(pw)</code></pre><p>其中 request 和 response 的属性和方法，可以查阅文档：<a href="https://link.zhihu.com/?target=https://playwright.dev/python/docs/api/class-request" title="https://playwright.dev/python/docs/api/class-request">https://playwright.dev/python/docs/api/class-request</a></p><p>通过 context.route, 还可以伪造修改拦截请求等。比如说，拦截所有的图片请求以减少带宽占用：</p><pre><code class="python">context = browser.new_context()page = context.new_page()# route 的参数默认是通配符，也可以传递编译好的正则表达式对象context.route(&quot;**/*.&#123;png,jpg,jpeg&#125;&quot;, lambda route: route.abort())context.route(re.compile(r&quot;(\.png$)|(\.jpg$)&quot;), lambda route: route.abort())page.goto(&quot;https://example.com&quot;)browser.close()</code></pre><p>其中 route 对象的相关属性和方法，可以查阅文档：<a href="https://link.zhihu.com/?target=https://playwright.dev/python/docs/api/class-route" title="https://playwright.dev/python/docs/api/class-route">https://playwright.dev/python/docs/api/class-route</a></p><h3 id="灵活设置代理"><a href="#灵活设置代理" class="headerlink" title="灵活设置代理"></a><strong>灵活设置代理</strong></h3><p>Playwright 还可以很方便地设置代理。Puppeteer 在打开浏览器之后就无法在更改代理了，对于爬虫类应用非常不友好，而 Playwright 可以通过 Context 设置代理，这样就非常轻量，不用为了切换代理而重启浏览器。</p><pre><code class="python">context = browser.new_context(    proxy=&#123;&quot;server&quot;: &quot;http://example.com:3128&quot;, &quot;bypass&quot;: &quot;.example.com&quot;, &quot;username&quot;: &quot;&quot;, &quot;password&quot;: &quot;&quot;&#125;)</code></pre><h2 id="杀手级功能：录制操作直接生成代码"><a href="#杀手级功能：录制操作直接生成代码" class="headerlink" title="杀手级功能：录制操作直接生成代码"></a><strong>杀手级功能：录制操作直接生成代码</strong></h2><p>Playwright 的命令行还内置了一个有趣的功能：可以通过录制你的点击操作，直接生成 Python 代码。</p><pre><code class="python">python -m playwright codegen http://example.com/</code></pre><p>Playwright 还有很多命令行功能，比如生成截图等等，可以通过 <code>python -m playwright -h</code> 查看。</p><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a><strong>其他</strong></h2><p>除此之外，Playwright 还支持处理页面弹出的窗口，模拟键盘，模拟鼠标拖动（用于滑动验证码），下载文件等等各种功能，请查看官方文档吧，这里不赘述了。对于写爬虫来说，Playwright 的几个特性可以说是秒杀 Puppeteer&#x2F;Pyppeteer:</p><ol><li>官方同步版本的 API</li><li>方便导入导出 Cookies</li><li>轻量级设置和切换代理</li><li>支持丰富的选择表达式</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;页面基本操作&quot;&gt;&lt;a href=&quot;#页面基本操作&quot; class=&quot;headerlink&quot; title=&quot;页面基本操作&quot;&gt;&lt;/a&gt;&lt;strong&gt;页面基本操作&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://playwright.bootcss.c</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="06_第六章自动化测试" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="999_自动化测试文件" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PlayWright教程(一)</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/06_PlayWright%E6%95%99%E7%A8%8B(%E4%B8%80)/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/06_PlayWright%E6%95%99%E7%A8%8B(%E4%B8%80)/</id>
+    <published>2022-05-15T07:36:01.428Z</published>
+    <updated>2022-05-15T07:36:01.428Z</updated>
+    
+    <content type="html"><![CDATA[<p>PlayWright的核心概念包括：</p><ul><li><a href="https://playwright.dev/python/docs/core-concepts#browser" title="Browser">Browser</a></li><li><a href="https://playwright.dev/python/docs/core-concepts#browser-contexts" title="Browser contexts">Browser contexts</a></li><li><a href="https://playwright.dev/python/docs/core-concepts#pages-and-frames" title="Pages and frames">Pages and frames</a></li><li><a href="https://playwright.dev/python/docs/core-concepts#selectors" title="Selectors">Selectors</a></li><li><a href="https://playwright.dev/python/docs/core-concepts#auto-waiting" title="Auto-waiting">Auto-waiting</a></li><li><a href="https://playwright.dev/python/docs/core-concepts#execution-contexts-playwright-and-browser" title="Execution contexts: Playwright and Browser">Execution contexts: Playwright and Browser</a></li><li><a href="https://playwright.dev/python/docs/core-concepts#evaluation-argument" title="Evaluation Argument">Evaluation Argument</a><h1 id="1-Browser"><a href="#1-Browser" class="headerlink" title="1. Browser"></a>1. Browser</h1>一个Browser是一个Chromium, Firefox 或 <a href="https://so.csdn.net/so/search?q=WebKit&spm=1001.2101.3001.7020">WebKit</a>（plarywright支持的三种浏览器）的实例plarywright脚本通常以启动浏览器实例开始，以关闭浏览器结束。浏览器实例可以在headless（没有 GUI）或head模式下启动。Browser实例创建：<pre><code class="python">from playwright.sync_api import sync_playwrightwith sync_playwright() as p:  browser = p.chromium.launch(headless=False)  browser.close()</code></pre>启动browser实例是比较耗费资源的，plarywright做的就是如何通过一个browser实例最大化多个BrowserContext的性能。<br>API:</li><li><a href="https://playwright.dev/python/docs/api/class-browser" title="Browser">Browser</a><h1 id="2-BrowserContext"><a href="#2-BrowserContext" class="headerlink" title="2.BrowserContext"></a>2.BrowserContext</h1>一个BrowserContex就像是一个独立的匿名模式会话（session），非常轻量，但是又完全隔离。<br>（译者注：每个browser实例可有多个BrowserContex，且完全隔离。比如可以在两个BrowserContext中登录两个不同的账号，也可以在两个 context 中使用不同的代理。 ）<br>context创建：<pre><code class="python">browser = playwright.chromium.launch()context = browser.new_context()</code></pre>context还可用于模拟涉及移动设备、权限、区域设置和配色方案的多页面场景，如移动端context创建：<pre><code class="python">from playwright.sync_api import sync_playwrightwith sync_playwright() as p:  iphone_11 = p.devices[&#39;iPhone 11 Pro&#39;]  browser = p.webkit.launch(headless=False)  context = browser.new_context(      **iphone_11,      locale=&#39;de-DE&#39;,      geolocation=&#123; &#39;longitude&#39;: 12.492507, &#39;latitude&#39;: 41.889938 &#125;,      permissions=[&#39;geolocation&#39;]  )  browser.close()</code></pre>API:</li><li><a href="https://playwright.dev/python/docs/api/class-browsercontext" title="BrowserContext">BrowserContext</a></li><li><a href="https://playwright.dev/python/docs/api/class-browser#browser-new-context" title="browser.new_context(**kwargs)">browser.new_context(**kwargs)</a></li></ul><h1 id="3-Page-和-Frame"><a href="#3-Page-和-Frame" class="headerlink" title="3. Page 和 Frame"></a>3. Page 和 <a href="https://so.csdn.net/so/search?q=Frame&spm=1001.2101.3001.7020">Frame</a></h1><p> 一个BrowserContext可以有多个page，每个page代表一个tab或者一个弹窗。page用于导航到URL并与page内的内容交互。<br>创建page:</p><pre><code class="python">page = context.new_page()# Navigate explicitly, similar to entering a URL in the browser.page.goto(&#39;http://example.com&#39;)# Fill an input.page.fill(&#39;#search&#39;, &#39;query&#39;)# Navigate implicitly by clicking a link.page.click(&#39;#submit&#39;)# Expect a new url.print(page.url)# Page can navigate from the script - this will be picked up by Playwright.# window.location.href = &#39;https://example.com&#39;</code></pre><p> 一个page可以有多个frame对象，但只有一个主frame，所有page-level的操作(比如click），都是作用在主frame上的。page的其他frame会打上<code>iframe</code> HTML标签，这些frame可以在内部操作实现访问。</p><pre><code class="python"># 通过name属性获取frameframe = page.frame(&#39;frame-login&#39;)# 通过URL获取frameframe = page.frame(url=r&#39;.*domain.*&#39;)# 通过其他选择器(selector)获取frameframe_element_handle = page.query_selector(&#39;.frame-class&#39;)frame = frame_element_handle.content_frame()# 与frame交互frame.fill(&#39;#username-input&#39;, &#39;John&#39;)</code></pre><p>在录制模式下，会自动识别是否是frame内的操作，不好定位frame时，那么可以使用录制模式来找。</p><p>API：</p><ul><li><a href="https://playwright.dev/python/docs/api/class-page" title="Page">Page</a></li><li><a href="https://playwright.dev/python/docs/api/class-frame" title="Frame">Frame</a></li><li><a href="https://playwright.dev/python/docs/api/class-page#page-frame" title="page.frame(**kwargs)">page.frame(**kwargs)</a></li></ul><h1 id="4-Selector"><a href="#4-Selector" class="headerlink" title="4. Selector"></a>4. <a href="https://so.csdn.net/so/search?q=Selector&spm=1001.2101.3001.7020">Selector</a></h1><p> playwright可以通过 CSS selector, XPath selector, HTML 属性（比如 <code>id</code>, <code>data-test-id）或者是文本内容</code>定位元素。</p><p>除了xpath selector外，所有selector默认都是指向shadow DOM，如果要指向常规DOM，可使用*:light。不过通常不需要。</p><pre><code class="python"># Using data-test-id= selector enginepage.click(&#39;data-test-id=foo&#39;)# CSS and XPath selector engines are automatically detectedpage.click(&#39;div&#39;)page.click(&#39;//html/body/div&#39;)# Find node by text substringpage.click(&#39;text=Hello w&#39;)# Explicit CSS and XPath notationpage.click(&#39;css=div&#39;)page.click(&#39;xpath=//html/body/div&#39;)# Only search light DOM, outside WebComponent shadow DOM:page.click(&#39;css:light=div&#39;)# 不同的selector可组合使用，用 &gt;&gt;连接# Click an element with text &#39;Sign Up&#39; inside of a #free-month-promo.page.click(&#39;#free-month-promo &gt;&gt; text=Sign Up&#39;)# Capture textContent of a section that contains an element with text &#39;Selectors&#39;.section_text = page.eval_on_selector(&#39;*css=section &gt;&gt; text=Selectors&#39;, &#39;e =&gt; e.textContent&#39;)</code></pre><p>详细：</p><p><a href="https://playwright.dev/python/docs/selectors/" title="Element selectors | Playwright Python">Element selectors | Playwright Python</a></p><h1 id="5-Auto-waiting"><a href="#5-Auto-waiting" class="headerlink" title="5.  Auto-waiting"></a>5.  Auto-waiting</h1><p>playwright在执行操作之前对元素执行一系列可操作性检查，以确保这些行动按预期运行。它会自动等待（auto-wait）所有相关检查通过，然后才执行请求的操作。如果所需的检查未在给定的范围内通过<code>timeout</code>，则操作将失败并显示<code>TimeoutError</code></p><p>如 <a href="https://playwright.dev/python/docs/api/class-page#page-click" title="page.click(selector, **kwargs)">page.click(selector, **kwargs)</a> 和 <a href="https://playwright.dev/python/docs/api/class-page#page-fill" title="page.fill(selector, value, **kwargs)">page.fill(selector, value, **kwargs)</a> 这样的操作会执行auto-wait ，等待元素变成可见（visible）和 可操作（ <a href="https://playwright.dev/python/docs/actionability" title="actionable">actionable</a>）。例如，click将会:</p><ul><li>等待selectorx选定元素出现在 DOM 中</li><li>待它变得可见（visible）：有非空的边界框且没有 <code>visibility:hidden</code></li><li>等待它停止移动：例如，等待 css 过渡（css transition）完成</li><li>将元素滚动到视图中</li><li>等待它在动作点接收点事件：例如，等待元素不被其他元素遮挡</li><li>如果在上述任何检查期间元素被分离，则重试</li></ul><pre><code class="python"># Playwright waits for #search element to be in the DOMpage.fill(&#39;#search&#39;, &#39;query&#39;)# Playwright waits for element to stop animating# and accept clicks.page.click(&#39;#search&#39;)#也可显示执行等待动作# Wait for #search to appear in the DOM.page.wait_for_selector(&#39;#search&#39;, state=&#39;attached&#39;)# Wait for #promo to become visible, for example with `visibility:visible`.page.wait_for_selector(&#39;#promo&#39;)# Wait for #details to become hidden, for example with `display:none`.page.wait_for_selector(&#39;#details&#39;, state=&#39;hidden&#39;)# Wait for #promo to be removed from the DOM.page.wait_for_selector(&#39;#promo&#39;, state=&#39;detached&#39;)</code></pre><p> API:</p><ul><li><a href="https://playwright.dev/python/docs/api/class-page#page-click" title="page.click(selector, **kwargs)">page.click(selector, **kwargs)</a></li><li><a href="https://playwright.dev/python/docs/api/class-page#page-fill" title="page.fill(selector, value, **kwargs)">page.fill(selector, value, **kwargs)</a></li><li><a href="https://playwright.dev/python/docs/api/class-page#page-wait-for-selector" title="page.wait_for_selector(selector, **kwargs)">page.wait_for_selector(selector, **kwargs)</a></li></ul><h1 id="6-Execution-context"><a href="#6-Execution-context" class="headerlink" title="6. Execution context"></a>6. Execution context</h1><p>API <a href="https://playwright.dev/python/docs/api/class-page#page-evaluate" title="page.evaluate(expression, **kwargs)">page.evaluate(expression, **kwargs)</a> 可以用来运行web页面中的 JavaScript函数，并将结果返回到plarywright环境中。浏览器的<a href="https://so.csdn.net/so/search?q=%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F&spm=1001.2101.3001.7020">全局变量</a>，如 <code>window</code> 和 <code>document，</code> 可用于 <code>evaluate。</code></p><pre><code class="python">href = page.evaluate(&#39;() =&gt; document.location.href&#39;)# if the result is a Promise or if the function is asynchronous evaluate will automatically wait until it&#39;s resolvedstatus = page.evaluate(&quot;&quot;&quot;async () =&gt; &#123;  response = fetch(location.href)  return response.status&#125;&quot;&quot;&quot;)</code></pre><h2 id="7-Evaluation-Argument"><a href="#7-Evaluation-Argument" class="headerlink" title="7. Evaluation Argument"></a>7. Evaluation Argument</h2><p>  <a href="https://playwright.dev/python/docs/api/class-page#page-evaluate" title="page.evaluate(expression, **kwargs)">page.evaluate(expression, **kwargs)</a> 方法接收单个可选参数。此参数可以是<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify#Description" title="Serializable">Serializable</a>值和<a href="https://playwright.dev/python/docs/api/class-jshandle" title="JSHandle">JSHandle</a>或<a href="https://playwright.dev/python/docs/api/class-elementhandle" title="ElementHandle">ElementHandle</a>实例的混合。句柄会自动转换为它们所代表的值</p><pre><code class="python">result = page.evaluate(&quot;([x, y]) =&gt; Promise.resolve(x * y)&quot;, [7, 8])print(result) # prints &quot;56&quot;print(page.evaluate(&quot;1 + 2&quot;)) # prints &quot;3&quot;x = 10print(page.evaluate(f&quot;1 + &#123;x&#125;&quot;)) # prints &quot;11&quot;body_handle = page.query_selector(&quot;body&quot;)html = page.evaluate(&quot;([body, suffix]) =&gt; body.innerHTML + suffix&quot;, [body_handle, &quot;hello&quot;])body_handle.dispose()# A primitive value.page.evaluate(&#39;num =&gt; num&#39;, 42)# An array.page.evaluate(&#39;array =&gt; array.length&#39;, [1, 2, 3])# An object.page.evaluate(&#39;object =&gt; object.foo&#39;, &#123; &#39;foo&#39;: &#39;bar&#39; &#125;)# A single handle.button = page.query_selector(&#39;button&#39;)page.evaluate(&#39;button =&gt; button.textContent&#39;, button)# Alternative notation using elementHandle.evaluate.button.evaluate(&#39;(button, from) =&gt; button.textContent.substring(from)&#39;, 5)# Object with multiple handles.button1 = page.query_selector(&#39;.button1&#39;)button2 = page.query_selector(&#39;.button2&#39;)page.evaluate(&quot;&quot;&quot;o =&gt; o.button1.textContent + o.button2.textContent&quot;&quot;&quot;,    &#123; &#39;button1&#39;: button1, &#39;button2&#39;: button2 &#125;)# Object destructuring works. Note that property names must match# between the destructured object and the argument.# Also note the required parenthesis.page.evaluate(&quot;&quot;&quot;    (&#123; button1, button2 &#125;) =&gt; button1.textContent + button2.textContent&quot;&quot;&quot;,    &#123; &#39;button1&#39;: button1, &#39;button2&#39;: button2 &#125;)# Array works as well. Arbitrary names can be used for destructuring.# Note the required parenthesis.page.evaluate(&quot;&quot;&quot;    ([b1, b2]) =&gt; b1.textContent + b2.textContent&quot;&quot;&quot;,    [button1, button2])# Any non-cyclic mix of serializables and handles works.page.evaluate(&quot;&quot;&quot;    x =&gt; x.button1.textContent + x.list[0].textContent + String(x.foo)&quot;&quot;&quot;,    &#123; &#39;button1&#39;: button1, &#39;list&#39;: [button2], &#39;foo&#39;: None &#125;)</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;PlayWright的核心概念包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://playwright.dev/python/docs/core-concepts#browser&quot; title=&quot;Browser&quot;&gt;Browser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="06_第六章自动化测试" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="999_自动化测试文件" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>接口自动化</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/08_%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/08_%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/</id>
+    <published>2022-05-15T07:36:01.428Z</published>
+    <updated>2022-05-15T07:36:01.437Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>自动化测试具体怎么做的（流程怎么样的？）<ol><li>？？？？？<ol><li>用什么做的？</li><li>需要注意什么？核心关键是什么？</li><li>具体步骤是怎样的？</li></ol></li><li>接口自动化这块，我们当时用的 python+requests 库来写脚本的，例外，也会用到其他的一些库像ddt,unittest,xlrd,json,re,pymysql,htmlreport 等另外的话，我觉得做接口自动化，最关键的还是’用例数据的准备’，’请求数据的组装’，’及请求发送’， 和对’响应数据的提取处理’，与’判断校验&#x2F;做断言’。当然要做自动化，首先就是要搭建好自动化测试环境，之后就准备好用例数据嘛，像用例数据这块的话，公司统一要求用 excel 表格来管理的，这里面主要就是用例标题，url,请求方式，请求头，请求参数，用来做断言的响应数据。其实主要目的就是起到数据与脚本的分离方便后期的管理。数据准备好了之后，然后就开始写脚本，首先把相关的包导入进来，之后调用封装好的函数来读取excel表格中的用例数据，数据返回出来是一个列表形式。然后就是定义个类，去继承unittest.TestCase 基类,并重写其中 setUp,tearDown方法，在setUp方法中主要就是做一些初始化的准备工作，tearDown 中主要完成一些回收工作，比如，像连接数据库可以放在setUp方法中，在 tearDown 方法关闭数据库的连接然后实现用例函数，用例函数必须要以 test开头，这里的话，用例函数中主要就是实现请求数据的组装，还有就是调用 requests库中的get或 post方法发请求，把相关的参数传进去，请求参数这块我们需要用到 ddt 模型，去引用前面提取出来的 list 中的额数据这边请求发送之后会返回一个响应对象，这里面接下来其实最主要的就是对响应对象中的数据进行提取处理，并判断校验并做断言。断言这块这一块的话，主要就是关注几个点，一个就是状态码，还有就是响应信息，不过，这里面最重要的是响应的正文内容的判断。主要就是判断这几个块与结构文档是否一致。对于响应的正文内容，可能会比较麻烦一点，因为一般后台会返回两种格式的数据，一种是 json 格式的数据，其实对于 json 格式的数据我们需要把它转化为字典形式，治理其实主要就是调用response.json()函数就已经转为字典，然后去提取其中的一些核心信息去做断言判断就可以了。例外，如果返回的是 html 格式的数据，我们需要用到一个 re 库，并调用其中的一个函数 findall 结合正则表达式提取关键信息做断言判断。断言的一些函数，其实都是调用 unittest 框架中的函数实现,像assertEqual，assertIn,以及做全量对标的话，需要用到 assertListEuqal,assertDictEqual 主要就是这些。脚本这块差不多就是这么写的，最后我们需要引入一个 htmlreport 库去自动生成自动化报告，然后就是对报告进行分析，报告这一块的话，主要有通过，异常，失败几种请情况，如果如果错误的话，基本一般都是脚本问题，这个时候我们需要去重新调试我们的脚本，如果是失败的话，一般来说，我都会先检查自己的脚本是否有问题，如果没有问题基本就可以提 Bug了。接口自动化我们当时就这么做的。</li></ol></li><li><h3 id="request框架有哪些方法？"><a href="#request框架有哪些方法？" class="headerlink" title="request框架有哪些方法？"></a><strong>request</strong>框架有哪些方法？</h3><ol><li>像用来发送请求的一般都是调用以下方法<br> reponse &#x3D; requests.get()<br> reponse &#x3D; requests.post()<br> 获取响应数据一般都是调用以下方法<br> reponse.status_code<br> reponse.reason<br> reponse.text reponse.json()<br> reponse.headers<br> reponse.cookies</li></ol></li><li><h3 id="接口自动化用过哪些库？"><a href="#接口自动化用过哪些库？" class="headerlink" title="接口自动化用过哪些库？"></a>接口自动化用过哪些库？</h3><ol><li>Requests 库   这个里面主要封装了各种发送请求处理请求的方法<br> Json 库           这个库主要用来将 json 格式转化为字典，或者将字典转化为 json 格式数据<br> Re 库             这个库当时是针对后台返回的是 html 格式，用来提取html 格式中的数据的<br> Xlrd库            这个库当时主要用来读取 excel 表格数据的<br> Ddt 库           这个库主要用来实现数据驱动的<br> Pymysql库     这个库主要就是用来读取数据库，操作数据库的。差不多当时好像这些库都是有用过的吧。</li></ol></li><li><h3 id="如果要传递请求头如何处理？"><a href="#如果要传递请求头如何处理？" class="headerlink" title="如果要传递请求头如何处理？"></a>如果要传递请求头如何处理？</h3><ol><li>传递请求头，其实还是比较简单的，首先要搞清楚这个接口需要传递哪些请求求参数，然后订制一个请求头，一般都是组装成一个字典，然后在调用 post 或 get 方法发请求的时候，在这两个函数中有一个参数headers，这个参数就是用来传递请求头的，把组装好的请求头通过headers 参数进行传递就可以了。</li></ol></li><li><h3 id="你们做接口自动化，用例数据是怎么组织，管理的？"><a href="#你们做接口自动化，用例数据是怎么组织，管理的？" class="headerlink" title="你们做接口自动化，用例数据是怎么组织，管理的？"></a>你们做接口自动化，用例数据是怎么组织，管理的？</h3><ol><li>用例数据这块，当时公司要求使用 excel 表格来进行管理，其实这里主要也是为了实现数据与脚本的分离，提高整个工程后期的维护与优化，这里把数据封装到 excel 表格之后<br> 我们在脚本中通过调用封装好的读取 excel 表格的数据函数，然后利用 ddt 模型来引用这些数据组织请求参数或头，发请求。<br> 对 excel 表格中的用例数据，我们是这么组织的，会有以下几个字段像用例标题，请求地址， 请求方式，请求头，请求参数，响应结果，这个几个部分，对于请求头跟请求参数，因为<br> 脚本中发请求都是通过组装成字典的形式来发送的，所以这里我们也是通过类似于字典的形式文本格式来进行组织，主要就是方便后期脚本的提取与引用。<br> 其实我觉得，这样去处理的好处就是，后期如果用例数据有变动，或者需要增加或删除部分用例直接针对excel 表格数据进行操作就可以了，不需要改动脚本。<br> 这也就方便整个项目工程的管理与维护了。</li></ol></li><li><h3 id="接口自动化的用例又是怎么管理的？"><a href="#接口自动化的用例又是怎么管理的？" class="headerlink" title="接口自动化的用例又是怎么管理的？"></a>接口自动化的用例又是怎么管理的？</h3><ol><li>自动化用例这块，我们利用 unittest 框架来编写的，然后利用unittest 帮我们去统一加载执行用例。如果要全量执行的话， 通过调用 unittest 里面提供的 defaultTestLoader.discover()这个函数来加载test_case目录下的所有用例执行即可， 如果某条用例没有通过， 需要单独调试， 可以通过unittest.TestLoader()来创建一个加载器，加载具体的某条用例进行执行，调试即可。最后就是结合HTMLReport 这个库最终会自动帮我们生成报告。</li></ol></li><li><h3 id="对于返回的数据，你怎么检查校验？"><a href="#对于返回的数据，你怎么检查校验？" class="headerlink" title="对于返回的数据，你怎么检查校验？"></a>对于返回的数据，你怎么检查校验？</h3><ol><li>这块的话，首先我们一定得搞清楚后台返回的到底是什么格式的数据，一般都是两种情况，一种就是json格式的数据，一种就是 html格式的数据，关注几个点一般有以下几个点，1.  状态码   2.  响应信息对不对     3.也是最重要的就是响应内容，如果正文内容是 json 格式的数据，我们就使用 response.json()函数来提取就可以了，如果是正文内容 html格式的数据，我们就使用 response.text来提取，然后利用re 库中 findall函数结合正则表达式来提取核心字段进行校验。对于响应内容，我们需要根据接口文档的说明， 去检查一些核心的字段信息，去判断就行了。例外，如果有些接口需要检查数据库的话，那我们去连接数据库，查询对应数据，然后去判断校验,断言这块我当时就是这么做的。</li></ol></li><li><h3 id="对于接口响应数据，你是怎么做断言的？"><a href="#对于接口响应数据，你是怎么做断言的？" class="headerlink" title="对于接口响应数据，你是怎么做断言的？"></a>对于接口响应数据，你是怎么做断言的？</h3><ol><li>我首先确定需要检查的键是否存在，assertIn 去判断键是否存在，如果键存在，然后根据键去获取其中的值，如果值是变化的，有可能有，有可能没有，或者值本身在发生变化，这里需要读取数据库中的实际对应的字段值，然后判断返回结果中的对应字段的值与数据库中读取出来的值是否一致。</li></ol></li><li><h3 id="你写了多少接口自动化用例"><a href="#你写了多少接口自动化用例" class="headerlink" title="你写了多少接口自动化用例"></a>你写了多少接口自动化用例</h3><ol><li>自动化用例，也没有具体数过，当时我负责的所有模块的接口的自动用例都是我这边独立完成的，有模块的用例会多一点，有些会少一点，这具体看接口的参数有多少，参数多限制条件多的，一般用例会比较多一点，我负责的模块大概有 100多条用例是有的吧！</li></ol></li><li><h3 id="你们接口自动化用例是怎么跑的？"><a href="#你们接口自动化用例是怎么跑的？" class="headerlink" title="你们接口自动化用例是怎么跑的？"></a>你们接口自动化用例是怎么跑的？</h3><ol><li>一般正常我们都是全量跑的，如果要全量跑，我们一般都是加载用例目录也就是 testcase下的所有用例文件这里主要就是调用unittest.defaultTestLoader.discover(用例目录的路径，匹配规则)函数进行加载所有用例文件。有时候如果只是某个模块的用例执行不通过，需要单独执行调试某个模块的用例。这里可以先创建一个套件，调用 unittest.testsuite()来进行创建然后调用  unittest.testLoader()函数来创建一个加载器然后在加载具体某个模块的具体用例去执行调试。如果要定时全量跑所有的用例，一般我们都是在每周五下午会定时全量跑所有的用例，然后周一过来看报告分析报告，这里就需要用到持续集成，我们当时用的 jenkins，从 SVN上检出自动化脚本，然后让jenkins自动帮我们去跑。</li></ol></li><li><h3 id="有没有了解过数据驱动？"><a href="#有没有了解过数据驱动？" class="headerlink" title="有没有了解过数据驱动？"></a>有没有了解过数据驱动？</h3><ol><li>数据驱动就是把用例数据与脚本代码进行分离，把用例数据进行独立出来嘛，它的好处就在于方便后台的管理维护。这样的话，如果数据后期发生变化，只要维护修改 excel 表格中的数据就可以，比如，需要增加数据或者需要删除某条用例数据，或者修改数据就变得比较方便。<br> 对于自动化用例数据我们公司当时要求放在 Excel 表格中来管理的，然后保存在工程中的 data 目录下，之后就是通过调用封装好的函数去读取数据，然后利用 ddt 模型来实现数据的驱动，对于 ddt 模型， 它所采用的就是 python 装饰器的原理来引用数据的。<br> 例外，对于一些其他的一些常量数据，比如：文件的路径，用例的路径，邮件的配置信息，数据库的一些配置信息，我们都是通过配置文件来管理的，我们会在工程中创建一个 config目录，然后把配置文件都是放在这个目录下的。<br> 当时数据驱动这块就是这么来实现的。</li></ol></li><li><h3 id="有没有自己封装过函数"><a href="#有没有自己封装过函数" class="headerlink" title="有没有自己封装过函数]()?"></a><strong>有没有自己封装过函数]()</strong>?</h3><ol><li>也有自己封装过，但是不很多，大部分都调用公司&#x2F;老大封装好的函数来进行实现的像当时那个数据操作的相关模块这边是我封装，例外，像读取 Excel 表格数据的模块<br> 也是我这边封装，除了这个之外，还封装过一些其他函数，比如获取 cookie 值，获取手机验证码的函数等，这边都是有封装过的……</li><li><img src="/assets/1/image-20211203223308-nfhjajx.png" alt="image.png"></li><li><img src="/assets/1/image-20211203223328-08gzxth.png" alt="image.png"></li></ol></li><li><h3 id="接口自动化这块是怎么出报告的？对于报告具体怎么分析的？报告中有哪些内容？"><a href="#接口自动化这块是怎么出报告的？对于报告具体怎么分析的？报告中有哪些内容？" class="headerlink" title="接口自动化这块是怎么出报告的？对于报告具体怎么分析的？报告中有哪些内容？"></a>接口自动化这块是怎么出报告的？对于报告具体怎么分析的？报告中有哪些内容？</h3><ol><li>报告这一块，我们当时是用那个htmlreport 这个库去生成的？首先主要关注运行结果，看有多少用例通过了，有多少执行失败，有多少执行错误。一般报告上都会详细说明，我们主要看失败用例以及错误用例，对于失败的用例跟错误的用例一般在报告上都会有详细细节说明，到底哪里执行没有通过。对于执行错误的用例，一般都是自己的脚本编写有问题，这个我一般会找到对应用例代码去调试查看。<br> 对于失败用例，我一般首先怀疑自己的脚本，先检查自己的脚本有没有问题，如果不是自己脚本问题导致的，那这就说明这条用例真的执行失败了，一般就提 BUG 就可以了。</li></ol></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;自动化测试具体怎么做的（流程怎么样的？）&lt;ol&gt;
+&lt;li&gt;？？？？？&lt;ol&gt;
+&lt;li&gt;用什么做的？&lt;/li&gt;
+&lt;li&gt;需要注意什么？核心关键是什么？&lt;/li&gt;
+&lt;li&gt;具体步骤是怎样的？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;接口自动化这块，我们当时用的 p</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="06_第六章自动化测试" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="999_自动化测试文件" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件测试的分类</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E5%88%86%E7%B1%BB/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E5%88%86%E7%B1%BB/</id>
+    <published>2022-05-15T07:36:01.388Z</published>
+    <updated>2022-05-15T08:01:15.590Z</updated>
+    
+    <content type="html"><![CDATA[<p>目前，软件测试已经形成一个完整的、体系庞大的学科，不同的测试领域都有不同的测试方法、技术与名称，有很多读者可能也听过类似的黑盒测试、白盒测试、冒烟测试、单元测试等，其实它们是按照不同的分类方法而产生的测试名称。按照不同的分类标准，可以将软件测试分为很多不同的种类，下面我们详细介绍这些软件测试行业的专业名词。</p><h2 id="按照测试阶段分类"><a href="#按照测试阶段分类" class="headerlink" title="按照测试阶段分类"></a><strong>按照测试阶段分类</strong></h2><p>按照测试阶段可以将软件测试分为单元测试、冒烟测试、集成测试、系统测试与验收测试。这种分类方式与软件开发过程相契合，是为了检验软件开发各个阶段是否符合要求。</p><p><strong>(1) 单元测试</strong></p><p>单元测试是软件开发的第一步测试，目的是为了验证软件单元是否符合软件需求与设计。单元测试大多是开发人员进行的自测。</p><p><strong>(2) 冒烟测试</strong></p><p>冒烟测试最初是从电路板测试得来的，当电路板做好以后，首先会加电测试，如果电路板没有冒烟再进行其他测试，否则就必须重新设计后再次测试。后来这种测试理念被引入到软件测试中。在软件测试中，冒烟测试是指软件构建版本建立后，对系统的基本功能进行简单的测试，这种测试重点验证的是程序的主要功能，而不会对具体功能进行深入测试。如果测试未通过，需要返回给开发人员进行修正;如果测试通过则再进行其他测试。因此，冒烟测试是对新构建版本软件进行的最基本测试。</p><p><strong>(3) 集成测试</strong></p><p>集成测试是冒烟测试之后进行的测试，它是将已经测试过的软件单元组合在一起测试它们之间的接口，用于验证软件是否满足设计需求。</p><p><strong>(4) 系统测试</strong>———————–把系统看成一个整体进行的测试<br>    * 功能测试<br>    * 兼容性测试<br>    * 性能测试<br>    * 安全测试</p><p>系统测试是将经过测试的软件在实际环境中运行，并与其他系统的成分(如数据库、硬件和操作人员等)组合在一起进行的测试。</p><p><strong>(5) 验收测试</strong></p><p>验收测试主要是对软件产品说明进行验证，逐行逐字地按照说明书的描述对软件产品进行测试，确保其符合客户的各项要求。</p><h2 id="按照测试技术分类"><a href="#按照测试技术分类" class="headerlink" title="按照测试技术分类"></a>按照测试技术分类</h2><p>按照使用的测试技术可以将软件测试分为黑盒测试与白盒测试。</p><p><strong>(1)<a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95/">黑盒测试</a></strong></p><p>黑盒测试就是把软件(程序)当作一个有输入与输出的黑匣子，它把程序当作一个输入域到输出域的映射，只要输入的数据能输出预期的结果即可，不必关心程序内部是怎么样实现的，下图所示。</p><p><img src="/assets/2/image-20220515154753-0m7737r.png" alt="image.png"></p><p><strong>(2)白盒测试</strong></p><p>白盒测试又叫透明盒测试，它是指测试人员了解软件程序的逻辑结构、路径与运行过程，在测试时，按照程序的执行路径得出结果。白盒测试就是把软件(程序)当作一个透明的盒子，测试人员清楚地知道从输入到输出的每一步过程，如下图所示。</p><p><img src="/assets/2/image-20220515154759-jcs045j.png" alt="image.png"></p><p>相对于黑盒测试来说，白盒测试对测试人员的要求会更高一点，他要求测试人员具有一定的编程能力，而且要熟悉各种脚本语言。但是在软件公司里，黑盒测试与白盒测试并不是界限分明的，在测试一款软件时往往是黑盒测试与白盒测试相结合对软件进行完整全面的测试。</p><h2 id="按照软件质量特性分类"><a href="#按照软件质量特性分类" class="headerlink" title="按照软件质量特性分类"></a>按照软件质量特性分类</h2><p>按照软件质量特性可以将软件测试分为功能测试与性能测试。</p><p><strong>(1)功能测试</strong></p><p>功能测试就是测试软件的功能是否满足客户的需求，包括准确性、易用性、适合性、互操作性等。</p><p><strong>(2)性能测试</strong></p><p>性能测试就是测试软件的性能是否满足客户的需求，性能测试包括负载测试、压力测试、兼容性测试、可移植性测试和健壮性测试。</p><h2 id="按照自动化程度分类"><a href="#按照自动化程度分类" class="headerlink" title="按照自动化程度分类"></a>按照自动化程度分类</h2><p>按照自动化程度可以将软件测试分为手工测试与自动化测试。</p><p><strong>(1)手工测试</strong></p><p>手工测试是测试人员一条一条地执行代码完成测试工作。手工测试比较耗时费力，而且测试人员如果是在疲惫状态下，则很难保证测试的效果。</p><p><strong>(2)自动化测试</strong></p><p>自动化测试是借助脚本、自动化测试工具等完成相应的测试工作，它也需要人工的参与，但是它可以将要执行的测试代码或流程写成脚本，执行脚本完成整个测试工作。</p><h2 id="按照测试类型分类"><a href="#按照测试类型分类" class="headerlink" title="按照测试类型分类"></a>按照测试类型分类</h2><p>软件测试类型有多种，包括界面类测试、功能测试、性能测试、安全性测试、文档测试等，其中功能测试与性能测试前面已经介绍，下面主要介绍其他几种测试。</p><p><strong>(1)界面类测试</strong></p><p>界面类测试是验证软件界面是否符合客户需求，包括界面布局是否美观、按钮是否齐全等。</p><p><strong>(2)安全性测试</strong></p><p>安全性测试是测试软件在没有授权的内部或外部用户的攻击或恶意破坏时如何进行处理，是否能保证软件与数据的安全。</p><p><strong>(3)文档测试</strong></p><p>文档测试以需求分析、软件设计、用户手册、安装手册为主，主要验证文档说明与实际软件之间是否存在差异。</p><h2 id="其他分类"><a href="#其他分类" class="headerlink" title="其他分类"></a><strong>其他分类</strong></h2><p>还有一些软件测试无法具体归到哪一类，但在测试行业中也会经常进行这些测试，如α测试、β测试、回归测试等，具体介绍如下。</p><p><strong>(1) α测试</strong></p><p>α测试是指对软件最初版本进行测试。软件最初版本一般不对外发布，在上线之前，由开发人员和测试人员或者用户协助进行测试。测试人员记录使用过程中出现的错误与问题整个测试过程是可控的。</p><p><strong>(2) β测试</strong></p><p>β测试是指对上线之后的软件版本进行测试，此时软件已上线发布，但发布的版本中可能会存在较轻微的Bug，由用户在使用过程中发现错误与问题并进行记录，然后反馈给开发人员进行修复。</p><p><strong>(3)回归测试</strong></p><p>当测试人员发现缺陷以后，会将缺陷提交给开发人员，开发人员对程序进行修改，修改之后，测试人员会对修改后的程序重新进行测试，确认原有的缺陷已经消除并且没有引入新的缺陷，这个重新测试的过程就叫作回归测试。回归测试是软件测试工作中非常重要的一部分，软件开发的各个阶段都会进行多次回归测试。</p><p><strong>(4)随机测试</strong></p><p>随机测试是没有测试用例、检查列表、脚本或指令的测试，它主要是根据测试人员的经验对软件进行功能和性能抽查。随机测试是根据测试用例说明书执行测试用例的重要补充手段，是保证测试覆盖完整性的有效方式和过程。</p><p><strong>(5)探索性测试</strong>    </p><p>随机测试的升级版，测试的一种思维方式，强调遇到问题之后，改变测试策略，能够发现更加深入的问题，是未来测试发展的一个领域</p><p><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E6%B5%8B%E8%AF%95%E7%A7%8D%E7%B1%BB%E5%88%92%E5%88%86/">测试种类划分</a><br><a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%8416%E7%A7%8D%E6%B5%8B%E8%AF%95%E7%B1%BB%E5%9E%8B/">软件测试的16种测试类型</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;目前，软件测试已经形成一个完整的、体系庞大的学科，不同的测试领域都有不同的测试方法、技术与名称，有很多读者可能也听过类似的黑盒测试、白盒测试、冒烟测试、单元测试等，其实它们是按照不同的分类方法而产生的测试名称。按照不同的分类标准，可以将软件测试分为很多不同的种类，下面我们详</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="01_第一章基础" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="901_文件" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901-%E6%96%87%E4%BB%B6/"/>
+    
+    <category term="902_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901-%E6%96%87%E4%BB%B6/902-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>selenium-webdriver常见报错问题</title>
@@ -259,306 +612,6 @@ firefox = webdriver.Firefo</summary>
     <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     
     <category term="15_环境部署_持续集成" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/15-%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2-%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
-    
-    
-    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>truetimec++ java visual basic</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_truetimec++%20java%20visual%20basic/01_truetimec++%20java%20visual%20basic/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_truetimec++%20java%20visual%20basic/01_truetimec++%20java%20visual%20basic/</id>
-    <published>2022-05-14T18:00:17.085Z</published>
-    <updated>2022-05-12T15:49:36.203Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="14_白盒测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="07_truetimec++ java visual basic" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07-truetimec-java-visual-basic/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>phpunitphp</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_phpunitphp/01_phpunitphp/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_phpunitphp/01_phpunitphp/</id>
-    <published>2022-05-14T18:00:17.067Z</published>
-    <updated>2022-05-12T15:49:22.143Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="14_白盒测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="05_phpunitphp" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05-phpunitphp/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>boundscheckerc++ delphiapi ole</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_boundscheckerc++%20delphiapi%20ole/01_boundscheckerc++%20delphiapi%20ole/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_boundscheckerc++%20delphiapi%20ole/01_boundscheckerc++%20delphiapi%20ole/</id>
-    <published>2022-05-14T18:00:17.067Z</published>
-    <updated>2022-05-12T15:49:28.923Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="14_白盒测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_boundscheckerc++ delphiapi ole" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-boundscheckerc-delphiapi-ole/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gtest</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_gtest/01_gtest/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_gtest/01_gtest/</id>
-    <published>2022-05-14T18:00:17.060Z</published>
-    <updated>2022-05-12T15:49:14.769Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="14_白盒测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="04_gtest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04-gtest/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>junit</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_junit/01_junit/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_junit/01_junit/</id>
-    <published>2022-05-14T18:00:17.038Z</published>
-    <updated>2022-05-12T15:49:03.449Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="14_白盒测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="02_junit" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-junit/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>cppunit</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_cppunit/01_cppunit/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_cppunit/01_cppunit/</id>
-    <published>2022-05-14T18:00:17.038Z</published>
-    <updated>2022-05-12T15:49:09.785Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="14_白盒测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="03_cppunit" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03-cppunit/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jtestjava</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_jtestjava/01_jtestjava/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_jtestjava/01_jtestjava/</id>
-    <published>2022-05-14T18:00:17.033Z</published>
-    <updated>2022-05-12T15:48:57.827Z</updated>
-    
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="14_白盒测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="01_jtestjava" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14-%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01-jtestjava/"/>
-    
-    
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>charles安装与使用</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_Charles/01_charles%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_Charles/01_charles%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
-    <published>2022-05-14T18:00:17.021Z</published>
-    <updated>2022-05-14T16:12:47.133Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="一、charles简介"><a href="#一、charles简介" class="headerlink" title="一、charles简介"></a>一、charles简介</h1><p>　　<a href="http://www.charlesproxy.com/">Charles</a> 是常用的网络封包截取工具，在做 移动开发时，我们为了调试与服务器端的网络通讯协议，常常需要截取网络封包来分析。</p><p>　　Charles 通过将自己设置成系统的网络访问代理服务器，使得所有的网络访问请求都通过它来完成，从而实现了网络封包的截取和分析。</p><p>　　除了在做移动开发中调试端口外，Charles 也可以用于分析第三方应用的通讯协议。配合 Charles 的 SSL 功能，Charles 还可以分析 Https 协议。</p><h1 id="二、charles安装与破解"><a href="#二、charles安装与破解" class="headerlink" title="二、charles安装与破解"></a>二、charles安装与破解</h1><h2 id="1-charles安装"><a href="#1-charles安装" class="headerlink" title="1.charles安装"></a>1.charles安装</h2><p>　　　charles的安装非常简单，直接通过<a href="http://www.charlesproxy.com/">charles官网</a>安装最新版即可。</p><p>　　　Charles 是收费软件，可以免费试用 30 天。试用期过后，未付费的用户仍然可以继续使用，但是每次使用时间不能超过 30 分钟，并且启动时将会有 10 秒种的延时。</p><h2 id="2-破解"><a href="#2-破解" class="headerlink" title="2.破解"></a>2.破解</h2><p>　　　在线破解：<a href="https://www.zzzmode.com/mytools/charles/">https://www.zzzmode.com/mytools/charles/</a></p><p>　　　注册名称随意填写，然后选择自己安装的charles版本号，点击即可生成一个charles.jar包，将生成的charles.jar替换原来安装目录lib下的charles.jar包即可。</p><p>　　　注意：生成的jar包只有10分钟的有效期，需要在10分钟内完成破解的操作</p><h1 id="三、基本配置"><a href="#三、基本配置" class="headerlink" title="三、基本配置"></a>三、基本配置</h1><p>　　我使用的是win7的系统，所以以下配置适用于win7的电脑系统，win10也是类似的配置</p><h2 id="1-PC端安装证书"><a href="#1-PC端安装证书" class="headerlink" title="1.PC端安装证书"></a>1.PC端安装证书</h2><p>　　打开charles，选择help–&gt;SSL Proxying–&gt; Install Charles Root Ceriticate，点击安装证书，一直点击下一步完成即可成功安装。如下图所示：</p><p><img src="/assets/1/image-20211122223234-nojtb3x.png" alt="image.png"></p><p><img src="/assets/1/image-20211122223242-xn8ntu6.png" alt="image.png"></p><p>　　</p><h2 id="2-web端抓包配置"><a href="#2-web端抓包配置" class="headerlink" title="2.web端抓包配置"></a>2.web端抓包配置</h2><p>　　　以火狐浏览器为例，其它浏览器类似配置即可。</p><p>　　　安装charles后访问火狐浏览器，无论访问什么链接都会提示您的连接不安全，解决办法与fiddler同理，需要安装charles证书</p><p><img src="/assets/1/image-20211122223251-00hwiqu.png" alt="image.png"></p><p>　　　　　a.将charles证书保存到本地，选择help→SSL Proxying→Save Charles Certificate</p><p><img src="/assets/1/image-20211122223300-pys14z8.png" alt="image.png"></p><p><img src="/assets/1/image-20211122223306-sd4git4.png" alt="image.png"></p><p>　　　　　b.进入Firefox浏览器选择—高级-证书，点击查看证书—导入，选择本地保存的证书，勾选信任，导入即可。</p><p><img src="/assets/1/image-20211122223313-6yf2nee.png" alt="image.png"></p><p>　　　　</p><p>　　　　　c.重启火狐浏览器，发现网页可以正常打开，charles也可以正常抓包</p><p> 　　</p><h2 id="3-手机抓包配置"><a href="#3-手机抓包配置" class="headerlink" title="3.手机抓包配置"></a>3.手机抓包配置</h2><h3 id="1-手机端设置代理"><a href="#1-手机端设置代理" class="headerlink" title="1)手机端设置代理"></a>1)手机端设置代理</h3><p>　　　　　此时你的手机必须和电脑在同一个网络&#x2F;wifi里,手机选择和电脑相同wifi—&gt;长按此wifi弹框中选择修改网络—&gt;显示高级选项—&gt;服务器主机名输入框中输入电脑ip地址,服务器端口号填写8888——&gt;保存即可,此时手机和电脑绑定在一起一遍电脑抓手机上请求网络数据</p><p><img src="/assets/1/image-20211122223322-4svba9s.png" alt="image.png"></p><p>　　　　第一次设置成功代理后，随便打开一个需要网络的应用，PC端会自动弹出以下提示，选择allow允许Charles代理</p><p><img src="/assets/1/image-20211122223329-5n7vd3g.png" alt="image.png"></p><p>　　　　如果没有弹出该提示，也可以在菜单栏中的proxy—Access Control settings中手动将手机和电脑的ip加入其中（手机的ip地址怎么查看可以自行百度）</p><p><img src="/assets/1/image-20211122223335-gs6uiq5.png" alt="image.png"></p><h3 id="2-手机安装charles证书"><a href="#2-手机安装charles证书" class="headerlink" title="2)手机安装charles证书"></a>2)手机安装charles证书</h3><h4 id="a-IOS客户端"><a href="#a-IOS客户端" class="headerlink" title="a.IOS客户端"></a>a.IOS客户端</h4><p>　　　　　　前提：手机WiFi代理已经设置好，参考前文设置　　　</p><p>　　　　　　1、打开Charles，选择help→SSL Proxying→Install Charles Root Certificate on a Mobile Device or Remote Browser</p><p>　　　　　　2、手机连接电脑代理，打开safari，输入网址：chls.pro&#x2F;ssl</p><p>　　　　　　3、手机弹出提示：此网站正尝试打开“设置”已向您显示一个配置描述文件。您要允许吗？忽略|允许，选择允许，安装描述文件，并信任</p><p>　　　　　　4、iOS10以上的手机需要在：设置→ 通用 → 关于本机 → 证书信任设置→ 找到charles proxy CA证书，打开信任即可</p><h4 id="b-android客户端"><a href="#b-android客户端" class="headerlink" title="b.android客户端"></a>b.android客户端</h4><h5 id="方式一："><a href="#方式一：" class="headerlink" title="方式一："></a>方式一：</h5><p>　　　　　　点击 help–&gt;SSL Proxying–&gt; Install Charles Root Ceriticate on a Mobile Device or Remote Browser,</p><p><img src="/assets/1/image-20211122223345-8gyec9n.png" alt="image.png"></p><p>　　　手机设置好WiFi代理后,在手机浏览器打开下面弹框里提到的链接chls.pro&#x2F;ssl,下载证书,安装即可(华为手机最好不要用自带的浏览器，因为自带的浏览器下载的证书为pem格式，无法直接安装，我用的百度浏览器)</p><p>　　　cer格式的证书下载完可以直接点击安装，安装证书过程中会要求输入锁屏密码</p><p><img src="/assets/1/image-20211122223353-794bj8s.png" alt="image.png"></p><h5 id="方式二："><a href="#方式二：" class="headerlink" title="方式二："></a>方式二：</h5><p>　　　　　　1、打开Charles，选择help→SSL Proxying→Save Charles Certificate，然后将证书导入到手机中</p><p>　　　　　　2、导入后直接点击安装证书，提示无法打开（pem格式），cer格式的key直接安装，可以忽略第三步</p><p>　　　　　　3、进入手机设置—&gt;安全和隐私—&gt;更多安全设置—&gt;加密和凭据—&gt;从存储设备安装—&gt;选择我们刚下载的证书,安装即可（华为手机的安装方式，其它安卓机型可以自行百度）</p><p><img src="/assets/1/image-20211122223400-1qxenel.png" alt="image.png"></p><p>　　　　　　常见手机：小米手机，华为手机，需要设置手机锁屏密码</p><p><img src="/assets/1/image-20211122223300-pys14z8.png" alt="image.png"></p><p><img src="/assets/1/image-20211122223422-xh9tzfh.png" alt="image.png"></p><p> 　</p><h2 id="4-设置抓取https"><a href="#4-设置抓取https" class="headerlink" title="4.设置抓取https"></a>4.设置抓取https</h2><p> 　　　　默认charles只可以抓取http协议的包，https的更安全，需要如下配置方可</p><p>　　　　菜单栏 Proxy–&gt;SSL Proxying Setting–&gt;选择SSL Proxying——&gt;点击add在弹框中port里填写443(443代表通用https端口号)， host中的*代表抓取所有地址的包</p><p><img src="/assets/1/image-20211122223428-zyk9mt1.png" alt="image.png"></p><p><img src="/assets/1/image-20211122223435-52u5oe8.png" alt="image.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;一、charles简介&quot;&gt;&lt;a href=&quot;#一、charles简介&quot; class=&quot;headerlink&quot; title=&quot;一、charles简介&quot;&gt;&lt;/a&gt;一、charles简介&lt;/h1&gt;&lt;p&gt;　　&lt;a href=&quot;http://www.charlesproxy</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="13_web安全测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="12_Charles" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12-Charles/"/>
-    
-    
-    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>fiddler弱网测试</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/07_fiddler%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/07_fiddler%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95/</id>
-    <published>2022-05-14T18:00:16.988Z</published>
-    <updated>2022-05-14T16:12:47.125Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/assets/1/image-20220312103112-7w4grsr.png" alt="image.png"></p><h1 id="【Fiddler】Fiddler实现弱网测试"><a href="#【Fiddler】Fiddler实现弱网测试" class="headerlink" title="【Fiddler】Fiddler实现弱网测试"></a>【Fiddler】Fiddler实现弱网测试</h1><p><img src="/assets/1/image-20220312103118-u6c78jk.png" alt="image.png"></p><p>南京理工大学 理学硕士</p><p>57 人赞同了该文章</p><h2 id="一、弱网简介"><a href="#一、弱网简介" class="headerlink" title="一、弱网简介"></a><strong>一、弱网简介</strong></h2><p>弱网看字面意思就是网络比较弱，我们通称为信号差，网速慢。</p><p><strong>1、弱网的影响</strong></p><p>在地铁、隧道、电梯和车库等场景下使用APP ，网络会出现延时、中断和超时等情况。</p><ul><li>如果我们处于网速慢的地段，我们请求某个功能，app会响应非常慢，页面加载不出来，对于我们测试人员来看，就是用户请求这个API，API加载速度比较慢。</li><li>大家都喜欢刷抖音当我们在地铁上刷抖音，滑到下一个时候突然间就会页面卡住，这也是网络的原因导致的。</li><li>很多bug都会在弱网的情况下展现出来，如由于响应慢而多次请求，最终导致app出现ANR问题。</li></ul><p><img src="/assets/1/image-20220312103127-7z69ay8.png" alt="image.png"></p><p><strong>2、弱网定义</strong></p><p>现在很多时候2G或者在地铁、电梯等场景的3G网，均可定义为弱网，下面是常见网络制式的上行、下载速度表，可以参考。</p><p><img src="/assets/1/image-20220312103131-u2uo06z.png" alt="image.png"></p><h2 id="二、Fiddler实现弱网的测试"><a href="#二、Fiddler实现弱网的测试" class="headerlink" title="二、Fiddler实现弱网的测试"></a><strong>二、Fiddler实现弱网的测试</strong></h2><p>无论是做web端还是app端的测试，我们都需要对弱网进行测试，对于弱网方法有很多种，如：Fiddler模拟弱网，控制电脑的网速等，今天介绍下Fiddler如何进行弱网测试。</p><p><strong>1、Fiddler中启动弱网</strong></p><p>打开Fiddler，Rules-&gt;Performance-&gt;勾选 Simulate Modem Speeds，勾选之后访问网站会发现网络慢了很多。</p><p><img src="/assets/1/image-20220312103136-fl10m66.png" alt="image.png"></p><p><strong>2、设置弱网的参数</strong></p><p>菜单Rules—&gt;Cutomize Rules</p><p><img src="/assets/1/image-20220312103140-aj3g5w6.png" alt="image.png"></p><p>让我们来分析一下这几行代码：</p><pre><code class="text">        if (m_SimulateModem) &#123;            // Delay sends by 300ms per KB uploaded.            oSession[&quot;request-trickle-delay&quot;] = &quot;300&quot;;             // Delay receives by 150ms per KB downloaded.            oSession[&quot;response-trickle-delay&quot;] = &quot;150&quot;;         &#125;</code></pre><ul><li>首先来判断m_SimulateModem是否为true（是否开启），也就是是否设置了弱网模式。</li><li>oSession[“request-trickle-delay”] &#x3D; “300”;</li></ul><blockquote><p>Delay sends by 300ms per KB uploaded：上传1KB内容需要300ms，转化一下上传速度：1Kb&#x2F;0.3s &#x3D; 3.3KB&#x2F;s，也就是说网络上行速度只有3.3KB。</p></blockquote><ul><li>oSession[“response-trickle-delay”] &#x3D; “150”;</li></ul><blockquote><p>Delay receives by 150ms per KB downloaded：下载1KB内容需要150ms，转化后的下载速度：1KB&#x2F;0.15s&#x3D;6.6KB&#x2F;s,也就是说网络下载速度只有6.6KB。</p></blockquote><ul><li>如果你想设置下载的速度为50KB&#x2F;s，你则需要设置Delay 时间为 20ms。</li><li>也可以限制上传的速度，调整oSession[“response-trickle-delay”]的值即可。</li></ul><p><strong>3、验证效果</strong></p><p>同样的接口，开启弱网前后分别运行一次，查看统计数据。</p><p><img src="/assets/1/image-20220312103144-imlxacs.png" alt="image.png"></p><p><strong>4、恢复设置</strong></p><p>完成测试之后，需要再次执行：打开Fiddler，Rules-&gt;Performance-&gt;勾选 Simulate Modem Speeds，关闭弱网模拟。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/1/image-20220312103112-7w4grsr.png&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;【Fiddler】Fiddler实现弱网测试&quot;&gt;&lt;a href=&quot;#【Fiddler】Fiddler实现弱网</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="13_web安全测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="11_fiddler" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11-fiddler/"/>
-    
-    <category term="999_fiddler文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11-fiddler/999-fiddler%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>fiddle实现手机抓包</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/06_fiddle%E5%AE%9E%E7%8E%B0%E6%89%8B%E6%9C%BA%E6%8A%93%E5%8C%85/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/06_fiddle%E5%AE%9E%E7%8E%B0%E6%89%8B%E6%9C%BA%E6%8A%93%E5%8C%85/</id>
-    <published>2022-05-14T18:00:16.987Z</published>
-    <updated>2022-05-14T16:12:47.118Z</updated>
-    
-    <content type="html"><![CDATA[<p>Fiddler是我最喜爱的工具，几乎每天都用， 我已经用了8年了。 至今我也只学会其中大概50%的功能。 Fiddler绝对称得上是”神器”， 任何一个搞IT的人都得着的。</p><p>小弟我立志， 一定要把Fiddler的所有的功能和用法都写出来。 写成一个完整系列的教程。</p><p>Fiddler不但能截获各种浏览器发出的HTTP请求, 也可以截获各种智能手机发出的HTTP&#x2F;HTTPS请求。</p><p>Fiddler能捕获IOS设备发出的请求，比如IPhone, IPad, MacBook. 等等苹果的设备。  同理，也可以截获Andriod，Windows Phone的等设备发出的HTTP&#x2F;HTTPS。</p><p>本文介绍Fiddler截获IPhone发出的HTTP&#x2F;HTTPS包</p><p>前提条件是：安装Fiddler的机器，跟Iphone 在同一个网络里， 否则IPhone不能把HTTP发送到Fiddler的机器上来。</p><p><img src="/assets/1/wpsBBA7.tmp-20211222153414-4k7ab2o.jpg"></p><h1 id="截获智能手机发出的HTTP包有什么用"><a href="#截获智能手机发出的HTTP包有什么用" class="headerlink" title="截获智能手机发出的HTTP包有什么用?"></a><strong>截获智能手机发出的HTTP包有什么用?</strong></h1><p>用处一： 手机软件程序员利用Fiddler，可以截获手机发出的HTTP包， 从而调试程序</p><p>用处二： 软件测试人员用于测试智能手机上的软件。</p><p>用处三： 可以用来在App应用商店中刷排名</p><p>用处四： 截获了HTTP&#x2F;HTTPS后，你想干什么就干什么，比如修改Request，或者Response.</p><h1 id="配置Fiddler-允许”远程连接”"><a href="#配置Fiddler-允许”远程连接”" class="headerlink" title="配置Fiddler,  允许”远程连接”"></a><strong>配置Fiddler,  允许”远程连接”</strong></h1><p>打开Fiddler,     Tools-&gt; Fiddler Options 。  （配置完后记得要重启Fiddler）.</p><p>选中”Decrpt HTTPS traffic”,    Fiddler就可以截获HTTPS请求</p><p>选中”Allow remote computers to connect”.  是允许别的机器把HTTP&#x2F;HTTPS请求发送到Fiddler上来</p><p><img src="/assets/1/wpsBBA8.tmp-20211222153414-p1ehtm5.png"><img src="/assets/1/wpsBBA9.tmp-20211222153414-e9jz0p5.jpg"></p><p><img src="/assets/1/wpsBBAA.tmp-20211222153414-m1e3p7w.png"><img src="/assets/1/wpsBBAB.tmp-20211222153414-1qorg2w.jpg"></p><h1 id="获取Fiddler所在机器的IP地址"><a href="#获取Fiddler所在机器的IP地址" class="headerlink" title="获取Fiddler所在机器的IP地址"></a><strong>获取Fiddler所在机器的IP地址</strong></h1><p>这个简单吧。   我Fidder所在的机器地址是: 192.168.1.104</p><h1 id="IPhone上安装Fiddler证书"><a href="#IPhone上安装Fiddler证书" class="headerlink" title="IPhone上安装Fiddler证书"></a><strong>IPhone上安装Fiddler证书</strong></h1><p>这一步是为了让Fiddler能捕获HTTPS请求。 如果你只需要截获HTTP请求， 可以忽略这一步</p><ol><li>首先要知道Fiddler所在的机器的IP地址：　假如我安装了Fiddler的机器的IP地址是:192.168.1.104</li><li>打开IPhone 的Safari, 访问  <a href="http://192.168.1.104:8888，">http://192.168.1.104:8888，</a> 点”FiddlerRoot certificate” 然后安装证书</li></ol><p><img src="/assets/1/wpsBBAC.tmp-20211222153414-c3e8vfu.png"><img src="/assets/1/wpsBBAD.tmp-20211222153414-7xz2llb.jpg"></p><p> <img src="/assets/1/wpsBBAE.tmp-20211222153414-6h56pvh.jpg"></p><p><img src="/assets/1/wpsBBAF.tmp-20211222153414-rc0e4xc.png"></p><h1 id="IPhone上配置Fiddler为代理"><a href="#IPhone上配置Fiddler为代理" class="headerlink" title="IPhone上配置Fiddler为代理"></a><strong>IPhone上配置Fiddler为代理</strong></h1><p> 打开IPhone,  找到你的网络连接， 打开HTTP代理， 输入Fiddler所在机器的IP地址(比如:192.168.1.104) 以及Fiddler的端口号8888</p><p><img src="/assets/1/wpsBBB0.tmp-20211222153414-1jct4ls.png"><img src="/assets/1/wpsBBB1.tmp-20211222153414-f7fgldl.jpg"></p><h1 id="大功告成，开始抓包"><a href="#大功告成，开始抓包" class="headerlink" title="大功告成，开始抓包"></a><strong>大功告成，开始抓包</strong></h1><p>现在IPhone上的应用（比如Safari, Firefox, Itunes, App Store）发出的HTTP&#x2F;HTTPS都可以被Fiddler获取。</p><p>实例：　打开Safari，　　</p><ol><li>输入<a href="http://www.cnblogs.com/tankxiao">http://www.cnblogs.com/tankxiao</a>.  看看Fiddler能否捕获。</li><li>输入<a href="https://dynamic.12306.cn/otsweb/">https://dynamic.12306.cn/otsweb/</a>   看看Fiddler能否捕获。</li></ol><p>是不是HTTP和HTTPS都截获到了？？？？，  你不但能截获， 还可以下断点，修改Request, 修改Response, Do what you want.</p><p>用完了， 记得把IPhone上的Fiddler代理关闭， 以免IPhone上不了网。</p><h1 id="只能捕获HTTP-而不能捕获HTTPS的解决办法"><a href="#只能捕获HTTP-而不能捕获HTTPS的解决办法" class="headerlink" title="只能捕获HTTP,而不能捕获HTTPS的解决办法"></a><strong>只能捕获HTTP,而不能捕获HTTPS的解决办法</strong></h1><p>有时候会发现， Fiddler 只能捕获IPhone发出得HTTP请求， 而不能捕获HTTPS请求， 原因可能是证书没有安装好。 解决办法是：</p><ol><li>先把IPhone上所有的Fiddler证书删除 (拿出IPhone， 点”设置“-&gt;“通用”-&gt;”描述文件”)</li><li>安装上面的方法，重新安装Fiddler证书</li></ol><h1 id="Fiddler捕获其他手机或者平板"><a href="#Fiddler捕获其他手机或者平板" class="headerlink" title="Fiddler捕获其他手机或者平板"></a><strong>Fiddler捕获其他手机或者平板</strong></h1><p>方法类似</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Fiddler是我最喜爱的工具，几乎每天都用， 我已经用了8年了。 至今我也只学会其中大概50%的功能。 Fiddler绝对称得上是”神器”， 任何一个搞IT的人都得着的。&lt;/p&gt;
-&lt;p&gt;小弟我立志， 一定要把Fiddler的所有的功能和用法都写出来。 写成一个完整系列的教</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="13_web安全测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="11_fiddler" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11-fiddler/"/>
-    
-    <category term="999_fiddler文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11-fiddler/999-fiddler%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>FiddlerComposer创建和发送http请求</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/05_FiddlerComposer%E5%88%9B%E5%BB%BA%E5%92%8C%E5%8F%91%E9%80%81http%E8%AF%B7%E6%B1%82/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/05_FiddlerComposer%E5%88%9B%E5%BB%BA%E5%92%8C%E5%8F%91%E9%80%81http%E8%AF%B7%E6%B1%82/</id>
-    <published>2022-05-14T18:00:16.980Z</published>
-    <updated>2022-05-14T16:12:47.110Z</updated>
-    
-    <content type="html"><![CDATA[<p>Fiddler的功能还有很多， 很多功能都没有被挖掘出来。这次我们介绍Fiddler中的一个非常有用的功能Composer，是用来创建和发送HTTP Request的。Composer的使用方法很简单，看下就知道用了。</p><h1 id="Fiddler-Composer介绍"><a href="#Fiddler-Composer介绍" class="headerlink" title="Fiddler Composer介绍"></a><strong>Fiddler Composer介绍</strong></h1><p>Composer的官方帮助文档：<a href="http://www.fiddler2.com/fiddler/help/composer.asp">http://www.fiddler2.com/fiddler/help/composer.asp</a></p><p>Fiddler的作者把HTTP Request发射器取名叫Composer(中文意思是：乐曲的创造者), 很有诗意</p><p>Fiddler Composer的功能就是用来创建HTTP Request 然后发送。 你可以自定义一个Request, 也可以手写一个Request, 你甚至可以在Web会话列表中拖拽一个已有的Request. 来创建一个新的HTTP Request.</p><p><img src="/assets/1/wpsF35A.tmp-20211222153217-qqxckyq.png"></p><h1 id="Fiddler-Composer比其他工具的优势"><a href="#Fiddler-Composer比其他工具的优势" class="headerlink" title="Fiddler Composer比其他工具的优势"></a><strong>Fiddler Composer比其他工具的优势</strong></h1><p>能创建发送HTTP Request的工具很多很多。 但是Fiddler的功能有如下的优势。</p><ol><li>能从”Web会话列表”中 拖拽一个先前捕获到的Request, 然后稍微修改一下</li><li>发送Request后，还能设置断点，继续修改Request.</li><li>支持在Request中上传文件</li><li>支持发送多次Request.</li></ol><h1 id="实例-模拟京东商城的登录"><a href="#实例-模拟京东商城的登录" class="headerlink" title="实例: 模拟京东商城的登录"></a><strong>实例: 模拟京东商城的登录</strong></h1><p>启动Fiddler, 启动IE, 打开京东，然后输入用户名和密码，登录。   Fiddler 将捕获到这个登录的Request.</p><ol><li>首先找出哪个Request 是用来登录的， 然后把它拖拽到Composer中。</li></ol><p>[用来登录的request是这个: <a href="https://passport.360buy.com/uc/loginService?uuid=6bc79fbf-e882-49bb-b63a-6fd6ee448944%5D">https://passport.360buy.com/uc/loginService?uuid=6bc79fbf-e882-49bb-b63a-6fd6ee448944]</a></p><ol start="2"><li>在Composer可以看到， 登录是使用POST方法， 把用户名和密码发送给服务器。 那么我们可以修改Composer中的request内容， 比如用户名为:<a href="mailto:&#102;&#x69;&#100;&#x64;&#x6c;&#x65;&#114;&#116;&#101;&#115;&#x74;&#64;&#102;&#105;&#100;&#x64;&#108;&#101;&#114;&#46;&#99;&#111;&#109;">&#102;&#x69;&#100;&#x64;&#x6c;&#x65;&#114;&#116;&#101;&#115;&#x74;&#64;&#102;&#105;&#100;&#x64;&#108;&#101;&#114;&#46;&#99;&#111;&#109;</a>,密码为test1234。</li><li>Request造好了后， 我们按”Execute” 按钮就可以发送Request了(如果按住Shift键的同时，按”Execute”. Fiddler会自动给这个Request下断点)。</li><li>发送的Request，将出现在左边的Web Session列表中。</li></ol><p><img src="/assets/1/wpsF35B.tmp-20211222153217-zsavmzw.png"></p><h1 id="Parsed和Raw两种编辑模式"><a href="#Parsed和Raw两种编辑模式" class="headerlink" title="Parsed和Raw两种编辑模式"></a><strong>Parsed和Raw两种编辑模式</strong></h1><p>Fiddler Composer有两种编辑模式</p><p>Parsed模式(最常用),  把Request分为三个部分， Request line, Request Headesr,  Request Body。  很容易创建一个Request.</p><p>Raw模式，需要你一行一行手动写一个Request。</p><h1 id="同类工具-Firefox插件Rest-Client"><a href="#同类工具-Firefox插件Rest-Client" class="headerlink" title="同类工具- Firefox插件Rest Client"></a><strong>同类工具- Firefox插件Rest Client</strong></h1><p> Firefox也有一个插件叫Rest Client，  使用起来也很方便</p><p><img src="/assets/1/wpsF35C.tmp-20211222153217-bz2x5gm.png"></p><h1 id="同类工具-Linux上的Curl"><a href="#同类工具-Linux上的Curl" class="headerlink" title="同类工具: Linux上的Curl"></a><strong>同类工具: Linux上的Curl</strong></h1><p> curl是个命令行工具， 功能也很强大</p><p><img src="/assets/1/wpsF35D.tmp-20211222153217-wet74aw.jpg"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Fiddler的功能还有很多， 很多功能都没有被挖掘出来。这次我们介绍Fiddler中的一个非常有用的功能Composer，是用来创建和发送HTTP Request的。Composer的使用方法很简单，看下就知道用了。&lt;/p&gt;
-&lt;h1 id=&quot;Fiddler-Compose</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="13_web安全测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="11_fiddler" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11-fiddler/"/>
-    
-    <category term="999_fiddler文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11-fiddler/999-fiddler%E6%96%87%E4%BB%B6/"/>
-    
-    
-    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>fiddle利用AutoResponder进行调试</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/04_fiddle%E5%88%A9%E7%94%A8AutoResponder%E8%BF%9B%E8%A1%8C%E8%B0%83%E8%AF%95/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/04_fiddle%E5%88%A9%E7%94%A8AutoResponder%E8%BF%9B%E8%A1%8C%E8%B0%83%E8%AF%95/</id>
-    <published>2022-05-14T18:00:16.977Z</published>
-    <updated>2022-05-14T16:12:47.102Z</updated>
-    
-    <content type="html"><![CDATA[<pre><code>一、将服务器的返回数据（即原资源）重定向到本地的文件进行调试</code></pre><p>1、打开fiddler，打开浏览器输入<a href="https://www.baidu.com(已百度为例),再回到fiddler进行设置/">https://www.baidu.com(已百度为例)，再回到fiddler进行设置</a></p><p>2、按照截图所示，分别将4个选购全部勾选，勾选完成后，将待重定向的网址直接拖到右方【手动填写完整地址&#x2F;正则表达式进行模糊匹配的地址】即可 </p><p><img src="/assets/1/wpsC4D9.tmp-20211222152849-xddwtw5.png"><img src="/assets/1/wpsC4E9.tmp-20211222152849-dnpk6z2.jpg"></p><p>3、填写要替换的内容，下拉框有很多选项可以选择， 比如201、302、404，502等status code<br>注，我的一开始是404_Plain.dat</p><p><img src="/assets/1/wpsC4EA.tmp-20211222152849-7l8x6s8.png"><img src="/assets/1/wpsC4EB.tmp-20211222152849-x7naahz.jpg"></p><p>4、设置完成之后，刷新百度网页，请求回来的数据已经是替换后的内容了 </p><p><img src="/assets/1/wpsC4EC.tmp-20211222152849-llrl5ig.jpg"></p><p><img src="/assets/1/wpsC4ED.tmp-20211222152849-0tffmuw.png"></p><p>注：想取消的话，直接将第1步中勾选的Enable rules去掉即可</p><p>二、利用AutoResponder【重定向功能】修改返回response的数据</p><p>1、在fiddler中打开百度<a href="http://www.baidu.com,选择syntaxview的内容进行复制,保存到本机上,以baidu.html格式进行保存/">www.baidu.com，选择SyntaxView的内容进行复制，保存到本机上，以baidu.html格式进行保存</a></p><p><img src="/assets/1/wpsC4EE.tmp-20211222152849-iqjyu7d.png"><img src="/assets/1/wpsC4EF.tmp-20211222152849-74zklii.jpg"></p><p><img src="/assets/1/wpsC4F0.tmp-20211222152849-ogk32ph.jpg"></p><p><img src="/assets/1/wpsC4F1.tmp-20211222152849-vounnot.png"></p><p>2、点击AutoResponder，把刚才的网址拖到右边</p><p><img src="/assets/1/wpsC4F2.tmp-20211222152849-58xedtk.png"><img src="/assets/1/wpsC4F3.tmp-20211222152849-51zx5n6.jpg"></p><p>3、第一个下拉框选择Header:Accept&#x3D;html</p><pre><code>第二个下拉框选择你刚才保存baidu.html的路径</code></pre><p><img src="/assets/1/wpsC4F4.tmp-20211222152849-8o1a79i.jpg"></p><p><img src="/assets/1/wpsC4F5.tmp-20211222152849-dy76gg8.png"></p><p>4、勾选Enable rules之类的四个，然后点击保存</p><p><img src="/assets/1/wpsC4F6.tmp-20211222152849-sgb5fjf.png"><img src="/assets/1/wpsC4F7.tmp-20211222152849-d28ppju.jpg"></p><p>5、再访问百度</p><p><img src="/assets/1/wpsC4F8.tmp-20211222152849-upurpao.jpg"></p><p><img src="/assets/1/wpsC4F9.tmp-20211222152849-o25jqlm.png"></p><p>注：想取消的话，直接将第1步中勾选的Enable rules去掉即可</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;pre&gt;&lt;code&gt;一、将服务器的返回数据（即原资源）重定向到本地的文件进行调试
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;1、打开fiddler，打开浏览器输入&lt;a href=&quot;https://www.baidu.com(已百度为例),再回到fiddler进行设置/&quot;&gt;https:/</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="13_web安全测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="11_fiddler" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11-fiddler/"/>
-    
-    <category term="999_fiddler文件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13-web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11-fiddler/999-fiddler%E6%96%87%E4%BB%B6/"/>
     
     
     <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
