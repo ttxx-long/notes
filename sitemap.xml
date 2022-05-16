@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/03_python+requests+pytest%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
+    
+    <lastmod>2022-05-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/01_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/</loc>
     
     <lastmod>2022-05-16</lastmod>
