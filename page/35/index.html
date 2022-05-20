@@ -441,7 +441,16 @@
                             &nbsp;
                             05_测试高阶
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/">测试高阶</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_爬虫技术
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/">测试高阶</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/">python常用编码_整理</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/03_python_%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/">python第三方库-scrapy爬虫框架</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/">测试高阶</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -1523,6 +1532,288 @@
 </aside>
             
             <section id="main">
+        <article id="post-02_测试理论/03_第三章操作/03_网络协议/904_网络协议文件/06_http协议/01_HTTP协议详解" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/">03_第三章操作</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">03_网络协议</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/">904_网络协议文件</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06-http%E5%8D%8F%E8%AE%AE/">06_http协议</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E8%AF%BE%E5%89%8D/" rel="tag">课前</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/01_HTTP%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3/">
+            <time datetime="2022-05-15T07:36:01.405Z" itemprop="datePublished">2022-05-15</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/01_HTTP%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3/">HTTP协议详解</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h1 id="什么是HTTP协议"><a href="#什么是HTTP协议" class="headerlink" title="什么是HTTP协议"></a><strong>什么是HTTP协议</strong></h1><p>协议是指计算机通信网络中两台计算机之间进行通信所必须共同遵守的规定或规则，超文本传输协议(HTTP)是一种通信协议，它允许将超文本标记语言(HTML)文档从Web服务器传送到客户端的浏览器</p>
+<p>目前我们使用的是HTTP&#x2F;1.1 版本</p>
+<h1 id="Web服务器，浏览器-代理服务器"><a href="#Web服务器，浏览器-代理服务器" class="headerlink" title="Web服务器，浏览器,代理服务器"></a><strong>Web服务器，浏览器,代理服务器</strong></h1><p>当我们打开浏览器，在地址栏中输入URL，然后我们就看到了网页。 原理是怎样的呢？</p>
+<p>实际上我们输入URL后，我们的浏览器给Web服务器发送了一个Request, Web服务器接到Request后进行处理，生成相应的Response，然后发送给浏览器， 浏览器解析Response中的HTML,这样我们就看到了网页，过程如下图所示</p>
+<p><img src="/assets/1/wps81FC.tmp-20211222150430-3fflmhm.png"></p>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/01_HTTP%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3/#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-02_测试理论/03_第三章操作/03_网络协议/904_网络协议文件/06_http协议/02_缓存" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/">03_第三章操作</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">03_网络协议</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/">904_网络协议文件</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06-http%E5%8D%8F%E8%AE%AE/">06_http协议</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E8%AF%BE%E5%89%8D/" rel="tag">课前</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/02_%E7%BC%93%E5%AD%98/">
+            <time datetime="2022-05-15T07:36:01.405Z" itemprop="datePublished">2022-05-15</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/02_%E7%BC%93%E5%AD%98/">缓存</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h1 id="缓存的概念"><a href="#缓存的概念" class="headerlink" title="缓存的概念"></a><strong>缓存的概念</strong></h1><p>缓存这个东西真的是无处不在， 有浏览器端的缓存， 有服务器端的缓存，有代理服务器的缓存， 有ASP.NET页面缓存，对象缓存。 数据库也有缓存， 等等。</p>
+<p>http中具有缓存功能的是浏览器缓存，以及缓存代理服务器。</p>
+<p>http缓存的是指:当Web请求抵达缓存时， 如果本地有“已缓存的”副本，就可以从本地存储设备而不是从原始服务器中提取这个文档。</p>
+<h1 id="缓存的好处"><a href="#缓存的好处" class="headerlink" title="缓存的好处"></a><strong>缓存的好处</strong></h1><p>缓存的好处是显而易见的， 好处有，</p>
+<ol>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/02_%E7%BC%93%E5%AD%98/#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-02_测试理论/03_第三章操作/03_网络协议/904_网络协议文件/06_http协议/03_代理" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/">03_第三章操作</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">03_网络协议</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/">904_网络协议文件</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06-http%E5%8D%8F%E8%AE%AE/">06_http协议</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E8%AF%BE%E5%89%8D/" rel="tag">课前</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/03_%E4%BB%A3%E7%90%86/">
+            <time datetime="2022-05-15T07:36:01.405Z" itemprop="datePublished">2022-05-15</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/03_%E4%BB%A3%E7%90%86/">代理</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h1 id="什么是代理服务器"><a href="#什么是代理服务器" class="headerlink" title="什么是代理服务器"></a><strong>什么是代理服务器</strong></h1><p>Web代理（proxy）服务器是网络的中间实体。 代理位于Web客户端和Web服务器之间，扮演“中间人”的角色。</p>
+<p>HTTP的代理服务器即是Web服务器又是Web客户端。</p>
+<p><img src="/assets/1/wpsDF5D.tmp-20211222151232-ddixl0r.jpg"></p>
+<h1 id="Fiddler就是个典型的代理"><a href="#Fiddler就是个典型的代理" class="headerlink" title="Fiddler就是个典型的代理"></a><strong>Fiddler就是个典型的代理</strong></h1><p>Fiddler 是以代理web服务器的形式工作的,它使用代理地址:127.0.0.1, 端口:8888. 当Fiddler退出的时候它会自动注销代理，这样就不会影响别的程序。</p>
+<p><img src="/assets/1/wpsDF5E.tmp-20211222151232-3k0fozh.jpg"></p>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/03_%E4%BB%A3%E7%90%86/#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-02_测试理论/03_第三章操作/03_网络协议/904_网络协议文件/06_http协议/05_cookie" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -2168,269 +2459,6 @@
             </div>   
             <div class="article-more-link">
                 <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/01_%E6%95%B0%E6%8D%AE%E5%BA%93/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-02_测试理论/01_第一章基础/901_文件/902_测试理论/09_测试概念总结" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/">01_第一章基础</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901-%E6%96%87%E4%BB%B6/">901_文件</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901-%E6%96%87%E4%BB%B6/902-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">902_测试理论</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/" rel="tag">测试理论</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E6%B5%8B%E8%AF%95%E6%A6%82%E5%BF%B5%E6%80%BB%E7%BB%93/">
-            <time datetime="2022-05-15T07:36:01.395Z" itemprop="datePublished">2022-05-15</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E6%B5%8B%E8%AF%95%E6%A6%82%E5%BF%B5%E6%80%BB%E7%BB%93/">测试概念总结</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><ol>
-<li><h3 id="你上家公司的测试流程是怎么样的？"><a href="#你上家公司的测试流程是怎么样的？" class="headerlink" title="你上家公司的测试流程是怎么样的？"></a>你上家公司的测试流程是怎么样的？</h3><ol>
-<li>需求下来之后，我们会首先熟悉下，然后公司会做一个’需求交接’,这个过程中一般会开一个简单的’需求澄清会’,在会议上把自己对需求不清楚，不理解，或者有异议的地方都提出来，由产品给我们解答。澄清会结束然后就写测试计划，测试计划前期一般都是有我们主管写的，后期基本上是由我们各个测试人员轮流细的，测试计划主要就是安排进度以及任务的分配之后各自领取自己负责的模块，做需求分析，挖掘，同时写测试点，测试点写完后,就编写测试用例。’测试点，我们用的 xmind的写的，用例当时用的Excel 表格管理的’，等测试用例编写完，一般会有评审，对于评审，有时候就是简单组内评审下，如果大的功能可能会组织会议评审，如果是会议评审，相关的开发，跟产品基本都会到场，其实主要就是看下用例的覆盖率这块，例外就是看检查点有没有检查到位。评审了之后，然后会等项目版本出来，开发那边一般会先做单元测试(UT)，之后就开始提测，我们首先会搭建测试环境，做项目部署，之后做冒烟测试，然后去执行用例做系统测试，测试过程中发现 bug就指派给对应的开发，待开发修复完成之后，我们测试需要做复测，复测没有问题就关闭Bug,如果还是有问题，重新开启 Bug，直到改好了复测完没问题才可以关闭这个bug。<del>一般系统功能测试我们需要测试2-3轮</del>，保证所有Bug基本都修复完成，之后写测试报告，然后看是否达到上线标准，达到了上线标准的话，由 SE组织时间进行产品上线，上线之后我么会做一个做总结。</li>
-<li><h3 id="产品如何上线？（标准，过程）"><a href="#产品如何上线？（标准，过程）" class="headerlink" title="产品如何上线？（标准，过程）"></a>产品如何上线？（标准，过程）</h3><ol>
-<li><h4 id="上线标准"><a href="#上线标准" class="headerlink" title="上线标准"></a>上线标准</h4><ol>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E6%B5%8B%E8%AF%95%E6%A6%82%E5%BF%B5%E6%80%BB%E7%BB%93/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-02_测试理论/01_第一章基础/901_文件/902_测试理论/10_迭代模型" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/">01_第一章基础</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901-%E6%96%87%E4%BB%B6/">901_文件</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901-%E6%96%87%E4%BB%B6/902-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">902_测试理论</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/" rel="tag">测试理论</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E8%BF%AD%E4%BB%A3%E6%A8%A1%E5%9E%8B/">
-            <time datetime="2022-05-15T07:36:01.395Z" itemprop="datePublished">2022-05-15</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E8%BF%AD%E4%BB%A3%E6%A8%A1%E5%9E%8B/">迭代模型</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-            
-        
-        
-            <h2 id="软件的生命周期"><a href="#软件的生命周期" class="headerlink" title="软件的生命周期"></a><strong>软件的生命周期</strong></h2><p>软件生命周期是软件的产生直到报废或停止使用的生命周期<br>软件生命周期内有问题定义、可行性分析、总体描述、系统设计、编码、调试和测试、验收与运行、维护升级到废弃等阶段。<br>软件开发模型<br><img src="/assets/1/wpsA7E5.tmp-20211120152251-qp0stk4.jpg"><br>瀑布模型是最早的开发模型<br>优点：有利于大型软件开发过程当中人员的组织与管理，提高软件开发的质量与效率<br>缺点：模型是线性的，增加开发的风险，例如需求分析时，已经出现错误，一直没有测试阶段，直到测试阶段才能发现问题。问题修改起来成本增加。另外 用户需求变化太快，前期调研在完善也抵不住用户的需求变更，跟不上市场变化的速度<br>衍生出敏捷开发<br><img src="/assets/1/wpsA7E6.tmp-20211120152251-x8q273s.jpg"><br>看板<br><img src="/assets/1/wpsA7E7.tmp-20211120152251-wbf6fok.jpg"><br>测试模型<br><img src="/assets/1/wpsA7E8.tmp-20211120152251-uf1al0p.jpg"><br>需求分析：首先要做的事，开发 测试 要做什么，分析<br>概要设计：架构的实现，开发做的事，搭建产品的架构<br>详细设计：在概要设计的基础上在每个模块内部实现的逻辑和方法在这个阶段设计好，<br>编码：<br>单元测试：最小测试单元进行测试<br>集成测试；<br>系统测试<br>验收测试<br>（中小型企业使用）<br><img src="/assets/1/wpsA7E9.tmp-20211120152251-xxg84iu.jpg"><br>W模型，在需求设计阶段增加了测试活动，开发测试同步进行（大型企业使用，对人员要求比较高）<br><img src="/assets/1/wpsA7EA.tmp-20211120152251-6i27xmg.jpg"><br>产品迭代，适合小型迭代，测试流程完全独立出来，测试就绪点，测试准入准则<br>一般小型企业使用，项目人员要了解整体情况<br>系统测试流程<br><img src="/assets/1/wpsA7EB.tmp-20211120152251-49ld7zq.jpg"><br>Bug管理流程<br><img src="/assets/1/wpsA7EC.tmp-20211120152251-2ssrp2b.jpg"><br>软件测试流程的价值<br>提高测试效率<br>提高产品质量<br>加强项目成员之间的沟通</p>
-
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-02_测试理论/03_第三章操作/01_Linux系统/902_课中_linux文件/01_Linux命令" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/">03_第三章操作</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/01-Linux%E7%B3%BB%E7%BB%9F/">01_Linux系统</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/01-Linux%E7%B3%BB%E7%BB%9F/902-%E8%AF%BE%E4%B8%AD-linux%E6%96%87%E4%BB%B6/">902_课中_linux文件</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E8%AF%BE%E5%89%8D/" rel="tag">课前</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/01_Linux%E7%B3%BB%E7%BB%9F/902_%E8%AF%BE%E4%B8%AD_linux%E6%96%87%E4%BB%B6/01_Linux%E5%91%BD%E4%BB%A4/">
-            <time datetime="2022-05-15T07:36:01.395Z" itemprop="datePublished">2022-05-15</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/01_Linux%E7%B3%BB%E7%BB%9F/902_%E8%AF%BE%E4%B8%AD_linux%E6%96%87%E4%BB%B6/01_Linux%E5%91%BD%E4%BB%A4/">linux基本命令</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><ol>
-<li><p>常用的linux命令：</p>
-<ol>
-<li><p>ls 显示当前路径下的文件和文件夹（横向显示）</p>
-</li>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/01_Linux%E7%B3%BB%E7%BB%9F/902_%E8%AF%BE%E4%B8%AD_linux%E6%96%87%E4%BB%B6/01_Linux%E5%91%BD%E4%BB%A4/#more">查看更多</a>
             </div>
         
         <footer class="article-footer">

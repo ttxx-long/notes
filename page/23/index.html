@@ -441,7 +441,16 @@
                             &nbsp;
                             05_测试高阶
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/">测试高阶</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_爬虫技术
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/">测试高阶</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/">python常用编码_整理</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/03_python_%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/">python第三方库-scrapy爬虫框架</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/">测试高阶</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -1523,6 +1532,288 @@
 </aside>
             
             <section id="main">
+        <article id="post-07_测试工具/02_接口测试篇/05_mock/01_mock" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/">02_接口测试篇</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05-mock/">05_mock</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_mock/01_mock/">
+            <time datetime="2022-05-15T07:36:01.613Z" itemprop="datePublished">2022-05-15</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_mock/01_mock/">mock</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><p><img src="/assets/2/image-20220508161516-7fizz3n.png" alt="image.png"></p>
+<ol>
+<li><p>背景<br> 在实际产品开发过程中，某个服务或前端依赖一个服务接口，该接口可能依赖多个底层服务或模块，或第三方接口，比如说服务 A 依赖服务B，服务B又依赖服务 C，如下图所示：</p>
+<p> <img src="/assets/2/image-20220508161535-ikefszs.png" alt="image.png"><br> 这种依赖的问题会导致原本的需求目的是要验证服务A，但由于所依赖的服务B或者服务C不稳定或者未开发完成，导致工作无法正常开展。</p>
+<p> <img src="/assets/2/image-20220508161546-audsq22.png" alt="image.png"><br> 那作为测试工程师，面对这样的情形，我们该怎么办呢？解决这类问题的核心的思路：引入依赖服务替身，更通俗的叫法，引入Mock服务。</p>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_mock/01_mock/#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-07_测试工具/02_接口测试篇/04_apipost/01_apipost" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/">02_接口测试篇</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/04-apipost/">04_apipost</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/04_apipost/01_apipost/">
+            <time datetime="2022-05-15T07:36:01.610Z" itemprop="datePublished">2022-05-15</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/04_apipost/01_apipost/">apipost</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><p>官网下载地址：<a target="_blank" rel="noopener" href="https://www.apipost.cn/" title="https://www.apipost.cn/">https://www.apipost.cn/</a></p>
+<h1 id="1-请求接口"><a href="#1-请求接口" class="headerlink" title="1.请求接口"></a>1.请求接口</h1><p><img src="/assets/2/image-20220508155601-btpvb85.png" alt="image.png"></p>
+<h1 id="2-生成文档"><a href="#2-生成文档" class="headerlink" title="2.生成文档"></a>2.生成文档</h1><p><img src="/assets/2/image-20220508155609-t8xfsdf.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220508155617-diif63q.png" alt="image.png"></p>
+<p><img src="/assets/2/image-20220508155623-efzypj9.png" alt="image.png"></p>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/04_apipost/01_apipost/#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-07_测试工具/02_接口测试篇/03_soapUI/01_soapUI" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/">02_接口测试篇</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/03-soapUI/">03_soapUI</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/03_soapUI/01_soapUI/">
+            <time datetime="2022-05-15T07:36:01.607Z" itemprop="datePublished">2022-05-15</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/03_soapUI/01_soapUI/">soapUI</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><p><strong>简介</strong></p>
+<p>SOAPUI,一款专业的web service的测试软件,SoapUI也是一个<a href=""><strong>开源</strong></a><strong><a href=""><strong>测试</strong></a>工具</strong>，通过soap&#x2F;http来检查、调用、实现<a href=""><strong>Web</strong></a> Service的功能&#x2F;负载&#x2F;符合性测试。该工具既可作为一个单独的测试软件使用，也可利用插件集成到Eclipse，maven2.X，Netbeans 和intellij中使用。</p>
+<p>SoapUI是一个自由和开放源码的跨平台<a href=""><strong>功能测试</strong></a>解决方案。通过一个易于使用的图形界面和企业级功能，SoapUI让您轻松， 快速创建和执行自动化功能、回归、合规和负载测试。在一个测试环境，SoapUI提供完整的测试覆盖，并支持所有的标准协议和<a href=""><strong>技术</strong></a>。</p>
+<p>SoapUI 基于Java 开发，支持多个平台，安装非常简单。</p>
+<p><strong>下载</strong></p>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/03_soapUI/01_soapUI/#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-07_测试工具/02_接口测试篇/02_postman/01_postman" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -2168,265 +2459,6 @@
             </div>   
             <div class="article-more-link">
                 <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/06_postman-%E6%96%AD%E8%A8%80%E5%8F%98%E9%87%8F/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-07_测试工具/02_接口测试篇/01_jmeter/999_工具/19_jmeter性能篇" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/">02_接口测试篇</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01-jmeter/">01_jmeter</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01-jmeter/999-%E5%B7%A5%E5%85%B7/">999_工具</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/19_jmeter%E6%80%A7%E8%83%BD%E7%AF%87/">
-            <time datetime="2022-05-15T07:36:01.587Z" itemprop="datePublished">2022-05-15</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/19_jmeter%E6%80%A7%E8%83%BD%E7%AF%87/">jmeter性能篇</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-            
-        
-        
-            
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-07_测试工具/02_接口测试篇/01_jmeter/999_工具/11_jmeter函数助手" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/">02_接口测试篇</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01-jmeter/">01_jmeter</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01-jmeter/999-%E5%B7%A5%E5%85%B7/">999_工具</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/11_jmeter%E5%87%BD%E6%95%B0%E5%8A%A9%E6%89%8B/">
-            <time datetime="2022-05-15T07:36:01.573Z" itemprop="datePublished">2022-05-15</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/11_jmeter%E5%87%BD%E6%95%B0%E5%8A%A9%E6%89%8B/">jmeter函数助手</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><p> 在讲解函数助手之前，先讲解下jmeter的用户自定义变量</p>
-<p> 用户自定义变量解决了那些问题？</p>
-<p> 1.测试环境和线上环境切换，每次次都需要修改每个请求的IP地址</p>
-<p> 2.请求的共用参数，每次只要修改一个地方，所有引用都被改变</p>
-<p> 3.方便快捷，便于维护脚本</p>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/11_jmeter%E5%87%BD%E6%95%B0%E5%8A%A9%E6%89%8B/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-07_测试工具/02_接口测试篇/01_jmeter/999_工具/12_jmeter连接数据库操作" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/">02_接口测试篇</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01-jmeter/">01_jmeter</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02-%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01-jmeter/999-%E5%B7%A5%E5%85%B7/">999_工具</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/12_jmeter%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/">
-            <time datetime="2022-05-15T07:36:01.573Z" itemprop="datePublished">2022-05-15</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/12_jmeter%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/">JMeter 连接 MySQL数据库测试</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><p> 1、下载安装mysql驱动包<br> 提供下载地址：<a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/connector/j/">https://dev.mysql.com/downloads/connector/j/</a></p>
-<p> <img src="/assets/1/image-20220326104628-z3y3izm.png" alt="image.png"></p>
-<p> 也可以自行百度搜索下载。</p>
-<p> 下载完成之后，将mysql驱动放置到…\apache-jmeter-3.2\lib目录下。</p>
-<p> <img src="/assets/1/image-20220326104637-3hy3v7z.png" alt="image.png"></p>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/12_jmeter%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/#more">查看更多</a>
             </div>
         
         <footer class="article-footer">

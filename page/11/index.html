@@ -441,7 +441,16 @@
                             &nbsp;
                             05_测试高阶
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/">测试高阶</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_爬虫技术
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/">测试高阶</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/">python常用编码_整理</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/03_python_%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/">python第三方库-scrapy爬虫框架</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/">测试高阶</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -1523,6 +1532,288 @@
 </aside>
             
             <section id="main">
+        <article id="post-07_测试工具/06_自动化/02_自动化实操/02_API自动化/api自动化框架/02_Python_Api接口自动化测试框架一" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/">06_自动化</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/">02_自动化实操</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02-API%E8%87%AA%E5%8A%A8%E5%8C%96/">02_API自动化</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02-API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/">api自动化框架</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E8%AF%BE%E5%90%8E/" rel="tag">课后</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/02_Python_Api%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E4%B8%80/">
+            <time datetime="2022-05-16T12:05:25.274Z" itemprop="datePublished">2022-05-16</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/02_Python_Api%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E4%B8%80/">Python Api接口自动化测试框架一</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><p>公司内部的一个接口自动化使用框架（非使用工具）</p>
+<p>　　<a href="javascript:;"><strong>工作</strong></a>原理: <a href="javascript:;"></a><strong><a href="javascript:;"><strong>测试</strong></a>用例</strong>在excel上编辑，使用第三方库xlrd，读取表格sheet和内容，sheetName对应模块名，Jenkins集成服务发现服务moduleName查找对应表单，运用第三方库requests请求接口，根据结果和期望值进行断言，根据输出报告判断<a href="javascript:;"><strong>接口测试</strong></a>是否通过。</p>
+<p>　**　1. 数据准备**</p>
+<p>　　数据插入（容易实现的测试场景下所需外部数据)</p>
+<p>　　准备<a href="javascript:;"><strong>sql</strong></a> （接口需要重复使用，参数一定得是变量)</p>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/02_Python_Api%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E4%B8%80/#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-07_测试工具/06_自动化/02_自动化实操/02_API自动化/api自动化框架/01_http" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/">06_自动化</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/">02_自动化实操</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02-API%E8%87%AA%E5%8A%A8%E5%8C%96/">02_API自动化</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02-API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/">api自动化框架</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E8%AF%BE%E5%90%8E/" rel="tag">课后</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/01_http/">
+            <time datetime="2022-05-16T11:59:04.256Z" itemprop="datePublished">2022-05-16</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/01_http/">API自动化-http</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h1 id="http"><a href="#http" class="headerlink" title="http"></a>http</h1><h2 id="Web及网络基础"><a href="#Web及网络基础" class="headerlink" title="Web及网络基础"></a>Web及网络基础</h2><h3 id="URI和URL"><a href="#URI和URL" class="headerlink" title="URI和URL"></a>URI和URL</h3><h4 id="URI：统一资源标识符"><a href="#URI：统一资源标识符" class="headerlink" title="URI：统一资源标识符"></a>URI：统一资源标识符</h4><h5 id="URI是由某个协议方案表示的资源（这里的资源为任意类型的的文件）的定位标识符"><a href="#URI是由某个协议方案表示的资源（这里的资源为任意类型的的文件）的定位标识符" class="headerlink" title="URI是由某个协议方案表示的资源（这里的资源为任意类型的的文件）的定位标识符"></a>URI是由某个协议方案表示的资源（这里的资源为任意类型的的文件）的定位标识符</h5><h5 id="常见协议方案：http、ftp（文件传输）、mailto、file等"><a href="#常见协议方案：http、ftp（文件传输）、mailto、file等" class="headerlink" title="常见协议方案：http、ftp（文件传输）、mailto、file等"></a>常见协议方案：http、ftp（文件传输）、mailto、file等</h5><h4 id="URL格式"><a href="#URL格式" class="headerlink" title="URL格式"></a>URL格式</h4><h6 id="协议方案名"><a href="#协议方案名" class="headerlink" title="协议方案名"></a>协议方案名</h6><p>####### 使用 http: 或 https: 等协议方案名获取访问资源时要指定协议类型。不 区分字母大小写，最后附一个冒号（:）。 </p>
+<h6 id="登录信息（认证）"><a href="#登录信息（认证）" class="headerlink" title="登录信息（认证）"></a>登录信息（认证）</h6><p>####### 分支主指定用户名和密码作为从服务器端获取资源时必要的登录信息（身份 认证）。此项是可选项。<br>题</p>
+<h6 id="服务器地址"><a href="#服务器地址" class="headerlink" title="服务器地址"></a>服务器地址</h6><p>####### 使用绝对 URI 必须指定待访问的服务器地址。地址可以是类似 hackr.jp 这种 DNS 可解析的名称，或是 192.168.1.1 这类 IPv4 地址 名，还可以是 [0:0:0:0:0:0:0:1] 这样用方括号括起来的 IPv6 地址名。</p>
+<h6 id="服务器端口号"><a href="#服务器端口号" class="headerlink" title="服务器端口号"></a>服务器端口号</h6><p>####### 指定服务器连接的网络端口号。此项也是可选项，若用户省略则自动 使用默认端口号</p>
+<h6 id="查询字符串"><a href="#查询字符串" class="headerlink" title="查询字符串"></a>查询字符串</h6><p>####### 针对已指定的文件路径内的资源，可以使用查询字符串传入任意参 数。此项可选</p>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/01_http/#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-07_测试工具/06_自动化/02_自动化实操/01_UI自动化/UI自动化测试框架/01_selenium/07_Selenium+Pytest自动化测试框架实战" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/">06_自动化</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/">02_自动化实操</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/">01_UI自动化</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/">UI自动化测试框架</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01-selenium/">01_selenium</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/07_Selenium+Pytest%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E5%AE%9E%E6%88%98/">
+            <time datetime="2022-05-15T15:19:47.728Z" itemprop="datePublished">2022-05-15</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/07_Selenium+Pytest%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E5%AE%9E%E6%88%98/">selenium-Pytest自动化测试框架实战</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><p>前言#<br>selenium自动化+ pytest测试框架</p>
+<p>本章你需要</p>
+<p>一定的python基础——至少明白类与对象，封装继承</p>
+<p>一定的selenium基础——本篇不讲selenium，不会的可以自己去看<a target="_blank" rel="noopener" href="https://selenium-python-zh.readthedocs.io/">selenium中文翻译网</a></p>
+<p>测试框架简介#<br>    测试框架有什么优点呢：<br>        代码复用率高，如果不使用框架的话，代码会很冗余<br>        可以组装日志、报告、邮件等一些高级功能<br>        提高元素等数据的可维护性，元素发生变化时，只需要更新一下配置文件<br>        使用更灵活的PageObject设计模式<br>        测试框架的整体目录</p>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/07_Selenium+Pytest%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E5%AE%9E%E6%88%98/#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-07_测试工具/06_自动化/02_自动化实操/01_UI自动化/UI自动化测试框架/01_selenium/05_Selenium-元素处理方法" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -2168,288 +2459,6 @@
             </div>   
             <div class="article-more-link">
                 <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/06_selenium-webdriver%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-07_测试工具/06_自动化/02_自动化实操/01_UI自动化/UI自动化测试框架/01_selenium/04_selenium-webdriver基本操作二" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/">06_自动化</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/">02_自动化实操</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/">01_UI自动化</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/">UI自动化测试框架</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01-selenium/">01_selenium</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/04_selenium-webdriver%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E4%BA%8C/">
-            <time datetime="2022-05-15T07:38:09.139Z" itemprop="datePublished">2022-05-15</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/04_selenium-webdriver%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E4%BA%8C/">selenium-webdriver基础操作二</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><p>查找页面元素<br>前置条件：①Firefox浏览器 ②例子里的网页为<a target="_blank" rel="noopener" href="https://www.baidu.com/">https://www.baidu.com</a></p>
-<p>1.按id属性查找  一般作为查找元素的首选属性  注意特殊情况-动态id</p>
-<pre><code>from selenium import webdriver  # 从selenium库导入网络驱动包
-from time import sleep          # 从time库导入sleep
-from selenium.webdriver.common.by import By  # 用于对象的定位
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/04_selenium-webdriver%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E4%BA%8C/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-07_测试工具/06_自动化/02_自动化实操/01_UI自动化/UI自动化测试框架/01_selenium/03_selenium-webdriver基本操作一" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/">06_自动化</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/">02_自动化实操</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/">01_UI自动化</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/">UI自动化测试框架</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01-selenium/">01_selenium</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/03_selenium-webdriver%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E4%B8%80/">
-            <time datetime="2022-05-15T07:38:09.132Z" itemprop="datePublished">2022-05-15</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/03_selenium-webdriver%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E4%B8%80/">selenium-webdriver基础操作一</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><p>基于Firefox浏览器的基本操作<br>1.浏览器的导航操作</p>
-<pre><code>from selenium import webdriver        #从selenium库中导入webdriver模块
-firefox = webdriver.Firefox()         #定义一个firefox变量，用于代指浏览器
-firefox.get(&quot;https://www.baidu.com&quot;)  #打开浏览器并进入百度网页
-</code></pre>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/03_selenium-webdriver%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E4%B8%80/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-07_测试工具/06_自动化/02_自动化实操/01_UI自动化/UI自动化测试框架/01_selenium/02_selenium-webdriver基础操作" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">07_测试工具</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/">06_自动化</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/">02_自动化实操</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/">01_UI自动化</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/">UI自动化测试框架</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01-selenium/">01_selenium</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/02_selenium-webdriver%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/">
-            <time datetime="2022-05-15T07:38:09.123Z" itemprop="datePublished">2022-05-15</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/02_selenium-webdriver%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/">selenium-webdriver基础操作</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><p>这是<strong>Selenium</strong>里面最总要的东西。 <strong>Selenium Webdriver</strong> （也就是 <strong>Selenium2，Selenium3</strong> ）和 <strong>Selenium RC</strong> （ <strong>Selenium 1</strong> ）一样提供了<strong>web</strong>自动化的各种语言调用接口库。相比 <strong>Selenium RC</strong> ，<strong>Selenium WebDriver</strong>的编程接口更加直观易懂，也更加简练。但是和<strong>Selenium RC</strong>不同的是，<strong>Selenium Webdriver</strong>是通过各种浏览器的驱动（ <strong>web driver</strong> ）来驱动浏览器的，而不是通过注入<strong>JavaScript</strong>的方式，下面是其原理的示意图：</p>
-<p><img src="/assets/2/image-20220515145116-jknthhg.png" alt="image.png"></p>
-<p>image.png</p>
-<p>我们的代码运行起来是一个进程，里面调用<strong>Selenium WebDriver</strong>的库 和 各个浏览器的驱动进程 进行交互，传递<strong>Selenium</strong>命令 给它们，并且获取命令执行的结果，返回给我们的代码进行处理。</p>
-<p><strong>Selenium WebDriver</strong>目前包括两个版本<strong>Selenium 2</strong>和 <strong>Selenium 3</strong> 。这两个版本从开发代码调用接口上来看，几乎没什么区别。区别在于库的实现和<strong>web driver</strong>的实现。<strong>Selenium2</strong>是<strong>Selenium</strong>组织帮各种浏览器写<strong>web driver</strong>的，而<strong>Selenium 3</strong>里面的<strong>web driver</strong>是由各个浏览器厂商（ <strong>Apple,Google,Microsoft,Mozilla</strong> ）自己提供的。所以<strong>Selenium 3</strong>的自动化效率更高，成功率也更高。</p>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/02_selenium-webdriver%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/#more">查看更多</a>
             </div>
         
         <footer class="article-footer">

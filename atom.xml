@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-16T13:01:43.017Z</updated>
+  <updated>2022-05-20T15:38:55.182Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,90 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python第三方库-scrapy爬虫框架</title>
+    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/03_python_%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/"/>
+    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/03_python_%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/</id>
+    <published>2022-05-20T13:12:06.336Z</published>
+    <updated>2022-05-20T15:38:55.182Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="爬虫原理"><a href="#爬虫原理" class="headerlink" title="爬虫原理"></a>爬虫原理</h2><h3 id="基础库的使用，"><a href="#基础库的使用，" class="headerlink" title="基础库的使用，"></a>基础库的使用，</h3><h3 id="进阶，"><a href="#进阶，" class="headerlink" title="进阶，"></a>进阶，</h3><h3 id="反爬虫，"><a href="#反爬虫，" class="headerlink" title="反爬虫，"></a>反爬虫，</h3><h3 id="单线程爬虫，"><a href="#单线程爬虫，" class="headerlink" title="单线程爬虫，"></a>单线程爬虫，</h3><h3 id="多线程爬虫，"><a href="#多线程爬虫，" class="headerlink" title="多线程爬虫，"></a>多线程爬虫，</h3><h3 id="scrapy（异步并发），"><a href="#scrapy（异步并发），" class="headerlink" title="scrapy（异步并发），"></a>scrapy（异步并发），</h3><h3 id="分布式爬虫"><a href="#分布式爬虫" class="headerlink" title="分布式爬虫"></a>分布式爬虫</h3><h2 id="框架："><a href="#框架：" class="headerlink" title="框架："></a>框架：</h2><h3 id="抓取，解析，保存"><a href="#抓取，解析，保存" class="headerlink" title="抓取，解析，保存"></a>抓取，解析，保存</h3><h3 id="域名，ip地址"><a href="#域名，ip地址" class="headerlink" title="域名，ip地址"></a>域名，ip地址</h3><h4 id="1-scrapy-异步并发-安装第三方库：pip-install-scrapy"><a href="#1-scrapy-异步并发-安装第三方库：pip-install-scrapy" class="headerlink" title="1. scrapy__异步并发 安装第三方库：pip install scrapy"></a>1. scrapy__异步并发 安装第三方库：pip install scrapy</h4><p>cmd 进入空白文件 通过scrapy 创建框架<br>    命令： </p><pre><code>    scrapy startproject demo0520_scrapy（文件名,项目的名字）  回车    ![](/assets/2/20220520_1.jpg)    cd  demo0520_scrapy    ![](/assets/2/20220520_2.jpg)    ![](/assets/2/20220520_3.jpg)    scrapy genspider  movies（爬虫的类型，爬虫的名字） donban.com（域名）  # 需要加两个参数    ![](/assets/2/20220520_4.jpg)</code></pre><ol start="2"><li>打开pycharm<br> 打开项目：  项目位置</li></ol><p><img src="/assets/2/scrapy1.jpg"></p><ol start="3"><li>运行爬虫<br> 进入项目文件—&gt;&gt;&gt; cmd 或者pycharm 控制台<br> 输入 scrapy  crawl movies（爬虫的名字）</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;爬虫原理&quot;&gt;&lt;a href=&quot;#爬虫原理&quot; class=&quot;headerlink&quot; title=&quot;爬虫原理&quot;&gt;&lt;/a&gt;爬虫原理&lt;/h2&gt;&lt;h3 id=&quot;基础库的使用，&quot;&gt;&lt;a href=&quot;#基础库的使用，&quot; class=&quot;headerlink&quot; title=&quot;基础库</summary>
+      
+    
+    
+    
+    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    
+    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python常用编码_整理</title>
+    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/"/>
+    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/</id>
+    <published>2022-05-19T06:43:08.855Z</published>
+    <updated>2022-05-20T13:10:49.883Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code># 去掉web页面自动化提醒标识- 自动化标识from selenium.webdriver.chrome.options import Optionoption = Options()option.add_experimental_option(&#39;excludeSwitches&#39;,[&#39;enable-automation&#39;])option.add_argument(&#39;--disable-blink-features-AutomationControlled&#39;)driver = webdriver.Chrome(options=option)</code></pre><pre><code># 关掉密码弹窗from selenium.webdriver.chrome.options import Optionprefs = &#123;&#125;prefs[&#39;credentials_enable_service&#39;] = Falseprefs[&#39;profile.password_manger_enabled&#39;] = Falseoption.add_experimental_option(&#39;prefs&#39;,prefs)</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;pre&gt;&lt;code&gt;# 去掉web页面自动化提醒标识- 自动化标识
+from selenium.webdriver.chrome.options import Option
+option = Options()
+option.add_experimental_option(&amp;#</summary>
+      
+    
+    
+    
+    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    
+    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试高阶</title>
+    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/</id>
+    <published>2022-05-19T02:39:37.332Z</published>
+    <updated>2022-05-20T15:38:59.103Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>爬虫技术接单平台<ul><li><a href="https://www.jfh.com/serviceProvider.html">解放号</a></li><li><a href="https://www.yuanjisong.com/job">猿急送</a></li><li><a href="https://www.proginn.com/?loginbox=show">程序员客栈</a></li><li><a href="https://codemart.com/">码市</a></li><li><a href="http://rrkf.com/">人人开发</a></li><li><a href="https://task.zbj.com/">猪八戒</a></li><li><a href="https://task.epwk.com/task/">一品威客</a></li><li><a href="https://zb.oschina.net/projects/list.html">开源众包</a></li><li><a href="https://www.taskcity.com/">智城外包网</a></li><li><a href="https://shixian.com/cases">实现网</a></li><li><a href="https://eleduck.com/categories/6/tags/0-18">电鸭社区</a></li><li><a href="https://remoteok.com/">Remoteok</a></li><li><a href="https://www.toptal.com/">Toptal</a></li><li><a href="https://angel.co/">AngelList</a></li><li><a href="https://www.yingxuan.io/">英选</a></li></ul></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;爬虫技术接单平台&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.jfh.com/serviceProvider.html&quot;&gt;解放号&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.yuanjisong.com/job&quot;&gt;猿急送&lt;/</summary>
+      
+    
+    
+    
+    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    
+    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
   
   <entry>
     <title>python+requests+pytest接口自动化</title>
@@ -505,108 +589,6 @@
       
     <summary type="html">&lt;p&gt;前言&lt;/p&gt;
 &lt;p&gt;前面一篇讲到用例加setup和teardown可以实现在测试用例之前或之后加入一些操作，但这种是整个脚本全局生效的，如果我想实现以下场景：&lt;br&gt;用例1需要先登录，用例2不需要登录，用例3需要先登录。很显然这就无法用setup和teardown来实现了。</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
-    
-    <category term="01_UI自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="UI自动化测试框架" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="04_pytest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04-pytest/"/>
-    
-    
-    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pytest文档51-内置fixture之cache使用</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A351-%E5%86%85%E7%BD%AEfixture%E4%B9%8Bcache%E4%BD%BF%E7%94%A8/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A351-%E5%86%85%E7%BD%AEfixture%E4%B9%8Bcache%E4%BD%BF%E7%94%A8/</id>
-    <published>2022-05-15T15:58:57.777Z</published>
-    <updated>2022-05-15T20:03:32.322Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>pytest 运行完用例之后会生成一个 .pytest_cache 的缓存文件夹，用于记录用例的ids和上一次失败的用例。<br>方便我们在运行用例的时候加上–lf 和 –ff 参数，快速运行上一次失败的用例。<br>–lf, –last-failed 只重新运行上次运行失败的用例（或如果没有失败的话会全部跑）<br>–ff, –failed-first 运行所有测试，但首先运行上次运行失败的测试（这可能会重新测试，从而导致重复的fixture setup&#x2F;teardown）<br>–lf 和 –ff 相关介绍查看之前的这篇<a href="https://www.cnblogs.com/yoyoketang/p/9769559.html">https://www.cnblogs.com/yoyoketang/p/9769559.html</a></p><h1 id="cache"><a href="#cache" class="headerlink" title="cache"></a>cache</h1><p><code>pytest -h</code> 查看命令行参数，关于 cache 参数的使用方式</p><pre><code class="vhdl">&gt;pytest -h--lf, --last-failed   rerun only the tests that failed at the last run (or                        all if none failed)--ff, --failed-first  run all tests but run the last failures first. This                        may re-order tests and thus lead to repeated fixture--nf, --new-first     run tests from new files first, then the rest of the                        tests sorted by file mtime--cache-show=[CACHESHOW]                        show cache contents, don&#39;t perform collection or                        tests. Optional argument: glob (default: &#39;*&#39;).--cache-clear         remove all cache contents at start of test run.</code></pre><p>参数说明：</p><ul><li>–lf 也可以使用 <code>--last-failed</code> 仅运行上一次失败的用例</li><li>–ff 也可以使用 <code>--failed-first</code> 运行全部的用例，但是上一次失败的用例先运行</li><li>–nf 也可以使用 <code>--new-first</code> 根据文件插件的时间，新的测试用例会先运行</li><li>–cache-show&#x3D;[CACHESHOW] 显示.pytest_cache文件内容，不会收集用例也不会测试用例，选项参数: glob (默认: ‘*’)</li><li>–cache-clear 测试之前先清空.pytest_cache文件</li></ul><h1 id="–cache-show"><a href="#–cache-show" class="headerlink" title="–cache-show"></a>–cache-show</h1><p>测试案例代码test_x.py</p><pre><code class="armasm"># test_x.py# 作者-上海悠悠 QQ交流群:717225969# blog地址 https://www.cnblogs.com/yoyoketang/def test_01():    a = &quot;hello&quot;    b = &quot;hello&quot;    assert a == bdef test_02():    a = &quot;hello&quot;    b = &quot;hello world&quot;    assert a == bdef test_03():    a = &quot;hello&quot;    b = &quot;hello world&quot;    assert a in bdef test_04():    a = &quot;hello&quot;    b = &quot;hello world&quot;    assert a not in b</code></pre><p>命令行输入 运行完成后，会有2个用例失败，2个用例成功</p><pre><code class="diff">&gt;pytest test_x.py --tb=no============================= test session starts =============================collected 4 itemstest_x.py .F.F                                                           [100%]===================== 2 failed, 2 passed in 0.11 seconds ======================</code></pre><p>运行完成后，会在当前的目录生成一个 <code>.pytest_cache</code> 的缓存文件夹,层级结构如下<br><img src="/assets/2/image-20220516013951-vgcsno0.png" alt="image.png"></p><p>lastfailed 文件记录上一次运行失败的用例</p><pre><code class="json">&#123;  &quot;test_x.py::test_02&quot;: true,  &quot;test_x.py::test_04&quot;: true&#125;</code></pre><p>nodeids 文件记录所有用例的节点</p><pre><code class="bash">[  &quot;test_x.py::test_01&quot;,  &quot;test_x.py::test_02&quot;,  &quot;test_x.py::test_03&quot;,  &quot;test_x.py::test_04&quot;]</code></pre><p>于是可以通过 pytest –cache-show 命令查看cache目录</p><pre><code class="rust">D:\soft\kecheng202004\xuexi&gt;pytest --cache-show============================= test session starts =============================cachedir: \.pytest_cache---------------------------- cache values for &#39;*&#39; -----------------------------cache\lastfailed contains:  &#123;&#39;test_x.py::test_02&#39;: True, &#39;test_x.py::test_04&#39;: True&#125;cache\nodeids contains:  [&#39;test_x.py::test_01&#39;,   &#39;test_x.py::test_02&#39;,   &#39;test_x.py::test_03&#39;,   &#39;test_x.py::test_04&#39;]cache\stepwise contains:  []======================== no tests ran in 0.02 seconds =========================</code></pre><h1 id="–cache-clear"><a href="#–cache-clear" class="headerlink" title="–cache-clear"></a>–cache-clear</h1><p>–cache-clear 用于在测试用例开始之前清空cache的内容</p><blockquote><p>pytest –cache-clear</p></blockquote><p>查看pytest关于cache的更多文档 <a href="https://docs.pytest.org/en/latest/cache.html">https://docs.pytest.org/en/latest/cache.html</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;pytest 运行完用例之后会生成一个 .pytest_cache 的缓存文件夹，用于记录用例的ids和上一次失败的用例。&lt;br&gt;方便我们在</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
-    
-    <category term="01_UI自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="UI自动化测试框架" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="04_pytest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04-pytest/"/>
-    
-    
-    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pytest文档67-pytest.mark.parametrize 中使用 fixture</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A367-pytest.mark.parametrize%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20fixture/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A367-pytest.mark.parametrize%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20fixture/</id>
-    <published>2022-05-15T15:58:57.773Z</published>
-    <updated>2022-05-15T20:04:57.570Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>测试用例参数化的时候，使用 pytest.mark.parametrize 参数化传测试数据，如果我们想引用前面不同fixture返回的数据当测试用例的入参。<br>可以用fixture 参数化 prams 来间接解决这个问题</p><h1 id="使用案例"><a href="#使用案例" class="headerlink" title="使用案例"></a>使用案例</h1><p>我们需要在测试用例里面参数化，参数化的数据来源于前面不同fixture的返回值，示例</p><pre><code class="python">import pytest@pytest.fixturedef a():    return &#39;a&#39;@pytest.fixturedef b():    return &#39;b&#39;@pytest.mark.parametrize(&#39;arg&#39;, [a, b])def test_foo(arg):    assert len(arg) == 1</code></pre><p>这时候运行会报错</p><pre><code class="python">..\test_xx.py Farg = &lt;function a at 0x000001C7E77CE7B8&gt;    @pytest.mark.parametrize(&#39;arg&#39;, [a, b])    def test_foo(arg):&gt;       assert len(arg) == 1E       TypeError: object of type &#39;function&#39; has no len()\test_xx.py:16: TypeErrorFarg = &lt;function b at 0x000001C7E77CE8C8&gt;    @pytest.mark.parametrize(&#39;arg&#39;, [a, b])    def test_foo(arg):&gt;       assert len(arg) == 1E       TypeError: object of type &#39;function&#39; has no len()\test_xx.py:16: TypeError</code></pre><p>关于此问题的讨论可以看github 上的issue <a href="https://github.com/pytest-dev/pytest/issues/349">Using fixtures in pytest.mark.parametrize #349</a></p><h1 id="使用-fixture-参数化"><a href="#使用-fixture-参数化" class="headerlink" title="使用 fixture 参数化"></a>使用 fixture 参数化</h1><p>可以使用 fixture 的参数化来解决上面的问题，通过 request.getfixturevalue(“fixture name”) 方法来获取fixture的返回值<br>有些文档看到的是 request.getfuncargvalue 那是早期的版本，目前新版本改名换成了 request.getfixturevalue<br>getfixturevalue 的作用是获取 fixture 的返回值</p><pre><code class="python">import pytest# 作者-上海悠悠 QQ交流群:717225969# blog地址 https://www.cnblogs.com/yoyoketang/@pytest.fixturedef a():    return &#39;a&#39;@pytest.fixturedef b():    return &#39;b&#39;@pytest.fixture(params=[&#39;a&#39;, &#39;b&#39;])def arg(request):    return request.getfixturevalue(request.param)def test_foo(arg):    assert len(arg) == 1</code></pre><p>这样运行就不会有问题了</p><h1 id="实例场景"><a href="#实例场景" class="headerlink" title="实例场景"></a>实例场景</h1><p>web自动化的时候，想在 chrome 和 firefox 浏览器上测试同一功能的测试用例</p><pre><code class="python">import pytestfrom selenium import webdriver# 作者-上海悠悠 QQ交流群:717225969# blog地址 https://www.cnblogs.com/yoyoketang/@pytest.fixturedef chrome():    driver = webdriver.Chrome()    yield driver    driver.quit()@pytest.fixturedef firefox():    driver = webdriver.Firefox()    yield driver    driver.quit()@pytest.fixture(params=[&#39;chrome&#39;, &#39;firefox&#39;])def driver(request):    &#39;&#39;&#39;启动浏览器参数化&#39;&#39;&#39;    return request.getfixturevalue(request.param)def test_foo(driver):    &#39;&#39;&#39;测试用例&#39;&#39;&#39;    driver.get(&quot;https://www.cnblogs.com/yoyoketang/&quot;)</code></pre><p>这样就可以分别打开 chrome 和 fixfox 执行测试用例了<br>关于此问题的更多讨论可以看github 上的issue <a href="https://github.com/pytest-dev/pytest/issues/349">Using fixtures in pytest.mark.parametrize #349</a><br>还有另外一个解决方案，使用 pytest-lazy-fixture 插件解决 <a href="https://www.cnblogs.com/yoyoketang/p/14096749.html">https://www.cnblogs.com/yoyoketang/p/14096749.html</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;测试用例参数化的时候，使用 pytest.mark.parametrize 参数化传测试数据，如果我们想引用前面不同fixture返回的数据</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
-    
-    <category term="01_UI自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="UI自动化测试框架" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="04_pytest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04-pytest/"/>
-    
-    
-    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pytest文档06_fixture之yield实现teardown</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A306_fixture%E4%B9%8Byield%E5%AE%9E%E7%8E%B0teardown/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A306_fixture%E4%B9%8Byield%E5%AE%9E%E7%8E%B0teardown/</id>
-    <published>2022-05-15T15:58:57.769Z</published>
-    <updated>2022-05-15T19:57:32.822Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上一篇讲到fixture通过scope参数控制setup级别，既然有setup作为用例之前前的操作，用例执行完之后那肯定也有teardown操作。<br>这里用到fixture的teardown操作并不是独立的函数，用yield关键字呼唤teardown操作</p><h1 id="scope-x3D-”module”"><a href="#scope-x3D-”module”" class="headerlink" title="scope&#x3D;”module”"></a>scope&#x3D;”module”</h1><p>1.fixture参数scope&#x3D;”module”，module作用是整个.py文件都会生效，用例调用时，参数写上函数名称就行</p><pre><code class="python"># 新建一个文件test_f1.py# coding:utf-8import pytest&#39;&#39;&#39;** 作者：上海-悠悠 QQ交流群：588402570**&#39;&#39;&#39;@pytest.fixture(scope=&quot;module&quot;)def open():    print(&quot;打开浏览器，并且打开百度首页&quot;)def test_s1(open):    print(&quot;用例1：搜索python-1&quot;)def test_s2(open):    print(&quot;用例2：搜索python-2&quot;)def test_s3(open):    print(&quot;用例3：搜索python-3&quot;)if __name__ == &quot;__main__&quot;:    pytest.main([&quot;-s&quot;, &quot;test_f1.py&quot;])</code></pre><p>运行结果：</p><pre><code class="diff">============================= test session starts =============================platform win32 -- Python 3.6.0, pytest-3.6.3, py-1.5.4, pluggy-0.6.0rootdir: D:\, inifile:collected 3 items..\..\..\..\..\..\YOYO\test_f1.py 打开浏览器，并且打开百度首页用例1：搜索python-1.用例2：搜索python-2.用例3：搜索python-3.========================== 3 passed in 0.01 seconds ===========================</code></pre><p><strong>从结果看出，虽然test_s1,test_s2,test_s3三个地方都调用了open函数，但是它只会在第一个用例前执行一次</strong></p><p>2.如果test_s1不调用,test_s2（调用open）,test_s3不调用，运行顺序会是怎样的？</p><pre><code class="python"># 新建一个文件test_f1.py# coding:utf-8import pytest&#39;&#39;&#39;** 作者：上海-悠悠 QQ交流群：588402570**&#39;&#39;&#39;@pytest.fixture(scope=&quot;module&quot;)def open():    print(&quot;打开浏览器，并且打开百度首页&quot;)def test_s1():    print(&quot;用例1：搜索python-1&quot;)def test_s2(open):     print(&quot;用例2：搜索python-2&quot;)def test_s3():    print(&quot;用例3：搜索python-3&quot;)if __name__ == &quot;__main__&quot;:    pytest.main([&quot;-s&quot;, &quot;test_f1.py&quot;])</code></pre><p>运行结果：</p><pre><code class="diff">============================= test session starts =============================platform win32 -- Python 3.6.0, pytest-3.6.3, py-1.5.4, pluggy-0.6.0rootdir: D:\, inifile:collected 3 items..\..\..\..\..\..\YOYO\test_f1.py 用例1：搜索python-1.打开浏览器，并且打开百度首页用例2：搜索python-2.用例3：搜索python-3.========================== 3 passed in 0.01 seconds ===========================</code></pre><p><strong>从结果看出，module级别的fixture在当前.py模块里，只会在用例（test_s2）第一次调用前执行一次</strong></p><h1 id="yield执行teardown"><a href="#yield执行teardown" class="headerlink" title="yield执行teardown"></a>yield执行teardown</h1><p>1.前面讲的是在用例前加前置条件，相当于setup,既然有setup那就有teardown,fixture里面的teardown用yield来唤醒teardown的执行</p><pre><code class="python"># 新建一个文件test_f1.py# coding:utf-8import pytest&#39;&#39;&#39;** 作者：上海-悠悠 QQ交流群：588402570**&#39;&#39;&#39;@pytest.fixture(scope=&quot;module&quot;)def open():    print(&quot;打开浏览器，并且打开百度首页&quot;)    yield    print(&quot;执行teardown!&quot;)    print(&quot;最后关闭浏览器&quot;)def test_s1(open):    print(&quot;用例1：搜索python-1&quot;)def test_s2(open):    print(&quot;用例2：搜索python-2&quot;)def test_s3(open):    print(&quot;用例3：搜索python-3&quot;)if __name__ == &quot;__main__&quot;:    pytest.main([&quot;-s&quot;, &quot;test_f1.py&quot;])</code></pre><p>运行结果：</p><pre><code class="diff">============================= test session starts =============================platform win32 -- Python 3.6.0, pytest-3.6.3, py-1.5.4, pluggy-0.6.0rootdir: D:\, inifile:collected 3 items..\..\..\..\..\..\YOYO\test_f1.py 打开浏览器，并且打开百度首页用例1：搜索python-1.用例2：搜索python-2.用例3：搜索python-3.执行teardown!最后关闭浏览器========================== 3 passed in 0.01 seconds ===========================</code></pre><h1 id="yield遇到异常"><a href="#yield遇到异常" class="headerlink" title="yield遇到异常"></a>yield遇到异常</h1><p>1.如果其中一个用例出现异常，不影响yield后面的teardown执行,运行结果互不影响，并且全部用例执行完之后，yield呼唤teardown操作</p><pre><code class="python"># 新建一个文件test_f1.py# coding:utf-8import pytest&#39;&#39;&#39;** 作者：上海-悠悠 QQ交流群：588402570**&#39;&#39;&#39;@pytest.fixture(scope=&quot;module&quot;)def open():    print(&quot;打开浏览器，并且打开百度首页&quot;)    yield    print(&quot;执行teardown!&quot;)    print(&quot;最后关闭浏览器&quot;)def test_s1(open):    print(&quot;用例1：搜索python-1&quot;)    # 如果第一个用例异常了，不影响其他的用例执行    raise NameError  # 模拟异常def test_s2(open):    print(&quot;用例2：搜索python-2&quot;)def test_s3(open):    print(&quot;用例3：搜索python-3&quot;)if __name__ == &quot;__main__&quot;:    pytest.main([&quot;-s&quot;, &quot;test_f1.py&quot;])</code></pre><p>运行结果：</p><pre><code class="python">\YOYO\test_f1.py 打开浏览器，并且打开百度首页用例1：搜索python-1Fopen = None    def test_s1(open):        print(&quot;用例1：搜索python-1&quot;)          # 如果第一个用例异常了，不影响其他的用例执行&gt;       raise NameError  # 模拟异常E       NameErrorD:\YOYO\test_f1.py:16: NameError用例2：搜索python-2.用例3：搜索python-3.执行teardown!最后关闭浏览器</code></pre><p>2.如果在setup就异常了，那么是不会去执行yield后面的teardown内容了</p><p>3.yield也可以配合with语句使用，以下是官方文档给的案例</p><pre><code class="python"># 官方文档案例# content of test_yield2.pyimport smtplibimport pytest&#39;&#39;&#39;** 作者：上海-悠悠 QQ交流群：588402570**&#39;&#39;&#39;@pytest.fixture(scope=&quot;module&quot;)def smtp():    with smtplib.SMTP(&quot;smtp.gmail.com&quot;) as smtp:        yield smtp  # provide the fixture value</code></pre><h1 id="addfinalizer终结函数"><a href="#addfinalizer终结函数" class="headerlink" title="addfinalizer终结函数"></a>addfinalizer终结函数</h1><p>1.除了yield可以实现teardown,在request-context对象中注册addfinalizer方法也可以实现终结函数。</p><pre><code class="python"># 官方案例# content of conftest.pyimport smtplibimport pytest@pytest.fixture(scope=&quot;module&quot;)def smtp_connection(request):    smtp_connection = smtplib.SMTP(&quot;smtp.gmail.com&quot;, 587, timeout=5)    def fin():        print(&quot;teardown smtp_connection&quot;)        smtp_connection.close()    request.addfinalizer(fin)    return smtp_connection  # provide the fixture value</code></pre><p>2.yield和addfinalizer方法都是在测试完成后呼叫相应的代码。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;上一篇讲到fixture通过scope参数控制setup级别，既然有setup作为用例之前前的操作，用例执行完之后那肯定也有teardown</summary>
       
     
     
