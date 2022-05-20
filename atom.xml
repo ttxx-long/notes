@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-20T17:40:39.150Z</updated>
+  <updated>2022-05-20T18:08:36.695Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Jupyter Notebook安装（Windows）</title>
+    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/02_python%E6%8F%92%E4%BB%B6_jupyter/"/>
+    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/02_python%E6%8F%92%E4%BB%B6_jupyter/</id>
+    <published>2022-05-20T18:07:37.681Z</published>
+    <updated>2022-05-20T18:08:36.695Z</updated>
+    
+    <content type="html"><![CDATA[<p>Jupyter Notebook安装（Windows）</p><ol><li><p>下载Jupyter Notebook<br> （1）打开cmd（如果没有把Python安装目录添加到Path，就需要切换到Python安装目录的Scripts目录下，不过大多数的Python安装教程都会有这一步）；</p><p> <img src="/assets/2/image-20220521020425-aftpk03.png" alt="image.png"></p></li></ol><p>（2）输入pip install jupyter；</p><ol start="2"><li><p>启动Juypter Notebook<br> （1）命令行窗口输入jupyter notebook；</p><p> <img src="/assets/2/image-20220521020437-ydugrs8.png" alt="image.png"></p></li></ol><p>同时，默认浏览器会打开Jupyter Notebook窗口，说明Jupyter Notebook安装成功。</p><p><img src="/assets/2/image-20220521020447-b4gi4oq.png" alt="image.png"></p><ol start="3"><li><p>配置Jupyter Notebook<br> （1）命令行窗口输入jupyter notebook –generate-config，会发现C:\Users\用户名\ .jupyter下多出了一个配置文件jupyter_notebook_config.py；</p><p> <img src="/assets/2/image-20220521020459-2dhd2aa.png" alt="image.png"></p></li></ol><p>（2）打开这个配置文件，找到下面这句#c.NotebookApp.notebook_dir &#x3D; ‘’。</p><p><img src="/assets/2/image-20220521020506-0fcek2s.png" alt="image.png"></p><p>可以把它修改成c.NotebookApp.notebook_dir &#x3D; ‘D:\jupyter-notebook’，当然具体的目录由自己创建的文件夹决定（需要自己创建）。</p><p><img src="/assets/2/image-20220521020519-vll8ozo.png" alt="image.png"></p><p>配置文件修改完成后，以后在jupyter notebook中写的代码都会保存在该目录下。现在重新启动jupyter notebook，就进入了新的工作目录；</p><p><img src="/assets/2/image-20220521020528-wexy3m4.png" alt="image.png"></p><ol start="4"><li>添加代码自动补全功能（可选）<br> （1）打开cmd，输入pip install jupyter_contrib_nbextensions，等待安装成功；</li></ol><p>（2）安装完之后需要配置nbextension（配置前要确保已关闭jupyter notebook），在cmd中输入jupyter contrib nbextension install –user –skip-running-check，等待配置成功；</p><p>（3）在前两步成功的情况下，启动jupyter notebook，会发现在选项栏中多出了Nbextension的选项，点开该选项，并勾选Hinterland，即可添加代码自动补全功能。</p><p><img src="/assets/2/image-20220521020535-pwhm2y0.png" alt="image.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Jupyter Notebook安装（Windows）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载Jupyter Notebook&lt;br&gt; （1）打开cmd（如果没有把Python安装目录添加到Path，就需要切换到Python安装目录的Scripts目录下，不过大多数的Pyth</summary>
+      
+    
+    
+    
+    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    
+    <category term="03_python数据分析" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03-python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python数据分析入门实例-pandas_matplotlib</title>
     <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/"/>
     <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/</id>
     <published>2022-05-20T16:49:23.564Z</published>
-    <updated>2022-05-20T17:40:39.150Z</updated>
+    <updated>2022-05-20T17:42:24.317Z</updated>
     
     <content type="html"><![CDATA[<pre><code># 1. 读取csv文件道程序中，用一个合适的变量存储它# 2. 清洗，处理# 3. 可视化，画图# 安装 第三方库   jupyter# series  一维数据,dataframe  二维数据（csv）# 打开jupyter服务import pandas as pddf = pd.read_csv(&quot;文件名.csv&quot;)  #  读取所有的数据type(df)# pandas.core.frame.DateFramedf# 表格文件df.info()    # 文件属性df.columns   # 获取所有的列名# 删除无用列del(df[&quot;需要删除的列名&quot;]) # 删除原数据   df.列名(列名不能包含空格)dfhead()# df.drop(删除一行或者一列) df.drop_duplicates(删除重复数据)  df.dropna(删除空白数据) # df.drop([&quot;列名1&quot;,&quot;列名2&quot;]，axis = 1,inplace = True)# 一列表的形式删除列    inplace 是否在原数据上执行df.columns   # 获取所有的列名df.columns = [要修改的列名]   # 修改列名df.place #  假设此列为出版地# 先分组，然后数每组有多少数据count_df = df.groupby([&quot;place&quot;,&quot;date&quot;])    # 分组place_count = count_df[&quot;Identifier&quot;].count()  # 统计place_sorted = place_count.sort_values(ascending = False)    # False  降序   True  升序# 数据可视化，画图# 画什么图？？# 趋势，规律  画线图# 分布占比图  饼图@matplotlib inlineimport matplotlib.pyplot  as  pltlabels = place_sorted.index[:6]   #  取前六位values = place_sorted.values[:6]  #  取前六位plt.pie(calues,labels = labels,autopct=&quot;%.1f%%&quot;)plt.axis(&quot;equal&quot;)</code></pre>]]></content>
     
@@ -546,40 +574,6 @@ option.add_experimental_option(&amp;#</summary>
       
       
     <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;pytest 的插件完成之后，可以上传到 github，方便其他小伙伴通过 pip 源码安装。如果我们想通过 &lt;code&gt;pip insta</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
-    
-    <category term="01_UI自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="UI自动化测试框架" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="04_pytest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04-pytest/"/>
-    
-    
-    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pytest文档04_测试用例setup和teardown</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A304_%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8Bsetup%E5%92%8Cteardown/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A304_%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8Bsetup%E5%92%8Cteardown/</id>
-    <published>2022-05-15T15:58:57.794Z</published>
-    <updated>2022-05-15T19:56:59.635Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>学过unittest的都知道里面用前置和后置setup和teardown非常好用，在每次用例开始前和结束后都去执行一次。<br>当然还有更高级一点的setupClass和teardownClass，需配合@classmethod装饰器一起使用，在做selenium自动化的时候，它的效率尤为突出，可以只启动一次浏览器执行多个用例。<br>pytest框架也有类似于setup和teardown的语法，并且还不止这四个</p><h1 id="用例运行级别"><a href="#用例运行级别" class="headerlink" title="用例运行级别"></a>用例运行级别</h1><ul><li>模块级（setup_module&#x2F;teardown_module）开始于模块始末，全局的</li><li>函数级（setup_function&#x2F;teardown_function）只对函数用例生效（不在类中）</li><li>类级（setup_class&#x2F;teardown_class）只在类中前后运行一次(在类中)</li><li>方法级（setup_method&#x2F;teardown_method）开始于方法始末（在类中）</li><li>类里面的（setup&#x2F;teardown）运行在调用方法的前后</li></ul><h1 id="函数式"><a href="#函数式" class="headerlink" title="函数式"></a>函数式</h1><h3 id="setup-function-x2F-teardown-function"><a href="#setup-function-x2F-teardown-function" class="headerlink" title="setup_function&#x2F;teardown_function"></a>setup_function&#x2F;teardown_function</h3><p>1.pytest框架支持函数和类两种用例方式，先看函数里面的前置与后置用法：</p><blockquote><p><strong>setup_function&#x2F;teardown_function</strong> 每个用例开始和结束调用一次</p></blockquote><pre><code class="python"># test_fixt.py# coding:utf-8import pytest# 函数式** 作者：上海-悠悠 QQ交流群：588402570**def setup_function():    print(&quot;setup_function：每个用例开始前都会执行&quot;)def teardown_function():    print(&quot;teardown_function：每个用例结束后都会执行&quot;)def test_one():    print(&quot;正在执行----test_one&quot;)    x = &quot;this&quot;    assert &#39;h&#39; in xdef test_two():    print(&quot;正在执行----test_two&quot;)    x = &quot;hello&quot;    assert hasattr(x, &#39;check&#39;)def test_three():    print(&quot;正在执行----test_three&quot;)    a = &quot;hello&quot;    b = &quot;hello world&quot;    assert a in bif __name__ == &quot;__main__&quot;:    pytest.main([&quot;-s&quot;, &quot;test_fixt.py&quot;])</code></pre><p>运行结果：</p><pre><code class="markdown">============================= test session starts =============================platform win32 -- Python 3.6.0, pytest-3.6.3, py-1.5.4, pluggy-0.6.0rootdir: E:\YOYO, inifile:collected 3 itemstest_fixt.py setup_function：每个用例开始前都会执行正在执行----test_one.teardown_function：每个用例结束后都会执行setup_function：每个用例开始前都会执行正在执行----test_twoFteardown_function：每个用例结束后都会执行setup_function：每个用例开始前都会执行正在执行----test_three.teardown_function：每个用例结束后都会执行================================== FAILURES ===================================__________________________________ test_two ___________________________________    def test_two():        print(&quot;正在执行----test_two&quot;)        x = &quot;hello&quot;&gt;       assert hasattr(x, &#39;check&#39;)E       AssertionError: assert FalseE        +  where False = hasattr(&#39;hello&#39;, &#39;check&#39;)test_fixt.py:19: AssertionError===================== 1 failed, 2 passed in 0.03 seconds ======================</code></pre><p>2.从结果可以看出用例执行顺序：setup_function》用例1》teardown_function， setup_function》用例2》teardown_function， setup_function》用例3》teardown_function</p><p><strong>备注：-s参数是为了显示用例的打印信息。 -q参数只显示结果，不显示过程</strong></p><h3 id="setup-module-x2F-teardown-module"><a href="#setup-module-x2F-teardown-module" class="headerlink" title="setup_module&#x2F;teardown_module"></a>setup_module&#x2F;teardown_module</h3><p>1.setup_module是所有用例开始前只执行一次，teardown_module是所有用例结束后只执行一次</p><pre><code class="python"># test_fixt.py# coding:utf-8import pytest# 函数式** 作者：上海-悠悠 QQ交流群：588402570**def setup_module():    print(&quot;setup_module：整个.py模块只执行一次&quot;)    print(&quot;比如：所有用例开始前只打开一次浏览器&quot;)def teardown_module():    print(&quot;teardown_module：整个.py模块只执行一次&quot;)    print(&quot;比如：所有用例结束只最后关闭浏览器&quot;)def setup_function():    print(&quot;setup_function：每个用例开始前都会执行&quot;)def teardown_function():    print(&quot;teardown_function：每个用例结束前都会执行&quot;)def test_one():    print(&quot;正在执行----test_one&quot;)    x = &quot;this&quot;    assert &#39;h&#39; in xdef test_two():    print(&quot;正在执行----test_two&quot;)    x = &quot;hello&quot;    assert hasattr(x, &#39;check&#39;)def test_three():    print(&quot;正在执行----test_three&quot;)    a = &quot;hello&quot;    b = &quot;hello world&quot;    assert a in bif __name__ == &quot;__main__&quot;:    pytest.main([&quot;-s&quot;, &quot;test_fixt.py&quot;])</code></pre><p>2.从运行结果可以看到setup_module和teardown_module只执行了一次</p><pre><code class="css">test_fixt.py setup_module：整个.py模块只执行一次比如：所有用例开始前只打开一次浏览器setup_function：每个用例开始前都会执行正在执行----test_one.teardown_function：每个用例结束前都会执行setup_function：每个用例开始前都会执行正在执行----test_twoFteardown_function：每个用例结束前都会执行setup_function：每个用例开始前都会执行正在执行----test_three.teardown_function：每个用例结束前都会执行teardown_module：整个.py模块只执行一次比如：所有用例结束只最好关闭浏览器</code></pre><p><strong>备注：setup_function&#x2F;teardown_function和setup_module&#x2F;teardown_module这四种方法是可以任意组合的，用一个和多个都可以</strong></p><h1 id="类和方法"><a href="#类和方法" class="headerlink" title="类和方法"></a>类和方法</h1><p>1.setup&#x2F;teardown和unittest里面的setup&#x2F;teardown是一样的功能，setup_class和teardown_class等价于unittest里面的setupClass和teardownClass</p><pre><code class="python">#test_fixtclass.py# coding:utf-8import pytest# 类和方法** 作者：上海-悠悠 QQ交流群：588402570**class TestCase():    def setup(self):        print(&quot;setup: 每个用例开始前执行&quot;)    def teardown(self):        print(&quot;teardown: 每个用例结束后执行&quot;)    def setup_class(self):        print(&quot;setup_class：所有用例执行之前&quot;)    def teardown_class(self):        print(&quot;teardown_class：所有用例执行之前&quot;)    def setup_method(self):        print(&quot;setup_method:  每个用例开始前执行&quot;)    def teardown_method(self):        print(&quot;teardown_method:  每个用例结束后执行&quot;)    def test_one(self):        print(&quot;正在执行----test_one&quot;)        x = &quot;this&quot;        assert &#39;h&#39; in x    def test_two(self):        print(&quot;正在执行----test_two&quot;)        x = &quot;hello&quot;        assert hasattr(x, &#39;check&#39;)    def test_three(self):        print(&quot;正在执行----test_three&quot;)        a = &quot;hello&quot;        b = &quot;hello world&quot;        assert a in bif __name__ == &quot;__main__&quot;:    pytest.main([&quot;-s&quot;, &quot;test_fixtclass.py&quot;])</code></pre><p>运行结果</p><pre><code class="makefile">test_fixtclass.py setup_class：所有用例执行之前setup_method:  每个用例开始前执行setup: 每个用例开始前执行正在执行----test_one.teardown: 每个用例结束后执行teardown_method:  每个用例结束后执行setup_method:  每个用例开始前执行setup: 每个用例开始前执行正在执行----test_twoFteardown: 每个用例结束后执行teardown_method:  每个用例结束后执行setup_method:  每个用例开始前执行setup: 每个用例开始前执行正在执行----test_three.teardown: 每个用例结束后执行teardown_method:  每个用例结束后执行teardown_class：所有用例执行之前</code></pre><p>2.从结果看出，运行的优先级：setup_class》setup_method》setup 》用例》teardown》teardown_method》teardown_class<br><strong>备注：这里setup_method和teardown_method的功能和setup&#x2F;teardown功能是一样的，一般二者用其中一个即可</strong></p><h1 id="函数和类混合"><a href="#函数和类混合" class="headerlink" title="函数和类混合"></a>函数和类混合</h1><p>1.如果一个.py的文件里面既有函数用例又有类和方法用例，运行顺序又是怎样的呢？</p><pre><code class="python"># coding:utf-8import pytest# 类和方法** 作者：上海-悠悠 QQ交流群：588402570**def setup_module():    print(&quot;setup_module：整个.py模块只执行一次&quot;)    print(&quot;比如：所有用例开始前只打开一次浏览器&quot;)def teardown_module():    print(&quot;teardown_module：整个.py模块只执行一次&quot;)    print(&quot;比如：所有用例结束只最后关闭浏览器&quot;)def setup_function():    print(&quot;setup_function：每个用例开始前都会执行&quot;)def teardown_function():    print(&quot;teardown_function：每个用例结束前都会执行&quot;)def test_one():    print(&quot;正在执行----test_one&quot;)    x = &quot;this&quot;    assert &#39;h&#39; in xdef test_two():    print(&quot;正在执行----test_two&quot;)    x = &quot;hello&quot;    assert hasattr(x, &#39;check&#39;)class TestCase():    def setup_class(self):        print(&quot;setup_class：所有用例执行之前&quot;)    def teardown_class(self):        print(&quot;teardown_class：所有用例执行之前&quot;)    def test_three(self):        print(&quot;正在执行----test_three&quot;)        x = &quot;this&quot;        assert &#39;h&#39; in x    def test_four(self):        print(&quot;正在执行----test_four&quot;)        x = &quot;hello&quot;        assert hasattr(x, &#39;check&#39;)if __name__ == &quot;__main__&quot;:    pytest.main([&quot;-s&quot;, &quot;test_fixtclass.py&quot;])</code></pre><p>运行结果：</p><pre><code class="css">test_fixtclass.py setup_module：整个.py模块只执行一次比如：所有用例开始前只打开一次浏览器setup_function：每个用例开始前都会执行正在执行----test_one.teardown_function：每个用例结束前都会执行setup_function：每个用例开始前都会执行正在执行----test_twoFteardown_function：每个用例结束前都会执行setup_class：所有用例执行之前正在执行----test_three.正在执行----test_fourFteardown_class：所有用例执行之前teardown_module：整个.py模块只执行一次比如：所有用例结束只最后关闭浏览器</code></pre><p>2.从运行结果看出，setup_module&#x2F;teardown_module的优先级是最大的，然后函数里面用到的setup_function&#x2F;teardown_function与类里面的setup_class&#x2F;teardown_class互不干涉</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;学过unittest的都知道里面用前置和后置setup和teardown非常好用，在每次用例开始前和结束后都去执行一次。&lt;br&gt;当然还有更高</summary>
       
     
     

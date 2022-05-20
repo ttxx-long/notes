@@ -466,7 +466,7 @@
                             &nbsp;
                             03_python数据分析
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/">python数据分析入门实例-pandas_matplotlib</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/">python数据分析入门实例-pandas_matplotlib</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/02_python%E6%8F%92%E4%BB%B6_jupyter/">Jupyter Notebook安装（Windows）</a></li>  </ul> 
                     </li> 
                      <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/">测试高阶</a></li>  </ul> 
                     </li> 
@@ -1550,6 +1550,81 @@
 </aside>
             
             <section id="main">
+        <article id="post-02_测试理论/05_第五章APP测试/999_APP测试文件/03_逍遥虚拟机" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05-%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/">05_第五章APP测试</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05-%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999-APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/">999_APP测试文件</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/" rel="tag">测试理论</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_%E9%80%8D%E9%81%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/">
+            <time datetime="2022-05-15T07:36:01.425Z" itemprop="datePublished">2022-05-15</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_%E9%80%8D%E9%81%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/">逍遥虚拟机</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+            
+        
+        
+            <p>1、先进入逍遥模拟器安装目录（MEmu文件夹下），如：D:\Program Files\Microvirt\MEmu  （如果设置变量  不需要）<br>2、在CMD下输入：adb connect 127.0.0.1:21503<br>我输入后提示：already connected to 127.0.0.1:21503<br>3、查看是否连接到模拟器，输入命令：adb devices<br>我输入后提示以下两行：<br>List of devices attached<br>127.0.0.1:21503 device<br>4、OK，连接成功<br>5.查询模拟器信息：adb devices -l<br>6..dumpsys:查看包名和activity<br>（1）启动要查看的程序<br>（2）命令行输入：adb shell dumpsys window w |findstr / |findstr name&#x3D;<br> (3) 使用adb shell dumpsys window | findstr mCurrentFocus  命令查看当前运行的包名和Activity更清晰一些。</p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-02_测试理论/05_第五章APP测试/999_APP测试文件/02_常用的adb的命令操作" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -2349,100 +2424,6 @@
             </div>   
             <div class="article-more-link">
                 <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/02_locust/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-02_测试理论/04_第四章性能测试/905_性能测试文件/03_各项指标的计算方法" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04-%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">04_第四章性能测试</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04-%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905-%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/">905_性能测试文件</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E8%AF%BE%E5%89%8D/" rel="tag">课前</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_%E5%90%84%E9%A1%B9%E6%8C%87%E6%A0%87%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/">
-            <time datetime="2022-05-15T07:36:01.405Z" itemprop="datePublished">2022-05-15</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_%E5%90%84%E9%A1%B9%E6%8C%87%E6%A0%87%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/">各项指标的计算方法</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h4 id="响应时间：对请求作出响应所需要的时间"><a href="#响应时间：对请求作出响应所需要的时间" class="headerlink" title="响应时间：对请求作出响应所需要的时间"></a>响应时间：对请求作出响应所需要的时间</h4><pre><code>网络传输时间：N1+N2+N3+N4
-应用服务器处理时间：A1+A3
-数据库服务器处理时间：A2
-响应时间=N1+N2+N3+N4+A1+A3+A2
-</code></pre>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_%E5%90%84%E9%A1%B9%E6%8C%87%E6%A0%87%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/#more">查看更多</a>
             </div>
         
         <footer class="article-footer">
