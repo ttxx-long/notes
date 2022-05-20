@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-20T15:38:55.182Z</updated>
+  <updated>2022-05-20T17:40:39.150Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python数据分析入门实例-pandas_matplotlib</title>
+    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/"/>
+    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/</id>
+    <published>2022-05-20T16:49:23.564Z</published>
+    <updated>2022-05-20T17:40:39.150Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code># 1. 读取csv文件道程序中，用一个合适的变量存储它# 2. 清洗，处理# 3. 可视化，画图# 安装 第三方库   jupyter# series  一维数据,dataframe  二维数据（csv）# 打开jupyter服务import pandas as pddf = pd.read_csv(&quot;文件名.csv&quot;)  #  读取所有的数据type(df)# pandas.core.frame.DateFramedf# 表格文件df.info()    # 文件属性df.columns   # 获取所有的列名# 删除无用列del(df[&quot;需要删除的列名&quot;]) # 删除原数据   df.列名(列名不能包含空格)dfhead()# df.drop(删除一行或者一列) df.drop_duplicates(删除重复数据)  df.dropna(删除空白数据) # df.drop([&quot;列名1&quot;,&quot;列名2&quot;]，axis = 1,inplace = True)# 一列表的形式删除列    inplace 是否在原数据上执行df.columns   # 获取所有的列名df.columns = [要修改的列名]   # 修改列名df.place #  假设此列为出版地# 先分组，然后数每组有多少数据count_df = df.groupby([&quot;place&quot;,&quot;date&quot;])    # 分组place_count = count_df[&quot;Identifier&quot;].count()  # 统计place_sorted = place_count.sort_values(ascending = False)    # False  降序   True  升序# 数据可视化，画图# 画什么图？？# 趋势，规律  画线图# 分布占比图  饼图@matplotlib inlineimport matplotlib.pyplot  as  pltlabels = place_sorted.index[:6]   #  取前六位values = place_sorted.values[:6]  #  取前六位plt.pie(calues,labels = labels,autopct=&quot;%.1f%%&quot;)plt.axis(&quot;equal&quot;)</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;pre&gt;&lt;code&gt;# 1. 读取csv文件道程序中，用一个合适的变量存储它
+# 2. 清洗，处理
+# 3. 可视化，画图
+# 安装 第三方库   jupyter
+# series  一维数据,dataframe  二维数据（csv）
+# 打开jupyter服务
+import </summary>
+      
+    
+    
+    
+    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    
+    <category term="03_python数据分析" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03-python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python_tkinter_图形界面编程</title>
+    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02_python_tkinter/01_tkinter/"/>
+    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02_python_tkinter/01_tkinter/</id>
+    <published>2022-05-20T16:06:49.695Z</published>
+    <updated>2022-05-20T16:42:32.993Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="系统登录"><a href="#系统登录" class="headerlink" title="系统登录"></a>系统登录</h2><pre><code># 安装  pip install tkinterfrom tkinter import *from tkinter import messageboxwindow = TK()window.title(&quot;灵犀教育管理系统&quot;)window.geometry(&quot;300x300+400+400&quot;)name_label = Lable(window,text = &quot;用户名&quot;)pwd_label = Lable(window,text = &quot;密码&quot;)name_entry=Entry(window)pwd_entry = Entry(window,show = &quot;*&quot;)uesrs = &#123;    &quot;admin&quot;:&quot;123&quot;&#125;def login()    # 获取用户名密码    name=name_entry.get()    pwd = pwd_entry.get()    if name ==&quot;&quot;:        messagebox.showerror(title= &quot;错误提示&quot;，message = &quot;用户名不能为空&quot;)    elif pwd ==&quot;&quot;:        messagebox.showerror(title= &quot;错误提示&quot;，message = &quot;密码不能为空&quot;)    else:        # 判断用户名是否存在，以及密码是否正确        if useer.get(name) == pwd:            messagebos.showinfo(title= &quot;提示&quot;，message = &quot;登陆成功&quot;)        else:            messagebox.showerror(title= &quot;错误提示&quot;，message = &quot;登陆失败&quot;)            login_btn = Button(window,text = &quot;登录&quot;，width = 8, command =login )#name_label.pack()  #  pack 居中顺序排列#pwd_label.pack()#name_entry.pack()#pwd_entry.pack()#login_btn.pack()# place(x,y)  #  详细位置布局# grid 表格形式name_label.grid(row = 0,column = 0,padx = 30,pady = 20)name_entry.grid(row = 0,column = 1)pwd_label.grid(row = 1,column = 0)pwd_entry.grid(row = 1,column = 1)login_btn.grid(row = 2,colimn = 1,pady = 20,stick = E)window.mainloop()</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;系统登录&quot;&gt;&lt;a href=&quot;#系统登录&quot; class=&quot;headerlink&quot; title=&quot;系统登录&quot;&gt;&lt;/a&gt;系统登录&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;# 安装  pip install tkinter
+from tkinter import *
+from t</summary>
+      
+    
+    
+    
+    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    
+    <category term="02_python_tkinter" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02-python-tkinter/"/>
+    
+    
+    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    
+  </entry>
   
   <entry>
     <title>python第三方库-scrapy爬虫框架</title>
@@ -520,75 +580,6 @@ option.add_experimental_option(&amp;#</summary>
       
       
     <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;学过unittest的都知道里面用前置和后置setup和teardown非常好用，在每次用例开始前和结束后都去执行一次。&lt;br&gt;当然还有更高</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
-    
-    <category term="01_UI自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="UI自动化测试框架" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="04_pytest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04-pytest/"/>
-    
-    
-    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pytest文档43-元数据使用(pytest-metadata)</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A343-%E5%85%83%E6%95%B0%E6%8D%AE%E4%BD%BF%E7%94%A8(pytest-metadata)/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A343-%E5%85%83%E6%95%B0%E6%8D%AE%E4%BD%BF%E7%94%A8(pytest-metadata)/</id>
-    <published>2022-05-15T15:58:57.788Z</published>
-    <updated>2022-05-15T20:02:56.059Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>什么是元数据？元数据是关于数据的描述，存储着关于数据的信息，为人们更方便地检索信息提供了帮助。<br>pytest 框架里面的元数据可以使用 pytest-metadata 插件实现。文档地址<a href="https://pypi.org/project/pytest-metadata/">https://pypi.org/project/pytest-metadata/</a></p><h1 id="pytest-metadata-环境准备"><a href="#pytest-metadata-环境准备" class="headerlink" title="pytest-metadata 环境准备"></a>pytest-metadata 环境准备</h1><p>使用 pip 安装 pytest-metadata</p><blockquote><p>pip install pytest-metadata</p></blockquote><h1 id="查看-pytest-元数据"><a href="#查看-pytest-元数据" class="headerlink" title="查看 pytest 元数据"></a>查看 pytest 元数据</h1><p>使用pytest 执行用例的时候加上 <code>-v</code> 参数(或<code>--verbose</code>),在控制台输出报告的头部就会输出元数据(metadata)</p><pre><code class="lua">&gt;pytest --verbose============================= test session starts =============================platform win32 -- Python 3.6.0, pytest-4.5.0, py-1.5.4, pluggy-0.13.1 -- e:\python36\python.execachedir: .pytest_cachemetadata: &#123;&#39;Python&#39;: &#39;3.6.0&#39;, &#39;Platform&#39;: &#39;Windows-10-10.0.17134-SP0&#39;, &#39;Packages&#39;: &#123;&#39;pytest&#39;: &#39;4.5.0&#39;, &#39;py&#39;: &#39;1.5.4&#39;, &#39;pluggy&#39;: &#39;0.13.1&#39;&#125;, &#39;Plugins&#39;: &#123;&#39;allure-pytest&#39;: &#39;2.8.6&#39;, &#39;PyTestReport&#39;: &#39;0.1.9.3&#39;, &#39;assume&#39;: &#39;2.2.1&#39;, &#39;forked&#39;: &#39;0.2&#39;, &#39;html&#39;: &#39;1.19.0&#39;, &#39;metadata&#39;: &#39;1.7.0&#39;, &#39;ordering&#39;: &#39;0.6&#39;, &#39;repeat&#39;: &#39;0.7.0&#39;, &#39;rerunfailures&#39;: &#39;8.0&#39;, &#39;xdist&#39;: &#39;1.23.2&#39;&#125;, &#39;JAVA_HOME&#39;: &#39;D:\\java\\jdk1.8&#39;&#125;rootdir: D:\soft\code\pytest_api_2020_03plugins: allure-pytest-2.8.6</code></pre><p>可以获取到的元数据</p><table><thead><tr><th>Key</th><th>Description</th><th>Example</th></tr></thead><tbody><tr><td>Python</td><td>Python 版本</td><td>‘3.6.0’</td></tr><tr><td>Platform</td><td>运行平台</td><td>‘Windows-10-10.0.17134-SP0’</td></tr><tr><td>Packages</td><td>pytest 包相关信息</td><td>{‘pytest’: ‘4.5.0’, ‘py’: ‘1.5.4’, ‘pluggy’: ‘0.13.1’}</td></tr><tr><td>Plugins</td><td>pytest 插件</td><td>{‘allure-pytest’: ‘2.8.6’, ‘PyTestReport’: ‘0.1.9.3’}</td></tr><tr><td>JAVA_HOME</td><td>JAVA环境变量</td><td>‘D:\java\jdk1.8’</td></tr></tbody></table><p>元数据是以键值对(key-value)方式存储的</p><h1 id="添加-metadata"><a href="#添加-metadata" class="headerlink" title="添加 metadata"></a>添加 metadata</h1><p>我们可以在命令行用 <code>--metadata</code> 参数添加键值对(key, value)的元数据。<br>比如当我们完成了一个项目，需要添加作者信息，于是就可以添加元数据</p><blockquote><p>pytest –metadata auther yoyo</p></blockquote><p>如果需要添加多个元数据，可以使用多次 <code>--metadata</code> 参数添加</p><blockquote><p>pytest –metadata auther yoyo –metadata version v1.0</p></blockquote><p>从文档上看可以支持json格式，一次性传多组元数据，使用<code>--metadata-from-json</code>,但我自己试了下，并不支持这个参数,这种方式可以忽略！</p><blockquote><p>pytest –metadata-from-json ‘{“cat_says”: “bring the cat nip”, “human_says”: “yes kitty”}’</p></blockquote><h1 id="pytest-metadata-hook函数"><a href="#pytest-metadata-hook函数" class="headerlink" title="pytest_metadata hook函数"></a>pytest_metadata hook函数</h1><p>在代码里面也可以新增&#x2F;修改&#x2F;删除 元数据，我们可以使用 pytest_metadata hook函数</p><pre><code class="python">import pytest@pytest.mark.optionalhookdef pytest_metadata(metadata):    metadata.pop(&quot;password&quot;, None)</code></pre><p>我们可以使用 metadata fixture，用于测试用例或fixture 访问元数据（metadata）</p><pre><code class="python">def test_metadata(metadata):    assert &#39;metadata&#39; in metadata[&#39;Plugins&#39;]</code></pre><p>在插件里面访问 metadata，可以在config对象使用 _metadata 属性来新增&#x2F;修改&#x2F;删除 元数据</p><pre><code class="lua">def pytest_configure(config):  if hasattr(config, &#39;_metadata&#39;):      config._metadata[&#39;foo&#39;] = &#39;bar&#39;</code></pre><h1 id="插件集成"><a href="#插件集成" class="headerlink" title="插件集成"></a>插件集成</h1><p>下面是一个方便的插件列表，这些插件要么读取元数据，要么对元数据有贡献：</p><ul><li>pytest-base-url - Adds the base URL to the metadata.</li><li>pytest-html - Displays the metadata at the start of each report.</li><li>pytest-selenium - Adds the driver, capabilities, and remote server to the metadata.</li></ul><h1 id="pytest-ini-管理元数据"><a href="#pytest-ini-管理元数据" class="headerlink" title="pytest.ini 管理元数据"></a>pytest.ini 管理元数据</h1><p>如果新增的元数据较多，在命令行输入不太方便，可以在pytest.ini配置里面配置你的项目元数据</p><pre><code class="haskell"># pytest.ini# 作者-上海悠悠 QQ交流群:717225969# blog地址 https://www.cnblogs.com/yoyoketang/[pytest]addopts = -v   --html=report.html   --self-contained-html  --metadata auther yoyo   --metadata version v1.0</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;什么是元数据？元数据是关于数据的描述，存储着关于数据的信息，为人们更方便地检索信息提供了帮助。&lt;br&gt;pytest 框架里面的元数据可以使用</summary>
-      
-    
-    
-    
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
-    
-    <category term="01_UI自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    <category term="UI自动化测试框架" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="04_pytest" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04-pytest/"/>
-    
-    
-    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pytest文档05_fixture之conftest.py</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A305_fixture%E4%B9%8Bconftest.py/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A305_fixture%E4%B9%8Bconftest.py/</id>
-    <published>2022-05-15T15:58:57.782Z</published>
-    <updated>2022-05-15T19:57:25.346Z</updated>
-    
-    <content type="html"><![CDATA[<p>前言</p><p>前面一篇讲到用例加setup和teardown可以实现在测试用例之前或之后加入一些操作，但这种是整个脚本全局生效的，如果我想实现以下场景：<br>用例1需要先登录，用例2不需要登录，用例3需要先登录。很显然这就无法用setup和teardown来实现了。这就是本篇学习的目的，自定义测试用例的预置条件</p><h1 id="fixture优势"><a href="#fixture优势" class="headerlink" title="fixture优势"></a>fixture优势</h1><p>1.firture相对于setup和teardown来说应该有以下几点优势</p><ul><li>命名方式灵活，不局限于setup和teardown这几个命名</li><li>conftest.py 配置里可以实现数据共享，不需要import就能自动找到一些配置</li><li>scope&#x3D;”module” 可以实现多个.py跨文件共享前置, 每一个.py文件调用一次</li><li>scope&#x3D;”session” 以实现多个.py跨文件使用一个session来完成多个用例</li></ul><pre><code class="sql">fixture(scope=&quot;function&quot;, params=None, autouse=False, ids=None, name=None):    &quot;&quot;&quot;使用装饰器标记fixture的功能     ** 作者：上海-悠悠 QQ交流群：588402570**     可以使用此装饰器（带或不带参数）来定义fixture功能。 fixture功能的名称可以在以后使用     引用它会在运行测试之前调用它：test模块或类可以使用pytest.mark.usefixtures（fixturename标记。      测试功能可以直接使用fixture名称作为输入参数，在这种情况下，夹具实例从fixture返回功能将被注入。    :arg scope: scope 有四个级别参数 &quot;function&quot; (默认), &quot;class&quot;, &quot;module&quot; or &quot;session&quot;.    :arg params: 一个可选的参数列表，它将导致多个参数调用fixture功能和所有测试使用它    :arg autouse:  如果为True，则为所有测试激活fixture func 可以看到它。 如果为False（默认值）则显式需要参考来激活fixture    :arg ids: 每个字符串id的列表，每个字符串对应于params 这样他们就是测试ID的一部分。 如果没有提供ID它们将从params自动生成    :arg name:   fixture的名称。 这默认为装饰函数的名称。 如果fixture在定义它的同一模块中使用，夹具的功能名称将被请求夹具的功能arg遮蔽; 解决这个问题的一种方法是将装饰函数命名                       “fixture_ &lt;fixturename&gt;”然后使用”@ pytest.fixture（name =&#39;&lt;fixturename&gt;&#39;）“”。</code></pre><p><strong>Fixtures可以选择使用<code>yield</code>语句为测试函数提供它们的值，而不是<code>return</code>。 在这种情况下，<code>yield</code>语句之后的代码块作为拆卸代码执行，而不管测试结果如何。fixture功能必须只产生一次</strong></p><h1 id="fixture参数传入（scope-x3D-”function”）"><a href="#fixture参数传入（scope-x3D-”function”）" class="headerlink" title="fixture参数传入（scope&#x3D;”function”）"></a>fixture参数传入（scope&#x3D;”function”）</h1><p>1.实现场景：用例1需要先登录，用例2不需要登录，用例3需要先登录</p><pre><code class="python"># 新建一个文件test_fixt.py# coding:utf-8** 作者：上海-悠悠 QQ交流群：588402570**import pytest# 不带参数时默认scope=&quot;function&quot;@pytest.fixture()def login():    print(&quot;输入账号，密码先登录&quot;)def test_s1(login):    print(&quot;用例1：登录之后其它动作111&quot;)def test_s2():  # 不传login    print(&quot;用例2：不需要登录，操作222&quot;)def test_s3(login):    print(&quot;用例3：登录之后其它动作333&quot;)if __name__ == &quot;__main__&quot;:    pytest.main([&quot;-s&quot;, &quot;test_fix.py&quot;])</code></pre><p>运行结果：</p><pre><code class="diff">============================= test session starts =============================platform win32 -- Python 3.6.0, pytest-3.6.3, py-1.5.4, pluggy-0.6.0rootdir: E:\YOYO, inifile:collected 3 itemstest_fix.py 输入账号，密码先登录用例1：登录之后其它动作111.用例2：不需要登录，操作222.输入账号，密码先登录用例3：登录之后其它动作333.========================== 3 passed in 0.06 seconds ===========================</code></pre><p>2.如果@pytest.fixture()里面没有参数，那么默认scope&#x3D;”function”，也就是此时的级别的function，针对函数有效</p><h1 id="conftest-py配置"><a href="#conftest-py配置" class="headerlink" title="conftest.py配置"></a>conftest.py配置</h1><p>1.上面一个案例是在同一个.py文件中，多个用例调用一个登陆功能，如果有多个.py的文件都需要调用这个登陆功能的话，那就不能把登陆写到用例里面去了。<br>此时应该要有一个配置文件，单独管理一些预置的操作场景，pytest里面默认读取conftest.py里面的配置</p><p>conftest.py配置需要注意以下点：</p><ul><li>conftest.py配置脚本名称是固定的，不能改名称</li><li>conftest.py与运行的用例要在同一个pakage下，并且有__init__.py文件</li><li>不需要import导入 conftest.py，pytest用例会自动查找</li></ul><p>2.参考脚本代码设计如下</p><pre><code class="python">** 作者：上海-悠悠 QQ交流群：588402570**__init__.pyconftest.py    # coding:utf-8    import pytest    @pytest.fixture()    def login():        print(&quot;输入账号，密码先登录&quot;)test_fix1.py    # coding:utf-8    import pytest      def test_s1(login):        print(&quot;用例1：登录之后其它动作111&quot;)      def test_s2():  # 不传login        print(&quot;用例2：不需要登录，操作222&quot;)      def test_s3(login):        print(&quot;用例3：登录之后其它动作333&quot;)      if __name__ == &quot;__main__&quot;:        pytest.main([&quot;-s&quot;, &quot;test_fix1.py&quot;])test_fix2.py    # coding:utf-8    import pytest      def test_s4(login):        print(&quot;用例4：登录之后其它动作111&quot;)      def test_s5():  # 不传login        print(&quot;用例5：不需要登录，操作222&quot;)      if __name__ == &quot;__main__&quot;:        pytest.main([&quot;-s&quot;, &quot;test_fix2.py&quot;])</code></pre><p>3.单独运行test_fix1.py和test_fix2.py都能调用到login()方法，这样就能实现一些公共的操作可以单独拿出来了</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;前言&lt;/p&gt;
-&lt;p&gt;前面一篇讲到用例加setup和teardown可以实现在测试用例之前或之后加入一些操作，但这种是整个脚本全局生效的，如果我想实现以下场景：&lt;br&gt;用例1需要先登录，用例2不需要登录，用例3需要先登录。很显然这就无法用setup和teardown来实现了。</summary>
       
     
     

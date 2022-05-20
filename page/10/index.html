@@ -450,6 +450,24 @@
                         </a>
                          <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/">测试高阶</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/">python常用编码_整理</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/03_python_%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/">python第三方库-scrapy爬虫框架</a></li>  </ul> 
                     </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_python_tkinter
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02_python_tkinter/01_tkinter/">python_tkinter_图形界面编程</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_python数据分析
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/">python数据分析入门实例-pandas_matplotlib</a></li>  </ul> 
+                    </li> 
                      <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/">测试高阶</a></li>  </ul> 
                     </li> 
                     
@@ -1532,6 +1550,194 @@
 </aside>
             
             <section id="main">
+        <article id="post-05_测试高阶/01_爬虫技术/02_python常用编码" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/">05_测试高阶</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/">01_爬虫技术</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E8%AF%BE%E5%90%8E/" rel="tag">课后</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/">
+            <time datetime="2022-05-19T06:43:08.855Z" itemprop="datePublished">2022-05-19</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/">python常用编码_整理</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><pre><code># 去掉web页面自动化提醒标识- 自动化标识
+from selenium.webdriver.chrome.options import Option
+option = Options()
+option.add_experimental_option(&#39;excludeSwitches&#39;,[&#39;enable-automation&#39;])
+option.add_argument(&#39;--disable-blink-features-AutomationControlled&#39;)
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-05_测试高阶/01_爬虫技术/01_爬虫技术" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/">05_测试高阶</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/">01_爬虫技术</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E8%AF%BE%E5%90%8E/" rel="tag">课后</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/">
+            <time datetime="2022-05-19T02:39:37.332Z" itemprop="datePublished">2022-05-19</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/">测试高阶</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><ul>
+<li>爬虫技术接单平台<ul>
+<li><a target="_blank" rel="noopener" href="https://www.jfh.com/serviceProvider.html">解放号</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.yuanjisong.com/job">猿急送</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.proginn.com/?loginbox=show">程序员客栈</a></li>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/#more">查看更多</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-07_测试工具/06_自动化/02_自动化实操/02_API自动化/api自动化框架/03_python+requests+pytest接口自动化" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -2261,196 +2467,8 @@
 
 
     
-        <article id="post-02_测试理论/10_模拟面试题分析/03_面试官最常问的面试题及答案 -100题" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/">10_模拟面试题分析</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/" rel="tag">测试理论</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/03_%E9%9D%A2%E8%AF%95%E5%AE%98%E6%9C%80%E5%B8%B8%E9%97%AE%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%20-100%E9%A2%98/">
-            <time datetime="2022-05-16T12:20:08.193Z" itemprop="datePublished">2022-05-16</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/03_%E9%9D%A2%E8%AF%95%E5%AE%98%E6%9C%80%E5%B8%B8%E9%97%AE%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%20-100%E9%A2%98/">面试官最常问的面试题及答案-100题</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><p>1 软件的含义 程序、数据及相关文档的完整集合。</p>
-<p>2 测试与调试的区别是什么？</p>
-<p>测试是由测试人员来进行，主要目标是发现、报告和跟踪缺陷。 调试是由开发人员进行，主要目标是定位缺陷位置，分析缺陷原因，修复缺陷。</p>
-<p>3 IEEE 是什么意思？</p>
-<p>国际电气电子工程师协会</p>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/03_%E9%9D%A2%E8%AF%95%E5%AE%98%E6%9C%80%E5%B8%B8%E9%97%AE%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%20-100%E9%A2%98/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-02_测试理论/10_模拟面试题分析/02_软件测试面试题含答案" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/">10_模拟面试题分析</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/" rel="tag">测试理论</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%AB%E7%AD%94%E6%A1%88/">
-            <time datetime="2022-05-16T12:16:04.839Z" itemprop="datePublished">2022-05-16</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%AB%E7%AD%94%E6%A1%88/">软件测试面试题含答案:WEB+网络|接口测试|性能测试|自动化测试</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><p>一、WEB+网络<br>http代码表，常考题目<br>404：找不到资源</p>
-<p>500：服务器内部错误，无法完成请求。</p>
-<p>501：服务器不支持请求的功能，无法完成请求。</p>
-<p>502：充当网关或代理的服务器，从远端服务器接收到了一个无效的请求。</p>
-<p>301：永久移动。请求的资源已被永久的移动到新URI，返回信息会包括新的URI，浏览器会自动定向到新URI，今后任何新的请求都应使用新的URI代替。</p>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%AB%E7%AD%94%E6%A1%88/#more">查看更多</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
         <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/page/9/">&amp;laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/37/">37</a><a class="extend next" rel="next" href="/page/11/">下一页 &amp;raquo;</a>
+        <a class="extend prev" rel="prev" href="/page/9/">&amp;laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/38/">38</a><a class="extend next" rel="next" href="/page/11/">下一页 &amp;raquo;</a>
         </nav>
     
 
