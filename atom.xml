@@ -155,12 +155,19 @@
   </entry>
   
   <entry>
-    <title>python第-scrapy框架_课程学习笔记</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(4)/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(4)/</id>
+    <title>scrapy_gerapy爬虫管理框架</title>
+    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/05_scrapy_gerapy%E7%88%AC%E8%99%AB%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/"/>
+    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/05_scrapy_gerapy%E7%88%AC%E8%99%AB%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/</id>
     <published>2022-05-23T06:57:07.077Z</published>
-    <updated>2022-05-23T06:57:00.069Z</updated>
+    <updated>2022-05-27T07:09:56.753Z</updated>
     
+    <content type="html"><![CDATA[<h2 id="1-gerapy介绍"><a href="#1-gerapy介绍" class="headerlink" title="1. gerapy介绍"></a>1. gerapy介绍</h2><p>gerapy 是一款分布式爬虫管理框架，支持Python3，基于scrapy、scrapyd<br>scrapyd-client、scrapy-redis、scrapyd-api、scrapy-splash、jinjia2、django、vue.js开发、gerapy可以帮助我们：<br>    1. 更方便的控制爬虫运行<br>    2. 更直观的查看爬虫状态<br>    3. 更实时的查看爬去结果<br>    4. 更简单的实现项目部署<br>    5. 更统一地实现主机管理</p><h2 id="2-gerapy的安装"><a href="#2-gerapy的安装" class="headerlink" title="2. gerapy的安装"></a>2. gerapy的安装</h2><pre><code>1. 执行如下命令，等待安装完毕    pip install gerapy2. 验证gerapy是否安装成功    在终端中执行gerapy 会出现如下信息    ![wer](2232)3. gerapy 配置启动    1. 新建一个项目        gerapy init        执行完该命令之后在当前目录下生成一个gerapy文件夹，进入该文件夹，会找到一个名为projects 的文件    2. 对数据库进行初始化（在gerapy目录中操作），执行如下命令        gerapy migrate        ![image.png](assets/2/image-20220527144809-zun804x.png)        对数据库初始化之后会生成一个SQLite数据库，数据库保存主机配置和部署版本等        ![image.png](assets/2/image-20220527144834-crdotse.png)    3. 启动gerapy服务        此时启动gerapy服务的这台机器的8000端口上开启了gerapy服务，在浏览器中输入http://localhost:8000就能进入gerapy管理界面，在管理界面就可以进行主机管理和界面管理        ![image.png](assets/2/image-20220527145151-fkkxt6b.png)    4. 通过gerapy配置管理scrapy项目    5. 配置project        1. 我们可以将scrapy项目直接放到/gerapy/projects下        2. 可以在gerapy后台看到有个项目        ![image.png](assets/2/image-20220527145500-k99cqu4.png)        3. 点击部署点击部署按钮进行打包和部署，在右下角我么可以输入打包时的描述信息，类似于git的commit信息，        ![image.png](assets/2/image-20220527145743-ls1oklb.png)        然后点击打包按钮，即可发现gerapy会提示打包成功，同时在右侧显示打包的结果和打包名称        ![image.png](assets/2/image-20220527145820-tdw8if1.png)        4. 选择一个站点，点击右侧部署，将该项目部署到该站点上        ![image.png](assets/2/image-20220527150104-my849n7.png)        5. 成功部署之后会显示描述和部署时间        ![image.png](assets/2/image-20220527150307-9u2rn2l.png)        6. 来到client界面，找到部署该项目的节点，点击调度        ![image.png](assets/2/image-20220527150412-68g8gf6.png)        7. 在该节点中的项目列表中找到项目，点击右侧run运行项目        ![image.png](assets/2/image-20220527150528-q4ueh1u.png)    6. 补充        1.gerapy 与scrad有什么联系            我们仅仅使用scrapyd 是可以调用scrapy进行爬虫，只是需要使用命令进行开启爬虫 curl http://127.0.0.1:6800/schedule.json -d project=工程名 -d spider=爬虫名 使用gerapy就是将使用命令进行开启爬虫变成“小手一点”，我们在gerapy中配置scrad后，不需要使用命令行，可以通过图形化界面直接开启爬虫</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;1-gerapy介绍&quot;&gt;&lt;a href=&quot;#1-gerapy介绍&quot; class=&quot;headerlink&quot; title=&quot;1. gerapy介绍&quot;&gt;&lt;/a&gt;1. gerapy介绍&lt;/h2&gt;&lt;p&gt;gerapy 是一款分布式爬虫管理框架，支持Python3，基于scra</summary>
+      
     
     
     
@@ -178,12 +185,19 @@
   </entry>
   
   <entry>
-    <title>python第-scrapy框架_课程学习笔记</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(3)/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(3)/</id>
+    <title>scrapy_scrapyd部署</title>
+    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/04_scrapy_scrapyd%E9%83%A8%E7%BD%B2/"/>
+    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/04_scrapy_scrapyd%E9%83%A8%E7%BD%B2/</id>
     <published>2022-05-23T06:57:06.809Z</published>
-    <updated>2022-05-23T06:57:00.069Z</updated>
+    <updated>2022-05-27T06:32:45.789Z</updated>
     
+    <content type="html"><![CDATA[<h3 id="1-scrapyd的介绍"><a href="#1-scrapyd的介绍" class="headerlink" title="1. scrapyd的介绍"></a>1. scrapyd的介绍</h3><p>scrapyd是一个用于部署和运行scrapy爬虫的程序，它允许你通过json api 来部署爬虫项目和控制爬虫运行，scrapyd 是一个守护进程，监听爬虫的运行和请求，然后启动进程来执行他们</p><blockquote><p>所谓json api本质就是post请求的webapi</p></blockquote><h3 id="2-scrapyd的安装"><a href="#2-scrapyd的安装" class="headerlink" title="2. scrapyd的安装"></a>2. scrapyd的安装</h3><p>scrapyd 服务 ： pip install scrapyd<br>scrapyd 客户端： pip install scrapyd-client</p><h3 id="3-启动scrapyd服务"><a href="#3-启动scrapyd服务" class="headerlink" title="3. 启动scrapyd服务"></a>3. 启动scrapyd服务</h3><ol><li>在scrapy项目路径下 启动scrapyd 的命令： sudo scrapyd 或scrapyd</li><li>启动之后可以在本地打开运行的scrapyd，浏览器中访问本地6800端口可以查看scrapyd 的监控界面</li><li><img src="/111" alt="为配图，待截图"></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;1-scrapyd的介绍&quot;&gt;&lt;a href=&quot;#1-scrapyd的介绍&quot; class=&quot;headerlink&quot; title=&quot;1. scrapyd的介绍&quot;&gt;&lt;/a&gt;1. scrapyd的介绍&lt;/h3&gt;&lt;p&gt;scrapyd是一个用于部署和运行scrapy爬虫的程序</summary>
+      
     
     
     
