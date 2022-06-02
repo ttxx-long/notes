@@ -89,144 +89,6 @@
   </entry>
   
   <entry>
-    <title>python第-scrapy框架_课程学习笔记</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(10)/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(10)/</id>
-    <published>2022-05-23T06:57:08.658Z</published>
-    <updated>2022-05-23T06:57:00.069Z</updated>
-    
-    
-    
-    
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="学习笔记" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python第-scrapy框架_课程学习笔记</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(9)/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(9)/</id>
-    <published>2022-05-23T06:57:08.183Z</published>
-    <updated>2022-05-23T06:57:00.069Z</updated>
-    
-    
-    
-    
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="学习笔记" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python第-scrapy框架_课程学习笔记</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(8)/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(8)/</id>
-    <published>2022-05-23T06:57:07.991Z</published>
-    <updated>2022-05-23T06:57:00.069Z</updated>
-    
-    
-    
-    
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="学习笔记" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python第-scrapy框架_课程学习笔记</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(7)/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(7)/</id>
-    <published>2022-05-23T06:57:07.762Z</published>
-    <updated>2022-05-23T06:57:00.069Z</updated>
-    
-    
-    
-    
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="学习笔记" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python第-scrapy框架_课程学习笔记</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(6)/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(6)/</id>
-    <published>2022-05-23T06:57:07.386Z</published>
-    <updated>2022-05-23T06:57:00.069Z</updated>
-    
-    
-    
-    
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="学习笔记" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python第-scrapy框架_课程学习笔记</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(5)/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC%20(5)/</id>
-    <published>2022-05-23T06:57:07.265Z</published>
-    <updated>2022-05-23T06:57:00.069Z</updated>
-    
-    
-    
-    
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="学习笔记" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-  </entry>
-  
-  <entry>
     <title>scrapy_gerapy爬虫管理框架</title>
     <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/05_scrapy_gerapy%E7%88%AC%E8%99%AB%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/"/>
     <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/05_scrapy_gerapy%E7%88%AC%E8%99%AB%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/</id>
@@ -317,29 +179,6 @@
   </entry>
   
   <entry>
-    <title>python第-scrapy框架_课程学习笔记</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20%E5%89%AF%E6%9C%AC/</id>
-    <published>2022-05-23T06:57:05.495Z</published>
-    <updated>2022-05-23T06:57:00.069Z</updated>
-    
-    
-    
-    
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
-    
-    <category term="学习笔记" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
-    
-  </entry>
-  
-  <entry>
     <title>python第-scrapy框架_概念和流程</title>
     <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/01_scrapy_%E6%A6%82%E5%BF%B5%E5%92%8C%E6%B5%81%E7%A8%8B/"/>
     <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/01_scrapy_%E6%A6%82%E5%BF%B5%E5%92%8C%E6%B5%81%E7%A8%8B/</id>
@@ -407,7 +246,7 @@
     <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/02_python%E6%8F%92%E4%BB%B6_jupyter/"/>
     <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/02_python%E6%8F%92%E4%BB%B6_jupyter/</id>
     <published>2022-05-20T18:07:37.681Z</published>
-    <updated>2022-05-20T18:08:36.695Z</updated>
+    <updated>2022-06-02T17:14:12.965Z</updated>
     
     <content type="html"><![CDATA[<p>Jupyter Notebook安装（Windows）</p><ol><li><p>下载Jupyter Notebook<br> （1）打开cmd（如果没有把Python安装目录添加到Path，就需要切换到Python安装目录的Scripts目录下，不过大多数的Python安装教程都会有这一步）；</p><p> <img src="/assets/2/image-20220521020425-aftpk03.png" alt="image.png"></p></li></ol><p>（2）输入pip install jupyter；</p><ol start="2"><li><p>启动Juypter Notebook<br> （1）命令行窗口输入jupyter notebook；</p><p> <img src="/assets/2/image-20220521020437-ydugrs8.png" alt="image.png"></p></li></ol><p>同时，默认浏览器会打开Jupyter Notebook窗口，说明Jupyter Notebook安装成功。</p><p><img src="/assets/2/image-20220521020447-b4gi4oq.png" alt="image.png"></p><ol start="3"><li><p>配置Jupyter Notebook<br> （1）命令行窗口输入jupyter notebook –generate-config，会发现C:\Users\用户名\ .jupyter下多出了一个配置文件jupyter_notebook_config.py；</p><p> <img src="/assets/2/image-20220521020459-2dhd2aa.png" alt="image.png"></p></li></ol><p>（2）打开这个配置文件，找到下面这句#c.NotebookApp.notebook_dir &#x3D; ‘’。</p><p><img src="/assets/2/image-20220521020506-0fcek2s.png" alt="image.png"></p><p>可以把它修改成c.NotebookApp.notebook_dir &#x3D; ‘D:\jupyter-notebook’，当然具体的目录由自己创建的文件夹决定（需要自己创建）。</p><p><img src="/assets/2/image-20220521020519-vll8ozo.png" alt="image.png"></p><p>配置文件修改完成后，以后在jupyter notebook中写的代码都会保存在该目录下。现在重新启动jupyter notebook，就进入了新的工作目录；</p><p><img src="/assets/2/image-20220521020528-wexy3m4.png" alt="image.png"></p><ol start="4"><li>添加代码自动补全功能（可选）<br> （1）打开cmd，输入pip install jupyter_contrib_nbextensions，等待安装成功；</li></ol><p>（2）安装完之后需要配置nbextension（配置前要确保已关闭jupyter notebook），在cmd中输入jupyter contrib nbextension install –user –skip-running-check，等待配置成功；</p><p>（3）在前两步成功的情况下，启动jupyter notebook，会发现在选项栏中多出了Nbextension的选项，点开该选项，并勾选Hinterland，即可添加代码自动补全功能。</p><p><img src="/assets/2/image-20220521020535-pwhm2y0.png" alt="image.png"></p>]]></content>
     
@@ -426,7 +265,7 @@
     <category term="03_python数据分析" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03-python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
     
     
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
   </entry>
   
@@ -435,7 +274,7 @@
     <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/"/>
     <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/</id>
     <published>2022-05-20T16:49:23.564Z</published>
-    <updated>2022-05-20T17:42:24.317Z</updated>
+    <updated>2022-06-02T17:14:07.412Z</updated>
     
     <content type="html"><![CDATA[<pre><code># 1. 读取csv文件道程序中，用一个合适的变量存储它# 2. 清洗，处理# 3. 可视化，画图# 安装 第三方库   jupyter# series  一维数据,dataframe  二维数据（csv）# 打开jupyter服务import pandas as pddf = pd.read_csv(&quot;文件名.csv&quot;)  #  读取所有的数据type(df)# pandas.core.frame.DateFramedf# 表格文件df.info()    # 文件属性df.columns   # 获取所有的列名# 删除无用列del(df[&quot;需要删除的列名&quot;]) # 删除原数据   df.列名(列名不能包含空格)dfhead()# df.drop(删除一行或者一列) df.drop_duplicates(删除重复数据)  df.dropna(删除空白数据) # df.drop([&quot;列名1&quot;,&quot;列名2&quot;]，axis = 1,inplace = True)# 一列表的形式删除列    inplace 是否在原数据上执行df.columns   # 获取所有的列名df.columns = [要修改的列名]   # 修改列名df.place #  假设此列为出版地# 先分组，然后数每组有多少数据count_df = df.groupby([&quot;place&quot;,&quot;date&quot;])    # 分组place_count = count_df[&quot;Identifier&quot;].count()  # 统计place_sorted = place_count.sort_values(ascending = False)    # False  降序   True  升序# 数据可视化，画图# 画什么图？？# 趋势，规律  画线图# 分布占比图  饼图@matplotlib inlineimport matplotlib.pyplot  as  pltlabels = place_sorted.index[:6]   #  取前六位values = place_sorted.values[:6]  #  取前六位plt.pie(calues,labels = labels,autopct=&quot;%.1f%%&quot;)plt.axis(&quot;equal&quot;)</code></pre>]]></content>
     
@@ -458,7 +297,7 @@ import </summary>
     <category term="03_python数据分析" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03-python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
     
     
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
   </entry>
   
@@ -467,7 +306,7 @@ import </summary>
     <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02_python_tkinter/01_tkinter/"/>
     <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02_python_tkinter/01_tkinter/</id>
     <published>2022-05-20T16:06:49.695Z</published>
-    <updated>2022-05-20T16:42:32.993Z</updated>
+    <updated>2022-06-02T17:14:00.838Z</updated>
     
     <content type="html"><![CDATA[<h2 id="系统登录"><a href="#系统登录" class="headerlink" title="系统登录"></a>系统登录</h2><pre><code># 安装  pip install tkinterfrom tkinter import *from tkinter import messageboxwindow = TK()window.title(&quot;灵犀教育管理系统&quot;)window.geometry(&quot;300x300+400+400&quot;)name_label = Lable(window,text = &quot;用户名&quot;)pwd_label = Lable(window,text = &quot;密码&quot;)name_entry=Entry(window)pwd_entry = Entry(window,show = &quot;*&quot;)uesrs = &#123;    &quot;admin&quot;:&quot;123&quot;&#125;def login()    # 获取用户名密码    name=name_entry.get()    pwd = pwd_entry.get()    if name ==&quot;&quot;:        messagebox.showerror(title= &quot;错误提示&quot;，message = &quot;用户名不能为空&quot;)    elif pwd ==&quot;&quot;:        messagebox.showerror(title= &quot;错误提示&quot;，message = &quot;密码不能为空&quot;)    else:        # 判断用户名是否存在，以及密码是否正确        if useer.get(name) == pwd:            messagebos.showinfo(title= &quot;提示&quot;，message = &quot;登陆成功&quot;)        else:            messagebox.showerror(title= &quot;错误提示&quot;，message = &quot;登陆失败&quot;)            login_btn = Button(window,text = &quot;登录&quot;，width = 8, command =login )#name_label.pack()  #  pack 居中顺序排列#pwd_label.pack()#name_entry.pack()#pwd_entry.pack()#login_btn.pack()# place(x,y)  #  详细位置布局# grid 表格形式name_label.grid(row = 0,column = 0,padx = 30,pady = 20)name_entry.grid(row = 0,column = 1)pwd_label.grid(row = 1,column = 0)pwd_entry.grid(row = 1,column = 1)login_btn.grid(row = 2,colimn = 1,pady = 20,stick = E)window.mainloop()</code></pre>]]></content>
     
@@ -486,7 +325,7 @@ from t</summary>
     <category term="02_python_tkinter" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02-python-tkinter/"/>
     
     
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
   </entry>
   
@@ -523,7 +362,7 @@ from t</summary>
     <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/"/>
     <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/</id>
     <published>2022-05-19T06:43:08.855Z</published>
-    <updated>2022-05-20T13:10:49.883Z</updated>
+    <updated>2022-06-02T17:13:51.494Z</updated>
     
     <content type="html"><![CDATA[<pre><code># 去掉web页面自动化提醒标识- 自动化标识from selenium.webdriver.chrome.options import Optionoption = Options()option.add_experimental_option(&#39;excludeSwitches&#39;,[&#39;enable-automation&#39;])option.add_argument(&#39;--disable-blink-features-AutomationControlled&#39;)driver = webdriver.Chrome(options=option)</code></pre><pre><code># 关掉密码弹窗from selenium.webdriver.chrome.options import Optionprefs = &#123;&#125;prefs[&#39;credentials_enable_service&#39;] = Falseprefs[&#39;profile.password_manger_enabled&#39;] = Falseoption.add_experimental_option(&#39;prefs&#39;,prefs)</code></pre>]]></content>
     
@@ -543,7 +382,7 @@ option.add_experimental_option(&amp;#</summary>
     <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
   </entry>
   
@@ -552,7 +391,7 @@ option.add_experimental_option(&amp;#</summary>
     <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
     <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/</id>
     <published>2022-05-19T02:39:37.332Z</published>
-    <updated>2022-05-20T15:38:59.103Z</updated>
+    <updated>2022-06-02T17:13:46.636Z</updated>
     
     <content type="html"><![CDATA[<ul><li>爬虫技术接单平台<ul><li><a href="https://www.jfh.com/serviceProvider.html">解放号</a></li><li><a href="https://www.yuanjisong.com/job">猿急送</a></li><li><a href="https://www.proginn.com/?loginbox=show">程序员客栈</a></li><li><a href="https://codemart.com/">码市</a></li><li><a href="http://rrkf.com/">人人开发</a></li><li><a href="https://task.zbj.com/">猪八戒</a></li><li><a href="https://task.epwk.com/task/">一品威客</a></li><li><a href="https://zb.oschina.net/projects/list.html">开源众包</a></li><li><a href="https://www.taskcity.com/">智城外包网</a></li><li><a href="https://shixian.com/cases">实现网</a></li><li><a href="https://eleduck.com/categories/6/tags/0-18">电鸭社区</a></li><li><a href="https://remoteok.com/">Remoteok</a></li><li><a href="https://www.toptal.com/">Toptal</a></li><li><a href="https://angel.co/">AngelList</a></li><li><a href="https://www.yingxuan.io/">英选</a></li></ul></li></ul>]]></content>
     
@@ -572,7 +411,197 @@ option.add_experimental_option(&amp;#</summary>
     <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="课后" scheme="http://example.com/tags/%E8%AF%BE%E5%90%8E/"/>
+    <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python+requests+pytest接口自动化</title>
+    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/03_python+requests+pytest%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/03_python+requests+pytest%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/</id>
+    <published>2022-05-16T12:53:10.913Z</published>
+    <updated>2022-06-02T17:10:14.247Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、发送get请求</p><blockquote><p>#导包<br>import requests<br>#定义一个urlurl &#x3D; “<a href="http://xxxxxxx&quot;/">http://xxxxxxx&quot;</a><br>#传递参数payload&#x3D;”{&quot;head&quot;:{&quot;accessToken&quot;:&quot;&quot;,&quot;lastnotice&quot;:0,&quot;msgid&quot;:&quot;&quot;},&quot;body&quot;:{&quot;user_name&quot;:&quot;super_admin&quot;,&quot;password&quot;:&quot;b50c34503a97e7d0d44c38f72d2e91ad&quot;,&quot;role_type&quot;:1}}”<br>headers &#x3D; {‘Content-Type’: ‘text&#x2F;plain’,<br>‘Cookie’: ‘akpsysessionid&#x3D;bafc0ad457d5a99f3a4e53a1d4b32519’<br>}#发送get请求r &#x3D; requests.get( url&#x3D;url,headers&#x3D;headers, data&#x3D;payload)#打印结果print(r.text)<br>#解码print(r.encoding)<br>print(r.text.encode(‘utf-8’).decode(‘unicode_escape’))#先把返回的结果转换成utf-8，再去解码成中文的编码</p></blockquote><h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><p>2、发送post请求</p><blockquote><p>#导包<br>import requests<br>#定义一个urlurl &#x3D; “<a href="http://xxxxxxx&quot;/">http://xxxxxxx&quot;</a><br>#传递参数payload&#x3D;”{&quot;head&quot;:{&quot;accessToken&quot;:&quot;&quot;,&quot;lastnotice&quot;:0,&quot;msgid&quot;:&quot;&quot;},&quot;body&quot;:{&quot;user_name&quot;:&quot;super_admin&quot;,&quot;password&quot;:&quot;b50c34503a97e7d0d44c38f72d2e91ad&quot;,&quot;role_type&quot;:1}}”<br>headers &#x3D; {‘Content-Type’: ‘text&#x2F;plain’,<br>‘Cookie’: ‘akpsysessionid&#x3D;bafc0ad457d5a99f3a4e53a1d4b32519’<br>}#发送post请求r &#x3D; requests.post( url&#x3D;url,headers&#x3D;headers, data&#x3D;payload)#打印结果print(r.text)</p></blockquote><h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1><p>3、发送https请求</p><blockquote><p>import requests<br>url&#x3D;’<a href="https://www.ctrip.com/&#39;">https://www.ctrip.com/&#39;</a><br>#第一种解决方案，发送请求的时候忽略证书，证书的参数verify用的比较多r&#x3D;requests.post(url&#x3D;url,verify&#x3D;False)#verify参数默认为True，值为False，表示忽略证书#第二张解决方案，verify里面添加证书的路径r&#x3D;requests.post(url&#x3D;url,verify&#x3D;’证书的路径’)#verify参数默认为True，值为False，表示忽略证书<br>print(r.text)</p></blockquote><p>4、文件上传</p><blockquote><p>import requests<br>file &#x3D; {‘filename’:open(‘文件名称’,’rb’)<br>}response &#x3D; requests.post(“网址”,file)<br>print(response.text)</p></blockquote><p>5、文件下载</p><blockquote><p>#小文件下载<br>import requests<br>r &#x3D; requests.get(“<a href="https://img.sitven.cn/Tencent_blog_detail.jpg&quot;">https://img.sitven.cn/Tencent_blog_detail.jpg&quot;</a>)<br>with open(r”D:\a.jpg”, “wb”) as f:<br>f.write(r.content)#大文件下载import requests<br>def test_downloads(url, file):s &#x3D; requests.sessionr &#x3D; s.get(url, stream&#x3D;True, verify&#x3D;False)<br>with open(file, “wb”) as f:<br>for chunk in r.iter_content(chunk_size&#x3D;512):<br>f.write(chunk)if <strong>name</strong> &#x3D;&#x3D; “<strong>main</strong>“:<br>url &#x3D; “<a href="https://www.url.com/test/export&quot;">https://www.url.com/test/export&quot;</a><br>file &#x3D; “D:\a.xlsx”<br>test_downloads(url&#x3D;url, file&#x3D;file)#转载至：<a href="https://blog.csdn.net/weixin_43507959/article/details/107326912">https://blog.csdn.net/weixin_43507959/article/details/107326912</a></p></blockquote><p>6、timeout超时</p><blockquote><p>#导包<br>import requests<br>#循环10次<br>for i in range(0,10):<br>try:url&#x3D;”<a href="http://xxxxxxxxxxxxxxxx&quot;/">http://xxxxxxxxxxxxxxxx&quot;</a><br>data&#x3D;{“head”:{“lastnotice”:0,”msgid”:””,”accessToken”:”89a08bff-15d7-4d7a-9967-0b5f4fb699ce”},<br>“body”:{“clinicid”:”978f661e-1782-43bd-8675-b0ff1138ab7c”,”deptid”:”09b8515b-b01b-4771-9356-aed6b5aa01bf”,”doctorid”:”65ac0251-10ff-473a-af8a-20e8969176f7”,”registtype”:0,”card_num”:””,”bcc334”:””,”patientopt”:1,”bkc368”:”1”,”patient”:{“cardid”:””,”medicalcardid”:””,”label”:””,”sourcetype”:1,”nationid”:”01”,”maritalstatus”:0,”address”:””,”company”:””,”jobname”:””,”email”:””,”remark”:””,”bcc334”:””,”name”:”11”,”gender”:1,”phone”:””,”birthdate”:”2020-03-23”,”patienttype”:1,”szsbcardid”:””}}<br>}#发送post请求，超时时间0.03s<br>r&#x3D;requests.post(url&#x3D;url,json&#x3D;data,timeout&#x3D;0.03)<br>print(r.text)<br>print(r.cookies)<br>except:print(‘error’)<br>#可参考：<a href="https://blog.csdn.net/weixin_44350337/article/details/99655387">https://blog.csdn.net/weixin_44350337/article/details/99655387</a></p></blockquote><p>7、鉴权<br>7.1 auth参数鉴权</p><blockquote><p>import requests<br>url &#x3D; ‘<a href="http://192.168.1.1&/#39;">http://192.168.1.1&#39;</a><br>headers &#x3D; {} # 有的不带头也能请求到 不带头可以忽略这行 和headers&#x3D;headers,这两处r &#x3D; requests.get(url, auth&#x3D;(‘admin’, ‘123456’), headers&#x3D;headers, timeout&#x3D;10)<br>print(r.text)</p></blockquote><p>7.2 session操作</p><blockquote><p>#实例化session<br>session &#x3D; requests.session<br>#使用session发起请求<br>response &#x3D; session.post(url,headers&#x3D;req_header,data&#x3D;form_data)</p></blockquote><p>7.3 token操作</p><blockquote><p>import requests<br>url&#x3D;”<a href="http://xxxxxxxxxxxxxxx&quot;/">http://xxxxxxxxxxxxxxx&quot;</a><br>json&#x3D;{“head”:{“accessToken”:””,”lastnotice”:0,”msgid”:””},<br>“body”:{“username”:”15623720880”,”password”:”48028d2558577c526a017883211b4066”,”forceLogin”:0}<br>}r&#x3D;requests.post(url&#x3D;url,json&#x3D;json)print(r.text)<br>print(r.cookies)<br>#登录成功后返回token，带入下一个接口for i in range(0,1):<br>try:url&#x3D;”xxxxxxxxxxxxxxxxxx”<br>data&#x3D;{“head”:{“lastnotice”:0,”msgid”:””,”accessToken”:”89a08bff-15d7-4d7a-9967-0b5f4fb699ce”},<br>“body”:{“clinicid”:”978f661e-1782-43bd-8675-b0ff1138ab7c”,”deptid”:”09b8515b-b01b-4771-9356-aed6b5aa01bf”,”doctorid”:”65ac0251-10ff-473a-af8a-20e8969176f7”,”registtype”:0,”card_num”:””,”bcc334”:””,”patientopt”:1,”bkc368”:”1”,”patient”:{“cardid”:””,”medicalcardid”:””,”label”:””,”sourcetype”:1,”nationid”:”01”,”maritalstatus”:0,”address”:””,”company”:””,”jobname”:””,”email”:””,”remark”:””,”bcc334”:””,”name”:”11”,”gender”:1,”phone”:””,”birthdate”:”2020-03-23”,”patienttype”:1,”szsbcardid”:””}}<br>}r&#x3D;requests.post(url&#x3D;url,json&#x3D;data,timeout&#x3D;0.09)<br>print(r.text)<br>print(r.cookies)<br>except:print(‘error’)</p></blockquote><p>7.4 sign签名</p><blockquote><p>appid：wxd930ea5d5a258f4f</p><p>mch_id：10000100</p><p>device_info：1000</p><p>body：test</p><p>nonce_str：ibuaiVcKdpRxkhJA</p><p>import hashlib<br>#需要加密的字符串<br>stringA&#x3D;”appid&#x3D;wxd930ea5d5a258f4f&amp;body&#x3D;test&amp;device_info&#x3D;1000&amp;mch_id&#x3D;10000100&amp;nonce_str&#x3D;ibuaiVcKdpRxkhJA”;<br>#构建一个对象为md<br>md&#x3D;hashlib.md5<br>#对stringA字符串进行编码<br>md.update(stringA.encode)<br>#生成后的加密值<br>AES&#x3D;md.hexdigest<br>#把加密的结果，小写转大写 upper函数<br>AES&#x3D;AES.upper<br>print(AES)<br>参考微信支付：<a href="https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=4_3#">https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=4_3#</a></p></blockquote><h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1><p>8、自动化模块划分<br>config 配置文件（python package）#directory和python package大同小异</p><p>common 公共的方法（python package）</p><p>testdata 测试数据（python package）</p><p>test_case测试用例（python package）</p><p>report 报告（directory）</p><p>run_case 测试执行（python package）</p><p>log 日志</p><p><img src="/assets/2/image-20220516205752-38m0prz.png" alt="image.png"></p><p>8.1 config配置文件</p><blockquote><p>def server_ip:<br>‘’’<br>ait_ip&#x3D;’’开发环境的服务器ip<br>sit_ip&#x3D;’’测试环境的服务器ip<br>:return: 返回不同服务器的地址<br>‘’’<br>server_add&#x3D;{‘dev_ip’ : ‘<a href="http://his.xxxxxxxxxxx.com&/#39;">http://his.xxxxxxxxxxx.com&#39;</a>,<br>‘sit_ip’ : ‘<a href="http://his.xxxxxxxxxxxx.comm&/#39;">http://his.xxxxxxxxxxxx.comm&#39;</a><br>}return server_add[‘dev_ip’]<br>————————————————————————————def sql_conf:<br>‘’’<br>host数据库ip<br>user数据库用户名<br>password数据库密码<br>database:连接数据库名<br>port数据库端口<br>chrset数据库字符集 中文utf-8<br>:return:<br>‘’’<br>host&#x3D;’localhost’<br>user&#x3D;’root’<br>password&#x3D;’123456’<br>database&#x3D;’mysql’<br>port&#x3D;3306<br>charset&#x3D;’utf8’ #这用utf8，utf-8会报错<br>return host,user,password,database,port,charset</p></blockquote><p>8.2 common 公共的方法</p><blockquote><p>封装一个读取Excel表格数据的函数</p><p>对Excel表格数据的读取需要用到一个库——xlrd库import xlrd</p><p>def get_excel_value(i):’’’<br>读取表中一行的数据<br>:return:返回2，3行数据<br>‘’’<br>filename &#x3D; r”..&#x2F;testdata&#x2F;jiekou.xls” #文件要用相对路径<br>book &#x3D; xlrd.open_workbook(filename) # 打开一个工作薄，不需要手动进行关闭# sheet &#x3D; book.sheet_by_name(“Sheet1”) 根据工作表的名字，获取一个工作表对象<br>sheet &#x3D; book.sheet_by_index(0) # 获取一个工作表，以index的方式，这里是获取第1个工作表<br>return sheet.cell_value(i,1),sheet.cell_value(i,2)</p><p>print(sheet.nrows) #打印所有行</p><p>print(sheet.ncols) #打印所有列</p><p>print(sheet.row_values(0)) #打印第一行</p><p>print(sheet.col_values(0)) #打印第一列</p><p>print(sheet.cell_value(0,1)) #打印第一行，第二列</p><p>for i in range(1, sheet.nrows):</p><p>print(sheet.cell_value(i,1),sheet.cell_value(i,2))# 打印单元格[所有数据]的值</p><p>str&#x3D;’(sheet.cell_value(i,1),sheet.cell_value(i,2)))’</p><p>print(str)</p><p>for i in range(1, sheet.nrows):</p><h1 id="for-j-in-range-0-sheet-ncols"><a href="#for-j-in-range-0-sheet-ncols" class="headerlink" title="for j in range(0, sheet.ncols):"></a>for j in range(0, sheet.ncols):</h1><p>print(sheet.cell_value(i,j)) # 打印单元格[i,j]的值</p><p>———————————————————————————————import pymysql<br>from config.sql_conf import *<br>def get_sql(sql):’’’<br>:param sql:运行查询的sql语句<br>:return:数据库查询结果<br>‘’’<br>#建立一个连接对象host, user, password, database, port, charset&#x3D;sql_confdb&#x3D;pymysql.connect(host&#x3D;host,user&#x3D;user,password&#x3D;password,database&#x3D;database,port&#x3D;port,charset&#x3D;charset)#建立一个游标cursor&#x3D;db.cursor#执行sql语句cursor.execute(sql)#把sql运行的数据保存在data变量里面data&#x3D;cursor.fetchall #获取查询出的所有的值cursor.close #关闭游标<br>db.close #关闭数据库连接<br>return data</p><p>print(get_sql(“SELECT help_topic_id FROM help_topic WHERE Name&#x3D;’MOD’”)) #执行sql语句</p><p>print(type(get_sql(“SELECT help_topic_id FROM help_topic WHERE Name&#x3D;’MOD’”)))</p></blockquote><p>8.3 estdata 测试数据</p><p>主要存放xls，txt，csv测试数据</p><p><img src="/assets/2/image-20220516210004-huegsxl.png" alt="image.png"></p><p>8.4 test_case测试用例</p><blockquote><p>from common.get_mysql import get_sql<br>from config.cof import server_ip<br>from common.get_excel import *from config.sql_conf import *<br>import requests# user_id&#x3D;get_sql(“SELECT help_topic_id FROM help_topic WHERE Name&#x3D;’MOD’”)#提取数据库数据</p><p>print(user_id)#打印结果</p><p>assert get_sql(“SELECT help_topic_id FROM help_topic WHERE Name&#x3D;’MOD’”)#断言数据库的数据是否存在</p><p>def test_aokao_login:url&#x3D;server_ip+’&#x2F;service&#x2F;user&#x2F;login’<br>username,password&#x3D;get_excel_value(1) #读取文件第二行数据<br>json&#x3D;{“head”:{“accessToken”:””,”lastnotice”:0,”msgid”:””},<br>“body”:{“username”:username,”password”:password,”forceLogin”:0}<br>}# usernamepassword&#x3D;get_excel_value(4)[0] #读取文件第二行数据</p><p>print(type(usernamepassword))</p><p>#把str类型转为字典格式 eval 函数# json&#x3D;eval(usernamepassword)r&#x3D;requests.post(url&#x3D;url,json&#x3D;json)print(r.text)</p><p>assert r.status_code&#x3D;&#x3D;200 #断言状态码是否等于200<br>assert ‘“accessToken”:”89a08bff-15d7-4d7a-9967-0b5f4fb699ce”,’ in r.text #断言返回信息是否包含accesstoken<br>def test_aokao_registadd:url &#x3D; server_ip+’&#x2F;service&#x2F;registration&#x2F;registadd’<br>data &#x3D; {“head”: {“lastnotice”: 0, “msgid”: “”, “accessToken”: “89a08bff-15d7-4d7a-9967-0b5f4fb699ce”},<br>“body”: {“clinicid”: “978f661e-1782-43bd-8675-b0ff1138ab7c”, “deptid”: “09b8515b-b01b-4771-9356-aed6b5aa01bf”,<br>“doctorid”: “65ac0251-10ff-473a-af8a-20e8969176f7”, “registtype”: 0, “card_num”: “”, “bcc334”: “”,<br>“patientopt”: 1, “bkc368”: “1”,<br>“patient”: {“cardid”: “”, “medicalcardid”: “”, “label”: “”, “sourcetype”: 1, “nationid”: “01”,<br>“maritalstatus”: 0, “address”: “”, “company”: “”, “jobname”: “”, “email”: “”,<br>“remark”: “”, “bcc334”: “”, “name”: “11”, “gender”: 1, “phone”: “”,<br>“birthdate”: “2020-03-23”, “patienttype”: 1, “szsbcardid”: “”}}<br>}r &#x3D; requests.post(url&#x3D;url, json&#x3D;data, timeout&#x3D;0.09)<br>print(r.text)<br>print(r.cookies)<br>assert r.status_code &#x3D;&#x3D; 200 # 断言状态码是否等于200</p></blockquote><p>8.5 report 报告</p><p>主要存放html，xml报告</p><p><img src="/assets/2/image-20220516210059-45ve97t.png" alt="image.png"></p><p>8.6 run_case 测试执行</p><blockquote><p>import pytest<br>‘’’<br>测试文件以test_开头，（以—_test结尾也可以）<br>测试类以Test开头，并且不能带有init 方法<br>测试函数以test_开头<br>断言使用基本的assert即可<br>‘’’<br>#如何去运行测试用例，_test开头的函数就可以，判断用例运行是否成功，assert断言if <strong>name</strong>&#x3D;&#x3D;”<strong>main</strong>“:<br>#单个文件运行，运行添加，对应的文件路径，路径要用相对路径# pytest.main([‘..&#x2F;test_case&#x2F;&#x2F;test_case_01.py’])<br>#多个文件运行，运行添加多个对应的文件路径，列表的形式，去添加多个文件的路径# pytest.main([‘..&#x2F;test_case&#x2F;test_fore.py’,’..&#x2F;test_case&#x2F;Dynamic correlation_token.py’])<br>#运行整个目录，添加目录的路径pytest.main([‘..&#x2F;test_case&#x2F;‘,’–html&#x3D;..&#x2F;report&#x2F;report.html’,’–junitxml&#x3D;..&#x2F;report&#x2F;report.xml’])<br>‘’’<br>pytest生成报告：<br>1、生成html报告<br>‘–html&#x3D;..&#x2F;report&#x2F;report.html’<br>2、生成xml报告<br>‘–junitxml&#x3D;..&#x2F;report&#x2F;report.xml’<br>‘’’</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1、发送get请求&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;#导包&lt;br&gt;import requests&lt;br&gt;#定义一个urlurl &amp;#x3D; “&lt;a href=&quot;http://xxxxxxx&amp;quot;/&quot;&gt;http://xxxxxxx&amp;quot;&lt;/a&gt;&lt;br&gt;#</summary>
+      
+    
+    
+    
+    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
+    
+    <category term="02_API自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02-API%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    <category term="api自动化框架" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02-API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/"/>
+    
+    
+    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试面试题精选【拼多多二面】</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/09_%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E9%80%89%E3%80%90%E6%8B%BC%E5%A4%9A%E5%A4%9A%E4%BA%8C%E9%9D%A2%E3%80%91/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/09_%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E9%80%89%E3%80%90%E6%8B%BC%E5%A4%9A%E5%A4%9A%E4%BA%8C%E9%9D%A2%E3%80%91/</id>
+    <published>2022-05-16T12:29:03.176Z</published>
+    <updated>2022-05-16T12:36:55.498Z</updated>
+    
+    <content type="html"><![CDATA[<p>面试一般分为技术面和hr面，形式的话很少有群面，少部分企业可能会有一个交叉面，不过总的来说，技术面基本就是考察你的专业技术水平的，hr面的话主要是看这个人的综合素质以及家庭情况符不符合公司要求，一般来讲，技术的话只要通过了技术面hr面基本上是没有问题（也有少数企业hr面会刷很多人）</p><p><img src="/assets/2/image-20220516203639-zpdniqr.png" alt="image.png"></p><p>我们主要来说技术面，技术面的话主要是考察专业技术知识和水平，下面是我们整理好的自动化测试岗的面试题。</p><p>1.如何把自动化测试在公司中实施并推广起来的？<br>1.项目组调研选择自动化工具并开会演示demo案例，我们主要是演示selenium和robotframework两种。</p><p>2.搭建自动化测试框架，在项目中逐步开展自动化。</p><p>3.把该项目的自动化流程、框架固化成文档</p><p>4.推广到公司的其它项目组应用</p><p>2.请描述一下自动化测试流程？<br>1.编写自动化测试计划</p><p>2.设计自动化测试用例</p><p>3.编写自动化测试框架和脚本</p><p>4.调试并维护脚本</p><p>5.无人值守测试</p><p>6.后期脚本维护（添加用例、开发更新版本）</p><p>3.自动化测试用例如何编写？以下答案二选一即可：<br>1.用例是自动化测试工程师自己设计的，一般刚开始已基本业务流程为主（登录–完成一个业务–退出）</p><p>2.从系统测试用例中进行筛选或由业务工程师提供</p><p>4.上一个项目中自动化测试的执行策略？<br>上一个项目中是定时执行的，设置的执行时间是晚上12点，执行完毕后会自动发送邮件通知</p><p>5.自动化测试发现BUG多吗？<br>不多，因为之前项目组是把已经测试通过的基本功能再进行自动化脚本编写和在后续版本执行自动化测试，它主要是保证已经测试通过的功能在新版本更新后没有问题。</p><p>6.你觉得自动化测试的价值在哪里？你们公司为什么要做自动化测试？<br>引用自动化测试之后，能代替大量繁琐的回归测试工作，把业务测试人员解放出来，既而让业务测试人员把精力集中在复杂的业务功能模块上，自动化测试一般是对稳定下来的功能进行自动化，保证不会因为产品的更新导致之前稳定下来的功能出现BUG</p><p>7.自动化测试有误报过bug吗？产生误报怎么办？<br>有误报过，有时候自动化测试报告中显示发现了bug,实际去通过手工测试去确认又不存在该bug。</p><p>误报原因一般是：</p><p>1.元素定位不稳定，需要尽量提高脚本的稳定性；</p><p>2.开发更新了页面但是测试没有及时更新维护!</p><p>8.自动化测试过程中，你遇到了哪些问题，是如何解决的？<br>1.频繁地变更页面，经常要修改页面对象类里面的代码</p><p>2.自动化测试偶尔出现过误报</p><p>3.自动化测试结果出现覆盖的情况：Jenkins根据时间建立文件夹</p><p>4.自动化测试代码维护比较麻烦</p><p>5.自动化测试进行数据库对比数据</p><p>9.在上一家公司做自动化测试用的什么框架？<br>可以说出以下自己擅长的一种：</p><p>1.python+selenium+unittest+htmltestrunner</p><p>2.python+selenium+pytest+allure</p><p>robotframework+Selenium3<br>10.在selenium自动化测试中，你一般完成什么类型的测试？自动化覆盖率？<br>主要是冒烟测试和回归测试。回归测试主要写一些功能稳定的场景，通过自动化手段去实现，节约测试时间。因为自动化测试用例也是在不断的更新和迭代，没有刻意去统计，大概在30%-40%左右！</p><p>11.在执行脚本过程，如何实现当前元素高亮显示？<br>这个其实就是利用javaScript去修改当前元素的边框样式来到达高亮显示的效果，</p><p>12.如果一个元素无法定位，你一般会考虑哪些方面的原因？<br>1.页面加载元素过慢，加等待时间</p><p>2.页面有frame框架页，需要先跳转入frame框架再定位</p><p>3.可能该元素是动态元素，定位方式要优化，可以使用部分元素定位或通过父节点或兄弟节点定位。</p><p>4.可能识别了元素，但是不能操作，比如元素不可用，不可写等。需要使用js先把前置的操作完成，</p><p>13.元素定位方法你熟悉的有哪些？（八大元素定位方式）<br>id ，name， class， tag， link_text， Partial link text， css， xpath</p><p>14.遇到frame框架页面怎么处理？<br>先用driver.switch_to.frame()跳转进去frame，</p><p>然后再操作页面元素，</p><p>操作完后使用driver.swith_to.default_content()跳转出来</p><p>15.遇到alert弹出窗如何处理？<br>使用driver.switch_to.alert方法先跳转到alert弹出窗口</p><p>然后再通过accept点击确定按钮，通过dismiss点击取消难，通过text()获得弹出窗口的文本。</p><p>16.如何处理多窗口？<br>这个多窗口之间跳转处理，我们在项目中也经常遇到。就是，当你点击一个链接，这个链接会在一个新的tab打开，然后你接下来要在新tab打开的页面查找元素，</p><p>1.我们在点击链接前使用driver.current_window_handle获得当前窗口句柄。</p><p>2.再点击链接。点击后通过driver.window_handles获得所有窗口的句柄，</p><p>3.然后再循环找到新窗口的句柄，然后再通过driver.switch_to.window()方法跳转到新的窗口。</p><p>17.怎么验证元素是enable&#x2F;disabled&#x2F;checked状态？<br>定位元素后：分别通过isEnabled()，isSelected()，isDisplayed()三个方法进行判断。</p><p>18.如何处理下拉菜单？<br>在Selenium中有一个叫Select的类，这个类支持对下拉菜单进行操作。使用方法如下：</p><p>1.定位元素</p><p>2.把定位的元素转化成Select对象。</p><p>sel &#x3D; Select(定位的元素对象)</p><p>3.通过下标或者值或者文本选中下拉框。</p><p>sel.select_by_index(index);<br>sel.select_by_value(value);<br>sel.select_by_visible_text(text);</p><p>19.在日历这种web 表单你是如何处理的?<br>首先要分析当前网页试用日历插件的前端代码，看看能不能通过元素定位，点击日期实现，如果不能，可能需要借助javascript。还有些日历控件一个文本输入框，可以直接sendKeys()方法来实现传入一个时间的数据。</p><p>20.举例一下说明一下你遇到过那些异常<br>常见的selenium异常有这些：</p><p>NoSuchElementException：没有该元素异常<br>TimeoutException ：超时异常</p><p>ElementNotVisibleException ：元素不可见异常<br>NoSuchAttributeException ：没有这样属性异常<br>NoSuchFrameException ：没有该frame异常</p><p>21.关闭浏览器中quit和close的区别<br>简单来说，两个都可以实现退出浏览器session功能，close是关闭你当前聚焦的tab页面，而quit是关闭全部浏览器tab页面，并退出浏览器session。知道这两个区别，我们就知道quit一般用在结束测试之前的操作，close用在执行用例过程中关闭某一个页面的操作。</p><p>22.在Selenium中如何实现截图，如何实现用例执行失败才截图<br>在Selenium中提供了一个get_screenshot_as_file()的方法来截图的，一般结合try&#x2F;except捕获异常时使用，进行错误截图。</p><p>23.如何实现文件上传？<br>定位元素后，直接使用send_keys()方法设置就行，参数为需要上传的文件的路径。</p><p>24.自动化中有哪三类等待？他们有什么特点？<br>1.线程等待（强制等待）如time.sleep(2)：线程强制休眠2秒钟，2秒过后，再执行后续的代码。建议少用。</p><p>2.imlicitlyWait（隐式等待）会在指定的时间范围内不断的查找元素，直到找到元素或超时，特点是必须等待整个页面加载完成。</p><p>3.WebDriverWait（显式等待）通常是我们自定义的一个函数代码，这段代码用来等待某个元素加载完成，再继续执行后续的代码</p><p>25.你写的测试脚本能在不同浏览器上运行吗<br>当然可以，我写的用例可以在在IE，火狐和谷歌这三种浏览器上运行。实现的思路是封装一个方法，分别传入一个浏览器的字符串，如果传入IE就使用IE，如果传入FireFox就使用FireFox，如果传入Chrome就使用Chrome浏览器，并且使用什么浏览器可以在总的ini配置文件中进行配置。需要注意的是每个浏览器使用的驱动不一样。</p><p>26.什么是PO模式，为什么要使用它<br>PO是Page Object 模式的简称，它是一种设计思想，意思是，把一个页面，当做一个对象，页面的元素和元素之间操作方法就是页面对象的属性和行为，PO模式一般使用三层架构，分别为：基础封装层BasePage，PO页面对象层，TestCase测试用例层。</p><p>27.你会封装自动化测试框架吗？<br>这个问得最多，甚至有很多公司直接卸载招聘要求中</p><p>当然可以，自动化框架主要的核心框架就是分层+PO模式：分别为：基础封装层BasePage，PO页面对象层，TestCase测试用例层。然后再加上日志处理模块，ini配置文件读取模块，unittest+ddt数据驱动模块，jenkins持续集成模式组成。</p><p>28.你们测试团队如何提升自己的测试技能？<br>更多是靠技术讨论和学习交流，除了我们公司内部群之外，我们还会有相关的技术交流群，可以和跟很多同行一起学习，完善自己的技能树。IT行业技术更新迭代本来就很快，所以更需要保持学习的心态。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;面试一般分为技术面和hr面，形式的话很少有群面，少部分企业可能会有一个交叉面，不过总的来说，技术面基本就是考察你的专业技术水平的，hr面的话主要是看这个人的综合素质以及家庭情况符不符合公司要求，一般来讲，技术的话只要通过了技术面hr面基本上是没有问题（也有少数企业hr面会刷</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="10_模拟面试题分析" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从未听过的10个软件测试面试问题</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%20-%20%E5%89%AF%E6%9C%AC%20(2)/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%20-%20%E5%89%AF%E6%9C%AC%20(2)/</id>
+    <published>2022-05-16T12:29:02.086Z</published>
+    <updated>2022-05-16T12:28:56.907Z</updated>
+    
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="10_模拟面试题分析" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python基础题目大全</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/08_Python%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE%E5%A4%A7%E5%85%A8/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/08_Python%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE%E5%A4%A7%E5%85%A8/</id>
+    <published>2022-05-16T12:29:01.458Z</published>
+    <updated>2022-05-16T12:35:20.944Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/2/image-20220516203117-m9jj2bk.png" alt="image.png"></p><p>1、为什么学习Python？<br>人生苦短？人间不值得？想想自己的初心吧！</p><p>2、通过什么途径学习的Python？<br>官网、网上视频、学习网站、论坛、大牛的辅导</p><p>3、Python和Java、PHP、C、C#、C++等其他语言的对比？<br>（1）、python代码，简介，明确，优雅，简单易懂<br>（2）、开发效率高<br>（3）、可扩展性强</p><p>4、简述解释型和编译型编程语言？<br>解释型：在执行程序时，计算机才一条一条的将代码解释成机器语言给计算机来执行<br>编译型：是把源程序的每一条语句都编译成机器语言，并保存成二进制文件，这样计算机运行该程序时可以直接以机器语言来运行此程序，运行速度很快。</p><p>5、Python解释器种类以及特点？<br>Cpython，IPython，Jpython，pypy，Ironpython</p><p>Python是一门解释器语言，代码想运行，必须通过解释器执行，Python存在多种解释器，分别基于不同语言开发，每个解释器有不同的特点，但都能正常运行Python代码，以下是常用的五种Python解释器：</p><p>CPython：当 从Python官方网站下载并安装好Python2.7后，就直接获得了一个官方版本的解</p><blockquote><p>释器：Cpython，这个解释器是用C语言开发的，所以叫 CPython，在命名行下运行python，<br>就是启动CPython解释器，CPython是使用最广的Python解释器。</p></blockquote><p>IPython：IPython是基于CPython之上的一个交互式解释器，也就是说，IPython只是在交互方</p><blockquote><p>式上有所增强，但是执行Python代码的功能和CPython是完全一样的，好比很多国产浏览器<br>虽然外观不同，但内核其实是调用了IE。</p></blockquote><p>PyPy：PyPy是另一个Python解释器，它的目标是执行速度，PyPy采用JIT技术，</p><blockquote><p>对Python代进行动态编译，所以可以显著提高<br>Python代码的执行速度。</p></blockquote><p>Jython：Jython是运行在Java平台上的Python解释器，可以直接把Python代码编译成Java字节码执行。<br>IronPython：IronPython和Jython类似，只不过IronPython是运行在微软.Net平台上的Python解释器，</p><blockquote><p>可以直接把Python代码编译成.Net的字节码。</p></blockquote><p>在Python的解释器中，使用广泛的是CPython，对于Python的编译，除了可以采用以上解释器<br>进行编译外，技术高超的开发者还可以按照自己的需求自行编写Python解释器来执行Python代码，十分的方便！</p><p>6、位和字节的关系？<br>一个字节&#x3D;8位</p><p>7、b、B、KB、MB、GB 的关系？<br>1B(字节) &#x3D; 8b(位)<br>1KB &#x3D; 1024B<br>1MB &#x3D; 1024KB<br>1GB &#x3D; 1024MB</p><p>8、请至少列举5个 PEP8 规范<br>（1）、缩进：每一级4个缩进。连续跨行应该使用圆括号或大括号或者使用悬挂缩进。<br>（2）、代码长度约束</p><p>一行列数：PEP8 规定最大为79列，如果拼接url很容易超限<br>一个函数：不可以超过30行；直观来讲就是完整显示一个函数一个屏幕就够了，不需要上下拖动<br>一个类：不要超过200行代码，不要超过10个方法<br>一个模块：不要超过500行<br>（3）、import</p><p>不要在一句import中引用多个库<br>（4）、命名规范<br>（5）、注释</p><p>总体原则，错误的注释不如没有注释。所以当一段代码发生变化时，第一件事就是要修改注释！</p><p>9、通过代码实现如下转换：<br>答案： 二进制转换成十进制：v &#x3D; “0b1111011”</p><blockquote><p> print(int(‘0b1111011’,2))<br>十进制转换成二进制：v &#x3D; 18<br>print(bin(18))<br>八进制转换成十进制：v &#x3D; “011”<br>print(int(‘011’,8))<br>十进制转换成八进制：v &#x3D; 30<br>print(oct(30))<br>十六进制转换成十进制：v &#x3D; “0x12”<br>print(int(‘0x12’,16))<br>十进制转换成十六进制：v &#x3D; 87<br>print(hex(87))</p></blockquote><p>10、请编写一个函数实现将IP地址转换成一个整数。<br>如 10.3.9.12 转换规则为：</p><blockquote><p>10            00001010<br>3            00000011<br>9            00001001<br>12            00001100</p></blockquote><p>再将以上二进制拼接起来计算十进制结果：00001010 00000011 00001001 00001100 &#x3D; ？</p><p>答案：</p><p>def func(x):<br>lis &#x3D; x.strip().split(’.’)<br>li &#x3D; [bin(int(i)) for i in lis]<br>li2 &#x3D; [i.replace(‘0b’,(10-len(i))*‘0’) for i in li]<br>return int(’’.join(li2),2)<br>ret &#x3D; func(‘10.3.9.12’)<br>print(ret)</p><p>11、python递归的最大层数？<br>一般计算机默认的最大递归深度在1000左右，python最大递归深度一般在4000左右，跟计算<br>机的性能有关系，这个数不是一个定数，可通过一下方式测试</p><p>import sys<br>print(sys.getrecursionlimit())<br>print(sys.setrecursionlimit(10000))</p><p>12、求结果：<br>v1 &#x3D; 1 or 3 ————–&gt;1<br>v2 &#x3D; 1 and 3————–&gt;3<br>v3 &#x3D; 0 and 2 and 1——–&gt;0<br>v4 &#x3D; 0 and 2 or 1———&gt;1<br>v5 &#x3D; 0 and 2 or 1 or 4—-&gt;1<br>v6 &#x3D; 0 or Flase and 1—–&gt;False</p><p>13、ascii、unicode、utf-8、gbk 区别？<br>ASCII码：使用一个字节编码，所以它的范围基本是只有英文字母、数字和一些特殊符号 ，只有256个字符。<br>Unicode：能够表示全世界所有的字节<br>GBK：是只用来编码汉字的，GBK全称《汉字内码扩展规范》，使用双字节编码。<br>UTF-8：是一种针对Unicode的可变长度字符编码，又称万国码。</p><p>14、字节码和机器码的区别？<br>机器码：是电脑CPU直接读取运行的机器指令，运行速度最快，但是非常晦涩难懂<br>字节码：是一种中间状态（中间码）的二进制代码（文件）。需要直译器转译后才能成为机器码。</p><p>15、三元运算规则以及应用场景？<br>规则：为真时的结果 if 判定条件 else 为假时的结果<br>应用场景：在赋值变量的时候，可以直接加判断，然后赋值</p><p>16、列举 Python2和Python3的区别？<br>1、默认编码：2–&gt;ascii，3–&gt;utf-8</p><p>2、print的区别：python2中print是一个语句，不论想输出什么，直接放到print关键字后面即可。python3里，print()是一个函数，</p><p>像其他函数一样，print()需要你将要输出的东西作为参数传给它。</p><p>3、input的区别：</p><p>python2有两个全局函数，用在命令行请求用户输入。第一个叫input()，它等待用户输入一个python表达式(然后返回结果)。<br>第二个叫做raw_input(),用户输入什么他就返回什么。python3 通过input替代了他们。</p><p>4、字符串：python2中有两种字符串类型：Unicode字符串和非Unicode字符串。Python3中只有一种类型：Unicode字符串。</p><p>5、xrange()</p><p>python２里，有两种方法获得一定范围内的数字：range(),返回一个列表，还有xrange(),返回一个迭代器。<br>python3　里，range()返回迭代器，xrange()不再存在。</p><p>17、用一行代码实现数值交换：<br>a &#x3D; 1<br>b &#x3D; 2<br>答案：a &#x3D; 1</p><p>b &#x3D; 2<br>a,b &#x3D; b,a</p><p>18、Python3和Python2中 int 和 long的区别？<br>python2有非浮点数准备的int和long类型。int类型最大<br>值不能超过sys.maxint，而且这个最大值是平台相关的。<br>可以通过在数字的末尾附上一个Ｌ来定义长整型，显然，它比int类型表示的数字范围更大。在python3里，<br>只有一种整数类型int,大多数情况下，和python２中的长整型类似。<br>学习过程中会遇到很多问题，你可以到我们的 python学习 -q-u-n-784758214 ，基础，进阶。好友都会在里面交流，分享一些学习的方法和需要注意的小细节，每天也会准时讲一些项目实战案例。</p><p>19、xrange和range的区别？<br>python２里，有两种方法获得一定范围内的数字：range(),返回一个列表，还有xrange(),返回一个迭代器。<br>python3　里，range()返回迭代器，xrange()不再存在。</p><p>20、文件操作时：xreadlines和readlines的区别？<br>readlines返回一个list，xreadlines方法返回一个生成器</p><p>21、列举布尔值为False的常见值？<br>0, [] , () , {} , ‘’ , False , None</p><p>22、字符串、列表、元组、字典每个常用的5个方法？<br>字符串：repleace,strip,split,reverse,upper,lower,join…<br>列表：append,pop,insert,remove,sort,count,index…<br>元组：index,count,len(),dir()<br>字典：get,keys,values,pop,popitems,clear,update,items…</p><p>23、lambda表达式格式以及应用场景？<br>表达式格式：lambda后面跟一个或多个参数，紧跟一个冒号，以后是一个表达式。冒号前是参数，冒号后是返回值。例如：lambda x : 2x<br>应用场景：经常与一些内置函数相结合使用，比如说map(),filter(),sorted(),reduce()等</p><p>24、pass的作用？<br>1、空语句 do nothing<br>2、保证格式完整<br>3、保证语义完整</p><p>25、arg和*kwarg作用？<br>万能参数，解决了函数参数不固定的问题<br>*arg：会把位置参数转化为tuple<br>**kwarg：会把关键字参数转化为dict</p><p>26、is和&#x3D;&#x3D;的区别？<br>is:判断内存地址是否相等<br>&#x3D;&#x3D;：判断数值是否相等</p><p>27、简述Python的深浅拷贝以及应用场景？<br>copy()：浅copy，浅拷贝指仅仅拷贝数据集合的第一层数据<br>deepcopy():深copy,深拷贝指拷贝数据集合的所有层</p><p>28、Python垃圾回收机制？<br>python采用的是引用计数机制为主，标记-清除和分代收集(隔代回收、分代回收)两种机制为辅的策略<br>计数机制</p><p>Python的GC模块主要运用了引用计数来跟踪和回收垃圾。在引用计数的基础上，还可以通过“标记-清除”<br>解决容器对象可能产生的循环引用的问题。通过分代回收以空间换取时间进一步提高垃圾回收的效率。<br>标记-清除：</p><p>标记-清除的出现打破了循环引用，也就是它只关注那些可能会产生循环引用的对象<br>缺点：该机制所带来的额外操作和需要回收的内存块成正比。<br>隔代回收</p><p>原理：将系统中的所有内存块根据其存活时间划分为不同的集合，每一个集合就成为一个“代”，<br>垃圾收集的频率随着“代”的存活时间的增大而减小。也就是说，活得越长的对象，就越不可能是垃圾，<br>就应该减少对它的垃圾收集频率。那么如何来衡量这个存活时间：通常是利用几次垃圾收集动作来衡量，<br>如果一个对象经过的垃圾收集次数越多，可以得出：该对象存活时间就越长。</p><p>29、python的可变类型和不可变类型？<br>不可变类型（数字、字符串、元组、不可变集合）<br>可变类型（列表、字典、可变集合）</p><p>30、求结果：<br>v &#x3D; dict.fromkeys([‘k1’,‘k2’],[])<br>v[‘k1’].append(666)<br>print(v)<br>v[‘k1’] &#x3D; 777<br>print(v)</p><p>答案：{‘k1’:[666],‘k2’:[666]}<br>{‘k1’:777,‘k2’:[666]}<br>解析：formkeys()默认参数为可变数据类型时有坑</p><p>如果对python自动化测试、web自动化、接口自动化、移动端自动化、面试经验交流等等感兴趣的测试人，可以关注微信公众号：【伤心的辣条】，获取软件测试工程师大厂面试资料！</p><p>31、求结果：<br>def num():<br>return [lambda x: i*x for i in range(4)]<br>print([m(2) for m in num()])</p><p>答案：[6, 6, 6, 6]<br>解析： 问题的本质在与python中的属性查找规则，LEGB（local，enclousing，global，bulitin），<br>在上面的例子中，i就是在闭包作用域（enclousing），而Python的闭包是 迟绑定 ，<br>这意味着闭包中用到的变量的值，是在内部函数被调用时查询得到的<br>所以：[lambda x: i*x for i in range(4)]打印出来是含有四个内存地址的列表，每个内存地址中的i<br>在在本内存中都没有被定义，而是通过闭包作用域中的i值，当for循环执行结束后，i的值等于3，所以<br>再执行[m(2) for m in num()]时，每个内存地址中的i值等于3，当x等于2时，打印出来的结果都是6，<br>从而得到结果[6, 6, 6, 6]。</p><p>32、列举常见的内置函数？<br>map,filter,zip,len,bin,oct,hex,int,float,bool,sum,min,max,str,list,tuple,dict,range,next,hash,help,id…</p><p>33、filter、map、reduce的作用？<br>filter(function，iterable)过滤函数<br>map(function，iterable)循环函数<br>reduce(function, iterable)累积函数</p><p>34、一行代码实现9*9乘法表。<br>lis &#x3D; [’%s%s&#x3D;%s’%(i,j,ij) for i in range(1,10) for j in range(i,10)]</p><p>35、如何安装第三方模块？以及用过哪些第三方模块？<br>pip3 imstall 模块名<br>django，Matplotlib，Tornado，PyGame</p><p>36、至少列举8个常用模块都有那些？<br>os,sys,time,random,re,hashlib,logging,json,pickle…</p><p>37、re的match和search区别？<br>match:从字符串的开头位置匹配，必须以此为开头<br>search:从开头开始查，找到符合的就返回结果</p><p>38、什么是正则的贪婪匹配？<br>正则表达式一般趋向于最大长度匹配</p><p>39、求结果：<br>a. [ i % 2 for i in range(10) ] &#x3D;&gt;[0,1,0,1,0,1,0,1,0,1]<br>b. ( i % 2 for i in range(10) )&#x3D;&gt;返回一个生成器的内存地址</p><p>40、求结果：<br>a. 1 or 2 &#x3D;&#x3D;&#x3D;&gt;1<br>b. 1 and 2 &gt;2<br>c. 1 &lt; (22)&gt;false<br>d. 1 &lt; 2 &#x3D;&#x3D; 2&gt;ture</p><p>41、def func(a,b&#x3D;[]) 这种写法有什么坑？<br>def func(a,b&#x3D;[]):</p><p>b.append(a)<br>print(b)<br>函数的第二个默认参数是一个list，当第一次执行的时候实例化了一个list，<br>第二次执行还是用第一次执行的时候实例化的地址存储，以后每次实例化都是<br>学习过程中会遇到很多问题，你可以到我们的 python学习 -q-u-n-784758214 ，基础，进阶。好友都会在里面交流，分享一些学习的方法和需要注意的小细节，每天也会准时讲一些项目实战案例。</p><p>42、如何实现 “1,2,3” 变成 [‘1’,‘2’,‘3’] ?<br>a &#x3D; “1,2,3”<br>li &#x3D; a.split(’,’)</p><p>43、如何实现[‘1’,’2’,’3’]变成[1,2,3] ?<br>li &#x3D; [‘1’,‘2’,‘3’]<br>lis &#x3D; list(map(lambda x:int(x) li))</p><p>44、比较： a &#x3D; [1,2,3] 和 b &#x3D; [(1),(2),(3) ] 以及 b &#x3D; [(1,),(2,),(3,) ] 的区别？<br>a &#x3D; [1,2,3]正常的列表<br>b &#x3D; [(1),(2),(3)] 虽然列表的每个元素加上了括号，但是当括号内只有一个元素并且没有逗号时，其数据类型是元素本身的数据类型<br>b &#x3D; [(1,),(2,),(3,)]列表中的元素类型都是元组类型</p><p>45、如何用一行代码生成[1,4,9,16,25,36,49,64,81,100] ?<br>li &#x3D; [x*x for x in range(1,11)]</p><p>46、一行代码实现删除列表中重复的值 ?<br>li &#x3D; [1, 1, 1, 23, 3, 4, 4]<br>new_li &#x3D; list(set(li))<br>new_li.sort(key&#x3D;li.index)</p><p>47、如何在函数中设置一个全局变量 ?<br>使用python的内置语法 globals 全局变量</p><p>48、logging模块的作用？以及应用场景？<br>logging模块的作用：<br>1、程序调试<br>2、了解软件程序运行情况，是否正常<br>3、软件程序运行故障分析与问题定位<br>应用场景：网站的运维工作，程序实时监控</p><p>49、请用代码简答实现stack 。<br>def Stack(object):</p><p>def init(self):<br>self.stack &#x3D; []</p><p>def push(self,value):</p><p>进栈</p><p>self.stack.append(value)</p><p>def pop(self):</p><p>出栈</p><p>if self.stack:<br>self.stack.pop()<br>else:<br>raise LookupError(‘stack is empty!’)</p><p>def is_empty(self):</p><p>查看stack是否为空</p><p>reture bool(self.stack)</p><p>def top(self):</p><p>取出stack中最新的值</p><p>return self.stack[-1]</p><p>50、常用字符串格式化哪几种？<br>1、%s %d<br>2、format格式化输出<br>3、print(f’内容{变量名}’)</p><p>51、简述 生成器、迭代器、可迭代对象 以及应用场景？<br>生成器：在 Python 中，一边循环一边计算的机制，称为 生成器（generator），</p><p>通过next()取值，两种表现形式1、将列表生成式的[]改为()2、含有yield关键字的函数<br>应用场景：优化代码，节省内存<br>1<br>2<br>迭代器：是访问集合元素的一种方式。迭代器同时实现了__iter__和__next__方法<br>可迭代对象：只要实现了__iter__方法的对象就是可迭代对象</p><p>52、用Python实现一个二分查找的函数。<br>lis &#x3D; [0, 1, 3, 4, 5, 6, 7, 9, 10, 11,12,16,17]</p><p>def two_find(x, lis, start&#x3D;0, end&#x3D;None):</p><p>if end &#x3D;&#x3D; None:end &#x3D; len(lis) - 1<br>num &#x3D; (end - start) &#x2F;&#x2F; 2 + start<br>if end &gt; start:<br>if lis[num] &gt; x:<br>return two_find(x, lis, start&#x3D;start, end&#x3D;num)<br>elif lis[num] &lt; x:<br>return two_find(x, lis, start&#x3D;num + 1, end&#x3D;end)<br>elif lis[num] &#x3D;&#x3D; x:<br>return num<br>elif lis[end] &#x3D;&#x3D; x:return end<br>else:return None<br>print(two_find(17, lis))</p><p>53、谈谈你对闭包的理解？<br>在一个外函数中定义了一个内函数，内函数里运用了外函数的临时变量，并且外函数的返回值是内函数的引用。这样就构成了一个闭包。<br>一般情况下，在我们认知当中，如果一个函数结束，函数的内部所有东西都会释放掉，还给内存，局部变量都会消失。<br>但是闭包是一种特殊情况，如果外函数在结束的时候发现有自己的临时变量将来会在内部函数中用到，就把这个临时变量绑定给了内部函数，然后自己再结束。</p><p>54、os和sys模块的作用？<br>os模块负责程序与操作系统的交互，提供了访问操作系统底层的接口;<br>sys模块负责程序与python解释器的交互，提供了一系列的函数和变量，用于操控python的运行时环境。</p><p>55、如何生成一个随机数？<br>import random<br>def rdm(n):</p><p>lis &#x3D; []<br>for i in range(n):<br>n &#x3D; random.randint(1,9)<br>lis.append(str(n))<br>s &#x3D; ‘’.join(lis)<br>return int(s)</p><p>56、如何使用python删除一个文件？<br>import os<br>os.remove(r’path’)</p><p>57、谈谈你对面向对象的理解？<br>面向对象的程序设计的核心是对象（上帝式思维），要理解对象为何物，必须把自己当成上帝，上帝眼里世间存在的万物皆为对象，<br>不存在的也可以创造出来。对象是特征和技能的结合，其中特征和技能分别对应对象的数据属性和方法属性。<br>优点是：解决了程序的扩展性。对某一个对象单独修改，会立刻反映到整个体系中，如对游戏中一个人物参数的特征和技能修改都很容易。<br>缺点：可控性差，无法向面向过程的程序设计流水线式的可以很精准的预测问题的处理流程与结果，<br>面向对象的程序一旦开始就由对象之间的交互解决问题，即便是上帝也无法预测最终结果。<br>应用场景：需求经常变化的软件，一般需求的变化都集中在用户层，互联网应用，企业内部软件，游戏等都是面向对象的程序设计大显身手的好地方。</p><p>58、Python面向对象中的继承有什么特点？<br>1：在继承中基类的构造(init()方法)不会被自动调用，它需要在其派生类的构造中亲自专门调用。<br>2：在调用基类的方法时，需要加上基类的类名前缀，且需要带上self参数变量。</p><p>区别于在类中调用普通函数时并不需要带上self参数<br>3：Python总是首先查找对应类型的方法，如果它不能在派生类中找到对应的方法，它才开始到基类中逐个查找。</p><p>(先在本类中查找调用的方法，找不到才去基类中找)。</p><p>59、面向对象深度优先和广度优先是什么？<br>Python的类可以继承多个类，那么其寻找类方法的方式有两种：</p><p>当类是经典类时(主要在python2版本中的没有主动继承object的类)，多继承情况下，会按照深度优先方式查找<br>当类是新式类时(python3版本中的所有类和python2中主动继承object的类)，多继承情况下，会按照广度优先方式查找<br>简单点说就是：经典类是纵向查找，新式类是横向查找</p><p>60、面向对象中super的作用？<br>1、super在面向对象继承类中代指父类，书写方法super(类名,self).属性或者方法或super().属性或者方法<br>2、super方法可以增加类之间调用的灵活性，当父类名发生变化时不必修改<br>3、super方法在类的多继承时可以简化代码，避免代码冗余<br>4、super机制里可以保证公共父类仅被执行一次，执行的顺序遵循MRO，广度优先查询方法</p><p>如果对python自动化测试、web自动化、接口自动化、移动端自动化、面试经验交流等等感兴趣的测试人，可以关注微信公众号：【伤心的辣条】，获取软件测试工程师大厂面试资料！</p><p>61、是否使用过functools中的函数？其作用是什么？<br>functools用于高阶函数：指那些作用于函数或者返回其他函数的函数。通常情况下，只要是<br>可以被当做函数调用的对象就是这个模块的目标。</p><p>62、列举面向对象中带双下划线的特殊方法，如：new、init<br>new：构造方法，创建一个对象，实例化时第一个被执行，返回一个创建好的对象及__init__(self)的self，</p><p>只有继承了object的类才会有这个方法<br>init：初始化方法，__init__在__new__的基础上完成一些其它初始化的动作，__init__没有返回值</p><p>63、如何判断是函数还是方法？<br>函数和方法都封装了一些独立的功能，如果在类中定义的函数那就是方法(对象或者类名点方法名调用)，</p><p>否则就是函数(函数名()直接调用)</p><p>64、静态方法和类方法区别？<br>静态方法：是既不是用类中的属性又不使用对象中的属性，由类或者对象调用的方法，依赖python装饰器@staticmethod来实现<br>类方法：只使用类中的静态变量，一般都是由类调用，依赖python装饰器@classmethod来实现</p><p>65、列举面向对象中的特殊成员以及应用场景？<br>call：对象的构造方法，对象加上()，可以触发这个类的__call__方法。<br>len：内置函数的len函数是依赖类中的__len__方法<br>eq：判断值是否相等的时候依赖__eq__方法<br>hash:判断hash值是否相等的时候依赖__hash__方法(拓展：set的去重机制其实就是根据__hash__和__eq__方法实现的)<br>str：和str() print() %s 都是息息相关的，返回值一定是字符串类型<br>repr：和 repr() %r都是息息相关的，在没有__str__方法时，repr__可以完全取代__str。<br>del 析构方法，对应着一个对象的删除之前执行的内容</p><p>66、1、2、3、4、5 能组成多少个互不相同且无重复的三位数<br>count &#x3D; 0<br>for i in range(1,6):</p><p>for j in range(1,6):<br>for k in range(1,6):<br>if (i !&#x3D; j) and (i !&#x3D; k) and (j !&#x3D; k):<br>count +&#x3D; 1<br>if count % 6:<br>print(f’{i}{j}{k}’, end&#x3D;’|’)<br>else:<br>print(f’{i}{j}{k}’)<br>print(count)</p><p>67、什么是反射？以及应用场景？<br>定义：通过用字符串数据类型的变量名来访问这个变量的值，在python面向对象中的反射,通过字符串的形式操作对象相关的属性或方法.<br>应用场景：用于处理通过用户输入，文件读取，或者网络传输所得到的字符串形式的指令来完成对应的操作</p><p>68、metaclass作用？以及应用场景？<br>metaclass，直译为元类，简单的解释就是：当我们定义了类以后，就可以根据这个类创建出实例，<br>所以：先定义类，然后创建实例。但是如果我们想创建出类呢？那就必须根据metaclass创建出类，<br>所以：先定义metaclass，然后创建类。换句话说，你可以把类看成是metaclass创建出来的“实例”</p><p>69、用尽量多的方法实现单例模式。<br>1、基于__new__()方法</p><p>class Person:<br>def new(cls, *args, **kwargs):<br>if not hasattr(cls,cls._instance):</p><h1 id="cls-instance-x3D-object-new-cls"><a href="#cls-instance-x3D-object-new-cls" class="headerlink" title="cls._instance &#x3D; object.new(cls)"></a>cls._instance &#x3D; object.new(cls)</h1><p>cls._instance &#x3D; super().new(cls)<br>return cls._instance<br>2、基于模块导入方式，现在一个py文件中写好一个类，实例化一个对象。以后用这个类直接导入这个模块就是单例模式。<br>3、基于装饰器方法实现</p><p>def singleton(cls, *args, **kwargs):<br>instance_dic &#x3D; {}</p><blockquote><p>def inner(*args, **kwargs):<br>if cls not in instance_dic:<br>instance_dic[‘cls’] &#x3D; cls(*args, **kwargs)<br>return instance_dic[‘cls’]</p><p>return inner</p></blockquote><p>@singleton<br>class Person:<br>pass</p><p>70、装饰器的写法以及应用场景。<br>装饰器的写法：</p><p>def wrapper(func):<br>def inner(*args,**kwargs):<br>‘被装饰之前的操作’<br>ret &#x3D; func(*args,**kwargs)<br>‘被装饰之后的操作’<br>return ret<br>return inner<br>装饰器的应用场景：</p><p>比如注册登录、插入日志，性能测试，事务处理，缓存等等场景</p><p>71、异常处理写法以及如何主动跑出异常（应用场景）<br>异常处理的常规写法：</p><blockquote><p>try:<br>执行的主体函数<br>except Exception as e:<br>print(str(e))</p></blockquote><p>主动抛出异常：<br>raise TypeError(‘出现了不可思议的异常’)#TypeError可以是任意的错误类型</p><p>72、什么是面向对象的mro<br>MRO(Method Resolution Order 方法解析顺序)是面向对象中用于查询类的多继承的继承顺序的方法，<br>它是基于算法来实现的，不同的算法实现的MRO的顺序不同</p><p>73、isinstance作用以及应用场景？<br>isinstance作用是来判断一个对象是否是一个已知的类型</p><p>74、写代码并实现：<br>Given an array of integers, return indices of the two numbers such that they add up to a specific target.<br>You may assume that each input would have exactly one solution, and you may not use the same element twice.<br>Example:</p><blockquote><p>  Given nums &#x3D; [2, 7, 11, 15], target &#x3D; 9,<br>Because nums[0] + nums[1] &#x3D; 2 + 7 &#x3D; 9,<br>return [0, 1]</p></blockquote><p>代码实现</p><p>def func(li,target):</p><p>try:<br>for i in range(0,len(li)):<br>num &#x3D; target-li[i]<br>if num in li:<br>return [i,li.index(num)]<br>except:print(‘li类型为数组类型，内的元素需是整型，target也为整型，请检查’)<br>else:return None</p><p>75、json序列化时，可以处理的数据类型有哪些？如何定制支持datetime类型？<br>1、可以处理的数据类型是 string、int、list、tuple、dict、bool、null<br>2、定制支持datetime类型<br>————————–官方文档的memo———————————————–</p><blockquote><blockquote><blockquote><p>import json<br>class ComplexEncoder(json.JSONEncoder):<br>…     def default(self, obj):<br>…         if isinstance(obj, complex):<br>…             return [obj.real, obj.imag]<br>…         return json.JSONEncoder.default(self, obj)<br>…<br>dumps(2 + 1j, cls&#x3D;ComplexEncoder)<br>‘[2.0, 1.0]’<br>ComplexEncoder().encode(2 + 1j)<br>‘[2.0, 1.0]’<br>list(ComplexEncoder().iterencode(2 + 1j))<br>[‘[‘, ‘2.0’, ‘, ‘, ‘1.0’, ‘]’]</p></blockquote></blockquote></blockquote><p>import json<br>import datetime<br>ret &#x3D; datetime.datetime.now()<br>class CJsonEncoder(json.JSONEncoder):<br>def default(self, obj):<br>if isinstance(obj, datetime.date):<br>return obj.strftime(’%Y-%m-%d %H:%M:%S’)<br>else:<br>return json.JSONEncoder.default(self, obj)</p><p>print(json.dumps(ret,cls&#x3D;CJsonEncoder))</p><p>76、json序列化时，默认遇到中文会转换成unicode，如果想要保留中文怎么办？<br>在序列化是将json.dumps中的默认参数ensure_ascii改为False就可以保留中文了<br>json.dumps(obj,ensure_ascii&#x3D;False)<br>学习过程中会遇到很多问题，你可以到我们的 python学习 -q-u-n-784758214 ，基础，进阶。好友都会在里面交流，分享一些学习的方法和需要注意的小细节，每天也会准时讲一些项目实战案例。</p><p>77、什么是断言？应用场景？<br>assert 条件,‘自定义错误提示(可有可无)’ 例：assert 1 &#x3D;&#x3D; 0,‘这是一个低级的错误’<br>合约式设计是断言的经典应用，在一个正确的程序里，所有的前置条件和后置条件都将得到处理。</p><p>78、使用代码实现查看列举目录下的所有文件。<br>方法一：递归处理</p><p>import os<br>url &#x3D; r’C:\Users\Mr.Wang\PycharmProjects\untitled\前段学习’</p><p>def check_file(url,li &#x3D; []):<br>if os.path.isdir(url):<br>file_list &#x3D; os.listdir(url)<br>for ret in file_list:<br>base_url &#x3D; os.path.join(url,ret)<br>if os.path.isfile(base_url):<br>li.append(ret)<br>else: check_file(base_url)<br>return li<br>else:return os.path.basename(url)<br>方法二：堆栈的思想处理</p><p>import os<br>url &#x3D; r’C:\Users\Mr.Wang\PycharmProjects\untitled\python基础’</p><p>lis &#x3D; [url]<br>while lis:<br>url &#x3D; lis.pop()<br>ret_list &#x3D; os.listdir(url)<br>for name in ret_list:<br>abs_path &#x3D; os.path.join(url,name)<br>if os.path.isdir(abs_path):<br>lis.append(abs_path)<br>else:print(name)</p><p>79、简述 yield和yield from关键字。<br>yield 是一个类似 return 的关键字，只是这个函数返回的是个生成器当你调用这个函数的时候，<br>函数内部的代码并不立马执行 ，这个函数只是返回一个生成器对象，当你使用for进行迭代的时候，<br>函数中的代码才会执行</p><p>yield from 的主要功能是打开双向通道，把最外层的调用方与最内层的子生成器连接起来，<br>这样二者可以直接发送和产出值，还可以直接传入异常，而不用在位于中间的协程中添加大量处理异常的样板代码。<br>有了这个结构，协程可以通过以前不可能的方式委托职责。</p><p>如果对python自动化测试、web自动化、接口自动化、移动端自动化、面试经验交流等等感兴趣的测试人，可以关注微信公众号：【伤心的辣条】，获取软件测试工程师大厂面试资料！</p><p>80、代码实现六位随机验证码<br>import random<br>s &#x3D; ‘’<br>for i in range(6):<br>num &#x3D; random.randint(0,9)<br>alpha1 &#x3D; chr(random.randint(65,90))<br>alpha2 &#x3D; chr(random.randint(97,122))<br>ret &#x3D; random.choice([num,alpha1,alpha2])<br>s +&#x3D; str(ret)<br>print(s)</p><p>81、代码实现随机发红包功能<br>import random<br>def red_packge(money,num):<br>li &#x3D; random.sample(range(1,money100),num-1)<br>li.extend([0,money100])<br>li.sort()<br>return [(li[index+1]-li[index])&#x2F;100 for index in range(num)]</p><p>ret &#x3D; red_packge(100,10)<br>print(ret)</p><p>————————–生成器版——————————————-<br>import random<br>def red_packge(money,num):<br>li &#x3D; random.sample(range(1,money100),num-1)<br>li.extend([0,money100])<br>li.sort()<br>for index in range(num):<br>yield (li[index+1]-li[index])&#x2F;100</p><p>ret &#x3D; red_packge(100,10)<br>print(ret)</p><p>82、请尽可能列举python列表的成员方法，并给出列表操作的答案：<br>（1） a&#x3D;[1, 2, 3, 4, 5], a[::2]&#x3D;？ a[-2:]&#x3D;？<br>a[::2]&#x3D;[1,3,5],<br>a[-2:] &#x3D; [4,5]</p><p>（2）一行代码实现对列表a中的偶数位置的元素进行加3后求和？<br>sum([i+3 for i in a[::2]])</p><p>（3）将列表a的元素顺序打乱，再对a进行排序得到列表b，然后把a和b按元素顺序构造一个字典d。<br>import random<br>random.shuffle(a)<br>b&#x3D;a.sort()<br>d&#x3D;{}<br>for i in range(len(a)):d[a[i]] &#x3D; b[i]</p><p>83、Python自省<br>自省就是面向对象的语言所写的程序在运行时，就能知道对象的类型。也就是程序运行时能够获得对象的类型。比如type()，dir()，getattr()，hasattr()，isinstance()。</p><p>84、Python是如何进行内存管理的？<br>从三个方面来说,一对象的引用计数机制,二垃圾回收机制,三内存池机制</p><p>一、对象的引用计数机制<br>Python内部使用引用计数，来保持追踪内存中的对象，所有对象都有引用计数。<br>引用计数增加的情况：<br>1，一个对象分配一个新名称<br>2，将其放入一个容器中（如列表、元组或字典）<br>引用计数减少的情况：<br>1，使用del语句对对象别名显示的销毁<br>2，引用超出作用域或被重新赋值<br>sys.getrefcount( )函数可以获得对象的当前引用计数<br>多数情况下，引用计数比你猜测得要大得多。对于不可变数据（如数字和字符串），解释器会在程序的不同部分共享内存，以便节约内存。</p><p>二、垃圾回收<br>1，当一个对象的引用计数归零时，它将被垃圾收集机制处理掉。<br>2，当两个对象a和b相互引用时，del语句可以减少a和b的引用计数，并销毁用于引用底层对象的名称。然而由于每个对象都包含一个对其他对象的应用，因此引用计数不会归零，对象也不会销毁。（从而导致内存泄露）。为解决这一问题，解释器会定期执行一个循环检测器，搜索不可访问对象的循环并删除它们。</p><p>三、内存池机制<br>Python提供了对内存的垃圾收集机制，但是它将不用的内存放到内存池而不是返回给操作系统。<br>1，Pymalloc机制。为了加速Python的执行效率，Python引入了一个内存池机制，用于管理对小块内存的申请和释放。<br>2，Python中所有小于256个字节的对象都使用pymalloc实现的分配器，而大的对象则使用系统的malloc。<br>3，对于Python对象，如整数，浮点数和List，都有其独立的私有内存池，对象间不共享他们的内存池。也就是说如果你分配又释放了大量的整数，用于缓存这些整数的内存就不能再分配给浮点数。</p><p>85、介绍一下except的用法和作用？<br>try…except…except…else…<br>– 执行try下的语句，如果引发异常，则执行过程会跳到except语句。对每个except分支顺序尝试执行，如果引发的异常与except中的异常组匹配，执行相应的语句。如果所有的except都不匹配，则异常会传递到下一个调用本代码的最高层try代码中。<br>– try下的语句正常执行，则执行else块代码。如果发生异常，就不会执行<br>– 如果存在finally语句，最后总是会执行。</p><p>86、如何用Python来进行查询和替换一个文本字符串？<br>可以使用re模块中的sub()函数或者subn()函数来进行查询和替换，比replace的功能更强大！！！<br>格式：sub(replacement, string[,count&#x3D;0])（replacement是被替换成的文本，string是需要被替换的文本，count是一个可选参数，指最大被替换的数量）</p><p>import re<br>p&#x3D;re.compile(“blue|white|red”)<br>print(p.sub(‘colour’,‘blue socks and red shoes’))<br>print(p.sub(‘colour’,‘blue socks and red shoes’,count&#x3D;1))<br>subn()方法执行的效果跟sub()一样，不过它会返回一个二维数组，包括替换后的新的字符串和总共替换的数量</p><p>87、有没有一个工具可以帮助查找python的bug和进行静态的代码分析？<br>PyChecker是一个python代码的静态分析工具，它可以帮助查找python代码的bug, 会对代码的复杂度和格式提出警告<br>Pylint是另外一个工具可以进行codingstandard检查<br>————————————————<br>版权声明：本文为CSDN博主「测试萌萌」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/weixin_50829653/article/details/116309089">https://blog.csdn.net/weixin_50829653/article/details/116309089</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/2/image-20220516203117-m9jj2bk.png&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;1、为什么学习Python？&lt;br&gt;人生苦短？人间不值得？想想自己的初心吧！&lt;/p&gt;
+&lt;p&gt;2、通过什么途径学习的Py</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="10_模拟面试题分析" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从未听过的10个软件测试面试问题</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/</id>
+    <published>2022-05-16T12:28:26.031Z</published>
+    <updated>2022-05-16T12:29:50.253Z</updated>
+    
+    <content type="html"><![CDATA[<p>聘请优秀人才对于建立可靠的软件测试程序至关重要。相对于招聘人数而言，高质量的应征者寥寥无几，因此招聘过程正在加速发展，并且比以往任何时候都更具竞争力。</p><p><img src="/assets/2/image-20220516202937-o976q5g.png" alt="image.png"></p><p>毫无疑问：进行软件测试面试问题对于评估候选人是否合适至关重要。尽管技术技能对于成功担任该职位至关重要，但非技术性问题(如沟通，文化，职业发展等)通常会导致招聘失败。</p><p>我们将软件测试面试问题集中在面试中经常忽略的软技能上。将这些与一系列严苛的技术面试问题配对，您将确保对候选人进行全方位评估!</p><p>1.您认为您经常使用哪种应用程序具有最佳&#x2F;最差的质量?什么让你有那个想法?<br>为什么这是一个好问题：测试他们的创造力，让您对他们所认为的“ 质量 ” 有所了解。</p><p>在响应中寻找什么：越详细越好。您需要一个可以轻松传达他们在应用程序中看到的内容并进行精妙观察的测试人员。另外，请确保其质量定义与您在测试中的应用中所寻找的内容保持一致。</p><p>2.在您过去的角色中，您创建并执行的最有价值的测试是什么?您如何衡量该价值?<br>为什么这是个好问题： 确定他们在测试中的价值以及促使他们做得更好的因素。</p><p>在响应中寻找的内容： 不断改进的愿望，以及创建精确，强大的测试以显示新缺陷而不是仅仅关注已生成测试数量的历史。</p><p>3.告诉我您过去与队友发生的冲突。为什么会出现?如何解决的?如果您可以再做一次，您会以相同的方式还是以不同的方式处理它?<br>为什么这是一个好问题：确定候选人可能存在的人际关系问题。</p><p>在响应中要寻找的内容：不断发生冲突的候选人可能会一直与避免冲突的人一样麻烦。确保候选人是平衡的，并从过去的冲突中学到了如何应对未来的冲突。</p><p>4.您做了什么准备今天的采访?<br>为什么这是一个好问题： 演示候选人的主要学习方式。</p><p>响应中要查找的内容：确保已做好充分的准备，但最重要的是，请注意他们如何学习该信息。您希望这种学习风格与最成功的测试人员(特定于您的组织)相匹配。</p><p>5.成为测试员对您意味着什么?您如何向家人和朋友解释您的角色?<br>为什么这是一个好问题：表明他们对工作感到自豪，并希望长期继续在野外工作。</p><p>在响应中查找的内容：应对响应中的任何不一致与职位空缺中规定的工作职责进行对比。测试人员的一个共同特征是希望过渡到应用程序开发，并确保他们对过渡的任何需求都符合您的计划。</p><p>6.五年后，您如何看待自己?要达到更高的水平，您需要实现什么?<br>为什么这是一个好问题：突出他们的职业野心。</p><p>应对措施中寻找的内容：一定 程度的职业发展有望留住任何员工，因此不要将升任管理层或担任领导职务的愿望作为危险信号。但是，您要确保他们对自己的优缺点和达到下一个水平所需要的发展有公正而准确的看法。</p><p>7.您错过&#x2F;迟迟未采用的一种改变测试的趋势是什么?我们需要关注的下一个测试趋势是什么?<br>为什么这是一个好问题：从以往的学习中表现出自我意识和成长。</p><p>寻找回应：寻找 适应不断变化的市场条件的意识，并更新其策略以与其他伟大公司的行为相匹配。</p><p>8.您会对刚开始测试的人提供什么建议?为什么您会建议呢?<br>为什么这是一个好问题：显示他们在培养其他候选人时转变为领导或管理角色的能力。</p><p>应对中要寻找的是： 自我意识以及向同事和过去的角色学习。</p><p>9.您工作过的最好&#x2F;最差的公司是哪家?为什么做得这么好&#x2F;可怕?<br>为什么这是一个好问题：说明比较符合他们个人喜好的公司文化。</p><p>寻找响应的内容：公司环境与他们所服务的优秀公司之间的紧密结合。在讨论应聘者工作最糟糕的公司时，请确保他们的论点是扎实的，并且不是眼前的实际问题。</p><p>10.您喜欢在工作以外做些什么?<br>为什么这是一个好问题：建议他们对工作与生活之间的平衡期望。</p><p>在响应中查找的内容：正确了解其下班后的时间表。期望不一致会导致挫败感和快速倦怠。</p><p>我们希望这些软件测试面试问题能派上用场，因为您继续聘请比较好的测试人员来建立您的团队。请在下面发表评论，让我们知道您最喜欢的问题，以及我们可能忘记的面试问题!<br><br /></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;聘请优秀人才对于建立可靠的软件测试程序至关重要。相对于招聘人数而言，高质量的应征者寥寥无几，因此招聘过程正在加速发展，并且比以往任何时候都更具竞争力。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/2/image-20220516202937-o976q5g.png&quot; </summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="10_模拟面试题分析" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试人员总结软件测试常见问题(笔试、面试)</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/06_%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E6%80%BB%E7%BB%93%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/06_%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E6%80%BB%E7%BB%93%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</id>
+    <published>2022-05-16T12:26:13.902Z</published>
+    <updated>2022-05-16T12:27:19.004Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、什么是软件测试？其目的是什么？你怎么看待软件测试？<br>是为了发现错误而执行程序的过程。在软件投入运行前，对软件需求分析、设计规格说明和编码的最终复审，是软件质量保证的关键步骤。</p><p>目的是暴露程序中的错误。发现测试对象与预期的差异。具体地不同测试阶段对应不同测试目的。</p><p>软件测试工作者要站在用户的额角度思考问题，从用户的实际使用环境、习惯着手验证被测对象应用表现。与软件开发的创造性思维不同，软测活动的思维模式则是破坏性的通过构建正常、异常输入去考验被测对象的健壮性。测试工作是一项极其重要的质量保证活动。因为测试部门是软件发布质量把控的出口，又可能是用户意见反馈的入口。</p><p>2、软件测试的生命周期？各阶段对应的工作？<br>测试周期是指从测试项目计划建立到BUG提交的整个测试过程，包括软件项目测试计划，测试需求分析，测试用例设计，测试用例执行，BUG提交五个阶段。软件测试周期与软件生命周期并行，存在于软件生命周期的各个阶段。</p><p>需求分析阶段：测试人员了解需求、对需求进行分解、分析，得出测试需求。</p><p>测试计划阶段：根据需求编写测试计划&#x2F;测试方案。确定测试范围，测试通过的标准，测试的时间、人力、物力、资源、风险等。输出测试计划文档</p><p>测试设计、测试开发阶段：测试人员搭建测试用例框架，根据需求和设计编写一部分测试用例。输出测试方案文档。</p><p>测试执行阶段：测试执行阶段是软件测试人员最为重要的工作阶段，根据测试用例和计划执行测试。</p><p>测试评估阶段（BUG提交）：在执行的过程中记录、管理缺陷，测试完成后编写测试报告，进行测试评估。</p><p>3、测试计划和测试方案的内容和区别？<br>测试计划确定测试范围，测试通过的标准，测试的时间、人力、物力、资源、风险等；</p><p>测试方案确定测试的方法、类型；确定用例设计的方法，缺陷管理流程；缺陷严重程度的划分、用例格式等。</p><p>测试计划一般由测试经理、测试主管或项目测试负责人制定，属于管理文档，解决的是做什么的问题。测试方案由测试工程师设计，属于技术文档，解决的是怎么做的问题。</p><p>4、需求评审的内容？参与人员？测试人员为什么要参与需求评审？<br>内容：同步产品对于需求的详细设计,收集大家对于需求的各种反馈。</p><p>参与人员：产品、设计、研发、运营，测试等其他岗位的人</p><p>当面同步需求，对于需求的合理性、全面性的反馈。</p><p>5、测试用例的设计方法有哪几种，分别对应什么典型业务功能？<br>等价类划分</p><p>等价类即是某个测试对象的输入域的集合。是一种常用的黑盒测试方法。它将全部输入数据合理划分为若干等价类,在每一个等价类中取一个数据作为测试的输入条件，从而用少量代表性的测试数据取得较好的测试结果。等价类可分为有效等价类和无效等价类。</p><p>在输入条件规定了取值范围或值的个数的情况下,则可以确立一个有效等价类和两个无效等价类。</p><p>在输入条件规定了输入值的集合或者规定了”必须如何”的条件的情况下,可确立一个有效等价类和一个无效等价类；</p><p>在输入条件是一个布尔量的情况下,可确定一个有效等价类和一个无效等价类</p><p>在规定了输入数据的一组值（假定n个）,并且程序要对每一个输入值分别处理的情况下,可确立n个有效等价类和一个无效等价类</p><p>在规定了输入数据必须遵守的规则的情况下,可确立一个有效等价类（符合规则）和若干个无效等价类（从不同角度违反规则）</p><p>实例：三角形等价类划分</p><p>业务：邮件注册功能。</p><p>测试用例实际就是各个等价类的排列组合。</p><p>边界值分析</p><p>边界值分析法就是对输入或输出的边界值进行测试的一种黑盒测试方法。通常边界值分析法是作为对等价类划分法的补充，这种情况下，其测试用例来自等价类的边界。</p><p>大量的错误是发生在输入或输出范围的边界上，而不是发生在输入输出范围的内部。因此针对各种边界情况设计测试用例，可以查出更多的错误。</p><p>构造测试数据是要考虑3个点的选择：上点，即边界值点；内点，即与范围内的点；离点，离上点最近的点，当域是开区间时离点在域内，闭区间时离点在域外。</p><p>边界值设计法为每一个有效等价类多增了2个上点的用例。为每一个无效等价类选择的是离点的用例。</p><p>应用场景与等价类相同</p><p>判定表驱动分析</p><p>在一些数据处理问题当中，某些操作的实施依赖于多个逻辑条件的组合，即：针对不同逻辑条件的组合值，分别执行不同的操作。判定表很适合于处理这类问题。</p><p>判定表通常由四个部分组成。</p><p>1)条件桩（ConditionStub）：列出了问题得所有条件。通常认为列出的条件的次序无关紧要。</p><p>2)动作桩（ActionStub）：列出了问题规定可能采取的操作。这些操作的排列顺序没有约束。</p><p>3)条件项（ConditionEntry）：列出针对它左列条件的取值。在所有可能情况下的真假值。</p><p>4)动作项（ActionEntry）：列出在条件项的各种取值情况下应该采取的动作。</p><p>因果图法</p><p>等价类划分法和边界值分析方法都是着重考虑输入条件，但没有考虑输入条件的各种组合、输入条件之间的相互制约关系。这样虽然各种输入条件可能出错的情况已经测试到了，但多个输入条件组合起来可能出错的情况却被忽视。</p><p>针对需求规格，将原因及影响对应关系分为两组：输入与输出，输入与输入。每种又分别对应四类</p><p>输入与输出：关系主要有恒等、与、或、非。</p><p>恒等：输入a，一定产生对应的e。没有a的输入，就不会产生e的输出。</p><p>与（^）：只有同时有a和b的输入，才能产生对应的e。</p><p>或（v）：输入a或者b，就可以产生对应的e</p><p>非（~）：只有不输入a，才能产生对应的e</p><p>输入与输入：异、或、唯一、要求。</p><p>异：即互斥，所有输入条件只能成立一个，可以一个都不成立。</p><p>或：所有输入条件至少成立一个，可以多个条件共存</p><p>唯一：所有输入条件中只能且必须成立一个。</p><p>要求：如果输入条件a发生了，那么b也会发生。</p><p>采用因果图法设计测试用例的步骤：</p><p>1)分析软件规格说明描述中,那些是原因(即输入条件或输入条件的等价类),那些是结果(即输出条件),并给每个原因和结果赋予一个标识符。</p><p>2)分析软件规格说明描述中的语义，找出原因与结果之间,原因与原因之间对应的关系，根据这些关系,画出因果图。</p><p>3)由于语法或环境限制,有些原因与原因之间,原因与结果之间的组合情况不可能出现，为表明这些特殊情况,在因果图上用一些记号表明约束或限制条件。</p><p>4)把因果图转换为判定表。</p><p>5)把判定表的每一列拿出来作为依据,设计测试用例。</p><p>场景设计</p><p>用事件触发来控制流程的，对于涉及业务流程的软件系统，使用场景设计法设计是比较恰当的，比状态迁移类多了些异常的东西。</p><p>基本流：输入经过每一个正确的流程运转最终达到的额预期结果。</p><p>备选流：表示输入经过每一个流程运转时可能产生异常情况，但经过纠正后仍能达到预期的结果。</p><p>异常流：表示输入经过每一个流程运转时，产生的异常终止的现象。</p><p>错误推测法</p><p>基于经验和直觉推测程序中所有可能存在的各种错误,列举出程序中所有可能有的错误和容易发生错误的特殊情况,根据他们选择测试用例。从而有针对性的设计测试用例的方法。</p><p>6、缺陷的级别及管理流程？<br>缺陷等级一般划分为四个等级，致命、严重、一般、提示。</p><p>致命（Uregent）：主流程无法跑通，系统无法运行，崩溃或业务中断，应用模块无法启动或异常退出，主要功能模块无法使用。如：1.内存泄漏；2.严重的数值计算错误；3.系统容易崩溃；4.功能设计与需求严重不符；5.系统无法登陆；6.循环报错，无法正常退出。</p><p>严重（veryhigh）：影响系统功能或操作，主要功能存在严重缺陷，但不会影响到系统稳定性。如：1.功能未实现；2.功能存在报错；3.数值轻微的计算错误</p><p>一般（Medium）：界面、性能缺陷。如：1.边界条件下错误；2.容错性不好；3.大数据下容易无响应；4.大数据操作时，没有提供进度条</p><p>提示（Low）：易用性及建议性问题。如：1.界面颜色搭配不好；2.文字排列不整齐；3.出现错别字，但是不影响功能；4.界面格式不规范。</p><p>缺陷管理流程说明：</p><p>1、测试人员填写bug并（Assign）给测试负责人，状态为New；</p><p>2、测试负责人（review）缺陷。主要检查报告规范，以及确认bug。若是有效的bug，状态变化为open，并分配给开发人员；若bug无效则指派（Assign）回给测试人员，bug状态依旧为new</p><p>3、开发人员根据缺陷描述确认是否时缺陷，若是则进行修复，修改完成并进行单元测试后，将bug的状态变为fixed，在comment中说明修改方法，并指派给缺陷发现人。若不是缺陷或者延期修改的，将bug状态变化为Rejected，同时也在comment中注明原因。</p><p>4、测试人员每天查看自己提交的bug的状态变化，应该成为每个测试人员的例行行为；</p><p>5、当bug的状态变为fixed时，测试人员打开该bug，开始对该bug进行回归测试；如果该bug回归测试通过，则状态变为closed。否则bug的状态变为reopen（必须说明reopen、closed状态变化原因或者操作过程）；</p><p>6、若对（Reject）的缺陷进行再次确认后测试人员认为是缺陷，则需（Reopen）缺陷至开发人员出，并comment原因。</p><p>7、如果回归测试通过，可是修改的同时又引入新的bug，则重新提交bug，状态为new。如果需要的时候注明相关联的bug号；</p><p>8、只有当所有的bug状态为closed，才可发布版本。</p><p>注：每当bug状态改变后，必须给出相应的注释和说明，以便查看bug生命周期的变化情况。</p><p>7、测试准入和通过的标准？<br>准入标准：</p><p>开发人员编码结束，并已完成单元测试</p><p>需求说明书规定的功能或开发人员提交的功能说明书的功能均已实现</p><p>冒烟测试通过，界面上的功能均实现，符合设计文档规定的功能。</p><p>开发人员向测试部提交《测试申请》</p><p>通过标准：</p><p>达到100%需求覆盖</p><p>所有1、2级用例被执行，3级用例执行率达到95%，4级用例执行率达到80%</p><p>1级、2级缺陷100%修复，3级95%修复，4级60-80%修复</p><p>具体缺陷问题需要和用户沟通确认。<br><br /></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1、什么是软件测试？其目的是什么？你怎么看待软件测试？&lt;br&gt;是为了发现错误而执行程序的过程。在软件投入运行前，对软件需求分析、设计规格说明和编码的最终复审，是软件质量保证的关键步骤。&lt;/p&gt;
+&lt;p&gt;目的是暴露程序中的错误。发现测试对象与预期的差异。具体地不同测试阶段对应不</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="10_模拟面试题分析" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初级测试总结题</title>
+    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/05_%E5%88%9D%E7%BA%A7%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%E9%A2%98/"/>
+    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/05_%E5%88%9D%E7%BA%A7%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%E9%A2%98/</id>
+    <published>2022-05-16T12:23:26.370Z</published>
+    <updated>2022-05-16T12:25:10.945Z</updated>
+    
+    <content type="html"><![CDATA[<p>1）软件的概念？</p><p>软件是计算机系统中与硬件相互依存的一部分，包括程序、数据以及与其相关文档的完整集合。</p><p>2）软件测试的概念？</p><p>使用人工或自动手段来运行或测试某个系统的过程, 其目的在于检验它是否满足规定的需求或弄清预期结果与实际结果之间的差别</p><p>3）测试人员和开发人员区别?</p><p>①人员不同</p><p>测试：开发人员和测试人员 开发：只有开发人员</p><p>②所处阶段不同</p><p>测试：贯穿整个软件开发生命周期</p><p>调试：在软件开发编码阶段以及测试过程中对BUG进行调试</p><p>③对bug处理结果不同</p><p>测试：只找出错误，不解决</p><p>调试：找出错误并解决</p><p>4）什么是需求？</p><p>①用户解决问题或达到目标所需的条件或权能，</p><p>②系统或系统部件要满足合同、标准、规范或其它正式规定文档所需具有的条件或权能</p><p>5）测试生命周期模型？</p><p>V模型、W模型、瀑布模型、 螺旋模型、敏捷H模型</p><p>软件测试流程<br>1、需求分析，需求评审</p><p>2、制定测试计划、计划评审</p><p>3、编写测试用例、用例评审</p><p>4、测试实施阶段、执行测试用例</p><p>按照设计好的用例、准备好的数据和制定的测试策略，实施进行具体的测试过程</p><p>5、测试评估阶段</p><p>测试总结、缺陷分析、过程评估</p><p>7）V模型？</p><p><img src="/assets/2/image-20220516202439-w9aeb86.png" alt="image.png"></p><p>8）W模型？</p><p><img src="/assets/2/image-20220516202447-igrkosc.png" alt="image.png"></p><p>9）瀑布模型？</p><p><img src="/assets/2/image-20220516202453-gxyog3j.png" alt="image.png"></p><p>10）需求评审内容？</p><p>①对需求的描述是否易于理解？</p><p>②受否存在有二义性的需求？</p><p>③是否定义了术语表，对特定含义的术语给予了定义？</p><p>④最终产品的每个特征是用唯一的术语描述的吗？</p><p>⑤需求是中的条件和结果是不是合理，有没有遗漏一些异常因果关系？</p><p>⑥需求中有没有包含不确定行描述，如：大约、可能、等</p><p>⑦每个规格是不是都有明确说明？</p><p>⑧环境搭建是否可能或有困难？</p><p>11）需求分类？</p><p>①业务需求 ②用户需求 ③系统需求</p><p>第二部分</p><p>12）什么是测试用例？</p><p>为实施测试而向被测试系统提供的输入数据、操作或各种环境设置以及期望结果的一个特定的集合。也就是解决要测什么、怎么测和如何衡量的问题</p><p>13）什么是测试计划?</p><p>软件测试计划就是在软件测试工作正式实施之前明确测试的对象，并且通过对资源、时间、风险、测试范围和预算等方面的综合分析和规划，保证有效的实施软件测试。</p><p>14）用例优先级？</p><p>② 高：最常执行以保证功能性是稳定的，目标的行为和能力可以正常的工作，和重要的错误和边界被测试的测试用例的集合。</p><p>③ 中：这是使给出的功能区域或功能变得更详细，检查功能的多数方面包括边界，错误和配置测试的测试用例。 ④ 低：这是通常最少被执行的测试用例。但这并不意味着这些测试都不重要，只是说他们在项目的生命期间里不是常常被运行，例如GUI，错误信息，可用性</p><p>15）用例内容？</p><p>主要分为三大部分：基本信息、用例主体、执行记录</p><p>基本信息：项目名称、功能模块名、用例设计人、测试执行人、功能特性、测试目的、预置条件、参考信息</p><p>用例主体：用例编号、测试对象、检查点、预置条件、用例说明、优先级、预期结果</p><p>执行记录：测试结果、缺陷编号、备注</p><p>16）用例执行结果？</p><p>通过，不通过，未运行，无法运行</p><p>17）测试计划内容？</p><p>①测试目的 ②测试背景 ③文件受众 ④术语和定义⑤测试参考文档</p><p>⑥测试提交文档 ⑦测试范围 ⑧测试策略⑨测试资源⑩测试进度里程碑</p><p>⑪系统错误、优先级⑫测试阶段进入退出标准和通过标准</p><p>18）测试阶段？</p><p>①单元测试（组件测试）</p><p>②集成测试 ：自顶向下集成测试 、 自底向上集成测试</p><p>③系统测试</p><p>④验收测试</p><p>19）黑盒测试方法？（写出15种以上）</p><p>动态测试</p><p>故障转移和恢复测试</p><p>配置测试</p><p>容量测试</p><p>UI测试</p><p>数据和数据库完整性测试</p><p>易用性测试</p><p>功能测试</p><p>性能测试</p><p>自动化测试</p><p>健壮性测试</p><p>稳定性测试</p><p>场景测试</p><p>逻辑测试</p><p>随机测试</p><p>集成测试</p><p>系统测试</p><p>验收测试</p><p>冒烟测试</p><p>兼容性测试</p><p>逆向思维测试</p><p>本地化测试</p><p>接口测试</p><p>回归测试</p><p>Cookie测试</p><p>Alpha测试</p><p>Beta测试</p><p>安全性和访问控制测试</p><p>20）白盒和黑盒区别？</p><p>白盒测试：是通过程序的源代码进行测试而不使用用户界面。</p><p>黑盒测试：是通过使用整个软件或某种软件功能来严格地测试</p><p>①测试特点不同</p><p>黑盒测试：测试功能</p><p>白盒测试：测试程序接口与结构</p><p>②测试依据不同</p><p>黑盒测试：需求规格说明书</p><p>白盒测试：软件程序</p><p>③侧重点不同</p><p>黑盒测试：关注功能逻辑实现</p><p>白盒测试：关注内部代码结构</p><p>21）测试类型？</p><p>黑盒</p><p>白盒</p><p>灰盒</p><p>22）回归测试？</p><p>更新新版本以后确保老版本的功能依然可以使用</p><p>23）alpha测试—内部测试（未公开）</p><p>beta测试—用户公测</p><p>24）冒烟测试？</p><p>确保软件满足系统测试的要求</p><p>25）系统测试标准？</p><p>不存在致命或严重级别的BUG</p><p>不存在优先级为P1的BUG</p><p>遗留问题不能大于总BUG数的8%</p><p>遗留问题不能明显影响用户使用</p><p>26）集成模块？</p><p>驱动模块、存根模块</p><p>27）验收测试内容？</p><p>合同验收测试、法规性验收测试、alpha测试、beta测试、确保实际效果与需求一致</p><p>28）确认测试？</p><p>缺陷修复后再对其进行测试，确保真正被修复</p><p>29）设计用例原则？</p><p>100%的覆盖需求</p><ol><li>编写测试用例的方法</li></ol><p>等价类</p><p>边界值</p><p>因果图</p><p>场景法</p><p>正交法</p><p>（有经验的老司机还可采用错误推断法）</p><ol><li>BUG的优先级</li></ol><p>P1应立即修复的问题</p><p>P2在产品发布之前必须修复的问题</p><p>P3如果时间允许应该修复的问题</p><p>P4可以在发布版本中存在的问题</p><p>P5可改可不改，无伤大雅</p><p>32）BUG严重程度</p><p>致命</p><p>严重</p><p>一半</p><p>轻微</p><p>建议</p><p>33）常用的BUG管理工具</p><p>禅道、JIRA、Bugfree、QC</p><p>34）符合下边5个规则的才能叫做软件缺陷：</p><p>①软件未达到产品说明书标明的功能</p><p>②软件出现了产品说明书指明不会出现的错误</p><p>③软件功能超出产品说明书指明范围</p><p>④软件未达到产品说明书虽未指出但应达到的目标</p><p>⑤软件测试员认为软件难以理解、不易使用、运行速度缓慢，或者最终用户认为不好</p><p>35）缺陷产生的原因</p><p>程序设计错误、文档不完善、需求不断变化、软件的复杂性、沟通交流不够 、工期短，任务大、软硬件支持不完善</p><p>36）判断发现的问题是否是缺陷的方法</p><p>①通过参考文档来确认缺陷</p><p>②通过了解软件产品的行业背景（或参考同类典型软件）来发现缺陷</p><p>③通过沟通来确认和识别缺陷</p><p>37）缺陷报告原则</p><p>①Correct（准确）：每个组成部分的描述准确，不会引起误解； ②Clear（清晰）：每个组成部分的描述清晰，易于理解； ③Concise（简洁）：只包含必不可少的信息，不包括任何多余的内容； ④Complete（完整）：包含复现该缺陷的完整步骤和其他本质信息； ⑤Consistent（一致）：按照一致的格式书写全部缺陷报告。</p><p>38）缺陷报告的用途是什么？</p><p>①记录缺陷</p><p>②缺陷分类</p><p>③缺陷跟踪</p><p>39）缺陷报告的生命周期（处理流程）</p><p>激活、待确认、已解决、待确认、重新激活、已关闭</p><p>40）缺陷报告内容</p><p>三部分：基本信息、缺陷主体、跟踪记录</p><p>①基本信息：编号、版本号、软件名称、编译号、测试人员、日期、指定处理人、硬件平台、操作系统、严重程度、优先级</p><p>②缺陷主体：缺陷概述、预置条件、详细描述、预期结果、实际结果</p><p>③跟踪记录：处理报告、处理日期、修改记录、返测人、返测版本、返测日期、返测记录</p><p>OSI网络7层协议<br>物理层<br>数据链路层<br>网络层<br>传输层<br>会话层<br>表示层<br>应用层<br>APP的兼容性测试包含哪些？<br>浏览器<br>系统<br>分辨率<br>网络<br>————————————————<br>版权声明：本文为CSDN博主「测试萌萌」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/weixin_50829653/article/details/117089674">https://blog.csdn.net/weixin_50829653/article/details/117089674</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1）软件的概念？&lt;/p&gt;
+&lt;p&gt;软件是计算机系统中与硬件相互依存的一部分，包括程序、数据以及与其相关文档的完整集合。&lt;/p&gt;
+&lt;p&gt;2）软件测试的概念？&lt;/p&gt;
+&lt;p&gt;使用人工或自动手段来运行或测试某个系统的过程, 其目的在于检验它是否满足规定的需求或弄清预期结果与实际结果</summary>
+      
+    
+    
+    
+    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="10_模拟面试题分析" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
     
   </entry>
   
