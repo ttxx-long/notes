@@ -6,7 +6,7 @@
     <title>git篇 | 软件测试技术分享</title>
     
     
-        <meta name="keywords" content="课后" />
+        <meta name="keywords" content="工具" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="文章目录转载地址Git简介Git安装（仅列出在Windows系统下的安装过程）Git本地仓库操作创建版本库修改文件版本回退工作区和暂存区管理修改撤销修改删除文件&#96;Git与远程仓库交互远程仓库准备工作添加远程库从远程库克隆创建与合并分支bug分支多人协作  推送分支： 抓取分支： 工作使用Git 如何在Windows的cmd 中使用linux的命令 思维导图 转载地址 Git教程（完整） G">
@@ -70,9 +70,9 @@
 <meta property="og:image" content="http://example.com/assets/2/image-20220507201143-a0dbf4m.png">
 <meta property="og:image" content="http://example.com/assets/2/image-20220507201150-2rk7yjo.png">
 <meta property="article:published_time" content="2022-05-15T07:36:01.541Z">
-<meta property="article:modified_time" content="2022-05-12T15:37:36.784Z">
+<meta property="article:modified_time" content="2022-06-02T17:10:14.108Z">
 <meta property="article:author" content="yulong">
-<meta property="article:tag" content="课后">
+<meta property="article:tag" content="工具">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/assets/2/image-20220507195916-hlisywu.png">
     
@@ -1651,7 +1651,7 @@
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E8%AF%BE%E5%90%8E/" rel="tag">课后</a>
+        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
     </div>
 
                         
@@ -1699,7 +1699,7 @@
 <p><img src="/assets/2/image-20220507195916-hlisywu.png" alt="image.png"></p>
 <p>安装完成后，需要进行设置，在命令行输入以下代码：</p>
 <blockquote>
-<p>$ git config –global user.name “Your Name”<br>$ git config –global user.email “<a href="mailto:&#x65;&#109;&#97;&#105;&#108;&#64;&#101;&#x78;&#97;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;">&#x65;&#109;&#97;&#105;&#108;&#64;&#101;&#x78;&#97;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;</a>“</p>
+<p>$ git config –global user.name “Your Name”<br>$ git config –global user.email “<a href="mailto:&#101;&#109;&#x61;&#105;&#x6c;&#x40;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#111;&#109;">&#101;&#109;&#x61;&#105;&#x6c;&#x40;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#111;&#109;</a>“</p>
 </blockquote>
 <p>顾名思义，这是设置你的名字和Email地址。</p>
 <p>我们可以查看一下用户名和密码：</p>
@@ -1735,13 +1735,13 @@
 <p>$ git status<br>On branch master<br>nothing to commit, working tree clean &#x2F;&#x2F;当前没有需要提交的修改，而且，工作目录是干净的。<br>1<br>2<br>3<br>版本回退<br>如果我们继续对 readme.txt 文件进行修改，改成如下内容：</p>
 <p>Git is a distributed version control system.<br>Git is free software distributed under the GPL.<br>1<br>2<br>然后添加并提交：</p>
 <p>$ git add readme.txt<br>$ git commit -m “append GPL”<br>[master 1094adb] append GPL<br> 1 file changed, 1 insertion(+), 1 deletion(-)<br>1<br>2<br>3<br>4<br>到目前为止，readme.txt 文件一共有三个版本被提交到了 Git 仓库里，我们可以用 git log 命令进行查看：</p>
-<p>$ git log &#x2F;&#x2F;查看历史记录<br>commit 1094adb7b9b3807259d8cb349e7df1d4d6477073 (HEAD -&gt; master)<br>Author: Michael Liao <a href="mailto:&#97;&#x73;&#107;&#x78;&#117;&#101;&#x66;&#x65;&#110;&#103;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;">&#97;&#x73;&#107;&#x78;&#117;&#101;&#x66;&#x65;&#110;&#103;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;</a><br>Date:   Fri May 18 21:06:15 2018 +0800</p>
+<p>$ git log &#x2F;&#x2F;查看历史记录<br>commit 1094adb7b9b3807259d8cb349e7df1d4d6477073 (HEAD -&gt; master)<br>Author: Michael Liao <a href="mailto:&#x61;&#x73;&#107;&#120;&#x75;&#x65;&#102;&#x65;&#110;&#103;&#x40;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;">&#x61;&#x73;&#107;&#120;&#x75;&#x65;&#102;&#x65;&#110;&#103;&#x40;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a><br>Date:   Fri May 18 21:06:15 2018 +0800</p>
 <pre><code>append GPL
 </code></pre>
-<p>commit e475afc93c209a690c39c13a46716e8fa000c366<br>Author: Michael Liao <a href="mailto:&#x61;&#115;&#x6b;&#x78;&#117;&#101;&#x66;&#101;&#110;&#x67;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#111;&#x6d;">&#x61;&#115;&#x6b;&#x78;&#117;&#101;&#x66;&#101;&#110;&#x67;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#111;&#x6d;</a><br>Date:   Fri May 18 21:03:36 2018 +0800</p>
+<p>commit e475afc93c209a690c39c13a46716e8fa000c366<br>Author: Michael Liao <a href="mailto:&#97;&#x73;&#107;&#120;&#x75;&#x65;&#x66;&#x65;&#x6e;&#103;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;">&#97;&#x73;&#107;&#120;&#x75;&#x65;&#x66;&#x65;&#x6e;&#103;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a><br>Date:   Fri May 18 21:03:36 2018 +0800</p>
 <pre><code>add distributed
 </code></pre>
-<p>commit eaadf4e385e865d25c48e7ca9c8395c3f7dfaef0<br>Author: Michael Liao <a href="mailto:&#97;&#x73;&#x6b;&#x78;&#117;&#101;&#102;&#101;&#x6e;&#x67;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#111;&#x6d;">&#97;&#x73;&#x6b;&#x78;&#117;&#101;&#102;&#101;&#x6e;&#x67;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#111;&#x6d;</a><br>Date:   Fri May 18 20:59:18 2018 +0800</p>
+<p>commit eaadf4e385e865d25c48e7ca9c8395c3f7dfaef0<br>Author: Michael Liao <a href="mailto:&#x61;&#115;&#x6b;&#x78;&#x75;&#x65;&#102;&#101;&#110;&#x67;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;">&#x61;&#115;&#x6b;&#x78;&#x75;&#x65;&#102;&#101;&#110;&#x67;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;</a><br>Date:   Fri May 18 20:59:18 2018 +0800</p>
 <pre><code>wrote a readme file
 </code></pre>
 <p>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>我们还可以加上 –pretty&#x3D;oneline 参数：</p>
@@ -1830,7 +1830,7 @@ modified:   readme.txt
 <p>在Repository name填入 learngit （因为我已经创建完成了，所以提示此用户名存在）其他保持默认设置，点击“Create repository”按钮，就成功地创建了一个新的Git仓库：</p>
 <p><img src="/assets/2/image-20220507200409-ueso7yv.png" alt="image.png"></p>
 <p>如上图所示我已经把本地仓库的内容推送到了GitHub上了，大家创建完以后应该是一个空的仓库。这时候我们可以在本地learngit仓库下运行命令：</p>
-<p>$ git remote add origin <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#109;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#109;</a>:RFHzhj&#x2F;learngit.git &#x2F;&#x2F;“RFHzhj”是我的GitHub的账户名，你需要填写你自己的账户名<br>1<br>添加后，远程库的名字就是 origin ，这是Git默认的叫法。</p>
+<p>$ git remote add origin <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;">&#x67;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;</a>:RFHzhj&#x2F;learngit.git &#x2F;&#x2F;“RFHzhj”是我的GitHub的账户名，你需要填写你自己的账户名<br>1<br>添加后，远程库的名字就是 origin ，这是Git默认的叫法。</p>
 <p>然后，我们就可以把本地库的所有内容推送到远程库上：</p>
 <p>$ git push -u origin master<br>Counting objects: 20, done.<br>Delta compression using up to 4 threads.<br>Compressing objects: 100% (15&#x2F;15), done.<br>Writing objects: 100% (20&#x2F;20), 1.64 KiB | 560.00 KiB&#x2F;s, done.<br>Total 20 (delta 5), reused 0 (delta 0)<br>remote: Resolving deltas: 100% (5&#x2F;5), done.<br>To github.com:RFHzhj&#x2F;learngit.git</p>
 <ul>
