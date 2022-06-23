@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-06-02T16:39:37.515Z</updated>
+  <updated>2022-06-06T17:44:08.305Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,9 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python爬取抖音app</title>
+    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/01_appium/02_2/"/>
+    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/01_appium/02_2/</id>
+    <published>2022-06-06T17:12:20.963Z</published>
+    <updated>2022-06-06T17:44:08.305Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>准备<br> 安装夜神模拟器<br> 安装Xposed<a href="assets/3/android.xposed.installer.apk">xposed.installer</a><br> <a href="https://blog.csdn.net/weixin_48140105/article/details/118359568">因Xposed服务不能访问，本地方法：</a><br> 安装包：<a href="assets/3/xposed-v89-sdk22-x86.zip">xposed-v89-sdk22-x86</a><br> <a href="assets/3/JustTrustMe.apk">JustTrustMe</a><br> 安装mitmproxy： pip install mitmproxy<br> 查看mitmproxy是否安装的命令：mitmdimp –version<br> 安装 mongdb数据库<br> <a href="https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-5.0.9.zip">官网下载地址（zip）</a><br> <a href="https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-5.0.9-signed.msi">官网下载地址（msi）</a></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;准备&lt;br&gt; 安装夜神模拟器&lt;br&gt; 安装Xposed&lt;a href=&quot;assets/3/android.xposed.installer.apk&quot;&gt;xposed.installer&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;https://blog.csdn.net/</summary>
+      
+    
+    
+    
+    <category term="05_测试工具" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="06_自动化" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    <category term="02_自动化实操" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
+    
+    <category term="03_APP自动化" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    <category term="01_appium" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03-APP%E8%87%AA%E5%8A%A8%E5%8C%96/01-appium/"/>
+    
+    
+    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>4位验证码识别</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/4%E4%BD%8D%E9%AA%8C%E8%AF%81%E7%A0%81%E8%AF%86%E5%88%AB/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/4%E4%BD%8D%E9%AA%8C%E8%AF%81%E7%A0%81%E8%AF%86%E5%88%AB/</id>
+    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/4%E4%BD%8D%E9%AA%8C%E8%AF%81%E7%A0%81%E8%AF%86%E5%88%AB/"/>
+    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/4%E4%BD%8D%E9%AA%8C%E8%AF%81%E7%A0%81%E8%AF%86%E5%88%AB/</id>
     <published>2022-06-02T16:37:50.709Z</published>
     <updated>2022-06-02T16:39:37.515Z</updated>
     
@@ -38,15 +71,15 @@
     
     
     
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    <category term="05_测试工具" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="06_自动化" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
+    <category term="02_自动化实操" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
     
-    <category term="01_UI自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="01_UI自动化" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
-    <category term="python插件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/"/>
+    <category term="python插件" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/"/>
     
     
     <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
@@ -55,8 +88,8 @@
   
   <entry>
     <title>pytesseract安装使用</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/pytesseract%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/pytesseract%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</id>
+    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/pytesseract%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/pytesseract%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</id>
     <published>2022-05-30T12:30:31.411Z</published>
     <updated>2022-05-30T12:41:58.176Z</updated>
     
@@ -73,15 +106,15 @@
     
     
     
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    <category term="05_测试工具" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="06_自动化" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
+    <category term="02_自动化实操" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
     
-    <category term="01_UI自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="01_UI自动化" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
-    <category term="python插件" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/"/>
+    <category term="python插件" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01-UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/"/>
     
     
     <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
@@ -90,8 +123,8 @@
   
   <entry>
     <title>scrapy_gerapy爬虫管理框架</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/05_scrapy_gerapy%E7%88%AC%E8%99%AB%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/05_scrapy_gerapy%E7%88%AC%E8%99%AB%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/</id>
+    <link href="http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/05_scrapy_gerapy%E7%88%AC%E8%99%AB%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/"/>
+    <id>http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/05_scrapy_gerapy%E7%88%AC%E8%99%AB%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/</id>
     <published>2022-05-23T06:57:07.077Z</published>
     <updated>2022-05-27T07:09:56.753Z</updated>
     
@@ -105,13 +138,13 @@
     
     
     
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    <category term="03_测试高阶" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    <category term="01_爬虫技术" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
+    <category term="scrapy框架" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
     
-    <category term="学习笔记" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="学习笔记" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
@@ -120,8 +153,8 @@
   
   <entry>
     <title>scrapy_scrapyd部署</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/04_scrapy_scrapyd%E9%83%A8%E7%BD%B2/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/04_scrapy_scrapyd%E9%83%A8%E7%BD%B2/</id>
+    <link href="http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/04_scrapy_scrapyd%E9%83%A8%E7%BD%B2/"/>
+    <id>http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/04_scrapy_scrapyd%E9%83%A8%E7%BD%B2/</id>
     <published>2022-05-23T06:57:06.809Z</published>
     <updated>2022-05-27T06:32:45.789Z</updated>
     
@@ -135,13 +168,13 @@
     
     
     
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    <category term="03_测试高阶" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    <category term="01_爬虫技术" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
+    <category term="scrapy框架" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
     
-    <category term="学习笔记" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="学习笔记" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
@@ -150,8 +183,8 @@
   
   <entry>
     <title>03_scrapy_splash框架问题分析</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/03_scrapy_splash%E6%A1%86%E6%9E%B6%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/03_scrapy_splash%E6%A1%86%E6%9E%B6%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/</id>
+    <link href="http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/03_scrapy_splash%E6%A1%86%E6%9E%B6%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    <id>http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/03_scrapy_splash%E6%A1%86%E6%9E%B6%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/</id>
     <published>2022-05-23T06:57:06.429Z</published>
     <updated>2022-05-28T10:10:32.961Z</updated>
     
@@ -165,13 +198,13 @@
     
     
     
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    <category term="03_测试高阶" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    <category term="01_爬虫技术" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
+    <category term="scrapy框架" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
     
-    <category term="学习笔记" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="学习笔记" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
@@ -180,8 +213,8 @@
   
   <entry>
     <title>python第-scrapy框架_概念和流程</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/01_scrapy_%E6%A6%82%E5%BF%B5%E5%92%8C%E6%B5%81%E7%A8%8B/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/01_scrapy_%E6%A6%82%E5%BF%B5%E5%92%8C%E6%B5%81%E7%A8%8B/</id>
+    <link href="http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/01_scrapy_%E6%A6%82%E5%BF%B5%E5%92%8C%E6%B5%81%E7%A8%8B/"/>
+    <id>http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/01_scrapy_%E6%A6%82%E5%BF%B5%E5%92%8C%E6%B5%81%E7%A8%8B/</id>
     <published>2022-05-23T06:56:21.085Z</published>
     <updated>2022-05-23T06:58:05.331Z</updated>
     
@@ -195,13 +228,13 @@
     
     
     
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    <category term="03_测试高阶" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    <category term="01_爬虫技术" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
+    <category term="scrapy框架" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
     
-    <category term="学习笔记" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="学习笔记" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
@@ -210,8 +243,8 @@
   
   <entry>
     <title>python第-scrapy框架_入门使用</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/</id>
+    <link href="http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/</id>
     <published>2022-05-23T06:02:15.176Z</published>
     <updated>2022-05-26T13:10:16.665Z</updated>
     
@@ -228,13 +261,13 @@
     
     
     
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    <category term="03_测试高阶" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    <category term="01_爬虫技术" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
+    <category term="scrapy框架" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
     
-    <category term="学习笔记" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="学习笔记" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
@@ -243,8 +276,8 @@
   
   <entry>
     <title>Jupyter Notebook安装（Windows）</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/02_python%E6%8F%92%E4%BB%B6_jupyter/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/02_python%E6%8F%92%E4%BB%B6_jupyter/</id>
+    <link href="http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/02_python%E6%8F%92%E4%BB%B6_jupyter/"/>
+    <id>http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/02_python%E6%8F%92%E4%BB%B6_jupyter/</id>
     <published>2022-05-20T18:07:37.681Z</published>
     <updated>2022-06-02T17:14:12.965Z</updated>
     
@@ -260,9 +293,9 @@
     
     
     
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    <category term="03_测试高阶" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
-    <category term="03_python数据分析" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03-python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    <category term="03_python数据分析" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03-python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
     
     
     <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
@@ -271,8 +304,8 @@
   
   <entry>
     <title>python数据分析入门实例-pandas_matplotlib</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/</id>
+    <link href="http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/"/>
+    <id>http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/</id>
     <published>2022-05-20T16:49:23.564Z</published>
     <updated>2022-06-02T17:14:07.412Z</updated>
     
@@ -292,9 +325,9 @@ import </summary>
     
     
     
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    <category term="03_测试高阶" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
-    <category term="03_python数据分析" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03-python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    <category term="03_python数据分析" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03-python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
     
     
     <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
@@ -303,8 +336,8 @@ import </summary>
   
   <entry>
     <title>python_tkinter_图形界面编程</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02_python_tkinter/01_tkinter/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02_python_tkinter/01_tkinter/</id>
+    <link href="http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02_python_tkinter/01_tkinter/"/>
+    <id>http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02_python_tkinter/01_tkinter/</id>
     <published>2022-05-20T16:06:49.695Z</published>
     <updated>2022-06-02T17:14:00.838Z</updated>
     
@@ -320,9 +353,9 @@ from t</summary>
     
     
     
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    <category term="03_测试高阶" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
-    <category term="02_python_tkinter" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02-python-tkinter/"/>
+    <category term="02_python_tkinter" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02-python-tkinter/"/>
     
     
     <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
@@ -331,8 +364,8 @@ from t</summary>
   
   <entry>
     <title>python第三方库-scrapy爬虫框架</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/01_python_scrapy%E6%A1%86%E6%9E%B6/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/01_python_scrapy%E6%A1%86%E6%9E%B6/</id>
+    <link href="http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/01_python_scrapy%E6%A1%86%E6%9E%B6/"/>
+    <id>http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/01_python_scrapy%E6%A1%86%E6%9E%B6/</id>
     <published>2022-05-20T13:12:06.336Z</published>
     <updated>2022-05-23T07:30:52.268Z</updated>
     
@@ -346,11 +379,11 @@ from t</summary>
     
     
     
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    <category term="03_测试高阶" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    <category term="01_爬虫技术" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="scrapy框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
+    <category term="scrapy框架" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/"/>
     
     
     <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
@@ -359,8 +392,8 @@ from t</summary>
   
   <entry>
     <title>python常用编码_整理</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/</id>
+    <link href="http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/"/>
+    <id>http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/</id>
     <published>2022-05-19T06:43:08.855Z</published>
     <updated>2022-06-02T17:13:51.494Z</updated>
     
@@ -377,9 +410,9 @@ option.add_experimental_option(&amp;#</summary>
     
     
     
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    <category term="03_测试高阶" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    <category term="01_爬虫技术" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
     
     
     <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
@@ -388,8 +421,8 @@ option.add_experimental_option(&amp;#</summary>
   
   <entry>
     <title>测试高阶</title>
-    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
-    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/</id>
+    <link href="http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    <id>http://example.com/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/</id>
     <published>2022-05-19T02:39:37.332Z</published>
     <updated>2022-06-02T17:13:46.636Z</updated>
     
@@ -406,9 +439,9 @@ option.add_experimental_option(&amp;#</summary>
     
     
     
-    <category term="05_测试高阶" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
+    <category term="03_测试高阶" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
     
-    <category term="01_爬虫技术" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    <category term="01_爬虫技术" scheme="http://example.com/categories/03-%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01-%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
     
     
     <category term="测试高阶" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/"/>
@@ -417,8 +450,8 @@ option.add_experimental_option(&amp;#</summary>
   
   <entry>
     <title>python+requests+pytest接口自动化</title>
-    <link href="http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/03_python+requests+pytest%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    <id>http://example.com/07_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/03_python+requests+pytest%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/</id>
+    <link href="http://example.com/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/03_python+requests+pytest%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <id>http://example.com/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/03_python+requests+pytest%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/</id>
     <published>2022-05-16T12:53:10.913Z</published>
     <updated>2022-06-02T17:10:14.247Z</updated>
     
@@ -434,15 +467,15 @@ option.add_experimental_option(&amp;#</summary>
     
     
     
-    <category term="07_测试工具" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    <category term="05_测试工具" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     
-    <category term="06_自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="06_自动化" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
-    <category term="02_自动化实操" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
+    <category term="02_自动化实操" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/"/>
     
-    <category term="02_API自动化" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02-API%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="02_API自动化" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02-API%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
-    <category term="api自动化框架" scheme="http://example.com/categories/07-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02-API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/"/>
+    <category term="api自动化框架" scheme="http://example.com/categories/05-%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06-%E8%87%AA%E5%8A%A8%E5%8C%96/02-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02-API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/"/>
     
     
     <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
@@ -451,8 +484,8 @@ option.add_experimental_option(&amp;#</summary>
   
   <entry>
     <title>测试面试题精选【拼多多二面】</title>
-    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/09_%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E9%80%89%E3%80%90%E6%8B%BC%E5%A4%9A%E5%A4%9A%E4%BA%8C%E9%9D%A2%E3%80%91/"/>
-    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/09_%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E9%80%89%E3%80%90%E6%8B%BC%E5%A4%9A%E5%A4%9A%E4%BA%8C%E9%9D%A2%E3%80%91/</id>
+    <link href="http://example.com/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/09_%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E9%80%89%E3%80%90%E6%8B%BC%E5%A4%9A%E5%A4%9A%E4%BA%8C%E9%9D%A2%E3%80%91/"/>
+    <id>http://example.com/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/09_%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E9%80%89%E3%80%90%E6%8B%BC%E5%A4%9A%E5%A4%9A%E4%BA%8C%E9%9D%A2%E3%80%91/</id>
     <published>2022-05-16T12:29:03.176Z</published>
     <updated>2022-05-16T12:36:55.498Z</updated>
     
@@ -466,9 +499,11 @@ option.add_experimental_option(&amp;#</summary>
     
     
     
-    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    <category term="01_测试初阶" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/"/>
     
-    <category term="10_模拟面试题分析" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    <category term="02_测试理论" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="10_模拟面试题分析" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
     
     
     <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
@@ -477,17 +512,19 @@ option.add_experimental_option(&amp;#</summary>
   
   <entry>
     <title>从未听过的10个软件测试面试问题</title>
-    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%20-%20%E5%89%AF%E6%9C%AC%20(2)/"/>
-    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%20-%20%E5%89%AF%E6%9C%AC%20(2)/</id>
+    <link href="http://example.com/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%20-%20%E5%89%AF%E6%9C%AC%20(2)/"/>
+    <id>http://example.com/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%20-%20%E5%89%AF%E6%9C%AC%20(2)/</id>
     <published>2022-05-16T12:29:02.086Z</published>
     <updated>2022-05-16T12:28:56.907Z</updated>
     
     
     
     
-    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    <category term="01_测试初阶" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/"/>
     
-    <category term="10_模拟面试题分析" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    <category term="02_测试理论" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="10_模拟面试题分析" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
     
     
     <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
@@ -496,8 +533,8 @@ option.add_experimental_option(&amp;#</summary>
   
   <entry>
     <title>Python基础题目大全</title>
-    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/08_Python%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE%E5%A4%A7%E5%85%A8/"/>
-    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/08_Python%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE%E5%A4%A7%E5%85%A8/</id>
+    <link href="http://example.com/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/08_Python%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE%E5%A4%A7%E5%85%A8/"/>
+    <id>http://example.com/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/08_Python%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE%E5%A4%A7%E5%85%A8/</id>
     <published>2022-05-16T12:29:01.458Z</published>
     <updated>2022-05-16T12:35:20.944Z</updated>
     
@@ -513,9 +550,11 @@ option.add_experimental_option(&amp;#</summary>
     
     
     
-    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    <category term="01_测试初阶" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/"/>
     
-    <category term="10_模拟面试题分析" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    <category term="02_测试理论" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="10_模拟面试题分析" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
     
     
     <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
@@ -524,8 +563,8 @@ option.add_experimental_option(&amp;#</summary>
   
   <entry>
     <title>从未听过的10个软件测试面试问题</title>
-    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/"/>
-    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/</id>
+    <link href="http://example.com/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/</id>
     <published>2022-05-16T12:28:26.031Z</published>
     <updated>2022-05-16T12:29:50.253Z</updated>
     
@@ -540,9 +579,11 @@ option.add_experimental_option(&amp;#</summary>
     
     
     
-    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    <category term="01_测试初阶" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/"/>
     
-    <category term="10_模拟面试题分析" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    <category term="02_测试理论" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="10_模拟面试题分析" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
     
     
     <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
@@ -551,8 +592,8 @@ option.add_experimental_option(&amp;#</summary>
   
   <entry>
     <title>测试人员总结软件测试常见问题(笔试、面试)</title>
-    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/06_%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E6%80%BB%E7%BB%93%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
-    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/06_%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E6%80%BB%E7%BB%93%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</id>
+    <link href="http://example.com/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/06_%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E6%80%BB%E7%BB%93%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/06_%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E6%80%BB%E7%BB%93%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</id>
     <published>2022-05-16T12:26:13.902Z</published>
     <updated>2022-05-16T12:27:19.004Z</updated>
     
@@ -567,38 +608,11 @@ option.add_experimental_option(&amp;#</summary>
     
     
     
-    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    <category term="01_测试初阶" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/"/>
     
-    <category term="10_模拟面试题分析" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    <category term="02_测试理论" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
     
-    
-    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>初级测试总结题</title>
-    <link href="http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/05_%E5%88%9D%E7%BA%A7%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%E9%A2%98/"/>
-    <id>http://example.com/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/05_%E5%88%9D%E7%BA%A7%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%E9%A2%98/</id>
-    <published>2022-05-16T12:23:26.370Z</published>
-    <updated>2022-05-16T12:25:10.945Z</updated>
-    
-    <content type="html"><![CDATA[<p>1）软件的概念？</p><p>软件是计算机系统中与硬件相互依存的一部分，包括程序、数据以及与其相关文档的完整集合。</p><p>2）软件测试的概念？</p><p>使用人工或自动手段来运行或测试某个系统的过程, 其目的在于检验它是否满足规定的需求或弄清预期结果与实际结果之间的差别</p><p>3）测试人员和开发人员区别?</p><p>①人员不同</p><p>测试：开发人员和测试人员 开发：只有开发人员</p><p>②所处阶段不同</p><p>测试：贯穿整个软件开发生命周期</p><p>调试：在软件开发编码阶段以及测试过程中对BUG进行调试</p><p>③对bug处理结果不同</p><p>测试：只找出错误，不解决</p><p>调试：找出错误并解决</p><p>4）什么是需求？</p><p>①用户解决问题或达到目标所需的条件或权能，</p><p>②系统或系统部件要满足合同、标准、规范或其它正式规定文档所需具有的条件或权能</p><p>5）测试生命周期模型？</p><p>V模型、W模型、瀑布模型、 螺旋模型、敏捷H模型</p><p>软件测试流程<br>1、需求分析，需求评审</p><p>2、制定测试计划、计划评审</p><p>3、编写测试用例、用例评审</p><p>4、测试实施阶段、执行测试用例</p><p>按照设计好的用例、准备好的数据和制定的测试策略，实施进行具体的测试过程</p><p>5、测试评估阶段</p><p>测试总结、缺陷分析、过程评估</p><p>7）V模型？</p><p><img src="/assets/2/image-20220516202439-w9aeb86.png" alt="image.png"></p><p>8）W模型？</p><p><img src="/assets/2/image-20220516202447-igrkosc.png" alt="image.png"></p><p>9）瀑布模型？</p><p><img src="/assets/2/image-20220516202453-gxyog3j.png" alt="image.png"></p><p>10）需求评审内容？</p><p>①对需求的描述是否易于理解？</p><p>②受否存在有二义性的需求？</p><p>③是否定义了术语表，对特定含义的术语给予了定义？</p><p>④最终产品的每个特征是用唯一的术语描述的吗？</p><p>⑤需求是中的条件和结果是不是合理，有没有遗漏一些异常因果关系？</p><p>⑥需求中有没有包含不确定行描述，如：大约、可能、等</p><p>⑦每个规格是不是都有明确说明？</p><p>⑧环境搭建是否可能或有困难？</p><p>11）需求分类？</p><p>①业务需求 ②用户需求 ③系统需求</p><p>第二部分</p><p>12）什么是测试用例？</p><p>为实施测试而向被测试系统提供的输入数据、操作或各种环境设置以及期望结果的一个特定的集合。也就是解决要测什么、怎么测和如何衡量的问题</p><p>13）什么是测试计划?</p><p>软件测试计划就是在软件测试工作正式实施之前明确测试的对象，并且通过对资源、时间、风险、测试范围和预算等方面的综合分析和规划，保证有效的实施软件测试。</p><p>14）用例优先级？</p><p>② 高：最常执行以保证功能性是稳定的，目标的行为和能力可以正常的工作，和重要的错误和边界被测试的测试用例的集合。</p><p>③ 中：这是使给出的功能区域或功能变得更详细，检查功能的多数方面包括边界，错误和配置测试的测试用例。 ④ 低：这是通常最少被执行的测试用例。但这并不意味着这些测试都不重要，只是说他们在项目的生命期间里不是常常被运行，例如GUI，错误信息，可用性</p><p>15）用例内容？</p><p>主要分为三大部分：基本信息、用例主体、执行记录</p><p>基本信息：项目名称、功能模块名、用例设计人、测试执行人、功能特性、测试目的、预置条件、参考信息</p><p>用例主体：用例编号、测试对象、检查点、预置条件、用例说明、优先级、预期结果</p><p>执行记录：测试结果、缺陷编号、备注</p><p>16）用例执行结果？</p><p>通过，不通过，未运行，无法运行</p><p>17）测试计划内容？</p><p>①测试目的 ②测试背景 ③文件受众 ④术语和定义⑤测试参考文档</p><p>⑥测试提交文档 ⑦测试范围 ⑧测试策略⑨测试资源⑩测试进度里程碑</p><p>⑪系统错误、优先级⑫测试阶段进入退出标准和通过标准</p><p>18）测试阶段？</p><p>①单元测试（组件测试）</p><p>②集成测试 ：自顶向下集成测试 、 自底向上集成测试</p><p>③系统测试</p><p>④验收测试</p><p>19）黑盒测试方法？（写出15种以上）</p><p>动态测试</p><p>故障转移和恢复测试</p><p>配置测试</p><p>容量测试</p><p>UI测试</p><p>数据和数据库完整性测试</p><p>易用性测试</p><p>功能测试</p><p>性能测试</p><p>自动化测试</p><p>健壮性测试</p><p>稳定性测试</p><p>场景测试</p><p>逻辑测试</p><p>随机测试</p><p>集成测试</p><p>系统测试</p><p>验收测试</p><p>冒烟测试</p><p>兼容性测试</p><p>逆向思维测试</p><p>本地化测试</p><p>接口测试</p><p>回归测试</p><p>Cookie测试</p><p>Alpha测试</p><p>Beta测试</p><p>安全性和访问控制测试</p><p>20）白盒和黑盒区别？</p><p>白盒测试：是通过程序的源代码进行测试而不使用用户界面。</p><p>黑盒测试：是通过使用整个软件或某种软件功能来严格地测试</p><p>①测试特点不同</p><p>黑盒测试：测试功能</p><p>白盒测试：测试程序接口与结构</p><p>②测试依据不同</p><p>黑盒测试：需求规格说明书</p><p>白盒测试：软件程序</p><p>③侧重点不同</p><p>黑盒测试：关注功能逻辑实现</p><p>白盒测试：关注内部代码结构</p><p>21）测试类型？</p><p>黑盒</p><p>白盒</p><p>灰盒</p><p>22）回归测试？</p><p>更新新版本以后确保老版本的功能依然可以使用</p><p>23）alpha测试—内部测试（未公开）</p><p>beta测试—用户公测</p><p>24）冒烟测试？</p><p>确保软件满足系统测试的要求</p><p>25）系统测试标准？</p><p>不存在致命或严重级别的BUG</p><p>不存在优先级为P1的BUG</p><p>遗留问题不能大于总BUG数的8%</p><p>遗留问题不能明显影响用户使用</p><p>26）集成模块？</p><p>驱动模块、存根模块</p><p>27）验收测试内容？</p><p>合同验收测试、法规性验收测试、alpha测试、beta测试、确保实际效果与需求一致</p><p>28）确认测试？</p><p>缺陷修复后再对其进行测试，确保真正被修复</p><p>29）设计用例原则？</p><p>100%的覆盖需求</p><ol><li>编写测试用例的方法</li></ol><p>等价类</p><p>边界值</p><p>因果图</p><p>场景法</p><p>正交法</p><p>（有经验的老司机还可采用错误推断法）</p><ol><li>BUG的优先级</li></ol><p>P1应立即修复的问题</p><p>P2在产品发布之前必须修复的问题</p><p>P3如果时间允许应该修复的问题</p><p>P4可以在发布版本中存在的问题</p><p>P5可改可不改，无伤大雅</p><p>32）BUG严重程度</p><p>致命</p><p>严重</p><p>一半</p><p>轻微</p><p>建议</p><p>33）常用的BUG管理工具</p><p>禅道、JIRA、Bugfree、QC</p><p>34）符合下边5个规则的才能叫做软件缺陷：</p><p>①软件未达到产品说明书标明的功能</p><p>②软件出现了产品说明书指明不会出现的错误</p><p>③软件功能超出产品说明书指明范围</p><p>④软件未达到产品说明书虽未指出但应达到的目标</p><p>⑤软件测试员认为软件难以理解、不易使用、运行速度缓慢，或者最终用户认为不好</p><p>35）缺陷产生的原因</p><p>程序设计错误、文档不完善、需求不断变化、软件的复杂性、沟通交流不够 、工期短，任务大、软硬件支持不完善</p><p>36）判断发现的问题是否是缺陷的方法</p><p>①通过参考文档来确认缺陷</p><p>②通过了解软件产品的行业背景（或参考同类典型软件）来发现缺陷</p><p>③通过沟通来确认和识别缺陷</p><p>37）缺陷报告原则</p><p>①Correct（准确）：每个组成部分的描述准确，不会引起误解； ②Clear（清晰）：每个组成部分的描述清晰，易于理解； ③Concise（简洁）：只包含必不可少的信息，不包括任何多余的内容； ④Complete（完整）：包含复现该缺陷的完整步骤和其他本质信息； ⑤Consistent（一致）：按照一致的格式书写全部缺陷报告。</p><p>38）缺陷报告的用途是什么？</p><p>①记录缺陷</p><p>②缺陷分类</p><p>③缺陷跟踪</p><p>39）缺陷报告的生命周期（处理流程）</p><p>激活、待确认、已解决、待确认、重新激活、已关闭</p><p>40）缺陷报告内容</p><p>三部分：基本信息、缺陷主体、跟踪记录</p><p>①基本信息：编号、版本号、软件名称、编译号、测试人员、日期、指定处理人、硬件平台、操作系统、严重程度、优先级</p><p>②缺陷主体：缺陷概述、预置条件、详细描述、预期结果、实际结果</p><p>③跟踪记录：处理报告、处理日期、修改记录、返测人、返测版本、返测日期、返测记录</p><p>OSI网络7层协议<br>物理层<br>数据链路层<br>网络层<br>传输层<br>会话层<br>表示层<br>应用层<br>APP的兼容性测试包含哪些？<br>浏览器<br>系统<br>分辨率<br>网络<br>————————————————<br>版权声明：本文为CSDN博主「测试萌萌」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/weixin_50829653/article/details/117089674">https://blog.csdn.net/weixin_50829653/article/details/117089674</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;1）软件的概念？&lt;/p&gt;
-&lt;p&gt;软件是计算机系统中与硬件相互依存的一部分，包括程序、数据以及与其相关文档的完整集合。&lt;/p&gt;
-&lt;p&gt;2）软件测试的概念？&lt;/p&gt;
-&lt;p&gt;使用人工或自动手段来运行或测试某个系统的过程, 其目的在于检验它是否满足规定的需求或弄清预期结果与实际结果</summary>
-      
-    
-    
-    
-    <category term="02_测试理论" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
-    
-    <category term="10_模拟面试题分析" scheme="http://example.com/categories/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
+    <category term="10_模拟面试题分析" scheme="http://example.com/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/"/>
     
     
     <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>

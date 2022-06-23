@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Python基础题目大全 | 软件测试技术分享</title>
+    
+    
+        <meta name="keywords" content="测试理论" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="1、为什么学习Python？人生苦短？人间不值得？想想自己的初心吧！ 2、通过什么途径学习的Python？官网、网上视频、学习网站、论坛、大牛的辅导 3、Python和Java、PHP、C、C#、C++等其他语言的对比？（1）、python代码，简介，明确，优雅，简单易懂（2）、开发效率高（3）、可扩展性强 4、简述解释型和编译型编程语言？解释型：在执行程序时，计算机才一条一条的将代码解释成机器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python基础题目大全">
+<meta property="og:url" content="http://example.com/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/08_Python%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE%E5%A4%A7%E5%85%A8/index.html">
+<meta property="og:site_name" content="软件测试技术分享">
+<meta property="og:description" content="1、为什么学习Python？人生苦短？人间不值得？想想自己的初心吧！ 2、通过什么途径学习的Python？官网、网上视频、学习网站、论坛、大牛的辅导 3、Python和Java、PHP、C、C#、C++等其他语言的对比？（1）、python代码，简介，明确，优雅，简单易懂（2）、开发效率高（3）、可扩展性强 4、简述解释型和编译型编程语言？解释型：在执行程序时，计算机才一条一条的将代码解释成机器">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/assets/2/image-20220516203117-m9jj2bk.png">
+<meta property="article:published_time" content="2022-05-16T12:29:01.458Z">
+<meta property="article:modified_time" content="2022-05-16T12:35:20.944Z">
+<meta property="article:author" content="yulong">
+<meta property="article:tag" content="测试理论">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/2/image-20220516203117-m9jj2bk.png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="软件测试技术分享" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/favicon.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">软件测试技术分享</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>分类</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            01_测试初阶
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_测试基础
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/01_%E5%88%9D%E8%AF%86%E6%B5%8B%E8%AF%95/">01_初识软件测试</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/02_%E6%B5%8B%E8%AF%95%E8%A1%8C%E4%B8%9A/">02_了解软件测试行业</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/03_%E5%A4%9A%E7%BB%B4%E5%BA%A6%E5%88%86%E6%9E%90/">03_多维度分析</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/04_%E8%96%AA%E8%B5%84%E5%88%86%E6%9E%90/">04_薪资分析</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/05_%E6%B5%8B%E8%AF%95%E7%B4%A0%E8%B4%A8/">05_测试素质</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/06_%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%99/">06_学习规则</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            02_测试理论
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_第一章基础
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            901_文件
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_计算机基础
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/01_windows%E5%BF%AB%E6%8D%B7%E9%94%AE/">windows快捷键</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/02_Linux%E7%B3%BB%E7%BB%9F/">Linux系统</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/03_windows%E4%B8%8Elinux%E7%9A%84%E5%8C%BA%E5%88%AB/">windows与linux的区别</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/04_%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/">进制之间的转换</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            902_测试理论
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92/">测试计划</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E5%88%86%E7%B1%BB/">软件测试的分类</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E6%B5%8B%E8%AF%95%E7%A7%8D%E7%B1%BB%E5%88%92%E5%88%86/">测试种类划分</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95/">黑盒测试</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1/">测试用例设计</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%99%BB%E5%BD%95/">登录</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/07_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%89%A7%E8%A1%8C/">软件测试执行</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/08_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A/">软件测试报告</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E6%B5%8B%E8%AF%95%E6%A6%82%E5%BF%B5%E6%80%BB%E7%BB%93/">测试概念总结</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E8%BF%AD%E4%BB%A3%E6%A8%A1%E5%9E%8B/">迭代模型</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/901_%E6%96%87%E4%BB%B6/902_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%8416%E7%A7%8D%E6%B5%8B%E8%AF%95%E7%B1%BB%E5%9E%8B/">软件测试的16种测试类型</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/01_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">计算机基础</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%9F%BA%E7%A1%80/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E6%A6%82%E5%BF%B5/">测试理论概念</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_第二章接口测试
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/02_%E7%AC%AC%E4%BA%8C%E7%AB%A0%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/01_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/">接口测试</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_第三章操作
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_Linux系统
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            902_课中_linux文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/01_Linux%E7%B3%BB%E7%BB%9F/902_%E8%AF%BE%E4%B8%AD_linux%E6%96%87%E4%BB%B6/01_Linux%E5%91%BD%E4%BB%A4/">linux基本命令</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/01_Linux%E7%B3%BB%E7%BB%9F/902_%E8%AF%BE%E4%B8%AD_linux%E6%96%87%E4%BB%B6/02_linux%E5%91%BD%E4%BB%A4%E5%AE%9E%E6%93%8D/">linux命令实操</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/01_Linux%E7%B3%BB%E7%BB%9F/01_linux%E7%B3%BB%E7%BB%9F/">linux系统</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_数据库
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            903_课中_数据库文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/01_%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">数据库基础知识</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/02_%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/">数据库命令行操作</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/03_%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%AD%E5%8F%A5%E4%BC%98%E5%8C%96/">数据库语句优化</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/04_%E5%85%B6%E4%BB%96%E8%BF%9E%E6%8E%A5%E5%B7%A5%E5%85%B7/">数据库其他连接工具</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/05_%E7%B4%A2%E5%BC%95/">索引</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/06_%E4%B8%BB%E9%94%AE/">主键</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/07_explain%E8%AF%A6%E8%A7%A3/">explain详解</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/08_%E7%B4%A2%E5%BC%95%E6%96%87%E7%8C%AE/">索引文献</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/903_%E8%AF%BE%E4%B8%AD_%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/09_%E7%A3%81%E7%9B%98/">磁盘</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/02_%E6%95%B0%E6%8D%AE%E5%BA%93/01_%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_网络协议
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            904_网络协议文件
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_http协议
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/03_%E4%BB%A3%E7%90%86/">代理</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/04_%E7%8A%B6%E6%80%81%E7%A0%81/">状态码</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/01_HTTP%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3/">HTTP协议详解</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/02_%E7%BC%93%E5%AD%98/">缓存</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/06_http%E5%8D%8F%E8%AE%AE/05_cookie/">cookie</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/01_%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/">网络技术</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/03_%E7%BD%91%E7%BB%9C%E5%B1%82/">网络层</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/02_wireshark%E4%BB%8B%E7%BB%8D/">wireshark介绍</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/04_%E4%BC%A0%E8%BE%93%E5%B1%82/">传输层</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/904_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%96%87%E4%BB%B6/05_%E5%BA%94%E7%94%A8%E5%B1%82/">应用层</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%93%8D%E4%BD%9C/03_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/01_%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">网络协议</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_第四章性能测试
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            905_性能测试文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/01_QNET-%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">QNET-网络测试工具</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/02_locust/">locust</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_%E5%90%84%E9%A1%B9%E6%8C%87%E6%A0%87%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/">各项指标的计算方法</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/04_%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87%E7%9A%84%E6%A0%87%E5%87%861/">性能指标的标准1</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/05_%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87%E7%9A%84%E6%A0%87%E5%87%862/">性能指标的标准2</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/905_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/06_%E6%9C%89%E6%B2%A1%E6%9C%89%E5%81%9A%E8%BF%87%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">有没有做过性能测试</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/01_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">性能测试</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_第五章APP测试
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            999_APP测试文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/01_adb%E5%91%BD%E4%BB%A4%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">adb命令环境配置</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/02_%E5%B8%B8%E7%94%A8%E7%9A%84adb%E7%9A%84%E5%91%BD%E4%BB%A4%E6%93%8D%E4%BD%9C/">常用的adb的命令操作</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_%E9%80%8D%E9%81%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/">逍遥虚拟机</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/04_Monkey%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D/">Monkey工具介绍</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/999_APP%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/05_Monkey%E4%BD%BF%E7%94%A8/">Monkey使用</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/05_%E7%AC%AC%E4%BA%94%E7%AB%A0APP%E6%B5%8B%E8%AF%95/01_APP%E6%B5%8B%E8%AF%95/">APP测试</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_第六章自动化测试
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            999_自动化测试文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/01_python%E5%9F%BA%E7%A1%80/">python基础</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_selenium/">selenium</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/02_UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">UI自动化测试</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/04_Puppeteer/">Puppeteer</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/05_Playwright/">Playwright</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/06_PlayWright%E6%95%99%E7%A8%8B(%E4%B8%80)/">PlayWright教程(一)</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/07_PlayWright%E6%95%99%E7%A8%8B(%E4%BA%8C)/">PlayWright教程(二)</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/08_%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/">接口自动化</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/09_APP%E8%87%AA%E5%8A%A8%E5%8C%96/">APP自动化</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/10_python%E5%9F%BA%E7%A1%80%E7%BB%83%E4%B9%A0/">python基础练习</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/03_%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/">接口自动化</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/04_APP%E8%87%AA%E5%8A%A8%E5%8C%96/">APP自动化</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/999_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%96%87%E4%BB%B6/05_python%E5%9F%BA%E7%A1%80%E7%BB%83%E4%B9%A0/">python基础练习</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/06_%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">自动化测试</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_第七章安全测试
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/07_%E7%AC%AC%E4%B8%83%E7%AB%A0%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/01_%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/">安全测试</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            08_第八章项目
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/08_%E7%AC%AC%E5%85%AB%E7%AB%A0%E9%A1%B9%E7%9B%AE/01_%E9%A1%B9%E7%9B%AE/">项目</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            09_简历编写
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/01_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/">简历编写</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/02_%E7%AE%80%E5%8E%86%E7%9A%84%E5%86%85%E5%AE%B9%E4%B8%8E%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84/">简历的内容与逻辑结构</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/09_%E7%AE%80%E5%8E%86%E7%BC%96%E5%86%99/03_%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF/">简历模板</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            10_模拟面试题分析
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/01_%E9%9D%A2%E8%AF%95%E5%AE%98%E6%9C%80%E5%B8%B8%E9%97%AE%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88/">面试官最常问的面试题及答案</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/02_%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%AB%E7%AD%94%E6%A1%88/">软件测试面试题含答案:WEB+网络|接口测试|性能测试|自动化测试</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/03_%E9%9D%A2%E8%AF%95%E5%AE%98%E6%9C%80%E5%B8%B8%E9%97%AE%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%20-100%E9%A2%98/">面试官最常问的面试题及答案-100题</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/04_%E9%9D%A2%E8%AF%95Python%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B2%97/">面试Python自动化测试岗</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/05_%E5%88%9D%E7%BA%A7%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%E9%A2%98/">初级测试总结题</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/06_%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E6%80%BB%E7%BB%93%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">测试人员总结软件测试常见问题(笔试、面试)</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/">从未听过的10个软件测试面试问题</a></li>  <li class="file active"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/08_Python%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE%E5%A4%A7%E5%85%A8/">Python基础题目大全</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%20-%20%E5%89%AF%E6%9C%AC%20(2)/">从未听过的10个软件测试面试问题</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/09_%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E9%80%89%E3%80%90%E6%8B%BC%E5%A4%9A%E5%A4%9A%E4%BA%8C%E9%9D%A2%E3%80%91/">测试面试题精选【拼多多二面】</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            11_面试题分析
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            999_面试文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/01_%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/">自我介绍</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/02_%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/">项目介绍</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/03_%E8%AE%BE%E8%AE%A1%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/">设计测试用例</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/04_01_%E5%85%B6%E4%BB%96%E9%80%BB%E8%BE%91%E6%80%A7%E9%97%AE%E9%A2%98/">其他逻辑性问题</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/05_%E4%B8%AA%E4%BA%BA%E9%97%AE%E9%A2%98/">个人问题</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/06_%E5%BC%80%E6%94%BE%E6%80%A7%E9%97%AE%E9%A2%98/">开放性问题</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/07_%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/">数据库相关</a></li>  <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/999_%E9%9D%A2%E8%AF%95%E6%96%87%E4%BB%B6/04_%E9%80%BB%E8%BE%91%E6%80%A7%E9%97%AE%E9%A2%98/">逻辑性问题</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/11_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/01_%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/">面试题问题分析</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_测试中阶
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/02_%E6%B5%8B%E8%AF%95%E4%B8%AD%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E4%B8%AD%E9%98%B6/">测试中阶</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_测试高阶
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_爬虫技术
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            scrapy框架
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            学习笔记
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/02_scrapy_%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/">python第-scrapy框架_入门使用</a></li>  <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/01_scrapy_%E6%A6%82%E5%BF%B5%E5%92%8C%E6%B5%81%E7%A8%8B/">python第-scrapy框架_概念和流程</a></li>  <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/03_scrapy_splash%E6%A1%86%E6%9E%B6%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/">03_scrapy_splash框架问题分析</a></li>  <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/04_scrapy_scrapyd%E9%83%A8%E7%BD%B2/">scrapy_scrapyd部署</a></li>  <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/05_scrapy_gerapy%E7%88%AC%E8%99%AB%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/">scrapy_gerapy爬虫管理框架</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/scrapy%E6%A1%86%E6%9E%B6/01_python_scrapy%E6%A1%86%E6%9E%B6/">python第三方库-scrapy爬虫框架</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/">测试高阶</a></li>  <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/02_python%E5%B8%B8%E7%94%A8%E7%BC%96%E7%A0%81/">python常用编码_整理</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_python_tkinter
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/02_python_tkinter/01_tkinter/">python_tkinter_图形界面编程</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_python数据分析
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/01_pandas_matplotlib/">python数据分析入门实例-pandas_matplotlib</a></li>  <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/03_python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/02_python%E6%8F%92%E4%BB%B6_jupyter/">Jupyter Notebook安装（Windows）</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/03_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/01_%E6%B5%8B%E8%AF%95%E9%AB%98%E9%98%B6/">04_测试高阶</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_测试专家
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/04_%E6%B5%8B%E8%AF%95%E4%B8%93%E5%AE%B6/01_%E6%B5%8B%E8%AF%95%E4%B8%93%E5%AE%B6/">测试专家</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_测试工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_测试管理工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_jira
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            jira文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/01_jira%E7%AE%80%E4%BB%8B/">01_jira简介</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/03_JIRA%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B/">03_JIRA瀑布模型</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/04_JIRA%E6%95%8F%E6%8D%B7/">04_JIRA敏捷</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/02_JIRA%E5%AE%89%E8%A3%85/">02_jira安装</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/05_JIRAScrum/">05_JIRA Scrum</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/06_Sprint%E7%9A%84%E5%B7%A5%E4%BD%9C/">06_Sprint的工作</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/07_%E7%9C%8B%E6%9D%BF%E6%96%B9%E6%B3%95/">07_看板方法</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/08_%E7%9C%8B%E6%9D%BF%EF%BC%88Kanban%EF%BC%89%E4%B8%8EScrum%E5%8C%BA%E5%88%AB/">08_看板（Kanban）与Scrum区别</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/09_JIRA%E9%97%AE%E9%A2%98/">09_JIRA问题</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/11_JIRA%E7%99%BB%E5%BD%95/">11_JIRA登录</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/12_JIRA%E4%BB%AA%E8%A1%A8%E7%9B%98/">12_JIRA仪表盘</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/10_JIRA%E5%B7%A5%E4%BD%9C%E6%B5%81/">10_JIRA工作流</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/13_Jira%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B/">13_Jira问题类型</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/14_Jira%E7%A7%AF%E5%8E%8B%EF%BC%88%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%EF%BC%89/">14_Jira积压（待办事项）</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/15_JiraScrum%E6%9D%BF/">15_Jira Scrum板</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/16_Jira%E5%88%9B%E5%BB%BA%E5%86%B2%E5%88%BA%EF%BC%88Sprint%EF%BC%89/">16_Jira创建冲刺（Sprint）</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/17_Jira%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF/">17_Jira控制面板</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/18_JIRA%E7%BC%BA%E9%99%B7%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">18_JIRA缺陷生命周期</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/19_Jira%E4%B8%8EBugzilla/">19_Jira与Bugzilla</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/20_Jira%E5%8F%B2%E8%AF%97%EF%BC%88Epic%EF%BC%89/">20_Jira史诗（Epic）</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/21_Jira%E7%89%88%E6%9C%AC/">21_Jira版本</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/jira%E6%96%87%E4%BB%B6/22_Jira%E6%8A%A5%E5%91%8A/">22_Jira报告</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/01_jira/01_jira/">jira</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_QualityCenter
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/02_QualityCenter/01_QualityCenter/">QualityCenter</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_禅道
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/03_%E7%A6%85%E9%81%93/01_%E7%A6%85%E9%81%93/">禅道</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_bugzilla
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/04_bugzilla/01_bugzilla/">bugzilla</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/04_bugzilla/02_bugzilla%E5%AE%89%E8%A3%85/">bugzilla安装</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_vss
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/05_vss/01_vss/">vss</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_note
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/06_note/01_note/">note</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_CQ
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/07_CQ/01_CQ/">CQ</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            08_svn篇
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/08_svn%E7%AF%87/01_svn%E7%AF%87/">svn篇</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            09_git篇
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/09_git%E7%AF%87/01_git%E7%AF%87/">git篇</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            10_TestDirector
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/10_TestDirector/01_TestDirector/">TestDirector</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            11_TAPD
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/11_TAPD/01_Tapd/">tapd</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%B5%8B%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/11_TAPD/02_xmind%E8%BD%ACExcel/">xmind转Excel</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_接口测试篇
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_jmeter
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            999_工具
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/01_jmeter%E5%AE%89%E8%A3%85/">jmeter安装</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/02_jmeter%E7%95%8C%E9%9D%A2%E4%BB%8B%E7%BB%8D/">jmeter界面介绍</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/03_jmeter%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C(%E4%B8%80)/">jmeter简单操作(一)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/04_jmeter%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C(%E4%BA%8C)/">jmeter简单操作(二)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/05_jmeter%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C(%E4%B8%89)/">jmeter简单操作(三)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/06_jmeter%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C(%E5%9B%9B)/">jmeter简单操作(四)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/07_jmeter%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%A6%E8%A7%A3/">jmeter正则表达式详解</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/08_jmeterjson%E6%8F%90%E5%8F%96%E5%99%A8%E8%AF%A6%E8%A7%A3/">jmeter json提取器详解</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/09_jmeter%E8%84%9A%E6%9C%AC%E5%BD%95%E5%88%B6/">jmeter脚本录制</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/10_jmeter%E8%BF%9C%E7%A8%8B%E5%90%AF%E5%8A%A8/">jmeter远程启动</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/11_jmeter%E5%87%BD%E6%95%B0%E5%8A%A9%E6%89%8B/">jmeter函数助手</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/13_Jmeter%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/">Jmeter接口自动化</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/12_jmeter%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/">JMeter 连接 MySQL数据库测试</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/14_blazemeter(%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BD%95%E5%88%B6%E8%84%9A%E6%9C%AC)/">blazemeter</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/15_badboy(%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BD%95%E5%88%B6%E8%84%9A%E6%9C%AC)/">badboy</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/16_jmeter%E7%AE%80%E5%8D%95%E7%9A%84%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">jmeter简单的性能测试</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/17_Jmeter%E7%9B%91%E6%8E%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%80%A7%E8%83%BD/">Jmeter监控服务器性能</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/18_jmeter%E6%8F%92%E4%BB%B6/">jmeter插件</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/999_%E5%B7%A5%E5%85%B7/19_jmeter%E6%80%A7%E8%83%BD%E7%AF%87/">jmeter性能篇</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/01_jmeter/01_jmeter/">jmeter</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_postman
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            999_postman文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/01_postman%E7%95%8C%E9%9D%A2%E4%BB%8B%E7%BB%8D/">postman界面介绍</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/02_postman%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">postman基本操作</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/03_Postman%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3%E8%AF%B7%E6%B1%82/">Postman实现接口请求</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/04_Postman%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/">Postman项目实战</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/06_postman-%E6%96%AD%E8%A8%80%E5%8F%98%E9%87%8F/">postman-断言变量</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/999_postman%E6%96%87%E4%BB%B6/05_Postman%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/">Postman数据驱动与持续集成</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/02_postman/01_postman/">postman</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_soapUI
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/03_soapUI/01_soapUI/">soapUI</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_apipost
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/04_apipost/01_apipost/">apipost</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_mock
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/05_mock/01_mock/">mock</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_airtest
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_airtest文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/01_AirtestWeb%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8E%9F%E7%90%86%E4%B8%8E%E9%85%8D%E7%BD%AE/">AirtestWeb自动化原理与配置</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/02_AirtestWeb%E8%87%AA%E5%8A%A8%E5%8C%96%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E8%84%9A%E6%9C%AC%E5%BD%95%E5%88%B6/">AirtestWeb自动化基本使用与脚本录制</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/03_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E9%A1%B5%E9%9D%A2Frame%E6%93%8D%E4%BD%9C/">Airtest场景处理-页面Frame操作</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/04_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/">Airtest场景处理-文件上传</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/05_Airtest%E5%9C%BA%E6%99%AF%E5%A4%84%E7%90%86-%E7%99%BB%E5%BD%95%E7%8A%B6%E6%80%81%E8%AE%BF%E9%97%AE%E7%BD%91%E9%A1%B5/">Airtest场景处理-登录状态访问网页</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/06_Airtest%E5%91%BD%E4%BB%A4%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E4%B8%8E%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90/">Airtest命令运行脚本与报告生成</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest%E6%96%87%E4%BB%B6/07_Airtest%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C%E5%90%AF%E5%8A%A8%E5%99%A8%E5%AE%9E%E7%8E%B0Web%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%88%98/">Airtest进阶操作启动器实现Web自动化实战</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%AF%87/06_airtest/01_airtest/">Airtest</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_数据库
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_navicat
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_%E6%95%B0%E6%8D%AE%E5%BA%93/01_navicat/01_navicat%E5%AE%89%E8%A3%85/">navicat  安装</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_%E6%95%B0%E6%8D%AE%E5%BA%93/01_navicat/02_navicat%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/">navicat简单教程</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_%E6%95%B0%E6%8D%AE%E5%BA%93/01_navicat/03_SQL%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0/">navicat  SQL语句练习</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_DBeaver
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_%E6%95%B0%E6%8D%AE%E5%BA%93/02_DBeaver/01_DBeaver%E5%AE%89%E8%A3%85/">DBeaver安装</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_%E6%95%B0%E6%8D%AE%E5%BA%93/02_DBeaver/02_DBeaver%E4%BD%BF%E7%94%A8/">DBeaver使用</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_DataGrip
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_%E6%95%B0%E6%8D%AE%E5%BA%93/03_DataGrip/01_DataGrip%E5%AE%89%E8%A3%85/">DataGrip安装</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_%E6%95%B0%E6%8D%AE%E5%BA%93/03_DataGrip/02_DataGrip%E4%BD%BF%E7%94%A8/">DataGrip使用</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_phpMyAdmin
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_%E6%95%B0%E6%8D%AE%E5%BA%93/04_phpMyAdmin/01_phpMyAdmin%E5%AE%89%E8%A3%85/">phpMyAdmin安装</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_%E6%95%B0%E6%8D%AE%E5%BA%93/04_phpMyAdmin/02_phpMyAdmin%E4%BD%BF%E7%94%A8/">phpMyAdmin使用</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_Linux相关
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_VMware
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/01_VMware/01_VMware/">VMware</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_Xshell
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/02_Xshell/01_Xshell/">Xshell</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_secureCRT
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/03_secureCRT/01_secureCRT%E5%AE%89%E8%A3%85/">secureCRT安装</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/03_secureCRT/02_secureCRT%E4%BD%BF%E7%94%A8/">secureCRT使用</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_WinSCP
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/04_WinSCP/01_WinSCP%E5%AE%89%E8%A3%85/">WinSCP安装</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/04_WinSCP/02_WinSCP%E4%BD%BF%E7%94%A8/">WinSCP使用</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_PuTTY
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/05_PuTTY/01_PuTTY%E5%AE%89%E8%A3%85/">PuTTY安装</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/05_PuTTY/02_PuTTY%E4%BD%BF%E7%94%A8/">PuTTY使用</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_MobaXterm
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/06_MobaXterm/01_MobaXterm%E5%AE%89%E8%A3%85/">MobaXterm安装</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/06_MobaXterm/02_MobaXterm%E4%BD%BF%E7%94%A8/">MobaXterm使用</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_FinalShell
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/07_FinalShell/01_FinalShell%E5%AE%89%E8%A3%85/">FinalShell安装</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_Linux%E7%9B%B8%E5%85%B3/07_FinalShell/02_FinalShell%E4%BD%BF%E7%94%A8/">FinalShell使用</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_性能测试工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_jmeter
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_jmeter/01_jmeter/">jmeter</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_loadrunner
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_loadrunner/01_loadrunner/">loadrunner</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_webbench
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_webbench/01_webbench/">webbench</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_loadUI
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_loadUI/01_loadUI/">loadUI</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_httperf
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_httperf/01_httperf/">httperf</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_siege
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_siege/01_siege/">siege</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_gatling
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_gatling/01_gatling/">gatling</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_自动化
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_pycharm
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/01_pycharm/01_%E8%AE%A4%E8%AF%86PycharmPython/">认识PycharmPython</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/01_pycharm/02_pycharm%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">pycharm安装教程</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/01_pycharm/03_python%E5%AE%89%E8%A3%85/">python安装</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/01_pycharm/04_python%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/">python配置环境变量</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/01_pycharm/05_python_%E8%87%AA%E5%8A%A8%E5%8C%96/">python自动化篇</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_自动化实操
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_UI自动化
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            UI自动化测试框架
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_selenium
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/01_selenium-webdriver%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">selenium-webdriver环境搭建</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/02_selenium-webdriver%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/">selenium-webdriver基础操作</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/03_selenium-webdriver%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E4%B8%80/">selenium-webdriver基础操作一</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/04_selenium-webdriver%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E4%BA%8C/">selenium-webdriver基础操作二</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/06_selenium-webdriver%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/">selenium-webdriver常见报错问题</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/05_Selenium-%E5%85%83%E7%B4%A0%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95/">selenium-webdriver-元素的处理方法</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_selenium/07_Selenium+Pytest%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E5%AE%9E%E6%88%98/">selenium-Pytest自动化测试框架实战</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_Puppeteer
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/02_Puppeteer/01_Puppeteer/">Puppeteer</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_Playwright
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/03_Playwright/01_Playwright/">Playwright</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/03_Playwright/02_PlayWright%E6%95%99%E7%A8%8B(%E4%B8%80)/">PlayWright教程(一)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/03_Playwright/03_PlayWright%E6%95%99%E7%A8%8B(%E4%BA%8C)/">PlayWright教程(二)</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_pytest
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A301_%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%E4%B8%8E%E5%85%A5%E9%97%A8/">pytest文档01_环境准备与入门</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A361-fixture%E4%B9%8Bname%E5%8F%82%E6%95%B0%E4%BD%BF%E7%94%A8%E5%88%AB%E5%90%8D/">pytest文档61-fixture之name参数使用别名</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A337-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%94%A8%E4%BE%8B%E9%A1%BA%E5%BA%8F(pytest-ordering)/">pytest文档37-自定义用例顺序(pytest-ordering)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A358-%E9%9A%8F%E6%9C%BA%E6%89%A7%E8%A1%8C%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B(pytest-random-order)/">pytest文档58-随机执行测试用例(pytest-random-order)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A368-pytest-lazy-fixture%20%E6%8F%92%E4%BB%B6%E8%A7%A3%E5%86%B3/">pytest文档68-pytest-lazy-fixture 插件解决</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A379-%E5%86%85%E7%BD%AE%20fixtures%20%E4%B9%8B%20cache%20%E5%86%99%E5%85%A5%E5%92%8C%E8%AF%BB%E5%8F%96%E7%BC%93%E5%AD%98%E6%95%B0%E6%8D%AE/">079_pytest文档79-内置 fixtures 之 cache 写入和读取缓存数据</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A378-%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0pytest_runtest_makereport%E8%8E%B7%E5%8F%96%E7%94%A8%E4%BE%8B%E6%89%A7%E8%A1%8C%E6%8A%A5%E9%94%99%E5%86%85%E5%AE%B9%E5%92%8Cprint%E5%86%85%E5%AE%B9/">pytest文档78-钩子函数pytest_runtest_makereport获取用例执行报错内容和print内容</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A380-%E5%86%85%E7%BD%AE%20fixtures%20%E4%B9%8B%20cache%20%E5%86%99%E5%85%A5%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/">080_pytest文档80-内置 fixtures 之 cache 写入中文显示问题</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A340-pytest.ini%E9%85%8D%E7%BD%AE%E7%94%A8%E4%BE%8B%E6%9F%A5%E6%89%BE%E8%A7%84%E5%88%99(%E9%9D%A2%E8%AF%95%E9%A2%98)/">pytest文档40-pytest.ini配置用例查找规则(面试题)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A376-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E7%A5%9E%E5%A5%87%E7%9A%84-o%E5%8F%82%E6%95%B0%E4%BD%BF%E7%94%A8/">pytest文档76-命令行中神奇的-o参数使用</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A341-%E5%8F%82%E6%95%B0%E5%8C%96%20ids%20%E7%94%A8%E4%BE%8B%E6%8F%8F%E8%BF%B0%E4%B8%BA%E4%B8%AD%E6%96%87%E6%97%B6%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%87%BAunicode%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98/">pytest文档41-参数化 ids 用例描述为中文时控制台输出unicode编码问题</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A349-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0--tb%E7%9A%84%E4%BD%BF%E7%94%A8/">pytest文档49-命令行参数--tb的使用</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A353-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%AE%9E%E6%97%B6%E8%BE%93%E5%87%BA%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF(pytest-instafail)/">pytest文档53-命令行实时输出错误信息(pytest-instafail)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A366-%E5%B7%A5%E5%8E%82%E5%8C%96%E7%9A%84%20fixtures/">pytest文档66-工厂化的 fixtures</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A354-Hooks%E5%87%BD%E6%95%B0terminal%E6%89%93%E5%8D%B0%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C(pytest_report_teststatus)/">pytest文档54-Hooks函数terminal打印测试结果(pytest_report_teststatus)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A373-pytest+yaml%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6%E4%B9%8B%E7%94%A8%E4%BE%8B%E5%8F%82%E6%95%B0%E5%85%B3%E8%81%94/">pytest文档73-pytest+yaml实现接口自动化框架之用例参数关联</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A371-pytest+yaml%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/">pytest文档71-pytest+yaml实现接口自动化框架</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A357-%E8%AE%A1%E7%AE%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E8%A6%86%E7%9B%96%E7%8E%87(pytest-cov)/">pytest文档57-计算单元测试代码覆盖率(pytest-cov)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A370-Hook%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0%E5%AE%8C%E6%95%B4API%E6%80%BB%E7%BB%93/">pytest文档70-Hook钩子函数完整API总结</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A364-%E5%86%85%E7%BD%AE%20pytestconfig%20%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E5%92%8C%E8%8E%B7%E5%8F%96%20pytest.ini%20%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0/">pytest文档64-内置 pytestconfig 动态添加和获取 pytest.ini 配置参数</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A362-%E5%86%85%E7%BD%AEfixture%E4%B9%8Brequest/">pytest文档62-内置fixture之request</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A332-allure%E6%8F%8F%E8%BF%B0%E7%94%A8%E4%BE%8B%E8%AF%A6%E7%BB%86%E8%AE%B2%E8%A7%A3/">pytest文档1-环境准备与入门</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A330-%E5%8A%9F%E8%83%BD%E7%94%A8%E4%BE%8B%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96%E7%94%A8%E4%BE%8B%E5%AE%8C%E7%BE%8E%E5%AF%B9%E6%8E%A5(allure)/">pytest文档30-功能用例与自动化用例完美对接(allure)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A328-%E9%87%8D%E5%A4%8D%E6%89%A7%E8%A1%8C%E7%94%A8%E4%BE%8B%EF%BC%88pytest-repeat%EF%BC%89/">pytest文档28-重复执行用例（pytest-repeat）</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A326-%E8%BF%90%E8%A1%8C%E4%B8%8A%E6%AC%A1%E5%A4%B1%E8%B4%A5%E7%94%A8%E4%BE%8B(--lf%20%E5%92%8C%20--ff%EF%BC%89/">pytest文档26-运行上次失败用例(--lf 和 --ff）</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A321-pytest-html%E6%8A%A5%E5%91%8A%E4%BC%98%E5%8C%96(%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3)/">pytest文档21-pytest-html报告优化（nodeid中文显示[\u6350\u52a9\u6211\u4eec]问题解决）</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A323-%E4%BD%BF%E7%94%A8%E5%A4%9A%E4%B8%AAfixture%E5%92%8Cfixture%E7%9B%B4%E6%8E%A5%E4%BA%92%E7%9B%B8%E8%B0%83%E7%94%A8/">pytest文档23-使用多个fixture和fixture直接互相调用</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A320-pytest-html%E6%8A%A5%E5%91%8A%E4%BC%98%E5%8C%96%EF%BC%88%E6%B7%BB%E5%8A%A0Description%EF%BC%89/">pytest文档20-pytest-html报告优化（添加Description）</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A318-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6pytest.ini/">pytest文档18-配置文件pytest.ini</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A316-%E7%94%A8%E4%BE%8Ba%E5%A4%B1%E8%B4%A5%EF%BC%8C%E8%B7%B3%E8%BF%87%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8Bb%E5%92%8Cc%E5%B9%B6%E6%A0%87%E8%AE%B0%E5%A4%B1%E8%B4%A5xfail/">pytest文档16-用例a失败，跳过测试用例b和c并标记失败xfail</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A314-%E5%87%BD%E6%95%B0%E4%BC%A0%E5%8F%82%E5%92%8Cfixture%E4%BC%A0%E5%8F%82%E6%95%B0request/">pytest文档14-函数传参和fixture传参数request</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A317-fixture%E4%B9%8Bautouse=True/">pytest文档17-fixture之autouse=True</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A312-skip%E8%B7%B3%E8%BF%87%E7%94%A8%E4%BE%8B/">pytest文档12-skip跳过用例</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A342-fixture%E5%8F%82%E6%95%B0%E5%8C%96params/">pytest文档42-fixture参数化params</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A336-%E6%96%AD%E8%A8%80%E5%A4%B1%E8%B4%A5%E5%90%8E%E8%BF%98%E8%83%BD%E7%BB%A7%E7%BB%AD%E6%89%A7%E8%A1%8Cpytest-assume/">pytest文档36-断言失败后还能继续执行pytest-assume</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A344-allure.dynamic%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E7%94%A8%E4%BE%8B%E6%A0%87%E9%A2%98/">pytest文档44-allure.dynamic动态生成用例标题</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A374-%E5%8F%82%E6%95%B0%E5%8C%96parametrize%E5%8A%A0marks%E6%A0%87%E8%AE%B0%EF%BC%88pytest.param%EF%BC%89/">pytest文档74-参数化parametrize加marks标记（pytest.param）</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A324-fixture%E7%9A%84%E4%BD%9C%E7%94%A8%E8%8C%83%E5%9B%B4(scope)/">pytest文档24-fixture的作用范围(scope)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A315-%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%87%E8%AE%B0mark/">pytest文档15-使用自定义标记mark</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A352-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0--setup-show%E6%9F%A5%E7%9C%8Bfixture%E7%9A%84%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B/">pytest文档52-命令行参数--setup-show查看fixture的执行过程</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A331-allure%E6%A0%87%E8%AE%B0%E7%94%A8%E4%BE%8B%E7%BA%A7%E5%88%ABseverity/">pytest文档31-allure标记用例级别severity</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A327-pytest%E5%88%86%E5%B8%83%E5%BC%8F%E6%89%A7%E8%A1%8C%EF%BC%88pytest-xdist%EF%BC%89/">pytest文档27-pytest分布式执行（pytest-xdist）</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A334-Hooks%E5%87%BD%E6%95%B0%E6%94%B9%E5%8F%98%E7%94%A8%E4%BE%8B%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F(pytest_collection_modifyitems)/">pytest文档34-Hooks函数改变用例执行顺序(pytest_collection_modifyitems)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A372-%E4%BD%BF%E7%94%A8%20template%20%E6%9B%BF%E6%8D%A2%20yaml%20%E6%96%87%E4%BB%B6%E7%9A%84%E5%8F%98%E9%87%8F/">pytest文档72-使用 template 替换 yaml 文件的变量</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A359-%E8%BF%90%E8%A1%8C%E6%9C%AA%E6%8F%90%E4%BA%A4git%E7%9A%84%E7%94%A8%E4%BE%8B(pytest-picked)/">pytest文档59-运行未提交git的用例(pytest-picked)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A375-%E7%94%9F%E6%88%90%20junit-xml%20%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A/">pytest文档75-生成 junit-xml 测试报告</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A333-Hooks%E5%87%BD%E6%95%B0%E8%8E%B7%E5%8F%96%E7%94%A8%E4%BE%8B%E6%89%A7%E8%A1%8C%E7%BB%93%E6%9E%9C(pytest_runtest_makereport)/">pytest文档33-Hooks函数获取用例执行结果(pytest_runtest_makereport)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A381-%E5%A6%82%E4%BD%95%E5%9C%A8yaml%E6%96%87%E4%BB%B6%E4%B8%AD%E5%BC%95%E7%94%A8python%E5%87%BD%E6%95%B0%EF%BC%9F/">081_pytest文档81-如何在yaml文件中引用python函数</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A322-fixture%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D-%E4%BD%9C%E4%B8%BA%E5%8F%82%E6%95%B0%E4%BC%A0%E5%85%A5,error%E5%92%8Cfailed%E5%8C%BA%E5%88%AB/">pytest文档22-fixture详细介绍-作为参数传入,error和failed区别</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A325-conftest.py%E4%BD%9C%E7%94%A8%E8%8C%83%E5%9B%B4/">025_pytest文档25-conftest.py作用范围</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A329-allure-pytest(%E6%9C%80%E6%96%B0%E6%9C%80%E5%85%A8%EF%BC%8C%E4%BF%9D%E8%AF%81%E8%83%BD%E6%90%9E%E6%88%90%E5%8A%9F%EF%BC%81)/">pytest文档29-allure-pytest(最新最全，保证能搞成功！)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A345-allure%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE(environment)/">pytest文档45-allure添加环境配置(environment)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A347-allure%E6%8A%A5%E5%91%8A%E6%B7%BB%E5%8A%A0%E7%94%A8%E4%BE%8B%E5%A4%B1%E8%B4%A5%E6%88%AA%E5%9B%BE/">pytest文档47-allure报告添加用例失败截图</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A365-%E5%86%85%E7%BD%AE%20request%20%E8%AF%BB%E5%8F%96%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%A0%B9%E7%9B%AE%E5%BD%95%20rootdir/">pytest文档65-内置 request 读取项目的根目录 rootdir</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A363-%E5%86%85%E7%BD%AEfixture%E4%B9%8Bpytestconfig/">pytest文档63-内置fixture之pytestconfig</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A348-%E5%88%87%E6%8D%A2%20base_url%20%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83(pytest-base-url)/">pytest文档48-切换 base_url 测试环境(pytest-base-url)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A346-%E5%85%B3%E4%BA%8Ehttps%E8%AF%B7%E6%B1%82%E8%AD%A6%E5%91%8A%E9%97%AE%E9%A2%98/">pytest文档46-关于https请求警告问题</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A335-Hooks%E5%87%BD%E6%95%B0%E4%B9%8B%E7%BB%9F%E8%AE%A1%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C(pytest_terminal_summary)/">pytest文档35-Hooks函数之统计测试结果(pytest_terminal_summary)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A319-doctest%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/">pytest文档19-doctest测试框架</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A339-%E5%8F%82%E6%95%B0%E5%8C%96(parametrize)%E7%BB%93%E5%90%88allure.title()%E7%94%9F%E6%88%90%E4%B8%8D%E5%90%8C%E6%A0%87%E9%A2%98%E6%8A%A5%E5%91%8A/">pytest文档39-参数化(parametrize)结合allure.title()生成不同标题报告</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A369-Hook%E5%87%BD%E6%95%B0%E4%B9%8B%E5%8F%82%E6%95%B0%E5%8C%96%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8Bpytest_generate_tests/">pytest文档69-Hook函数之参数化生成测试用例pytest_generate_tests</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A355-plugins%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/">pytest文档55-plugins插件开发</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A310_%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BC%A0%E5%8F%82/">pytest文档10_命令行传参</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A313-allure2%E7%94%9F%E6%88%90html%E6%8A%A5%E5%91%8A(%E5%8F%B2%E4%B8%8A%E6%9C%80%E8%AF%A6%E7%BB%86)-%E5%B7%B2%E5%BA%9F%E5%BC%83%EF%BC%8C%E4%B8%8D%E7%94%A8%E7%9C%8B%E4%BA%86/">pytest文档13-allure2生成html报告(史上最详细)-已废弃，不用看了</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A377-parametrize%20%E5%8F%82%E6%95%B0%E5%8C%96%E8%B7%B3%E8%BF%87%E9%83%A8%E5%88%86%E7%94%A8%E4%BE%8B(pytest.param)/">pytest文档77-parametrize 参数化跳过部分用例(pytest.param)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A302_%E7%94%A8%E4%BE%8B%E8%BF%90%E8%A1%8C%E8%A7%84%E5%88%99/">pytest文档02_用例运行规则</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A311-assert%E6%96%AD%E8%A8%80/">pytest文档11-assert断言</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A338-allure.step()%E6%B7%BB%E5%8A%A0%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E6%AD%A5%E9%AA%A4/">pytest文档38-allure.step()添加测试用例步骤</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A309_%E5%8F%82%E6%95%B0%E5%8C%96parametrize/">pytest文档09_参数化parametrize</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A360-pytest.main()%E7%9A%84%E4%BD%BF%E7%94%A8/">pytest文档60-pytest.main()的使用</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A307_pytest-html%E7%94%9F%E6%88%90html%E6%8A%A5%E5%91%8A/">pytest文档07_pytest-html生成html报告</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A350-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0--durations%E7%BB%9F%E8%AE%A1%E7%94%A8%E4%BE%8B%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/">pytest文档50-命令行参数--durations统计用例运行时间</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A308_html%E6%8A%A5%E5%91%8A%E6%8A%A5%E9%94%99%E6%88%AA%E5%9B%BE+%E5%A4%B1%E8%B4%A5%E9%87%8D%E8%B7%91/">pytest文档08_html报告报错截图+失败重跑</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A306_fixture%E4%B9%8Byield%E5%AE%9E%E7%8E%B0teardown/">pytest文档06_fixture之yield实现teardown</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A367-pytest.mark.parametrize%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20fixture/">pytest文档67-pytest.mark.parametrize 中使用 fixture</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A351-%E5%86%85%E7%BD%AEfixture%E4%B9%8Bcache%E4%BD%BF%E7%94%A8/">pytest文档51-内置fixture之cache使用</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A305_fixture%E4%B9%8Bconftest.py/">pytest文档05_fixture之conftest.py</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A343-%E5%85%83%E6%95%B0%E6%8D%AE%E4%BD%BF%E7%94%A8(pytest-metadata)/">pytest文档43-元数据使用(pytest-metadata)</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A304_%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8Bsetup%E5%92%8Cteardown/">pytest文档04_测试用例setup和teardown</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A356-%E6%8F%92%E4%BB%B6%E6%89%93%E5%8C%85%E4%B8%8A%E4%BC%A0%E5%88%B0%20pypi%20%E5%BA%93/">pytest文档56-插件打包上传到 pypi 库</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/04_pytest/pytest%E6%96%87%E6%A1%A303_pycharm%E8%BF%90%E8%A1%8Cpytest/">pytest文档03_pycharm运行pytest</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6_%E5%85%B3%E9%94%AE%E5%AD%97%E9%A9%B1%E5%8A%A8+%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8/">UI自动化测试框架_关键字驱动+数据驱动</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            python插件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/pytesseract%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/">pytesseract安装使用</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/python%E6%8F%92%E4%BB%B6/4%E4%BD%8D%E9%AA%8C%E8%AF%81%E7%A0%81%E8%AF%86%E5%88%AB/">4位验证码识别</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96%E7%90%86%E8%AE%BA/">UI自动化理论</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/01_UI%E8%87%AA%E5%8A%A8%E5%8C%96/02_UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%BB%8B%E7%BB%8D/">UI自动化测试介绍</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_API自动化
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            api自动化框架
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/01_http/">API自动化-http</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/02_Python_Api%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E4%B8%80/">Python Api接口自动化测试框架一</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/03_python+requests+pytest%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/">python+requests+pytest接口自动化</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/02_API%E8%87%AA%E5%8A%A8%E5%8C%96/01_API%E8%87%AA%E5%8A%A8%E5%8C%96/">API自动化</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_APP自动化
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_appium
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/01_appium/01_appium/">appium</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/01_appium/02_2/">python爬取抖音app</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_instruments
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/02_instruments/01_instruments/">instruments</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_uiautomator
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/03_uiautomator/01_uiautomator/">uiautomator</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_monkey
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/04_monkey/01_monkey/">monkey</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_MonkeyRunner
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/05_MonkeyRunner/01_MonkeyRunner/">MonkeyRunner</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_Robotium
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/06_Robotium/01_Robotium/">Robotium</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_%E8%87%AA%E5%8A%A8%E5%8C%96/02_%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E6%93%8D/03_APP%E8%87%AA%E5%8A%A8%E5%8C%96/01_APP%E8%87%AA%E5%8A%A8%E5%8C%96/">APP自动化</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_持续集成工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_jenkins
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/01_jenkins/01_jenkins/">jenkins</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_hudson
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02_hudson/01_hudson%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8/">hudson安装以及使用</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7/02_hudson/02_Hudson%E7%9A%84%E4%BD%BF%E7%94%A8/">Hudson的使用</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            08_辅助测试编程工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            HBuilderX
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/08_%E8%BE%85%E5%8A%A9%E6%B5%8B%E8%AF%95%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/HBuilderX/01_HBuilderX/">HBuilderX</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            notepad++
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/08_%E8%BE%85%E5%8A%A9%E6%B5%8B%E8%AF%95%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/notepad++/01_notepad++/">notepad++</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            09_编程工具
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/09_%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/01_%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/">测试专家</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            10_C_S自动化工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_qtp
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/10_C_S%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/01_qtp/01_qtp/">qtp</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_winrunner
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/10_C_S%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/02_winrunner/01_winrunner/">winrunner</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_autoit
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/10_C_S%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/03_autoit/01_autoit/">autoit</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            11_代码扫描工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_coverity
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/01_coverity/01_coverity/">coverity</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_cppcheck c++
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/02_cppcheck%20c++/01_cppcheck%20c++/">cppcheck++</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_gcover
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/03_gcover/01_gcover/">gcover</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_findbugs
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/04_findbugs/01_findbugs/">findbugs</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_sonarlint
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/05_sonarlint/01_sonarlint/">sonarlint</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_tscancode
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/06_tscancode/01_tscancode/">tscancode</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            12_网络测试工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_思博伦
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_%E6%80%9D%E5%8D%9A%E4%BC%A6/01_%E6%80%9D%E5%8D%9A%E4%BC%A6/">思博伦</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_lxia
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_lxia/01_lxia/">lxia</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_wirshark
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_wirshark/01_wirshark/">wirshark</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_tc
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_tc/01_tc/">tc</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_iperf
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_iperf/01_iperf/">iperf</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_tcpping
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_tcpping/01_tcpping/">tcpping</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            13_web安全测试工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_appscan
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_appscan/01_appscan/">appscan</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_NetsparkerCommunityEdition
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_NetsparkerCommunityEdition/01_NetsparkerCommunityEdition/">NetsparkerCommunityEdition</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_websecurify
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_websecurify/01_websecurify/">websecurify</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_wapiti
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_wapiti/01_wapiti/">wapiti</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_N-StalkerFreeVersion
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_N-StalkerFreeVersion/01_N-StalkerFreeVersion/">N-StalkerFreeVersion</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_skipfish
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_skipfish/01_skipfish/">skipfish</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_scrawlr
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_scrawlr/01_scrawlr/">scrawlr</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            08_watcher
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/08_watcher/01_watcher/">watcher</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            09_webscarab
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/09_webscarab/01_webscarab/">webscarab</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            10_burpsuite
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/10_burpsuite/01_burpsuite/">burpsuite</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            11_fiddler
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            999_fiddler文件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/01_fiddle%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D/">fiddle的基本介绍</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/02_fiddler%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/">fiddler常用的快捷键</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/03_FiddlerScript/">FiddlerScript</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/04_fiddle%E5%88%A9%E7%94%A8AutoResponder%E8%BF%9B%E8%A1%8C%E8%B0%83%E8%AF%95/">fiddle利用AutoResponder进行调试</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/05_FiddlerComposer%E5%88%9B%E5%BB%BA%E5%92%8C%E5%8F%91%E9%80%81http%E8%AF%B7%E6%B1%82/">FiddlerComposer创建和发送http请求</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/06_fiddle%E5%AE%9E%E7%8E%B0%E6%89%8B%E6%9C%BA%E6%8A%93%E5%8C%85/">fiddle实现手机抓包</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/999_fiddler%E6%96%87%E4%BB%B6/07_fiddler%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95/">fiddler弱网测试</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/11_fiddler/01_Fiddler/">Fiddler</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            12_Charles
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/13_web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/12_Charles/01_charles%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/">charles安装与使用</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            14_白盒测试工具
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            01_jtestjava
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/01_jtestjava/01_jtestjava/">jtestjava</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            02_junit
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/02_junit/01_junit/">junit</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            03_cppunit
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/03_cppunit/01_cppunit/">cppunit</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            04_gtest
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/04_gtest/01_gtest/">gtest</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            05_phpunitphp
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/05_phpunitphp/01_phpunitphp/">phpunitphp</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            06_boundscheckerc++ delphiapi ole
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/06_boundscheckerc++%20delphiapi%20ole/01_boundscheckerc++%20delphiapi%20ole/">boundscheckerc++ delphiapi ole</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            07_truetimec++ java visual basic
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/14_%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/07_truetimec++%20java%20visual%20basic/01_truetimec++%20java%20visual%20basic/">truetimec++ java visual basic</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            15_环境部署_持续集成
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/15_%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/01_apache%E7%8E%AF%E5%A2%83/">Apache环境部署</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/15_%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/02_Tomcat%E7%8E%AF%E5%A2%83/">Tomcat环境部署</a></li>  <li class="file"><a href="/05_%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/15_%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/03_%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/">持续集成</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     <li class="file"><a href="/README/"></a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-01_测试初阶/02_测试理论/10_模拟面试题分析/08_Python基础题目大全" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/">01_测试初阶</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">02_测试理论</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/01-%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10-%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/">10_模拟面试题分析</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/" rel="tag">测试理论</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/08_Python%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE%E5%A4%A7%E5%85%A8/">
+            <time datetime="2022-05-16T12:29:01.458Z" itemprop="datePublished">2022-05-16</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Python基础题目大全
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <p><img src="/assets/2/image-20220516203117-m9jj2bk.png" alt="image.png"></p>
+<p>1、为什么学习Python？<br>人生苦短？人间不值得？想想自己的初心吧！</p>
+<p>2、通过什么途径学习的Python？<br>官网、网上视频、学习网站、论坛、大牛的辅导</p>
+<p>3、Python和Java、PHP、C、C#、C++等其他语言的对比？<br>（1）、python代码，简介，明确，优雅，简单易懂<br>（2）、开发效率高<br>（3）、可扩展性强</p>
+<p>4、简述解释型和编译型编程语言？<br>解释型：在执行程序时，计算机才一条一条的将代码解释成机器语言给计算机来执行<br>编译型：是把源程序的每一条语句都编译成机器语言，并保存成二进制文件，这样计算机运行该程序时可以直接以机器语言来运行此程序，运行速度很快。</p>
+<p>5、Python解释器种类以及特点？<br>Cpython，IPython，Jpython，pypy，Ironpython</p>
+<p>Python是一门解释器语言，代码想运行，必须通过解释器执行，Python存在多种解释器，分别基于不同语言开发，每个解释器有不同的特点，但都能正常运行Python代码，以下是常用的五种Python解释器：</p>
+<p>CPython：当 从Python官方网站下载并安装好Python2.7后，就直接获得了一个官方版本的解</p>
+<blockquote>
+<p>释器：Cpython，这个解释器是用C语言开发的，所以叫 CPython，在命名行下运行python，<br>就是启动CPython解释器，CPython是使用最广的Python解释器。</p>
+</blockquote>
+<p>IPython：IPython是基于CPython之上的一个交互式解释器，也就是说，IPython只是在交互方</p>
+<blockquote>
+<p>式上有所增强，但是执行Python代码的功能和CPython是完全一样的，好比很多国产浏览器<br>虽然外观不同，但内核其实是调用了IE。</p>
+</blockquote>
+<p>PyPy：PyPy是另一个Python解释器，它的目标是执行速度，PyPy采用JIT技术，</p>
+<blockquote>
+<p>对Python代进行动态编译，所以可以显著提高<br>Python代码的执行速度。</p>
+</blockquote>
+<p>Jython：Jython是运行在Java平台上的Python解释器，可以直接把Python代码编译成Java字节码执行。<br>IronPython：IronPython和Jython类似，只不过IronPython是运行在微软.Net平台上的Python解释器，</p>
+<blockquote>
+<p>可以直接把Python代码编译成.Net的字节码。</p>
+</blockquote>
+<p>在Python的解释器中，使用广泛的是CPython，对于Python的编译，除了可以采用以上解释器<br>进行编译外，技术高超的开发者还可以按照自己的需求自行编写Python解释器来执行Python代码，十分的方便！</p>
+<p>6、位和字节的关系？<br>一个字节&#x3D;8位</p>
+<p>7、b、B、KB、MB、GB 的关系？<br>1B(字节) &#x3D; 8b(位)<br>1KB &#x3D; 1024B<br>1MB &#x3D; 1024KB<br>1GB &#x3D; 1024MB</p>
+<p>8、请至少列举5个 PEP8 规范<br>（1）、缩进：每一级4个缩进。连续跨行应该使用圆括号或大括号或者使用悬挂缩进。<br>（2）、代码长度约束</p>
+<p>一行列数：PEP8 规定最大为79列，如果拼接url很容易超限<br>一个函数：不可以超过30行；直观来讲就是完整显示一个函数一个屏幕就够了，不需要上下拖动<br>一个类：不要超过200行代码，不要超过10个方法<br>一个模块：不要超过500行<br>（3）、import</p>
+<p>不要在一句import中引用多个库<br>（4）、命名规范<br>（5）、注释</p>
+<p>总体原则，错误的注释不如没有注释。所以当一段代码发生变化时，第一件事就是要修改注释！</p>
+<p>9、通过代码实现如下转换：<br>答案： 二进制转换成十进制：v &#x3D; “0b1111011”</p>
+<blockquote>
+<p> print(int(‘0b1111011’,2))<br>十进制转换成二进制：v &#x3D; 18<br>print(bin(18))<br>八进制转换成十进制：v &#x3D; “011”<br>print(int(‘011’,8))<br>十进制转换成八进制：v &#x3D; 30<br>print(oct(30))<br>十六进制转换成十进制：v &#x3D; “0x12”<br>print(int(‘0x12’,16))<br>十进制转换成十六进制：v &#x3D; 87<br>print(hex(87))</p>
+</blockquote>
+<p>10、请编写一个函数实现将IP地址转换成一个整数。<br>如 10.3.9.12 转换规则为：</p>
+<blockquote>
+<p>10            00001010<br>3            00000011<br>9            00001001<br>12            00001100</p>
+</blockquote>
+<p>再将以上二进制拼接起来计算十进制结果：00001010 00000011 00001001 00001100 &#x3D; ？</p>
+<p>答案：</p>
+<p>def func(x):<br>lis &#x3D; x.strip().split(’.’)<br>li &#x3D; [bin(int(i)) for i in lis]<br>li2 &#x3D; [i.replace(‘0b’,(10-len(i))*‘0’) for i in li]<br>return int(’’.join(li2),2)<br>ret &#x3D; func(‘10.3.9.12’)<br>print(ret)</p>
+<p>11、python递归的最大层数？<br>一般计算机默认的最大递归深度在1000左右，python最大递归深度一般在4000左右，跟计算<br>机的性能有关系，这个数不是一个定数，可通过一下方式测试</p>
+<p>import sys<br>print(sys.getrecursionlimit())<br>print(sys.setrecursionlimit(10000))</p>
+<p>12、求结果：<br>v1 &#x3D; 1 or 3 ————–&gt;1<br>v2 &#x3D; 1 and 3————–&gt;3<br>v3 &#x3D; 0 and 2 and 1——–&gt;0<br>v4 &#x3D; 0 and 2 or 1———&gt;1<br>v5 &#x3D; 0 and 2 or 1 or 4—-&gt;1<br>v6 &#x3D; 0 or Flase and 1—–&gt;False</p>
+<p>13、ascii、unicode、utf-8、gbk 区别？<br>ASCII码：使用一个字节编码，所以它的范围基本是只有英文字母、数字和一些特殊符号 ，只有256个字符。<br>Unicode：能够表示全世界所有的字节<br>GBK：是只用来编码汉字的，GBK全称《汉字内码扩展规范》，使用双字节编码。<br>UTF-8：是一种针对Unicode的可变长度字符编码，又称万国码。</p>
+<p>14、字节码和机器码的区别？<br>机器码：是电脑CPU直接读取运行的机器指令，运行速度最快，但是非常晦涩难懂<br>字节码：是一种中间状态（中间码）的二进制代码（文件）。需要直译器转译后才能成为机器码。</p>
+<p>15、三元运算规则以及应用场景？<br>规则：为真时的结果 if 判定条件 else 为假时的结果<br>应用场景：在赋值变量的时候，可以直接加判断，然后赋值</p>
+<p>16、列举 Python2和Python3的区别？<br>1、默认编码：2–&gt;ascii，3–&gt;utf-8</p>
+<p>2、print的区别：python2中print是一个语句，不论想输出什么，直接放到print关键字后面即可。python3里，print()是一个函数，</p>
+<p>像其他函数一样，print()需要你将要输出的东西作为参数传给它。</p>
+<p>3、input的区别：</p>
+<p>python2有两个全局函数，用在命令行请求用户输入。第一个叫input()，它等待用户输入一个python表达式(然后返回结果)。<br>第二个叫做raw_input(),用户输入什么他就返回什么。python3 通过input替代了他们。</p>
+<p>4、字符串：python2中有两种字符串类型：Unicode字符串和非Unicode字符串。Python3中只有一种类型：Unicode字符串。</p>
+<p>5、xrange()</p>
+<p>python２里，有两种方法获得一定范围内的数字：range(),返回一个列表，还有xrange(),返回一个迭代器。<br>python3　里，range()返回迭代器，xrange()不再存在。</p>
+<p>17、用一行代码实现数值交换：<br>a &#x3D; 1<br>b &#x3D; 2<br>答案：a &#x3D; 1</p>
+<p>b &#x3D; 2<br>a,b &#x3D; b,a</p>
+<p>18、Python3和Python2中 int 和 long的区别？<br>python2有非浮点数准备的int和long类型。int类型最大<br>值不能超过sys.maxint，而且这个最大值是平台相关的。<br>可以通过在数字的末尾附上一个Ｌ来定义长整型，显然，它比int类型表示的数字范围更大。在python3里，<br>只有一种整数类型int,大多数情况下，和python２中的长整型类似。<br>学习过程中会遇到很多问题，你可以到我们的 python学习 -q-u-n-784758214 ，基础，进阶。好友都会在里面交流，分享一些学习的方法和需要注意的小细节，每天也会准时讲一些项目实战案例。</p>
+<p>19、xrange和range的区别？<br>python２里，有两种方法获得一定范围内的数字：range(),返回一个列表，还有xrange(),返回一个迭代器。<br>python3　里，range()返回迭代器，xrange()不再存在。</p>
+<p>20、文件操作时：xreadlines和readlines的区别？<br>readlines返回一个list，xreadlines方法返回一个生成器</p>
+<p>21、列举布尔值为False的常见值？<br>0, [] , () , {} , ‘’ , False , None</p>
+<p>22、字符串、列表、元组、字典每个常用的5个方法？<br>字符串：repleace,strip,split,reverse,upper,lower,join…<br>列表：append,pop,insert,remove,sort,count,index…<br>元组：index,count,len(),dir()<br>字典：get,keys,values,pop,popitems,clear,update,items…</p>
+<p>23、lambda表达式格式以及应用场景？<br>表达式格式：lambda后面跟一个或多个参数，紧跟一个冒号，以后是一个表达式。冒号前是参数，冒号后是返回值。例如：lambda x : 2x<br>应用场景：经常与一些内置函数相结合使用，比如说map(),filter(),sorted(),reduce()等</p>
+<p>24、pass的作用？<br>1、空语句 do nothing<br>2、保证格式完整<br>3、保证语义完整</p>
+<p>25、arg和*kwarg作用？<br>万能参数，解决了函数参数不固定的问题<br>*arg：会把位置参数转化为tuple<br>**kwarg：会把关键字参数转化为dict</p>
+<p>26、is和&#x3D;&#x3D;的区别？<br>is:判断内存地址是否相等<br>&#x3D;&#x3D;：判断数值是否相等</p>
+<p>27、简述Python的深浅拷贝以及应用场景？<br>copy()：浅copy，浅拷贝指仅仅拷贝数据集合的第一层数据<br>deepcopy():深copy,深拷贝指拷贝数据集合的所有层</p>
+<p>28、Python垃圾回收机制？<br>python采用的是引用计数机制为主，标记-清除和分代收集(隔代回收、分代回收)两种机制为辅的策略<br>计数机制</p>
+<p>Python的GC模块主要运用了引用计数来跟踪和回收垃圾。在引用计数的基础上，还可以通过“标记-清除”<br>解决容器对象可能产生的循环引用的问题。通过分代回收以空间换取时间进一步提高垃圾回收的效率。<br>标记-清除：</p>
+<p>标记-清除的出现打破了循环引用，也就是它只关注那些可能会产生循环引用的对象<br>缺点：该机制所带来的额外操作和需要回收的内存块成正比。<br>隔代回收</p>
+<p>原理：将系统中的所有内存块根据其存活时间划分为不同的集合，每一个集合就成为一个“代”，<br>垃圾收集的频率随着“代”的存活时间的增大而减小。也就是说，活得越长的对象，就越不可能是垃圾，<br>就应该减少对它的垃圾收集频率。那么如何来衡量这个存活时间：通常是利用几次垃圾收集动作来衡量，<br>如果一个对象经过的垃圾收集次数越多，可以得出：该对象存活时间就越长。</p>
+<p>29、python的可变类型和不可变类型？<br>不可变类型（数字、字符串、元组、不可变集合）<br>可变类型（列表、字典、可变集合）</p>
+<p>30、求结果：<br>v &#x3D; dict.fromkeys([‘k1’,‘k2’],[])<br>v[‘k1’].append(666)<br>print(v)<br>v[‘k1’] &#x3D; 777<br>print(v)</p>
+<p>答案：{‘k1’:[666],‘k2’:[666]}<br>{‘k1’:777,‘k2’:[666]}<br>解析：formkeys()默认参数为可变数据类型时有坑</p>
+<p>如果对python自动化测试、web自动化、接口自动化、移动端自动化、面试经验交流等等感兴趣的测试人，可以关注微信公众号：【伤心的辣条】，获取软件测试工程师大厂面试资料！</p>
+<p>31、求结果：<br>def num():<br>return [lambda x: i*x for i in range(4)]<br>print([m(2) for m in num()])</p>
+<p>答案：[6, 6, 6, 6]<br>解析： 问题的本质在与python中的属性查找规则，LEGB（local，enclousing，global，bulitin），<br>在上面的例子中，i就是在闭包作用域（enclousing），而Python的闭包是 迟绑定 ，<br>这意味着闭包中用到的变量的值，是在内部函数被调用时查询得到的<br>所以：[lambda x: i*x for i in range(4)]打印出来是含有四个内存地址的列表，每个内存地址中的i<br>在在本内存中都没有被定义，而是通过闭包作用域中的i值，当for循环执行结束后，i的值等于3，所以<br>再执行[m(2) for m in num()]时，每个内存地址中的i值等于3，当x等于2时，打印出来的结果都是6，<br>从而得到结果[6, 6, 6, 6]。</p>
+<p>32、列举常见的内置函数？<br>map,filter,zip,len,bin,oct,hex,int,float,bool,sum,min,max,str,list,tuple,dict,range,next,hash,help,id…</p>
+<p>33、filter、map、reduce的作用？<br>filter(function，iterable)过滤函数<br>map(function，iterable)循环函数<br>reduce(function, iterable)累积函数</p>
+<p>34、一行代码实现9*9乘法表。<br>lis &#x3D; [’%s%s&#x3D;%s’%(i,j,ij) for i in range(1,10) for j in range(i,10)]</p>
+<p>35、如何安装第三方模块？以及用过哪些第三方模块？<br>pip3 imstall 模块名<br>django，Matplotlib，Tornado，PyGame</p>
+<p>36、至少列举8个常用模块都有那些？<br>os,sys,time,random,re,hashlib,logging,json,pickle…</p>
+<p>37、re的match和search区别？<br>match:从字符串的开头位置匹配，必须以此为开头<br>search:从开头开始查，找到符合的就返回结果</p>
+<p>38、什么是正则的贪婪匹配？<br>正则表达式一般趋向于最大长度匹配</p>
+<p>39、求结果：<br>a. [ i % 2 for i in range(10) ] &#x3D;&gt;[0,1,0,1,0,1,0,1,0,1]<br>b. ( i % 2 for i in range(10) )&#x3D;&gt;返回一个生成器的内存地址</p>
+<p>40、求结果：<br>a. 1 or 2 &#x3D;&#x3D;&#x3D;&gt;1<br>b. 1 and 2 &gt;2<br>c. 1 &lt; (22)&gt;false<br>d. 1 &lt; 2 &#x3D;&#x3D; 2&gt;ture</p>
+<p>41、def func(a,b&#x3D;[]) 这种写法有什么坑？<br>def func(a,b&#x3D;[]):</p>
+<p>b.append(a)<br>print(b)<br>函数的第二个默认参数是一个list，当第一次执行的时候实例化了一个list，<br>第二次执行还是用第一次执行的时候实例化的地址存储，以后每次实例化都是<br>学习过程中会遇到很多问题，你可以到我们的 python学习 -q-u-n-784758214 ，基础，进阶。好友都会在里面交流，分享一些学习的方法和需要注意的小细节，每天也会准时讲一些项目实战案例。</p>
+<p>42、如何实现 “1,2,3” 变成 [‘1’,‘2’,‘3’] ?<br>a &#x3D; “1,2,3”<br>li &#x3D; a.split(’,’)</p>
+<p>43、如何实现[‘1’,’2’,’3’]变成[1,2,3] ?<br>li &#x3D; [‘1’,‘2’,‘3’]<br>lis &#x3D; list(map(lambda x:int(x) li))</p>
+<p>44、比较： a &#x3D; [1,2,3] 和 b &#x3D; [(1),(2),(3) ] 以及 b &#x3D; [(1,),(2,),(3,) ] 的区别？<br>a &#x3D; [1,2,3]正常的列表<br>b &#x3D; [(1),(2),(3)] 虽然列表的每个元素加上了括号，但是当括号内只有一个元素并且没有逗号时，其数据类型是元素本身的数据类型<br>b &#x3D; [(1,),(2,),(3,)]列表中的元素类型都是元组类型</p>
+<p>45、如何用一行代码生成[1,4,9,16,25,36,49,64,81,100] ?<br>li &#x3D; [x*x for x in range(1,11)]</p>
+<p>46、一行代码实现删除列表中重复的值 ?<br>li &#x3D; [1, 1, 1, 23, 3, 4, 4]<br>new_li &#x3D; list(set(li))<br>new_li.sort(key&#x3D;li.index)</p>
+<p>47、如何在函数中设置一个全局变量 ?<br>使用python的内置语法 globals 全局变量</p>
+<p>48、logging模块的作用？以及应用场景？<br>logging模块的作用：<br>1、程序调试<br>2、了解软件程序运行情况，是否正常<br>3、软件程序运行故障分析与问题定位<br>应用场景：网站的运维工作，程序实时监控</p>
+<p>49、请用代码简答实现stack 。<br>def Stack(object):</p>
+<p>def init(self):<br>self.stack &#x3D; []</p>
+<p>def push(self,value):</p>
+<p>进栈</p>
+<p>self.stack.append(value)</p>
+<p>def pop(self):</p>
+<p>出栈</p>
+<p>if self.stack:<br>self.stack.pop()<br>else:<br>raise LookupError(‘stack is empty!’)</p>
+<p>def is_empty(self):</p>
+<p>查看stack是否为空</p>
+<p>reture bool(self.stack)</p>
+<p>def top(self):</p>
+<p>取出stack中最新的值</p>
+<p>return self.stack[-1]</p>
+<p>50、常用字符串格式化哪几种？<br>1、%s %d<br>2、format格式化输出<br>3、print(f’内容{变量名}’)</p>
+<p>51、简述 生成器、迭代器、可迭代对象 以及应用场景？<br>生成器：在 Python 中，一边循环一边计算的机制，称为 生成器（generator），</p>
+<p>通过next()取值，两种表现形式1、将列表生成式的[]改为()2、含有yield关键字的函数<br>应用场景：优化代码，节省内存<br>1<br>2<br>迭代器：是访问集合元素的一种方式。迭代器同时实现了__iter__和__next__方法<br>可迭代对象：只要实现了__iter__方法的对象就是可迭代对象</p>
+<p>52、用Python实现一个二分查找的函数。<br>lis &#x3D; [0, 1, 3, 4, 5, 6, 7, 9, 10, 11,12,16,17]</p>
+<p>def two_find(x, lis, start&#x3D;0, end&#x3D;None):</p>
+<p>if end &#x3D;&#x3D; None:end &#x3D; len(lis) - 1<br>num &#x3D; (end - start) &#x2F;&#x2F; 2 + start<br>if end &gt; start:<br>if lis[num] &gt; x:<br>return two_find(x, lis, start&#x3D;start, end&#x3D;num)<br>elif lis[num] &lt; x:<br>return two_find(x, lis, start&#x3D;num + 1, end&#x3D;end)<br>elif lis[num] &#x3D;&#x3D; x:<br>return num<br>elif lis[end] &#x3D;&#x3D; x:return end<br>else:return None<br>print(two_find(17, lis))</p>
+<p>53、谈谈你对闭包的理解？<br>在一个外函数中定义了一个内函数，内函数里运用了外函数的临时变量，并且外函数的返回值是内函数的引用。这样就构成了一个闭包。<br>一般情况下，在我们认知当中，如果一个函数结束，函数的内部所有东西都会释放掉，还给内存，局部变量都会消失。<br>但是闭包是一种特殊情况，如果外函数在结束的时候发现有自己的临时变量将来会在内部函数中用到，就把这个临时变量绑定给了内部函数，然后自己再结束。</p>
+<p>54、os和sys模块的作用？<br>os模块负责程序与操作系统的交互，提供了访问操作系统底层的接口;<br>sys模块负责程序与python解释器的交互，提供了一系列的函数和变量，用于操控python的运行时环境。</p>
+<p>55、如何生成一个随机数？<br>import random<br>def rdm(n):</p>
+<p>lis &#x3D; []<br>for i in range(n):<br>n &#x3D; random.randint(1,9)<br>lis.append(str(n))<br>s &#x3D; ‘’.join(lis)<br>return int(s)</p>
+<p>56、如何使用python删除一个文件？<br>import os<br>os.remove(r’path’)</p>
+<p>57、谈谈你对面向对象的理解？<br>面向对象的程序设计的核心是对象（上帝式思维），要理解对象为何物，必须把自己当成上帝，上帝眼里世间存在的万物皆为对象，<br>不存在的也可以创造出来。对象是特征和技能的结合，其中特征和技能分别对应对象的数据属性和方法属性。<br>优点是：解决了程序的扩展性。对某一个对象单独修改，会立刻反映到整个体系中，如对游戏中一个人物参数的特征和技能修改都很容易。<br>缺点：可控性差，无法向面向过程的程序设计流水线式的可以很精准的预测问题的处理流程与结果，<br>面向对象的程序一旦开始就由对象之间的交互解决问题，即便是上帝也无法预测最终结果。<br>应用场景：需求经常变化的软件，一般需求的变化都集中在用户层，互联网应用，企业内部软件，游戏等都是面向对象的程序设计大显身手的好地方。</p>
+<p>58、Python面向对象中的继承有什么特点？<br>1：在继承中基类的构造(init()方法)不会被自动调用，它需要在其派生类的构造中亲自专门调用。<br>2：在调用基类的方法时，需要加上基类的类名前缀，且需要带上self参数变量。</p>
+<p>区别于在类中调用普通函数时并不需要带上self参数<br>3：Python总是首先查找对应类型的方法，如果它不能在派生类中找到对应的方法，它才开始到基类中逐个查找。</p>
+<p>(先在本类中查找调用的方法，找不到才去基类中找)。</p>
+<p>59、面向对象深度优先和广度优先是什么？<br>Python的类可以继承多个类，那么其寻找类方法的方式有两种：</p>
+<p>当类是经典类时(主要在python2版本中的没有主动继承object的类)，多继承情况下，会按照深度优先方式查找<br>当类是新式类时(python3版本中的所有类和python2中主动继承object的类)，多继承情况下，会按照广度优先方式查找<br>简单点说就是：经典类是纵向查找，新式类是横向查找</p>
+<p>60、面向对象中super的作用？<br>1、super在面向对象继承类中代指父类，书写方法super(类名,self).属性或者方法或super().属性或者方法<br>2、super方法可以增加类之间调用的灵活性，当父类名发生变化时不必修改<br>3、super方法在类的多继承时可以简化代码，避免代码冗余<br>4、super机制里可以保证公共父类仅被执行一次，执行的顺序遵循MRO，广度优先查询方法</p>
+<p>如果对python自动化测试、web自动化、接口自动化、移动端自动化、面试经验交流等等感兴趣的测试人，可以关注微信公众号：【伤心的辣条】，获取软件测试工程师大厂面试资料！</p>
+<p>61、是否使用过functools中的函数？其作用是什么？<br>functools用于高阶函数：指那些作用于函数或者返回其他函数的函数。通常情况下，只要是<br>可以被当做函数调用的对象就是这个模块的目标。</p>
+<p>62、列举面向对象中带双下划线的特殊方法，如：new、init<br>new：构造方法，创建一个对象，实例化时第一个被执行，返回一个创建好的对象及__init__(self)的self，</p>
+<p>只有继承了object的类才会有这个方法<br>init：初始化方法，__init__在__new__的基础上完成一些其它初始化的动作，__init__没有返回值</p>
+<p>63、如何判断是函数还是方法？<br>函数和方法都封装了一些独立的功能，如果在类中定义的函数那就是方法(对象或者类名点方法名调用)，</p>
+<p>否则就是函数(函数名()直接调用)</p>
+<p>64、静态方法和类方法区别？<br>静态方法：是既不是用类中的属性又不使用对象中的属性，由类或者对象调用的方法，依赖python装饰器@staticmethod来实现<br>类方法：只使用类中的静态变量，一般都是由类调用，依赖python装饰器@classmethod来实现</p>
+<p>65、列举面向对象中的特殊成员以及应用场景？<br>call：对象的构造方法，对象加上()，可以触发这个类的__call__方法。<br>len：内置函数的len函数是依赖类中的__len__方法<br>eq：判断值是否相等的时候依赖__eq__方法<br>hash:判断hash值是否相等的时候依赖__hash__方法(拓展：set的去重机制其实就是根据__hash__和__eq__方法实现的)<br>str：和str() print() %s 都是息息相关的，返回值一定是字符串类型<br>repr：和 repr() %r都是息息相关的，在没有__str__方法时，repr__可以完全取代__str。<br>del 析构方法，对应着一个对象的删除之前执行的内容</p>
+<p>66、1、2、3、4、5 能组成多少个互不相同且无重复的三位数<br>count &#x3D; 0<br>for i in range(1,6):</p>
+<p>for j in range(1,6):<br>for k in range(1,6):<br>if (i !&#x3D; j) and (i !&#x3D; k) and (j !&#x3D; k):<br>count +&#x3D; 1<br>if count % 6:<br>print(f’{i}{j}{k}’, end&#x3D;’|’)<br>else:<br>print(f’{i}{j}{k}’)<br>print(count)</p>
+<p>67、什么是反射？以及应用场景？<br>定义：通过用字符串数据类型的变量名来访问这个变量的值，在python面向对象中的反射,通过字符串的形式操作对象相关的属性或方法.<br>应用场景：用于处理通过用户输入，文件读取，或者网络传输所得到的字符串形式的指令来完成对应的操作</p>
+<p>68、metaclass作用？以及应用场景？<br>metaclass，直译为元类，简单的解释就是：当我们定义了类以后，就可以根据这个类创建出实例，<br>所以：先定义类，然后创建实例。但是如果我们想创建出类呢？那就必须根据metaclass创建出类，<br>所以：先定义metaclass，然后创建类。换句话说，你可以把类看成是metaclass创建出来的“实例”</p>
+<p>69、用尽量多的方法实现单例模式。<br>1、基于__new__()方法</p>
+<p>class Person:<br>def new(cls, *args, **kwargs):<br>if not hasattr(cls,cls._instance):</p>
+<h1 id="cls-instance-x3D-object-new-cls"><a href="#cls-instance-x3D-object-new-cls" class="headerlink" title="cls._instance &#x3D; object.new(cls)"></a>cls._instance &#x3D; object.new(cls)</h1><p>cls._instance &#x3D; super().new(cls)<br>return cls._instance<br>2、基于模块导入方式，现在一个py文件中写好一个类，实例化一个对象。以后用这个类直接导入这个模块就是单例模式。<br>3、基于装饰器方法实现</p>
+<p>def singleton(cls, *args, **kwargs):<br>instance_dic &#x3D; {}</p>
+<blockquote>
+<p>def inner(*args, **kwargs):<br>if cls not in instance_dic:<br>instance_dic[‘cls’] &#x3D; cls(*args, **kwargs)<br>return instance_dic[‘cls’]</p>
+<p>return inner</p>
+</blockquote>
+<p>@singleton<br>class Person:<br>pass</p>
+<p>70、装饰器的写法以及应用场景。<br>装饰器的写法：</p>
+<p>def wrapper(func):<br>def inner(*args,**kwargs):<br>‘被装饰之前的操作’<br>ret &#x3D; func(*args,**kwargs)<br>‘被装饰之后的操作’<br>return ret<br>return inner<br>装饰器的应用场景：</p>
+<p>比如注册登录、插入日志，性能测试，事务处理，缓存等等场景</p>
+<p>71、异常处理写法以及如何主动跑出异常（应用场景）<br>异常处理的常规写法：</p>
+<blockquote>
+<p>try:<br>执行的主体函数<br>except Exception as e:<br>print(str(e))</p>
+</blockquote>
+<p>主动抛出异常：<br>raise TypeError(‘出现了不可思议的异常’)#TypeError可以是任意的错误类型</p>
+<p>72、什么是面向对象的mro<br>MRO(Method Resolution Order 方法解析顺序)是面向对象中用于查询类的多继承的继承顺序的方法，<br>它是基于算法来实现的，不同的算法实现的MRO的顺序不同</p>
+<p>73、isinstance作用以及应用场景？<br>isinstance作用是来判断一个对象是否是一个已知的类型</p>
+<p>74、写代码并实现：<br>Given an array of integers, return indices of the two numbers such that they add up to a specific target.<br>You may assume that each input would have exactly one solution, and you may not use the same element twice.<br>Example:</p>
+<blockquote>
+<p>  Given nums &#x3D; [2, 7, 11, 15], target &#x3D; 9,<br>Because nums[0] + nums[1] &#x3D; 2 + 7 &#x3D; 9,<br>return [0, 1]</p>
+</blockquote>
+<p>代码实现</p>
+<p>def func(li,target):</p>
+<p>try:<br>for i in range(0,len(li)):<br>num &#x3D; target-li[i]<br>if num in li:<br>return [i,li.index(num)]<br>except:print(‘li类型为数组类型，内的元素需是整型，target也为整型，请检查’)<br>else:return None</p>
+<p>75、json序列化时，可以处理的数据类型有哪些？如何定制支持datetime类型？<br>1、可以处理的数据类型是 string、int、list、tuple、dict、bool、null<br>2、定制支持datetime类型<br>————————–官方文档的memo———————————————–</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>import json<br>class ComplexEncoder(json.JSONEncoder):<br>…     def default(self, obj):<br>…         if isinstance(obj, complex):<br>…             return [obj.real, obj.imag]<br>…         return json.JSONEncoder.default(self, obj)<br>…<br>dumps(2 + 1j, cls&#x3D;ComplexEncoder)<br>‘[2.0, 1.0]’<br>ComplexEncoder().encode(2 + 1j)<br>‘[2.0, 1.0]’<br>list(ComplexEncoder().iterencode(2 + 1j))<br>[‘[‘, ‘2.0’, ‘, ‘, ‘1.0’, ‘]’]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>import json<br>import datetime<br>ret &#x3D; datetime.datetime.now()<br>class CJsonEncoder(json.JSONEncoder):<br>def default(self, obj):<br>if isinstance(obj, datetime.date):<br>return obj.strftime(’%Y-%m-%d %H:%M:%S’)<br>else:<br>return json.JSONEncoder.default(self, obj)</p>
+<p>print(json.dumps(ret,cls&#x3D;CJsonEncoder))</p>
+<p>76、json序列化时，默认遇到中文会转换成unicode，如果想要保留中文怎么办？<br>在序列化是将json.dumps中的默认参数ensure_ascii改为False就可以保留中文了<br>json.dumps(obj,ensure_ascii&#x3D;False)<br>学习过程中会遇到很多问题，你可以到我们的 python学习 -q-u-n-784758214 ，基础，进阶。好友都会在里面交流，分享一些学习的方法和需要注意的小细节，每天也会准时讲一些项目实战案例。</p>
+<p>77、什么是断言？应用场景？<br>assert 条件,‘自定义错误提示(可有可无)’ 例：assert 1 &#x3D;&#x3D; 0,‘这是一个低级的错误’<br>合约式设计是断言的经典应用，在一个正确的程序里，所有的前置条件和后置条件都将得到处理。</p>
+<p>78、使用代码实现查看列举目录下的所有文件。<br>方法一：递归处理</p>
+<p>import os<br>url &#x3D; r’C:\Users\Mr.Wang\PycharmProjects\untitled\前段学习’</p>
+<p>def check_file(url,li &#x3D; []):<br>if os.path.isdir(url):<br>file_list &#x3D; os.listdir(url)<br>for ret in file_list:<br>base_url &#x3D; os.path.join(url,ret)<br>if os.path.isfile(base_url):<br>li.append(ret)<br>else: check_file(base_url)<br>return li<br>else:return os.path.basename(url)<br>方法二：堆栈的思想处理</p>
+<p>import os<br>url &#x3D; r’C:\Users\Mr.Wang\PycharmProjects\untitled\python基础’</p>
+<p>lis &#x3D; [url]<br>while lis:<br>url &#x3D; lis.pop()<br>ret_list &#x3D; os.listdir(url)<br>for name in ret_list:<br>abs_path &#x3D; os.path.join(url,name)<br>if os.path.isdir(abs_path):<br>lis.append(abs_path)<br>else:print(name)</p>
+<p>79、简述 yield和yield from关键字。<br>yield 是一个类似 return 的关键字，只是这个函数返回的是个生成器当你调用这个函数的时候，<br>函数内部的代码并不立马执行 ，这个函数只是返回一个生成器对象，当你使用for进行迭代的时候，<br>函数中的代码才会执行</p>
+<p>yield from 的主要功能是打开双向通道，把最外层的调用方与最内层的子生成器连接起来，<br>这样二者可以直接发送和产出值，还可以直接传入异常，而不用在位于中间的协程中添加大量处理异常的样板代码。<br>有了这个结构，协程可以通过以前不可能的方式委托职责。</p>
+<p>如果对python自动化测试、web自动化、接口自动化、移动端自动化、面试经验交流等等感兴趣的测试人，可以关注微信公众号：【伤心的辣条】，获取软件测试工程师大厂面试资料！</p>
+<p>80、代码实现六位随机验证码<br>import random<br>s &#x3D; ‘’<br>for i in range(6):<br>num &#x3D; random.randint(0,9)<br>alpha1 &#x3D; chr(random.randint(65,90))<br>alpha2 &#x3D; chr(random.randint(97,122))<br>ret &#x3D; random.choice([num,alpha1,alpha2])<br>s +&#x3D; str(ret)<br>print(s)</p>
+<p>81、代码实现随机发红包功能<br>import random<br>def red_packge(money,num):<br>li &#x3D; random.sample(range(1,money100),num-1)<br>li.extend([0,money100])<br>li.sort()<br>return [(li[index+1]-li[index])&#x2F;100 for index in range(num)]</p>
+<p>ret &#x3D; red_packge(100,10)<br>print(ret)</p>
+<p>————————–生成器版——————————————-<br>import random<br>def red_packge(money,num):<br>li &#x3D; random.sample(range(1,money100),num-1)<br>li.extend([0,money100])<br>li.sort()<br>for index in range(num):<br>yield (li[index+1]-li[index])&#x2F;100</p>
+<p>ret &#x3D; red_packge(100,10)<br>print(ret)</p>
+<p>82、请尽可能列举python列表的成员方法，并给出列表操作的答案：<br>（1） a&#x3D;[1, 2, 3, 4, 5], a[::2]&#x3D;？ a[-2:]&#x3D;？<br>a[::2]&#x3D;[1,3,5],<br>a[-2:] &#x3D; [4,5]</p>
+<p>（2）一行代码实现对列表a中的偶数位置的元素进行加3后求和？<br>sum([i+3 for i in a[::2]])</p>
+<p>（3）将列表a的元素顺序打乱，再对a进行排序得到列表b，然后把a和b按元素顺序构造一个字典d。<br>import random<br>random.shuffle(a)<br>b&#x3D;a.sort()<br>d&#x3D;{}<br>for i in range(len(a)):d[a[i]] &#x3D; b[i]</p>
+<p>83、Python自省<br>自省就是面向对象的语言所写的程序在运行时，就能知道对象的类型。也就是程序运行时能够获得对象的类型。比如type()，dir()，getattr()，hasattr()，isinstance()。</p>
+<p>84、Python是如何进行内存管理的？<br>从三个方面来说,一对象的引用计数机制,二垃圾回收机制,三内存池机制</p>
+<p>一、对象的引用计数机制<br>Python内部使用引用计数，来保持追踪内存中的对象，所有对象都有引用计数。<br>引用计数增加的情况：<br>1，一个对象分配一个新名称<br>2，将其放入一个容器中（如列表、元组或字典）<br>引用计数减少的情况：<br>1，使用del语句对对象别名显示的销毁<br>2，引用超出作用域或被重新赋值<br>sys.getrefcount( )函数可以获得对象的当前引用计数<br>多数情况下，引用计数比你猜测得要大得多。对于不可变数据（如数字和字符串），解释器会在程序的不同部分共享内存，以便节约内存。</p>
+<p>二、垃圾回收<br>1，当一个对象的引用计数归零时，它将被垃圾收集机制处理掉。<br>2，当两个对象a和b相互引用时，del语句可以减少a和b的引用计数，并销毁用于引用底层对象的名称。然而由于每个对象都包含一个对其他对象的应用，因此引用计数不会归零，对象也不会销毁。（从而导致内存泄露）。为解决这一问题，解释器会定期执行一个循环检测器，搜索不可访问对象的循环并删除它们。</p>
+<p>三、内存池机制<br>Python提供了对内存的垃圾收集机制，但是它将不用的内存放到内存池而不是返回给操作系统。<br>1，Pymalloc机制。为了加速Python的执行效率，Python引入了一个内存池机制，用于管理对小块内存的申请和释放。<br>2，Python中所有小于256个字节的对象都使用pymalloc实现的分配器，而大的对象则使用系统的malloc。<br>3，对于Python对象，如整数，浮点数和List，都有其独立的私有内存池，对象间不共享他们的内存池。也就是说如果你分配又释放了大量的整数，用于缓存这些整数的内存就不能再分配给浮点数。</p>
+<p>85、介绍一下except的用法和作用？<br>try…except…except…else…<br>– 执行try下的语句，如果引发异常，则执行过程会跳到except语句。对每个except分支顺序尝试执行，如果引发的异常与except中的异常组匹配，执行相应的语句。如果所有的except都不匹配，则异常会传递到下一个调用本代码的最高层try代码中。<br>– try下的语句正常执行，则执行else块代码。如果发生异常，就不会执行<br>– 如果存在finally语句，最后总是会执行。</p>
+<p>86、如何用Python来进行查询和替换一个文本字符串？<br>可以使用re模块中的sub()函数或者subn()函数来进行查询和替换，比replace的功能更强大！！！<br>格式：sub(replacement, string[,count&#x3D;0])（replacement是被替换成的文本，string是需要被替换的文本，count是一个可选参数，指最大被替换的数量）</p>
+<p>import re<br>p&#x3D;re.compile(“blue|white|red”)<br>print(p.sub(‘colour’,‘blue socks and red shoes’))<br>print(p.sub(‘colour’,‘blue socks and red shoes’,count&#x3D;1))<br>subn()方法执行的效果跟sub()一样，不过它会返回一个二维数组，包括替换后的新的字符串和总共替换的数量</p>
+<p>87、有没有一个工具可以帮助查找python的bug和进行静态的代码分析？<br>PyChecker是一个python代码的静态分析工具，它可以帮助查找python代码的bug, 会对代码的复杂度和格式提出警告<br>Pylint是另外一个工具可以进行codingstandard检查<br>————————————————<br>版权声明：本文为CSDN博主「测试萌萌」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_50829653/article/details/116309089">https://blog.csdn.net/weixin_50829653/article/details/116309089</a></p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%20-%20%E5%89%AF%E6%9C%AC%20(2)/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    从未听过的10个软件测试面试问题
+                
+            </div>
+        </a>
+    
+    
+        <a href="/01_%E6%B5%8B%E8%AF%95%E5%88%9D%E9%98%B6/02_%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/10_%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90/07_%E4%BB%8E%E6%9C%AA%E5%90%AC%E8%BF%87%E7%9A%8410%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">从未听过的10个软件测试面试问题</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            yulong &copy; 2022 
+            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a >wikitten</a>     <!-- <a target="_blank" rel="noopener" href="https://github.com/zthxxx/hexo-theme-Wikitten"> -->
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+	
+
+ 
+
+	
+
+</body>
+
+
+
+
+<script type="text/javascript"> 
+
+
+
+
+	// 禁止右键菜单
+	document.oncontextmenu = function(){ return false; };
+	// 禁止文字选择
+	document.onselectstart = function(){ return false; };
+	// 禁止复制
+	document.oncopy = function(){ return false; };
+	// 禁止剪切
+	document.oncut = function(){ return false; };
+</script>
+
+
+</html>
